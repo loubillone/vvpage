@@ -9,7 +9,7 @@ import vvIndex from "../assets/img/index/vvIndex.png";
 const Navegador = () => {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand href="#home" className="vvIndex">
             <img src={vvIndex} alt="victoria villarruel" />
@@ -25,8 +25,12 @@ const Navegador = () => {
                 id="basic-nav-dropdown"
                 className="nav-items"
               >
-                <NavDropdown.Item href="#action/3.1">CELTYV</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Malvinas</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1" className="nav-items-drop">
+                  CELTYV
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2" className="nav-items-drop">
+                  Malvinas
+                </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#link" className="nav-items">
                 Trayectoria
