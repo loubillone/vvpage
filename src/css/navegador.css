@@ -41,3 +41,43 @@ body {
   font-family: "raleway-regular";
   font-size: 1.7rem;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .vvIndex img {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .navbar {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vvIndex img {
+    width: 15rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .navbar .nav-items {
+    font-size: 1.4rem;
+  }
+
+  .navbar .nav-items-contacto {
+    font-size: 1.4rem;
+  }
+
+  .nav-items-drop {
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+/*MEDIA QUERIES*/

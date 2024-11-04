@@ -3,13 +3,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import "../css/home.css";
+import "../css/navegador.css";
 import vvIndex from "../assets/img/index/vvIndex.png";
 
 const Navegador = () => {
   return (
     <div>
-      <Navbar expand="lg">
+      <Navbar expand="lg" sticky="top">
         <Container fluid>
           <Navbar.Brand href="#home" className="vvIndex">
             <img src={vvIndex} alt="victoria villarruel" />
@@ -23,7 +23,7 @@ const Navegador = () => {
               <NavDropdown
                 title="Biografía"
                 id="basic-nav-dropdown"
-                className="nav-items"
+                className="nav-items no-border-dropdown"
               >
                 <NavDropdown.Item href="#action/3.1" className="nav-items-drop">
                   CELTYV
