@@ -1,0 +1,14 @@
+.card {
+  height: 100%;
+}
+
+.card-body {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-title {
+  min-height: 3rem;
+}
