@@ -9,8 +9,8 @@ import vvIndex from "../assets/img/index/vvIndex.png";
 const Navegador = () => {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary ">
-        <Container>
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container fluid>
           <Navbar.Brand href="#home" className="vvIndex">
             <img src={vvIndex} alt="victoria villarruel" />
           </Navbar.Brand>
@@ -37,7 +37,7 @@ const Navegador = () => {
               <Nav.Link href="#link" className="nav-items">
                 Galeria
               </Nav.Link>
-              <Nav.Link href="#link" className="nav-items">
+              <Nav.Link href="#link" className="nav-items-contacto">
                 Contacto
               </Nav.Link>
             </Nav>
