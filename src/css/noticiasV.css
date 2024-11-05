@@ -12,3 +12,9 @@
 .card-title {
   min-height: 3rem;
 }
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
