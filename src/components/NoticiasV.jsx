@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import "../css/noticiasV.css";
 import cardUno from "../assets/img/cardsNoticias/cardUno.png";
 
-const NoticiasV = ({ title, description, src, url }) => {
+const NoticiasV = ({ title, description, src, url, source, publishedAt }) => {
   return (
     <div className="col-12 col-sm-6 col-lg-4 mb-4">
       <Card>
@@ -15,6 +15,8 @@ const NoticiasV = ({ title, description, src, url }) => {
           <a href={url} target="_blank" rel="noopener noreferrer">
             Leer más
           </a>
+          <span>{source.name}</span>
+          <span>{publishedAt}</span>
         </Card.Body>
       </Card>
     </div>
