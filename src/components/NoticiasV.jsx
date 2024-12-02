@@ -9,14 +9,19 @@ const NoticiasV = ({ title, description, src, url, source, publishedAt }) => {
       <Card>
         <Card.Img variant="top" src={src ? src : { cardUno }} />
         <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{description}</Card.Text>
+          <Card.Title class="card-title">{title}</Card.Title>
+          <Card.Text className="card-textoDesc">{description}</Card.Text>
 
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            Leer más
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            Leer Más <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>
-          <span>{source.name}</span>
-          <span>{publishedAt}</span>
+          {/* <span>{source.name}</span>
+          <span>{publishedAt}</span> */}
         </Card.Body>
       </Card>
     </div>
