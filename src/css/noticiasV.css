@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "raleway-medium";
+  src: url("../assets/fonts/Raleway/static/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-ligth";
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+
 .card {
   width: 30rem;
   height: 100%;
@@ -12,6 +27,19 @@
 
 .card-title {
   min-height: 3rem;
+  font-family: "raleway-medium";
+  font-size: 1.6rem;
+}
+
+.card-textoDesc {
+  font-family: "montserrat-ligth";
+  font-size: 1.3rem;
+}
+
+.card-link {
+  font-family: "montserrat-medium";
+  font-size: 1.3rem;
+  text-decoration: none;
 }
 
 .card-img-top {
