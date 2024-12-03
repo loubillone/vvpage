@@ -14,11 +14,12 @@
 }
 
 .card-noticias {
-  width: 100%;
+  width: 95%;
   height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 5rem;
 }
 
 .card-body {
