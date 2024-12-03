@@ -13,27 +13,36 @@
   src: url("../assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
 }
 
-.card {
-  width: 30rem;
-  height: 100%;
+.card-noticias {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-body {
-  min-height: 200px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 25rem;
 }
 
 .card-title {
-  min-height: 3rem;
   font-family: "raleway-medium";
   font-size: 1.6rem;
+  min-height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-textoDesc {
   font-family: "montserrat-ligth";
   font-size: 1.3rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-link {
@@ -43,7 +52,6 @@
 }
 
 .card-img-top {
-  height: 200px;
-  width: 100%;
+  height: 25rem;
   object-fit: cover;
 }
