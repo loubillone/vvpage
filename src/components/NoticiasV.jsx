@@ -6,7 +6,7 @@ import cardUno from "../assets/img/cardsNoticias/cardUno.png";
 const NoticiasV = ({ title, description, src, url, source, publishedAt }) => {
   return (
     <div className="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-4 offset-lg-0 mb-5">
-      <Card>
+      <Card className="card-noticias">
         <Card.Img variant="top" src={src ? src : { cardUno }} />
         <Card.Body>
           <Card.Title class="card-title">{title}</Card.Title>
