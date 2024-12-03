@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "raleway-semibold";
+  src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+.fila-noticias-index {
+  width: 50%;
+}
+
+.titulo-noticias-index {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  font-family: "raleway-semibold";
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .titulo-noticias-index {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-noticias-index {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-left: 3.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/*MEDIA QUERIES*/
