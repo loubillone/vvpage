@@ -35,6 +35,8 @@
   min-height: 3rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .card-textoDesc {
@@ -43,15 +45,30 @@
   flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-bottom: 1rem;
 }
 
 .card-link {
   font-family: "montserrat-medium";
   font-size: 1.3rem;
   text-decoration: none;
+  padding-bottom: 1rem;
 }
 
 .card-img-top {
   height: 25rem;
   object-fit: cover;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    white-space: nowrap;
+  }
+}
+
+/*MEDIA QUERIES*/
