@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NoticiasV from "./NoticiasV";
+import "../css/ultimasNoticias.css";
 
 const UltimasNoticias = () => {
   const [articulos, setArticulos] = useState([]);
@@ -27,7 +28,7 @@ const UltimasNoticias = () => {
           <h4>ÚLTIMAS NOTICIAS</h4>
         </div>
 
-        <div className="row">
+        <div className="row fila-card-index">
           {articulos.map((articulo, index) => {
             return (
               <NoticiasV
