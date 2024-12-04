@@ -7,9 +7,16 @@ const NoticiasV = ({ title, description, src, url, source, publishedAt }) => {
   return (
     <div className="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-4 offset-lg-0">
       <Card className="card-noticias">
-        <Card.Img variant="top" src={src ? src : cardUno} />
+        <Card.Img
+          variant="top"
+          src={src || cardUno}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = cardUno;
+          }}
+        />
         <Card.Body>
-          <Card.Title class="card-title">{title}</Card.Title>
+          <Card.Title className="card-title">{title}</Card.Title>
           <Card.Text className="card-textoDesc">{description}</Card.Text>
 
           <a
@@ -18,7 +25,8 @@ const NoticiasV = ({ title, description, src, url, source, publishedAt }) => {
             rel="noopener noreferrer"
             className="card-link"
           >
-            Leer Más <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            Leer Más{" "}
+            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>
           {/* <span>{source.name}</span>
           <span>{publishedAt}</span> */}
