@@ -21,6 +21,12 @@
   justify-content: space-between;
   margin-bottom: 5rem;
   margin-left: 4rem;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-noticias:hover {
+  background-color: #d0d0d0;
+  box-shadow: 5px 5px 5px 3px #646464;
 }
 .card-body {
   flex: 1;
