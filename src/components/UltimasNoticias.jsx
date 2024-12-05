@@ -10,7 +10,7 @@ const UltimasNoticias = () => {
     const getNoticias = async () => {
       try {
         const resp = await axios.get(
-          `https://newsapi.org/v2/everything?q="victoria-villarruel"&pageSize=6&excludeDomains=lapoliticaonline.com,laizquierdadiario.com,derechadiario.com.ar,noticias.perfil.com,actualidad.rt.com&sortBy=publishedAt&apiKey=d23648580208429392e6f42665303f0f`
+          `https://newsapi.org/v2/everything?q=+"victoria-villarruel",-"lemoine",-"milei"&searchIn=title&pageSize=6&excludeDomains=lapoliticaonline.com,laizquierdadiario.com,derechadiario.com.ar,perfil.com,actualidad.rt.com&sortBy=publishedAt&apiKey=d23648580208429392e6f42665303f0f`
         );
 
         setArticulos(resp.data.articles);
