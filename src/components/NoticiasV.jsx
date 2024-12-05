@@ -16,7 +16,7 @@ const NoticiasV = ({ title, description, src, url, source, publishedAt }) => {
           }}
         />
         <Card.Body>
-          <Card.Title className="card-title">{title}</Card.Title>
+          <Card.Title className="card-title-index">{title}</Card.Title>
           <Card.Text className="card-textoDesc">{description}</Card.Text>
 
           <a

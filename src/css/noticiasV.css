@@ -36,7 +36,7 @@
   height: 25rem;
 }
 
-.card-title {
+.card-title-index {
   font-family: "raleway-medium";
   font-size: 1.5rem;
   min-height: 3rem;
@@ -73,7 +73,7 @@
     width: 85%;
     margin-left: 3rem;
   }
-  .card-title {
+  .card-title-index {
     white-space: nowrap;
     overflow: hidden;
   }
@@ -84,9 +84,22 @@
     width: 100%;
     margin-left: 0rem;
   }
-  .card-title {
+
+  .card-body {
+    height: 20rem;
+  }
+
+  .card-title-index {
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  .card-textoDesc {
+    font-size: 1.1rem;
+  }
+
+  .card-img-top {
+    height: 21rem;
   }
 }
 
