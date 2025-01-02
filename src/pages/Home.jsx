@@ -1,6 +1,7 @@
 import React from "react";
 import FlyerHome from "../components/FlyerHome";
 import UltimasNoticias from "../components/UltimasNoticias";
+import FotosIndex from "../components/FotosIndex";
 
 const Home = () => {
   return (
@@ -8,6 +9,8 @@ const Home = () => {
       <FlyerHome />
 
       <UltimasNoticias />
+
+      <FotosIndex />
     </div>
   );
 };
