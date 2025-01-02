@@ -15,16 +15,23 @@
   background-repeat: no-repeat;
   margin-top: 10rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .box-indexJM {
   background-color: brown;
-  width: 40rem;
-  height: 40rem;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 8rem;
+  left: 81rem;
 }
 
 .box-indexVV {
   background-color: rgb(42, 75, 165);
-  width: 40rem;
-  height: 40rem;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 86.5rem;
+  right: 81rem;
 }

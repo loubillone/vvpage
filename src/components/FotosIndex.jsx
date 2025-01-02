@@ -21,14 +21,14 @@ const FotosIndex = () => {
             alt="Victoria Villarruel en la salida de la gala del teatro Colón"
           />
         </div>
-      </div>
 
-      <div className="box-indexJM">
-        <h2>JAVIER MILEI</h2>
-      </div>
+        <div className="box-indexJM">
+          <h2>JAVIER MILEI</h2>
+        </div>
 
-      <div className="box-indexVV">
-        <h1>VICTORIA VILLARRUEL</h1>
+        <div className="box-indexVV">
+          <h1>VICTORIA VILLARRUEL</h1>
+        </div>
       </div>
     </div>
   );
