@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "raleway-bold";
+  src: url("../assets/fonts/Raleway/static/Raleway-Bold.ttf");
+}
+
 .fila-fotos-index {
   display: flex;
   justify-content: center;
@@ -19,19 +24,60 @@
 }
 
 .box-indexJM {
-  background-color: brown;
+  background-color: #ffffff;
   width: 45rem;
   height: 58rem;
   position: absolute;
   top: 8rem;
   left: 81rem;
+  color: #000000;
 }
 
 .box-indexVV {
-  background-color: rgb(42, 75, 165);
+  background-color: #ffffff;
   width: 45rem;
   height: 58rem;
   position: absolute;
   top: 86.5rem;
   right: 81rem;
+}
+
+.texto-box-index {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.titulo-box {
+  font-family: "raleway-regular";
+  color: #000000;
+  font-size: 3.6rem;
+}
+
+.titulo-box-dos {
+  font-family: "raleway-bold";
+  color: #000000;
+  font-size: 3.6rem;
+  padding-bottom: 2.5rem;
+}
+
+.subtitulo-box {
+  font-family: "raleway-regular";
+  color: #4e4e4e;
+  font-size: 1.3rem;
+  padding-bottom: 2.5rem;
+}
+
+.titulo-parrafo-box {
+  font-family: "raleway-regular";
+  color: #000000;
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+.texto-parrafo-box {
+  font-family: "raleway-regular";
+  color: #000000;
+  font-size: 1.4rem;
+  text-align: justify;
 }
