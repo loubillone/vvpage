@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "raleway-bold";
+  src: url("../assets/fonts/Raleway/static/Raleway-Bold.ttf");
+}
+
+.fila-fotos-index {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.imagenIndex {
+  width: 100%;
+  cursor: pointer;
+}
+
+.container-fotos-index {
+  background-image: url(../assets/img/index/lazo-arg.png);
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.box-indexJM {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 8rem;
+  left: 81rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.box-indexVV {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 86.5rem;
+  right: 81rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.8s ease;
+}
+
+.box-indexJM.active,
+.box-indexVV.active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.texto-box-index {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.titulo-box {
+  font-family: "raleway-regular";
+  color: #000000;
+  font-size: 3.6rem;
+}
+
+.titulo-box-dos {
+  font-family: "raleway-bold";
+  color: #000000;
+  font-size: 3.6rem;
+  padding-bottom: 2.5rem;
+}
+
+.subtitulo-box {
+  font-family: "raleway-regular";
+  color: #4e4e4e;
+  font-size: 1.3rem;
+  padding-bottom: 2.5rem;
+}
+
+.titulo-parrafo-box {
+  font-family: "raleway-regular";
+  color: #000000;
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+.texto-parrafo-box {
+  font-family: "raleway-regular";
+  color: #000000;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .container-fotos-index {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-size: contain;
+  }
+  .box-indexJM {
+    width: 25rem;
+    height: 35rem;
+    top: 2.8rem;
+    left: 46rem;
+  }
+
+  .box-indexVV {
+    width: 25rem;
+    height: 33.5rem;
+    top: 50rem;
+    right: 45rem;
+  }
+
+  .texto-box-index {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .titulo-box {
+    font-size: 2rem;
+  }
+
+  .titulo-box-dos {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .subtitulo-box {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .titulo-parrafo-box {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  .texto-parrafo-box {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-fotos-index {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    background-size: contain;
+  }
+
+  .fila-fotos-index {
+    gap: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .box-indexJM {
+    width: 12rem;
+    height: 14rem;
+    top: 2rem;
+    left: 22rem;
+  }
+
+  .box-indexVV {
+    width: 12rem;
+    height: 14rem;
+    top: 24.5rem;
+    right: 22rem;
+  }
+
+  .texto-box-index {
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .titulo-box {
+    font-size: 1rem;
+  }
+
+  .titulo-box-dos {
+    font-size: 1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .subtitulo-box {
+    font-size: 0.7rem;
+    padding-bottom: 0rem;
+  }
+
+  .titulo-parrafo-box {
+    display: none;
+  }
+  .texto-parrafo-box {
+    font-size: 0.4rem;
+  }
+}
+
+/*MEDIA QUERIES*/
