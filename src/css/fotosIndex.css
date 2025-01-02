@@ -1,0 +1,30 @@
+.fila-fotos-index {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.imagenIndex {
+  width: 100%;
+}
+
+.container-fotos-index {
+  background-image: url(../assets/img/index/lazo-arg.png);
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.box-indexJM {
+  background-color: brown;
+  width: 40rem;
+  height: 40rem;
+}
+
+.box-indexVV {
+  background-color: rgb(42, 75, 165);
+  width: 40rem;
+  height: 40rem;
+}
