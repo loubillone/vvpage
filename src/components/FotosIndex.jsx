@@ -29,7 +29,7 @@ const FotosIndex = () => {
         </div>
 
         <div className={`box-indexJM ${activeBox === "boxJM" ? "active" : ""}`}>
-          <div className="texto-box-index">
+          <div className="texto-box-index ">
             <h2 className="titulo-box">Javier</h2>
             <h2 className="titulo-box-dos">Milei</h2>
             <h6 className="subtitulo-box">Presidente de la Nación</h6>
