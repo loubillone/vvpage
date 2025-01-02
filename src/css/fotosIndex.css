@@ -13,6 +13,7 @@
 
 .imagenIndex {
   width: 100%;
+  cursor: pointer;
 }
 
 .container-fotos-index {
@@ -30,7 +31,10 @@
   position: absolute;
   top: 8rem;
   left: 81rem;
-  color: #000000;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .box-indexVV {
@@ -40,6 +44,18 @@
   position: absolute;
   top: 86.5rem;
   right: 81rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.box-indexJM.active,
+.box-indexVV.active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .texto-box-index {

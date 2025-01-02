@@ -1,30 +1,36 @@
-import React from "react";
-import lazo from "../assets/img/index/lazo-arg.png";
+import React, { useState } from "react";
 import vvgala from "../assets/img/index/vv-gala-index.png";
 import vvjm from "../assets/img/index/vv-jm-index.png";
 import "../css/fotosIndex.css";
 
 const FotosIndex = () => {
+  const [activeBox, setActiveBox] = useState(null);
+
+  const toggleBox = (box) => {
+    setActiveBox(activeBox === box ? null : box);
+  };
   return (
     <div>
       <div className="container-fluid container-fotos-index">
         <div className="row fila-fotos-index">
           <img
+            onClick={() => toggleBox("boxJM")}
             className="imagenIndex"
             src={vvjm}
             alt="Victoria Villarruel y Javier Milei en la asunción presidencial"
           />
 
           <img
+            onClick={() => toggleBox("boxVV")}
             className="imagenIndex"
             src={vvgala}
-            alt="Victoria Villarruel en la salida de la gala del teatro Colón"
+            alt="Victoria Villarruel en la gala del Teatro Colón"
           />
         </div>
 
-        <div className="box-indexJM">
+        <div className={`box-indexJM ${activeBox === "boxJM" ? "active" : ""}`}>
           <div className="texto-box-index">
-            <h2 className="titulo-box">Javier </h2>
+            <h2 className="titulo-box">Javier</h2>
             <h2 className="titulo-box-dos">Milei</h2>
             <h6 className="subtitulo-box">Presidente de la Nación</h6>
             <h5 className="titulo-parrafo-box">
@@ -44,9 +50,9 @@ const FotosIndex = () => {
           </div>
         </div>
 
-        <div className="box-indexVV">
+        <div className={`box-indexVV ${activeBox === "boxVV" ? "active" : ""}`}>
           <div className="texto-box-index">
-            <h1 className="titulo-box">Victoria </h1>
+            <h1 className="titulo-box">Victoria</h1>
             <h2 className="titulo-box-dos">Villarruel</h2>
             <h6 className="subtitulo-box">Vicepresidente de la Nación</h6>
             <h5 className="titulo-parrafo-box">
