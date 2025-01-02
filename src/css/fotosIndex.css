@@ -19,7 +19,7 @@
   background-image: url(../assets/img/index/lazo-arg.png);
   background-repeat: no-repeat;
   margin-top: 10rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
   position: relative;
 }
 
@@ -81,3 +81,65 @@
   font-size: 1.4rem;
   text-align: justify;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .container-fotos-index {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    background-size: contain;
+  }
+
+  .fila-fotos-index {
+    gap: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .box-indexJM {
+    width: 12rem;
+    height: 14rem;
+    top: 2rem;
+    left: 22rem;
+  }
+
+  .box-indexVV {
+    width: 12rem;
+    height: 14rem;
+    top: 24.5rem;
+    right: 22rem;
+  }
+
+  .texto-box-index {
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .titulo-box {
+    font-size: 1rem;
+  }
+
+  .titulo-box-dos {
+    font-size: 1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .subtitulo-box {
+    font-size: 0.7rem;
+    padding-bottom: 0rem;
+  }
+
+  .titulo-parrafo-box {
+    display: none;
+  }
+  .texto-parrafo-box {
+    font-size: 0.4rem;
+    text-align: justify;
+  }
+}
+
+/*MEDIA QUERIES*/
