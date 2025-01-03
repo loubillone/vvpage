@@ -51,6 +51,11 @@
   opacity: 0.8;
 }
 
+.enlaces-footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .texto-final-footer {
   font-family: "raleway-medium";
   font-size: 1.1rem;
