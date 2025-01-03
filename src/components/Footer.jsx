@@ -124,19 +124,49 @@ const Footer = () => {
             </div>
             <div>
               <div className="col enlaces-footer">
-                <span>Twitter</span>
+                <a
+                  href="https://x.com/VickyVillarruel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Twitter</span>
+                </a>
               </div>
               <div className="col enlaces-footer">
-                <span>Facebook</span>
+                <a
+                  href="https://www.facebook.com/victoria.e.villarruel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Facebook</span>
+                </a>
               </div>
               <div className="col enlaces-footer">
-                <span>Instagram</span>
+                <a
+                  href="https://www.instagram.com/victoria.villarruel/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Instagram</span>
+                </a>
               </div>
               <div className="col enlaces-footer">
-                <span>TikTok</span>
+                <a
+                  href="https://www.tiktok.com/@victoriavillarruel_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Tik Tok</span>
+                </a>
               </div>
               <div className="col enlaces-footer">
-                <span>Youtube</span>
+                <a
+                  href="https://www.youtube.com/@Victoria-villarruel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>YouTube</span>
+                </a>
               </div>
             </div>
           </div>
