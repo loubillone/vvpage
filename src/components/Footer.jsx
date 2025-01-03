@@ -116,6 +116,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className="row">
+          <span className="texto-final-footer">
+            Esta página web es una iniciativa independiente y no representa de
+            manera oficial a Victoria Villarruel o su partido.
+          </span>
+        </div>
       </div>
     </div>
   );
