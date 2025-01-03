@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/footer.css";
+import { NavLink } from "react-router-dom";
 import facebook from "../assets/img/footer/facebook.png";
 import instagram from "../assets/img/footer/instagram.png";
 import x from "../assets/img/footer/x.png";
@@ -74,22 +75,22 @@ const Footer = () => {
             <span className="titulo-enlaces-footer">Navegación</span>
 
             <div className="col enlaces-footer">
-              <span>Inicio</span>
+              <NavLink to="/">Inicio</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <span>Biografía</span>
+              <NavLink to="/biografia">Biografía</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <span>Trayectoria</span>
+              <NavLink to="/trayectoria">Trayectoria</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <span>Noticias</span>
+              <NavLink to="/noticias">Noticias</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <span>Galería</span>
+              <NavLink to="/galeria">Galeria</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <span>Contacto</span>
+              <NavLink to="/contacto">Contacto</NavLink>
             </div>
           </div>
           <div className="col">
