@@ -13,28 +13,53 @@ const Footer = () => {
         <div className="row">
           <div className="col columna-iconos-footer">
             <div>
-              <img
-                src={facebook}
-                alt="icono facebook"
-                className="iconos-footer"
-              />
+              <a
+                href="https://www.facebook.com/victoria.e.villarruel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={facebook}
+                  alt="icono facebook"
+                  className="iconos-footer"
+                />
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://x.com/VickyVillarruel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={x} alt="icono x" className="iconos-footer" />
+              </a>
             </div>
             <div>
-              <img src={x} alt="icono x" className="iconos-footer" />
+              <a
+                href="https://www.instagram.com/victoria.villarruel/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={instagram}
+                  alt="icono instragram"
+                  className="iconos-footer"
+                />
+              </a>
             </div>
             <div>
-              <img
-                src={instagram}
-                alt="icono instragram"
-                className="iconos-footer"
-              />
-            </div>
-            <div>
-              <img
-                src={youtube}
-                alt="icono youtube"
-                className="iconos-footer"
-              />
+              <a
+                href="https://www.youtube.com/@Victoria-villarruel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={youtube}
+                  alt="icono youtube"
+                  className="iconos-footer"
+                />
+              </a>
             </div>
           </div>
         </div>
