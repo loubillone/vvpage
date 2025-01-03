@@ -1,0 +1,46 @@
+.container-footer {
+  background: radial-gradient(#1d2651, #021d40);
+}
+
+.columna-iconos-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 4rem;
+  padding-top: 4rem;
+  margin-right: 4rem;
+}
+
+.iconos-footer {
+  width: 2rem;
+}
+
+.columna-logoVV-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.logoVV-footer {
+  width: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.titulo-enlaces-footer {
+  font-family: "raleway-semibold";
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.enlaces-footer {
+  color: #ffffff;
+  font-family: "raleway-regular";
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.fila-container-texto-footer {
+  width: 100%;
+  padding-left: 20rem;
+}
