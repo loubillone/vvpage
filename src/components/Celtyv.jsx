@@ -3,7 +3,7 @@ import React from "react";
 const Celtyv = () => {
   return (
     <div>
-      <h2>celtyv</h2>
+      <h2>CELTYV PRUEBA</h2>
     </div>
   );
 };

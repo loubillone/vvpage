@@ -3,7 +3,7 @@ import React from "react";
 const Malvinas = () => {
   return (
     <div>
-      <h2>Malvinas</h2>
+      <h2>Malvinas PRUEBA</h2>
     </div>
   );
 };
