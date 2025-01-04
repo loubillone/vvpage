@@ -1,0 +1,108 @@
+.fila-fotos-biografia {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.container-fotos-biografia {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.imagenBiografia {
+  width: 100%;
+  cursor: pointer;
+}
+
+.box-vickyGala {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 6rem;
+  left: 9rem;
+  /* opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease; */
+}
+
+.box-vickyJavier {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 82rem;
+  left: 81rem;
+  /* opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease; */
+}
+
+.box-asuncion {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 160rem;
+  left: 9rem;
+  /* opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease; */
+}
+
+.box-eeuu {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 235rem;
+  left: 81rem;
+  /* opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease; */
+}
+
+.box-eduardo {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 312rem;
+  left: 9rem;
+  /* opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease; */
+}
+
+.box-vickyLibros {
+  background-color: #ffffff;
+  width: 45rem;
+  height: 58rem;
+  position: absolute;
+  top: 388rem;
+  left: 81rem;
+  /* opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease; */
+}
+
+.box-vickyGala.active,
+.box-vickyJavier.active,
+.box-asuncion.active,
+.box-eeuu.active,
+.box-eduardo.active,
+.box-vickyLibros.active {
+  /* display: block; */
+  /* opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0); */
+}
