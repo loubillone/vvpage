@@ -8,9 +8,8 @@ import Noticias from "../pages/Noticias";
 import Galeria from "../pages/Galeria";
 import Contacto from "../pages/Contacto";
 import Footer from "../components/Footer";
-import Celtyv from "../pages/Celtyv";
-import Malvinas from "../pages/Malvinas";
-
+import Celtyv from "../components/Celtyv";
+import Malvinas from "../components/Malvinas";
 const AppRouter = () => {
   return (
     <div>
