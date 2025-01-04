@@ -38,3 +38,28 @@
   align-items: center;
   padding-bottom: 3rem;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .contenedor-iconos-compromiso {
+    margin-bottom: 3rem;
+  }
+  .titulo-compromiso {
+    font-size: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .col-icono-compromiso img {
+    width: 6.5rem;
+  }
+  .texto-iconos-compromiso {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/*MEDIA QUERIES*/
