@@ -8,49 +8,52 @@ import eduardo from "../assets/img/biografia/victoria/eduardo.png";
 import vickyLibro from "../assets/img/biografia/victoria/vickyLibro.png";
 
 const Biografia = () => {
-  const [activeBox, setActiveBox] = useState(null);
-  const toggleBox = (box) => {
-    setActiveBox(activeBox === box ? null : box);
+  const [activeBoxes, setActiveBoxes] = useState([]);
+
+  const activateBox = (box) => {
+    if (!activeBoxes.includes(box)) {
+      setActiveBoxes([...activeBoxes, box]);
+    }
   };
   return (
     <div>
       <div className="container-fluid container-fotos-biografia">
         <div className="row fila-fotos-biografia">
           <img
-            onClick={() => toggleBox("boxVG")}
+            onMouseEnter={() => activateBox("boxVG")}
             className="imagenBiografia"
             src={vickyGala}
             alt="Victoria Villarruel en la gala de la asuncion en el teatro colon"
           />
           <img
-            onClick={() => toggleBox("boxVJ")}
+            onMouseEnter={() => activateBox("boxVJ")}
             className="imagenBiografia"
             src={vickyJavier}
             alt="Victoria Villarruel junto a Javier Milei"
           />
           <img
-            onClick={() => toggleBox("boxAsuncion")}
+            onMouseEnter={() => activateBox("boxAsuncion")}
             className="imagenBiografia"
             src={asuncion}
             alt="Victoria Villarruel en las escalinatas del congreso el día de la asunción presidencial"
           />
 
           <img
-            onClick={() => toggleBox("boxEEUU")}
+            onMouseEnter={() => activateBox("boxEEUU")}
             className="imagenBiografia"
             src={eeuu}
             alt="Victoria Villarruel junto al embajador de EEUU"
           />
 
           <img
-            onClick={() => toggleBox("boxEV")}
+            onMouseEnter={() => activateBox("boxEV")}
             className="imagenBiografia"
             src={eduardo}
             alt="Eduardo Villarruel"
           />
 
           <img
-            onClick={() => toggleBox("boxLibros")}
+            onMouseEnter={() => activateBox("boxLibros")}
             className="imagenBiografia"
             src={vickyLibro}
             alt="Victoria Villarruel con su libros"
@@ -58,7 +61,9 @@ const Biografia = () => {
         </div>
 
         <div
-          className={`box-vickyGala ${activeBox === "boxVG" ? "active" : ""}`}
+          className={`box-vickyGala ${
+            activeBoxes.includes("boxVG") ? "active" : ""
+          }`}
         >
           <div className="texto-box-index ">
             <h2 className="titulo-box">Victoria</h2>
@@ -76,7 +81,9 @@ const Biografia = () => {
         </div>
 
         <div
-          className={`box-vickyJavier ${activeBox === "boxVJ" ? "active" : ""}`}
+          className={`box-vickyJavier ${
+            activeBoxes.includes("boxVJ") ? "active" : ""
+          }`}
         >
           <div className="texto-box-index ">
             <h2 className="titulo-box">Activismo</h2>
@@ -100,7 +107,7 @@ const Biografia = () => {
 
         <div
           className={`box-asuncion ${
-            activeBox === "boxAsuncion" ? "active" : ""
+            activeBoxes.includes("boxAsuncion") ? "active" : ""
           }`}
         >
           <div className="texto-box-index ">
@@ -122,7 +129,11 @@ const Biografia = () => {
           </div>
         </div>
 
-        <div className={`box-eeuu ${activeBox === "boxEEUU" ? "active" : ""}`}>
+        <div
+          className={`box-eeuu ${
+            activeBoxes.includes("boxEEUU") ? "active" : ""
+          }`}
+        >
           <div className="texto-box-index ">
             <h2 className="titulo-box">Pensamiento y</h2>
             <h2 className="titulo-box-dos">Posturas</h2>
@@ -136,7 +147,11 @@ const Biografia = () => {
           </div>
         </div>
 
-        <div className={`box-eduardo ${activeBox === "boxEV" ? "active" : ""}`}>
+        <div
+          className={`box-eduardo ${
+            activeBoxes.includes("boxEV") ? "active" : ""
+          }`}
+        >
           <div className="texto-box-index ">
             <h2 className="titulo-box">Soldados de Malvinas</h2>
             <p className="texto-parrafo-box">
@@ -160,7 +175,7 @@ const Biografia = () => {
 
         <div
           className={`box-vickyLibros ${
-            activeBox === "boxLibros" ? "active" : ""
+            activeBoxes.includes("boxLibros") ? "active" : ""
           }`}
         >
           <div className="texto-box-index ">

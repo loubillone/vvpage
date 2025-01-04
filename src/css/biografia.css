@@ -24,10 +24,10 @@
   position: absolute;
   top: 6rem;
   left: 9rem;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .box-vickyJavier {
@@ -37,10 +37,10 @@
   position: absolute;
   top: 82rem;
   left: 81rem;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .box-asuncion {
@@ -50,10 +50,10 @@
   position: absolute;
   top: 160rem;
   left: 9rem;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .box-eeuu {
@@ -63,10 +63,10 @@
   position: absolute;
   top: 235rem;
   left: 81rem;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .box-eduardo {
@@ -76,10 +76,10 @@
   position: absolute;
   top: 312rem;
   left: 9rem;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .box-vickyLibros {
@@ -89,10 +89,10 @@
   position: absolute;
   top: 388rem;
   left: 81rem;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .box-vickyGala.active,
@@ -101,8 +101,8 @@
 .box-eeuu.active,
 .box-eduardo.active,
 .box-vickyLibros.active {
-  /* display: block; */
-  /* opacity: 1;
+  display: block;
+  opacity: 1;
   pointer-events: auto;
-  transform: translateY(0); */
+  transform: translateY(0);
 }
