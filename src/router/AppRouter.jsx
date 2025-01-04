@@ -8,6 +8,8 @@ import Noticias from "../pages/Noticias";
 import Galeria from "../pages/Galeria";
 import Contacto from "../pages/Contacto";
 import Footer from "../components/Footer";
+import Celtyv from "../pages/Celtyv";
+import Malvinas from "../pages/Malvinas";
 
 const AppRouter = () => {
   return (
@@ -17,6 +19,8 @@ const AppRouter = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/biografia" element={<Biografia />} />
+          <Route path="/celtyv" element={<Celtyv />} />
+          <Route path="/malvinas" element={<Malvinas />} />
           <Route path="/trayectoria" element={<Trayectoria />} />
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/galeria" element={<Galeria />} />
