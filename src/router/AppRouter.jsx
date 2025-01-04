@@ -7,6 +7,7 @@ import Trayectoria from "../pages/Trayectoria";
 import Noticias from "../pages/Noticias";
 import Galeria from "../pages/Galeria";
 import Contacto from "../pages/Contacto";
+import Footer from "../components/Footer";
 
 const AppRouter = () => {
   return (
@@ -21,6 +22,7 @@ const AppRouter = () => {
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
