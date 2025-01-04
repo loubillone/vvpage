@@ -22,15 +22,24 @@ const Navegador = () => {
                 Inicio
               </Nav.Link>
               <NavDropdown
-                title="Biografía"
+                title="Biografia"
                 id="basic-nav-dropdown"
                 className="nav-items no-border-dropdown"
               >
                 <NavDropdown.Item href="#action/3.1" className="nav-items-drop">
-                  CELTYV
+                  <Nav.Link as={NavLink} to="/biografia" className="nav-items">
+                    Victoria
+                  </Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2" className="nav-items-drop">
-                  Malvinas
+                  <Nav.Link as={NavLink} to="/celtyv" className="nav-items">
+                    Celtyv
+                  </Nav.Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3" className="nav-items-drop">
+                  <Nav.Link as={NavLink} to="/malvinas" className="nav-items">
+                    Malvinas
+                  </Nav.Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={NavLink} to="/trayectoria" className="nav-items">
