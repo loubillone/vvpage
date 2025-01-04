@@ -1,0 +1,35 @@
+.fila-texto-compromiso {
+  text-align: center;
+  padding-bottom: 5rem;
+  font-family: "raleway-semibold";
+}
+
+.titulo-compromiso {
+  color: #2e2e2e;
+  font-size: 4.5rem;
+  padding-bottom: 3rem;
+}
+
+.contenedor-iconos-compromiso {
+  display: flex;
+  font-family: "raleway-semibold";
+  color: #2e2e2e;
+  margin-bottom: 7rem;
+}
+
+.col-icono-compromiso img {
+  width: 10rem;
+  padding-bottom: 2rem;
+}
+
+.texto-iconos-compromiso {
+  font-size: 2rem;
+}
+
+.col-icono-compromiso {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
