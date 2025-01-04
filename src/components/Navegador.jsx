@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,13 +12,13 @@ const Navegador = () => {
     <div>
       <Navbar expand="lg" sticky="top">
         <Container fluid>
-          <Navbar.Brand href="#home" className="vvIndex">
+          <Navbar.Brand as={Link} to="/" className="vvIndex">
             <img src={vvIndex} alt="victoria villarruel" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home" className="nav-items">
+              <Nav.Link as={NavLink} to="/" className="nav-items">
                 Inicio
               </Nav.Link>
               <NavDropdown
@@ -32,16 +33,20 @@ const Navegador = () => {
                   Malvinas
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#link" className="nav-items">
+              <Nav.Link as={NavLink} to="/trayectoria" className="nav-items">
                 Trayectoria
               </Nav.Link>
-              <Nav.Link href="#link" className="nav-items">
+              <Nav.Link as={NavLink} to="/noticias" className="nav-items">
                 Noticias
               </Nav.Link>
-              <Nav.Link href="#link" className="nav-items">
+              <Nav.Link as={NavLink} to="/galeria" className="nav-items">
                 Galeria
               </Nav.Link>
-              <Nav.Link href="#link" className="nav-items-contacto">
+              <Nav.Link
+                as={NavLink}
+                to="/contacto"
+                className="nav-items-contacto"
+              >
                 Contacto
               </Nav.Link>
             </Nav>
