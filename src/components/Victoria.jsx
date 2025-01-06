@@ -81,7 +81,7 @@ const Victoria = () => {
             </p>
 
             <a
-              href=""
+              href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
               className="link-vickyGala"
               target="_blank"
               rel="noopener noreferrer"
@@ -114,7 +114,7 @@ const Victoria = () => {
             </p>
 
             <a
-              href=""
+              href="https://celtyv.org/?fbclid=PAZXh0bgNhZW0CMTEAAaYzgPi_HbXMVvVvcbaBc0AkFI2YGfddNz-DqgElh2Gb_-jc6xPKYgecdE4_aem_o8OkJHWhQ4KZFoiksx2qXw"
               className="link-vickyJavier"
               target="_blank"
               rel="noopener noreferrer"
@@ -147,7 +147,7 @@ const Victoria = () => {
             </p>
 
             <a
-              href=""
+              href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
               className="link-vickyAsuncion"
               target="_blank"
               rel="noopener noreferrer"
@@ -176,7 +176,7 @@ const Victoria = () => {
             </p>
 
             <a
-              href=""
+              href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
               className="link-vickyEeuu"
               target="_blank"
               rel="noopener noreferrer"
@@ -207,7 +207,7 @@ const Victoria = () => {
             </p>
 
             <a
-              href=""
+              href="https://www.infobae.com/sociedad/2024/04/02/el-comando-que-queria-seguir-combatiendo-como-fue-la-actuacion-de-eduardo-villarruel-el-padre-de-la-vicepresidente-en-la-guerra-de-malvinas/"
               className="link-vickyEduardo"
               target="_blank"
               rel="noopener noreferrer"
@@ -231,7 +231,7 @@ const Victoria = () => {
             </p>
 
             <a
-              href=""
+              href="https://celtyv.org/category/libros/"
               className="link-vickyLibros"
               target="_blank"
               rel="noopener noreferrer"
