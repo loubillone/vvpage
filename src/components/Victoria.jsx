@@ -17,44 +17,44 @@ const Victoria = () => {
   };
   return (
     <div>
-      <div className="container-fluid container-fotos-biografia">
-        <div className="row fila-fotos-biografia">
+      <div className="container-fluid container-fotos-victoria">
+        <div className="row fila-fotos-victoria">
           <img
             onMouseEnter={() => activateBox("boxVG")}
-            className="imagenBiografia"
+            className="imagenBiografia-victoria"
             src={vickyGala}
             alt="Victoria Villarruel en la gala de la asuncion en el teatro colon"
           />
           <img
             onMouseEnter={() => activateBox("boxVJ")}
-            className="imagenBiografia"
+            className="imagenBiografia-victoria"
             src={vickyJavier}
             alt="Victoria Villarruel junto a Javier Milei"
           />
           <img
             onMouseEnter={() => activateBox("boxAsuncion")}
-            className="imagenBiografia"
+            className="imagenBiografia-victoria"
             src={asuncion}
             alt="Victoria Villarruel en las escalinatas del congreso el día de la asunción presidencial"
           />
 
           <img
             onMouseEnter={() => activateBox("boxEEUU")}
-            className="imagenBiografia"
+            className="imagenBiografia-victoria"
             src={eeuu}
             alt="Victoria Villarruel junto al embajador de EEUU"
           />
 
           <img
             onMouseEnter={() => activateBox("boxEV")}
-            className="imagenBiografia"
+            className="imagenBiografia-victoria"
             src={eduardo}
             alt="Eduardo Villarruel"
           />
 
           <img
             onMouseEnter={() => activateBox("boxLibros")}
-            className="imagenBiografia"
+            className="imagenBiografia-victoria"
             src={vickyLibro}
             alt="Victoria Villarruel con su libros"
           />
@@ -65,11 +65,13 @@ const Victoria = () => {
             activeBoxes.includes("boxVG") ? "active" : ""
           }`}
         >
-          <div className="texto-box-index ">
-            <h2 className="titulo-box">Victoria</h2>
-            <h2 className="titulo-box-dos">Villarruel</h2>
-            <h6 className="subtitulo-box">Vicepresidente de la Nación</h6>
-            <p className="texto-parrafo-box">
+          <div className="texto-box-victoria">
+            <h2 className="titulo-box-victoria">Victoria</h2>
+            <h2 className="titulo-box-victoriaDos">Villarruel</h2>
+            <h6 className="subtitulo-box-victoria">
+              Vicepresidente de la Nación
+            </h6>
+            <p className="texto-parrafo-box-victoria">
               Victoria Eugenia Villarruel (Buenos Aires, 13 de abril de 1975) es
               una abogada, escritora, activista y política argentina, actual
               vicepresidenta de la Nación Argentina desde el 10 de diciembre de
@@ -77,6 +79,15 @@ const Victoria = () => {
               Estudios Legales sobre el Terrorismo y sus Víctimas (CELTYV), la
               cual preside desde sus inicios.
             </p>
+
+            <a
+              href=""
+              className="link-vickyGala"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver Más
+            </a>
           </div>
         </div>
 
@@ -85,15 +96,14 @@ const Victoria = () => {
             activeBoxes.includes("boxVJ") ? "active" : ""
           }`}
         >
-          <div className="texto-box-index ">
-            <h2 className="titulo-box">Activismo</h2>
+          <div className="texto-box-victoria">
+            <h2 className="titulo-box-victoriaDos">Activismo</h2>
 
-            <h6 className="subtitulo-box">Inicios</h6>
-            <p className="texto-parrafo-box">
-              Villarruel comenzó su activismo político en el grupo de Karina
-              Mujica y fue parte de la Asociación de Familiares y Amigos de los
-              Presos Políticos de la Argentina (AFyAPPA). Lideró un programa de
-              radio llamado Proyecto Verdad y fue miembro de Jóvenes por la
+            <h6 className="subtitulo-box-victoria">Inicios</h6>
+            <p className="texto-parrafo-box-victoria">
+              Villarruel fue parte de la Asociación de Familiares y Amigos de
+              los Presos Políticos de la Argentina (AFyAPPA). Lideró un programa
+              de radio llamado Proyecto Verdad y fue miembro de Jóvenes por la
               Verdad. Centro de Estudios Legales sobre el Terrorismo y sus
               Víctimas (CELTYV) En 2003, fundó CELTYV con el objetivo de
               defender a las víctimas del terrorismo de izquierda en Argentina.
@@ -102,6 +112,15 @@ const Victoria = () => {
               disertó en el Oslo Freedom Forum cuestionando la "historia
               oficial" de Argentina.
             </p>
+
+            <a
+              href=""
+              className="link-vickyJavier"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver Más
+            </a>
           </div>
         </div>
 
@@ -110,10 +129,10 @@ const Victoria = () => {
             activeBoxes.includes("boxAsuncion") ? "active" : ""
           }`}
         >
-          <div className="texto-box-index ">
-            <h2 className="titulo-box">Familia y</h2>
-            <h2>Formación Academica</h2>
-            <p className="texto-parrafo-box">
+          <div className="texto-box-victoria">
+            <h2 className="titulo-box-victoria">Familia y</h2>
+            <h2 className="titulo-box-victoriaDos">Formación Academica</h2>
+            <p className="texto-parrafo-box-victoria">
               Victoria Villarruel nació en Buenos Aires, hija del teniente
               coronel retirado Eduardo Villarruel, un veterano de la guerra de
               Malvinas. Su padre participó en el Operativo Independencia y en
@@ -126,6 +145,15 @@ const Victoria = () => {
               terrorismo en el Centro de Estudios de Defensa Hemisférica William
               J. Perry.
             </p>
+
+            <a
+              href=""
+              className="link-vickyAsuncion"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver Más
+            </a>
           </div>
         </div>
 
@@ -134,16 +162,27 @@ const Victoria = () => {
             activeBoxes.includes("boxEEUU") ? "active" : ""
           }`}
         >
-          <div className="texto-box-index ">
-            <h2 className="titulo-box">Pensamiento y</h2>
-            <h2 className="titulo-box-dos">Posturas</h2>
-            <h6 className="subtitulo-box">Historia y Derechos Humanos</h6>
-            <p className="texto-parrafo-box">
+          <div className="texto-box-victoria">
+            <h2 className="titulo-box-victoria">Pensamiento y</h2>
+            <h2 className="titulo-box-victoriaDos">Posturas</h2>
+            <h6 className="subtitulo-box-victoria">
+              Historia y Derechos Humanos
+            </h6>
+            <p className="texto-parrafo-box-victoria">
               Villarruel ha cuestionado la versión oficial de la historia
               argentina moderna, defendiendo a las víctimas de los grupos
               guerrilleros y criticando la protección otorgada a exmiembros de
               estos grupos por gobiernos posteriores.
             </p>
+
+            <a
+              href=""
+              className="link-vickyEeuu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver Más
+            </a>
           </div>
         </div>
 
@@ -152,24 +191,29 @@ const Victoria = () => {
             activeBoxes.includes("boxEV") ? "active" : ""
           }`}
         >
-          <div className="texto-box-index ">
-            <h2 className="titulo-box">Soldados de Malvinas</h2>
-            <p className="texto-parrafo-box">
+          <div className="texto-box-victoria">
+            <h2 className="titulo-box-victoriaDos">Soldados de Malvinas</h2>
+            <p className="texto-parrafo-box-victoria">
               Victoria Villarruel ha sido una firme defensora de los derechos de
               los veteranos de la Guerra de Malvinas. Durante su mandato, ha
               trabajado en promover el reconocimiento y apoyo a los soldados,
-              destacando la importancia de honrar su sacrificio. Ha impulsado
-              iniciativas para mejorar sus condiciones de vida, enfocándose en
-              salud mental, atención médica y asistencia económica, facilitando
-              su reintegración en la sociedad. Relación con su Padre Victoria
-              Villarruel ha hablado sobre la influencia de su padre, Eduardo
-              Villarruel, un militar del Ejército Argentino, en su vida y
-              carrera. Él le inculcó valores de disciplina, honor y servicio al
-              país, guiando su trayectoria política. Victoria considera que su
-              compromiso con los veteranos de Malvinas y su lucha por los
-              derechos humanos están enraizados en las enseñanzas y el ejemplo
-              de su padre.
+              destacando la importancia de honrar su sacrificio. Victoria ha
+              hablado sobre la influencia de su padre, Eduardo Villarruel, un
+              militar del Ejército Argentino, en su vida y carrera. Él le
+              inculcó valores de disciplina, honor y servicio al país, guiando
+              su trayectoria política. Victoria considera que su compromiso con
+              los veteranos de Malvinas y su lucha por los derechos humanos
+              están enraizados en las enseñanzas y el ejemplo de su padre.
             </p>
+
+            <a
+              href=""
+              className="link-vickyEduardo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver Más
+            </a>
           </div>
         </div>
 
@@ -178,13 +222,22 @@ const Victoria = () => {
             activeBoxes.includes("boxLibros") ? "active" : ""
           }`}
         >
-          <div className="texto-box-index ">
-            <h2 className="titulo-box">Publicaciones</h2>
-            <p className="texto-parrafo-box">
+          <div className="texto-box-victoria">
+            <h2 className="titulo-box-victoriaDos">Publicaciones</h2>
+            <p className="texto-parrafo-box-victoria">
               Los llaman... jóvenes idealistas (2009) Los otros muertos - Las
               víctimas civiles del terrorismo guerrillero de los 70 (2014), en
               coautoría con Carlos A. Manfroni.
             </p>
+
+            <a
+              href=""
+              className="link-vickyLibros"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver Más
+            </a>
           </div>
         </div>
       </div>
