@@ -1,6 +1,6 @@
 .container-fotos-victoria {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 12rem;
+  margin-bottom: 20rem;
   position: relative;
 }
 
@@ -182,4 +182,140 @@
   font-size: 1.3rem;
   color: #0037a0;
   padding-top: 20rem;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .container-fotos-victoria {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+  }
+
+  .fila-fotos-victoria {
+    gap: 3rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .box-vickyGala {
+    width: 12rem;
+    height: 16.5rem;
+    top: 1.2rem;
+    left: 09%;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-vickyJavier {
+    width: 12rem;
+    height: 16.5rem;
+    top: 23rem;
+    left: 22.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-asuncion {
+    width: 12rem;
+    height: 17.5rem;
+    top: 44.5rem;
+    left: 09%;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-eeuu {
+    width: 12rem;
+    height: 16.5rem;
+    top: 66.5rem;
+    left: 22.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-eduardo {
+    width: 12rem;
+    height: 16.5rem;
+    top: 88.5rem;
+    left: 09%;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-vickyLibros {
+    width: 12rem;
+    height: 16.5rem;
+    top: 110.5rem;
+    left: 22.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .texto-box-victoria {
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .titulo-box-victoria {
+    font-size: 1rem;
+  }
+
+  .titulo-box-victoriaDos {
+    font-size: 1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .subtitulo-box-victoria {
+    font-size: 0.6rem;
+    padding-bottom: 0rem;
+  }
+
+  .texto-parrafo-box-victoria {
+    font-size: 0.4rem;
+  }
+
+  .link-vickyGala {
+    font-size: 0.6rem;
+    padding-top: 1rem;
+  }
+
+  .link-vickyJavier {
+    font-size: 0.6rem;
+    padding-top: 0.6rem;
+  }
+
+  .link-vickyAsuncion {
+    font-size: 0.5rem;
+    padding-top: 0.2rem;
+  }
+
+  .link-vickyEeuu {
+    font-size: 0.7rem;
+    padding-top: 2.5rem;
+  }
+
+  .link-vickyEduardo {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+  }
+
+  .link-vickyLibros {
+    font-size: 0.7rem;
+    padding-top: 4rem;
+  }
 }
