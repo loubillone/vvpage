@@ -185,6 +185,136 @@
 }
 
 @media (max-width: 768px) {
+  .container-fotos-victoria {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .box-indexJM {
+    top: 2.8rem;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+
+  .box-vickyGala {
+    width: 25rem;
+    height: 34rem;
+    top: 2.5rem;
+    left: 6.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-vickyJavier {
+    width: 25rem;
+    height: 34rem;
+    top: 47.5rem;
+    left: 45rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-asuncion {
+    width: 25rem;
+    height: 35rem;
+    top: 93rem;
+    left: 6.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-eeuu {
+    width: 25rem;
+    height: 34rem;
+    top: 138rem;
+    left: 45rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-eduardo {
+    width: 25rem;
+    height: 34rem;
+    top: 184rem;
+    left: 6.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .box-vickyLibros {
+    width: 25rem;
+    height: 34rem;
+    top: 229rem;
+    left: 45rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .texto-box-victoria {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .titulo-box-victoria {
+    font-size: 2rem;
+  }
+
+  .subtitulo-box-victoria {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .titulo-box-victoriaDos {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .texto-parrafo-box-victoria {
+    font-size: 1rem;
+  }
+
+  .link-vickyGala {
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .link-vickyJavier {
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+  }
+
+  .link-vickyAsuncion {
+    padding-top: 0.1rem;
+    font-size: 1.1rem;
+  }
+
+  .link-vickyEeuu {
+    padding-top: 5rem;
+    font-size: 1.1rem;
+  }
+
+  .link-vickyEduardo {
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .link-vickyLibros {
+    padding-top: 10rem;
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 480px) {
