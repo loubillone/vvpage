@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/NuestroCompromiso.css";
+import "../css/nuestroCompromiso.css";
 import defensa from "../assets/img/index/defensa.png";
 import justicia from "../assets/img/index/justicia.png";
 import lupa from "../assets/img/index/lupa.png";
