@@ -1,4 +1,111 @@
 @font-face {
+  font-family: "raleway-medium";
+  src: url("../assets/fonts/Raleway/static/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-ligth";
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+
+.card-noticias {
+  width: 85%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-noticias:hover {
+  background-color: #d0d0d0;
+  box-shadow: 3px 3px 5px 1px #a8a8a8;
+}
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25rem;
+}
+
+.card-title-index {
+  font-family: "raleway-medium";
+  font-size: 1.5rem;
+  min-height: 3rem;
+  text-overflow: ellipsis;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.card-textoDesc {
+  font-family: "montserrat-ligth";
+  font-size: 1.3rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 1.5rem;
+}
+
+.card-link {
+  font-family: "montserrat-medium";
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+
+.card-img-top {
+  height: 25rem;
+  object-fit: cover;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .card-noticias {
+    width: 85%;
+    margin-left: 3rem;
+  }
+  .card-title-index {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-noticias {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .card-body {
+    height: 20rem;
+  }
+
+  .card-title-index {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .card-textoDesc {
+    font-size: 1.1rem;
+  }
+
+  .card-img-top {
+    height: 21rem;
+  }
+}
+
+/*MEDIA QUERIES*/
+
+@font-face {
   font-family: "raleway-semibold";
   src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
 }
