@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 // import NoticiasV from "./NoticiasV";
 import "../css/ultNoticias.css";
 import Card from "react-bootstrap/Card";
-import "../css/noticiasV.css";
 import cardUno from "../assets/img/cardsNoticias/cardUno.png";
 import cardDos from "../assets/img/cardsNoticias/cardDos.jpg";
 import cardTres from "../assets/img/cardsNoticias/cardTres.jpg";
