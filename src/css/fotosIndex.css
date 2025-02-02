@@ -176,7 +176,7 @@
     max-width: 30rem;
     padding: 2rem;
     position: fixed;
-    top: 7rem;
+    top: 12rem;
     left: 10%;
     transform: translateX(-50%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -193,8 +193,8 @@
     max-width: 30rem;
     padding: 2rem;
     position: fixed;
-    top: 7rem;
-    right: 10%;
+    top: 12rem;
+    left: 10%;
     transform: translateX(-50%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -209,6 +209,7 @@
     padding-left: 1.2rem;
     padding-right: 1.2rem;
   }
+
   .titulo-box {
     font-size: 2.5rem;
   }
@@ -218,11 +219,15 @@
   }
 
   .subtitulo-box {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .titulo-parrafo-box {
+    font-size: 1.2rem;
   }
 
   .texto-parrafo-box {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .overlay.active {
