@@ -17,7 +17,7 @@ const UltimasNoticias = () => {
       titulo:
         "Victoria Villarruel regresó al Festival de Doma y Folklore de Jesús María: “Acá soy cordobesa”",
       descripcion:
-        "Descripción de la noticia 2Victoria Villarruel regresó al Festival de Doma y Folklore de Jesús María: “Acá soy cordobesa”",
+        "Victoria Villarruel regresó al Festival de Doma y Folklore de Jesús María: “Acá soy cordobesa”",
       enlace:
         "https://www.clarin.com/politica/victoria-villarruel-regreso-festival-doma-folklore-jesus-maria-aca-cordobesa_0_VCIvrLafRF.html",
     },
@@ -35,7 +35,7 @@ const UltimasNoticias = () => {
       titulo:
         "Victoria Villarruel congeló las dietas de los senadores hasta el 31 de marzo tras la polémica con el Ejecutivo",
       descripcion:
-        "Desde hoy los sueldos iban a incrementarse a $9,5 millones, pero la vicepresidenta firmó un decreto para volver atrás con la medida; Milei había cuestionado a los legisladores y los libertarios le reclamaron a la titular del Senado frenar el aumento",
+        "Desde hoy los sueldos iban a incrementarse a $9,5 millones, pero la vicepresidenta firmó un decreto para volver atrás con la medida",
       enlace:
         "https://www.lanacion.com.ar/politica/victoria-villarruel-congelo-las-dietas-de-lo-senadores-hasta-el-31-de-marzo-nid02012025/",
     },
@@ -75,22 +75,6 @@ const UltimasNoticias = () => {
         <div className="row fila-noticias-index">
           <h4 className="titulo-noticias-index">ÚLTIMAS NOTICIAS</h4>
         </div>
-
-        {/* <div className="row fila-card-index">
-          {articulos.map((articulo, index) => {
-            return (
-              <NoticiasV
-                key={index}
-                title={articulo.title}
-                description={articulo.description}
-                src={articulo.urlToImage}
-                url={articulo.url}
-                source={articulo.source}
-                publishedAt={articulo.publishedAt}
-              />
-            );
-          })}
-        </div> */}
 
         <div className="row fila-card-index">
           {noticias.map((noticia, index) => (

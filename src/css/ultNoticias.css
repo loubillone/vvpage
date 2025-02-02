@@ -13,6 +13,23 @@
   src: url("../assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
 }
 
+@font-face {
+  font-family: "raleway-semibold";
+  src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+.fila-noticias-index {
+  width: 50%;
+}
+
+.titulo-noticias-index {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  font-family: "raleway-semibold";
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+
 .card-noticias {
   width: 85%;
   height: 35rem;
@@ -28,6 +45,7 @@
   background-color: #d0d0d0;
   box-shadow: 3px 3px 5px 1px #a8a8a8;
 }
+
 .card-body {
   flex: 1;
   display: flex;
@@ -69,6 +87,10 @@
 /*MEDIA QUERIES*/
 
 @media (max-width: 768px) {
+  .titulo-noticias-index {
+    margin-left: 3rem;
+  }
+
   .card-noticias {
     width: 85%;
     margin-left: 3rem;
@@ -80,6 +102,13 @@
 }
 
 @media (max-width: 480px) {
+  .titulo-noticias-index {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-left: 3.5rem;
+    font-size: 1.2rem;
+  }
+
   .card-noticias {
     width: 100%;
     margin-left: 0rem;
@@ -90,7 +119,7 @@
   }
 
   .card-title-index {
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
   }
 
@@ -102,41 +131,3 @@
     height: 21rem;
   }
 }
-
-/*MEDIA QUERIES*/
-
-@font-face {
-  font-family: "raleway-semibold";
-  src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
-}
-
-.fila-noticias-index {
-  width: 50%;
-}
-
-.titulo-noticias-index {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  font-family: "raleway-semibold";
-  margin-left: 4rem;
-  font-size: 2rem;
-}
-
-/*MEDIA QUERIES*/
-
-@media (max-width: 768px) {
-  .titulo-noticias-index {
-    margin-left: 3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .titulo-noticias-index {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    margin-left: 3.5rem;
-    font-size: 1.2rem;
-  }
-}
-
-/*MEDIA QUERIES*/
