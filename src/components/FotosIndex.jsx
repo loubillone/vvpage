@@ -96,7 +96,10 @@ const FotosIndex = () => {
               Como defensora de los valores de justicia y libertad, me
               enorgullece trabajar junto al Presidente Javier Milei en la
               transformación de nuestra nación. Juntos, estamos comprometidos en
-              asegurar un futuro próspero y seguro para todos los argentinos.
+              asegurar un futuro próspero y seguro para todos los argentinos,
+              donde la transparencia y el respeto por los derechos humanos sean
+              pilares fundamentales. Apoyemos esta misión para construir un país
+              más justo y libre para las generaciones venideras.
             </p>
           </div>
         </div>
@@ -117,7 +120,11 @@ const FotosIndex = () => {
               una Argentina fuerte y unida. Mi compromiso es con todos los
               ciudadanos, para asegurar que sus derechos sean protegidos y que
               la memoria de nuestro país se preserve completa y sin
-              distorsiones.
+              distorsiones. Lucharé por una nación donde la libertad individual
+              sea el motor del progreso y donde cada argentino tenga la
+              oportunidad de prosperar. Juntos, podemos transformar nuestra
+              patria en un lugar de paz, reconciliación y oportunidades para
+              todos.
             </p>
           </div>
         </div>
