@@ -3,6 +3,7 @@ import Victoria from "../components/Victoria";
 import { useLocation } from "react-router-dom";
 import Celtyv from "../components/Celtyv";
 import Malvinas from "../components/Malvinas";
+import VictoriaBio from "../components/VictoriaBio";
 const Biografia = () => {
   const location = useLocation();
 
@@ -14,7 +15,7 @@ const Biografia = () => {
         return <Malvinas />;
 
       default:
-        return <Victoria />;
+        return <VictoriaBio />;
     }
   };
 
@@ -23,7 +24,7 @@ const Biografia = () => {
   }, []);
   return (
     <div>
-      <Victoria />
+      <VictoriaBio />
     </div>
   );
 };
