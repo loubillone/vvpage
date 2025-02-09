@@ -84,41 +84,6 @@
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* .texto-box-victoria {
-  display: flex;
-  flex-direction: column;
-  padding-top: 7rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-} */
-
-.titulo-box-victoria {
-  font-family: "raleway-regular";
-  color: #000000;
-  font-size: 3.6rem;
-}
-
-.titulo-box-victoriaDos {
-  font-family: "raleway-bold";
-  color: #000000;
-  font-size: 3.6rem;
-  padding-bottom: 2.5rem;
-}
-
-.subtitulo-box-victoria {
-  font-family: "raleway-regular";
-  color: #4e4e4e;
-  font-size: 1.3rem;
-  padding-bottom: 2.5rem;
-}
-
-.texto-parrafo-box-victoria {
-  font-family: "raleway-regular";
-  color: #000000;
-  font-size: 1.4rem;
-  text-align: justify;
-}
-
 .link-vickyGala {
   font-family: "montserrat-medium";
   font-size: 1.3rem;
@@ -167,7 +132,7 @@
     margin-bottom: 8rem;
   }
 
-  .box-vickyGala {
+  /* .box-vickyGala {
     width: 25rem;
     height: 34rem;
     top: 2.5rem;
@@ -231,9 +196,9 @@
     pointer-events: auto;
     transform: translateY(0);
     transition: none;
-  }
+  } */
 
-  .texto-box-victoria {
+  /* .texto-box-victoria {
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -255,7 +220,7 @@
 
   .texto-parrafo-box-victoria {
     font-size: 1rem;
-  }
+  } */
 
   .link-vickyGala {
     padding-top: 1.5rem;
@@ -300,93 +265,32 @@
     padding-left: 0.5rem;
   }
 
-  .box-vickyGala {
-    width: 12rem;
-    height: 16.5rem;
-    top: 1.5rem;
-    left: 3rem;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    transition: none;
-  }
-  .box-vickyJavier {
-    width: 12rem;
-    height: 16.5rem;
-    top: 23rem;
-    left: 22.5rem;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    transition: none;
-  }
-
-  .box-asuncion {
-    width: 12rem;
-    height: 17.5rem;
-    top: 44.5rem;
-    left: 09%;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    transition: none;
-  }
-
-  .box-eeuu {
-    width: 12rem;
-    height: 16.5rem;
-    top: 66.5rem;
-    left: 22.5rem;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    transition: none;
-  }
-
-  .box-eduardo {
-    width: 12rem;
-    height: 16.5rem;
-    top: 88.5rem;
-    left: 09%;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    transition: none;
-  }
-
+  .box-vickyGala,
+  .box-vickyJavier,
+  .box-asuncion,
+  .box-eeuu,
+  .box-eduardo,
   .box-vickyLibros {
-    width: 12rem;
-    height: 16.5rem;
-    top: 110.5rem;
-    left: 22.5rem;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    transition: none;
-  }
-
-  .texto-box-victoria {
-    padding-top: 1.2rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-  }
-
-  .titulo-box-victoria {
-    font-size: 1rem;
-  }
-
-  .titulo-box-victoriaDos {
-    font-size: 1rem;
-    padding-bottom: 0.1rem;
-  }
-
-  .subtitulo-box-victoria {
-    font-size: 0.6rem;
-    padding-bottom: 0rem;
-  }
-
-  .texto-parrafo-box-victoria {
-    font-size: 0.4rem;
+    width: 90%;
+    max-width: 30rem;
+    height: 42rem;
+    padding: 2rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
   .link-vickyGala {
