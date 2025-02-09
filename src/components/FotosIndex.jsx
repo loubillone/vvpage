@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import vvgala from "../assets/img/index/vv-gala-index.png";
 import vvjm from "../assets/img/index/vv-jm-index.png";
-import "../css/fotosIndex.css";
+import "../css/boxTextos.css";
 
 const FotosIndex = () => {
   const [activeBoxes, setActiveBoxes] = useState(new Set());

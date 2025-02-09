@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Victoria from "../components/Victoria";
 import { useLocation } from "react-router-dom";
 import Celtyv from "../components/Celtyv";
 import Malvinas from "../components/Malvinas";
