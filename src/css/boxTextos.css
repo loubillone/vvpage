@@ -122,7 +122,10 @@
     height: 35rem;
     top: 2.8rem;
     left: 60%;
-    transform: translateX(-50%);
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
   }
 
   .box-indexVV {
@@ -131,10 +134,13 @@
     top: 50rem;
     right: auto;
     left: 08%;
-    transform: translateX(-50%);
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: none;
   }
 
-  .texto-box-index {
+  .texto-box {
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -154,8 +160,7 @@
   }
 
   .titulo-parrafo-box {
-    font-size: 1rem;
-    padding-bottom: 1rem;
+    display: none;
   }
   .texto-parrafo-box {
     font-size: 1rem;
@@ -199,6 +204,7 @@
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
+    transform: translateX(-50%);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
