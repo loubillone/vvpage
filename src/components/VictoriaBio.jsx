@@ -39,8 +39,8 @@ const VictoriaBio = () => {
 
   return (
     <div>
-      <div className="container-fluid container-fotos-index">
-        <div className="row fila-fotos-index">
+      <div className="container-fluid container-fotos-victoria">
+        <div className="row fila-fotos-box">
           {/* Gala */}
           <div
             className="contenedor-imagen"
@@ -48,7 +48,7 @@ const VictoriaBio = () => {
             onClick={() => isMobile && toggleBox("boxVG")}
           >
             <img
-              className="imagenIndex"
+              className="imagenBox"
               src={vickyGala}
               alt="Victoria Villarruel en la gala de la asuncion en el teatro colon"
             />
@@ -67,7 +67,7 @@ const VictoriaBio = () => {
             onClick={() => isMobile && toggleBox("boxVJ")}
           >
             <img
-              className="imagenIndex"
+              className="imagenBox"
               src={vickyJavier}
               alt="Victoria Villarruel junto a Javier Milei"
             />
@@ -84,7 +84,7 @@ const VictoriaBio = () => {
             onClick={() => isMobile && toggleBox("boxAsuncion")}
           >
             <img
-              className="imagenIndex"
+              className="imagenBox"
               src={asuncion}
               alt="Victoria Villarruel en las escalinatas del congreso el día de la asunción presidencial"
             />
@@ -101,7 +101,7 @@ const VictoriaBio = () => {
             onClick={() => isMobile && toggleBox("boxEEUU")}
           >
             <img
-              className="imagenIndex"
+              className="imagenBox"
               src={eeuu}
               alt="Victoria Villarruel junto al embajador de EEUU"
             />
@@ -119,11 +119,7 @@ const VictoriaBio = () => {
             onMouseEnter={() => activateBox("boxEV")}
             onClick={() => isMobile && toggleBox("boxEV")}
           >
-            <img
-              className="imagenIndex"
-              src={eduardo}
-              alt="Eduardo Villarruel"
-            />
+            <img className="imagenBox" src={eduardo} alt="Eduardo Villarruel" />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Soldados de Malvinas</h2>
               <p className="subtitulo-sobre-imagen">Su padre</p>
@@ -137,7 +133,7 @@ const VictoriaBio = () => {
             onClick={() => isMobile && toggleBox("boxLibros")}
           >
             <img
-              className="imagenIndex"
+              className="imagenBox"
               src={vickyLibro}
               alt="Victoria Villarruel con sus libros"
             />
@@ -164,7 +160,7 @@ const VictoriaBio = () => {
             activeBoxes.has("boxVG") ? "active" : ""
           }`}
         >
-          <div className="texto-box-victoria">
+          <div className="texto-box">
             <h2 className="titulo-box-victoria">Victoria</h2>
             <h2 className="titulo-box-victoriaDos">Villarruel</h2>
             <h6 className="subtitulo-box-victoria">
@@ -196,7 +192,7 @@ const VictoriaBio = () => {
             activeBoxes.has("boxVJ") ? "active" : ""
           }`}
         >
-          <div className="texto-box-victoria">
+          <div className="texto-box">
             <h2 className="titulo-box-victoriaDos">Activismo</h2>
 
             <h6 className="subtitulo-box-victoria">Inicios</h6>
@@ -230,7 +226,7 @@ const VictoriaBio = () => {
             activeBoxes.has("boxAsuncion") ? "active" : ""
           }`}
         >
-          <div className="texto-box-victoria">
+          <div className="texto-box">
             <h2 className="titulo-box-victoria">Familia y</h2>
             <h2 className="titulo-box-victoriaDos">Formación Academica</h2>
             <p className="texto-parrafo-box-victoria">
@@ -262,7 +258,7 @@ const VictoriaBio = () => {
         <div
           className={`box-eeuu ${activeBoxes.has("boxEEUU") ? "active" : ""}`}
         >
-          <div className="texto-box-victoria">
+          <div className="texto-box">
             <h2 className="titulo-box-victoria">Pensamiento y</h2>
             <h2 className="titulo-box-victoriaDos">Posturas</h2>
             <h6 className="subtitulo-box-victoria">
@@ -290,7 +286,7 @@ const VictoriaBio = () => {
         <div
           className={`box-eduardo ${activeBoxes.has("boxEV") ? "active" : ""}`}
         >
-          <div className="texto-box-victoria">
+          <div className="texto-box">
             <h2 className="titulo-box-victoriaDos">Soldados de Malvinas</h2>
             <p className="texto-parrafo-box-victoria">
               Victoria Villarruel ha sido una firme defensora de los derechos de
@@ -322,7 +318,7 @@ const VictoriaBio = () => {
             activeBoxes.has("boxLibros") ? "active" : ""
           }`}
         >
-          <div className="texto-box-victoria">
+          <div className="texto-box">
             <h2 className="titulo-box-victoriaDos">Publicaciones</h2>
             <p className="texto-parrafo-box-victoria">
               Los llaman... jóvenes idealistas (2009) Los otros muertos - Las
