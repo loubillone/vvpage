@@ -158,6 +158,9 @@
 }
 
 @media (max-width: 480px) {
+  .disable-hover {
+    pointer-events: none;
+  }
   .container-fotos-index {
     margin-top: 1rem;
     margin-bottom: 6rem;
