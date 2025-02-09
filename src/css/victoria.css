@@ -2,19 +2,8 @@
   margin-top: 12rem;
   margin-bottom: 20rem;
   position: relative;
-}
-
-.fila-fotos-victoria {
-  display: flex;
-  justify-content: center;
-  gap: 7rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-
-.imagenBiografia-victoria {
-  width: 100%;
-  cursor: pointer;
+  background-image: url(../assets/img/index/lazo-arg.png);
+  background-repeat: repeat;
 }
 
 .box-vickyGala {
@@ -95,25 +84,13 @@
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.box-vickyGala.active,
-.box-vickyJavier.active,
-.box-asuncion.active,
-.box-eeuu.active,
-.box-eduardo.active,
-.box-vickyLibros.active {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.texto-box-victoria {
+/* .texto-box-victoria {
   display: flex;
   flex-direction: column;
   padding-top: 7rem;
   padding-left: 5rem;
   padding-right: 5rem;
-}
+} */
 
 .titulo-box-victoria {
   font-family: "raleway-regular";
@@ -317,7 +294,7 @@
     margin-bottom: 8rem;
   }
 
-  .fila-fotos-victoria {
+  .fila-fotos-box {
     gap: 3rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;

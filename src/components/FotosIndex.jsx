@@ -35,7 +35,7 @@ const FotosIndex = () => {
   return (
     <div>
       <div className="container-fluid container-fotos-index">
-        <div className="row fila-fotos-index">
+        <div className="row fila-fotos-box">
           {/* Imagen de Javier Milei */}
           <div
             className="contenedor-imagen"
@@ -43,7 +43,7 @@ const FotosIndex = () => {
             onClick={() => isMobile && toggleBox("boxJM")}
           >
             <img
-              className="imagenIndex"
+              className="imagenBox"
               src={vvjm}
               alt="Victoria Villarruel y Javier Milei en la asunción presidencial"
             />
@@ -60,7 +60,7 @@ const FotosIndex = () => {
             onClick={() => isMobile && toggleBox("boxVV")}
           >
             <img
-              className="imagenIndex"
+              className="imagenBox"
               src={vvgala}
               alt="Victoria Villarruel en la gala del Teatro Colón"
             />
@@ -85,7 +85,7 @@ const FotosIndex = () => {
         <div
           className={`box-indexJM ${activeBoxes.has("boxJM") ? "active" : ""}`}
         >
-          <div className="texto-box-index">
+          <div className="texto-box">
             <h2 className="titulo-box">Javier</h2>
             <h2 className="titulo-box-dos">Milei</h2>
             <h6 className="subtitulo-box">Presidente de la Nación</h6>
@@ -105,7 +105,7 @@ const FotosIndex = () => {
         <div
           className={`box-indexVV ${activeBoxes.has("boxVV") ? "active" : ""}`}
         >
-          <div className="texto-box-index">
+          <div className="texto-box">
             <h1 className="titulo-box">Victoria</h1>
             <h2 className="titulo-box-dos">Villarruel</h2>
             <h6 className="subtitulo-box">Vicepresidente de la Nación</h6>
