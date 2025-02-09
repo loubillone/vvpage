@@ -132,7 +132,7 @@
     margin-bottom: 8rem;
   }
 
-  /* .box-vickyGala {
+  .box-vickyGala {
     width: 25rem;
     height: 34rem;
     top: 2.5rem;
@@ -196,9 +196,9 @@
     pointer-events: auto;
     transform: translateY(0);
     transition: none;
-  } */
+  }
 
-  /* .texto-box-victoria {
+  .texto-box-victoria {
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -220,7 +220,7 @@
 
   .texto-parrafo-box-victoria {
     font-size: 1rem;
-  } */
+  }
 
   .link-vickyGala {
     padding-top: 1.5rem;
@@ -291,6 +291,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateX(-50%);
   }
 
   .link-vickyGala {
