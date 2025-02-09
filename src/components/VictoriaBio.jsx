@@ -161,12 +161,10 @@ const VictoriaBio = () => {
           }`}
         >
           <div className="texto-box">
-            <h2 className="titulo-box-victoria">Victoria</h2>
-            <h2 className="titulo-box-victoriaDos">Villarruel</h2>
-            <h6 className="subtitulo-box-victoria">
-              Vicepresidente de la Nación
-            </h6>
-            <p className="texto-parrafo-box-victoria">
+            <h2 className="titulo-box">Victoria</h2>
+            <h2 className="titulo-box-dos">Villarruel</h2>
+            <h6 className="subtitulo-box">Vicepresidente de la Nación</h6>
+            <p className="texto-parrafo-box">
               Victoria Eugenia Villarruel (Buenos Aires, 13 de abril de 1975) es
               una abogada, escritora, activista y política argentina, actual
               vicepresidenta de la Nación Argentina desde el 10 de diciembre de
@@ -193,10 +191,10 @@ const VictoriaBio = () => {
           }`}
         >
           <div className="texto-box">
-            <h2 className="titulo-box-victoriaDos">Activismo</h2>
+            <h2 className="titulo-box-dos">Activismo</h2>
 
-            <h6 className="subtitulo-box-victoria">Inicios</h6>
-            <p className="texto-parrafo-box-victoria">
+            <h6 className="subtitulo-box">Inicios</h6>
+            <p className="texto-parrafo-box">
               Villarruel fue parte de la Asociación de Familiares y Amigos de
               los Presos Políticos de la Argentina (AFyAPPA). Lideró un programa
               de radio llamado Proyecto Verdad y fue miembro de Jóvenes por la
@@ -227,9 +225,9 @@ const VictoriaBio = () => {
           }`}
         >
           <div className="texto-box">
-            <h2 className="titulo-box-victoria">Familia y</h2>
-            <h2 className="titulo-box-victoriaDos">Formación Academica</h2>
-            <p className="texto-parrafo-box-victoria">
+            <h2 className="titulo-box">Familia y</h2>
+            <h2 className="titulo-box-dos">Formación Academica</h2>
+            <p className="texto-parrafo-box">
               Victoria Villarruel nació en Buenos Aires, hija del teniente
               coronel retirado Eduardo Villarruel, un veterano de la guerra de
               Malvinas. Su padre participó en el Operativo Independencia y en
@@ -259,12 +257,10 @@ const VictoriaBio = () => {
           className={`box-eeuu ${activeBoxes.has("boxEEUU") ? "active" : ""}`}
         >
           <div className="texto-box">
-            <h2 className="titulo-box-victoria">Pensamiento y</h2>
-            <h2 className="titulo-box-victoriaDos">Posturas</h2>
-            <h6 className="subtitulo-box-victoria">
-              Historia y Derechos Humanos
-            </h6>
-            <p className="texto-parrafo-box-victoria">
+            <h2 className="titulo-box">Pensamiento y</h2>
+            <h2 className="titulo-box-dos">Posturas</h2>
+            <h6 className="subtitulo-box">Historia y Derechos Humanos</h6>
+            <p className="texto-parrafo-box">
               Villarruel ha cuestionado la versión oficial de la historia
               argentina moderna, defendiendo a las víctimas de los grupos
               guerrilleros y criticando la protección otorgada a exmiembros de
@@ -287,8 +283,8 @@ const VictoriaBio = () => {
           className={`box-eduardo ${activeBoxes.has("boxEV") ? "active" : ""}`}
         >
           <div className="texto-box">
-            <h2 className="titulo-box-victoriaDos">Soldados de Malvinas</h2>
-            <p className="texto-parrafo-box-victoria">
+            <h2 className="titulo-box-dos">Soldados de Malvinas</h2>
+            <p className="texto-parrafo-box">
               Victoria Villarruel ha sido una firme defensora de los derechos de
               los veteranos de la Guerra de Malvinas. Durante su mandato, ha
               trabajado en promover el reconocimiento y apoyo a los soldados,
@@ -319,8 +315,8 @@ const VictoriaBio = () => {
           }`}
         >
           <div className="texto-box">
-            <h2 className="titulo-box-victoriaDos">Publicaciones</h2>
-            <p className="texto-parrafo-box-victoria">
+            <h2 className="titulo-box-dos">Publicaciones</h2>
+            <p className="texto-parrafo-box">
               Los llaman... jóvenes idealistas (2009) Los otros muertos - Las
               víctimas civiles del terrorismo guerrillero de los 70 (2014), en
               coautoría con Carlos A. Manfroni.
