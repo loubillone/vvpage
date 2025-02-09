@@ -326,14 +326,13 @@
   .box-vickyGala {
     width: 12rem;
     height: 16.5rem;
-    top: 1.2rem;
-    left: 09%;
+    top: 1.5rem;
+    left: 3rem;
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
     transition: none;
   }
-
   .box-vickyJavier {
     width: 12rem;
     height: 16.5rem;
