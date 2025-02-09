@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/victoria.css";
-import "../css/fotosIndex.css";
+import "../css/boxTextos.css";
 import vickyGala from "../assets/img/biografia/victoria/vickyGala.png";
 import vickyJavier from "../assets/img/biografia/victoria/vickyJavier.png";
 import asuncion from "../assets/img/biografia/victoria/asuncion.png";
@@ -228,17 +228,15 @@ const VictoriaBio = () => {
             <h2 className="titulo-box">Familia y</h2>
             <h2 className="titulo-box-dos">Formación Academica</h2>
             <p className="texto-parrafo-box">
-              Victoria Villarruel nació en Buenos Aires, hija del teniente
-              coronel retirado Eduardo Villarruel, un veterano de la guerra de
-              Malvinas. Su padre participó en el Operativo Independencia y en
-              las sublevaciones Carapintadas. Villarruel completó sus estudios
-              secundarios en el Instituto Social Militar Dr. Dámaso Centeno. Se
-              graduó como abogada en la Facultad de Derecho de la Universidad de
-              Buenos Aires y obtuvo un título de técnica de seguridad urbana y
-              portuaria de la Universidad Tecnológica Nacional. En 2008, realizó
-              un curso de coordinación interinstitucional y lucha contra el
-              terrorismo en el Centro de Estudios de Defensa Hemisférica William
-              J. Perry.
+              Villarruel nació en Buenos Aires, hija del teniente coronel
+              retirado Eduardo Villarruel, un veterano de la guerra de Malvinas.
+              Su padre participó en el Operativo Independencia. Villarruel
+              completó sus estudios secundarios en el Instituto Social Militar
+              Dr. Dámaso Centeno. Se graduó como abogada en la UBA y obtuvo un
+              título de técnica de seguridad urbana y portuaria de la
+              Universidad Tecnológica Nacional. En 2008, realizó un curso de
+              coordinación interinstitucional y lucha contra el terrorismo en el
+              Centro de Estudios de Defensa Hemisférica William J. Perry.
             </p>
 
             <a
