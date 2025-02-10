@@ -1,0 +1,38 @@
+.trayectoria-bg {
+  background-image: url("../assets/img/trayectoria/escarapelaT.png");
+  background-position: top left; /* Ajusta la posición */
+  background-size: 100% auto; /* Ajusta el tamaño */
+  background-repeat: no-repeat;
+  z-index: -1; /* La envía al fondo */
+}
+
+.container-trayectoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 89vh; /* 🔹 Empuja el contenido para que empiece después de la escarapela */
+  padding-bottom: 12rem;
+}
+
+.firmaVV img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container-trayectoria {
+    padding-top: 41vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-trayectoria {
+    padding-top: 16vh;
+    padding-bottom: 8rem;
+  }
+
+  .firmaVV img {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
