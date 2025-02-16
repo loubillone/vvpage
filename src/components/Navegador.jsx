@@ -38,7 +38,6 @@ const Navegador = () => {
                 title="Biografia"
                 id="basic-nav-dropdown"
                 className="nav-items no-border-dropdown"
-                onClick={handleNavClick}
               >
                 <NavDropdown.Item href="#action/3.1" className="nav-items-drop">
                   <Nav.Link

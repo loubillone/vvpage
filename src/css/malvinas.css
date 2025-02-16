@@ -1,0 +1,42 @@
+.fila-titulo-malvinas {
+  padding: 5rem;
+}
+
+.titulo-malvinas {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
+  width: 100%;
+  text-align: center;
+  margin: 4rem 4rem; /* Agrega margen arriba y abajo si es necesario */
+}
+
+.titulo-malvinas img {
+  max-width: 100%; /* Asegura que la imagen sea responsiva */
+  height: auto;
+}
+
+.fila-malvinas {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 7rem;
+}
+
+.columna-malvinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-malvinas {
+  font-family: "raleway-regular";
+  color: #000000;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 1.5rem;
+}
+
+.imagen-malvinas img {
+  width: 100%;
+}
