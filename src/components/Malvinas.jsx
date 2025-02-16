@@ -57,8 +57,13 @@ const Malvinas = () => {
           </div>
         </div>
         <div className="row fila-malvinas">
-          <div className="col columna-malvinas">
-            <div className="contenedor-parrafo-malvinas">
+          <div className="col columna-malvinas order-md-2">
+            <div className="imagen-malvinas">
+              <img src={helicoptero} alt="soldados bajando de un helicóptero" />
+            </div>
+          </div>
+          <div className="col columna-malvinas order-md-1">
+            <div className="contenedor-parrafo-malvinas ">
               <p className="parrafo-malvinas">
                 Los héroes de Malvinas son los soldados argentinos que lucharon
                 valientemente en la Guerra de las Malvinas, enfrentando
@@ -87,11 +92,6 @@ const Malvinas = () => {
                 militar del país y el legado de resistencia en las islas
                 Malvinas.
               </p>
-            </div>
-          </div>
-          <div className="col columna-malvinas">
-            <div className="imagen-malvinas">
-              <img src={helicoptero} alt="soldados bajando de un helicóptero" />
             </div>
           </div>
         </div>
@@ -132,7 +132,12 @@ const Malvinas = () => {
           </div>
         </div>
         <div className="row fila-malvinas">
-          <div className="col columna-malvinas">
+          <div className="col columna-malvinas  order-md-2">
+            <div className="imagen-malvinas">
+              <img src={bote} alt="soldados en bote" />
+            </div>
+          </div>
+          <div className="col columna-malvinas  order-md-1">
             <div className="contenedor-parrafo-malvinas">
               <p className="parrafo-malvinas">
                 La soberanía de las Islas Malvinas sigue siendo disputada entre
@@ -160,11 +165,6 @@ const Malvinas = () => {
                 para encontrar soluciones respetuosas para ambas partes
                 involucradas.
               </p>
-            </div>
-          </div>
-          <div className="col columna-malvinas">
-            <div className="imagen-malvinas">
-              <img src={bote} alt="soldados en bote" />
             </div>
           </div>
         </div>

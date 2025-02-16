@@ -19,7 +19,6 @@
 .fila-malvinas {
   display: flex;
   justify-content: space-around;
-  width: 100%;
   margin-bottom: 7rem;
 }
 
@@ -61,4 +60,45 @@
   color: #031f42;
   font-family: "raleway-regular";
   font-size: 3rem;
+}
+
+@media (max-width: 480px) {
+  .fila-titulo-malvinas {
+    padding: 3rem;
+  }
+  .titulo-malvinas {
+    margin: 0;
+  }
+
+  .titulo-malvinas img {
+    width: 70%;
+  }
+
+  .fila-malvinas {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .imagen-malvinas img {
+    padding: 2rem 4rem 4rem 4rem;
+    filter: grayscale(0);
+  }
+
+  .imagen-malvinas img:hover {
+    transform: none;
+  }
+
+  .parrafo-malvinas {
+    font-size: 1.2rem;
+    padding: 0 3rem 0 3rem;
+  }
+
+  .container-parrafo-malvinas {
+    padding: 5rem 1rem 8rem 1rem;
+  }
+
+  .parrafo-malvinas-final {
+    font-size: 1.7rem;
+    text-align: center;
+  }
 }
