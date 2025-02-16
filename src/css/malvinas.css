@@ -39,4 +39,11 @@
 
 .imagen-malvinas img {
   width: 100%;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+.imagen-malvinas img:hover {
+  transition: filter 0.8s ease;
+  filter: grayscale(0);
 }
