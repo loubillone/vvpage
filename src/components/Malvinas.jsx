@@ -169,8 +169,8 @@ const Malvinas = () => {
           </div>
         </div>
         <div className="row">
-          <div>
-            <p>
+          <div className="container-parrafo-malvinas">
+            <p className="parrafo-malvinas-final">
               El soldado no muere en el frente de batalla muere cuando su patria
               lo olvida
             </p>
