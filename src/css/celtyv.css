@@ -47,7 +47,7 @@
   font-size: 2rem;
 }
 
-.foto-manos-celtyv {
+.foto-seccion-celtyv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,10 +55,10 @@
   text-align: center;
 }
 
-.foto-manos-celtyv img {
+.foto-seccion-celtyv img {
   max-width: 90%;
   height: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .container-celtyvInfo {
@@ -70,16 +70,26 @@
 .titulo-seccion-celtyv {
   font-family: "raleway-semibold";
   font-size: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .parrafo-seccion-celtyv {
   font-family: "raleway-medium";
   font-size: 2.4rem;
+  padding-bottom: 5rem;
 }
 
 .subtitulo-seccion-celtyv {
   font-family: "raleway-bold";
   font-size: 2.4rem;
+}
+
+.subtitulo-seccion-publicaciones {
+  font-family: "raleway-bold";
+  font-size: 2.4rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
 }
 
 .titulo-libro-celtyv {
