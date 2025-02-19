@@ -1,0 +1,33 @@
+.fila-titulo-celtyv {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-celtyv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.titulo-celtyv img {
+  max-width: 38%;
+  height: auto;
+}
+
+.container-parrafo-celtyv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.texto-titulo-celtyv {
+  padding: 2rem;
+  font-family: "raleway-medium";
+  font-size: 2rem;
+}
