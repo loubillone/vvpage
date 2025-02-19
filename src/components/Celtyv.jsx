@@ -30,7 +30,7 @@ const Celtyv = () => {
 
         <div className="row container-celtyvInfo">
           <div className="col">
-            <h3 className="titulo-seccion-celtyv">¿Qué es CELTyV?</h3>
+            <h2 className="titulo-seccion-celtyv">¿Qué es CELTyV?</h2>
             <p className="parrafo-seccion-celtyv">
               El Centro de Estudios Legales sobre el Terrorismo y sus Víctimas
               (CELTyV) es una Asociación Civil fundada en 2006. Esta
@@ -62,7 +62,7 @@ const Celtyv = () => {
 
             <h4 className="subtitulo-seccion-celtyv">Autoridades de CELTyV</h4>
 
-            <div className="seccion-autoridades-celtyv">
+            <div className="parrafo-seccion-celtyv">
               <ul>
                 <li>Presidente: Victoria Villarruel – Abogada</li>
                 <li>
@@ -95,8 +95,8 @@ const Celtyv = () => {
 
         <div className="row">
           <div className="col">
-            <h4>Las Víctimas</h4>
-            <p>
+            <h2 className="titulo-seccion-celtyv">Las Víctimas</h2>
+            <p className="parrafo-seccion-celtyv">
               CELTyV se centra en la situación de las víctimas de la violencia
               armada ejercida por organizaciones guerrilleras como Montoneros y
               ERP. Estas víctimas incluyen civiles y no combatientes que
@@ -117,8 +117,10 @@ const Celtyv = () => {
 
         <div className="row">
           <div className="col">
-            <h3>Victoria Villarruel y su Lucha</h3>
-            <p>
+            <h2 className="titulo-seccion-celtyv">
+              Victoria Villarruel y su Lucha
+            </h2>
+            <p className="parrafo-seccion-celtyv">
               Victoria Villarruel, presidenta de CELTyV, es una abogada
               comprometida con la defensa de los derechos de las víctimas del
               terrorismo. Su trabajo incluye la publicación de libros y
@@ -128,11 +130,13 @@ const Celtyv = () => {
               víctimas del terrorismo en Argentina.
             </p>
 
-            <h4>Publicaciones Relevantes</h4>
+            <h4 className="subtitulo-seccion-celtyv">
+              Publicaciones Relevantes
+            </h4>
 
-            <h5>Los Otros Muertos</h5>
+            <h6 className="titulo-libro-celtyv">“Los otros muertos”</h6>
 
-            <div>
+            <div className="parrafo-seccion-celtyv">
               <ul>
                 <li>Fecha de Publicación: 14 de julio de 2021</li>
                 <li>
@@ -142,50 +146,59 @@ const Celtyv = () => {
               </ul>
             </div>
 
-            <h5>“Los llaman… jóvenes idealistas” por Victoria Villarruel</h5>
+            <h6 className="titulo-libro-celtyv">
+              “Los llaman… jóvenes idealistas” por Victoria Villarruel
+            </h6>
 
-            <div>
+            <div className="parrafo-seccion-celtyv">
               <ul>
-                <li>Fecha de Publicación: 14 de julio de 2021</li>
+                <li>Fecha de Publicación: 3 de febrero de 2018</li>
                 <li>
-                  Descripción: Narra la trágica muerte de niños como Juan y
-                  Andrea en ataques perpetrados por Montoneros.
+                  Descripción: Este libro aborda la problemática de los setenta
+                  desde la perspectiva de las víctimas, mostrando el impacto de
+                  las organizaciones armadas en la sociedad.
                 </li>
               </ul>
             </div>
 
-            <h5>“El terrorismo como crimen de lesa humanidad”</h5>
+            <h6 className="titulo-libro-celtyv">
+              “El terrorismo como crimen de lesa humanidad”
+            </h6>
 
-            <div>
+            <div className="parrafo-seccion-celtyv">
               <ul>
-                <li>Fecha de Publicación: 14 de julio de 2021</li>
+                <li>Autores: Javier Vigo Leguizamón, Cárdenas y Manfroni</li>
                 <li>
-                  Descripción: Narra la trágica muerte de niños como Juan y
-                  Andrea en ataques perpetrados por Montoneros.
+                  Descripción: Compilación de artículos sobre la doctrina y
+                  jurisprudencia internacional respecto a los delitos de lesa
+                  humanidad.
                 </li>
               </ul>
             </div>
 
-            <h5>“El terrorismo como crimen de lesa humanidad”</h5>
+            <h6 className="titulo-libro-celtyv">
+              “Amar al enemigo” por Javier Vigo Leguizamón
+            </h6>
 
-            <div>
+            <div className="parrafo-seccion-celtyv">
               <ul>
-                <li>Fecha de Publicación: 14 de julio de 2021</li>
                 <li>
-                  Descripción: Narra la trágica muerte de niños como Juan y
-                  Andrea en ataques perpetrados por Montoneros.
+                  Descripción: Explora los esfuerzos para establecer un diálogo
+                  de reconciliación entre figuras opuestas del conflicto armado
+                  en Argentina.
                 </li>
               </ul>
             </div>
 
-            <h5>“El terrorismo como crimen de lesa humanidad”</h5>
+            <h6 className="titulo-libro-celtyv">
+              “Un canto a la patria” por Arturo Larrabure
+            </h6>
 
-            <div>
+            <div className="parrafo-seccion-celtyv">
               <ul>
-                <li>Fecha de Publicación: 14 de julio de 2021</li>
                 <li>
-                  Descripción: Narra la trágica muerte de niños como Juan y
-                  Andrea en ataques perpetrados por Montoneros.
+                  Descripción: Relata el cautiverio del Coronel Argentino Del
+                  Valle Larrabure, secuestrado y asesinado por el ERP.
                 </li>
               </ul>
             </div>
@@ -200,8 +213,10 @@ const Celtyv = () => {
 
         <div className="row">
           <div className="col">
-            <h4>¿Por qué unirse a CELTyV?</h4>
-            <p>
+            <h4 className="subtitulo-seccion-celtyv">
+              ¿Por qué unirse a CELTyV?
+            </h4>
+            <p className="parrafo-seccion-celtyv">
               Unirse a CELTyV significa apoyar el reconocimiento de los derechos
               humanos para las víctimas del terrorismo. La asociación realiza
               diversas actividades como conferencias, investigaciones
@@ -210,16 +225,16 @@ const Celtyv = () => {
               la memoria histórica.
             </p>
 
-            <h5>Categorías de Socios</h5>
-            <div>
-              <ul>
+            <h5 className="categorias-celtyv">Categorías de Socios</h5>
+            <div className="parrafo-seccion-celtyv">
+              <ul className="titulo-libro-celtyv">
                 <li>Socio Adherente: Cuota mensual de $1000. .</li>
                 <li>Socio Activo: Cuota mensual de $1500.</li>
                 <li> Socio Protector: Cuota mensual de $2000</li>
               </ul>
             </div>
 
-            <p>
+            <p className="parrafo-seccion-celtyv">
               Para más información sobre cómo asociarse, envíe un correo a
               informaciones@victimasdeargentina.com o visite aquí. Su ayuda es
               vital para continuar trabajando en la reconstrucción de la
