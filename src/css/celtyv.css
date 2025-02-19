@@ -27,7 +27,27 @@
 }
 
 .texto-titulo-celtyv {
-  padding: 2rem;
+  padding: 1.2rem;
   font-family: "raleway-medium";
   font-size: 2rem;
+}
+
+.foto-manos-celtyv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.foto-manos-celtyv img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+.container-celtyvInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
