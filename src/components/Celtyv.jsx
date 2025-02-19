@@ -1,10 +1,20 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
 import "../css/celtyv.css";
 import logoCeltyv from "../assets/img/biografia/celtyv/logoCeltyv.png";
 import manos from "../assets/img/biografia/celtyv/manos.png";
 import tituloCeltyv from "../assets/img/biografia/celtyv/tituloCeltyv.png";
-import victimas from "../assets/img/biografia/celtyv/victimas.png";
 import vvCeltyv from "../assets/img/biografia/celtyv/vvCeltyv.png";
+import diarioCero from "../assets/img/biografia/celtyv/diarioCero.png";
+import diarioUno from "../assets/img/biografia/celtyv/diarioUno.png";
+import diarioDos from "../assets/img/biografia/celtyv/diarioDos.png";
+import diarioTres from "../assets/img/biografia/celtyv/diarioTres.png";
+import diarioCuartro from "../assets/img/biografia/celtyv/diarioCuartro.png";
+import diarioCinco from "../assets/img/biografia/celtyv/diarioCinco.png";
+import diarioSeis from "../assets/img/biografia/celtyv/diarioSeis.png";
+import diarioSiete from "../assets/img/biografia/celtyv/diarioSiete.png";
+import diarioOcho from "../assets/img/biografia/celtyv/diarioOcho.png";
+import diarioNueve from "../assets/img/biografia/celtyv/diarioNueve.png";
 
 const Celtyv = () => {
   return (
@@ -23,7 +33,7 @@ const Celtyv = () => {
         </div>
 
         <div className="row">
-          <div className="foto-manos-celtyv">
+          <div className="foto-seccion-celtyv">
             <img src={manos} alt="mural con marcas de manos en pintura" />
           </div>
         </div>
@@ -71,8 +81,12 @@ const Celtyv = () => {
                 </li>
                 <li>
                   Secretario: Sergio Renó – Hijo de un policía asesinado por
-                  Montoneros Vocales:
+                  Montoneros
                 </li>
+              </ul>
+
+              <span>Vocales:</span>
+              <ul>
                 <li>
                   Arturo Larrabure – Hijo de un militar secuestrado y asesinado
                   por el ERP
@@ -87,10 +101,45 @@ const Celtyv = () => {
           </div>
         </div>
 
-        <div className="row">
-          <div className="imagen-victimas-celtyv">
-            <img src={victimas} alt="primer niño asesinado por el terrorismo" />
+        {/* <div className="row">
+          <div className="foto-seccion-celtyv">
+            <img
+              src={diarioCero}
+              alt="primer niño asesinado por el terrorismo"
+            />
           </div>
+        </div> */}
+
+        <div className="row">
+          <Carousel
+            data-bs-theme="dark"
+            controls={false}
+            indicators={false}
+            interval={3000}
+            className="foto-seccion-celtyv"
+          >
+            <Carousel.Item className="foto-seccion-celtyv">
+              <img
+                className="d-block w-100"
+                src={diarioCero}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioCero}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioUno}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
         </div>
 
         <div className="row">
@@ -110,7 +159,7 @@ const Celtyv = () => {
         </div>
 
         <div className="row">
-          <div className="imagen-vicky-celtyv">
+          <div className="foto-seccion-celtyv">
             <img src={vvCeltyv} alt="victoria firmando un libro en el celtyv" />
           </div>
         </div>
@@ -130,7 +179,7 @@ const Celtyv = () => {
               víctimas del terrorismo en Argentina.
             </p>
 
-            <h4 className="subtitulo-seccion-celtyv">
+            <h4 className="subtitulo-seccion-publicaciones">
               Publicaciones Relevantes
             </h4>
 
@@ -206,7 +255,7 @@ const Celtyv = () => {
         </div>
 
         <div className="row">
-          <div>
+          <div className="foto-seccion-celtyv">
             <img src={logoCeltyv} alt="logo celtyv" />
           </div>
         </div>
