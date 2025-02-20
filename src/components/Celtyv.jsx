@@ -101,24 +101,14 @@ const Celtyv = () => {
           </div>
         </div>
 
-        {/* <div className="row">
-          <div className="foto-seccion-celtyv">
-            <img
-              src={diarioCero}
-              alt="primer niño asesinado por el terrorismo"
-            />
-          </div>
-        </div> */}
-
-        <div className="row">
+        <div className="row fila-carousel-celtyv">
           <Carousel
             data-bs-theme="dark"
             controls={false}
             indicators={false}
             interval={3000}
-            className="foto-seccion-celtyv"
           >
-            <Carousel.Item className="foto-seccion-celtyv">
+            <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={diarioCero}
@@ -128,21 +118,70 @@ const Celtyv = () => {
             <Carousel.Item>
               <img
                 className="d-block  w-100"
-                src={diarioCero}
+                src={diarioUno}
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block  w-100"
-                src={diarioUno}
+                src={diarioDos}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioTres}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioCuartro}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioCinco}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioSeis}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioSiete}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioOcho}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block  w-100"
+                src={diarioNueve}
                 alt="Third slide"
               />
             </Carousel.Item>
           </Carousel>
         </div>
 
-        <div className="row">
+        <div className="row fila-victimas-celtyv">
           <div className="col">
             <h2 className="titulo-seccion-celtyv">Las Víctimas</h2>
             <p className="parrafo-seccion-celtyv">
@@ -158,13 +197,13 @@ const Celtyv = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row ">
           <div className="foto-seccion-celtyv">
             <img src={vvCeltyv} alt="victoria firmando un libro en el celtyv" />
           </div>
         </div>
 
-        <div className="row">
+        <div className="row fila-victoria-celtyv">
           <div className="col">
             <h2 className="titulo-seccion-celtyv">
               Victoria Villarruel y su Lucha
@@ -254,14 +293,14 @@ const Celtyv = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row ">
           <div className="foto-seccion-celtyv">
             <img src={logoCeltyv} alt="logo celtyv" />
           </div>
         </div>
 
-        <div className="row">
-          <div className="col">
+        <div className="row fila-victoria-celtyv">
+          <div className="col columna-unirse-celtyv">
             <h4 className="subtitulo-seccion-celtyv">
               ¿Por qué unirse a CELTyV?
             </h4>
@@ -285,9 +324,16 @@ const Celtyv = () => {
 
             <p className="parrafo-seccion-celtyv">
               Para más información sobre cómo asociarse, envíe un correo a
-              informaciones@victimasdeargentina.com o visite aquí. Su ayuda es
-              vital para continuar trabajando en la reconstrucción de la
-              historia argentina y el reconocimiento de las víctimas del
+              informaciones@victimasdeargentina.com o{" "}
+              <a
+                href="https://celtyv.org/asociate/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                visite aquí
+              </a>
+              . Su ayuda es vital para continuar trabajando en la reconstrucción
+              de la historia argentina y el reconocimiento de las víctimas del
               terrorismo.
             </p>
           </div>

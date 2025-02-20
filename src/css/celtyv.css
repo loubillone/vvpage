@@ -65,6 +65,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.fila-carousel-celtyv {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.fila-victimas-celtyv {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.fila-victoria-celtyv {
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 .titulo-seccion-celtyv {
@@ -100,4 +117,8 @@
 .categorias-celtyv {
   font-family: "raleway-bold";
   font-size: 2.4rem;
+}
+
+.columna-unirse-celtyv {
+  margin-bottom: 10rem;
 }
