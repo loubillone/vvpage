@@ -1,9 +1,10 @@
 import React from "react";
+import UltimasNoticias from "../components/UltimasNoticias";
 
 const Noticias = () => {
   return (
     <div>
-      <h2>Noticias</h2>
+      <UltimasNoticias />
     </div>
   );
 };

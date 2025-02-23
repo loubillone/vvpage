@@ -18,6 +18,9 @@
   src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
 }
 
+.container-senadoNoti {
+  padding-bottom: 10rem;
+}
 .fila-noticias-index {
   width: 50%;
 }
@@ -56,7 +59,7 @@
 
 .card-title-index {
   font-family: "raleway-medium";
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   min-height: 3rem;
   text-overflow: ellipsis;
   padding-top: 1.5rem;
@@ -106,7 +109,6 @@
     padding-top: 3rem;
     padding-bottom: 2rem;
     margin-left: 3.5rem;
-    font-size: 1.2rem;
   }
 
   .card-noticias {

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-// import axios from "axios";
-// import NoticiasV from "./NoticiasV";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "../css/ultNoticias.css";
 import Card from "react-bootstrap/Card";
 import cardUno from "../assets/img/cardsNoticias/cardUno.png";
@@ -9,9 +8,17 @@ import cardTres from "../assets/img/cardsNoticias/cardTres.jpg";
 import cardCuatro from "../assets/img/cardsNoticias/cardCuatro.jpg";
 import cardCinco from "../assets/img/cardsNoticias/cardCinco.jpg";
 import cardSeis from "../assets/img/cardsNoticias/cardSeis.jpg";
+import tablaLibra from "../assets/img/cardsNoticias/tablaLibra.jpeg";
+import abdala from "../assets/img/cardsNoticias/abdala.jpg";
+import congreso from "../assets/img/cardsNoticias/congreso.jpg";
+import ficha from "../assets/img/cardsNoticias/ficha.jpg";
+import javierMilei from "../assets/img/cardsNoticias/javierMilei.jpg";
+import vvSenado from "../assets/img/cardsNoticias/vvSenado.jpg";
 
 const UltimasNoticias = () => {
-  const noticias = [
+  const location = useLocation();
+
+  const ultNoticias = [
     {
       imagen: cardDos,
       titulo:
@@ -69,6 +76,63 @@ const UltimasNoticias = () => {
       enlace: "https://www.senado.gob.ar/prensa/22228/noticias",
     },
   ];
+
+  const senadoNoticias = [
+    {
+      imagen: vvSenado,
+      titulo: "Uno por uno, cómo votó cada senador la suspensión de las PASO",
+      descripcion:
+        "El proyecto contó con 43 votos a favor, 20 en contra y 6 abstenciones en el Senado. Diputados ya le había dado media sanción.",
+      enlace:
+        "https://www.clarin.com/politica/voto-senador-suspension-paso_0_4BVQWwHADj.html",
+    },
+    {
+      imagen: tablaLibra,
+      titulo:
+        "El Senado rechazó crear una comisión investigadora por el caso de la criptomoneda $LIBRA",
+      descripcion:
+        "Lo pidió el radicalismo y contó con el acompañamiento del kirchnerismo. Varios de la UCR, el PRO y los provinciales votaron en contra. El rol de los gobernadores",
+      enlace:
+        "https://www.infobae.com/politica/2025/02/20/el-senado-rechazo-crear-una-comision-investigadora-por-el-caso-de-la-criptomoneda-libra/",
+    },
+    {
+      imagen: javierMilei,
+      titulo:
+        "El Gobierno celebró la suspensión de las PASO: “Un lujo que Argentina no puede darse”",
+      descripcion:
+        "Desde la Oficina del Presidente, lanzaron un nuevo escrito que agradece “la colaboración de todos los legisladores que trabajaron para este objetivo”",
+      enlace:
+        "https://www.minutouno.com/politica/el-gobierno-celebro-la-suspension-las-paso-un-lujo-que-argentina-no-puede-darse-n6115895",
+    },
+    {
+      imagen: abdala,
+      titulo:
+        "El insólito episodio por la confusión de Abdala sobre cómo manejar la sesión",
+      descripcion:
+        "La Cámara alta convirtió en ley el proyecto del oficialismo; ahora se trata reiterancia y juicio en ausencia",
+      enlace:
+        "https://www.lanacion.com.ar/politica/votacion-por-las-paso-en-el-senado-en-vivo-minuto-a-minuto-del-proyecto-de-javier-milei-nid20022025/",
+    },
+    {
+      imagen: congreso,
+      titulo:
+        "El Senado sancionó la ley de reiterancia, el proyecto que busca evitar la “puerta giratoria” en la Justicia",
+      descripcion:
+        "El proyecto, que endurece las penas de delincuentes que reinciden en el delito, fue aprobado por unanimidad en la Cámara alta; la iniciativa de juicio en ausencia también consiguió los votos",
+      enlace:
+        "https://www.lanacion.com.ar/politica/el-senado-aprobo-la-ley-de-reiterancia-el-proyecto-que-busca-evitar-la-puerta-giratoria-en-la-nid20022025/",
+    },
+
+    {
+      imagen: ficha,
+      titulo:
+        "Ficha Limpia obtuvo dictamen en el Senado, pero se tratará después del 1 de marzo en sesiones ordinarias",
+      descripcion:
+        "La iniciativa aprobada por Diputados obtuvo dictamen favorable del oficialismo y sus aliados del PRO, UCR y Juntos Somos Río Negro. A la espera de la apertura de sesiones en el Congreso.",
+      enlace:
+        "https://www.tiempoar.com.ar/ta_article/ficha-limpia-obtuvo-dictamen-en-el-senado-pero-se-tratara-despues-del-1-de-marzo-en-sesiones-ordinarias/",
+    },
+  ];
   return (
     <div>
       <div className="container-fluid">
@@ -77,22 +141,22 @@ const UltimasNoticias = () => {
         </div>
 
         <div className="row fila-card-index">
-          {noticias.map((noticia, index) => (
+          {ultNoticias.map((ultNoticia, index) => (
             <div
               key={index}
               className="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-4 offset-lg-0"
             >
               <Card className="card-noticias">
-                <Card.Img variant="top" src={noticia.imagen} />
+                <Card.Img variant="top" src={ultNoticia.imagen} />
                 <Card.Body>
                   <Card.Title className="card-title-index">
-                    {noticia.titulo}
+                    {ultNoticia.titulo}
                   </Card.Title>
                   <Card.Text className="card-textoDesc">
-                    {noticia.descripcion}
+                    {ultNoticia.descripcion}
                   </Card.Text>
                   <a
-                    href={noticia.enlace}
+                    href={ultNoticia.enlace}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="card-link"
@@ -109,6 +173,46 @@ const UltimasNoticias = () => {
           ))}
         </div>
       </div>
+      {location.pathname !== "/" && (
+        <div className="container-fluid container-senadoNoti">
+          <div className="row fila-noticias-index">
+            <h4 className="titulo-noticias-index">NOTICIAS SENADO</h4>
+          </div>
+
+          <div className="row fila-card-index">
+            {senadoNoticias.map((senadoNoticia, index) => (
+              <div
+                key={index}
+                className="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-4 offset-lg-0"
+              >
+                <Card className="card-noticias">
+                  <Card.Img variant="top" src={senadoNoticia.imagen} />
+                  <Card.Body>
+                    <Card.Title className="card-title-index">
+                      {senadoNoticia.titulo}
+                    </Card.Title>
+                    <Card.Text className="card-textoDesc">
+                      {senadoNoticia.descripcion}
+                    </Card.Text>
+                    <a
+                      href={senadoNoticia.enlace}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="card-link"
+                    >
+                      Leer Más
+                      <i
+                        className="fa fa-long-arrow-right"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </Card.Body>
+                </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
