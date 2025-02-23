@@ -174,7 +174,7 @@ const UltimasNoticias = () => {
         </div>
       </div>
       {location.pathname !== "/" && (
-        <div className="container-fluid">
+        <div className="container-fluid container-senadoNoti">
           <div className="row fila-noticias-index">
             <h4 className="titulo-noticias-index">NOTICIAS SENADO</h4>
           </div>
