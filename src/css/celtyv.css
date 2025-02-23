@@ -144,6 +144,7 @@
   }
 
   .fila-victimas-celtyv {
+    padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -167,7 +168,7 @@
     padding-bottom: 2rem;
   }
   .parrafo-seccion-celtyv {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: justify;
   }
 
