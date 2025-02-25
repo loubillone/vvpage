@@ -9,17 +9,43 @@
   src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
 }
 
-.navbar {
-  position: absolute !important;
-}
 /* Navbar transparente en galería */
 .navbar-transparent {
+  position: absolute !important;
   background-color: transparent;
   z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
   padding: 0;
+}
+
+.navbar-gallery .nav-dropdown .dropdown-menu {
+  background-color: rgba(169, 169, 169, 0.4) !important;
+  border: none;
+}
+
+.nav-dropdown .dropdown-menu {
+  background-color: rgba(214, 211, 211, 0.4) !important;
+  border: none;
+}
+
+.navbar-gallery .nav-dropdown .nav-items-drop:hover {
+  background-color: rgba(169, 169, 169, 0.4) !important;
+}
+
+.navbar-gallery {
+  color: white;
+}
+
+.navbar-gallery .nav-items,
+.navbar-gallery .nav-items-contacto {
+  color: white !important;
+}
+
+.navbar-gallery .nav-dropdown .nav-link,
+.navbar-gallery .nav-dropdown .nav-items-drop {
+  color: white !important;
 }
 
 /* Navbar normal en otras páginas */
