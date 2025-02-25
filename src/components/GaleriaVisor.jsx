@@ -18,15 +18,15 @@ const GaleriaVisor = () => {
   const imagenesIndex = [
     {
       imagen: guemesIndex,
-      titulo: tituloGuemes,
+      titulo: "GÜEMES",
     },
     {
       imagen: galaIndex,
-      titulo: tituloGala,
+      titulo: "GALA",
     },
     {
       imagen: asuncionIndex,
-      titulo: tituloAsuncion,
+      titulo: "ASUNCIÓN",
     },
   ];
   return (
@@ -42,12 +42,8 @@ const GaleriaVisor = () => {
               }}
             >
               {/* Contenido centrado */}
-              <Container className="d-flex flex-column align-items-center justify-content-center  h-100">
-                <img
-                  src={imagen.titulo}
-                  alt="gala presidencial"
-                  className="galeria-title"
-                />
+              <Container className="d-flex flex-column align-items-center justify-content-center h-100">
+                <h2 className="galeria-title">{imagen.titulo}</h2>
 
                 <Button variant="transparent" className="galeria-button">
                   Ver Galería
