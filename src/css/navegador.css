@@ -9,6 +9,28 @@
   src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
 }
 
+.navbar {
+  position: absolute !important;
+}
+/* Navbar transparente en galería */
+.navbar-transparent {
+  background-color: transparent;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+/* Navbar normal en otras páginas */
+.navbar-normal {
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
