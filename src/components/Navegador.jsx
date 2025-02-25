@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -8,6 +9,8 @@ import "../css/navegador.css";
 import vvIndex from "../assets/img/index/vvIndex.png";
 
 const Navegador = () => {
+  const location = useLocation();
+  const isGalleryPage = location.pathname === "/galeria";
   const [expanded, setExpanded] = useState(false);
 
   const handleNavClick = () => {
@@ -15,7 +18,12 @@ const Navegador = () => {
   };
   return (
     <div>
-      <Navbar expand="lg" sticky="top" expanded={expanded}>
+      <Navbar
+        expand="lg"
+        sticky="sticky"
+        expanded={expanded}
+        className={isGalleryPage ? "navbar-transparent" : "navbar-normal"}
+      >
         <Container fluid>
           <Navbar.Brand as={Link} to="/" className="vvIndex">
             <img src={vvIndex} alt="victoria villarruel" />
