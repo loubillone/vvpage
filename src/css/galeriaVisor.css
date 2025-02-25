@@ -24,12 +24,15 @@
 }
 
 .galeria-title {
-  /* font-size: 5rem;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase; */
-  width: 60rem;
-  z-index: 1;
+  font-size: 20rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  background: linear-gradient(to top, #2f2f2f, #ffffff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  opacity: 0.7;
 }
 
 button.galeria-button {
@@ -52,5 +55,26 @@ button.galeria-button:hover {
 @media (max-width: 480px) {
   .galeria-title {
     width: 25rem;
+  }
+
+  .galeria-title {
+    font-size: 4.8rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .galeria-title {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-title {
+    font-size: 4.8rem;
+    text-align: center;
+  }
+
+  button.galeria-button {
+    font-size: 1.1rem;
   }
 }
