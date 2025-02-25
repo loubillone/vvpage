@@ -24,16 +24,17 @@
 }
 
 .galeria-title {
-  font-size: 5rem;
+  /* font-size: 5rem;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  z-index: 2;
+  text-transform: uppercase; */
+  width: 60rem;
+  z-index: 1;
 }
 
 .galeria-button {
   font-size: 1.2rem;
   padding: 10px 30px;
   border-radius: 30px;
-  z-index: 2;
+  z-index: 1;
 }

@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../css/navegador.css";
 import vvIndex from "../assets/img/index/vvIndex.png";
+import logoVVblanco from "../assets/img/index/logoVVblanco.png";
 
 const Navegador = () => {
   const location = useLocation();
@@ -22,13 +23,20 @@ const Navegador = () => {
         expand="lg"
         sticky="sticky"
         expanded={expanded}
-        className={isGalleryPage ? "navbar-transparent" : "navbar-normal"}
+        className={
+          isGalleryPage ? "navbar-transparent navbar-gallery" : "navbar-normal"
+        }
       >
         <Container fluid>
           <Navbar.Brand as={Link} to="/" className="vvIndex">
-            <img src={vvIndex} alt="victoria villarruel" />
+            {isGalleryPage ? (
+              <img src={logoVVblanco} alt="victoria villarruel" />
+            ) : (
+              <img src={vvIndex} alt="victoria villarruel" />
+            )}
           </Navbar.Brand>
           <Navbar.Toggle
+            className="navbar-toggle"
             aria-controls="basic-navbar-nav"
             onClick={() => setExpanded(expanded ? false : true)}
           />
@@ -45,7 +53,7 @@ const Navegador = () => {
               <NavDropdown
                 title="Biografia"
                 id="basic-nav-dropdown"
-                className="nav-items no-border-dropdown"
+                className="nav-items no-border-dropdown nav-dropdown"
               >
                 <NavDropdown.Item href="#action/3.1" className="nav-items-drop">
                   <Nav.Link
