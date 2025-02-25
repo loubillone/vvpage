@@ -42,13 +42,14 @@ const GaleriaVisor = () => {
               }}
             >
               {/* Contenido centrado */}
-              <Container className="d-flex flex-column align-items-center justify-content-center text-center h-100">
+              <Container className="d-flex flex-column align-items-center justify-content-center  h-100">
                 <img
                   src={imagen.titulo}
                   alt="gala presidencial"
                   className="galeria-title"
                 />
-                <Button variant="light" className="galeria-button">
+
+                <Button variant="transparent" className="galeria-button">
                   Ver Galería
                 </Button>
               </Container>
