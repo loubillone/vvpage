@@ -1,34 +1,32 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/galeriaVisor.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 import guemesIndex from "../assets/img/galeria/guemes/guemesIndex.png";
 import galaIndex from "../assets/img/galeria/gala/galaIndex.png";
-import tituloGala from "../assets/img/galeria/gala/tituloGala.png";
-import tituloGuemes from "../assets/img/galeria/guemes/tituloGuemes.png";
-import tituloAsuncion from "../assets/img/galeria/asuncion/tituloAsuncion.png";
 import asuncionIndex from "../assets/img/galeria/asuncion/asuncionIndex.png";
-import vvGuemesUno from "../assets/img/galeria/guemes/vvGuemesUno.jpg";
-import vvGuemesDos from "../assets/img/galeria/guemes/vvGuemesDos.jpg";
-import vvGuemesTres from "../assets/img/galeria/guemes/vvGuemesTres.jpg";
-import vvGuemesCuatro from "../assets/img/galeria/guemes/vvGuemesCuatro.jpg";
-import vvGuemesCinco from "../assets/img/galeria/guemes/vvGuemesCinco.jpg";
-import vvGuemesSeis from "../assets/img/galeria/guemes/vvGuemesSeis.jpg";
 
 const GaleriaVisor = () => {
+  const navigate = useNavigate();
+
   const imagenesIndex = [
     {
       imagen: guemesIndex,
       titulo: "GÜEMES",
+      ruta: "/galeria/guemes",
     },
     {
       imagen: galaIndex,
       titulo: "GALA",
+      ruta: "/galeria/gala",
     },
     {
       imagen: asuncionIndex,
       titulo: "ASUNCIÓN",
+      ruta: "/galeria/asuncion",
     },
   ];
+
   return (
     <div>
       <Carousel fade indicators={false} className="carousel-galeria">
@@ -47,7 +45,8 @@ const GaleriaVisor = () => {
 
                 <Button
                   variant="transparent"
-                  className="div-button galeria-button "
+                  className="div-button galeria-button"
+                  onClick={() => navigate(imagen.ruta)}
                 >
                   Ver Galería
                 </Button>
