@@ -29,7 +29,8 @@ const GaleriaDetalle = () => {
   const galerias = {
     guemes: {
       titulo: "Güemes",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descripcion:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio tempora accusantium, harum placeat et, ut aperiam nihil illum modi facilis magni molestias labore nostrum ",
       imagenes: [
         vvGuemesUno,
         vvGuemesDos,
@@ -41,7 +42,8 @@ const GaleriaDetalle = () => {
     },
     gala: {
       titulo: "Gala",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descripcion:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio tempora accusantium, harum placeat et, ut aperiam nihil illum modi facilis magni molestias labore nostrum ",
       imagenes: [
         vvGalaUno,
         vvGalaDos,
@@ -53,7 +55,8 @@ const GaleriaDetalle = () => {
     },
     asuncion: {
       titulo: "Asuncion",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descripcion:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio tempora accusantium, harum placeat et, ut aperiam nihil illum modi facilis magni molestias labore nostrum ",
       imagenes: [
         vvAsuncionUno,
         vvAsuncionDos,
@@ -101,7 +104,6 @@ const GaleriaDetalle = () => {
             <p className="descripcion">{galeriaSeleccionada.descripcion}</p>
           </div>
 
-          {/* Carrusel */}
           <Carousel
             activeIndex={imagenIndex}
             onSelect={cambiarImagen}
@@ -119,7 +121,6 @@ const GaleriaDetalle = () => {
             ))}
           </Carousel>
 
-          {/* Botón para la siguiente galería */}
           <button className="boton-siguiente" onClick={siguienteGaleria}>
             Siguiente Galería →
           </button>

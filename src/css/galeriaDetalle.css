@@ -1,65 +1,141 @@
-.galeria-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  transition: 0.5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+/* Estilos para pantallas más grandes (desde 768px en adelante) */
+@media (min-width: 768px) {
+  .galeria-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .galeria-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  .galeria-content {
+    text-align: center;
+    position: relative; /* 🔵 Evita que quede bloqueado por capas invisibles */
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .descripcion {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+
+  .miniatura {
+    width: 30rem;
+    height: 40rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: transform 0.3s ease;
+    border: 1rem solid white;
+  }
+
+  .boton-siguiente {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .boton-siguiente:hover {
+    background-color: white;
+    color: black;
+  }
 }
 
-/* .galeria-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-} */
+/* Estilos para pantallas más pequeñas (hasta 468px) */
+@media (max-width: 468px) {
+  .galeria-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
 
-.galeria-content {
-  text-align: center;
-}
+  .galeria-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
 
-.titulo {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
+  .galeria-content {
+    margin-top: 5rem;
+    text-align: center;
+    position: relative; /* 🔵 Evita que quede bloqueado por capas invisibles */
+  }
 
-.descripcion {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 10px auto;
-}
+  .titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
 
-.miniatura {
-  width: 30rem;
-  height: 40rem;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 5rem;
-  transition: transform 0.3s ease;
-  border: 1rem solid white;
-}
+  .descripcion {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 10px auto;
+    margin-bottom: 2rem;
+  }
 
-.boton-siguiente {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 2px solid white;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-}
+  .miniatura {
+    width: 30rem;
+    height: 39.5rem;
+    object-fit: cover;
+    border-radius: 5rem;
+    transition: transform 0.3s ease;
+    border: 0.9rem solid white;
+  }
 
-.boton-siguiente:hover {
-  background-color: white;
-  color: black;
+  .boton-siguiente {
+    margin-top: 3rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .boton-siguiente:hover {
+    background-color: white;
+    color: black;
+  }
 }
