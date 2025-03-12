@@ -11,7 +11,11 @@ import logoVVblanco from "../assets/img/index/logoVVblanco.png";
 
 const Navegador = () => {
   const location = useLocation();
-  const isGalleryPage = location.pathname === "/galeria";
+  const isGalleryPage =
+    location.pathname === "/galeria" ||
+    location.pathname === "/galeria/guemes" ||
+    location.pathname === "/galeria/gala" ||
+    location.pathname === "/galeria/asuncion";
   const [expanded, setExpanded] = useState(false);
 
   const handleNavClick = () => {

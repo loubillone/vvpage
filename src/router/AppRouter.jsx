@@ -10,6 +10,7 @@ import Contacto from "../pages/Contacto";
 import Footer from "../components/Footer";
 import Celtyv from "../components/Celtyv";
 import Malvinas from "../components/Malvinas";
+import GaleriaDetalle from "../components/GaleriaDetalle";
 const AppRouter = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const AppRouter = () => {
           <Route path="/trayectoria" element={<Trayectoria />} />
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/galeria" element={<Galeria />} />
+          <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
         <Footer />
