@@ -121,6 +121,7 @@ const GaleriaDetalle = () => {
               </Carousel.Item>
             ))}
           </Carousel>
+
           <div className="galeria-botones">
             <button className="boton-siguiente" onClick={siguienteGaleria}>
               Siguiente Galería →

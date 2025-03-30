@@ -29,50 +29,77 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    position: relative; /* 🔵 Evita que quede bloqueado por capas invisibles */
+    position: relative;
   }
 
+  .carousel-galeria {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .galeria-texto {
-    width: 30%;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .carousel-galeria {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 10rem;
   }
 
   .galeria-texto .titulo {
-    font-size: 10rem;
+    font-size: 9.5rem;
     font-family: "raleway-semibold";
   }
 
   .galeria-texto .descripcion {
     font-family: "raleway-regular";
     font-size: 1.5rem;
-    max-width: 600px;
     margin: 10px auto;
     text-align: justify;
   }
 
-  .miniatura {
-    width: 50rem;
-    height: 0rem;
+  .carousel-galeria .miniatura {
+    width: 40rem;
+    height: 50rem;
     object-fit: cover;
     cursor: pointer;
     border-radius: 5rem;
     transition: transform 0.3s ease;
     border: 1rem solid white;
   }
+
+  .galeria-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50rem;
+  }
+
+  .boton-siguiente {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 13rem;
+  }
+
+  .boton-siguiente:hover {
+    background-color: white;
+    color: black;
+  }
 }
 
 /* Estilos para pantallas más grandes (desde 768px en adelante) */
-@media (min-width: 768px) {
+@media (max-width: 1063px) {
   .galeria-container {
     position: relative;
     width: 100%;
@@ -102,7 +129,7 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    position: relative; /* 🔵 Evita que quede bloqueado por capas invisibles */
+    position: relative;
   }
 
   .galeria-texto {
@@ -114,21 +141,23 @@
   }
 
   .carousel-galeria {
-    width: 55%;
+    width: 58%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .titulo {
-    font-size: 2.5rem;
-    font-weight: bold;
+  .galeria-texto .titulo {
+    font-size: 5rem;
+    font-family: "raleway-semibold";
   }
 
-  .descripcion {
-    font-size: 1.2rem;
+  .galeria-texto .descripcion {
+    font-family: "raleway-regular";
+    font-size: 1.3rem;
     max-width: 600px;
     margin: 10px auto;
+    text-align: justify;
   }
 
   .miniatura {
@@ -160,6 +189,7 @@
     justify-content: center;
     align-items: center;
     height: 4rem;
+    width: 13rem;
   }
 
   .boton-siguiente:hover {
