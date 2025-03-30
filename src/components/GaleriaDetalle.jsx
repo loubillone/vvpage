@@ -8,22 +8,19 @@ import vvGuemesDos from "../assets/img/galeria/guemes/vvGuemesDos.jpg";
 import vvGuemesTres from "../assets/img/galeria/guemes/vvGuemesTres.jpg";
 import vvGuemesCuatro from "../assets/img/galeria/guemes/vvGuemesCuatro.jpg";
 import vvGuemesCinco from "../assets/img/galeria/guemes/vvGuemesCinco.jpg";
-import vvGuemesSeis from "../assets/img/galeria/guemes/vvGuemesSeis.jpg";
+import vvGuemesSiete from "../assets/img/galeria/guemes/vvGuemesSiete.jpg";
 import vvAsuncionUno from "../assets/img/galeria/asuncion/vvAsuncionUno.jpeg";
 import vvAsuncionDos from "../assets/img/galeria/asuncion/vvAsuncionDos.jpg";
 import vvAsuncionTres from "../assets/img/galeria/asuncion/vvAsuncionTres.jpg";
 import vvAsuncionCuatro from "../assets/img/galeria/asuncion/vvAsuncionCuatro.jpg";
 import vvAsuncionCinco from "../assets/img/galeria/asuncion/vvAsuncionCinco.jpg";
 import vvAsuncionSeis from "../assets/img/galeria/asuncion/vvAsuncionSeis.png";
-import vvAsuncionSiete from "../assets/img/galeria/asuncion/vvAsuncionSiete.jpg";
 import vvGalaUno from "../assets/img/galeria/gala/vvGalaUno.jpg";
 import vvGalaDos from "../assets/img/galeria/gala/vvGalaDos.png";
 import vvGalaTres from "../assets/img/galeria/gala/vvGalaTres.png";
 import vvGalaCuatro from "../assets/img/galeria/gala/vvGalaCuatro.jpg";
 import vvGalaCinco from "../assets/img/galeria/gala/vvGalaCinco.jpg";
 import vvGalaSeis from "../assets/img/galeria/gala/vvGalaSeis.jpg";
-import vvGalaSiete from "../assets/img/galeria/gala/vvGalaSiete.jpg";
-import vvGalaOcho from "../assets/img/galeria/gala/vvGalaOcho.png";
 
 const GaleriaDetalle = () => {
   const galerias = {
@@ -39,7 +36,7 @@ const GaleriaDetalle = () => {
         vvGuemesTres,
         vvGuemesCuatro,
         vvGuemesCinco,
-        vvGuemesSeis,
+        vvGuemesSiete,
       ],
     },
     gala: {
