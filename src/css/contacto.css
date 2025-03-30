@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "monterrat-regular";
+  src: url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "monterrat-semiBold";
+  src: url("../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+}
+
+.imagen-contacto img {
+  width: 30rem;
+  border-radius: 3rem;
+}
+
+.container-titulo img {
+  width: 35rem;
+  margin-bottom: 4rem;
+}
+
+.container-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-elementos-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconos-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  color: #050505;
+}
+.iconos-contacto img {
+  width: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.info-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.titulos-form {
+  font-family: "monterrat-regular";
+  color: #838383;
+  font-size: 1.2rem;
+}
+
+.titulos-contacto {
+  font-family: "monterrat-semiBold";
+  font-size: 2rem;
+}
+
+.contacto-datos {
+  font-family: "monterrat-regular";
+  color: #0e0e0e;
+  font-size: 1.2rem;
+}
