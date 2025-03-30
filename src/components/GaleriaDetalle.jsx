@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../css/galeriaVisor.css";
 import "../css/galeriaDetalle.css";
@@ -31,6 +31,8 @@ const GaleriaDetalle = () => {
       titulo: "Güemes",
       descripcion:
         "Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes. Su presencia en estos eventos destacó por su activa participación y por el simbolismo de su vestimenta",
+      descripcionCorta:
+        "​Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes.",
       imagenes: [
         vvGuemesUno,
         vvGuemesDos,
@@ -44,6 +46,8 @@ const GaleriaDetalle = () => {
       titulo: "Gala",
       descripcion:
         "​El 10 de diciembre de 2023, en el marco de la asunción presidencial de Javier Milei, se celebró una gala especial en el Teatro Colón de Buenos Aires. Victoria Villarruel asistió al evento luciendo un elegante vestido largo de color rojo vino, de cuello alto y acompañado por un cinturón dorado. Completó su atuendo con una escarapela en el pecho, aros en blanco y negro, una cartera combinada y zapatos negros",
+      descripcionCorta:
+        "​El 10 de diciembre de 2023, en el marco de la asunción presidencial de Javier Milei, se celebró una gala especial en el Teatro Colón de Buenos Aires.",
       imagenes: [
         vvGalaUno,
         vvGalaDos,
@@ -57,6 +61,8 @@ const GaleriaDetalle = () => {
       titulo: "Asuncion",
       descripcion:
         "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel asumieron como presidente y vicepresidenta de la República Argentina, respectivamente. La jornada comenzó con la llegada de ambos al Congreso Nacional, donde fueron recibidos por la entonces vicepresidenta saliente, Cristina Fernández de Kirchner. En el Salón Azul, Milei y Villarruel firmaron los Libros de Honor del Senado y de la Cámara de Diputados.",
+      descripcionCorta:
+        "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel asumieron como presidente y vicepresidenta de la República Argentina, respectivamente.",
       imagenes: [
         vvAsuncionUno,
         vvAsuncionDos,
@@ -90,18 +96,37 @@ const GaleriaDetalle = () => {
     navigate(`/galeria/${categorias[siguienteIndex]}`);
   };
 
+  // Estado para saber si estamos en una pantalla pequeña
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 468); // Si la pantalla tiene un tamaño menor a 468px
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Verificar tamaño inicial
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div>
-      <div
-        className="galeria-container"
-        style={{
-          backgroundImage: `url(${galeriaSeleccionada.imagenes[imagenIndex]})`,
-        }}
-      >
+      <div className="galeria-container">
+        <img
+          src={galeriaSeleccionada.imagenes[imagenIndex]}
+          alt="Galería"
+          className="galeria-img"
+        ></img>
+
         <Container className="galeria-content">
           <div className="galeria-texto">
             <h1 className="titulo">{galeriaSeleccionada.titulo}</h1>
-            <p className="descripcion">{galeriaSeleccionada.descripcion}</p>
+            <p className="descripcion">
+              {isSmallScreen
+                ? galeriaSeleccionada.descripcionCorta
+                : galeriaSeleccionada.descripcion}
+            </p>
           </div>
 
           <Carousel
