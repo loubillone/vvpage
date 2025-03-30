@@ -133,11 +133,12 @@
   }
 
   .galeria-texto {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 5rem;
   }
 
   .carousel-galeria {
@@ -155,7 +156,6 @@
   .galeria-texto .descripcion {
     font-family: "raleway-regular";
     font-size: 1.3rem;
-    max-width: 600px;
     margin: 10px auto;
     text-align: justify;
   }
