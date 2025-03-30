@@ -29,7 +29,7 @@ const GaleriaVisor = () => {
 
   return (
     <div>
-      <Carousel fade indicators={false} className="carousel-galeria">
+      <Carousel fade indicators={false} className="carousel-galeria-visor">
         {imagenesIndex.map((imagen, index) => (
           <Carousel.Item key={index}>
             {/* Imagen de fondo */}
