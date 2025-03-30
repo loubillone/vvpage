@@ -21,7 +21,7 @@ const Contacto = () => {
             <div className="container-titulo">
               <img src={contactoTitulo} alt="contactanos" />
             </div>
-            <Form>
+            <Form className="col-10 offset-1">
               <Form.Group className="mb-5" controlId="formBasicText">
                 <Form.Label className="titulos-form">
                   Nombre y Apellido
