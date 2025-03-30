@@ -30,7 +30,7 @@ const GaleriaDetalle = () => {
     guemes: {
       titulo: "Güemes",
       descripcion:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio tempora accusantium, harum placeat et, ut aperiam nihil illum modi facilis magni molestias labore nostrum ",
+        "Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes. Su presencia en estos eventos destacó por su activa participación y por el simbolismo de su vestimenta.",
       imagenes: [
         vvGuemesUno,
         vvGuemesDos,
@@ -43,7 +43,7 @@ const GaleriaDetalle = () => {
     gala: {
       titulo: "Gala",
       descripcion:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio tempora accusantium, harum placeat et, ut aperiam nihil illum modi facilis magni molestias labore nostrum ",
+        "​El 10 de diciembre de 2023, en el marco de la asunción presidencial de Javier Milei, se celebró una gala especial en el Teatro Colón de Buenos Aires. Victoria Villarruel asistió al evento luciendo un elegante vestido largo de color rojo vino, de cuello alto y acompañado por un cinturón dorado. Completó su atuendo con una escarapela en el pecho, aros en blanco y negro, una cartera combinada y zapatos negros",
       imagenes: [
         vvGalaUno,
         vvGalaDos,
@@ -56,7 +56,7 @@ const GaleriaDetalle = () => {
     asuncion: {
       titulo: "Asuncion",
       descripcion:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio tempora accusantium, harum placeat et, ut aperiam nihil illum modi facilis magni molestias labore nostrum ",
+        "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel asumieron como presidente y vicepresidenta de la República Argentina, respectivamente. La jornada comenzó con la llegada de ambos al Congreso Nacional, donde fueron recibidos por la entonces vicepresidenta saliente, Cristina Fernández de Kirchner. En el Salón Azul, Milei y Villarruel firmaron los Libros de Honor del Senado y de la Cámara de Diputados.",
       imagenes: [
         vvAsuncionUno,
         vvAsuncionDos,
@@ -121,10 +121,11 @@ const GaleriaDetalle = () => {
               </Carousel.Item>
             ))}
           </Carousel>
-
-          <button className="boton-siguiente" onClick={siguienteGaleria}>
-            Siguiente Galería →
-          </button>
+          <div className="galeria-botones">
+            <button className="boton-siguiente" onClick={siguienteGaleria}>
+              Siguiente Galería →
+            </button>
+          </div>
         </Container>
       </div>
     </div>
