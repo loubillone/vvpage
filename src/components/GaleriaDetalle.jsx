@@ -30,7 +30,7 @@ const GaleriaDetalle = () => {
     guemes: {
       titulo: "Güemes",
       descripcion:
-        "Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes. Su presencia en estos eventos destacó por su activa participación y por el simbolismo de su vestimenta.",
+        "Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes. Su presencia en estos eventos destacó por su activa participación y por el simbolismo de su vestimenta",
       imagenes: [
         vvGuemesUno,
         vvGuemesDos,
