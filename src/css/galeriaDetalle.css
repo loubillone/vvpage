@@ -132,7 +132,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Coloca la imagen detrás del contenido */
+    z-index: -1;
   }
   .galeria-content {
     margin-top: 3rem;
@@ -207,7 +207,7 @@
     color: black;
   }
 }
-/* Estilos para pantallas más pequeñas (hasta 468px) */
+
 @media (max-width: 468px) {
   .galeria-container {
     position: relative;
@@ -237,7 +237,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Coloca la imagen detrás del contenido */
+    z-index: -1;
   }
   .galeria-content {
     text-align: center;
