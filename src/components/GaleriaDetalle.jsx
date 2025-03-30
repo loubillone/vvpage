@@ -99,7 +99,7 @@ const GaleriaDetalle = () => {
         }}
       >
         <Container className="galeria-content">
-          <div>
+          <div className="galeria-texto">
             <h1 className="titulo">{galeriaSeleccionada.titulo}</h1>
             <p className="descripcion">{galeriaSeleccionada.descripcion}</p>
           </div>
@@ -108,6 +108,7 @@ const GaleriaDetalle = () => {
             activeIndex={imagenIndex}
             onSelect={cambiarImagen}
             indicators={false}
+            className="carousel-galeria"
           >
             {galeriaSeleccionada.imagenes.map((imagen, idx) => (
               <Carousel.Item key={idx}>
