@@ -1,16 +1,13 @@
-/* Estilos para pantallas más grandes (desde 768px en adelante) */
-@media (min-width: 768px) {
+@media (min-width: 1064px) {
   .galeria-container {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    transition: 0.5s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    overflow: hidden;
   }
 
   .galeria-container::before {
@@ -23,35 +20,68 @@
     background: rgba(0, 0, 0, 0.4);
     z-index: 0;
   }
-
   .galeria-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    position: relative; /* 🔵 Evita que quede bloqueado por capas invisibles */
+    position: relative;
   }
 
-  .titulo {
-    font-size: 2.5rem;
-    font-weight: bold;
+  .carousel-galeria {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
-  .descripcion {
-    font-size: 1.2rem;
-    max-width: 600px;
+  .galeria-texto {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+  }
+
+  .galeria-texto .titulo {
+    font-size: 9.5rem;
+    font-family: "raleway-semibold";
+  }
+
+  .galeria-texto .descripcion {
+    font-family: "raleway-regular";
+    font-size: 1.5rem;
     margin: 10px auto;
+    text-align: justify;
   }
 
-  .miniatura {
-    width: 30rem;
-    height: 40rem;
+  .carousel-galeria .miniatura {
+    width: 40rem;
+    height: 50rem;
     object-fit: cover;
     cursor: pointer;
     border-radius: 5rem;
-    transition: transform 0.3s ease;
     border: 1rem solid white;
   }
 
+  .galeria-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50rem;
+  }
+
   .boton-siguiente {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.2);
@@ -60,6 +90,11 @@
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 13rem;
   }
 
   .boton-siguiente:hover {
@@ -68,19 +103,16 @@
   }
 }
 
-/* Estilos para pantallas más pequeñas (hasta 468px) */
-@media (max-width: 468px) {
+@media (max-width: 768px) and (min-width: 469px) {
   .galeria-container {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    transition: 0.5s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    overflow: hidden;
   }
 
   .galeria-container::before {
@@ -93,11 +125,136 @@
     background: rgba(0, 0, 0, 0.4);
     z-index: 0;
   }
-
+  .galeria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
   .galeria-content {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    position: relative; /* 🔵 Evita que quede bloqueado por capas invisibles */
+    position: relative;
+  }
+
+  .galeria-texto {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+  }
+
+  .carousel-galeria {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galeria-texto .titulo {
+    font-size: 5rem;
+    font-family: "raleway-semibold";
+  }
+
+  .galeria-texto .descripcion {
+    font-family: "raleway-regular";
+    font-size: 1.3rem;
+    margin: 10px auto;
+    text-align: justify;
+  }
+
+  .miniatura {
+    width: 30rem;
+    height: 45rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: transform 0.3s ease;
+    border: 1rem solid white;
+  }
+
+  .galeria-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50rem;
+  }
+  .boton-siguiente {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 13rem;
+  }
+
+  .boton-siguiente:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (max-width: 468px) {
+  .galeria-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+  }
+
+  .galeria-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+  .galeria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .galeria-content {
+    text-align: center;
+    margin-top: 3.5rem;
+    position: relative;
+  }
+
+  .galeria-texto {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .carousel-galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56vh;
   }
 
   .titulo {
