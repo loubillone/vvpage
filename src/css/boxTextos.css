@@ -10,7 +10,7 @@
 .container-fotos-index {
   background-image: url(../assets/img/index/lazo-arg.png);
   background-repeat: no-repeat;
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 10rem;
   position: relative;
 }
@@ -168,6 +168,127 @@
 }
 
 @media (max-width: 480px) {
+  .disable-hover {
+    pointer-events: none;
+  }
+  .container-fotos-index {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    background-size: contain;
+  }
+
+  .fila-fotos-box {
+    gap: 3rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .box-indexJM,
+  .box-indexVV {
+    width: 90%;
+    max-width: 30rem;
+    height: 42rem;
+    padding: 2rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .texto-box {
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .titulo-box {
+    font-size: 2.5rem;
+  }
+
+  .titulo-box-dos {
+    font-size: 2.5rem;
+  }
+
+  .subtitulo-box {
+    font-size: 1.2rem;
+  }
+
+  .titulo-parrafo-box {
+    font-size: 1.2rem;
+  }
+
+  .texto-parrafo-box {
+    font-size: 1.1rem;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .texto-sobre-imagen {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .titulo-sobre-imagen {
+    font-family: "raleway-bold";
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitulo-sobre-imagen {
+    font-family: "raleway-regular";
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .imagenBox {
+    position: relative;
+    width: 100%;
+  }
+
+  .contenedor-imagen {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
   .disable-hover {
     pointer-events: none;
   }
