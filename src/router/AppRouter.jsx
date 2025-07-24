@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Navegador from "../components/Navegador";
 import Biografia from "../pages/Biografia";
 import Trayectoria from "../pages/Trayectoria";
-import Noticias from "../pages/Noticias";
+// import Noticias from "../pages/Noticias";
 import Galeria from "../pages/Galeria";
 import Contacto from "../pages/Contacto";
 import Footer from "../components/Footer";
@@ -22,7 +22,7 @@ const AppRouter = () => {
           <Route path="/celtyv" element={<Celtyv />} />
           <Route path="/malvinas" element={<Malvinas />} />
           <Route path="/trayectoria" element={<Trayectoria />} />
-          <Route path="/noticias" element={<Noticias />} />
+          {/* <Route path="/noticias" element={<Noticias />} /> */}
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
           <Route path="/contacto" element={<Contacto />} />

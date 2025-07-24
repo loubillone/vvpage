@@ -1,0 +1,15 @@
+.texto-principal-home {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.parrafo-home-vv {
+  font-size: 2.3rem;
+  font-family: "raleway-regular";
+  text-align: justify;
+}
+
+.vv-estilo {
+  font-weight: bold;
+  color: #000000;
+}
