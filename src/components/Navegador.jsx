@@ -98,14 +98,14 @@ const Navegador = () => {
               >
                 Trayectoria
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 as={NavLink}
                 to="/noticias"
                 className="nav-items"
                 onClick={handleNavClick}
               >
                 Noticias
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 as={NavLink}
                 to="/galeria"
