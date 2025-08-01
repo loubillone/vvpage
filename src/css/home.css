@@ -4,7 +4,7 @@
 }
 
 .parrafo-home-vv {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: "raleway-regular";
   text-align: justify;
 }
@@ -12,4 +12,37 @@
 .vv-estilo {
   font-weight: bold;
   color: #000000;
+}
+
+@media (max-width: 768px) {
+  .parrafo-home-vv {
+    font-size: 1.8rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .vv-estilo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .parrafo-home-vv {
+    font-size: 1.5rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+  }
+  .vv-estilo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .parrafo-home-vv {
+    font-size: 1.2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .vv-estilo {
+    font-size: 1.2rem;
+  }
 }
