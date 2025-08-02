@@ -47,8 +47,22 @@
     padding-bottom: 1.5rem;
   }
 
+  .col-icono-compromiso img {
+    width: 7rem;
+  }
   .texto-iconos-compromiso {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .col-icono-compromiso img {
+    width: 6.5rem;
+  }
+
+  .texto-iconos-compromiso {
+    font-size: 1.5rem;
     text-align: center;
   }
 }
