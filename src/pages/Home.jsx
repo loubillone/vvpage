@@ -21,7 +21,7 @@ const Home = () => {
               <span className="vv-estilo">
                 actual Vicepresidente de la Nación Argentina
               </span>
-              . Es fundadora y presidente de la Asociación Civil Centro de
+              . Es fundadora y ex presidente de la Asociación Civil Centro de
               Estudios Legales sobre el Terrorismo y sus Víctimas (CELTYV).
               Además, es Técnica en Seguridad Urbana y Portuaria. <br /> <br />
               Es autora del libro "Los llaman... jóvenes idealistas" y coautora
