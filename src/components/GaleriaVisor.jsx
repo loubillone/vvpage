@@ -6,6 +6,8 @@ import guemesIndex from "../assets/img/galeria/guemes/guemesIndex.png";
 import galaIndex from "../assets/img/galeria/gala/galaIndex.png";
 import asuncionIndex from "../assets/img/galeria/asuncion/asuncionIndex.png";
 import vv2DeAbrilIndex from "../assets/img/galeria/2DeAbril/2DeAbrilIndex.jpg";
+import vv25DeMayoIndex from "../assets/img/galeria/25DeMayo/vv25DeMayoIndex.jpg";
+import ruta40Index from "../assets/img/galeria/ruta40/ruta40Index.jpg";
 
 const GaleriaVisor = () => {
   const navigate = useNavigate();
@@ -30,6 +32,16 @@ const GaleriaVisor = () => {
       imagen: vv2DeAbrilIndex,
       titulo: "2 DE ABRIL",
       ruta: "/galeria/DosDeAbril",
+    },
+    {
+      imagen: vv25DeMayoIndex,
+      titulo: "25deMAYO",
+      ruta: "/galeria/VeinticincoDeMayo",
+    },
+    {
+      imagen: ruta40Index,
+      titulo: "Ruta 40",
+      ruta: "/galeria/ruta40",
     },
   ];
 
