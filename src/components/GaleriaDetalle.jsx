@@ -22,7 +22,7 @@ import vvGalaCuatro from "../assets/img/galeria/gala/vvGalaCuatro.jpg";
 import vvGalaCinco from "../assets/img/galeria/gala/vvGalaCinco.jpg";
 import vvGalaSeis from "../assets/img/galeria/gala/vvGalaSeis.jpg";
 import vv2DeAbrilUno from "../assets/img/galeria/2DeAbril/vv2DeAbrilUno.jpg";
-import vv2DeAbrilDos from "../assets/img/galeria/2DeAbril/vv2DeAbrilDos.jpg";
+import vv2DeAbrilDos from "../assets/img/galeria/2DeAbril/vv2deAbrilDos.jpg";
 import vv2DeAbrilTres from "../assets/img/galeria/2DeAbril/vv2DeAbrilTres.jpg";
 import vv2DeAbrilCuatro from "../assets/img/galeria/2DeAbril/vv2DeAbrilCuatro.jpg";
 import vv2DeAbrilCinco from "../assets/img/galeria/2DeAbril/vv2DeAbrilCinco.jpg";
