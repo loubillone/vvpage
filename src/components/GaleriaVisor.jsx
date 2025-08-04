@@ -5,15 +5,18 @@ import { Carousel, Container, Button } from "react-bootstrap";
 import guemesIndex from "../assets/img/galeria/guemes/guemesIndex.png";
 import galaIndex from "../assets/img/galeria/gala/galaIndex.png";
 import asuncionIndex from "../assets/img/galeria/asuncion/asuncionIndex.png";
+import vv2DeAbrilIndex from "../assets/img/galeria/2DeAbril/2DeAbrilIndex.jpg";
+import vv25DeMayoIndex from "../assets/img/galeria/25DeMayo/vv25DeMayoIndex.jpg";
+import ruta40Index from "../assets/img/galeria/ruta40/ruta40Index.jpg";
 
 const GaleriaVisor = () => {
   const navigate = useNavigate();
 
   const imagenesIndex = [
     {
-      imagen: guemesIndex,
-      titulo: "GÜEMES",
-      ruta: "/galeria/guemes",
+      imagen: asuncionIndex,
+      titulo: "ASUNCIÓN",
+      ruta: "/galeria/asuncion",
     },
     {
       imagen: galaIndex,
@@ -21,9 +24,24 @@ const GaleriaVisor = () => {
       ruta: "/galeria/gala",
     },
     {
-      imagen: asuncionIndex,
-      titulo: "ASUNCIÓN",
-      ruta: "/galeria/asuncion",
+      imagen: guemesIndex,
+      titulo: "GÜEMES",
+      ruta: "/galeria/guemes",
+    },
+    {
+      imagen: vv2DeAbrilIndex,
+      titulo: "2 DE ABRIL",
+      ruta: "/galeria/DosDeAbril",
+    },
+    {
+      imagen: vv25DeMayoIndex,
+      titulo: "25deMAYO",
+      ruta: "/galeria/VeinticincoDeMayo",
+    },
+    {
+      imagen: ruta40Index,
+      titulo: "Ruta 40",
+      ruta: "/galeria/ruta40",
     },
   ];
 
