@@ -110,25 +110,42 @@ body.galeria-detalle-page {
     margin-top: 50rem;
   }
 
-  .boton-siguiente {
-    padding: 10px 20px;
-    font-size: 1rem;
+  .boton-unico {
+    display: flex;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
-    color: white;
-    cursor: pointer;
     border-radius: 5px;
+    height: 4rem;
+    width: 15rem;
+    cursor: pointer;
     transition: 0.3s;
+  }
+
+  .zona-anterior,
+  .zona-siguiente {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4rem;
-    width: 13rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    transition: 0.3s;
+    color: white;
   }
 
-  .boton-siguiente:hover {
+  .zona-anterior:hover,
+  .zona-siguiente:hover {
     background-color: white;
     color: black;
+  }
+
+  .separador {
+    width: 2px;
+    height: 60%;
+    background-color: white;
+    opacity: 0.5;
   }
 }
 
@@ -207,25 +224,43 @@ body.galeria-detalle-page {
     align-items: center;
     margin-top: 50rem;
   }
-  .boton-siguiente {
-    padding: 10px 20px;
-    font-size: 1rem;
+
+  .boton-unico {
+    display: flex;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
-    color: white;
-    cursor: pointer;
     border-radius: 5px;
+    height: 4rem;
+    width: 15rem;
+    cursor: pointer;
     transition: 0.3s;
+  }
+
+  .zona-anterior,
+  .zona-siguiente {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4rem;
-    width: 13rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    transition: 0.3s;
+    color: white;
   }
 
-  .boton-siguiente:hover {
+  .zona-anterior:hover,
+  .zona-siguiente:hover {
     background-color: white;
     color: black;
+  }
+
+  .separador {
+    width: 2px;
+    height: 60%;
+    background-color: white;
+    opacity: 0.5;
   }
 }
 
@@ -294,20 +329,52 @@ body.galeria-detalle-page {
     border: 0.9rem solid white;
   }
 
-  .boton-siguiente {
-    margin-top: 3rem;
-    padding: 10px 20px;
-    font-size: 1rem;
+  .galeria-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .boton-unico {
+    display: flex;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
-    color: white;
-    cursor: pointer;
     border-radius: 5px;
+    height: 3.5rem;
+    width: 12rem;
+    cursor: pointer;
     transition: 0.3s;
   }
 
-  .boton-siguiente:hover {
+  .zona-anterior,
+  .zona-siguiente {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 100%;
+    transition: 0.3s;
+    color: white;
+  }
+
+  .zona-anterior:hover,
+  .zona-siguiente:hover {
     background-color: white;
     color: black;
+  }
+
+  .separador {
+    width: 2px;
+    height: 60%;
+    background-color: white;
+    opacity: 0.5;
   }
 }

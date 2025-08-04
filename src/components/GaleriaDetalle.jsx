@@ -102,7 +102,7 @@ const GaleriaDetalle = () => {
       descripcion:
         "El 25 de mayo de 2025, Victoria Villarruel participó de los actos oficiales por el aniversario de la Revolución de Mayo. La jornada comenzó con el tradicional Tedeum en la Catedral Metropolitana de Buenos Aires, donde asistió junto al presidente Javier Milei y otras autoridades.",
       descripcionCorta:
-        "El 25 de mayo de 2025, Victoria Villarruel participó de los actos oficiales por el aniversario de la Revolución de Mayo.",
+        "El 25 de mayo de 2025, Victoria Villarruel participó de los actos oficiales por el aniversario de la Revolución de Mayo. La jornada comenzó con el tradicional Tedeum en la Catedral Metropolitana de Buenos Aires.",
       imagenes: [
         vv25DeMayoUno,
         vv25DeMayoDos,
@@ -116,7 +116,7 @@ const GaleriaDetalle = () => {
       descripcion:
         "Durante su visita a la provincia de Catamarca, la vicepresidente Victoria Villarruel se detuvo en el kilómetro 4040 de la Ruta Nacional 40, en un gesto de reconocimiento a esta vía emblemática que atraviesa la Argentina de sur a norte. Allí rindió homenaje a la ruta más extensa del país, destacando su valor estratégico y simbólico como columna vertebral que une regiones. La actividad se enmarcó en su recorrido federal.",
       descripcionCorta:
-        "Durante su visita a la provincia de Catamarca, Victoria Villarruel se detuvo en el kilómetro 4040 de la Ruta Nacional 40, en un gesto de reconocimiento a esta vía emblemática que atraviesa la Argentina de sur a norte.",
+        "Durante su visita en Catamarca, Victoria Villarruel se detuvo en el kilómetro 4040 de la Ruta Nacional 40, en un gesto de reconocimiento a esta vía emblemática que atraviesa la Argentina de sur a norte.",
       imagenes: [vvRuta40Uno, vvRuta40Dos, vvRuta40Tres, vvRuta40Cuatro],
     },
   };
@@ -135,12 +135,19 @@ const GaleriaDetalle = () => {
   const cambiarImagen = (selectedIndex) => {
     setImagenIndex(selectedIndex);
   };
-  // Función para cambiar a la siguiente galería
-  const siguienteGaleria = () => {
+  // Función para cambiar de galería (adelante o atrás)
+  const cambiarGaleria = (direccion) => {
     const categorias = Object.keys(galerias);
     const indexActual = categorias.indexOf(categoria);
-    const siguienteIndex = (indexActual + 1) % categorias.length;
-    navigate(`/galeria/${categorias[siguienteIndex]}`);
+    let nuevoIndex;
+
+    if (direccion === "adelante") {
+      nuevoIndex = (indexActual + 1) % categorias.length;
+    } else {
+      nuevoIndex = indexActual === 0 ? categorias.length - 1 : indexActual - 1;
+    }
+
+    navigate(`/galeria/${categorias[nuevoIndex]}`);
   };
 
   // Estado para saber si estamos en una pantalla pequeña
@@ -201,9 +208,21 @@ const GaleriaDetalle = () => {
         </Carousel>
 
         <div className="galeria-botones">
-          <button className="boton-siguiente" onClick={siguienteGaleria}>
-            Siguiente Galería →
-          </button>
+          <div className="boton-unico">
+            <div
+              className="zona-anterior"
+              onClick={() => cambiarGaleria("atras")}
+            >
+              ←
+            </div>
+            <div className="separador"></div>
+            <div
+              className="zona-siguiente"
+              onClick={() => cambiarGaleria("adelante")}
+            >
+              →
+            </div>
+          </div>
         </div>
       </Container>
     </div>
