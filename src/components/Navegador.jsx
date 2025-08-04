@@ -13,9 +13,7 @@ const Navegador = () => {
   const location = useLocation();
   const isGalleryPage =
     location.pathname === "/galeria" ||
-    location.pathname === "/galeria/guemes" ||
-    location.pathname === "/galeria/gala" ||
-    location.pathname === "/galeria/asuncion";
+    location.pathname.startsWith("/galeria/");
   const [expanded, setExpanded] = useState(false);
 
   const handleNavClick = () => {

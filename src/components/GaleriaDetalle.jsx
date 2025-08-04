@@ -21,22 +21,27 @@ import vvGalaTres from "../assets/img/galeria/gala/vvGalaTres.png";
 import vvGalaCuatro from "../assets/img/galeria/gala/vvGalaCuatro.jpg";
 import vvGalaCinco from "../assets/img/galeria/gala/vvGalaCinco.jpg";
 import vvGalaSeis from "../assets/img/galeria/gala/vvGalaSeis.jpg";
+import vv2DeAbrilUno from "../assets/img/galeria/2DeAbril/vv2DeAbrilUno.jpg";
+import vv2DeAbrilDos from "../assets/img/galeria/2DeAbril/vv2DeAbrilDos.jpg";
+import vv2DeAbrilTres from "../assets/img/galeria/2DeAbril/vv2DeAbrilTres.jpg";
+import vv2DeAbrilCuatro from "../assets/img/galeria/2DeAbril/vv2DeAbrilCuatro.jpg";
+import vv2DeAbrilCinco from "../assets/img/galeria/2DeAbril/vv2DeAbrilCinco.jpg";
 
 const GaleriaDetalle = () => {
   const galerias = {
-    guemes: {
-      titulo: "Güemes",
+    asuncion: {
+      titulo: "Asuncion",
       descripcion:
-        "Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes. Su presencia en estos eventos destacó por su activa participación y por el simbolismo de su vestimenta",
+        "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel asumieron como presidente y vicepresidenta de la República Argentina, respectivamente. La jornada comenzó con la llegada de ambos al Congreso Nacional, donde fueron recibidos por la entonces vicepresidenta saliente, Cristina Fernández de Kirchner. En el Salón Azul, Milei y Villarruel firmaron los Libros de Honor del Senado y de la Cámara de Diputados.",
       descripcionCorta:
-        "​Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes.",
+        "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel asumieron como presidente y vicepresidenta de la República Argentina, respectivamente.",
       imagenes: [
-        vvGuemesUno,
-        vvGuemesDos,
-        vvGuemesTres,
-        vvGuemesCuatro,
-        vvGuemesCinco,
-        vvGuemesSiete,
+        vvAsuncionUno,
+        vvAsuncionDos,
+        vvAsuncionTres,
+        vvAsuncionCuatro,
+        vvAsuncionCinco,
+        vvAsuncionSeis,
       ],
     },
     gala: {
@@ -54,19 +59,33 @@ const GaleriaDetalle = () => {
         vvGalaSeis,
       ],
     },
-    asuncion: {
-      titulo: "Asuncion",
+    guemes: {
+      titulo: "Güemes",
+      descripcion:
+        "Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes. Su presencia en estos eventos destacó por su activa participación y por el simbolismo de su vestimenta",
+      descripcionCorta:
+        "​Victoria Villarruel, visitó la provincia de Salta para participar en los actos conmemorativos del 203º aniversario del fallecimiento del General Martín Miguel de Güemes.",
+      imagenes: [
+        vvGuemesUno,
+        vvGuemesDos,
+        vvGuemesTres,
+        vvGuemesCuatro,
+        vvGuemesCinco,
+        vvGuemesSiete,
+      ],
+    },
+    DosDeAbril: {
+      titulo: "2 de Abril",
       descripcion:
         "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel asumieron como presidente y vicepresidenta de la República Argentina, respectivamente. La jornada comenzó con la llegada de ambos al Congreso Nacional, donde fueron recibidos por la entonces vicepresidenta saliente, Cristina Fernández de Kirchner. En el Salón Azul, Milei y Villarruel firmaron los Libros de Honor del Senado y de la Cámara de Diputados.",
       descripcionCorta:
         "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel asumieron como presidente y vicepresidenta de la República Argentina, respectivamente.",
       imagenes: [
-        vvAsuncionUno,
-        vvAsuncionDos,
-        vvAsuncionTres,
-        vvAsuncionCuatro,
-        vvAsuncionCinco,
-        vvAsuncionSeis,
+        vv2DeAbrilUno,
+        vv2DeAbrilDos,
+        vv2DeAbrilTres,
+        vv2DeAbrilCuatro,
+        vv2DeAbrilCinco,
       ],
     },
   };
@@ -108,49 +127,47 @@ const GaleriaDetalle = () => {
   }, []);
 
   return (
-    <div>
-      <div className="galeria-container">
-        <img
-          src={galeriaSeleccionada.imagenes[imagenIndex]}
-          alt="Galería"
-          className="galeria-img"
-        ></img>
+    <div className="galeria-container">
+      <img
+        src={galeriaSeleccionada.imagenes[imagenIndex]}
+        alt="Galería"
+        className="galeria-img"
+      ></img>
 
-        <Container className="galeria-content">
-          <div className="galeria-texto">
-            <h1 className="titulo">{galeriaSeleccionada.titulo}</h1>
-            <p className="descripcion">
-              {isSmallScreen
-                ? galeriaSeleccionada.descripcionCorta
-                : galeriaSeleccionada.descripcion}
-            </p>
-          </div>
+      <Container className="galeria-content">
+        <div className="galeria-texto">
+          <h1 className="titulo">{galeriaSeleccionada.titulo}</h1>
+          <p className="descripcion">
+            {isSmallScreen
+              ? galeriaSeleccionada.descripcionCorta
+              : galeriaSeleccionada.descripcion}
+          </p>
+        </div>
 
-          <Carousel
-            activeIndex={imagenIndex}
-            onSelect={cambiarImagen}
-            indicators={false}
-            className="carousel-galeria"
-          >
-            {galeriaSeleccionada.imagenes.map((imagen, idx) => (
-              <Carousel.Item key={idx}>
-                <img
-                  src={imagen}
-                  alt={`Imagen ${idx + 1}`}
-                  className="miniatura"
-                  onClick={() => setImagenIndex(idx)}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+        <Carousel
+          activeIndex={imagenIndex}
+          onSelect={cambiarImagen}
+          indicators={false}
+          className="carousel-galeria"
+        >
+          {galeriaSeleccionada.imagenes.map((imagen, idx) => (
+            <Carousel.Item key={idx}>
+              <img
+                src={imagen}
+                alt={`Imagen ${idx + 1}`}
+                className="miniatura"
+                onClick={() => setImagenIndex(idx)}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
 
-          <div className="galeria-botones">
-            <button className="boton-siguiente" onClick={siguienteGaleria}>
-              Siguiente Galería →
-            </button>
-          </div>
-        </Container>
-      </div>
+        <div className="galeria-botones">
+          <button className="boton-siguiente" onClick={siguienteGaleria}>
+            Siguiente Galería →
+          </button>
+        </div>
+      </Container>
     </div>
   );
 };
