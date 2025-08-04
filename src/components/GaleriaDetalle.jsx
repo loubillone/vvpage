@@ -210,7 +210,6 @@ const GaleriaDetalle = () => {
         <div className="galeria-botones">
           <div className="boton-unico">
             <div className="zona-anterior-container">
-              <div className="texto-navegacion">Anterior</div>
               <div
                 className="zona-anterior"
                 onClick={() => cambiarGaleria("atras")}
@@ -220,7 +219,6 @@ const GaleriaDetalle = () => {
             </div>
             <div className="separador"></div>
             <div className="zona-siguiente-container">
-              <div className="texto-navegacion">Siguiente</div>
               <div
                 className="zona-siguiente"
                 onClick={() => cambiarGaleria("adelante")}

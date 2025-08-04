@@ -116,8 +116,8 @@ body.galeria-detalle-page {
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
     border-radius: 5px;
-    height: 6rem;
-    width: 18rem;
+    height: 4rem;
+    width: 15rem;
     cursor: pointer;
     transition: 0.3s;
     position: relative;
@@ -132,15 +132,6 @@ body.galeria-detalle-page {
     justify-content: center;
     height: 100%;
     position: relative;
-  }
-
-  .texto-navegacion {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 0.3rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
 
   .zona-anterior,
@@ -253,8 +244,8 @@ body.galeria-detalle-page {
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
     border-radius: 5px;
-    height: 5.5rem;
-    width: 16rem;
+    height: 4rem;
+    width: 12rem;
     cursor: pointer;
     transition: 0.3s;
     position: relative;
@@ -269,15 +260,6 @@ body.galeria-detalle-page {
     justify-content: center;
     height: 100%;
     position: relative;
-  }
-
-  .texto-navegacion {
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 0.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
   }
 
   .zona-anterior,
@@ -332,14 +314,13 @@ body.galeria-detalle-page {
   }
   .galeria-content {
     text-align: center;
-    margin-top: 0.2rem;
     position: relative;
     z-index: 2; /* Asegurar que esté por encima del overlay */
   }
 
   .galeria-texto {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .carousel-galeria {
@@ -352,15 +333,14 @@ body.galeria-detalle-page {
   .galeria-texto .titulo {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-family: "raleway-bold";
   }
 
   .galeria-texto .descripcion {
     font-size: 1.2rem;
     max-width: 600px;
-    margin: 10px auto;
-    margin-bottom: 0.1rem;
+    margin-bottom: 1.8rem;
     font-family: "raleway-regular";
   }
 
@@ -390,8 +370,8 @@ body.galeria-detalle-page {
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
     border-radius: 5px;
-    height: 4.5rem;
-    width: 13rem;
+    height: 3rem;
+    width: 11rem;
     cursor: pointer;
     transition: 0.3s;
     position: relative;
@@ -406,15 +386,6 @@ body.galeria-detalle-page {
     justify-content: center;
     height: 100%;
     position: relative;
-  }
-
-  .texto-navegacion {
-    font-size: 0.6rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 0.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
   }
 
   .zona-anterior,
