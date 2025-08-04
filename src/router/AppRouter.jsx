@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import Navegador from "../components/Navegador";
 import Biografia from "../pages/Biografia";
@@ -11,23 +11,37 @@ import Footer from "../components/Footer";
 import Celtyv from "../components/Celtyv";
 import Malvinas from "../components/Malvinas";
 import GaleriaDetalle from "../components/GaleriaDetalle";
+
+const AppContent = () => {
+  const location = useLocation();
+  const isGalleryDetail =
+    location.pathname.startsWith("/galeria/") &&
+    location.pathname !== "/galeria";
+
+  return (
+    <>
+      <Navegador />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/biografia" element={<Biografia />} />
+        <Route path="/celtyv" element={<Celtyv />} />
+        <Route path="/malvinas" element={<Malvinas />} />
+        <Route path="/trayectoria" element={<Trayectoria />} />
+        {/* <Route path="/noticias" element={<Noticias />} /> */}
+        <Route path="/galeria" element={<Galeria />} />
+        <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
+        <Route path="/contacto" element={<Contacto />} />
+      </Routes>
+      {!isGalleryDetail && <Footer />}
+    </>
+  );
+};
+
 const AppRouter = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navegador />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/biografia" element={<Biografia />} />
-          <Route path="/celtyv" element={<Celtyv />} />
-          <Route path="/malvinas" element={<Malvinas />} />
-          <Route path="/trayectoria" element={<Trayectoria />} />
-          {/* <Route path="/noticias" element={<Noticias />} /> */}
-          <Route path="/galeria" element={<Galeria />} />
-          <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
-          <Route path="/contacto" element={<Contacto />} />
-        </Routes>
-        <Footer />
+        <AppContent />
       </BrowserRouter>
     </div>
   );

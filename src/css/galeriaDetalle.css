@@ -1,14 +1,38 @@
+/* Estilos globales para asegurar altura completa */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevenir scroll extra */
+}
+
+/* Asegurar que el contenedor de galería ocupe toda la pantalla */
+.galeria-container {
+  position: fixed; /* Cambiar a fixed para ocupar toda la pantalla */
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  /* Asegurar que ocupe toda la pantalla incluso con navbar absoluto */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Asegurar que esté por encima del footer */
+}
+
+/* Asegurar que el navbar esté por encima de la galería */
+.navbar-transparent {
+  z-index: 1000 !important;
+}
+
 @media (min-width: 1064px) {
-  .galeria-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    overflow: hidden;
-  }
+  /* Estilos específicos para pantallas grandes */
 
   .galeria-container::before {
     content: "";
@@ -26,6 +50,7 @@
     flex-direction: row;
     text-align: center;
     position: relative;
+    z-index: 2; /* Asegurar que esté por encima del overlay */
   }
 
   .carousel-galeria {
@@ -104,16 +129,7 @@
 }
 
 @media (max-width: 768px) and (min-width: 469px) {
-  .galeria-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    overflow: hidden;
-  }
+  /* Estilos específicos para pantallas medianas */
 
   .galeria-container::before {
     content: "";
@@ -140,6 +156,7 @@
     flex-direction: row;
     text-align: center;
     position: relative;
+    z-index: 2; /* Asegurar que esté por encima del overlay */
   }
 
   .galeria-texto.galeria-texto {
@@ -209,16 +226,7 @@
 }
 
 @media (max-width: 468px) {
-  .galeria-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    overflow: hidden;
-  }
+  /* Estilos específicos para pantallas pequeñas */
 
   .galeria-container::before {
     content: "";
@@ -243,6 +251,7 @@
     text-align: center;
     margin-top: 0.2rem;
     position: relative;
+    z-index: 2; /* Asegurar que esté por encima del overlay */
   }
 
   .galeria-texto {
