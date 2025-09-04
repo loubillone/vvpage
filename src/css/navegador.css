@@ -92,7 +92,7 @@ body {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1300px) {
   .vvIndex img {
     margin-left: 0rem;
     margin-right: 0rem;
@@ -100,6 +100,10 @@ body {
   .navbar {
     margin-left: 1.8rem;
     margin-right: 1.8rem;
+  }
+
+  .navbar .nav-items {
+    margin-right: 7rem;
   }
 }
 
