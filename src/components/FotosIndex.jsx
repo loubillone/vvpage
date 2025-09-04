@@ -5,11 +5,11 @@ import "../css/boxTextos.css";
 
 const FotosIndex = () => {
   const [activeBoxes, setActiveBoxes] = useState(new Set());
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 480);
+      setIsMobile(window.innerWidth <= 767);
     };
 
     window.addEventListener("resize", handleResize);
