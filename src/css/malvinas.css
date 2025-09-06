@@ -17,23 +17,21 @@
 }
 
 .fila-malvinas {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 
-.columna-malvinas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container-titulo {
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
+
 .titulo-parrafo-malvinas {
   font-family: "raleway-bold";
   color: #031f42;
-  font-size: 2rem;
-  text-align: justify;
-  padding: 1.2rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
+
 .parrafo-malvinas {
   font-family: "raleway-regular";
   color: #000000;
@@ -43,31 +41,39 @@
   line-height: 180%;
 }
 
+.imagen-malvinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .imagen-malvinas img {
-  width: 100%;
+  width: 90%;
   filter: grayscale(1);
   cursor: pointer;
   transition-duration: 1s;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .imagen-malvinas img:hover {
   transition: filter 0.8s ease transform 0.8s ease;
   filter: grayscale(0);
-  transform: scale(1.1);
 }
 
-.container-parrafo-malvinas {
+.contenedor-parrafo-malvinas {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0 10rem 0;
+  padding: 1.5rem 0 1.5rem 0;
 }
 
 .parrafo-malvinas-final {
   color: #031f42;
   font-family: "raleway-regular";
   font-size: 3rem;
+  text-align: center;
+  padding-bottom: 8rem;
 }
 
 @media (max-width: 768px) {
@@ -77,7 +83,7 @@
 
   .parrafo-malvinas-final {
     font-size: 1.9rem;
-    text-align: justify;
+    text-align: center;
   }
 }
 
@@ -95,13 +101,13 @@
 
   .fila-malvinas {
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .imagen-malvinas img {
-    padding: 2rem 4rem 4rem 4rem;
     filter: grayscale(0);
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .imagen-malvinas img:hover {
@@ -117,12 +123,14 @@
     line-height: 200%;
   }
 
-  .container-parrafo-malvinas {
-    padding: 5rem 1rem 8rem 1rem;
+  .container-titulo {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .parrafo-malvinas-final {
     font-size: 1.7rem;
     text-align: center;
+    padding-bottom: 5rem;
   }
 }
