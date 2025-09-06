@@ -1,12 +1,9 @@
 import React from "react";
 import "../css/malvinas.css";
-import bote from "../assets/img/biografia/malvinas/bote.png";
-import helicoptero from "../assets/img/biografia/malvinas/helicoptero.png";
-import malvinas from "../assets/img/biografia/malvinas/malvinas.png";
 import malvinasTitle from "../assets/img/biografia/malvinas/malvinasTitle.png";
-import soldados from "../assets/img/biografia/malvinas/soldados.png";
-import soldados2 from "../assets/img/biografia/malvinas/soldados2.png";
-
+import vvMalvinas from "../assets/img/biografia/malvinas/vvMalvinas.jpg";
+import vvMalvinasU from "../assets/img/biografia/malvinas/vvMalvinasUshuaia.jpg";
+import vvMalvinasE from "../assets/img/biografia/malvinas/vvMalvinasEpopeya.jpg";
 const Malvinas = () => {
   return (
     <div>
@@ -21,37 +18,48 @@ const Malvinas = () => {
           <div className="col columna-malvinas">
             <div className="imagen-malvinas">
               <img
-                src={soldados2}
-                alt="soldados en malvinas con armas levantadas con los brazos"
+                src={vvMalvinas}
+                alt="Victoria Villarruel con veteranos de Malvinas"
               />
             </div>
           </div>
           <div className="col columna-malvinas">
             <div className="contenedor-parrafo-malvinas">
+              <h3 className="titulo-parrafo-malvinas">
+                ENTREGA DE DIPLOMAS DE HONOR A MILITARES VETERANOS DE MALVINAS
+              </h3>
               <p className="parrafo-malvinas">
-                La Guerra de las Malvinas, ocurrida entre abril y junio de 1982,
-                fue un conflicto armado entre Argentina y el Reino Unido por la
-                soberanía de las Islas Malvinas, Georgias del Sur y Sandwich del
-                Sur. El conflicto se originó en un reclamo territorial de
-                Argentina, que consideraba estas islas parte de su territorio,
-                mientras que el Reino Unido las administraba desde 1833. El 2 de
-                abril de 1982, tropas argentinas desembarcaron en las Malvinas,
-                provocando una inmediata reacción militar del Reino Unido. Los
-                enfrentamientos intensos en el Atlántico Sur incluyeron
-                operaciones aéreas y navales, culminando el 14 de junio de 1982
-                con la rendición argentina y la recaptura de las islas por parte
-                del Reino Unido. El conflicto causó aproximadamente 649 bajas
-                argentinas, 255 británicas y 3 civiles isleños, dejando secuelas
-                emocionales y políticas duraderas. En Argentina, la guerra
-                exacerbó tensiones políticas internas y aumentó la conciencia
-                nacional sobre la soberanía territorial. En el Reino Unido, la
-                victoria fortaleció el gobierno de Margaret Thatcher y consolidó
-                la percepción británica de su papel global y sus intereses en el
-                Atlántico Sur. La Guerra de Malvinas no solo fue un conflicto
-                bélico por la posesión de territorios, sino también un evento
-                que moldeó identidades nacionales, influyó en la geopolítica
-                regional y dejó una huella indeleble en la memoria colectiva de
-                argentinos, británicos y los habitantes de las islas.
+                El acto fue encabezado por la presidente del Senado, Victoria
+                Villarruel, y también fueron distinguidas la Comisión Nacional
+                de Ex-combatientes de Malvinas y la Comisión de Familiares de
+                Caídos en la Guerra de Malvinas e Islas del Atlántico Sur.
+                Durante la jornada se realizó en el Salón Azul del Congreso la
+                ceremonia de entrega de Diplomas de Honor del Senado de la
+                Nación a Veteranos de la Guerra de Malvinas, en el marco del 42º
+                aniversario de la Recuperación de las Islas. Luego de agradecer
+                a todos los presentes, Villarruel clausuró la ceremonia y
+                expresó: “Han sido 42 años durísimos, de desmalvinización, de
+                olvido, de indiferencia, donde estos hombres no recibieron el
+                abrazo de la sociedad argentina que tanto merecían y habían
+                ganado”. También afirmó: “Quiero agradecer especialmente al
+                Presidente de la Nación, Javier Milei, por elegirme como su
+                compañera de fórmula y que hoy, la hija de un veterano de
+                Malvinas, pueda estar aquí”. Asimismo, remarcó: “Malvinas es la
+                causa que une a todos los argentinos y este país hizo lo justo
+                que fue defender a su tierra. Es el momento de recuperar el
+                respeto por las Fuerzas Armadas y por los Héroes de Malvinas”.
+                La vicepresidente insistió en el reclamo de soberanía sobre las
+                Islas y sostuvo: “Estos 649 hombres que dieron la vida por la
+                Patria deben estar presentes en nuestros esfuerzos por poner a
+                la Argentina de pie”. La invocación religiosa estuvo a cargo de
+                Vicente Martínez Torrens, último capellán de la guerra de
+                Malvinas. También dirigieron palabras a los presentes Owen
+                Guillermo Crippa, teniente de navío (R) V.G.M., Rubén Gustavo
+                Zini, brigadier mayor (R) V.G.M., y Dalal Abd, madre de un caído
+                en la guerra. El cierre musical estuvo a cargo de un ensamble de
+                bandas pertenecientes a las tres Fuerzas Armadas, que interpretó
+                la Marcha de las Malvinas y otras piezas en la explanada del
+                Congreso de la Nación.
               </p>
             </div>
           </div>
@@ -59,38 +67,39 @@ const Malvinas = () => {
         <div className="row fila-malvinas">
           <div className="col columna-malvinas order-md-2">
             <div className="imagen-malvinas">
-              <img src={helicoptero} alt="soldados bajando de un helicóptero" />
+              <img src={vvMalvinasU} alt="Victoria Villarruel en Ushuaia" />
             </div>
           </div>
           <div className="col columna-malvinas order-md-1">
             <div className="contenedor-parrafo-malvinas ">
+              <h3 className="titulo-parrafo-malvinas">
+                A 43 AÑOS DE LA GESTA DE MALVINAS, VICTORIA VILLARRUEL ENCABEZÓ
+                EN USHUAIA EL ACTO OFICIAL EN HOMENAJE A LOS EX COMBATIENTES Y
+                CAÍDOS EN LA GUERRA
+              </h3>
               <p className="parrafo-malvinas">
-                Los héroes de Malvinas son los soldados argentinos que lucharon
-                valientemente en la Guerra de las Malvinas, enfrentando
-                condiciones extremas y desafíos significativos. Muchos eran
-                jóvenes reclutas, algunos apenas adolescentes, que respondieron
-                al llamado de su país para defender lo que consideraban un
-                derecho territorial legítimo. Su valentía y sacrificio han sido
-                reconocidos tanto en Argentina como internacionalmente,
-                simbolizando el espíritu de resistencia y patriotismo argentino.
-                A pesar de la inferioridad militar frente al Reino Unido, estos
-                soldados mostraron determinación y coraje en combates desiguales
-                y adversos. Enfrentaron condiciones climáticas severas, terrenos
-                difíciles y una falta de recursos adecuados para el combate,
-                pero mantuvieron una firme determinación y espíritu combativo.
-                Realizaron acciones individuales de gran valentía, como ataques
-                a posiciones enemigas o evacuaciones de heridos bajo fuego. El
-                heroísmo también se manifestó en acciones colectivas, donde
-                unidades enteras demostraron valor en combate, manteniendo
-                posiciones clave o realizando maniobras tácticas audaces. Estos
-                actos reflejaron su compromiso con la defensa de la patria y sus
-                compañeros. A pesar del resultado final de la guerra y las
-                pérdidas sufridas, los héroes de Malvinas son recordados con
-                honor y respeto en Argentina, sirviendo como ejemplo de
-                sacrificio y dedicación. La sociedad argentina rinde homenaje a
-                estos soldados, reconociendo su contribución a la historia
-                militar del país y el legado de resistencia en las islas
-                Malvinas.
+                La vicepresidente de la Nación y presidente del Senado, Victoria
+                Villarruel, encabezó en Ushuaia, junto al gobernador de la
+                provincia, Gustavo Melella, el intendente de la ciudad, Walter
+                Woto, y el presidente del Centro de Excombatientes de Malvinas
+                de Ushuaia, Juan Carlos Parodi, el acto conmemorativo por la
+                Gesta de Malvinas, al cumplirse su 43° aniversario. "Convoco a
+                todos los argentinos a emprender un proceso de malvinización, a
+                reconocer y a honrar a nuestros héroes, porque Malvinas nos une
+                como nación", expresó Villarruel, luego de participar del
+                izamiento de la bandera argentina en el pabellón nacional Puerto
+                Argentino. Al recordar y homenajear a los caídos y
+                excombatientes, la Vicepresidente de la Nación agregó que " es
+                ese reconocimiento hacia los hombres y mujeres de nuestras FFAA
+                que lucharon en Malvinas, el pilar desde el que comenzaremos la
+                reconstrucción de nuestro amado país. Es por ellos, por nuestros
+                muertos en la guerra, por nuestros pilotos y por los pibes de
+                Malvinas que jamás olvidaré". Victoria Villarruel estuvo
+                acompañada por excombatientes de la guerra de 1982, familiares
+                de caídos en Malvinas, senadores y diputados de Tierra del
+                Fuego, autoridades provinciales, municipales, de Fuerzas Armadas
+                y de Seguridad provincial y público en general, donde también se
+                conmemoró el Día Mundial de la Concientización del Autismo.
               </p>
             </div>
           </div>
@@ -99,39 +108,64 @@ const Malvinas = () => {
           <div className="col columna-malvinas">
             <div className="imagen-malvinas">
               <img
-                src={soldados}
-                alt="soldados caminando con arma en la mano"
+                src={vvMalvinasE}
+                alt="Victoria Villarruel cantando la marcha de Malvinas"
               />
             </div>
           </div>
           <div className="col columna-malvinas">
             <div className="contenedor-parrafo-malvinas">
+              <h3 className="titulo-parrafo-malvinas">
+                VICTORIA VILLARRUEL ENCABEZÓ EL ACTO “MALVINAS, EPOPEYA
+                NACIONAL” Y DISTINGUIÓ A VETERANOS DE MALVINAS
+              </h3>
               <p className="parrafo-malvinas">
-                Durante la Guerra de las Malvinas, Argentina sufrió
-                aproximadamente 649 bajas entre muertos y desaparecidos,
-                mientras que el Reino Unido reportó 255 bajas. Estas cifras
-                incluyen soldados, marinos, aviadores de ambos países y civiles
-                isleños. Aunque menores en comparación con otros conflictos,
-                estas pérdidas dejaron una profunda marca en ambos países. Para
-                Argentina, las bajas significaron un costo humano y emocional
-                considerable. La pérdida de vidas jóvenes impactó profundamente
-                en sus familias y comunidades. La cifra de desaparecidos generó
-                un dolor prolongado y un desafío para honrar adecuadamente a los
-                caídos. En el Reino Unido, cada pérdida fue sentida intensamente
-                en las comunidades militares y civiles. La guerra también
-                provocó reflexiones sobre el costo humano del conflicto armado y
-                el papel de las fuerzas armadas en la defensa de los intereses
-                nacionales. El impacto de estas bajas continúa resonando hoy,
-                recordando los sacrificios durante el intenso conflicto en el
-                Atlántico Sur. Para más información sobre los veteranos de
-                Malvinas, puedes consultar el listado oficial en el sitio web
-                del Ministerio de Defensa de Argentina en este Listado de
-                Veteranos de Malvinas.
+                La vicepresidente Victoria Villarruel, presidió en el salón Azul
+                el acto "Malvinas, Epopeya Nacional" donde se realizó la entrega
+                de distinciones a veteranos de Malvinas en agradecimiento por su
+                valentía y sacrificio. El evento fue organizado por la Dirección
+                de Gesta de Malvinas, a cargo de Nicolás Kasanzew, y la
+                Dirección de Cultura, cuyo titular es Daniel Abate. La ceremonia
+                formó parte de la conmemoración del 43° Aniversario de la Gesta
+                de Malvinas. En el evento se entregaron dieciocho diplomas,
+                entre los que se encontraban los pertenecientes a la artillería
+                antiaérea de la Fuerza Aérea y a la Compañía de Comandos 602, de
+                la que formaba parte el padre de la Vicepresidente Villarruel.
+                "Quiero agradecerles por haber combatido, resistido, por haber
+                vuelto, por llevar con hidalguía durante décadas, la memoria de
+                nuestros caídos. Gracias por mantenerse firmes, incluso cuando
+                una parte de la sociedad les dio la espalda. La historia oficial
+                intentó silenciarlos, pero ustedes no se callaron. Quisieron
+                borrarlos, pero ustedes se multiplicaron y, hoy por fin, la
+                Nación los abraza y los reconoce como lo que son, nuestros
+                héroes", sostuvo Villarruel, luego de la entrega de
+                distinciones. A continuación, la Vicepresidente de la Nación,
+                propuso que "desde el Senado de la Nación, promovamos una
+                campaña de malvinización nacional con ustedes como
+                protagonistas, una exposición itinerante de Malvinas que recorra
+                las escuelas primarias del país, de norte a sur, de este a
+                oeste. Una muestra viva, testimonial, humana, donde nuestros
+                niños escuchen, vean y sientan qué significa haber luchado por
+                la Patria, porque el testimonio de un veterano vale más que cien
+                manuales. Quiero que nuestros chicos conozcan los nombres y las
+                historias" También subrayó que "malvinizar es sembrar en las
+                nuevas generaciones el amor por nuestra tierra, es recuperar el
+                orgullo de ser argentinos, es enseñar que la soberanía no se
+                declama, se defiende y que la Patria no es una palabra vacía, es
+                una bandera que se lleva en el alma. Este proyecto no es
+                político, es nacional y por eso debe unirnos, como nos une
+                Malvinas." Para finalizar, Villarruel remarcó que "Malvinas es
+                la única prenda de unidad que nos queda como Nación, por eso
+                quiero abrir una etapa, la etapa de la malvinización nacional,
+                con ustedes al frente, con nuestros niños como destinatarios y
+                con la Patria como bandera." Al finalizar el acto, los
+                homenajeados, junto a Villarruel, entonaron las estrofas de la
+                Marcha de Malvinas.
               </p>
             </div>
           </div>
         </div>
-        <div className="row fila-malvinas">
+        {/* <div className="row fila-malvinas">
           <div className="col columna-malvinas  order-md-2">
             <div className="imagen-malvinas">
               <img src={bote} alt="soldados en bote" />
@@ -167,7 +201,7 @@ const Malvinas = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="container-parrafo-malvinas">
             <p className="parrafo-malvinas-final">
