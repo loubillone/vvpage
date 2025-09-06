@@ -113,7 +113,7 @@
   text-align: justify;
 }
 
-@media (min-width: 768px) and (max-width: 1024) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .box-indexJM {
     opacity: 1;
     pointer-events: auto;
@@ -138,26 +138,26 @@
   }
 
   .titulo-box {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .titulo-box-dos {
-    font-size: 2rem;
-    padding-bottom: 1.8rem;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
   }
 
   .subtitulo-box {
-    font-size: 1rem;
-    padding-bottom: 1.2rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
   }
 
   .titulo-parrafo-box {
-    font-size: 1rem;
-    padding-bottom: 1.2rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
   }
 
   .texto-parrafo-box {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 

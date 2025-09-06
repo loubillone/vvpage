@@ -10,7 +10,7 @@
   display: none;
 } */
 .box-vickyGala {
-  /* background-color: #ffffff;
+  background-color: #ffffff;
   width: 45rem;
   height: 58rem;
   position: absolute;
@@ -19,20 +19,7 @@
   opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
-
-  background-color: #ffffff;
-  width: 35%;
-  height: 40%;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .box-vickyJavier {
