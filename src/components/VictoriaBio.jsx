@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../css/victoria.css";
 import "../css/boxTextos.css";
-import vickyGala from "../assets/img/biografia/victoria/vickyGala.png";
-import vickyJavier from "../assets/img/biografia/victoria/vickyJavier.png";
-import asuncion from "../assets/img/biografia/victoria/asuncion.png";
-import eeuu from "../assets/img/biografia/victoria/eeuu.png";
 import eduardo from "../assets/img/biografia/victoria/eduardo.png";
 import vickyLibro from "../assets/img/biografia/victoria/vickyLibro.png";
+import vickyEscritorio from "../assets/img/biografia/victoria/vvEscritorio.jpg";
+import vickyCharla from "../assets/img/biografia/victoria/vvAct.jpg";
+import vickyLiceo from "../assets/img/biografia/victoria/vvMilitar.jpg";
+import vickySenado from "../assets/img/biografia/victoria/vvSenado.jpg";
 
 const VictoriaBio = () => {
   const [activeBoxes, setActiveBoxes] = useState(new Set());
@@ -41,7 +41,7 @@ const VictoriaBio = () => {
     <div>
       <div className="container-fluid container-fotos-victoria">
         <div className="row fila-fotos-box">
-          {/* Gala */}
+          {/* Victoria Villarruel */}
           <div
             className="contenedor-imagen"
             onMouseEnter={() => activateBox("boxVG")}
@@ -49,8 +49,8 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={vickyGala}
-              alt="Victoria Villarruel en la gala de la asuncion en el teatro colon"
+              src={vickyEscritorio}
+              alt="Victoria Villarruel en su despacho"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Victoria Villarruel</h2>
@@ -68,8 +68,8 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={vickyJavier}
-              alt="Victoria Villarruel junto a Javier Milei"
+              src={vickyCharla}
+              alt="Victoria Villarruel en una charla del Celtyv"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Activismo</h2>
@@ -77,7 +77,7 @@ const VictoriaBio = () => {
             </div>
           </div>
 
-          {/* Asunción */}
+          {/* Formación */}
           <div
             className="contenedor-imagen"
             onMouseEnter={() => activateBox("boxAsuncion")}
@@ -85,8 +85,8 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={asuncion}
-              alt="Victoria Villarruel en las escalinatas del congreso el día de la asunción presidencial"
+              src={vickySenado}
+              alt="Victoria Villarruel en el Senado"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Familia</h2>
@@ -94,7 +94,7 @@ const VictoriaBio = () => {
             </div>
           </div>
 
-          {/* EEUU */}
+          {/* Pensamiento */}
           <div
             className="contenedor-imagen"
             onMouseEnter={() => activateBox("boxEEUU")}
@@ -102,8 +102,8 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={eeuu}
-              alt="Victoria Villarruel junto al embajador de EEUU"
+              src={vickyLiceo}
+              alt="Victoria Villarruel en el Liceo Militar"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Pensamiento y posturas</h2>
@@ -173,14 +173,14 @@ const VictoriaBio = () => {
               cual preside desde sus inicios.
             </p>
 
-            <a
+            {/* <a
               href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
               className="link-vickyGala"
               target="_blank"
               rel="noopener noreferrer"
             >
               Ver Más
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -207,14 +207,14 @@ const VictoriaBio = () => {
               oficial" de Argentina.
             </p>
 
-            <a
+            {/* <a
               href="https://celtyv.org/?fbclid=PAZXh0bgNhZW0CMTEAAaYzgPi_HbXMVvVvcbaBc0AkFI2YGfddNz-DqgElh2Gb_-jc6xPKYgecdE4_aem_o8OkJHWhQ4KZFoiksx2qXw"
               className="link-vickyJavier"
               target="_blank"
               rel="noopener noreferrer"
             >
               Ver Más
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -239,14 +239,14 @@ const VictoriaBio = () => {
               Centro de Estudios de Defensa Hemisférica William J. Perry.
             </p>
 
-            <a
+            {/* <a
               href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
               className="link-vickyAsuncion"
               target="_blank"
               rel="noopener noreferrer"
             >
               Ver Más
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -265,14 +265,14 @@ const VictoriaBio = () => {
               estos grupos por gobiernos posteriores.
             </p>
 
-            <a
+            {/* <a
               href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
               className="link-vickyEeuu"
               target="_blank"
               rel="noopener noreferrer"
             >
               Ver Más
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -295,14 +295,14 @@ const VictoriaBio = () => {
               están enraizados en las enseñanzas y el ejemplo de su padre.
             </p>
 
-            <a
+            {/* <a
               href="https://www.infobae.com/sociedad/2024/04/02/el-comando-que-queria-seguir-combatiendo-como-fue-la-actuacion-de-eduardo-villarruel-el-padre-de-la-vicepresidente-en-la-guerra-de-malvinas/"
               className="link-vickyEduardo"
               target="_blank"
               rel="noopener noreferrer"
             >
               Ver Más
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -320,14 +320,14 @@ const VictoriaBio = () => {
               coautoría con Carlos A. Manfroni.
             </p>
 
-            <a
+            {/* <a
               href="https://celtyv.org/category/libros/"
               className="link-vickyLibros"
               target="_blank"
               rel="noopener noreferrer"
             >
               Ver Más
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
