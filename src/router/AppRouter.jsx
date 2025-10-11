@@ -11,6 +11,8 @@ import Footer from "../components/Footer";
 import Celtyv from "../components/Celtyv";
 import Malvinas from "../components/Malvinas";
 import GaleriaDetalle from "../components/GaleriaDetalle";
+import Senado from "../pages/Senado";
+import VictimasTerrorismo from "../components/VictimasTerrorismo";
 
 const AppContent = () => {
   const location = useLocation();
@@ -25,9 +27,10 @@ const AppContent = () => {
         <Route path="/" element={<Home />} />
         <Route path="/biografia" element={<Biografia />} />
         <Route path="/celtyv" element={<Celtyv />} />
+        <Route path="/senado" element={<Senado />} />
         <Route path="/malvinas" element={<Malvinas />} />
+        <Route path="/victimasDelTerrorismo" element={<VictimasTerrorismo />} />
         <Route path="/trayectoria" element={<Trayectoria />} />
-        {/* <Route path="/noticias" element={<Noticias />} /> */}
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
         <Route path="/contacto" element={<Contacto />} />
