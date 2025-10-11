@@ -57,7 +57,7 @@ const Navegador = () => {
                 id="basic-nav-dropdown"
                 className="nav-items no-border-dropdown nav-dropdown"
               >
-                <NavDropdown.Item href="#action/3.1" className="nav-items-drop">
+                <NavDropdown.Item href="#action/2.1" className="nav-items-drop">
                   <Nav.Link
                     as={NavLink}
                     to="/biografia"
@@ -67,7 +67,7 @@ const Navegador = () => {
                     Victoria
                   </Nav.Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" className="nav-items-drop">
+                <NavDropdown.Item href="#action/2.2" className="nav-items-drop">
                   <Nav.Link
                     as={NavLink}
                     to="/celtyv"
@@ -77,7 +77,14 @@ const Navegador = () => {
                     Celtyv
                   </Nav.Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3" className="nav-items-drop">
+              </NavDropdown>
+
+              <NavDropdown
+                title="Senado"
+                id="basic-nav-dropdown"
+                className="nav-items no-border-dropdown nav-dropdown"
+              >
+                <NavDropdown.Item href="#action/1.2" className="nav-items-drop">
                   <Nav.Link
                     as={NavLink}
                     to="/malvinas"
@@ -85,6 +92,17 @@ const Navegador = () => {
                     onClick={handleNavClick}
                   >
                     Malvinas
+                  </Nav.Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item href="#action/2.2" className="nav-items-drop">
+                  <Nav.Link
+                    as={NavLink}
+                    to="/victimasDelTerrorismo"
+                    className="nav-items"
+                    onClick={handleNavClick}
+                  >
+                    Victimas del Terrorismo
                   </Nav.Link>
                 </NavDropdown.Item>
               </NavDropdown>
