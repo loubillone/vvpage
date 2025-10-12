@@ -4,15 +4,12 @@ import Home from "../pages/Home";
 import Navegador from "../components/Navegador";
 import Biografia from "../pages/Biografia";
 import Trayectoria from "../pages/Trayectoria";
-// import Noticias from "../pages/Noticias";
 import Galeria from "../pages/Galeria";
 import Contacto from "../pages/Contacto";
 import Footer from "../components/Footer";
 import Celtyv from "../components/Celtyv";
-import Malvinas from "../components/Malvinas";
 import GaleriaDetalle from "../components/GaleriaDetalle";
 import Senado from "../pages/Senado";
-import VictimasTerrorismo from "../components/VictimasTerrorismo";
 
 const AppContent = () => {
   const location = useLocation();
@@ -27,9 +24,7 @@ const AppContent = () => {
         <Route path="/" element={<Home />} />
         <Route path="/biografia" element={<Biografia />} />
         <Route path="/celtyv" element={<Celtyv />} />
-        <Route path="/senado" element={<Senado />} />
-        <Route path="/malvinas" element={<Malvinas />} />
-        <Route path="/victimasDelTerrorismo" element={<VictimasTerrorismo />} />
+        <Route path="/senado/:tema" element={<Senado />} />
         <Route path="/trayectoria" element={<Trayectoria />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />

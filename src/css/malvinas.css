@@ -16,6 +16,22 @@
   height: auto;
 }
 
+.cita {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #031f42;
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+.tema-fecha {
+  font-family: "raleway-regular";
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
 .fila-malvinas {
   margin-bottom: 3rem;
 }

@@ -87,7 +87,7 @@ const Navegador = () => {
                 <NavDropdown.Item href="#action/1.2" className="nav-items-drop">
                   <Nav.Link
                     as={NavLink}
-                    to="/malvinas"
+                    to="/senado/malvinas"
                     className="nav-items"
                     onClick={handleNavClick}
                   >
@@ -98,7 +98,7 @@ const Navegador = () => {
                 <NavDropdown.Item href="#action/2.2" className="nav-items-drop">
                   <Nav.Link
                     as={NavLink}
-                    to="/victimasDelTerrorismo"
+                    to="/senado/victimasDelTerrorismo"
                     className="nav-items"
                     onClick={handleNavClick}
                   >

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Celtyv from "../components/Celtyv";
-import Malvinas from "../components/Malvinas";
 import VictoriaBio from "../components/VictoriaBio";
 const Biografia = () => {
   const location = useLocation();
@@ -10,8 +9,8 @@ const Biografia = () => {
     switch (location.pathname) {
       case "/celtyv":
         return <Celtyv />;
-      case "/malvinas":
-        return <Malvinas />;
+      // case "/malvinas":
+      //   return <Malvinas />;
 
       default:
         return <VictoriaBio />;
