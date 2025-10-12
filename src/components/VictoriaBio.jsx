@@ -167,20 +167,11 @@ const VictoriaBio = () => {
             <p className="texto-parrafo-box">
               Victoria Eugenia Villarruel (Buenos Aires, 13 de abril de 1975) es
               una abogada, escritora, activista y política argentina, actual
-              vicepresidenta de la Nación Argentina desde el 10 de diciembre de
+              Vicepresidente de la Nación Argentina desde el 10 de diciembre de
               2023. Es fundadora de la asociación civil autodenominada Centro de
               Estudios Legales sobre el Terrorismo y sus Víctimas (CELTYV), la
-              cual preside desde sus inicios.
+              cual presidió desde sus inicios.
             </p>
-
-            {/* <a
-              href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
-              className="link-vickyGala"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver Más
-            </a> */}
           </div>
         </div>
 
@@ -199,22 +190,13 @@ const VictoriaBio = () => {
               los Presos Políticos de la Argentina (AFyAPPA). Lideró un programa
               de radio llamado Proyecto Verdad y fue miembro de Jóvenes por la
               Verdad. Centro de Estudios Legales sobre el Terrorismo y sus
-              Víctimas (CELTYV) En 2003, fundó CELTYV con el objetivo de
+              Víctimas (CELTYV). En 2003, fundó CELTYV con el objetivo de
               defender a las víctimas del terrorismo de izquierda en Argentina.
               Este centro ha sido objeto de polémicas, siendo entrevistada por
               medios internacionales como el Wall Street Journal y ABC. En 2011,
               disertó en el Oslo Freedom Forum cuestionando la "historia
-              oficial" de Argentina.
+              oficial" Argentina.
             </p>
-
-            {/* <a
-              href="https://celtyv.org/?fbclid=PAZXh0bgNhZW0CMTEAAaYzgPi_HbXMVvVvcbaBc0AkFI2YGfddNz-DqgElh2Gb_-jc6xPKYgecdE4_aem_o8OkJHWhQ4KZFoiksx2qXw"
-              className="link-vickyJavier"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver Más
-            </a> */}
           </div>
         </div>
 
@@ -238,15 +220,6 @@ const VictoriaBio = () => {
               coordinación interinstitucional y lucha contra el terrorismo en el
               Centro de Estudios de Defensa Hemisférica William J. Perry.
             </p>
-
-            {/* <a
-              href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
-              className="link-vickyAsuncion"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver Más
-            </a> */}
           </div>
         </div>
 
@@ -264,15 +237,6 @@ const VictoriaBio = () => {
               guerrilleros y criticando la protección otorgada a exmiembros de
               estos grupos por gobiernos posteriores.
             </p>
-
-            {/* <a
-              href="https://es.wikipedia.org/wiki/Victoria_Villarruel"
-              className="link-vickyEeuu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver Más
-            </a> */}
           </div>
         </div>
 
@@ -294,15 +258,6 @@ const VictoriaBio = () => {
               los veteranos de Malvinas y su lucha por los derechos humanos
               están enraizados en las enseñanzas y el ejemplo de su padre.
             </p>
-
-            {/* <a
-              href="https://www.infobae.com/sociedad/2024/04/02/el-comando-que-queria-seguir-combatiendo-como-fue-la-actuacion-de-eduardo-villarruel-el-padre-de-la-vicepresidente-en-la-guerra-de-malvinas/"
-              className="link-vickyEduardo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver Más
-            </a> */}
           </div>
         </div>
 
@@ -319,15 +274,6 @@ const VictoriaBio = () => {
               víctimas civiles del terrorismo guerrillero de los 70 (2014), en
               coautoría con Carlos A. Manfroni.
             </p>
-
-            {/* <a
-              href="https://celtyv.org/category/libros/"
-              className="link-vickyLibros"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver Más
-            </a> */}
           </div>
         </div>
       </div>
