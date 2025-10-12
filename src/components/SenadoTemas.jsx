@@ -152,15 +152,15 @@ const SenadoTemas = ({ tema }) => {
               img: vvMalvinasE,
               texto: (
                 <p>
-                  - ABRIL 2025 - En el Salón Azul del Congreso, la
-                  vicepresidente Victoria Villarruel presidió el acto “Malvinas,
-                  Epopeya Nacional”, en el marco del 43° aniversario de la Gesta
-                  de Malvinas. Durante la ceremonia, organizada por la Dirección
-                  de Gesta de Malvinas y la Dirección de Cultura, se entregaron
-                  distinciones a veteranos en reconocimiento a su valentía y
-                  compromiso con la Patria. Villarruel agradeció a los
-                  excombatientes por “mantener viva la memoria de los caídos” y
-                  afirmó:
+                  <span className="tema-fecha">- ABRIL 2025 -</span> En el Salón
+                  Azul del Congreso, la vicepresidente Victoria Villarruel
+                  presidió el acto “Malvinas, Epopeya Nacional”, en el marco del
+                  43° aniversario de la Gesta de Malvinas. Durante la ceremonia,
+                  organizada por la Dirección de Gesta de Malvinas y la
+                  Dirección de Cultura, se entregaron distinciones a veteranos
+                  en reconocimiento a su valentía y compromiso con la Patria.
+                  Villarruel agradeció a los excombatientes por “mantener viva
+                  la memoria de los caídos” y afirmó:
                   <blockquote className="cita">
                     “La historia intentó silenciarlos, pero ustedes se
                     multiplicaron. Hoy la Nación los abraza y los reconoce como
