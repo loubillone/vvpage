@@ -120,8 +120,9 @@ const FotosIndex = () => {
               Villarruel. Su patriotismo, fe católica y defensa de la causa
               Malvinas fortalecen su compromiso de proteger los derechos de cada
               argentino y preservar la memoria histórica del país. Lucha por una
-              Argentina unida, donde la libertad impulse el progreso y todos
-              tengan la oportunidad de vivir en paz, reconciliación y armonía.
+              Argentina unida, donde el amor a la patria impulse el progreso y
+              todos tengan la oportunidad de vivir en paz, reconciliación y
+              armonía.
             </p>
           </div>
         </div>
