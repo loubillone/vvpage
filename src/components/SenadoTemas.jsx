@@ -16,8 +16,34 @@ const SenadoTemas = ({ tema }) => {
             {
               titulo: "Homenaje a las Víctimas del Terrorismo",
               img: vvVictimasDos,
-              texto:
-                "- AGOSTO 2024 - El Senado de la Nación rindió homenaje a las víctimas del terrorismo nacional e internacional en el Salón Azul del Palacio Legislativo, en el marco del Día Internacional de Conmemoración y Homenaje a las Víctimas del Terrorismo. El acto contó con testimonios de familiares de víctimas, entre ellos Claudia Rucci, Gloria Paulik y Luis Czyzewski, quienes recordaron a sus seres queridos y reclamaron que la memoria y la verdad se mantengan vigentes. También se proyectó un video con los hechos ocurridos en Argentina y otros países. La presidente del Senado, Victoria Villarruel, destacó el compromiso con la memoria, la justicia y la reparación de las víctimas y recordó a las más de 17.000 personas agredidas y olvidadas. Villarruel subrayó: “Mi lucha por la verdad, la justicia y la reparación no se inspira más que en el profundo amor a la Argentina. Reabriremos todas las causas de víctimas del terrorismo para que la Justicia haga lo que debió hacer hace más de 20 años.” El homenaje contó con la presencia de autoridades legislativas y nacionales, consolidando el acto como un reconocimiento histórico a quienes fueron silenciados y olvidados.",
+              texto: (
+                <p>
+                  <span className="tema-fecha">- AGOSTO 2024 -</span>El Senado
+                  de la Nación rindió homenaje a las víctimas del terrorismo
+                  nacional e internacional en el Salón Azul del Palacio
+                  Legislativo, en el marco del Día Internacional de
+                  Conmemoración y Homenaje a las Víctimas del Terrorismo. El
+                  acto contó con testimonios de familiares de víctimas, entre
+                  ellos Claudia Rucci, Gloria Paulik y Luis Czyzewski, quienes
+                  recordaron a sus seres queridos y reclamaron que la memoria y
+                  la verdad se mantengan vigentes. También se proyectó un video
+                  con los hechos ocurridos en Argentina y otros países. La
+                  presidente del Senado, Victoria Villarruel, destacó el
+                  compromiso con la memoria, la justicia y la reparación de las
+                  víctimas y recordó a las más de 17.000 personas agredidas y
+                  olvidadas. Villarruel subrayó:
+                  <blockquote className="cita">
+                    “Mi lucha por la verdad, la justicia y la reparación no se
+                    inspira más que en el profundo amor a la Argentina.
+                    Reabriremos todas las causas de víctimas del terrorismo para
+                    que la Justicia haga lo que debió hacer hace más de 20
+                    años.”
+                  </blockquote>{" "}
+                  El homenaje contó con la presencia de autoridades legislativas
+                  y nacionales, consolidando el acto como un reconocimiento
+                  histórico a quienes fueron silenciados y olvidados."
+                </p>
+              ),
             },
 
             {
@@ -25,8 +51,33 @@ const SenadoTemas = ({ tema }) => {
                 "Día Internacional de Conmemoración y Homenaje a las Víctimas del Terrorismo ",
 
               img: vvVictimasUno,
-              texto:
-                "- SEPTIEMBRE 2025 - El Senado de la Nación conmemoró el Día Internacional de las Víctimas del Terrorismo en el Salón Azul del Palacio Legislativo, encabezado por la vicepresidente y presidente del Senado, Victoria Villarruel. El acto incluyó testimonios de familiares de víctimas de distintos ataques terroristas en Argentina y el mundo, quienes compartieron su dolor y la importancia de mantener viva la memoria. También se proyectó un video con el mensaje del director de la Oficina de la ONU contra el Terrorismo (UNCCT), destacando el compromiso de honrar a las víctimas y garantizar que sus voces sean escuchadas. Villarruel afirmó:“El terrorismo es la forma más cobarde de plantear diferencias políticas, religiosas o sociales. Ninguna idea puede ser defendida a través de ataques que agreden a personas inocentes.” Además, destacó la necesidad de dar apoyo a las víctimas y familiares y reafirmó el compromiso de justicia, memoria y reparación. El acto contó con la presencia de autoridades nacionales y legislativas, consolidando el reconocimiento histórico hacia quienes fueron afectados por el terrorismo.",
+              texto: (
+                <p>
+                  <span className="tema-fecha">- SEPTIEMBRE 2025 -</span> El
+                  Senado de la Nación conmemoró el Día Internacional de las
+                  Víctimas del Terrorismo en el Salón Azul del Palacio
+                  Legislativo, encabezado por la vicepresidente y presidente del
+                  Senado, Victoria Villarruel. El acto incluyó testimonios de
+                  familiares de víctimas de distintos ataques terroristas en
+                  Argentina y el mundo, quienes compartieron su dolor y la
+                  importancia de mantener viva la memoria. También se proyectó
+                  un video con el mensaje del director de la Oficina de la ONU
+                  contra el Terrorismo (UNCCT), destacando el compromiso de
+                  honrar a las víctimas y garantizar que sus voces sean
+                  escuchadas. Villarruel afirmó:{" "}
+                  <blockquote className="cita">
+                    “El terrorismo es la forma más cobarde de plantear
+                    diferencias políticas, religiosas o sociales. Ninguna idea
+                    puede ser defendida a través de ataques que agreden a
+                    personas inocentes.”
+                  </blockquote>
+                  Además, destacó la necesidad de dar apoyo a las víctimas y
+                  familiares y reafirmó el compromiso de justicia, memoria y
+                  reparación. El acto contó con la presencia de autoridades
+                  nacionales y legislativas, consolidando el reconocimiento
+                  histórico hacia quienes fueron afectados por el terrorismo.
+                </p>
+              ),
             },
           ],
           frase: "Recordar a las víctimas es honrar la verdad y la justicia.",
@@ -38,8 +89,30 @@ const SenadoTemas = ({ tema }) => {
               titulo:
                 "ENTREGA DE DIPLOMAS DE HONOR A MILITARES VETERANOS DE MALVINAS",
               img: vvMalvinas,
-              texto:
-                "- ABRIL 2024 - En el Salón Azul del Congreso se realizó la ceremonia de entrega de Diplomas de Honor del Senado de la Nación a Veteranos de la Guerra de Malvinas, en conmemoración del 42° aniversario de la Recuperación de las Islas. El acto fue encabezado por la presidente del Senado, Victoria Villarruel, quien destacó la importancia de mantener viva la causa Malvinas y el reconocimiento a los héroes que defendieron la Patria.Villarruel agradeció al Presidente Javier Milei por acompañarla en esta labor y expresó: “Han sido 42 años de desmalvinización y olvido. Es momento de recuperar el respeto por nuestras Fuerzas Armadas y por los Héroes de Malvinas.” También participaron representantes de las comisiones de Ex-combatientes y Familiares de Caídos, junto al capellán Vicente Martínez Torrens y veteranos como Owen Crippa y Rubén Zini. El cierre musical estuvo a cargo de bandas de las tres Fuerzas Armadas, que interpretaron la Marcha de las Malvinas.",
+              texto: (
+                <p>
+                  <span className="tema-fecha">- ABRIL 2024 -</span> En el Salón
+                  Azul del Congreso se realizó la ceremonia de entrega de
+                  Diplomas de Honor del Senado de la Nación a Veteranos de la
+                  Guerra de Malvinas, en conmemoración del 42° aniversario de la
+                  Recuperación de las Islas. El acto fue encabezado por la
+                  presidente del Senado, Victoria Villarruel, quien destacó la
+                  importancia de mantener viva la causa Malvinas y el
+                  reconocimiento a los héroes que defendieron la
+                  Patria.Villarruel agradeció al Presidente Javier Milei por
+                  acompañarla en esta labor y expresó:{" "}
+                  <blockquote className="cita">
+                    “Han sido 42 años de desmalvinización y olvido. Es momento
+                    de recuperar el respeto por nuestras Fuerzas Armadas y por
+                    los Héroes de Malvinas.”
+                  </blockquote>
+                  También participaron representantes de las comisiones de
+                  Ex-combatientes y Familiares de Caídos, junto al capellán
+                  Vicente Martínez Torrens y veteranos como Owen Crippa y Rubén
+                  Zini. El cierre musical estuvo a cargo de bandas de las tres
+                  Fuerzas Armadas, que interpretaron la Marcha de las Malvinas.
+                </p>
+              ),
             },
 
             {
@@ -47,8 +120,29 @@ const SenadoTemas = ({ tema }) => {
                 "A 43 AÑOS DE LA GESTA DE MALVINAS, VICTORIA VILLARRUEL ENCABEZÓ EN USHUAIA EL ACTO OFICIAL EN HOMENAJE A LOS EX COMBATIENTES Y CAÍDOS EN LA GUERRA",
 
               img: vvMalvinasU,
-              texto:
-                "- ABRIL 2025 - La vicepresidente de la Nación y presidente del Senado, Victoria Villarruel, encabezó en Ushuaia el acto conmemorativo por el 43° aniversario de la Gesta de Malvinas, junto al gobernador Gustavo Melella, el intendente Walter Vuoto y el presidente del Centro de Excombatientes, Juan Carlos Parodi.Durante la ceremonia, realizada en el pabellón nacional Puerto Argentino, Villarruel convocó a “emprender un proceso de malvinización” y destacó que Malvinas une a todos los argentinos.“El reconocimiento hacia los hombres y mujeres de nuestras Fuerzas Armadas que lucharon en Malvinas es el pilar desde el que comenzaremos la reconstrucción de nuestro país”, expresó.El acto contó con la participación de excombatientes, familiares de caídos, legisladores, autoridades provinciales y municipales, y también se conmemoró el Día Mundial de la Concientización sobre el Autismo.",
+              texto: (
+                <p>
+                  <span className="tema-fecha">- ABRIL 2025 -</span> La
+                  vicepresidente de la Nación y presidente del Senado, Victoria
+                  Villarruel, encabezó en Ushuaia el acto conmemorativo por el
+                  43° aniversario de la Gesta de Malvinas, junto al gobernador
+                  Gustavo Melella, el intendente Walter Vuoto y el presidente
+                  del Centro de Excombatientes, Juan Carlos Parodi.Durante la
+                  ceremonia, realizada en el pabellón nacional Puerto Argentino,
+                  Villarruel convocó a “emprender un proceso de malvinización” y
+                  destacó que Malvinas une a todos los argentinos.
+                  <blockquote className="cita">
+                    “El reconocimiento hacia los hombres y mujeres de nuestras
+                    Fuerzas Armadas que lucharon en Malvinas es el pilar desde
+                    el que comenzaremos la reconstrucción de nuestro país”,
+                    expresó.
+                  </blockquote>
+                  El acto contó con la participación de excombatientes,
+                  familiares de caídos, legisladores, autoridades provinciales y
+                  municipales, y también se conmemoró el Día Mundial de la
+                  Concientización sobre el Autismo.
+                </p>
+              ),
             },
 
             {
@@ -56,8 +150,31 @@ const SenadoTemas = ({ tema }) => {
                 "VICTORIA VILLARRUEL ENCABEZÓ EL ACTO “MALVINAS, EPOPEYA NACIONAL” Y DISTINGUIÓ A VETERANOS DE MALVINAS",
 
               img: vvMalvinasE,
-              texto:
-                "- Abril 2025 - En el Salón Azul del Congreso, la vicepresidente Victoria Villarruel presidió el acto “Malvinas, Epopeya Nacional”, en el marco del 43° aniversario de la Gesta de Malvinas. Durante la ceremonia, organizada por la Dirección de Gesta de Malvinas y la Dirección de Cultura, se entregaron distinciones a veteranos en reconocimiento a su valentía y compromiso con la Patria. Villarruel agradeció a los excombatientes por “mantener viva la memoria de los caídos” y afirmó:“La historia intentó silenciarlos, pero ustedes se multiplicaron. Hoy la Nación los abraza y los reconoce como lo que son: nuestros héroes.” Además, propuso impulsar una campaña de malvinización nacional con una exposición itinerante que recorra las escuelas del país, para que los niños conozcan y valoren el testimonio de los veteranos. “Malvinizar es sembrar en las nuevas generaciones el amor por nuestra tierra y recuperar el orgullo de ser argentinos.” El acto concluyó con los homenajeados y Villarruel entonando la Marcha de las Malvinas.",
+              texto: (
+                <p>
+                  - ABRIL 2025 - En el Salón Azul del Congreso, la
+                  vicepresidente Victoria Villarruel presidió el acto “Malvinas,
+                  Epopeya Nacional”, en el marco del 43° aniversario de la Gesta
+                  de Malvinas. Durante la ceremonia, organizada por la Dirección
+                  de Gesta de Malvinas y la Dirección de Cultura, se entregaron
+                  distinciones a veteranos en reconocimiento a su valentía y
+                  compromiso con la Patria. Villarruel agradeció a los
+                  excombatientes por “mantener viva la memoria de los caídos” y
+                  afirmó:
+                  <blockquote className="cita">
+                    “La historia intentó silenciarlos, pero ustedes se
+                    multiplicaron. Hoy la Nación los abraza y los reconoce como
+                    lo que son: nuestros héroes.”
+                  </blockquote>
+                  Además, propuso impulsar una campaña de malvinización nacional
+                  con una exposición itinerante que recorra las escuelas del
+                  país, para que los niños conozcan y valoren el testimonio de
+                  los veteranos. “Malvinizar es sembrar en las nuevas
+                  generaciones el amor por nuestra tierra y recuperar el orgullo
+                  de ser argentinos.” El acto concluyó con los homenajeados y
+                  Villarruel entonando la Marcha de las Malvinas.
+                </p>
+              ),
             },
           ],
           frase:
