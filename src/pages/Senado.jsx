@@ -1,30 +1,11 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import Malvinas from "../components/Malvinas";
-import VictimasTerrorismo from "../components/VictimasTerrorismo";
+import React from "react";
+import { useParams } from "react-router-dom";
+import SenadoTemas from "../components/SenadoTemas";
 
 const Senado = () => {
-  const location = useLocation();
-  const getComponent = () => {
-    switch (location.pathname) {
-      case "/malvinas":
-        return <Malvinas />;
-      case "/victimasDelTerrorismo":
-        return <VictimasTerrorismo />;
+  const { tema } = useParams();
 
-      default:
-        return <Malvinas />;
-    }
-  };
-
-  useEffect(() => {
-    getComponent();
-  }, []);
-  return (
-    <div>
-      <Malvinas />
-    </div>
-  );
+  return <SenadoTemas tema={tema} />;
 };
 
 export default Senado;
