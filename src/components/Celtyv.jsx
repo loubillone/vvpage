@@ -15,6 +15,7 @@ import diarioSeis from "../assets/img/biografia/celtyv/diarioSeis.png";
 import diarioSiete from "../assets/img/biografia/celtyv/diarioSiete.png";
 import diarioOcho from "../assets/img/biografia/celtyv/diarioOcho.png";
 import diarioNueve from "../assets/img/biografia/celtyv/diarioNueve.png";
+import Footer from "./Footer";
 
 const Celtyv = () => {
   return (
@@ -339,6 +340,8 @@ const Celtyv = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

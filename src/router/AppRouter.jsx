@@ -32,7 +32,7 @@ const AppContent = () => {
         <Route path="/provincia/:slug" element={<ProvinciaDetalle />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
-      {!isGalleryDetail && <Footer />}
+      {/* {!isGalleryDetail && <Footer />} */}
     </>
   );
 };

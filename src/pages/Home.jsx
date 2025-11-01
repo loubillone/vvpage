@@ -4,6 +4,7 @@ import FlyerHome from "../components/FlyerHome";
 import FotosIndex from "../components/FotosIndex";
 import NuestroCompromiso from "../components/NuestroCompromiso";
 import MapaArgentina from "../components/MapaArgentina";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -40,6 +41,8 @@ const Home = () => {
       <MapaArgentina />
 
       <NuestroCompromiso />
+
+      <Footer />
     </div>
   );
 };
