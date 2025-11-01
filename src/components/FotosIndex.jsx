@@ -93,12 +93,14 @@ const FotosIndex = () => {
               Unidos por la Libertad y la Justicia
             </h5>
             <p className="texto-parrafo-box">
-              Victoria Villarruel trabaja junto al Presidente Javier Milei en la
-              transformación de nuestra nación. Su compromiso con la unidad
-              nacional y los valores patrióticos guía cada paso de su labor,
-              buscando un país donde los derechos de todos sean respetados y el
-              futuro sea seguro, justo y próspero para las próximas
-              generaciones.
+              Junto al Presidente Javier Milei, Victoria Villarruel impulsa una
+              nueva etapa en la historia argentina. Su trabajo refleja la
+              convicción de que el cambio solo es posible a través del esfuerzo,
+              la unidad y el amor por la Patria. Con una mirada puesta en el
+              futuro, promueve políticas que fortalezcan las instituciones,
+              devuelvan la esperanza al pueblo y consoliden una Nación libre,
+              soberana y próspera, capaz de recuperar su grandeza y proyectarse
+              al mundo con orgullo.
             </p>
           </div>
         </div>
@@ -111,18 +113,17 @@ const FotosIndex = () => {
             <h1 className="titulo-box">Victoria</h1>
             <h2 className="titulo-box-dos">Villarruel</h2>
             <h6 className="subtitulo-box">Vicepresidente de la Nación</h6>
-            <h5 className="titulo-parrafo-box">
-              Por la Verdad, la Justicia y la Libertad
-            </h5>
+            <h5 className="titulo-parrafo-box">Por la unidad nacional</h5>
             <p className="texto-parrafo-box">
               La verdad, la justicia y la reparación de las víctimas del
               terrorismo son los pilares que guían la labor de Victoria
               Villarruel. Su patriotismo, fe católica y defensa de la causa
               Malvinas fortalecen su compromiso de proteger los derechos de cada
-              argentino y preservar la memoria histórica del país. Lucha por una
-              Argentina unida, donde el amor a la patria impulse el progreso y
-              todos tengan la oportunidad de vivir en paz, reconciliación y
-              armonía.
+              argentino y preservar la memoria histórica de la Nación. Lucha por
+              una Argentina unida, donde el amor a la Patria impulse el
+              progreso. Construye una Argentina que incluya, abrace y proyecte a
+              todos, para legar a las nuevas generaciones la patria pujante que
+              soñamos.
             </p>
           </div>
         </div>
