@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import Celtyv from "../components/Celtyv";
 import GaleriaDetalle from "../components/GaleriaDetalle";
 import Senado from "../pages/Senado";
+import ProvinciaDetalle from "../pages/ProvinciaDetalle";
 
 const AppContent = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const AppContent = () => {
         <Route path="/trayectoria" element={<Trayectoria />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
+        <Route path="/provincia/:slug" element={<ProvinciaDetalle />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       {!isGalleryDetail && <Footer />}
