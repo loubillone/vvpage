@@ -1,16 +1,14 @@
 import React from "react";
 import "../css/home.css";
 import FlyerHome from "../components/FlyerHome";
-// import UltimasNoticias from "../components/UltimasNoticias";
 import FotosIndex from "../components/FotosIndex";
 import NuestroCompromiso from "../components/NuestroCompromiso";
+import MapaArgentina from "../components/MapaArgentina";
 
 const Home = () => {
   return (
     <div>
       <FlyerHome />
-
-      {/* <UltimasNoticias /> */}
 
       <div className="container texto-principal-home">
         <div className="row">
@@ -38,6 +36,8 @@ const Home = () => {
       </div>
 
       <FotosIndex />
+
+      <MapaArgentina />
 
       <NuestroCompromiso />
     </div>

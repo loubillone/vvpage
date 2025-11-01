@@ -1,0 +1,174 @@
+.container-mapa-argentina {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding: 2rem 0;
+}
+
+.titulo-mapa {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitulo-mapa {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.2rem;
+  color: #4e4e4e;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.svg-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.svg-wrapper svg {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Estilos para las provincias en el SVG */
+.provincia {
+  fill: #e0e0e0;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.provincia.visitada {
+  fill: #87ceeb;
+  cursor: pointer;
+}
+
+.provincia.visitada:hover,
+.provincia.visitada.hover {
+  fill: #5fb3d3;
+  stroke: #0037a0;
+  stroke-width: 3;
+  transform-origin: center;
+  transform: scale(1.05);
+}
+
+.mapa-svg {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.tooltip-provincia {
+  position: absolute;
+  background-color: #0037a0;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.1rem;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .titulo-mapa {
+    font-size: 2.5rem;
+  }
+
+  .subtitulo-mapa {
+    font-size: 1.1rem;
+  }
+
+  .mapa-container {
+    padding: 1.5rem;
+  }
+
+  .mapa-argentina-css {
+    height: 900px;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-mapa-argentina {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem 0;
+  }
+
+  .titulo-mapa {
+    font-size: 2rem;
+  }
+
+  .subtitulo-mapa {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .mapa-container {
+    padding: 1rem;
+  }
+
+  .mapa-argentina-css {
+    height: 700px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-mapa-argentina {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem 0;
+  }
+
+  .titulo-mapa {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+
+  .subtitulo-mapa {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .mapa-container {
+    padding: 0.5rem;
+  }
+
+  .mapa-argentina-css {
+    height: 500px;
+    max-width: 100%;
+  }
+
+  .etiqueta-malvinas {
+    font-size: 0.8rem;
+    top: -180px;
+  }
+
+  .linea-malvinas {
+    height: 150px;
+    top: -150px;
+  }
+}
