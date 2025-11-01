@@ -9,76 +9,237 @@ const provinciasVisitadas = {
     visitada: true,
     slug: "buenos-aires",
   },
-  Córdoba: {
-    nombre: "Córdoba",
+  Catamarca: {
+    nombre: "Catamarca",
     visitada: true,
-    slug: "cordoba",
+    slug: "catamarca",
   },
-  Tucumán: {
-    nombre: "Tucumán",
-    visitada: true,
-    slug: "tucuman",
-  },
-  Salta: {
-    nombre: "Salta",
-    visitada: true,
-    slug: "salta",
+  Chaco: {
+    nombre: "Chaco",
+    visitada: false,
+    slug: "chaco",
   },
   Chubut: {
     nombre: "Chubut",
     visitada: true,
     slug: "chubut",
   },
-  "Tierra del Fuego": {
-    nombre: "Tierra del Fuego",
+  Córdoba: {
+    nombre: "Córdoba",
     visitada: true,
-    slug: "tierra-del-fuego",
+    slug: "cordoba",
   },
-  Catamarca: {
-    nombre: "Catamarca",
+  Corrientes: {
+    nombre: "Corrientes",
     visitada: true,
-    slug: "catamarca",
+    slug: "corrientes",
   },
-  Mendoza: {
-    nombre: "Mendoza",
+  "Entre Rios": {
+    nombre: "Entre Rios",
     visitada: true,
-    slug: "mendoza",
+    slug: "entre-rios",
+  },
+  Formosa: {
+    nombre: "Formosa",
+    visitada: true,
+    slug: "formosa",
   },
   Jujuy: {
     nombre: "Jujuy",
     visitada: true,
     slug: "jujuy",
   },
+  "La Pampa": {
+    nombre: "La Pampa",
+    visitada: false,
+    slug: "la-pampa",
+  },
+  "La Rioja": {
+    nombre: "La Rioja",
+    visitada: true,
+    slug: "la-rioja",
+  },
+  Mendoza: {
+    nombre: "Mendoza",
+    visitada: true,
+    slug: "mendoza",
+  },
+  Misiones: {
+    nombre: "Misiones",
+    visitada: true,
+    slug: "misiones",
+  },
+  Neuquen: {
+    nombre: "Neuquén",
+    visitada: true,
+    slug: "neuquen",
+  },
+  "Rio Negro": {
+    nombre: "Río Negro",
+    visitada: true,
+    slug: "rio-negro",
+  },
+  Salta: {
+    nombre: "Salta",
+    visitada: true,
+    slug: "salta",
+  },
+  "San Juan": {
+    nombre: "San Juan",
+    visitada: false,
+    slug: "san-juan",
+  },
+  "San Luis": {
+    nombre: "San Luis",
+    visitada: true,
+    slug: "san-luis",
+  },
+  "Santa Cruz": {
+    nombre: "Santa Cruz",
+    visitada: false,
+    slug: "santa-cruz",
+  },
+  "Santa Fe": {
+    nombre: "Santa Fe",
+    visitada: true,
+    slug: "santa-fe",
+  },
+  "Santiago del Estero": {
+    nombre: "Santiago del Estero",
+    visitada: true,
+    slug: "santiago-del-estero",
+  },
+  "Tierra del Fuego": {
+    nombre: "Tierra del Fuego",
+    visitada: true,
+    slug: "tierra-del-fuego",
+  },
+  Tucumán: {
+    nombre: "Tucumán",
+    visitada: true,
+    slug: "tucuman",
+  },
 };
 
 // Mapeo de posibles IDs/nombres del SVG a nuestros nombres de provincias
 const mapeoProvincias = {
+  // Buenos Aires
   "Buenos Aires": "Buenos Aires",
   "Ciudad de Buenos Aires": "Buenos Aires",
   "Ciudad Autónoma de Buenos Aires": "Buenos Aires",
-  Córdoba: "Córdoba",
-  Tucumán: "Tucumán",
-  Salta: "Salta",
+  "Buenos Aires (Provincia)": "Buenos Aires",
+  "Provincia de Buenos Aires": "Buenos Aires",
+
+  // Catamarca
+  Catamarca: "Catamarca",
+
+  // Chaco
+  Chaco: "Chaco",
+
+  // Chubut
   Chubut: "Chubut",
+
+  // Córdoba
+  Córdoba: "Córdoba",
+  Cordoba: "Córdoba",
+
+  // Corrientes
+  Corrientes: "Corrientes",
+
+  // Entre Ríos
+  "Entre Rios": "Entre Rios",
+  "Entre Ríos": "Entre Rios",
+  "Entre Rios (Provincia)": "Entre Rios",
+  "Provincia de Entre Ríos": "Entre Rios",
+
+  // Formosa
+  Formosa: "Formosa",
+
+  // Jujuy
+  Jujuy: "Jujuy",
+
+  // La Pampa
+  "La Pampa": "La Pampa",
+  Pampa: "La Pampa",
+
+  // La Rioja
+  "La Rioja": "La Rioja",
+  Rioja: "La Rioja",
+
+  // Mendoza
+  Mendoza: "Mendoza",
+
+  // Misiones
+  Misiones: "Misiones",
+
+  // Neuquén
+  Neuquen: "Neuquen",
+  Neuquén: "Neuquen",
+
+  // Río Negro
+  "Rio Negro": "Rio Negro",
+  "Río Negro": "Rio Negro",
+  "Río Negro (Provincia)": "Rio Negro",
+
+  // Salta
+  Salta: "Salta",
+
+  // San Juan
+  "San Juan": "San Juan",
+
+  // San Luis
+  "San Luis": "San Luis",
+
+  // Santa Cruz
+  "Santa Cruz": "Santa Cruz",
+
+  // Santa Fe
+  "Santa Fe": "Santa Fe",
+  "Santa Fé": "Santa Fe",
+
+  // Santiago del Estero
+  "Santiago del Estero": "Santiago del Estero",
+  "Santiago del Estero (Provincia)": "Santiago del Estero",
+
+  // Tierra del Fuego
   "Tierra del Fuego": "Tierra del Fuego",
   "Tierra del Fuego, Antártida e Islas del Atlántico Sur": "Tierra del Fuego",
-  Catamarca: "Catamarca",
-  Mendoza: "Mendoza",
-  Jujuy: "Jujuy",
+
+  // Tucumán
+  Tucumán: "Tucumán",
+  Tucuman: "Tucumán",
+
+  // Islas Malvinas
   "Islas Malvinas": "Islas Malvinas",
   Malvinas: "Islas Malvinas",
   "Falkland Islands": "Islas Malvinas",
-  // Códigos ISO comunes
+  "Islas Falkland": "Islas Malvinas",
+
+  // Códigos ISO - Mapeo por ID del SVG (más confiable que el atributo name)
   ARB: "Buenos Aires",
-  ARC: "Ciudad de Buenos Aires",
+  ARC: "Buenos Aires", // Ciudad Autónoma de Buenos Aires
   ARX: "Córdoba",
   ART: "Tucumán",
-  ARS: "Salta",
+  ARS: "Santa Fe", // Según el SVG, ARS tiene name="Santa Fe"
   ARU: "Chubut",
   ARV: "Tierra del Fuego",
   ARK: "Catamarca",
   ARM: "Mendoza",
-  ARH: "Jujuy",
+  ARH: "Chaco", // Corregido: según el SVG, ARH tiene name="Chaco"
+  ARG: "Santiago del Estero", // Según el SVG, ARG tiene name="Santiago del Estero"
+  ARL: "La Pampa",
+  ARR: "Rio Negro",
+  ARN: "Misiones",
+  ARQ: "Neuquen",
+  ARJ: "San Juan",
+  ARD: "San Luis",
+  ARZ: "Santa Cruz",
+  ARW: "Corrientes",
+  ARY: "Jujuy", // Corregido: según el SVG, ARY tiene name="Jujuy"
+  ARP: "Formosa",
+  ARE: "Entre Rios", // Según el SVG, ARE tiene name="Entre Ríos"
+  ARA: "Salta", // Según el SVG, ARA tiene name="Salta"
+  ARF: "La Rioja", // Según el SVG, ARF tiene name="La Rioja"
 };
 
 const MapaArgentina = () => {
@@ -124,8 +285,13 @@ const MapaArgentina = () => {
     const dataName = element.getAttribute("data-name");
     const className = element.className?.baseVal || element.className;
 
-    // Buscar en los atributos
-    const posiblesNombres = [id, title, name, dataName];
+    // PRIORIDAD 1: Si el ID existe y está en el mapeo, usar ese (más confiable)
+    if (id && mapeoProvincias[id]) {
+      return mapeoProvincias[id];
+    }
+
+    // PRIORIDAD 2: Buscar en los otros atributos
+    const posiblesNombres = [title, name, dataName];
 
     for (const nombre of posiblesNombres) {
       if (nombre) {
@@ -141,7 +307,7 @@ const MapaArgentina = () => {
       }
     }
 
-    // Si no encuentra, devolver el ID si existe
+    // Si no encuentra, devolver el ID si existe (por si acaso se agregó después)
     return id || null;
   };
 
