@@ -56,7 +56,7 @@ const provinciasVisitadas = {
   },
   "La Rioja": {
     nombre: "La Rioja",
-    visitada: true,
+    visitada: false,
     slug: "la-rioja",
   },
   Mendoza: {
