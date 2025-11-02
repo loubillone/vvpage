@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/mapaArgentina.css";
 
-// Datos de provincias visitadas - puedes agregar más aquí
 const provinciasVisitadas = {
   "Buenos Aires": {
     nombre: "Buenos Aires",
@@ -507,9 +506,7 @@ const MapaArgentina = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="titulo-mapa">
-              Visitas de Victoria Villarruel por Argentina
-            </h2>
+            <h2 className="titulo-mapa">Victoria Federal</h2>
             <p className="subtitulo-mapa">
               Haz clic en las provincias marcadas en celeste para ver los
               detalles de cada visita
