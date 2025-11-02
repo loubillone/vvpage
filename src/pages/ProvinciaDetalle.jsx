@@ -105,6 +105,106 @@ const ProvinciaDetalle = () => {
       imagenes: [],
       lugar: "San Salvador de Jujuy",
     },
+    "entre-rios": {
+      nombre: "Entre Ríos",
+      fecha: "2024",
+      descripcion:
+        "Victoria Villarruel visitó la provincia de Entre Ríos para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Entre Ríos para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Paraná",
+    },
+    formosa: {
+      nombre: "Formosa",
+      fecha: "2024",
+      descripcion:
+        "La vicepresidente visitó la provincia de Formosa para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Formosa para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Ciudad de Formosa",
+    },
+    misiones: {
+      nombre: "Misiones",
+      fecha: "2024",
+      descripcion:
+        "Victoria Villarruel visitó la provincia de Misiones para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Misiones para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Posadas",
+    },
+    corrientes: {
+      nombre: "Corrientes",
+      fecha: "2024",
+      descripcion:
+        "La vicepresidente visitó la provincia de Corrientes para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Corrientes para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Ciudad de Corrientes",
+    },
+    "la-rioja": {
+      nombre: "La Rioja",
+      fecha: "2024",
+      descripcion:
+        "Victoria Villarruel visitó la provincia de La Rioja para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó La Rioja para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Ciudad de La Rioja",
+    },
+    neuquen: {
+      nombre: "Neuquén",
+      fecha: "2024",
+      descripcion:
+        "La vicepresidente visitó la provincia de Neuquén para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Neuquén para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Ciudad de Neuquén",
+    },
+    "rio-negro": {
+      nombre: "Río Negro",
+      fecha: "2024",
+      descripcion:
+        "Victoria Villarruel visitó la provincia de Río Negro para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Río Negro para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Viedma",
+    },
+    "san-luis": {
+      nombre: "San Luis",
+      fecha: "2024",
+      descripcion:
+        "La vicepresidente visitó la provincia de San Luis para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó San Luis para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "San Luis Capital",
+    },
+    "santa-fe": {
+      nombre: "Santa Fe",
+      fecha: "2024",
+      descripcion:
+        "Victoria Villarruel visitó la provincia de Santa Fe para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Santa Fe para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Santa Fe Capital",
+    },
+    "santiago-del-estero": {
+      nombre: "Santiago del Estero",
+      fecha: "2024",
+      descripcion:
+        "La vicepresidente visitó la provincia de Santiago del Estero para participar en diversos actos oficiales y reunirse con autoridades locales.",
+      descripcionCorta:
+        "Victoria Villarruel visitó Santiago del Estero para actos oficiales y reuniones con autoridades.",
+      imagenes: [],
+      lugar: "Santiago del Estero Capital",
+    },
   };
 
   const visita = visitasProvincias[slug];
