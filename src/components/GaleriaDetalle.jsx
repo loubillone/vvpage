@@ -35,6 +35,7 @@ import vvRuta40Uno from "../assets/img/galeria/ruta40/vvRuta40Uno.jpg";
 import vvRuta40Dos from "../assets/img/galeria/ruta40/vvRuta40Dos.jpg";
 import vvRuta40Tres from "../assets/img/galeria/ruta40/vvRuta40Tres.jpg";
 import vvRuta40Cuatro from "../assets/img/galeria/ruta40/vvRuta40Cuatro.jpg";
+import Footer from "./Footer";
 
 const GaleriaDetalle = () => {
   const galerias = {
@@ -229,6 +230,7 @@ const GaleriaDetalle = () => {
           </div>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 };

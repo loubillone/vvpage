@@ -7,6 +7,7 @@ import vickyEscritorio from "../assets/img/biografia/victoria/vvEscritorio.jpg";
 import vickyCharla from "../assets/img/biografia/victoria/vvAct.jpg";
 import vickyLiceo from "../assets/img/biografia/victoria/vvMilitar.jpg";
 import vickySenado from "../assets/img/biografia/victoria/vvSenado.jpg";
+import Footer from "./Footer";
 
 const VictoriaBio = () => {
   const [activeBoxes, setActiveBoxes] = useState(new Set());
@@ -277,6 +278,7 @@ const VictoriaBio = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

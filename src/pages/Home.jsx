@@ -1,16 +1,15 @@
 import React from "react";
 import "../css/home.css";
 import FlyerHome from "../components/FlyerHome";
-// import UltimasNoticias from "../components/UltimasNoticias";
 import FotosIndex from "../components/FotosIndex";
 import NuestroCompromiso from "../components/NuestroCompromiso";
+import MapaArgentina from "../components/MapaArgentina";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div>
       <FlyerHome />
-
-      {/* <UltimasNoticias /> */}
 
       <div className="container texto-principal-home">
         <div className="row">
@@ -39,7 +38,11 @@ const Home = () => {
 
       <FotosIndex />
 
+      <MapaArgentina />
+
       <NuestroCompromiso />
+
+      <Footer />
     </div>
   );
 };
