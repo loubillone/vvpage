@@ -7,6 +7,7 @@ import contactoTitulo from "../assets/img/contacto/contactoTitulo.png";
 import iconoTelefono from "../assets/img/contacto/iconoTelefono.png";
 import iconoEmail from "../assets/img/contacto/iconoEmail.png";
 import "../css/contacto.css";
+import Footer from "../components/Footer";
 const Contacto = () => {
   return (
     <div>
@@ -76,6 +77,8 @@ const Contacto = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

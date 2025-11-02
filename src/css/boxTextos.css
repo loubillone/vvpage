@@ -29,13 +29,13 @@
   cursor: pointer;
 }
 
-.box-indexJM {
+.box-indexVV {
   background-color: #ffffff;
   width: 35%;
-  height: 40%;
+  height: 80%;
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 10%;
+  left: 5%;
   opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
@@ -44,27 +44,12 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.box-indexVV {
-  background-color: #ffffff;
-  width: 35%;
-  height: 40%;
-  position: absolute;
-  top: 58%;
-  left: 5%;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.8s ease;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 .box-vickyGala.active,
 .box-vickyJavier.active,
 .box-asuncion.active,
 .box-eeuu.active,
 .box-eduardo.active,
 .box-vickyLibros.active,
-.box-indexJM.active,
 .box-indexVV.active {
   display: block;
   opacity: 1;

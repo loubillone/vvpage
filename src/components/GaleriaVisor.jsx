@@ -8,6 +8,7 @@ import asuncionIndex from "../assets/img/galeria/asuncion/asuncionIndex.png";
 import vv2DeAbrilIndex from "../assets/img/galeria/2DeAbril/2DeAbrilIndex.jpg";
 import vv25DeMayoIndex from "../assets/img/galeria/25DeMayo/vv25DeMayoIndex.jpg";
 import ruta40Index from "../assets/img/galeria/ruta40/ruta40Index.jpg";
+import Footer from "./Footer";
 
 const GaleriaVisor = () => {
   const navigate = useNavigate();
@@ -73,6 +74,8 @@ const GaleriaVisor = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+
+      <Footer />
     </div>
   );
 };
