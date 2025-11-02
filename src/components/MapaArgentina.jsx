@@ -35,7 +35,7 @@ const provinciasVisitadas = {
     slug: "corrientes",
   },
   "Entre Rios": {
-    nombre: "Entre Rios",
+    nombre: "Entre Ríos",
     visitada: true,
     slug: "entre-rios",
   },
@@ -69,11 +69,12 @@ const provinciasVisitadas = {
     visitada: true,
     slug: "misiones",
   },
-  Neuquen: {
+  Neuquén: {
     nombre: "Neuquén",
     visitada: true,
     slug: "neuquen",
   },
+
   "Rio Negro": {
     nombre: "Río Negro",
     visitada: true,
@@ -124,6 +125,8 @@ const provinciasVisitadas = {
 // Mapeo de posibles IDs/nombres del SVG a nuestros nombres de provincias
 const mapeoProvincias = {
   // Buenos Aires
+  ARB: "Buenos Aires",
+  ARC: "Buenos Aires",
   "Buenos Aires": "Buenos Aires",
   "Ciudad de Buenos Aires": "Buenos Aires",
   "Ciudad Autónoma de Buenos Aires": "Buenos Aires",
@@ -131,85 +134,107 @@ const mapeoProvincias = {
   "Provincia de Buenos Aires": "Buenos Aires",
 
   // Catamarca
+  ARK: "Catamarca",
   Catamarca: "Catamarca",
 
   // Chaco
+  ARH: "Chaco",
   Chaco: "Chaco",
 
   // Chubut
+  ARU: "Chubut",
   Chubut: "Chubut",
 
   // Córdoba
+  ARX: "Córdoba",
   Córdoba: "Córdoba",
   Cordoba: "Córdoba",
 
   // Corrientes
+  ARW: "Corrientes",
   Corrientes: "Corrientes",
 
   // Entre Ríos
+  ARE: "Entre Rios",
   "Entre Rios": "Entre Rios",
   "Entre Ríos": "Entre Rios",
   "Entre Rios (Provincia)": "Entre Rios",
   "Provincia de Entre Ríos": "Entre Rios",
 
   // Formosa
+  ARP: "Formosa",
   Formosa: "Formosa",
 
   // Jujuy
+  ARY: "Jujuy",
   Jujuy: "Jujuy",
 
   // La Pampa
+  ARL: "La Pampa",
   "La Pampa": "La Pampa",
   Pampa: "La Pampa",
 
   // La Rioja
+  ARF: "La Rioja",
   "La Rioja": "La Rioja",
   Rioja: "La Rioja",
 
   // Mendoza
+  ARM: "Mendoza",
   Mendoza: "Mendoza",
 
   // Misiones
+  ARN: "Misiones",
   Misiones: "Misiones",
 
   // Neuquén
-  Neuquen: "Neuquen",
-  Neuquén: "Neuquen",
+  ARQ: "Neuquén",
+  Neuquen: "Neuquén",
+  Neuquén: "Neuquén",
 
   // Río Negro
+  ARR: "Rio Negro",
   "Rio Negro": "Rio Negro",
   "Río Negro": "Rio Negro",
   "Río Negro (Provincia)": "Rio Negro",
 
   // Salta
+  ARA: "Salta",
   Salta: "Salta",
 
   // San Juan
+  ARJ: "San Juan",
   "San Juan": "San Juan",
 
   // San Luis
+  ARD: "San Luis",
   "San Luis": "San Luis",
 
   // Santa Cruz
+  ARZ: "Santa Cruz",
   "Santa Cruz": "Santa Cruz",
 
   // Santa Fe
+  ARS: "Santa Fe",
   "Santa Fe": "Santa Fe",
   "Santa Fé": "Santa Fe",
 
   // Santiago del Estero
+  ARG: "Santiago del Estero",
   "Santiago del Estero": "Santiago del Estero",
   "Santiago del Estero (Provincia)": "Santiago del Estero",
 
   // Tierra del Fuego
+  ARV: "Tierra del Fuego",
   "Tierra del Fuego": "Tierra del Fuego",
   "Tierra del Fuego, Antártida e Islas del Atlántico Sur": "Tierra del Fuego",
 
   // Tucumán
+  ART: "Tucumán",
   Tucumán: "Tucumán",
   Tucuman: "Tucumán",
 
-  // Islas Malvinas
+  // Opcional: Islas Malvinas
   "Islas Malvinas": "Islas Malvinas",
   Malvinas: "Islas Malvinas",
   "Falkland Islands": "Islas Malvinas",
