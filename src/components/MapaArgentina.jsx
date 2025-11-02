@@ -238,32 +238,6 @@ const mapeoProvincias = {
   Malvinas: "Islas Malvinas",
   "Falkland Islands": "Islas Malvinas",
   "Islas Falkland": "Islas Malvinas",
-
-  // Códigos ISO - Mapeo por ID del SVG (más confiable que el atributo name)
-  ARB: "Buenos Aires",
-  ARC: "Buenos Aires", // Ciudad Autónoma de Buenos Aires
-  ARX: "Córdoba",
-  ART: "Tucumán",
-  ARS: "Santa Fe", // Según el SVG, ARS tiene name="Santa Fe"
-  ARU: "Chubut",
-  ARV: "Tierra del Fuego",
-  ARK: "Catamarca",
-  ARM: "Mendoza",
-  ARH: "Chaco", // Corregido: según el SVG, ARH tiene name="Chaco"
-  ARG: "Santiago del Estero", // Según el SVG, ARG tiene name="Santiago del Estero"
-  ARL: "La Pampa",
-  ARR: "Rio Negro",
-  ARN: "Misiones",
-  ARQ: "Neuquen",
-  ARJ: "San Juan",
-  ARD: "San Luis",
-  ARZ: "Santa Cruz",
-  ARW: "Corrientes",
-  ARY: "Jujuy", // Corregido: según el SVG, ARY tiene name="Jujuy"
-  ARP: "Formosa",
-  ARE: "Entre Rios", // Según el SVG, ARE tiene name="Entre Ríos"
-  ARA: "Salta", // Según el SVG, ARA tiene name="Salta"
-  ARF: "La Rioja", // Según el SVG, ARF tiene name="La Rioja"
 };
 
 const MapaArgentina = () => {
