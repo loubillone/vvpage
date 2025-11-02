@@ -236,8 +236,6 @@ const mapeoProvincias = {
   // Opcional: Islas Malvinas
   "Islas Malvinas": "Islas Malvinas",
   Malvinas: "Islas Malvinas",
-  "Falkland Islands": "Islas Malvinas",
-  "Islas Falkland": "Islas Malvinas",
 };
 
 const MapaArgentina = () => {
