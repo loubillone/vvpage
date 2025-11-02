@@ -195,10 +195,10 @@ const ProvinciaDetalle = () => {
       nombre: "San Luis",
       fecha: "Mayo de 2024",
       descripcion:
-        "El 2 de mayo de 2024, la vicepresidente Victoria Villarruel realizó una visita oficial a la provincia de San Luis, donde fue recibida por el gobernador Claudio Poggi en la Casa de Gobierno. En el encuentro, el mandatario le otorgó el título de “Huésped de Honor” en reconocimiento a su presencia y compromiso institucional. Durante su estadía, Villarruel participó en las tradicionales festividades religiosas del Divino Señor de Renca y del Santo Cristo de la Quebrada, dos celebraciones profundamente arraigadas en la fe y cultura sanluiseña. A lo largo de la jornada, expresó su alegría por poder compartir estos momentos de devoción y encuentro con la comunidad, destacando el valor espiritual y cultural de las tradiciones que unen a los argentinos. La visita reflejó su cercanía con las provincias y su respeto por las expresiones de fe popular que forman parte del patrimonio nacional.",
+        "El 2 de mayo de 2024, la vicepresidente Victoria Villarruel realizó una visita oficial a la provincia de San Luis, donde fue recibida por el gobernador Claudio Poggi en la Casa de Gobierno. En el encuentro, el mandatario le otorgó el título de Huésped de Honor en reconocimiento a su presencia y compromiso institucional. Durante su estadía, Villarruel participó en las tradicionales festividades religiosas del Divino Señor de Renca y del Santo Cristo de la Quebrada, dos celebraciones profundamente arraigadas en la fe y cultura sanluiseña. A lo largo de la jornada, expresó su alegría por poder compartir estos momentos de devoción y encuentro con la comunidad, destacando el valor espiritual y cultural de las tradiciones que unen a los argentinos. La visita reflejó su cercanía con las provincias y su respeto por las expresiones de fe popular que forman parte del patrimonio nacional.",
       descripcionCorta:
         "Victoria Villarruel visitó San Luis para actos oficiales y reuniones con autoridades.",
-      imagenes: [sanLuisVV, sanLuisVVDos],
+      imagenes: [sanLuisVV, sanLuisVVDos], // Las imágenes se agregarán cuando estén disponibles
       lugar: "San Luis – Renca – Villa de la Quebrada",
     },
     "santa-fe": {
