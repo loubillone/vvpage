@@ -31,12 +31,12 @@ const GaleriaVisor = () => {
     },
     {
       imagen: vv2DeAbrilIndex,
-      titulo: "2 DE ABRIL",
+      titulo: "MALVINAS",
       ruta: "/galeria/DosDeAbril",
     },
     {
       imagen: vv25DeMayoIndex,
-      titulo: "25deMAYO",
+      titulo: "TEDEUM",
       ruta: "/galeria/VeinticincoDeMayo",
     },
     {
