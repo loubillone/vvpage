@@ -121,7 +121,6 @@ const provinciasVisitadas = {
   },
 };
 
-// Mapeo de posibles IDs/nombres del SVG a nuestros nombres de provincias
 const mapeoProvincias = {
   // Buenos Aires
   ARB: "Buenos Aires",
@@ -274,56 +273,46 @@ const MapaArgentina = () => {
   };
 
   const getProvinciaNombre = (element) => {
-    // Intentar obtener el nombre desde diferentes atributos
     const id = element.id || element.getAttribute("id");
     const title = element.getAttribute("title");
     const name = element.getAttribute("name");
     const dataName = element.getAttribute("data-name");
     const className = element.className?.baseVal || element.className;
 
-    // PRIORIDAD 1: Si el ID existe y está en el mapeo, usar ese (más confiable)
     if (id && mapeoProvincias[id]) {
       return mapeoProvincias[id];
     }
 
-    // PRIORIDAD 2: Buscar en los otros atributos
     const posiblesNombres = [title, name, dataName];
 
     for (const nombre of posiblesNombres) {
       if (nombre) {
-        // Normalizar el nombre (eliminar espacios extra, etc.)
         const nombreNormalizado = nombre.trim();
         if (mapeoProvincias[nombreNormalizado]) {
           return mapeoProvincias[nombreNormalizado];
         }
-        // Si está directamente en provinciasVisitadas
+
         if (provinciasVisitadas[nombreNormalizado]) {
           return nombreNormalizado;
         }
       }
     }
-
-    // Si no encuentra, devolver el ID si existe (por si acaso se agregó después)
     return id || null;
   };
 
-  // Aplicar interactividad al SVG cargado
   useEffect(() => {
     if (svgLoaded && svgContent && svgContainerRef.current) {
-      // Esperar un poco más para asegurar que el SVG esté completamente renderizado
       setTimeout(() => {
         const svgElement = svgContainerRef.current?.querySelector("svg");
         if (!svgElement) {
-          console.log("No se encontró el elemento SVG en el contenedor");
+          // console.log("No se encontró el elemento SVG en el contenedor");
           return;
         }
 
-        // Estilizar el SVG para que sea responsive
         svgElement.style.width = "100%";
         svgElement.style.height = "auto";
         svgElement.classList.add("mapa-svg");
 
-        // Seleccionar todos los paths que puedan ser provincias
         const provincias = svgElement.querySelectorAll(
           "path, polygon, polyline, g"
         );
@@ -333,13 +322,10 @@ const MapaArgentina = () => {
         let provinciasProcesadas = 0;
 
         provincias.forEach((element) => {
-          // Agregar clase base a todos los elementos
           element.classList.add("provincia");
 
-          // Intentar obtener el nombre de la provincia desde diferentes fuentes
           const provinciaNombre = getProvinciaNombre(element);
 
-          // Si no encontramos el nombre, intentar buscarlo por el grupo padre
           if (!provinciaNombre && element.parentElement) {
             const parentNombre = getProvinciaNombre(element.parentElement);
             if (parentNombre) {
@@ -435,7 +421,6 @@ const MapaArgentina = () => {
     }
   }, [svgLoaded, svgContent, navigate]);
 
-  // Cargar el SVG desde public/ - intentar diferentes nombres posibles
   useEffect(() => {
     const posiblesNombres = [
       "argentina-map.svg",
@@ -451,22 +436,22 @@ const MapaArgentina = () => {
           if (res.ok) {
             const text = await res.text();
             if (text && text.trim().length > 0) {
-              console.log(`SVG cargado exitosamente: ${nombre}`);
+              // console.log(`SVG cargado exitosamente: ${nombre}`);
               setSvgContent(text);
               setTimeout(() => {
                 setSvgLoaded(true);
-                console.log("Estado svgLoaded cambiado a true");
+                // console.log("Estado svgLoaded cambiado a true");
               }, 100);
               return;
             }
           }
         } catch (err) {
-          console.log(`No se encontró ${nombre}, intentando siguiente...`);
+          // console.log(`No se encontró ${nombre}, intentando siguiente...`);
         }
       }
-      console.log(
-        "No se encontró ningún SVG. Verifica que el archivo esté en public/"
-      );
+      // console.log(
+      //   "No se encontró ningún SVG. Verifica que el archivo esté en public/"
+      // );
       setSvgLoaded(false);
     };
 
@@ -500,7 +485,6 @@ const MapaArgentina = () => {
               </div>
             )}
 
-            {/* SVG cargado */}
             {svgLoaded && svgContent && (
               <div
                 ref={svgContainerRef}
@@ -509,7 +493,6 @@ const MapaArgentina = () => {
               />
             )}
 
-            {/* Si el SVG no se ha cargado, mostrar mensaje */}
             {!svgLoaded && (
               <div
                 className="d-flex flex-column align-items-center justify-content-center"
