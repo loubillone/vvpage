@@ -230,7 +230,6 @@ const GaleriaDetalle = () => {
           </div>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 };

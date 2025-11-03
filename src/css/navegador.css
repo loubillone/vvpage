@@ -9,6 +9,7 @@
   src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
 }
 
+/* Navbar transparente en galería */
 .navbar-transparent {
   position: absolute !important;
   background-color: transparent;
