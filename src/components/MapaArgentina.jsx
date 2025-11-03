@@ -511,25 +511,14 @@ const MapaArgentina = () => {
 
             {/* Si el SVG no se ha cargado, mostrar mensaje */}
             {!svgLoaded && (
-              <div className="instrucciones-mapa">
-                <p>
-                  <strong>Cargando mapa...</strong>
-                </p>
-                <p>
-                  Si el mapa no aparece, verifica que el archivo SVG esté en la
-                  carpeta <code>public/</code> con uno de estos nombres:
-                </p>
-                <ul>
-                  <li>
-                    <code>argentina-map.svg</code>
-                  </li>
-                  <li>
-                    <code>argentina.svg</code>
-                  </li>
-                  <li>
-                    <code>mapa-argentina.svg</code>
-                  </li>
-                </ul>
+              <div
+                className="d-flex flex-column align-items-center justify-content-center"
+                style={{ height: "200px" }}
+              >
+                <div className="spinner-border text-primary" role="status">
+                  <span className="visually-hidden">Cargando...</span>
+                </div>
+                <p>Cargando mapa...</p>
               </div>
             )}
           </div>
