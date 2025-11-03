@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import rioNegroVV from "../assets/img/mapaArg/rioNegro.jpg";
 import rioNegroVVDos from "../assets/img/mapaArg/rioNegro2.jpg";
@@ -234,6 +234,11 @@ const ProvinciaDetalle = () => {
 
   const visita = visitasProvincias[slug];
   const [imagenIndex, setImagenIndex] = useState(0);
+
+  // Hacer scroll al top cuando se carga la página o cambia el slug
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, [slug]);
 
   if (!visita) {
     return (
