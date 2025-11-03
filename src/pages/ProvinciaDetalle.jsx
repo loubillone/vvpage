@@ -255,7 +255,7 @@ const ProvinciaDetalle = () => {
         <div className="row">
           <div className="col-12">
             <Button
-              onClick={() => navigate("/")}
+              onClick={() => navigate(-1)}
               variant="outline-primary"
               className="boton-volver"
             >
@@ -304,10 +304,7 @@ const ProvinciaDetalle = () => {
           <div className="row">
             <div className="col-12">
               <div className="placeholder-imagen">
-                <p>
-                  Imagen de la visita a {visita.nombre} - Agrega las imágenes en
-                  la carpeta correspondiente
-                </p>
+                <p>Imagen no disponible</p>
               </div>
             </div>
           </div>
