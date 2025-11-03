@@ -8,6 +8,9 @@ import youtube from "../assets/img/footer/youtube.png";
 import logoVV from "../assets/img/footer/logoVV.png";
 
 const Footer = () => {
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <div>
       <div className="container-fluid container-footer">
@@ -75,22 +78,22 @@ const Footer = () => {
             <span className="titulo-enlaces-footer">Navegación</span>
 
             <div className="col enlaces-footer">
-              <NavLink to="/">Inicio</NavLink>
+              <NavLink to="/" onClick={handleNavClick}>Inicio</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/biografia">Biografía</NavLink>
+              <NavLink to="/biografia" onClick={handleNavClick}>Biografía</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/trayectoria">Trayectoria</NavLink>
+              <NavLink to="/trayectoria" onClick={handleNavClick}>Trayectoria</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/noticias">Noticias</NavLink>
+              <NavLink to="/senado/malvinas" onClick={handleNavClick}>Senado</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/galeria">Galeria</NavLink>
+              <NavLink to="/galeria" onClick={handleNavClick}>Galeria</NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/contacto">Contacto</NavLink>
+              <NavLink to="/contacto" onClick={handleNavClick}>Contacto</NavLink>
             </div>
           </div>
           <div className="col">

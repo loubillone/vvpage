@@ -11,6 +11,7 @@ import Celtyv from "../components/Celtyv";
 import GaleriaDetalle from "../components/GaleriaDetalle";
 import Senado from "../pages/Senado";
 import ProvinciaDetalle from "../pages/ProvinciaDetalle";
+import ScrollToTop from "../components/ScrollToTop";
 
 const AppContent = () => {
   const location = useLocation();
@@ -20,6 +21,7 @@ const AppContent = () => {
 
   return (
     <>
+      <ScrollToTop />
       <Navegador />
       <Routes>
         <Route path="/" element={<Home />} />
