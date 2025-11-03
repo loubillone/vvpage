@@ -78,22 +78,34 @@ const Footer = () => {
             <span className="titulo-enlaces-footer">Navegación</span>
 
             <div className="col enlaces-footer">
-              <NavLink to="/" onClick={handleNavClick}>Inicio</NavLink>
+              <NavLink to="/" onClick={handleNavClick}>
+                Inicio
+              </NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/biografia" onClick={handleNavClick}>Biografía</NavLink>
+              <NavLink to="/biografia" onClick={handleNavClick}>
+                Biografía
+              </NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/trayectoria" onClick={handleNavClick}>Trayectoria</NavLink>
+              <NavLink to="/trayectoria" onClick={handleNavClick}>
+                Trayectoria
+              </NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/senado/malvinas" onClick={handleNavClick}>Senado</NavLink>
+              <NavLink to="/senado/malvinas" onClick={handleNavClick}>
+                Senado
+              </NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/galeria" onClick={handleNavClick}>Galeria</NavLink>
+              <NavLink to="/galeria" onClick={handleNavClick}>
+                Galeria
+              </NavLink>
             </div>
             <div className="col enlaces-footer">
-              <NavLink to="/contacto" onClick={handleNavClick}>Contacto</NavLink>
+              <NavLink to="/contacto" onClick={handleNavClick}>
+                Contacto
+              </NavLink>
             </div>
           </div>
           <div className="col">
@@ -104,15 +116,19 @@ const Footer = () => {
             </div>
 
             <div className="col enlaces-footer">
-              <span>Contacto con el equipo</span>
+              <NavLink to="/contacto" onClick={handleNavClick}>
+                Escribinos
+              </NavLink>
             </div>
             <div className="col enlaces-footer">
-              <span>Contáctenos</span>
+              <NavLink to="/contacto" onClick={handleNavClick}>
+                Consultas y sugerencias
+              </NavLink>
             </div>
             <div className="col enlaces-footer">
-              <span>Notas legales</span>
+              <span>Instagram</span>
             </div>
-            <div className="col enlaces-footer">
+            {/* <div className="col enlaces-footer">
               <span>Protección de Datos</span>
             </div>
             <div className="col enlaces-footer">
@@ -120,7 +136,7 @@ const Footer = () => {
             </div>
             <div className="col enlaces-footer">
               <span>Reglamento Interno</span>
-            </div>
+            </div> */}
           </div>
           <div className="col">
             <div>
@@ -179,7 +195,8 @@ const Footer = () => {
         <div className="row">
           <span className="texto-final-footer">
             Esta página web es una iniciativa independiente y no representa de
-            manera oficial a Victoria Villarruel o su partido.
+            manera oficial a Victoria Villarruel. © 2025 Todos los derechos
+            reservados.
           </span>
         </div>
       </div>

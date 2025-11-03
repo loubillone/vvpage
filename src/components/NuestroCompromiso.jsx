@@ -13,7 +13,7 @@ const NuestroCompromiso = () => {
       <div className="container">
         <div className="row fila-texto-compromiso">
           <div className="col">
-            <h2 className="titulo-compromiso">Nuestro Compromiso</h2>
+            <h2 className="titulo-compromiso">Su Compromiso</h2>
           </div>
         </div>
 
