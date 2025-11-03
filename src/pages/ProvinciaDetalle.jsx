@@ -446,7 +446,6 @@ const ProvinciaDetalle = () => {
     );
   }
 
-  // Normalizar: si tiene 'visitas' usar eso, sino convertir estructura antigua a nueva
   const visitas = provincia.visitas || [provincia];
 
   return (
@@ -467,17 +466,6 @@ const ProvinciaDetalle = () => {
         <div className="row">
           <div className="col-12">
             <h1 className="titulo-provincia">{provincia.nombre}</h1>
-            {visitas.length > 1 && (
-              <p
-                style={{
-                  textAlign: "center",
-                  marginBottom: "2rem",
-                  color: "#4e4e4e",
-                }}
-              >
-                {visitas.length} visitas registradas
-              </p>
-            )}
           </div>
         </div>
 
