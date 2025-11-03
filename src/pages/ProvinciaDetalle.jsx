@@ -495,6 +495,7 @@ const ProvinciaDetalle = () => {
                     onSelect={(index) =>
                       setImagenIndex({ ...imagenIndex, [visitaIndex]: index })
                     }
+                    interval={5000}
                   >
                     {visita.imagenes.map((imagen, index) => (
                       <Carousel.Item key={index}>
