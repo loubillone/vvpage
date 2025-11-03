@@ -9,9 +9,6 @@ const Biografia = () => {
     switch (location.pathname) {
       case "/celtyv":
         return <Celtyv />;
-      // case "/malvinas":
-      //   return <Malvinas />;
-
       default:
         return <VictoriaBio />;
     }
