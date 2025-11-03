@@ -36,7 +36,6 @@ import tucuVV from "../assets/img/mapaArg/tucumanVV.jpg";
 import tucuVVDos from "../assets/img/mapaArg/tucumanVV2.jpg";
 import formosaVV from "../assets/img/mapaArg/formosaVV.jpg";
 import formosaVVDos from "../assets/img/mapaArg/formosaVV2.jpg";
-
 import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 
@@ -242,7 +241,7 @@ const ProvinciaDetalle = () => {
         <div className="container">
           <h2>Provincia no encontrada</h2>
           <Button onClick={() => navigate("/")} variant="primary">
-            Volver al inicio
+            Volver al Inicio
           </Button>
         </div>
       </div>
