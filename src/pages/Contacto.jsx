@@ -57,20 +57,20 @@ const Contacto = () => {
           </div>
           <div className="col container-contacto">
             <div className="col">
-              <div className="iconos-contacto">
+              {/* <div className="iconos-contacto">
                 <img src={iconoTelefono} alt="" />
                 <span className="titulos-contacto">Telefono</span>
               </div>
               <div className="info-contacto">
                 <span className="contacto-datos">(+54) 9 11 2345 6789</span>
-              </div>
+              </div> */}
               <div className="iconos-contacto">
                 <img src={iconoEmail} alt="" />
                 <span className="titulos-contacto">Email</span>
               </div>
               <div className="info-contacto">
                 <span className="contacto-datos">
-                  contacto@victoriavillarruel.com
+                  paginavillarruel@gmail.com
                 </span>
               </div>
             </div>
