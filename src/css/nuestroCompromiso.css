@@ -6,8 +6,10 @@
 
 .titulo-compromiso {
   color: #2e2e2e;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   padding-bottom: 3rem;
+  font-family: "raleway-bold", sans-serif;
+  color: #000000;
 }
 
 .contenedor-iconos-compromiso {
@@ -53,6 +55,11 @@
   .texto-iconos-compromiso {
     font-size: 1.8rem;
     text-align: center;
+  }
+
+  .titulo-compromiso {
+    color: #2e2e2e;
+    font-size: 2rem;
   }
 }
 
