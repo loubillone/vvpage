@@ -36,7 +36,7 @@
 .fecha-visita,
 .lugar-visita {
   font-family: "raleway-regular", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #4e4e4e;
   margin-bottom: 0.5rem;
 }
@@ -96,7 +96,7 @@
 
 .descripcion-visita {
   font-family: "raleway-regular", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #4e4e4e;
   line-height: 1.8;
   text-align: justify;
@@ -108,11 +108,11 @@
   }
 
   .subtitulo-descripcion {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .descripcion-visita {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .imagen-provincia {
@@ -136,11 +136,11 @@
   }
 
   .subtitulo-descripcion {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .descripcion-visita {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .imagen-provincia {
@@ -157,7 +157,7 @@
 
   .fecha-visita,
   .lugar-visita {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -169,15 +169,15 @@
   }
 
   .titulo-provincia {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .subtitulo-descripcion {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .descripcion-visita {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .imagen-provincia {
@@ -194,7 +194,7 @@
 
   .fecha-visita,
   .lugar-visita {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .descripcion-container {
