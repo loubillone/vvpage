@@ -155,8 +155,8 @@
   .box-indexJM,
   .box-indexVV {
     width: 90%;
-    max-width: 30rem;
-    height: 45rem;
+    max-width: 35rem;
+    height: 53rem;
     padding: 2rem;
     position: fixed;
     display: flex;
@@ -186,15 +186,15 @@
   }
 
   .subtitulo-box {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .titulo-parrafo-box {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .texto-parrafo-box {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .overlay.active {
@@ -265,8 +265,8 @@
   .box-indexJM,
   .box-indexVV {
     width: 90%;
-    max-width: 30rem;
-    height: 45rem;
+    max-width: 34rem;
+    height: 53rem;
     padding: 2rem;
     position: fixed;
     display: flex;
@@ -296,15 +296,15 @@
   }
 
   .subtitulo-box {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .titulo-parrafo-box {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .texto-parrafo-box {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .overlay.active {
