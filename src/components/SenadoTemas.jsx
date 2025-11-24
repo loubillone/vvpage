@@ -14,7 +14,7 @@ const SenadoTemas = ({ tema }) => {
           title: victimasTitle,
           sections: [
             {
-              titulo: "Homenaje a las Víctimas del Terrorismo",
+              titulo: "HOMENAJE A LAS VICTIMAS DEL TERRORISMO",
               img: vvVictimasDos,
               texto: (
                 <p>
@@ -48,7 +48,7 @@ const SenadoTemas = ({ tema }) => {
 
             {
               titulo:
-                "Día Internacional de Conmemoración y Homenaje a las Víctimas del Terrorismo ",
+                "DÍA INTERNACIONAL DE CONMEMORACIÓN Y HOMENAJE A LAS VÍCTIMAS DEL TERRORISMO ",
 
               img: vvVictimasUno,
               texto: (

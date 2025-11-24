@@ -6,7 +6,7 @@
 
 .titulo-mapa {
   font-family: "raleway-bold", sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #000000;
   text-align: center;
   margin-bottom: 1rem;
@@ -14,7 +14,7 @@
 
 .subtitulo-mapa {
   font-family: "raleway-regular", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #4e4e4e;
   text-align: center;
   margin-bottom: 3rem;
@@ -93,11 +93,11 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .titulo-mapa {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .subtitulo-mapa {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 
   .mapa-container {
@@ -122,7 +122,7 @@
   }
 
   .subtitulo-mapa {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0 1rem;
   }
 
@@ -144,12 +144,12 @@
   }
 
   .titulo-mapa {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 0 1rem;
   }
 
   .subtitulo-mapa {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     padding: 0 1rem;
   }
 
