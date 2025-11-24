@@ -51,7 +51,7 @@
 .parrafo-malvinas {
   font-family: "raleway-regular";
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: justify;
   padding: 1.5rem;
   line-height: 180%;
@@ -97,6 +97,9 @@
     margin: 0;
   }
 
+  .cita {
+    margin: 2rem 0;
+  }
   .parrafo-malvinas-final {
     font-size: 1.9rem;
     text-align: center;
@@ -130,13 +133,17 @@
     transform: none;
   }
   .titulo-parrafo-malvinas {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1.5rem;
   }
   .parrafo-malvinas {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0 3rem 0 3rem;
     line-height: 200%;
+  }
+
+  .cita {
+    margin: 2rem 0;
   }
 
   .container-titulo {
