@@ -316,7 +316,7 @@ const Celtyv = () => {
 
             <h5 className="categorias-celtyv">Categorías de Socios</h5>
             <div className="parrafo-seccion-celtyv">
-              <ul className="titulo-libro-celtyv">
+              <ul>
                 <li>Socio Adherente: Cuota mensual de $1000. .</li>
                 <li>Socio Activo: Cuota mensual de $1500.</li>
                 <li> Socio Protector: Cuota mensual de $2000</li>

@@ -29,7 +29,7 @@
 }
 
 .titulo-celtyv img {
-  max-width: 38%;
+  max-width: 20%;
   height: auto;
 }
 
@@ -43,8 +43,8 @@
 
 .texto-titulo-celtyv {
   padding: 1.2rem;
-  font-family: "raleway-medium";
-  font-size: 2rem;
+  font-family: "raleway-bold";
+  font-size: 2.5rem;
 }
 
 .foto-seccion-celtyv {
@@ -86,29 +86,31 @@
 
 .titulo-seccion-celtyv {
   font-family: "raleway-semibold";
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   color: #000000;
 }
 
 .parrafo-seccion-celtyv {
-  font-family: "raleway-medium";
-  font-size: 2rem;
+  font-family: "raleway-regular";
+  font-size: 1.8rem;
   padding-bottom: 5rem;
   color: #000000;
   line-height: 200%;
+  text-align: justify;
 }
 
 .subtitulo-seccion-celtyv {
   font-family: "raleway-bold";
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #000000;
+  padding-bottom: 2rem;
 }
 
 .subtitulo-seccion-publicaciones {
   font-family: "raleway-bold";
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 5rem;
   color: #000000;
@@ -116,19 +118,122 @@
 
 .titulo-libro-celtyv {
   font-family: "raleway-italic";
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #000000;
 }
 
 .categorias-celtyv {
   font-family: "raleway-bold";
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #000000;
   line-height: 200%;
 }
 
 .columna-unirse-celtyv {
   margin-bottom: 10rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-celtyvInfo {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .fila-titulo-celtyv {
+    padding: 4rem;
+  }
+  .texto-titulo-celtyv {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .titulo-seccion-celtyv {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .parrafo-seccion-celtyv {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+
+  .subtitulo-seccion-celtyv {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .subtitulo-seccion-publicaciones {
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .titulo-libro-celtyv {
+    font-size: 2rem;
+  }
+
+  .categorias-celtyv {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-celtyvInfo {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .fila-carousel-celtyv {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .fila-victimas-celtyv {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .fila-victoria-celtyv {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .fila-titulo-celtyv {
+    padding: 3.5rem;
+  }
+  .texto-titulo-celtyv {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .titulo-seccion-celtyv {
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .parrafo-seccion-celtyv {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+
+  .subtitulo-seccion-celtyv {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .subtitulo-seccion-publicaciones {
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .titulo-libro-celtyv {
+    font-size: 2rem;
+  }
+
+  .categorias-celtyv {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -159,27 +264,28 @@
   }
   .texto-titulo-celtyv {
     padding: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .titulo-seccion-celtyv {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
   .parrafo-seccion-celtyv {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: justify;
   }
 
   .subtitulo-seccion-celtyv {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
   }
 
   .subtitulo-seccion-publicaciones {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding-top: 0rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 
   .titulo-libro-celtyv {
@@ -187,7 +293,7 @@
   }
 
   .categorias-celtyv {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .columna-unirse-celtyv {
