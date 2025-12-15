@@ -23,14 +23,20 @@ const Home = () => {
               . Es fundadora y ex presidente de la Asociación Civil Centro de
               Estudios Legales sobre el Terrorismo y sus Víctimas (CELTYV).
               Además, es Técnica en Seguridad Urbana y Portuaria. <br /> <br />
-              Es autora del libro "Los llaman... jóvenes idealistas" y coautora
-              de "Los otros muertos", donde se narran las historias de las
-              víctimas del terrorismo en Argentina. Se desempeñó como
-              coordinadora adjunta de la Comisión de Derechos Humanos del
-              Colegio Público de Abogados de la Capital Federal. <br />
-              <br /> A lo largo de su carrera, ha sido columnista en diversos
-              medios gráficos y televisivos, abordando temas vinculados al
-              terrorismo, los derechos humanos, la defensa y la seguridad.
+              <span className="vv-estilo">
+                Es autora del libro "Los llaman... jóvenes idealistas" y
+                coautora de "Los otros muertos"
+              </span>
+              , donde se narran las historias de las víctimas del terrorismo en
+              Argentina. Se desempeñó como coordinadora adjunta de la Comisión
+              de Derechos Humanos del Colegio Público de Abogados de la Capital
+              Federal. <br />
+              <br /> A lo largo de su carrera,{" "}
+              <span className="vv-estilo">
+                ha sido columnista en diversos medios gráficos y televisivos
+              </span>
+              , abordando temas vinculados al terrorismo, los derechos humanos,
+              la defensa y la seguridad.
             </p>
           </div>
         </div>
