@@ -35,7 +35,7 @@ const Home = () => {
               <span className="vv-estilo">
                 ha sido columnista en diversos medios gráficos y televisivos
               </span>
-              , abordando temas vinculados al terrorismo, los derechos humanos,
+              ,abordando temas vinculados al terrorismo, los derechos humanos,
               la defensa y la seguridad.
             </p>
           </div>
