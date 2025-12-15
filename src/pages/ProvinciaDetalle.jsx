@@ -77,8 +77,8 @@ const ProvinciaDetalle = () => {
               Estuvo acompañada por el Ministro de Defensa Luis Petri y los
               familiares de las víctimas, a quienes rindió homenaje,
               reconociendo el dolor de las familias y la importancia de
-              reconstruir la historia de todos los argentinos. Durante la
-              ceremonia,{" "}
+              reconstruir la historia de todos los argentinos. <br />
+              <br /> Durante la ceremonia,{" "}
               <span className="vv-estilo-detalle">
                 Villarruel destacó los valores de justicia, verdad, reparación y
                 derechos humanos para todos,
@@ -107,6 +107,7 @@ const ProvinciaDetalle = () => {
               destacando la importancia de quienes invierten en el país, generan
               empleo y fomentan el desarrollo productivo local.{" "}
               <span className="vv-estilo-detalle">
+                <br /> <br />
                 Posteriormente, se acercó al Premier Pádel P1 Mar del Plata
                 2024,
               </span>{" "}
@@ -116,6 +117,8 @@ const ProvinciaDetalle = () => {
               argentinos que destacan en el ámbito internacional.{" "}
               <span className="vv-estilo-detalle">
                 {" "}
+                <br />
+                <br />
                 La visita reflejó el compromiso de Villarruel con la producción,
                 el trabajo y el deporte
               </span>
@@ -142,23 +145,25 @@ const ProvinciaDetalle = () => {
                 {" "}
                 Festival Nacional de Doma y Folklore de Jesús María.
               </span>{" "}
-              Durante su estadía, se alojó en Villa Allende, en la residencia de
-              una familia amiga, fortaleciendo los lazos con la comunidad local.
-              En el festival, fue recibida por la vicegobernadora Myrian
-              Prunotto, el intendente de Jesús María Federico Zárate y el
-              presidente de la comisión organizadora Juan López.{" "}
+              <br /> <br /> Durante su estadía, se alojó en Villa Allende, en la
+              residencia de una familia amiga, fortaleciendo los lazos con la
+              comunidad local. En el festival, fue recibida por la
+              vicegobernadora Myrian Prunotto, el intendente de Jesús María
+              Federico Zárate y el presidente de la comisión organizadora Juan
+              López.{" "}
               <span className="vv-estilo-detalle">
                 Villarruel expresó su agradecimiento por la cálida recepción,
                 afirmando:
-              </span>
+              </span>{" "}
               <blockquote className="cita">
                 "Siempre me reciben con amor, acá soy cordobesa."
-              </blockquote>
+              </blockquote>{" "}
               Además, compartió en sus redes sociales su participación en el
               festival, destacando la importancia de preservar y promover la
               cultura nacional y los eventos tradicionales que unen a las
-              comunidades de todo el país.{" "}
+              comunidades de todo el país.
               <span className="vv-estilo-detalle">
+                <br /> <br />
                 Esta visita reflejó su interés por participar activamente en
                 eventos culturales y tradicionales,{" "}
               </span>
@@ -216,7 +221,8 @@ const ProvinciaDetalle = () => {
               </span>{" "}
               Durante su visita, fue recibida con cariño, generosidad y alegría,
               reafirmando su vínculo personal y afectivo con la provincia que
-              considera su tierra querida.{" "}
+              considera su tierra querida. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 Villarruel destacó la importancia de esta fecha histórica para
                 la Patria Argentina,
@@ -254,10 +260,15 @@ const ProvinciaDetalle = () => {
                 Victoria Villarruel participó de los actos conmemorativos por el
                 211° aniversario de la Batalla de Salta.
               </span>{" "}
+              <br /> <br />
               Llegó a la provincia el 19 de febrero, donde se reunió con
               miembros de su partido y funcionarios locales, y confirmó su
-              participación en la cena de gala organizada por el Club 20 de
-              Febrero, como antesala de los festejos. El 20 de febrero,{" "}
+              participación en la{" "}
+              <span className="vv-estilo-detalle">
+                cena de gala organizada por el Club 20 de Febrero,
+              </span>{" "}
+              como antesala de los festejos. <br /> <br />
+              El 20 de febrero,{" "}
               <span className="vv-estilo-detalle">
                 asistió al desfile cívico-militar en Plaza Belgrano,
                 conmemorando la histórica victoria del Ejército del Norte en
@@ -281,7 +292,7 @@ const ProvinciaDetalle = () => {
                 conmemorativos en honor al General Martín Miguel de Güemes
               </span>
               , destacando la importancia de las tradiciones, la historia y los
-              héroes que forjaron la Nación.Durante la jornada,{" "}
+              héroes que forjaron la Nación.Durante la jornada, <br /> <br />
               <span className="vv-estilo-detalle">
                 Villarruel desfiló junto a Los Infernales, vistiendo con
                 humildad las ropas de gaucho salteño,
@@ -316,14 +327,16 @@ const ProvinciaDetalle = () => {
                 y Salta,
               </span>{" "}
               destacando el valor del trabajo rural y la producción agropecuaria
-              como pilares de la identidad argentina.{" "}
+              como pilares de la identidad argentina. <br />
+              <br />{" "}
               <span className="vv-estilo-detalle">
                 En San Pedro, Jujuy, Villarruel recorrió la finca Campo Alegre,
               </span>{" "}
               acompañada por las hermanas Rodríguez Pardo y sus esposos, tercera
               generación de productores de caña de azúcar, y pudo conocer de
               cerca el esfuerzo y la dedicación que sostienen la producción
-              local.{" "}
+              local. <br />
+              <br />{" "}
               <span className="vv-estilo-detalle">
                 Posteriormente, se trasladó a Salta, donde participó de la 80°
                 Exposición Rural,
@@ -368,19 +381,22 @@ const ProvinciaDetalle = () => {
                 Victoria Villarruel visitó la provincia de Chubut para
                 participar de los festejos por el 90° aniversario de Río Mayo,
               </span>{" "}
-              en un regreso cargado de emoción y recuerdos de infancia. Arribó
-              al Aeropuerto General Enrique Mosconi de Comodoro Rivadavia, donde
-              fue recibida por el gobernador Ignacio "Nacho" Torres, y camino a
-              Río Mayo realizó una breve parada en Sarmiento, saludando a
-              empleados y vecinos.{" "}
+              en un regreso cargado de emoción y recuerdos de infancia. <br />
+              <br />
+              Arribó al Aeropuerto General Enrique Mosconi de Comodoro
+              Rivadavia, donde fue recibida por el gobernador Ignacio "Nacho"
+              Torres, y camino a Río Mayo realizó una breve parada en Sarmiento,
+              saludando a empleados y vecinos. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 En Río Mayo, fue declarada Huésped de Honor y participó del acto
                 oficial junto al gobernador Torres,
               </span>{" "}
               el vicegobernador Gustavo Menna, el intendente Gustavo Loyaute,
               senadoras y diputadas nacionales, autoridades provinciales y
-              municipales, fuerzas armadas y de seguridad. Durante la ceremonia,
-              Villarruel recordó con emoción su niñez en la localidad:{" "}
+              municipales, fuerzas armadas y de seguridad. <br />
+              <br /> Durante la ceremonia, Villarruel recordó con emoción su
+              niñez en la localidad:{" "}
               <blockquote className="cita">
                 "Fui muy feliz en cada uno de los días que viví en este pequeño
                 pedacito de nuestra inmensa Patagonia… Aprendí a amar el paisaje
@@ -394,12 +410,19 @@ const ProvinciaDetalle = () => {
                 de Abuelos y la inauguración de la obra de iluminación en el
                 ingreso a la localidad.
               </span>{" "}
-              Durante su estadía, Villarruel también recorrió el hospital de
-              Comodoro Rivadavia, dialogó con profesionales de la salud, visitó
-              el mural en homenaje al Gral. Enrique Mosconi y acompañó la
-              inauguración del Muro de Contención Costero en el Hospital Alvear.
-              En Rada Tilly, mantuvo un encuentro con la intendente y concejales
-              locales, reafirmando su compromiso con la Patagonia.{" "}
+              <br />
+              <br />
+              Durante su estadía, Villarruel{" "}
+              <span className="vv-estilo-detalle">
+                también recorrió el hospital de Comodoro Rivadavia,
+              </span>{" "}
+              dialogó con profesionales de la salud, visitó el mural en homenaje
+              al Gral. Enrique Mosconi y acompañó la inauguración del Muro de
+              Contención Costero en el Hospital Alvear.{" "}
+              <span className="vv-estilo-detalle">En Rada Tilly,</span> mantuvo
+              un encuentro con la intendente y concejales locales, reafirmando
+              su compromiso con la Patagonia. <br />
+              <br />{" "}
               <span className="vv-estilo-detalle">
                 {" "}
                 El regreso de Victoria Villarruel a Río Mayo no solo honró su
@@ -428,11 +451,13 @@ const ProvinciaDetalle = () => {
                 Día de la Veteranía y de los Caídos en la Guerra de Malvinas en
                 Ushuaia,
               </span>{" "}
-              Capital de las Malvinas. Durante el acto central, Villarruel
-              participó de ofrendas florales y discursos junto a autoridades
-              locales, con la presencia de niños y colegios con sus banderas de
-              ceremonia, destacando la importancia de transmitir memoria y
-              patriotismo a las nuevas generaciones.{" "}
+              Capital de las Malvinas. <br />
+              <br /> Durante el acto central, Villarruel participó de ofrendas
+              florales y discursos junto a autoridades locales, con la presencia
+              de niños y colegios con sus banderas de ceremonia, destacando la
+              importancia de transmitir memoria y patriotismo a las nuevas
+              generaciones. <br />
+              <br />{" "}
               <span className="vv-estilo-detalle">
                 La agenda incluyó visitas al Destacamento más austral de la
                 Gendarmería Nacional Argentina, Grupo Lapataia, y al Parque
@@ -469,16 +494,19 @@ const ProvinciaDetalle = () => {
                 Bajada de la Virgen del Valle,
               </span>{" "}
               una de las celebraciones religiosas más importantes del norte
-              argentino. Antes del acto central, Villarruel mantuvo una reunión
-              con el gobernador y su gabinete, donde dialogaron sobre temas
-              vinculados al desarrollo provincial y al fortalecimiento de las
+              argentino. <br />
+              <br />
+              Antes del acto central, Villarruel mantuvo una reunión con el
+              gobernador y su gabinete, donde dialogaron sobre temas vinculados
+              al desarrollo provincial y al fortalecimiento de las
               instituciones. Posteriormente,{" "}
               <span className="vv-estilo-detalle">
                 recorrieron las viviendas que el Gobierno de Catamarca construye
                 para los efectivos militares destinados en la provincia,
               </span>{" "}
               destacando la importancia de acompañar y apoyar a las Fuerzas
-              Armadas. Durante la jornada, también visitó la Cuesta del
+              Armadas. <br />
+              <br /> Durante la jornada, también visitó la Cuesta del
               Portezuelo, uno de los paisajes más emblemáticos de Catamarca, y
               culminó su visita participando en la emotiva Bajada de la Virgen
               del Valle, en la Catedral Basílica. Villarruel agradeció la cálida
@@ -508,10 +536,12 @@ const ProvinciaDetalle = () => {
                 participar de la Fiesta Nacional e Internacional del Poncho,
               </span>{" "}
               uno de los eventos culturales más emblemáticos del norte
-              argentino. Durante su recorrido, Villarruel conoció ponchos,
-              chalinas, orfebrería, artesanías en cuero, esterillas hilados,
-              ponchos y guantes de vicuña, apreciando el trabajo artesanal y la
-              riqueza cultural de la provincia.{" "}
+              argentino. <br />
+              <br /> Durante su recorrido, Villarruel conoció ponchos, chalinas,
+              orfebrería, artesanías en cuero, esterillas hilados, ponchos y
+              guantes de vicuña, apreciando el trabajo artesanal y la riqueza
+              cultural de la provincia. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 También visitó la cocina de la Peña, donde compartió la cena y
                 saludó a todos los presentes, destacando el esfuerzo y la
@@ -538,7 +568,8 @@ const ProvinciaDetalle = () => {
               En 2025, la vicepresidente Victoria Villarruel visitó nuevamente
               la provincia de Catamarca, compartiendo una jornada con vecinos y
               trabajadores marcada por identidad, tradición y valores
-              profundamente arraigados en la historia nacional.{" "}
+              profundamente arraigados en la historia nacional. <br />
+              <br />{" "}
               <span className="vv-estilo-detalle">
                 En Belén, conocida como la cuna del poncho argentino, Villarruel
                 recorrió el taller del artesano Antonio Gutiérrez, donde conoció
@@ -546,15 +577,17 @@ const ProvinciaDetalle = () => {
               </span>{" "}
               y a la emblemática Ruta 40, hechos con técnicas ancestrales que
               reflejan el esfuerzo, dedicación y orgullo del interior del país.
-              Posteriormente,{" "}
+              <br />
+              <br /> Posteriormente,{" "}
               <span className="vv-estilo-detalle">
-                visitó la cooperativa de las Arañitas Hilanderas,
+                visitó la cooperativa de las Arañitas Hilanderas,{" "}
               </span>
               donde 30 mujeres lideradas por Rosita trabajan cada día hilando,
               tiñendo y tejiendo a mano verdaderas obras de arte. Villarruel
               destacó el compromiso de estas mujeres con la preservación de la
-              cultura textil del norte argentino. La recorrida continuó en El
-              Rodeo, donde{" "}
+              cultura textil del norte argentino. <br />
+              <br />
+              La recorrida continuó en El Rodeo, donde{" "}
               <span className="vv-estilo-detalle">
                 la vicepresidente conoció la imponente imagen de la Virgen del
                 Valle, escultura de 52 metros construida gracias a la fe y
@@ -594,8 +627,8 @@ const ProvinciaDetalle = () => {
                 participar en los actos oficiales de la Fiesta Nacional de la
                 Vendimia,
               </span>{" "}
-              una de las celebraciones más emblemáticas del país. Durante su
-              estadía,{" "}
+              una de las celebraciones más emblemáticas del país. <br />
+              <br /> Durante su estadía,{" "}
               <span className="vv-estilo-detalle">
                 asistió al tradicional desayuno de la Corporación Vitivinícola
                 Argentina (COVIAR),
@@ -604,10 +637,11 @@ const ProvinciaDetalle = () => {
               sector público y el privado para impulsar el desarrollo nacional.
               En su discurso, definió a Mendoza como "la provincia de la
               libertad", en alusión a su rol histórico en el Cruce de los Andes
-              y en la gesta de la Independencia argentina. Villarruel también
-              participó del Carrusel Vendimial, donde saludó a los asistentes y
-              compartió momentos con los vecinos, recibiendo el afecto del
-              público. El lunes 4 de marzo,{" "}
+              y en la gesta de la Independencia argentina. <br />
+              <br />
+              Villarruel también participó del Carrusel Vendimial, donde saludó
+              a los asistentes y compartió momentos con los vecinos, recibiendo
+              el afecto del público. El lunes 4 de marzo,{" "}
               <span className="vv-estilo-detalle">
                 mantuvo una reunión en la Casa de Gobierno junto a la
                 vicegobernadora Hebe Casado y miembros del gabinete provincial.
@@ -615,7 +649,8 @@ const ProvinciaDetalle = () => {
               Durante el encuentro, se abordaron temas estratégicos para
               Mendoza, como infraestructura, rutas y pasos fronterizos, con el
               objetivo de fortalecer la cooperación entre la provincia y la
-              Nación. Además,{" "}
+              Nación. <br />
+              <br /> Además,{" "}
               <span className="vv-estilo-detalle">
                 visitó la Bodega Catena Zapata, reconocida a nivel internacional
                 por la excelencia de sus vinos, donde expresó su orgullo por el
@@ -646,7 +681,8 @@ const ProvinciaDetalle = () => {
                 actos oficiales y recorrer distintos puntos emblemáticos de la
                 región
               </span>
-              . Durante su paso por San Pedro,{" "}
+              . <br />
+              <br /> Durante su paso por San Pedro,{" "}
               <span className="vv-estilo-detalle">
                 visitó la finca Campo Alegre junto a las hermanas Rodríguez
                 Pardo,
@@ -665,7 +701,8 @@ const ProvinciaDetalle = () => {
                 interiorizó sobre el proceso de extracción de litio,
               </span>{" "}
               un recurso estratégico para el desarrollo energético del país.
-              Como cierre de su recorrido,{" "}
+              <br />
+              <br /> Como cierre de su recorrido,{" "}
               <span className="vv-estilo-detalle">
                 Villarruel visitó uno de sus lugares preferidos en la provincia:
                 las imponentes Salinas Grandes,{" "}
@@ -697,11 +734,12 @@ const ProvinciaDetalle = () => {
                 (FNA),
               </span>{" "}
               realizada en la ciudad de San Salvador, epicentro de la cuenca
-              arrocera del país. Durante la jornada, Villarruel recorrió los
-              stands de la muestra agroindustrial, dialogó con expositores y
-              productores, y compartió momentos con el público que se acercó a
-              disfrutar del evento, símbolo del trabajo y la identidad
-              entrerriana.{" "}
+              arrocera del país. <br />
+              <br /> Durante la jornada, Villarruel recorrió los stands de la
+              muestra agroindustrial, dialogó con expositores y productores, y
+              compartió momentos con el público que se acercó a disfrutar del
+              evento, símbolo del trabajo y la identidad entrerriana. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 La vicepresidente mantuvo además reuniones con la comisión
                 organizadora, con autoridades de la Federación Agraria Argentina
@@ -709,7 +747,8 @@ const ProvinciaDetalle = () => {
               </span>
               , y con representantes de la Cooperativa Arrocera de San Salvador
               Ltda., donde también visitó sus instalaciones para conocer de
-              cerca los procesos productivos del sector.{" "}
+              cerca los procesos productivos del sector. <br />
+              <br />{" "}
               <span className="vv-estilo-detalle">
                 El objetivo de su visita fue interiorizarse sobre la realidad de
                 los productores arroceros, escuchar sus inquietudes y fortalecer
@@ -739,14 +778,16 @@ const ProvinciaDetalle = () => {
                 Villarruel visitó la provincia de Formosa para participar en el
                 acto conmemorativo del Día del Héroe Formoseño,
               </span>{" "}
-              encabezado junto al gobernador Gildo Insfrán.{" "}
+              encabezado junto al gobernador Gildo Insfrán. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 La ceremonia se llevó a cabo en el Regimiento de Infantería de
                 Monte 29
               </span>{" "}
               "Coronel Ignacio José Warnes" y recordó a los soldados y policías
               que perdieron la vida durante el ataque de Montoneros hace 50
-              años.{" "}
+              años. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 Villarruel destacó la importancia de honrar la memoria de
                 quienes defendieron la provincia y la Patria,
@@ -775,11 +816,18 @@ const ProvinciaDetalle = () => {
                 Oberá,
               </span>{" "}
               uno de los eventos culturales más representativos del litoral
-              argentino. Durante su recorrido por el predio ferial, conoció las
-              casas típicas, la gastronomía y las costumbres de las diversas
-              colectividades que conforman la identidad pluricultural de la
-              provincia, destacando el valor del trabajo y la convivencia entre
-              las comunidades. En su paso por Misiones, Villarruel{" "}
+              argentino. <br />
+              <br /> Durante su recorrido por el predio ferial,{" "}
+              <span className="vv-estilo-detalle">
+                {" "}
+                conoció las casas típicas, la gastronomía y las costumbres de
+                las diversas colectividades que conforman la identidad
+                pluricultural de la provincia,
+              </span>{" "}
+              destacando el valor del trabajo y la convivencia entre las
+              comunidades. <br />
+              <br />
+              En su paso por Misiones, Villarruel{" "}
               <span className="vv-estilo-detalle">
                 también visitó el refugio de animales silvestres Guirá Oga, en
                 Puerto Iguazú,
@@ -787,14 +835,17 @@ const ProvinciaDetalle = () => {
               un espacio dedicado al rescate y rehabilitación de especies
               nativas de la selva misionera. Allí valoró el compromiso ambiental
               del equipo y la importancia de proteger la biodiversidad del
-              ecosistema. Finalmente, junto al intendente de Colonia Wanda,{" "}
+              ecosistema. <br />
+              <br />
+              Finalmente, junto al intendente de Colonia Wanda,{" "}
               <span className="vv-estilo-detalle">
                 recorrió las reconocidas Minas de Wanda,
               </span>{" "}
               donde se extraen piedras semipreciosas como la amatista. La
               vicepresidente destacó el potencial minero y turístico del norte
               misionero y el esfuerzo de quienes impulsan el desarrollo local
-              con sostenibilidad.{" "}
+              con sostenibilidad. <br />
+              <br />{" "}
               <span className="vv-estilo-detalle">
                 Esta visita combinó actividades culturales, ambientales y
                 productivas,
@@ -838,27 +889,32 @@ const ProvinciaDetalle = () => {
               donde fue recibida por el gobernador Rolo Figueroa y la
               vicegobernadora Gloria Ruiz. Junto a ellos, desarrolló una agenda
               institucional centrada en la producción energética, el desarrollo
-              regional y la articulación público-privada. Villarruel{" "}
+              regional y la articulación público-privada. <br />
+              <br /> Villarruel{" "}
               <span className="vv-estilo-detalle">
                 participó como disertante en el Argentina–Texas Summit 2024,
               </span>{" "}
               un encuentro clave en el que se debatió el futuro energético del
               país, con foco en Vaca Muerta, una de las principales fuentes de
-              crecimiento económico y tecnológico de la Argentina. Durante su
-              visita,{" "}
+              crecimiento económico y tecnológico de la Argentina. <br />
+              <br /> Durante su visita,{" "}
               <span className="vv-estilo-detalle">
                 mantuvo además una reunión con representantes de la Federación
                 de Cámaras del Sector Energético de Neuquén (FECENE),{" "}
               </span>
               donde escuchó las inquietudes de las pymes locales y reafirmó su
               compromiso con la producción nacional y la generación de empleo.{" "}
+              <br />
+              <br />
               <span className="vv-estilo-detalle">
                 En su paso por Añelo, acompañada por el intendente Fernando
                 Banderet, recorrió la zona núcleo de explotación de Oil & Gas,{" "}
               </span>
               interiorizándose sobre las necesidades de infraestructura,
-              educación y salud que acompañan el crecimiento de la región. Antes
-              de finalizar su visita,{" "}
+              educación y salud que acompañan el crecimiento de la región.{" "}
+              <br />
+              <br />
+              Antes de finalizar su visita,{" "}
               <span className="vv-estilo-detalle">
                 Villarruel recorrió la Bodega Malma, uno de los principales
                 emprendimientos vitivinícolas del sur argentino,
@@ -892,9 +948,10 @@ const ProvinciaDetalle = () => {
                 huésped de honor
               </span>{" "}
               y le presentó los principales proyectos y necesidades de la
-              ciudad. Durante su recorrido,{" "}
+              ciudad. <br />
+              <br /> Durante su recorrido,{" "}
               <span className="vv-estilo-detalle">
-                Villarruel visitó la sede de INVAP,
+                Villarruel visitó la sede de INVAP,{" "}
               </span>
               empresa estatal referente en desarrollo tecnológico, donde expresó
               su reconocimiento al talento y la capacidad de los profesionales
@@ -905,7 +962,9 @@ const ProvinciaDetalle = () => {
                 política de cielos abiertos,
               </span>{" "}
               destacando la importancia de impulsar la producción y el empleo en
-              la Patagonia. Asimismo,{" "}
+              la Patagonia. <br />
+              <br />
+              Asimismo,{" "}
               <span className="vv-estilo-detalle">
                 visitó la Escuela Militar de Montaña "Teniente General Juan
                 Domingo Perón"
@@ -914,7 +973,8 @@ const ProvinciaDetalle = () => {
               defensa de la soberanía nacional. En sus declaraciones, reafirmó
               su compromiso con el orden, la justicia y el respeto a la
               propiedad privada frente a los conflictos por usurpaciones de
-              tierras.{" "}
+              tierras. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 Esta visita reflejó su profundo interés por las problemáticas
                 del sur argentino y su compromiso con el desarrollo federal y la
@@ -945,8 +1005,9 @@ const ProvinciaDetalle = () => {
                 el mandatario le otorgó el título de Huésped de Honor
               </span>{" "}
               en reconocimiento a su presencia y compromiso institucional.
-              Durante su estadía, Villarruel participó en las tradicionales
-              festividades religiosas del{" "}
+              <br />
+              <br /> Durante su estadía, Villarruel participó en las
+              tradicionales festividades religiosas del{" "}
               <span className="vv-estilo-detalle">
                 Divino Señor de Renca y del Santo Cristo de la Quebrada
               </span>
@@ -954,7 +1015,8 @@ const ProvinciaDetalle = () => {
               sanluiseña. A lo largo de la jornada, expresó su alegría por poder
               compartir estos momentos de devoción y encuentro con la comunidad,
               destacando el valor espiritual y cultural de las tradiciones que
-              unen a los argentinos.{" "}
+              unen a los argentinos. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 La visita reflejó su cercanía con las provincias y su respeto
                 por las expresiones de fe popular que forman parte del
@@ -986,14 +1048,16 @@ const ProvinciaDetalle = () => {
               </span>{" "}
               La ceremonia se realizó en el histórico Campo de la Gloria, donde
               Villarruel estuvo acompañada por autoridades locales y nacionales.
-              Durante el evento,{" "}
+              <br />
+              <br /> Durante el evento,{" "}
               <span className="vv-estilo-detalle">
                 la vicepresidente destacó la importancia de esta fecha en la
                 historia argentina y rindió homenaje a los héroes que lucharon
                 por la independencia del país.
               </span>{" "}
-              Villarruel compartió imágenes de su participación en sus redes
-              sociales, reafirmando su{" "}
+              <br />
+              <br /> Villarruel compartió imágenes de su participación en sus
+              redes sociales, reafirmando su{" "}
               <span className="vv-estilo-detalle">
                 compromiso con la memoria histórica y el reconocimiento a los
                 próceres nacionales,
@@ -1015,7 +1079,9 @@ const ProvinciaDetalle = () => {
                 Rosario,
               </span>{" "}
               reafirmando su compromiso con los símbolos patrios y la identidad
-              nacional. Durante la jornada, Villarruel{" "}
+              nacional. <br />
+              <br />
+              Durante la jornada, Villarruel{" "}
               <span className="vv-estilo-detalle">
                 destacó la importancia de honrar la Bandera Argentina
               </span>{" "}
@@ -1049,14 +1115,15 @@ const ProvinciaDetalle = () => {
                 tomó parte de la Promesa a la Bandera
               </span>
               , reafirmando su compromiso con los valores patrios y la formación
-              cívica de los jóvenes argentinos. Posteriormente, Villarruel se
-              trasladó a San Nicolás, en la provincia de Buenos Aires, para
-              visitar{" "}
+              cívica de los jóvenes argentinos. <br />
+              <br /> Posteriormente, Villarruel se trasladó a San Nicolás, en la
+              provincia de Buenos Aires, para visitar{" "}
               <span className="vv-estilo-detalle">
                 la Basílica de la Virgen del Rosario de San Nicolás
               </span>
               , destacando la importancia de la fe y la devoción como pilares
-              culturales y espirituales del país.{" "}
+              culturales y espirituales del país. <br />
+              <br />
               <span className="vv-estilo-detalle">
                 La visita combinó actos cívicos y religiosos, reflejando el amor
                 de Villarruel por la Patria argentina y su vínculo con los
@@ -1085,7 +1152,8 @@ const ProvinciaDetalle = () => {
               Procedente de Catamarca, desarrolló una agenda orientada a
               fortalecer el vínculo entre el Gobierno nacional y las
               administraciones provinciales, en un contexto de diálogo sobre
-              gobernabilidad y federalismo. Durante su estadía,{" "}
+              gobernabilidad y federalismo. <br />
+              <br /> Durante su estadía,{" "}
               <span className="vv-estilo-detalle">
                 Villarruel se reunió con el gobernador Gerardo Zamora, con quien
                 abordó temas institucionales, obras públicas, distribución de
@@ -1093,9 +1161,11 @@ const ProvinciaDetalle = () => {
               </span>{" "}
               La reunión se llevó a cabo en un clima de interés mutuo por
               mantener canales de comunicación abiertos y efectivos entre Nación
-              y provincia.Su presencia en Santiago del Estero formó parte de una
-              agenda federal que incluyó actividades en Catamarca, reafirmando
-              el compromiso de la vicepresidente con las provincias del norte
+              y provincia. <br />
+              <br />
+              Su presencia en Santiago del Estero formó parte de una agenda
+              federal que incluyó actividades en Catamarca, reafirmando el
+              compromiso de la vicepresidente con las provincias del norte
               argentino y el{" "}
               <span className="vv-estilo-detalle">
                 fortalecimiento de la cooperación institucional más allá de las
@@ -1125,7 +1195,9 @@ const ProvinciaDetalle = () => {
                 246° aniversario del natalicio del General José de San Martín.
               </span>{" "}
               Arribó el sábado 24 al aeropuerto Fernando Piragine Niveyro, donde
-              fue recibida por el gobernador Gustavo Valdés. Al día siguiente,
+              fue recibida por el gobernador Gustavo Valdés. <br />
+              <br />
+              Al día siguiente,
               <span className="vv-estilo-detalle">
                 se trasladó a la localidad de Yapeyú, cuna del Libertador, para
                 asistir a la ceremonia oficial en su honor.
@@ -1160,7 +1232,9 @@ const ProvinciaDetalle = () => {
                 recepción de los restos del sargento Juan Bautista Cabral en la
                 localidad de Saladas.
               </span>{" "}
-              La ceremonia tuvo un fuerte contenido histórico e institucional,{" "}
+              <br />
+              <br /> La ceremonia tuvo un fuerte contenido histórico e
+              institucional,{" "}
               <span className="vv-estilo-detalle">
                 honrando la memoria de quien salvó la vida del general José de
                 San Martín
@@ -1182,17 +1256,17 @@ const ProvinciaDetalle = () => {
                 La Unión,
               </span>{" "}
               un espacio en refuncionalización que albergará un centro
-              científico, museo y polo gastronómico. Posteriormente, Villarruel
-              se trasladó a Saladas, donde{" "}
+              científico, museo y polo gastronómico. <br />
+              <br /> Posteriormente, Villarruel se trasladó a Saladas, donde{" "}
               <span className="vv-estilo-detalle">
                 participó del acto oficial en la Plaza Cabral y del desfile
                 cívico-militar,{" "}
               </span>
               recibiendo a los restos del sargento Cabral con la presencia de
               autoridades locales y vecinos, incluidos decenas de niños con
-              uniforme de Granaderos. Esta visita marcó un momento histórico
-              para Saladas, que por primera vez recibió la visita de un
-              vicepresidente, y{" "}
+              uniforme de Granaderos. <br />
+              <br /> Esta visita marcó un momento histórico para Saladas, que
+              por primera vez recibió la visita de un vicepresidente, y{" "}
               <span className="vv-estilo-detalle">
                 reafirmó el compromiso de Villarruel con la memoria histórica,
                 el federalismo y la identidad nacional.
