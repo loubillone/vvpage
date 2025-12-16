@@ -139,22 +139,26 @@ const ProvinciaDetalle = () => {
           fecha: "Enero de 2024",
           descripcion: (
             <p>
-              En enero de 2024, la vicepresidente Victoria Villarruel visitó la
-              provincia de Córdoba para participar en la inauguración del
+              En enero de 2024,{" "}
+              <span className="vv-estilo-detalle">
+                la vicepresidente Victoria Villarruel visitó la provincia de
+                Córdoba
+              </span>{" "}
+              para participar en la inauguración del
               <span className="vv-estilo-detalle">
                 {" "}
                 Festival Nacional de Doma y Folklore de Jesús María.
               </span>{" "}
               <br /> <br /> Durante su estadía, se alojó en Villa Allende, en la
               residencia de una familia amiga, fortaleciendo los lazos con la
-              comunidad local. En el festival, fue recibida por la
-              vicegobernadora Myrian Prunotto, el intendente de Jesús María
-              Federico Zárate y el presidente de la comisión organizadora Juan
-              López.{" "}
+              comunidad local.{" "}
               <span className="vv-estilo-detalle">
-                Villarruel expresó su agradecimiento por la cálida recepción,
-                afirmando:
+                En el festival, fue recibida por la vicegobernadora Myrian
+                Prunotto, el intendente de Jesús María Federico Zárate y el
+                presidente de la comisión organizadora Juan López.
               </span>{" "}
+              Villarruel expresó su agradecimiento por la cálida recepción,
+              afirmando:
               <blockquote className="cita">
                 "Siempre me reciben con amor, acá soy cordobesa."
               </blockquote>{" "}
@@ -214,10 +218,10 @@ const ProvinciaDetalle = () => {
           fecha: "Julio de 2025",
           descripcion: (
             <p>
-              En Tucumán, la vicepresidente Victoria Villarruel{" "}
+              En Tucumán,{" "}
               <span className="vv-estilo-detalle">
-                celebró el Día de la Independencia acompañada por vecinos y
-                autoridades locales.
+                la vicepresidente Victoria Villarruel celebró el Día de la
+                Independencia acompañada por vecinos y autoridades locales.
               </span>{" "}
               Durante su visita, fue recibida con cariño, generosidad y alegría,
               reafirmando su vínculo personal y afectivo con la provincia que
@@ -292,7 +296,7 @@ const ProvinciaDetalle = () => {
                 conmemorativos en honor al General Martín Miguel de Güemes
               </span>
               , destacando la importancia de las tradiciones, la historia y los
-              héroes que forjaron la Nación.Durante la jornada, <br /> <br />
+              héroes que forjaron la Nación. Durante la jornada, <br /> <br />
               <span className="vv-estilo-detalle">
                 Villarruel desfiló junto a Los Infernales, vistiendo con
                 humildad las ropas de gaucho salteño,
@@ -506,9 +510,12 @@ const ProvinciaDetalle = () => {
               </span>{" "}
               destacando la importancia de acompañar y apoyar a las Fuerzas
               Armadas. <br />
-              <br /> Durante la jornada, también visitó la Cuesta del
-              Portezuelo, uno de los paisajes más emblemáticos de Catamarca, y
-              culminó su visita participando en la emotiva Bajada de la Virgen
+              <br /> Durante la jornada, también{" "}
+              <span className="vv-estilo-detalle">
+                visitó la Cuesta del Portezuelo, uno de los paisajes más
+                emblemáticos de Catamarca,
+              </span>{" "}
+              y culminó su visita participando en la emotiva Bajada de la Virgen
               del Valle, en la Catedral Basílica. Villarruel agradeció la cálida
               recepción de los catamarqueños y expresó:
               <blockquote className="cita">
@@ -553,9 +560,12 @@ const ProvinciaDetalle = () => {
                 "Un día muy intenso pero que me llevo en el corazón por tanto
                 amor de los argentinos. ¡Gracias Catamarca por tanto!"
               </blockquote>{" "}
-              La visita reflejó el compromiso de Villarruel con la cultura, las
-              tradiciones y la identidad nacional, resaltando la importancia del
-              trabajo artesanal y la celebración de la historia local.
+              <span className="vv-estilo-detalle">
+                La visita reflejó el compromiso de Villarruel con la cultura,
+                las tradiciones y la identidad nacional,
+              </span>{" "}
+              resaltando la importancia del trabajo artesanal y la celebración
+              de la historia local.
             </p>
           ),
           imagenes: [fiestaPonchoVV, fiestaPonchoVVDos],
@@ -565,10 +575,13 @@ const ProvinciaDetalle = () => {
           fecha: "Julio 2025",
           descripcion: (
             <p>
-              En 2025, la vicepresidente Victoria Villarruel visitó nuevamente
-              la provincia de Catamarca, compartiendo una jornada con vecinos y
-              trabajadores marcada por identidad, tradición y valores
-              profundamente arraigados en la historia nacional. <br />
+              En 2025, la vicepresidente{" "}
+              <span className="vv-estilo-detalle">
+                Victoria Villarruel visitó nuevamente la provincia de Catamarca,
+              </span>{" "}
+              compartiendo una jornada con vecinos y trabajadores marcada por
+              identidad, tradición y valores profundamente arraigados en la
+              historia nacional. <br />
               <br />{" "}
               <span className="vv-estilo-detalle">
                 En Belén, conocida como la cuna del poncho argentino, Villarruel
@@ -674,14 +687,13 @@ const ProvinciaDetalle = () => {
           fecha: "Agosto de 2024",
           descripcion: (
             <p>
-              En el marco de la conmemoración por el 212° aniversario del Éxodo
-              Jujeño, la vicepresidente Victoria{" "}
+              En el marco de la conmemoración por el{" "}
               <span className="vv-estilo-detalle">
-                Villarruel viajó a la provincia de Jujuy para participar en los
-                actos oficiales y recorrer distintos puntos emblemáticos de la
-                región
-              </span>
-              . <br />
+                212° aniversario del Éxodo Jujeño, la vicepresidente Victoria
+                Villarruel viajó a la provincia de Jujuy
+              </span>{" "}
+              para participar en los actos oficiales y recorrer distintos puntos
+              emblemáticos de la región . <br />
               <br /> Durante su paso por San Pedro,{" "}
               <span className="vv-estilo-detalle">
                 visitó la finca Campo Alegre junto a las hermanas Rodríguez
@@ -707,10 +719,13 @@ const ProvinciaDetalle = () => {
                 Villarruel visitó uno de sus lugares preferidos en la provincia:
                 las imponentes Salinas Grandes,{" "}
               </span>
-              símbolo natural y orgullo del norte argentino. La visita reflejó
-              su compromiso con el desarrollo productivo, tecnológico y
-              ambiental de la región, así como su reconocimiento a la historia y
-              el esfuerzo del pueblo jujeño.
+              símbolo natural y orgullo del norte argentino.{" "}
+              <span className="vv-estilo-detalle">
+                La visita reflejó su compromiso con el desarrollo productivo,
+                tecnológico y ambiental de la región,
+              </span>{" "}
+              así como su reconocimiento a la historia y el esfuerzo del pueblo
+              jujeño.
             </p>
           ),
           imagenes: [jujuyVV, jujuyVVDos],
@@ -1144,10 +1159,11 @@ const ProvinciaDetalle = () => {
           fecha: "Julio de 2025",
           descripcion: (
             <p>
-              El 20 de julio de 2025, la vicepresidente Victoria{" "}
+              El 20 de julio de 2025,{" "}
               <span className="vv-estilo-detalle">
-                Villarruel visitó la Ciudad Capital de Santiago del Estero, en
-                el marco de su gira institucional por el norte argentino.
+                la vicepresidente Victoria Villarruel visitó la Ciudad Capital
+                de Santiago del Estero, en el marco de su gira institucional por
+                el norte argentino.
               </span>{" "}
               Procedente de Catamarca, desarrolló una agenda orientada a
               fortalecer el vínculo entre el Gobierno nacional y las
@@ -1163,10 +1179,12 @@ const ProvinciaDetalle = () => {
               mantener canales de comunicación abiertos y efectivos entre Nación
               y provincia. <br />
               <br />
-              Su presencia en Santiago del Estero formó parte de una agenda
-              federal que incluyó actividades en Catamarca, reafirmando el
-              compromiso de la vicepresidente con las provincias del norte
-              argentino y el{" "}
+              <span className="vv-estilo-detalle">
+                Su presencia en Santiago del Estero formó parte de una agenda
+                federal
+              </span>{" "}
+              que incluyó actividades en Catamarca, reafirmando el compromiso de
+              la vicepresidente con las provincias del norte argentino y el{" "}
               <span className="vv-estilo-detalle">
                 fortalecimiento de la cooperación institucional más allá de las
                 diferencias políticas.
