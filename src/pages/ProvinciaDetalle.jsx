@@ -1,39 +1,93 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import rioNegroVV from "../assets/img/mapaArg/rio-negro/rioNegro.jpg";
-import rioNegroVVDos from "../assets/img/mapaArg/rio-negro/rioNegro2.jpg";
+import rioNegroUno from "../assets/img/mapaArg/rio-negro/rioNegro1.jpg";
+import rioNegroDos from "../assets/img/mapaArg/rio-negro/rioNegro2.jpg";
+import rioNegroTres from "../assets/img/mapaArg/rio-negro/rioNegro3.jpg";
+import rioNegroCuatro from "../assets/img/mapaArg/rio-negro/rioNegro4.jpg";
+import rioNegroCinco from "../assets/img/mapaArg/rio-negro/rioNegro5.jpg";
+import rioNegroSeis from "../assets/img/mapaArg/rio-negro/rioNegro6.jpg";
 import azulVV from "../assets/img/mapaArg/buenos-aires/azulVV.jpg";
 import azulVVDos from "../assets/img/mapaArg/buenos-aires/azulVV2.jpg";
+import azulVVTres from "../assets/img/mapaArg/buenos-aires/azulVV3.jpg";
+import azulVVCuatro from "../assets/img/mapaArg/buenos-aires/azulVV4.jpg";
 import cordobaVV from "../assets/img/mapaArg/cordoba/corVV.jpg";
 import cordobaVVDos from "../assets/img/mapaArg/cordoba/corVV2.jpg";
+import cordobaVVTres from "../assets/img/mapaArg/cordoba/corVV3.jpg";
+import cordobaVVCuatro from "../assets/img/mapaArg/cordoba/corVV4.jpg";
+import cordobaVVCinco from "../assets/img/mapaArg/cordoba/corVV5.jpg";
+import cordobaVVSeis from "../assets/img/mapaArg/cordoba/corVV6.jpg";
 import santafeVV from "../assets/img/mapaArg/santa-fe/santafeVV.jpg";
 import santafeVVDos from "../assets/img/mapaArg/santa-fe/santafeVV2.jpg";
+import santafeVVTres from "../assets/img/mapaArg/santa-fe/santafeVV3.jpg";
+import santafeVVCuatro from "../assets/img/mapaArg/santa-fe/santafeVV4.jpg";
 import saltaVV from "../assets/img/mapaArg/salta/saltaVV.jpg";
-import saltaVVDos from "../assets/img/mapaArg/salta/saltaVV2.jpg";
+import saltaVVDos from "../assets/img/mapaArg/salta/saltaVV1.jpg";
+import saltaVVTres from "../assets/img/mapaArg/salta/saltaVV2.jpg";
+import saltaVVCuatro from "../assets/img/mapaArg/salta/saltaVV3.jpg";
+import saltaVVCinco from "../assets/img/mapaArg/salta/saltaVV4.jpg";
+import saltaVVSeis from "../assets/img/mapaArg/salta/saltaVV5.jpg";
 import corrientesVV from "../assets/img/mapaArg/corrientes/corrientesVV.jpg";
 import corrientesVVDos from "../assets/img/mapaArg/corrientes/corrientesVV2.jpg";
+import corrientesVVTres from "../assets/img/mapaArg/corrientes/corrientesVV3.jpg";
+import corrientesVVCuatro from "../assets/img/mapaArg/corrientes/corrientesVV4.jpg";
+import corrientesVVCinco from "../assets/img/mapaArg/corrientes/corrientesVV5.jpg";
+import corrientesVVSeis from "../assets/img/mapaArg/corrientes/corrientesVV6.jpg";
 import mendozaVV from "../assets/img/mapaArg/mendoza/mendozaVV.jpg";
 import mendozaVVDos from "../assets/img/mapaArg/mendoza/mendozaVV2.jpg";
+import mendozaVVTres from "../assets/img/mapaArg/mendoza/mendozaVV3.jpg";
+import mendozaVVCuatro from "../assets/img/mapaArg/mendoza/mendozaVV4.jpg";
+import mendozaVVCinco from "../assets/img/mapaArg/mendoza/mendozaVV5.jpg";
+import mendozaVVSeis from "../assets/img/mapaArg/mendoza/mendozaVV6.jpg";
 import sanLuisVV from "../assets/img/mapaArg/san-luis/sanluisVV.jpeg";
 import sanLuisVVDos from "../assets/img/mapaArg/san-luis/sanluisVV2.jpeg";
+import sanLuisVVTres from "../assets/img/mapaArg/san-luis/sanluisVV3.jpg";
+import sanLuisVVCuatro from "../assets/img/mapaArg/san-luis/sanluisVV4.jpg";
+import sanLuisVVCinco from "../assets/img/mapaArg/san-luis/sanluisVV5.jpg";
+import sanLuisVVSeis from "../assets/img/mapaArg/san-luis/sanluisVV6.jpg";
 import catamarcaVV from "../assets/img/mapaArg/catamarca/cataVV.avif";
 import catamarcaVVDos from "../assets/img/mapaArg/catamarca/cataVV2.jpeg";
-import jujuyVV from "../assets/img/mapaArg/jujuy/jujuyVV.jpg";
+import catamarcaVVTres from "../assets/img/mapaArg/catamarca/cataVV3.jpeg";
+import catamarcaVVCinco from "../assets/img/mapaArg/catamarca/cataVV5.jpg";
+import catamarcaVVSeis from "../assets/img/mapaArg/catamarca/cataVV6.jpg";
+import jujuyUno from "../assets/img/mapaArg/jujuy/jujuyVV1.jpg";
 import jujuyVVDos from "../assets/img/mapaArg/jujuy/jujuyVV2.jpg";
+import jujuyVVTres from "../assets/img/mapaArg/jujuy/jujuyVV3.jpg";
+import jujuyVVCuatro from "../assets/img/mapaArg/jujuy/jujuyVV4.jpg";
+import jujuyVVCinco from "../assets/img/mapaArg/jujuy/jujuyVV5.jpg";
+import jujuyVVSeis from "../assets/img/mapaArg/jujuy/jujuyVV6.jpg";
 import misionesVV from "../assets/img/mapaArg/misiones/misionesVV.jpg";
 import misionesVVDos from "../assets/img/mapaArg/misiones/misionesVV2.jpg";
+import misionesVVTres from "../assets/img/mapaArg/misiones/misionesVV3.jpg";
+import misionesVVCuatro from "../assets/img/mapaArg/misiones/misionesVV4.jpg";
+import misionesVVCinco from "../assets/img/mapaArg/misiones/misionesVV5.jpg";
+import misionesVVSeis from "../assets/img/mapaArg/misiones/misionesVV6.jpg";
 import neuquenVV from "../assets/img/mapaArg/neuquen/neuquenVV.jpg";
 import neuquenVVDos from "../assets/img/mapaArg/neuquen/neuquenVV2.jpg";
+import neuquenVVTres from "../assets/img/mapaArg/neuquen/neuquenVV3.jpg";
+import neuquenVVCuatro from "../assets/img/mapaArg/neuquen/neuquenVV4.jpg";
+import neuquenVVCinco from "../assets/img/mapaArg/neuquen/neuquenVV5.jpg";
+import neuquenVVSeis from "../assets/img/mapaArg/neuquen/neuquenVV6.jpg";
 import entreriosVV from "../assets/img/mapaArg/entre-rios/entreriosVV.jpg";
 import entreriosVVDos from "../assets/img/mapaArg/entre-rios/entreriosVV2.jpg";
+import entreriosVVTres from "../assets/img/mapaArg/entre-rios/entreriosVV3.jpg";
+import entreriosVVCuatro from "../assets/img/mapaArg/entre-rios/entreriosVV4.jpg";
+import entreriosVVCinco from "../assets/img/mapaArg/entre-rios/entreriosVV5.jpg";
+import entreriosVVSeis from "../assets/img/mapaArg/entre-rios/entreriosVV6.jpg";
 import santiagoVV from "../assets/img/mapaArg/santiago/santiagoVV.jpg";
 import santiagoVVDos from "../assets/img/mapaArg/santiago/santiagoVV2.jpeg";
 import chubutVV from "../assets/img/mapaArg/chubut/chubutVV.jpg";
 import chubutVVDos from "../assets/img/mapaArg/chubut/chubutVV2.jpg";
 import tierraVV from "../assets/img/mapaArg/tierra-del-fuego/tierraVV.jpg";
 import tierraVVDos from "../assets/img/mapaArg/tierra-del-fuego/tierraVV2.jpg";
+import tierraVVTres from "../assets/img/mapaArg/tierra-del-fuego/tierraVV3.jpg";
+import tierraVVCuatro from "../assets/img/mapaArg/tierra-del-fuego/tierraVV4.jpg";
+import tierraVVCinco from "../assets/img/mapaArg/tierra-del-fuego/tierraVV5.jpg";
+import tierraVVSeis from "../assets/img/mapaArg/tierra-del-fuego/tierraVV6.jpg";
 import tucuVV from "../assets/img/mapaArg/tucuman/tucumanVV.jpg";
 import tucuVVDos from "../assets/img/mapaArg/tucuman/tucumanVV2.jpg";
+import tucuVVTres from "../assets/img/mapaArg/tucuman/tucumanVV3.jpg";
+import tucuVVCuatro from "../assets/img/mapaArg/tucuman/tucumanVV4.jpg";
+import tucuVVCinco from "../assets/img/mapaArg/tucuman/tucumanVV5.jpg";
 import formosaVV from "../assets/img/mapaArg/formosa/formosaVV.jpg";
 import formosaVVDos from "../assets/img/mapaArg/formosa/formosaVV2.jpg";
 import saladasVV from "../assets/img/mapaArg/corrientes/saladasVV.jpg";
@@ -42,18 +96,31 @@ import elrodeoVV from "../assets/img/mapaArg/catamarca/elrodeoVV.jpg";
 import elrodeoVVDos from "../assets/img/mapaArg/catamarca/elrodeoVV2.jpg";
 import banderaVV from "../assets/img/mapaArg/santa-fe/banderaVV.jpg";
 import banderaVVDos from "../assets/img/mapaArg/santa-fe/banderaVV2.jpg";
+import banderaVVTres from "../assets/img/mapaArg/santa-fe/banderaVV3.jpg";
+import banderaVVCuatro from "../assets/img/mapaArg/santa-fe/banderaVV4.jpg";
+import banderaVVCinco from "../assets/img/mapaArg/santa-fe/banderaVV5.jpg";
 import ruralsaltaVV from "../assets/img/mapaArg/salta/ruralsaltaVV.jpg";
 import ruralsaltaVVDos from "../assets/img/mapaArg/salta/ruralsaltaVV2.jpg";
+import ruralsaltaVVTres from "../assets/img/mapaArg/salta/ruralsaltaVV3.jpg";
 import guemesVV from "../assets/img/mapaArg/salta/guemesVV.jpg";
 import guemesVVDos from "../assets/img/mapaArg/salta/guemesVV2.jpg";
+import guemesVVCuatro from "../assets/img/mapaArg/salta/guemesVV4.webp";
+import guemesVVCinco from "../assets/img/mapaArg/salta/guemesVV5.jpg";
 import banderaroVV from "../assets/img/mapaArg/santa-fe/banderaroVV.jpg";
 import banderaroVVDos from "../assets/img/mapaArg/santa-fe/banderaroVV2.jpg";
+import banderaroVVTres from "../assets/img/mapaArg/santa-fe/banderaroVV3.jpg";
+import banderaroVVCuatro from "../assets/img/mapaArg/santa-fe/banderaroVV4.jpg";
 import cordoVV from "../assets/img/mapaArg/cordoba/cordoVV.jpg";
 import cordoVVDos from "../assets/img/mapaArg/cordoba/cordoVV2.jpg";
 import mardelVV from "../assets/img/mapaArg/buenos-aires/mardelVV.jpg";
 import mardelVVDos from "../assets/img/mapaArg/buenos-aires/mardelVV2.jpg";
+import mardelVVTres from "../assets/img/mapaArg/buenos-aires/mardelVV3.jpg";
+import mardelVVCuatro from "../assets/img/mapaArg/buenos-aires/mardelVV4.jpg";
+import mardelVVCinco from "../assets/img/mapaArg/buenos-aires/mardelVV5.jpg";
 import fiestaPonchoVV from "../assets/img/mapaArg/catamarca/fiestaPonchoVV.jpg";
 import fiestaPonchoVVDos from "../assets/img/mapaArg/catamarca/fiestaPonchoVV2.jpg";
+import fiestaPonchoVVTres from "../assets/img/mapaArg/catamarca/fiestaPonchoVV3.jpg";
+import fiestaPonchoVVCuatro from "../assets/img/mapaArg/catamarca/fiestaPonchoVV4.jpg";
 import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 
@@ -87,7 +154,7 @@ const ProvinciaDetalle = () => {
               hacia quienes defendieron la Patria.
             </p>
           ),
-          imagenes: [azulVV, azulVVDos],
+          imagenes: [azulVV, azulVVDos, azulVVTres, azulVVCuatro],
           lugar: "Azul",
         },
 
@@ -126,7 +193,13 @@ const ProvinciaDetalle = () => {
               ciudad.
             </p>
           ),
-          imagenes: [mardelVV, mardelVVDos],
+          imagenes: [
+            mardelVV,
+            mardelVVDos,
+            mardelVVTres,
+            mardelVVCuatro,
+            mardelVVCinco,
+          ],
           lugar: "Mar Del Plata",
         },
       ],
@@ -175,7 +248,14 @@ const ProvinciaDetalle = () => {
               distintas regiones argentinas.
             </p>
           ),
-          imagenes: [cordobaVV, cordobaVVDos],
+          imagenes: [
+            cordobaVV,
+            cordobaVVDos,
+            cordobaVVTres,
+            cordobaVVCuatro,
+            cordobaVVCinco,
+            cordobaVVSeis,
+          ],
           lugar: "Jesús María",
         },
 
@@ -246,7 +326,7 @@ const ProvinciaDetalle = () => {
               Argentina.
             </p>
           ),
-          imagenes: [tucuVV, tucuVVDos],
+          imagenes: [tucuVV, tucuVVDos, tucuVVTres, tucuVVCuatro, tucuVVCinco],
           lugar: "San Miguel de Tucumán",
         },
       ],
@@ -283,7 +363,14 @@ const ProvinciaDetalle = () => {
               nuestros próceres.
             </p>
           ),
-          imagenes: [saltaVV, saltaVVDos],
+          imagenes: [
+            saltaVV,
+            saltaVVDos,
+            saltaVVTres,
+            saltaVVCuatro,
+            saltaVVCinco,
+            saltaVVSeis,
+          ],
           lugar: "Ciudad de Salta",
         },
         {
@@ -317,7 +404,7 @@ const ProvinciaDetalle = () => {
               historia y los héroes de la Patria.
             </p>
           ),
-          imagenes: [guemesVV, guemesVVDos],
+          imagenes: [guemesVV, guemesVVDos, guemesVVCuatro, guemesVVCinco],
           lugar: "Ciudad de Salta",
         },
 
@@ -367,7 +454,7 @@ const ProvinciaDetalle = () => {
               norte argentino.
             </p>
           ),
-          imagenes: [ruralsaltaVV, ruralsaltaVVDos],
+          imagenes: [ruralsaltaVV, ruralsaltaVVDos, ruralsaltaVVTres],
           lugar: "Jujuy - Salta",
         },
       ],
@@ -478,7 +565,14 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [tierraVV, tierraVVDos],
+          imagenes: [
+            tierraVV,
+            tierraVVDos,
+            tierraVVTres,
+            tierraVVCuatro,
+            tierraVVCinco,
+            tierraVVSeis,
+          ],
           lugar: "Ushuaia",
         },
       ],
@@ -529,7 +623,13 @@ const ProvinciaDetalle = () => {
               tradiciones y valores espirituales que unen al pueblo argentino.
             </p>
           ),
-          imagenes: [catamarcaVV, catamarcaVVDos],
+          imagenes: [
+            catamarcaVV,
+            catamarcaVVDos,
+            catamarcaVVTres,
+            catamarcaVVCinco,
+            catamarcaVVSeis,
+          ],
           lugar: "San Fernando del Valle de Catamarca",
         },
 
@@ -568,7 +668,12 @@ const ProvinciaDetalle = () => {
               de la historia local.
             </p>
           ),
-          imagenes: [fiestaPonchoVV, fiestaPonchoVVDos],
+          imagenes: [
+            fiestaPonchoVV,
+            fiestaPonchoVVDos,
+            fiestaPonchoVVTres,
+            fiestaPonchoVVCuatro,
+          ],
           lugar: "San Fernando del Valle de Catamarca",
         },
         {
@@ -674,7 +779,14 @@ const ProvinciaDetalle = () => {
               el desarrollo y la identidad productiva de Mendoza.
             </p>
           ),
-          imagenes: [mendozaVV, mendozaVVDos],
+          imagenes: [
+            mendozaVV,
+            mendozaVVDos,
+            mendozaVVTres,
+            mendozaVVCuatro,
+            mendozaVVCinco,
+            mendozaVVSeis,
+          ],
           lugar: "Ciudad de Mendoza",
         },
       ],
@@ -728,7 +840,14 @@ const ProvinciaDetalle = () => {
               jujeño.
             </p>
           ),
-          imagenes: [jujuyVV, jujuyVVDos],
+          imagenes: [
+            jujuyUno,
+            jujuyVVDos,
+            jujuyVVTres,
+            jujuyVVCuatro,
+            jujuyVVCinco,
+            jujuyVVSeis,
+          ],
           lugar: "San Pedro – Volcán – Tilcara – Olaroz – Salinas Grandes",
         },
       ],
@@ -775,7 +894,14 @@ const ProvinciaDetalle = () => {
               fundamentales para el crecimiento del país.
             </p>
           ),
-          imagenes: [entreriosVV, entreriosVVDos],
+          imagenes: [
+            entreriosVV,
+            entreriosVVDos,
+            entreriosVVTres,
+            entreriosVVCuatro,
+            entreriosVVCinco,
+            entreriosVVSeis,
+          ],
           lugar: "San Salvador – Paraná",
         },
       ],
@@ -869,7 +995,14 @@ const ProvinciaDetalle = () => {
               Villarruel con el crecimiento de las provincias argentinas.
             </p>
           ),
-          imagenes: [misionesVV, misionesVVDos],
+          imagenes: [
+            misionesVV,
+            misionesVVDos,
+            misionesVVTres,
+            misionesVVCuatro,
+            misionesVVCinco,
+            misionesVVSeis,
+          ],
           lugar: "Oberá – Puerto Iguazú – Colonia Wanda",
         },
       ],
@@ -939,7 +1072,14 @@ const ProvinciaDetalle = () => {
               desarrollo energético y económico sostenible del país.
             </p>
           ),
-          imagenes: [neuquenVV, neuquenVVDos],
+          imagenes: [
+            neuquenVV,
+            neuquenVVDos,
+            neuquenVVTres,
+            neuquenVVCuatro,
+            neuquenVVCinco,
+            neuquenVVSeis,
+          ],
           lugar: "Ciudad de Neuquén – Añelo",
         },
       ],
@@ -997,7 +1137,14 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [rioNegroVV, rioNegroVVDos],
+          imagenes: [
+            rioNegroUno,
+            rioNegroDos,
+            rioNegroTres,
+            rioNegroCuatro,
+            rioNegroCinco,
+            rioNegroSeis,
+          ],
           lugar: "San Carlos de Bariloche",
         },
       ],
@@ -1039,7 +1186,14 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [sanLuisVV, sanLuisVVDos],
+          imagenes: [
+            sanLuisVV,
+            sanLuisVVDos,
+            sanLuisVVTres,
+            sanLuisVVCuatro,
+            sanLuisVVCinco,
+            sanLuisVVSeis,
+          ],
           lugar: "San Luis – Renca – Villa de la Quebrada",
         },
       ],
@@ -1080,7 +1234,7 @@ const ProvinciaDetalle = () => {
               valores fundamentales que guían su labor como dirigente nacional.
             </p>
           ),
-          imagenes: [santafeVV, santafeVVDos],
+          imagenes: [santafeVV, santafeVVDos, santafeVVTres, santafeVVCuatro],
           lugar: "San Lorenzo",
         },
 
@@ -1113,7 +1267,12 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [banderaroVV, banderaroVVDos],
+          imagenes: [
+            banderaroVV,
+            banderaroVVDos,
+            banderaroVVTres,
+            banderaroVVCuatro,
+          ],
           lugar: "Rosario",
         },
         {
@@ -1146,7 +1305,13 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [banderaVV, banderaVVDos],
+          imagenes: [
+            banderaVV,
+            banderaVVDos,
+            banderaVVTres,
+            banderaVVCuatro,
+            banderaVVCinco,
+          ],
           lugar: "Rosario – San Nicolás",
         },
       ],
@@ -1237,7 +1402,14 @@ const ProvinciaDetalle = () => {
               forjaron la identidad nacional.
             </p>
           ),
-          imagenes: [corrientesVV, corrientesVVDos],
+          imagenes: [
+            corrientesVV,
+            corrientesVVDos,
+            corrientesVVTres,
+            corrientesVVCuatro,
+            corrientesVVCinco,
+            corrientesVVSeis,
+          ],
           lugar: "Yapeyú",
         },
         {
