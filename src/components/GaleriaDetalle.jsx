@@ -35,6 +35,9 @@ import vvRuta40Uno from "../assets/img/galeria/ruta40/vvRuta40Uno.jpg";
 import vvRuta40Dos from "../assets/img/galeria/ruta40/vvRuta40Dos.jpg";
 import vvRuta40Tres from "../assets/img/galeria/ruta40/vvRuta40Tres.jpg";
 import vvRuta40Cuatro from "../assets/img/galeria/ruta40/vvRuta40Cuatro.jpg";
+import vvVaticanoUno from "../assets/img/galeria/vaticano/vvVaticanoUno.jpg";
+import vvVaticanoDos from "../assets/img/galeria/vaticano/vvVaticanoDos.jpg";
+import vvVaticanoIndex from "../assets/img/galeria/vaticano/vvVaticanoIndex.jpg";
 import Footer from "./Footer";
 
 const GaleriaDetalle = () => {
@@ -119,6 +122,15 @@ const GaleriaDetalle = () => {
       descripcionCorta:
         "Durante su visita en Catamarca, Victoria Villarruel se detuvo en el kilómetro 4040 de la Ruta Nacional 40, en un gesto de reconocimiento a esta vía emblemática que atraviesa la Argentina de sur a norte.",
       imagenes: [vvRuta40Uno, vvRuta40Dos, vvRuta40Tres, vvRuta40Cuatro],
+    },
+
+    vaticano: {
+      titulo: "Vaticano",
+      descripcion:
+        "En el Vaticano, la vicepresidente de la Nación, Victoria Villarruel, fue recibida por Su Santidad el Papa Francisco en un encuentro de carácter institucional. Durante la audiencia, dialogaron sobre la realidad social de la Argentina, la importancia del diálogo, la paz y el compromiso con los valores humanos y espirituales. La visita se dio en el marco de una agenda internacional y representó un momento significativo de intercambio y reflexión.",
+      descripcionCorta:
+        "En el Vaticano, la vicepresidente Victoria Villarruel mantuvo un encuentro institucional con el Papa Francisco, donde dialogaron sobre la realidad argentina y valores fundamentales.",
+      imagenes: [vvVaticanoUno, vvVaticanoDos, vvVaticanoIndex],
     },
   };
 
