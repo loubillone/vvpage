@@ -8,6 +8,7 @@ import asuncionIndex from "../assets/img/galeria/asuncion/asuncionIndex.png";
 import vv2DeAbrilIndex from "../assets/img/galeria/2DeAbril/2DeAbrilIndex.jpg";
 import vv25DeMayoIndex from "../assets/img/galeria/25DeMayo/vv25DeMayoIndex.jpg";
 import ruta40Index from "../assets/img/galeria/ruta40/ruta40Index.jpg";
+import vvVaticanoIndex from "../assets/img/galeria/vaticano/vvVaticanoIndex.jpg";
 import Footer from "./Footer";
 
 const GaleriaVisor = () => {
@@ -43,6 +44,11 @@ const GaleriaVisor = () => {
       imagen: ruta40Index,
       titulo: "Ruta 40",
       ruta: "/galeria/ruta40",
+    },
+    {
+      imagen: vvVaticanoIndex,
+      titulo: "VATICANO",
+      ruta: "/galeria/vaticano",
     },
   ];
 
