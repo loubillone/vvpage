@@ -108,6 +108,8 @@ import tucuVVCuatro from "../assets/img/mapaArg/tucuman/tucumanVV4.jpg";
 import tucuVVCinco from "../assets/img/mapaArg/tucuman/tucumanVV5.jpg";
 import formosaVV from "../assets/img/mapaArg/formosa/formosaVV.jpg";
 import formosaVVDos from "../assets/img/mapaArg/formosa/formosaVV2.jpg";
+import formosaVVTres from "../assets/img/mapaArg/formosa/formosaVV3.jpg";
+import formosaVVCuatro from "../assets/img/mapaArg/formosa/formosaVV4.jpg";
 import saladasVV from "../assets/img/mapaArg/corrientes/saladasVV.jpg";
 import saladasVVUno from "../assets/img/mapaArg/corrientes/saladasVV1.jpg";
 import saladasVVDos from "../assets/img/mapaArg/corrientes/saladasVV2.jpg";
@@ -1043,7 +1045,7 @@ const ProvinciaDetalle = () => {
               reconocimiento histórico hacia los héroes locales y nacionales.
             </p>
           ),
-          imagenes: [formosaVV, formosaVVDos],
+          imagenes: [formosaVV, formosaVVDos, formosaVVTres, formosaVVCuatro],
           lugar: "Ciudad de Formosa",
         },
       ],
