@@ -10,6 +10,13 @@ import azulVV from "../assets/img/mapaArg/buenos-aires/azulVV.jpg";
 import azulVVDos from "../assets/img/mapaArg/buenos-aires/azulVV2.jpg";
 import azulVVTres from "../assets/img/mapaArg/buenos-aires/azulVV3.jpg";
 import azulVVCuatro from "../assets/img/mapaArg/buenos-aires/azulVV4.jpg";
+import sanpedroVV from "../assets/img/mapaArg/buenos-aires/sanpedroVV.jpg";
+import sanpedroVVUno from "../assets/img/mapaArg/buenos-aires/sanpedroVV1.jpg";
+import sanpedroVVDos from "../assets/img/mapaArg/buenos-aires/sanpedroVV2.jpg";
+import sanpedroVVTres from "../assets/img/mapaArg/buenos-aires/sanpedroVV3.jpg";
+import sanpedroVVCuatro from "../assets/img/mapaArg/buenos-aires/sanpedroVV4.jpg";
+import sanpedroVVCinco from "../assets/img/mapaArg/buenos-aires/sanpedroVV5.jpg";
+import sanpedroVVSeis from "../assets/img/mapaArg/buenos-aires/sanpedroVV6.jpg";
 import cordobaVV from "../assets/img/mapaArg/cordoba/corVV.jpg";
 import cordobaVVDos from "../assets/img/mapaArg/cordoba/corVV2.jpg";
 import cordobaVVTres from "../assets/img/mapaArg/cordoba/corVV3.jpg";
@@ -76,7 +83,18 @@ import entreriosVVSeis from "../assets/img/mapaArg/entre-rios/entreriosVV6.jpg";
 import santiagoVV from "../assets/img/mapaArg/santiago/santiagoVV.jpg";
 import santiagoVVDos from "../assets/img/mapaArg/santiago/santiagoVV2.jpeg";
 import chubutVV from "../assets/img/mapaArg/chubut/chubutVV.jpg";
+import chubutVVUno from "../assets/img/mapaArg/chubut/chubutVV1.jpg";
 import chubutVVDos from "../assets/img/mapaArg/chubut/chubutVV2.jpg";
+import chubutVVTres from "../assets/img/mapaArg/chubut/chubutVV3.jpg";
+import chubutVVCuatro from "../assets/img/mapaArg/chubut/chubutVV4.jpg";
+import chubutVVCinco from "../assets/img/mapaArg/chubut/chubutVV5.jpg";
+import chubutVVSeis from "../assets/img/mapaArg/chubut/chubutVV6.jpg";
+import chubutVVOcho from "../assets/img/mapaArg/chubut/chubutVV8.jpg";
+import chubutVVNueve from "../assets/img/mapaArg/chubut/chubutVV9.jpg";
+import chubutVVDiez from "../assets/img/mapaArg/chubut/chubutVV10.jpg";
+import chubutVVOnce from "../assets/img/mapaArg/chubut/chubutVV11.jpg";
+import chubutVVDoce from "../assets/img/mapaArg/chubut/chubutVV12.jpg";
+import chubutVVTrece from "../assets/img/mapaArg/chubut/chubutVV13.jpg";
 import tierraVV from "../assets/img/mapaArg/tierra-del-fuego/tierraVV.jpg";
 import tierraVVDos from "../assets/img/mapaArg/tierra-del-fuego/tierraVV2.jpg";
 import tierraVVTres from "../assets/img/mapaArg/tierra-del-fuego/tierraVV3.jpg";
@@ -91,9 +109,29 @@ import tucuVVCinco from "../assets/img/mapaArg/tucuman/tucumanVV5.jpg";
 import formosaVV from "../assets/img/mapaArg/formosa/formosaVV.jpg";
 import formosaVVDos from "../assets/img/mapaArg/formosa/formosaVV2.jpg";
 import saladasVV from "../assets/img/mapaArg/corrientes/saladasVV.jpg";
+import saladasVVUno from "../assets/img/mapaArg/corrientes/saladasVV1.jpg";
 import saladasVVDos from "../assets/img/mapaArg/corrientes/saladasVV2.jpg";
+import saladasVVTres from "../assets/img/mapaArg/corrientes/saladasVV3.jpg";
+import saladasVVCuatro from "../assets/img/mapaArg/corrientes/saladasVV4.jpg";
+import saladasVVCinco from "../assets/img/mapaArg/corrientes/saladasVV5.jpg";
+import saladasVVSeis from "../assets/img/mapaArg/corrientes/saladasVV6.jpg";
+import saladasVVSiete from "../assets/img/mapaArg/corrientes/saladasVV7.jpg";
+import saladasVVOcho from "../assets/img/mapaArg/corrientes/saladasVV8.jpg";
+import saladasVVNueve from "../assets/img/mapaArg/corrientes/saladasVV9.jpg";
+import saladasVVDiez from "../assets/img/mapaArg/corrientes/saladasVV10.jpg";
 import elrodeoVV from "../assets/img/mapaArg/catamarca/elrodeoVV.jpg";
+import elrodeoVVUno from "../assets/img/mapaArg/catamarca/elrodeoVV1.jpg";
 import elrodeoVVDos from "../assets/img/mapaArg/catamarca/elrodeoVV2.jpg";
+import elrodeoVVTres from "../assets/img/mapaArg/catamarca/elrodeoVV3.jpg";
+import elrodeoVVCuatro from "../assets/img/mapaArg/catamarca/elrodeoVV4.jpg";
+import elrodeoVVCinco from "../assets/img/mapaArg/catamarca/elrodeoVV5.jpg";
+import elrodeoVVSeis from "../assets/img/mapaArg/catamarca/elrodeoVV6.jpg";
+import elrodeoVVSiete from "../assets/img/mapaArg/catamarca/elrodeoVV7.jpg";
+import elrodeoVVOcho from "../assets/img/mapaArg/catamarca/elrodeoVV8.jpg";
+import elrodeoVVNueve from "../assets/img/mapaArg/catamarca/elrodeoVV9.jpg";
+import elrodeoVVDiez from "../assets/img/mapaArg/catamarca/elrodeoVV10.jpg";
+import elrodeoVVOnce from "../assets/img/mapaArg/catamarca/elrodeoVV11.jpg";
+import elrodeoVVDoce from "../assets/img/mapaArg/catamarca/elrodeoVV12.jpg";
 import banderaVV from "../assets/img/mapaArg/santa-fe/banderaVV.jpg";
 import banderaVVDos from "../assets/img/mapaArg/santa-fe/banderaVV2.jpg";
 import banderaVVTres from "../assets/img/mapaArg/santa-fe/banderaVV3.jpg";
@@ -201,6 +239,47 @@ const ProvinciaDetalle = () => {
             mardelVVCinco,
           ],
           lugar: "Mar Del Plata",
+        },
+
+        {
+          fecha: "Septiembre de 2025",
+          descripcion: (
+            <p>
+              Por decisión del Papa Francisco en Septiembre de 2025,{" "}
+              <span className="vv-estilo-detalle">
+                el templo parroquial de Nuestra Señora del Socorro fue
+                proclamado Basílica Menor,
+              </span>{" "}
+              en reconocimiento a su valor histórico, arquitectónico y
+              espiritual. <br />
+              <br />
+              La vicepresidente de la Nación, Victoria Villarruel, acompañó
+              junto a Claudia Rucci{" "}
+              <span className="vv-estilo-detalle">
+                esta celebración tan importante e histórica para la ciudad
+                bonaerense de San Pedro,
+              </span>{" "}
+              junto al Nuncio Apostólico S.E. Arzobispo Mirosław Adamczyk y
+              otras autoridades. <br />
+              <br />
+              Victoria expresó su emoción por formar parte de este momento
+              destacando la importancia de la fe y la devoción de los
+              argentinos:
+              <blockquote className="cita">
+                "Nuestra Señora del Perpetuo Socorro ruega por la Argentina."
+              </blockquote>
+            </p>
+          ),
+          imagenes: [
+            sanpedroVV,
+            sanpedroVVUno,
+            sanpedroVVDos,
+            sanpedroVVTres,
+            sanpedroVVCuatro,
+            sanpedroVVCinco,
+            sanpedroVVSeis,
+          ],
+          lugar: "San Pedro",
         },
       ],
     },
@@ -522,8 +601,22 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [chubutVV, chubutVVDos],
-          lugar: "Río Mayo",
+          imagenes: [
+            chubutVV,
+            chubutVVUno,
+            chubutVVDos,
+            chubutVVTres,
+            chubutVVCuatro,
+            chubutVVCinco,
+            chubutVVSeis,
+            chubutVVOcho,
+            chubutVVNueve,
+            chubutVVDiez,
+            chubutVVOnce,
+            chubutVVDoce,
+            chubutVVTrece,
+          ],
+          lugar: "Río Mayo - Comodoro Rivadavia - Rada Tilly",
         },
       ],
     },
@@ -726,8 +819,21 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [elrodeoVV, elrodeoVVDos],
-          lugar: "Belén – El Rodeo",
+          imagenes: [
+            elrodeoVV,
+            elrodeoVVUno,
+            elrodeoVVDos,
+            elrodeoVVTres,
+            elrodeoVVCuatro,
+            elrodeoVVCinco,
+            elrodeoVVSeis,
+            elrodeoVVOcho,
+            elrodeoVVNueve,
+            elrodeoVVDiez,
+            elrodeoVVOnce,
+            elrodeoVVDoce,
+          ],
+          lugar: "San Fernando del Valle de Catamarca - Belén – El Rodeo",
         },
       ],
     },
@@ -1463,7 +1569,19 @@ const ProvinciaDetalle = () => {
               </span>
             </p>
           ),
-          imagenes: [saladasVV, saladasVVDos],
+          imagenes: [
+            saladasVV,
+            saladasVVUno,
+            saladasVVDos,
+            saladasVVTres,
+            saladasVVCuatro,
+            saladasVVCinco,
+            saladasVVSeis,
+            saladasVVSiete,
+            saladasVVOcho,
+            saladasVVNueve,
+            saladasVVDiez,
+          ],
           lugar: "Saladas",
         },
       ],
