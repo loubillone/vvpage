@@ -10,6 +10,25 @@ import azulVV from "../assets/img/mapaArg/buenos-aires/azulVV.jpg";
 import azulVVDos from "../assets/img/mapaArg/buenos-aires/azulVV2.jpg";
 import azulVVTres from "../assets/img/mapaArg/buenos-aires/azulVV3.jpg";
 import azulVVCuatro from "../assets/img/mapaArg/buenos-aires/azulVV4.jpg";
+import lujanVV from "../assets/img/mapaArg/buenos-aires/lujanVV.jpg";
+import lujanVVUno from "../assets/img/mapaArg/buenos-aires/lujanVV1.jpg";
+import lujanVVDos from "../assets/img/mapaArg/buenos-aires/lujanVV2.jpg";
+import lujanVVTres from "../assets/img/mapaArg/buenos-aires/lujanVV3.jpg";
+import lujanVVCuatro from "../assets/img/mapaArg/buenos-aires/lujanVV4.jpg";
+import chivilcoyVV from "../assets/img/mapaArg/buenos-aires/chivilcoyVV.jpg";
+import chivilcoyVVUno from "../assets/img/mapaArg/buenos-aires/chivilcoyVV1.jpg";
+import chivilcoyVVDos from "../assets/img/mapaArg/buenos-aires/chivilcoyVV2.jpg";
+import chivilcoyVVTres from "../assets/img/mapaArg/buenos-aires/chivilcoyVV3.jpg";
+import chivilcoyVVCuatro from "../assets/img/mapaArg/buenos-aires/chivilcoyVV4.jpg";
+import chivilcoyVVCinco from "../assets/img/mapaArg/buenos-aires/chivilcoyVV5.jpg";
+import chivilcoyVVSeis from "../assets/img/mapaArg/buenos-aires/chivilcoyVV6.jpg";
+import chivilcoyVVSiete from "../assets/img/mapaArg/buenos-aires/chivilcoyVV7.jpg";
+import saladilloVV from "../assets/img/mapaArg/buenos-aires/saladilloVV.jpg";
+import saladilloVVUno from "../assets/img/mapaArg/buenos-aires/saladilloVV1.jpg";
+import saladilloVVDos from "../assets/img/mapaArg/buenos-aires/saladilloVV2.jpg";
+import saladilloVVTres from "../assets/img/mapaArg/buenos-aires/saladilloVV3.jpg";
+import saladilloVVCuatro from "../assets/img/mapaArg/buenos-aires/saladilloVV4.jpg";
+import saladilloVVCinco from "../assets/img/mapaArg/buenos-aires/saladilloVV5.jpg";
 import sanpedroVV from "../assets/img/mapaArg/buenos-aires/sanpedroVV.jpg";
 import sanpedroVVUno from "../assets/img/mapaArg/buenos-aires/sanpedroVV1.jpg";
 import sanpedroVVDos from "../assets/img/mapaArg/buenos-aires/sanpedroVV2.jpg";
@@ -243,6 +262,144 @@ const ProvinciaDetalle = () => {
           lugar: "Mar Del Plata",
         },
 
+        {
+          fecha: "Mayo de 2025",
+          descripcion: (
+            <p>
+              En mayo de 2025, la vicepresidente Victoria Villarruel visitó la{" "}
+              <span className="vv-estilo-detalle">
+                Basílica Nuestra Señora de Luján
+              </span>{" "}
+              donde participó de un momento de recogimiento y oración ante la
+              imagen de la Virgen, patrona de la Argentina. <br />
+              <br />
+              Durante su visita,{" "}
+              <span className="vv-estilo-detalle">
+                dejó un mensaje en el libro de visitas del santuario,
+              </span>{" "}
+              en el que encomendó al pueblo argentino a la Virgen de Luján,
+              pidiendo paz, pan y trabajo, y solicitando que su manto
+              misericordioso se pose sobre todos los hogares del país. <br />
+              <br />
+              El mensaje concluyó con una invocación de fe y esperanza:{" "}
+              <span className="vv-estilo-detalle">
+                “Virgen de Luján, ruega por nosotros”,
+              </span>{" "}
+              dejando constancia de una visita marcada por la espiritualidad, la
+              tradición y el sentimiento de unidad nacional.
+            </p>
+          ),
+          imagenes: [
+            lujanVV,
+            lujanVVUno,
+            lujanVVDos,
+            lujanVVTres,
+            lujanVVCuatro,
+          ],
+          lugar: "Luján",
+        },
+
+        {
+          fecha: "Mayo de 2025",
+          descripcion: (
+            <p>
+              <span className="vv-estilo-detalle">
+                La vicepresidente Victoria Villarruel visitó las localidades
+                bonaerenses de Chivilcoy y Suipacha
+              </span>{" "}
+              en el marco de una recorrida por la provincia de Buenos Aires,
+              enfocada en el contacto con autoridades locales, el sector
+              productivo y empresas familiares. <br />
+              <br />
+              En Chivilcoy, fue recibida por el intendente{" "}
+              <span className="vv-estilo-detalle">
+                Guillermo Britos, a quien conoció durante la campaña electoral
+                de 2023.
+              </span>{" "}
+              Durante la jornada, estuvo acompañada por Claudia Rucci, quien
+              participó de la recorrida por distintos puntos de la región. En la
+              ciudad, Villarruel recibió presentes típicos y visitó la empresa{" "}
+              <span className="vv-estilo-detalle">
+                Ostagro, ubicada en Moquehuá,{" "}
+              </span>{" "}
+              dedicada a la comercialización de maquinaria agrícola, así como la
+              empresa quesera{" "}
+              <span className="vv-estilo-detalle">El Gauchito,</span> donde fue
+              recibida por uno de sus dueños, Claudio Andreoli. <br />
+              <br />{" "}
+              <span className="vv-estilo-detalle">
+                La visita continuó en Suipacha, donde recorrió Lácteos Silvia,
+              </span>{" "}
+              una empresa familiar que emplea a 130 personas y se dedica a la
+              producción de leche larga vida y una amplia variedad de quesos.
+              Durante el encuentro, la vicepresidente destacó la importancia de
+              las pymes, el trabajo argentino y el desarrollo de las economías
+              regionales como pilares del crecimiento del país.
+            </p>
+          ),
+          imagenes: [
+            chivilcoyVV,
+            chivilcoyVVUno,
+            chivilcoyVVDos,
+            chivilcoyVVTres,
+            chivilcoyVVCuatro,
+            chivilcoyVVCinco,
+            chivilcoyVVSeis,
+            chivilcoyVVSiete,
+          ],
+          lugar: "Chivilcoy - Suipacha",
+        },
+
+        {
+          fecha: "Mayo de 2025",
+          descripcion: (
+            <p>
+              La vicepresidente Victoria Villarruel realizó una visita a la
+              ciudad de <span className="vv-estilo-detalle">Saladillo</span>
+              , en la provincia de Buenos Aires, donde desarrolló una agenda
+              vinculada a la educación rural, la formación técnica y la
+              actividad productiva. <br />
+              <br />
+              Durante su recorrida, visitó el{" "}
+              <span className="vv-estilo-detalle">
+                Centro de Formación Rural “Las Margaritas”,
+              </span>{" "}
+              una Escuela Secundaria Técnica que cuenta con 165 alumnas, y fue
+              recibida por sus autoridades y representantes de la Fundación
+              Marzano. En el lugar, recorrió el entorno formativo y las
+              instalaciones utilizadas por sus 196 estudiantes, interiorizándose
+              sobre el sistema pedagógico de alternancia, un modelo educativo
+              originado en Francia hace más de 90 años y presente en la
+              Argentina desde 1969, siendo los Centros de Formación Rural de la
+              Fundación Marzano pioneros en su implementación. <br />
+              <br />
+              Asimismo, Villarruel visitó el{" "}
+              <span className="vv-estilo-detalle">
+                Frigorífico “El Regional”,
+              </span>{" "}
+              donde fue recibida por su propietario, Gustavo Moscoloni, y su
+              equipo de trabajo. Allí conoció el funcionamiento de la planta,
+              que actualmente destina el 80 % de su capacidad productiva a la
+              empresa Cabaña Argentina, con marca propia y comercialización bajo
+              las marcas FRS y Le Gurie, además de contar con habilitación para
+              exportar a diversos países y locales comerciales propios para la
+              venta al público. <br />
+              <br />A lo largo de la jornada, la vicepresidente destacó el valor
+              de la educación, el trabajo y la producción como pilares
+              fundamentales para el desarrollo de las comunidades del interior y
+              el fortalecimiento de las economías regionales.
+            </p>
+          ),
+          imagenes: [
+            saladilloVV,
+            saladilloVVUno,
+            saladilloVVDos,
+            saladilloVVTres,
+            saladilloVVCuatro,
+            saladilloVVCinco,
+          ],
+          lugar: "Saladillo",
+        },
         {
           fecha: "Septiembre de 2025",
           descripcion: (
