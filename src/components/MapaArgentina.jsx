@@ -233,8 +233,8 @@ const mapeoProvincias = {
   Tucuman: "Tucumán",
 
   // Opcional: Islas Malvinas
-  // "Islas Malvinas": "Islas Malvinas",
-  // Malvinas: "Islas Malvinas",
+  "Islas Malvinas": "Islas Malvinas",
+  Malvinas: "Islas Malvinas",
 };
 
 const MapaArgentina = () => {
@@ -265,6 +265,19 @@ const MapaArgentina = () => {
           y: rect.top - containerRect.top - 30,
         });
       }
+    }
+  };
+
+  const handleMalvinasHover = (event) => {
+    setHoverProvincia("Tierra del Fuego");
+    const rect = event.currentTarget.getBoundingClientRect();
+    const container = svgContainerRef.current;
+    if (container) {
+      const containerRect = container.getBoundingClientRect();
+      setTooltipPosition({
+        x: rect.left + rect.width / 2 - containerRect.left,
+        y: rect.top - containerRect.top - 30,
+      });
     }
   };
 
@@ -323,6 +336,17 @@ const MapaArgentina = () => {
 
         provincias.forEach((element) => {
           element.classList.add("provincia");
+
+          // Detectar si es Islas Malvinas y aplicar color celeste directamente
+          const elementId = element.id || element.getAttribute("id");
+          const isMalvinas = elementId === "islas-malvinas";
+          if (isMalvinas) {
+            element.style.fill = "#87ceeb"; // Color celeste directo, sin efectos de JavaScript
+            element.style.cursor = "pointer";
+            // Agregar handler de hover para mostrar "Tierra del Fuego"
+            element.addEventListener("mouseenter", handleMalvinasHover);
+            element.addEventListener("mouseleave", handleProvinciaLeave);
+          }
 
           const provinciaNombre = getProvinciaNombre(element);
 
