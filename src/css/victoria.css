@@ -97,48 +97,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.link-vickyGala {
-  font-family: "montserrat-medium";
-  font-size: 1.3rem;
-  color: #0037a0;
-  padding-top: 7rem;
-}
-
-.link-vickyJavier {
-  font-family: "montserrat-medium";
-  font-size: 1.3rem;
-  color: #0037a0;
-  padding-top: 4rem;
-}
-
-.link-vickyAsuncion {
-  font-family: "montserrat-medium";
-  font-size: 1.3rem;
-  color: #0037a0;
-  padding-top: 1.5rem;
-}
-
-.link-vickyEeuu {
-  font-family: "montserrat-medium";
-  font-size: 1.3rem;
-  color: #0037a0;
-  padding-top: 9rem;
-}
-
-.link-vickyEduardo {
-  font-family: "montserrat-medium";
-  font-size: 1.3rem;
-  color: #0037a0;
-  padding-top: 3rem;
-}
-
-.link-vickyLibros {
-  font-family: "montserrat-medium";
-  font-size: 1.3rem;
-  color: #0037a0;
-  padding-top: 20rem;
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .container-fotos-victoria {
     margin-top: 5rem;
@@ -200,36 +158,6 @@
     transition: opacity 0.8s ease, transform 0.8s ease;
     transform: translateX(-50%);
   }
-
-  .link-vickyGala {
-    font-size: 1rem;
-    padding-top: 1rem;
-  }
-
-  .link-vickyJavier {
-    font-size: 1rem;
-    padding-top: 0.6rem;
-  }
-
-  .link-vickyAsuncion {
-    font-size: 1rem;
-    padding-top: 0.2rem;
-  }
-
-  .link-vickyEeuu {
-    font-size: 1rem;
-    padding-top: 2.5rem;
-  }
-
-  .link-vickyEduardo {
-    font-size: 1rem;
-    padding-top: 0.5rem;
-  }
-
-  .link-vickyLibros {
-    font-size: 1rem;
-    padding-top: 4rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -271,35 +199,5 @@
     pointer-events: none;
     transition: opacity 0.8s ease, transform 0.8s ease;
     transform: translateX(-50%);
-  }
-
-  .link-vickyGala {
-    font-size: 1rem;
-    padding-top: 1rem;
-  }
-
-  .link-vickyJavier {
-    font-size: 1rem;
-    padding-top: 0.6rem;
-  }
-
-  .link-vickyAsuncion {
-    font-size: 1rem;
-    padding-top: 0.2rem;
-  }
-
-  .link-vickyEeuu {
-    font-size: 1rem;
-    padding-top: 2.5rem;
-  }
-
-  .link-vickyEduardo {
-    font-size: 1rem;
-    padding-top: 0.5rem;
-  }
-
-  .link-vickyLibros {
-    font-size: 1rem;
-    padding-top: 4rem;
   }
 }

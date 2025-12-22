@@ -4,7 +4,6 @@ import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import contactoImg from "../assets/img/contacto/contactoImg.jpg";
 import contactoTitulo from "../assets/img/contacto/contactoTitulo.png";
-import iconoTelefono from "../assets/img/contacto/iconoTelefono.png";
 import iconoEmail from "../assets/img/contacto/iconoEmail.png";
 import "../css/contacto.css";
 import Footer from "../components/Footer";
@@ -57,13 +56,6 @@ const Contacto = () => {
           </div>
           <div className="col container-contacto">
             <div className="col">
-              {/* <div className="iconos-contacto">
-                <img src={iconoTelefono} alt="" />
-                <span className="titulos-contacto">Telefono</span>
-              </div>
-              <div className="info-contacto">
-                <span className="contacto-datos">(+54) 9 11 2345 6789</span>
-              </div> */}
               <div className="iconos-contacto">
                 <img src={iconoEmail} alt="" />
                 <span className="titulos-contacto">Email</span>
