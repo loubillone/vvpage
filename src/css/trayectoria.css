@@ -1,9 +1,9 @@
 .trayectoria-bg {
   background-image: url("../assets/img/trayectoria/escarapelaT.png");
-  background-position: top left; /* Ajusta la posición */
-  background-size: 100% auto; /* Ajusta el tamaño */
+  background-position: top left;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  z-index: -1; /* La envía al fondo */
+  z-index: -1;
 }
 
 .container-trayectoria {
@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 89vh; /* 🔹 Empuja el contenido para que empiece después de la escarapela */
+  padding-top: 89vh;
   padding-bottom: 12rem;
 }
 

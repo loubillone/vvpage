@@ -113,33 +113,6 @@
   text-align: justify;
 }
 
-/* .parrafo-descripcion {
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-.parrafo-descripcion:first-child {
-  font-size: 1.9rem;
-  font-weight: 500;
-  color: #2c3e50;
-  background-color: #f8f9fa;
-  border-left: 4px solid #0037a0;
-  padding: 1.5rem 2rem;
-  border-radius: 0 8px 8px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem;
-} */
-
-/* .parrafo-descripcion:last-child {
-  margin-bottom: 0;
-}
-
-.parrafo-descripcion p,
-.parrafo-descripcion div {
-  margin-bottom: 0;
-} */
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .titulo-provincia {
     font-size: 2.5rem;
