@@ -233,8 +233,8 @@ const mapeoProvincias = {
   Tucuman: "Tucumán",
 
   // Opcional: Islas Malvinas
-  "Islas Malvinas": "Islas Malvinas",
-  Malvinas: "Islas Malvinas",
+  // "Islas Malvinas": "Islas Malvinas",
+  // Malvinas: "Islas Malvinas",
 };
 
 const MapaArgentina = () => {
