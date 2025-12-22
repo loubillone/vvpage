@@ -12,7 +12,7 @@ body.galeria-detalle-page {
 
 /* Asegurar que el contenedor de galería ocupe toda la pantalla */
 .galeria-container {
-  position: fixed; /* Cambiar a fixed para ocupar toda la pantalla */
+  position: fixed;
   width: 100%;
   height: 100vh;
   min-height: 100vh;
@@ -21,22 +21,18 @@ body.galeria-detalle-page {
   justify-content: center;
   color: white;
   overflow: hidden;
-  /* Asegurar que ocupe toda la pantalla incluso con navbar absoluto */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1; /* Asegurar que esté por encima del footer */
+  z-index: 1;
 }
 
-/* Asegurar que el navbar esté por encima de la galería */
 .navbar-transparent {
   z-index: 1000 !important;
 }
 
 @media (min-width: 1064px) {
-  /* Estilos específicos para pantallas grandes */
-
   .galeria-container::before {
     content: "";
     position: absolute;
@@ -53,7 +49,7 @@ body.galeria-detalle-page {
     flex-direction: row;
     text-align: center;
     position: relative;
-    z-index: 2; /* Asegurar que esté por encima del overlay */
+    z-index: 2;
   }
 
   .carousel-galeria {
@@ -162,8 +158,6 @@ body.galeria-detalle-page {
 }
 
 @media (min-width: 768px) and (max-width: 1063px) {
-  /* Estilos específicos para pantallas medianas */
-
   .galeria-container::before {
     content: "";
     position: absolute;
@@ -174,6 +168,7 @@ body.galeria-detalle-page {
     background: rgba(0, 0, 0, 0.4);
     z-index: 0;
   }
+
   .galeria-img {
     width: 100%;
     height: 100%;
@@ -335,7 +330,7 @@ body.galeria-detalle-page {
   }
 
   .galeria-texto .descripcion {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     max-width: 600px;
     margin-bottom: 1.8rem;
     font-family: "raleway-regular";
@@ -437,7 +432,8 @@ body.galeria-detalle-page {
   .galeria-content {
     text-align: center;
     position: relative;
-    z-index: 2; /* Asegurar que esté por encima del overlay */
+    z-index: 2;
+    margin-bottom: 5rem;
   }
 
   .galeria-texto {
@@ -460,7 +456,7 @@ body.galeria-detalle-page {
   }
 
   .galeria-texto .descripcion {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     max-width: 600px;
     margin-bottom: 1.8rem;
     font-family: "raleway-regular";
