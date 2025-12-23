@@ -20,7 +20,7 @@ const Trayectoria = () => {
         <title>Trayectoria | Victoria Villarruel</title>
         <meta
           name="description"
-          content="Biografía de Victoria Villarruel: formación, trayectoria política y compromiso institucional."
+          content="Trayectoria de Victoria Villarruel, abogada y defensora de las victimas del terrorismo en Argentina, actual vicepresidente de la Nación."
         />
       </Helmet>
       <div className="container-fluid container-trayectoria">
