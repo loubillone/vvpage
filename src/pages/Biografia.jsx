@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import VictoriaBio from "../components/VictoriaBio";
 import { Helmet } from "react-helmet-async";
-
 const Biografia = () => {
   return (
     <>
