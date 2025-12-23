@@ -10,6 +10,10 @@ const Biografia = () => {
           name="description"
           content="Biografía de Victoria Villarruel: formación, trayectoria política y compromiso institucional."
         />
+        <link
+          rel="canonical"
+          href="https://www.todoporargentina.com.ar/biografia"
+        />
       </Helmet>
 
       <h1 className="visually-hidden">Biografía de Victoria Villarruel</h1>

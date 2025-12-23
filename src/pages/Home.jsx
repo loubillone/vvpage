@@ -16,6 +16,7 @@ const Home = () => {
           name="description"
           content="Sitio dedicado a Victoria Villarruel, vicepresidente de la Nación Argentina. Biografía, trayectoria, actividad legislativa y contacto."
         />
+        <link rel="canonical" href="https://www.todoporargentina.com.ar/" />
       </Helmet>
       <h1 className="visually-hidden">
         Victoria Villarruel – Vicepresidente de la Nación Argentina
