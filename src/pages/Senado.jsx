@@ -46,7 +46,7 @@ const Senado = () => {
           rel="canonical"
           href={
             currentSEO?.canonical ||
-            "https://www.todoporargentina.com.ar/senado"
+            `https://www.todoporargentina.com.ar/senado/${tema}`
           }
         />
       </Helmet>

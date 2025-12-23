@@ -10,6 +10,10 @@ const Galeria = () => {
           name="description"
           content="Galería de imágenes y eventos de Victoria Villarruel, vicepresidente de la Nación Argentina."
         />
+        <link
+          rel="canonical"
+          href="https://www.todoporargentina.com.ar/galeria"
+        />
       </Helmet>
       <h1 className="visually-hidden">
         Galería de imágenes de Victoria Villarruel

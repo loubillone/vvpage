@@ -22,6 +22,10 @@ const Trayectoria = () => {
           name="description"
           content="Trayectoria de Victoria Villarruel, abogada y defensora de las victimas del terrorismo en Argentina, actual vicepresidente de la Nación."
         />
+        <link
+          rel="canonical"
+          href="https://www.todoporargentina.com.ar/trayectoria"
+        />
       </Helmet>
       <h1 className="visually-hidden">Trayectoria de Victoria Villarruel</h1>
       <div className="container-fluid container-trayectoria">

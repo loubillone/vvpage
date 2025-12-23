@@ -27,6 +27,10 @@ const Celtyv = () => {
           name="description"
           content="CELTYV: Centro de Estudios Legales sobre el Terrorismo y sus Víctimas. Conoce su misión, objetivos y la labor de Victoria Villarruel en defensa de las víctimas del terrorismo en Argentina."
         />
+        <link
+          rel="canonical"
+          href="https://www.todoporargentina.com.ar/celtyv"
+        />
       </Helmet>
       <h1 className="visually-hidden">
         CELTYV – Centro de Estudios Legales sobre el Terrorismo y sus Víctimas
