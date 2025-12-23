@@ -7,9 +7,17 @@ import contactoTitulo from "../assets/img/contacto/contactoTitulo.png";
 import iconoEmail from "../assets/img/contacto/iconoEmail.png";
 import "../css/contacto.css";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 const Contacto = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contacto | Victoria Villarruel</title>
+        <meta
+          name="description"
+          content="Formulario de contacto para comunicarse con el equipo de Todo por Argentina"
+        />
+      </Helmet>
       <div className="container my-5">
         <div className="row">
           <div className="col">

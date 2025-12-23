@@ -16,10 +16,18 @@ import diarioSiete from "../assets/img/biografia/celtyv/diarioSiete.png";
 import diarioOcho from "../assets/img/biografia/celtyv/diarioOcho.png";
 import diarioNueve from "../assets/img/biografia/celtyv/diarioNueve.png";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet-async";
 
 const Celtyv = () => {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>CELTYV | Victoria Villarruel</title>
+        <meta
+          name="description"
+          content="Biografía de Victoria Villarruel: formación, trayectoria política y compromiso institucional."
+        />
+      </Helmet>
       <div className="container">
         <div className="row fila-titulo-celtyv">
           <div className="titulo-celtyv">
@@ -342,7 +350,7 @@ const Celtyv = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 

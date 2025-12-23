@@ -5,10 +5,19 @@ import FotosIndex from "../components/FotosIndex";
 import NuestroCompromiso from "../components/NuestroCompromiso";
 import MapaArgentina from "../components/MapaArgentina";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Victoria Villarruel | Todo Por Argentina</title>
+        <meta
+          name="description"
+          content="Sitio dedicado a Victoria Villarruel, vicepresidente de la Nación Argentina. Biografía, trayectoria, actividad legislativa y contacto."
+        />
+      </Helmet>
+
       <FlyerHome />
 
       <div className="container texto-principal-home">
