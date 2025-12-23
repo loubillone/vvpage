@@ -4,6 +4,7 @@ import timelineVV from "../assets/img/trayectoria/timelineVV.png";
 import firmaVV from "../assets/img/trayectoria/firmaVV.png";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
+import { SITE_URL } from "../config/site";
 
 const Trayectoria = () => {
   useEffect(() => {
@@ -22,10 +23,7 @@ const Trayectoria = () => {
           name="description"
           content="Trayectoria de Victoria Villarruel, abogada y defensora de las victimas del terrorismo en Argentina, actual vicepresidente de la Nación."
         />
-        <link
-          rel="canonical"
-          href="https://www.todoporargentina.com.ar/trayectoria"
-        />
+        <link rel="canonical" href={`${SITE_URL}/trayectoria`} />
       </Helmet>
       <h1 className="visually-hidden">Trayectoria de Victoria Villarruel</h1>
       <div className="container-fluid container-trayectoria">
