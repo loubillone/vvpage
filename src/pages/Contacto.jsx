@@ -12,7 +12,7 @@ const Contacto = () => {
   return (
     <div>
       <Helmet>
-        <title>Contacto | Victoria Villarruel</title>
+        <title>Contacto | Todo por Argentina</title>
         <meta
           name="description"
           content="Formulario de contacto para comunicarse con el equipo de Todo por Argentina"

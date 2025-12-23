@@ -25,7 +25,7 @@ const Celtyv = () => {
         <title>CELTYV | Victoria Villarruel</title>
         <meta
           name="description"
-          content="Biografía de Victoria Villarruel: formación, trayectoria política y compromiso institucional."
+          content="CELTYV: Centro de Estudios Legales sobre el Terrorismo y sus Víctimas. Conoce su misión, objetivos y la labor de Victoria Villarruel en defensa de las víctimas del terrorismo en Argentina."
         />
       </Helmet>
       <div className="container">
