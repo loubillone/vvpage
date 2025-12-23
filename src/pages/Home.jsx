@@ -6,7 +6,7 @@ import NuestroCompromiso from "../components/NuestroCompromiso";
 import MapaArgentina from "../components/MapaArgentina";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
-import { SITE_URL } from "../config/site";
+const SITE_URL = import.meta.env.VITE_SITE_URL;
 
 const Home = () => {
   return (
