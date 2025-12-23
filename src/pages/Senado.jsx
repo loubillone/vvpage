@@ -25,6 +25,12 @@ const Senado = () => {
 
   const currentSEO = seoData[tema];
 
+  const h1Map = {
+    malvinas: "Victoria Villarruel en el Senado – Causa Malvinas",
+    victimasDelTerrorismo:
+      "Victoria Villarruel en el Senado – Víctimas del Terrorismo",
+  };
+
   return (
     <>
       <Helmet>
@@ -44,6 +50,9 @@ const Senado = () => {
           }
         />
       </Helmet>
+      <h1 className="visually-hidden">
+        {h1Map[tema] || "Victoria Villarruel en el Senado de la Nación"}
+      </h1>
 
       <SenadoTemas tema={tema} />
       <Footer />

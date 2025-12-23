@@ -11,6 +11,9 @@ const Galeria = () => {
           content="Galería de imágenes y eventos de Victoria Villarruel, vicepresidente de la Nación Argentina."
         />
       </Helmet>
+      <h1 className="visually-hidden">
+        Galería de imágenes de Victoria Villarruel
+      </h1>
       <GaleriaVisor />
     </div>
   );

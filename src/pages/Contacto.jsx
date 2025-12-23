@@ -18,6 +18,7 @@ const Contacto = () => {
           content="Formulario de contacto para comunicarse con el equipo de Todo por Argentina"
         />
       </Helmet>
+      <h1 className="visually-hidden">Contacto – Todo por Argentina</h1>
       <div className="container my-5">
         <div className="row">
           <div className="col">

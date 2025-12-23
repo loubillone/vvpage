@@ -12,6 +12,8 @@ const Biografia = () => {
         />
       </Helmet>
 
+      <h1 className="visually-hidden">Biografía de Victoria Villarruel</h1>
+
       <VictoriaBio />
     </>
   );
