@@ -57,25 +57,22 @@ const Navegador = () => {
                 id="basic-nav-dropdown"
                 className="nav-items no-border-dropdown nav-dropdown"
               >
-                <NavDropdown.Item href="#action/2.1" className="nav-items-drop">
-                  <Nav.Link
-                    as={NavLink}
-                    to="/biografia"
-                    className="nav-items"
-                    onClick={handleNavClick}
-                  >
-                    Victoria
-                  </Nav.Link>
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/biografia"
+                  className="nav-items-drop"
+                  onClick={handleNavClick}
+                >
+                  Victoria
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/2.2" className="nav-items-drop">
-                  <Nav.Link
-                    as={NavLink}
-                    to="/celtyv"
-                    className="nav-items"
-                    onClick={handleNavClick}
-                  >
-                    Celtyv
-                  </Nav.Link>
+
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/celtyv"
+                  className="nav-items-drop"
+                  onClick={handleNavClick}
+                >
+                  Celtyv
                 </NavDropdown.Item>
               </NavDropdown>
 
@@ -84,28 +81,25 @@ const Navegador = () => {
                 id="basic-nav-dropdown"
                 className="nav-items no-border-dropdown nav-dropdown"
               >
-                <NavDropdown.Item href="#action/1.2" className="nav-items-drop">
-                  <Nav.Link
-                    as={NavLink}
-                    to="/senado/malvinas"
-                    className="nav-items"
-                    onClick={handleNavClick}
-                  >
-                    Malvinas
-                  </Nav.Link>
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/senado/malvinas"
+                  className="nav-items-drop"
+                  onClick={handleNavClick}
+                >
+                  Malvinas
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="#action/2.2" className="nav-items-drop">
-                  <Nav.Link
-                    as={NavLink}
-                    to="/senado/victimasDelTerrorismo"
-                    className="nav-items"
-                    onClick={handleNavClick}
-                  >
-                    Victimas del Terrorismo
-                  </Nav.Link>
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/senado/victimasDelTerrorismo"
+                  className="nav-items-drop"
+                  onClick={handleNavClick}
+                >
+                  Víctimas del Terrorismo
                 </NavDropdown.Item>
               </NavDropdown>
+
               <Nav.Link
                 as={NavLink}
                 to="/trayectoria"
