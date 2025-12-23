@@ -3,6 +3,7 @@ import "../css/trayectoria.css";
 import timelineVV from "../assets/img/trayectoria/timelineVV.png";
 import firmaVV from "../assets/img/trayectoria/firmaVV.png";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Trayectoria = () => {
   useEffect(() => {
@@ -15,7 +16,13 @@ const Trayectoria = () => {
 
   return (
     <div>
-      {" "}
+      <Helmet>
+        <title>Trayectoria | Victoria Villarruel</title>
+        <meta
+          name="description"
+          content="Biografía de Victoria Villarruel: formación, trayectoria política y compromiso institucional."
+        />
+      </Helmet>
       <div className="container-fluid container-trayectoria">
         <div className="row">
           <img
