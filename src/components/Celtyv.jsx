@@ -16,10 +16,23 @@ import diarioSiete from "../assets/img/biografia/celtyv/diarioSiete.png";
 import diarioOcho from "../assets/img/biografia/celtyv/diarioOcho.png";
 import diarioNueve from "../assets/img/biografia/celtyv/diarioNueve.png";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet-async";
+const SITE_URL = import.meta.env.VITE_SITE_URL;
 
 const Celtyv = () => {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>CELTYV | Victoria Villarruel</title>
+        <meta
+          name="description"
+          content="CELTYV: Centro de Estudios Legales sobre el Terrorismo y sus Víctimas. Conoce su misión, objetivos y la labor de Victoria Villarruel en defensa de las víctimas del terrorismo en Argentina."
+        />
+        <link rel="canonical" href={`${SITE_URL}/celtyv`} />
+      </Helmet>
+      <h1 className="visually-hidden">
+        CELTYV – Centro de Estudios Legales sobre el Terrorismo y sus Víctimas
+      </h1>
       <div className="container">
         <div className="row fila-titulo-celtyv">
           <div className="titulo-celtyv">
@@ -342,7 +355,7 @@ const Celtyv = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 
