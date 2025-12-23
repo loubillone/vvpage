@@ -17,6 +17,7 @@ import diarioOcho from "../assets/img/biografia/celtyv/diarioOcho.png";
 import diarioNueve from "../assets/img/biografia/celtyv/diarioNueve.png";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
+import { SITE_URL } from "../config/site";
 
 const Celtyv = () => {
   return (
@@ -27,10 +28,7 @@ const Celtyv = () => {
           name="description"
           content="CELTYV: Centro de Estudios Legales sobre el Terrorismo y sus Víctimas. Conoce su misión, objetivos y la labor de Victoria Villarruel en defensa de las víctimas del terrorismo en Argentina."
         />
-        <link
-          rel="canonical"
-          href="https://www.todoporargentina.com.ar/celtyv"
-        />
+        <link rel="canonical" href={`${SITE_URL}/celtyv`} />
       </Helmet>
       <h1 className="visually-hidden">
         CELTYV – Centro de Estudios Legales sobre el Terrorismo y sus Víctimas
