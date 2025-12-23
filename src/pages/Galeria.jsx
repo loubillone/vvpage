@@ -1,7 +1,7 @@
 import React from "react";
 import GaleriaVisor from "../components/GaleriaVisor";
 import { Helmet } from "react-helmet-async";
-import { SITE_URL } from "../config/site";
+const SITE_URL = import.meta.env.VITE_SITE_URL;
 const Galeria = () => {
   return (
     <div>

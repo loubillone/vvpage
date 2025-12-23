@@ -4,7 +4,6 @@ import timelineVV from "../assets/img/trayectoria/timelineVV.png";
 import firmaVV from "../assets/img/trayectoria/firmaVV.png";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
-import { SITE_URL } from "../config/site";
 
 const Trayectoria = () => {
   useEffect(() => {
@@ -14,6 +13,8 @@ const Trayectoria = () => {
       document.body.classList.remove("trayectoria-bg");
     };
   }, []);
+
+  const SITE_URL = import.meta.env.VITE_SITE_URL;
 
   return (
     <div>

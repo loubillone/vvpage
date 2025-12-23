@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vvpage.netlify.app/sitemap.xml
+Sitemap: https://www.todoporargentina.com.ar/sitemap.xml

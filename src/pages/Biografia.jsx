@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import VictoriaBio from "../components/VictoriaBio";
 import { Helmet } from "react-helmet-async";
-import { SITE_URL } from "../config/site";
+const SITE_URL = import.meta.env.VITE_SITE_URL;
 const Biografia = () => {
   return (
     <>

@@ -17,7 +17,7 @@ import diarioOcho from "../assets/img/biografia/celtyv/diarioOcho.png";
 import diarioNueve from "../assets/img/biografia/celtyv/diarioNueve.png";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
-import { SITE_URL } from "../config/site";
+const SITE_URL = import.meta.env.VITE_SITE_URL;
 
 const Celtyv = () => {
   return (
