@@ -1,12 +1,12 @@
 import React from "react";
 import "../css/malvinas.css";
-import malvinasTitle from "../assets/img/senado/malvinas/malvinasTitle.png";
-import vvMalvinas from "../assets/img/senado/malvinas/vvMalvinas.jpg";
-import vvMalvinasU from "../assets/img/senado/malvinas/vvMalvinasUshuaia.jpg";
-import vvMalvinasE from "../assets/img/senado/malvinas/vvMalvinasEpopeya.jpg";
-import victimasTitle from "../assets/img/senado/victimas/victimasdelterrorismo.png";
-import vvVictimasUno from "../assets/img/senado/victimas/vvterrorismoUno.jpg";
-import vvVictimasDos from "../assets/img/senado/victimas/vvterrorismoDos.jpg";
+import malvinasTitle from "../assets/img/senado/malvinas/malvinasTitle.webp";
+import vvMalvinas from "../assets/img/senado/malvinas/vvMalvinas.webp";
+import vvMalvinasU from "../assets/img/senado/malvinas/vvMalvinasUshuaia.webp";
+import vvMalvinasE from "../assets/img/senado/malvinas/vvMalvinasEpopeya.webp";
+import victimasTitle from "../assets/img/senado/victimas/victimasdelterrorismo.webp";
+import vvVictimasUno from "../assets/img/senado/victimas/vvterrorismoUno.webp";
+import vvVictimasDos from "../assets/img/senado/victimas/vvterrorismoDos.webp";
 const SenadoTemas = ({ tema }) => {
   const data =
     tema === "victimasDelTerrorismo"

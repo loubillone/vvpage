@@ -6,8 +6,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../css/navegador.css";
-import vvIndex from "../assets/img/index/vvIndex.png";
-import logoVVblanco from "../assets/img/index/logoVVblanco.png";
+import vvIndex from "../assets/img/index/vvIndex.webp";
+import logoVVblanco from "../assets/img/index/logoVVblanco.webp";
 
 const Navegador = () => {
   const location = useLocation();
