@@ -11,24 +11,10 @@ import GaleriaDetalle from "../components/GaleriaDetalle";
 import Senado from "../pages/Senado";
 import ProvinciaDetalle from "../pages/ProvinciaDetalle";
 import ScrollToTop from "../components/ScrollToTop";
-import { Helmet } from "react-helmet-async";
-const SITE_URL = import.meta.env.VITE_SITE_URL;
 
 const AppContent = () => {
   return (
     <>
-      <Helmet>
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Todo Por Argentina" />
-        <meta
-          property="og:description"
-          content="Biografía, trayectoria y actividad institucional de Victoria Villarruel."
-        />
-        <meta
-          property="og:image"
-          content={`${SITE_URL}/assets/img/index/flyer.webp`}
-        />
-      </Helmet>
       <ScrollToTop />
       <Navegador />
       <Routes>
