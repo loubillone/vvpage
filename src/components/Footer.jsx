@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/footer.css";
 import { NavLink } from "react-router-dom";
-import facebook from "../assets/img/footer/facebook.png";
-import instagram from "../assets/img/footer/instagram.png";
-import x from "../assets/img/footer/x.png";
-import youtube from "../assets/img/footer/youtube.png";
-import logoVV from "../assets/img/footer/logoVV.png";
+import facebook from "../assets/img/footer/facebook.webp";
+import instagram from "../assets/img/footer/instagram.webp";
+import x from "../assets/img/footer/x.webp";
+import youtube from "../assets/img/footer/youtube.webp";
+import logoVV from "../assets/img/footer/logoVV.webp";
 
 const Footer = () => {
   const handleNavClick = () => {
