@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../css/trayectoria.css";
-import timelineVV from "../assets/img/trayectoria/timelineVV.png";
-import firmaVV from "../assets/img/trayectoria/firmaVV.png";
+import timelineVV from "../assets/img/trayectoria/timelineVV.webp";
+import firmaVV from "../assets/img/trayectoria/firmaVV.webp";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 
