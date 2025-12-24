@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../css/victoria.css";
 import "../css/boxTextos.css";
-import eduardo from "../assets/img/biografia/victoria/eduardo.png";
-import vickyLibro from "../assets/img/biografia/victoria/vickyLibro.png";
-import vickyEscritorio from "../assets/img/biografia/victoria/vvEscritorio.jpg";
-import vickyCharla from "../assets/img/biografia/victoria/vvAct.jpg";
-import vickyLiceo from "../assets/img/biografia/victoria/vvMilitar.jpg";
-import vickySenado from "../assets/img/biografia/victoria/vvSenado.jpg";
+import eduardo from "../assets/img/biografia/victoria/eduardo.webp";
+import vickyLibro from "../assets/img/biografia/victoria/vickyLibro.webp";
+import vickyEscritorio from "../assets/img/biografia/victoria/vvEscritorio.webp";
+import vickyCharla from "../assets/img/biografia/victoria/vvAct.webp";
+import vickyLiceo from "../assets/img/biografia/victoria/vvMilitar.webp";
+import vickySenado from "../assets/img/biografia/victoria/vvSenado.webp";
 import Footer from "./Footer";
 
 const VictoriaBio = () => {

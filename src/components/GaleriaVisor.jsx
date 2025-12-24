@@ -2,13 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/galeriaVisor.css";
 import { Carousel, Container, Button } from "react-bootstrap";
-import guemesIndex from "../assets/img/galeria/guemes/guemesIndex.png";
-import galaIndex from "../assets/img/galeria/gala/galaIndex.png";
-import asuncionIndex from "../assets/img/galeria/asuncion/asuncionIndex.png";
-import vv2DeAbrilIndex from "../assets/img/galeria/2DeAbril/2DeAbrilIndex.jpg";
-import vv25DeMayoIndex from "../assets/img/galeria/25DeMayo/vv25DeMayoIndex.jpg";
-import ruta40Index from "../assets/img/galeria/ruta40/ruta40Index.jpg";
-import vvVaticanoIndex from "../assets/img/galeria/vaticano/vvVaticanoIndex.jpg";
+import guemesIndex from "../assets/img/galeria/guemes/guemesIndex.webp";
+import galaIndex from "../assets/img/galeria/gala/galaIndex.webp";
+import asuncionIndex from "../assets/img/galeria/asuncion/asuncionIndex.webp";
+import vv2DeAbrilIndex from "../assets/img/galeria/2DeAbril/2DeAbrilIndex.webp";
+import vv25DeMayoIndex from "../assets/img/galeria/25DeMayo/vv25DeMayoIndex.webp";
+import ruta40Index from "../assets/img/galeria/ruta40/ruta40Index.webp";
+import vvVaticanoIndex from "../assets/img/galeria/vaticano/vvVaticanoIndex.webp";
 import Footer from "./Footer";
 
 const GaleriaVisor = () => {
