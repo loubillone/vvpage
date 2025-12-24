@@ -1,11 +1,16 @@
 import React from "react";
-import flyer from "../assets/img/index/flyer.png";
+import flyer from "../assets/img/index/flyer.webp";
 import "../css/flyer.css";
 
 const FlyerHome = () => {
   return (
     <div>
-      <img src={flyer} alt="sol de mayo" className="solDeMayo" />
+      <img
+        src={flyer}
+        alt="sol de mayo"
+        className="solDeMayo"
+        fetchpriority="high"
+      />
     </div>
   );
 };

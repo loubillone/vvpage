@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/nuestroCompromiso.css";
-import defensa from "../assets/img/index/defensa.png";
-import justicia from "../assets/img/index/justicia.png";
-import lupa from "../assets/img/index/lupa.png";
-import ley from "../assets/img/index/ley.png";
-import partenon from "../assets/img/index/partenon.png";
-import pergamino from "../assets/img/index/pergamino.png";
+import defensa from "../assets/img/index/defensa.webp";
+import justicia from "../assets/img/index/justicia.webp";
+import lupa from "../assets/img/index/lupa.webp";
+import ley from "../assets/img/index/ley.webp";
+import partenon from "../assets/img/index/partenon.webp";
+import pergamino from "../assets/img/index/pergamino.webp";
 
 const NuestroCompromiso = () => {
   return (

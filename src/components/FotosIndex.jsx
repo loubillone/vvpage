@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import vvgala from "../assets/img/index/vv-gala-index.png";
+import vvgala from "../assets/img/index/vv-gala-index.webp";
 import "../css/boxTextos.css";
 
 const FotosIndex = () => {
