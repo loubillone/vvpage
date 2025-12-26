@@ -57,42 +57,55 @@ const Celtyv = () => {
             <h2 className="titulo-seccion-celtyv">¿Qué es CELTyV?</h2>
             <p className="parrafo-seccion-celtyv">
               El Centro de Estudios Legales sobre el Terrorismo y sus Víctimas
-              (CELTyV) es una Asociación Civil fundada en 2006. Esta
-              organización no gubernamental se dedica a la asistencia de las
-              víctimas del terrorismo en Argentina. CELTyV trabaja tanto a nivel
-              nacional como internacional, con el propósito de visibilizar a las
-              víctimas, luchar por el reconocimiento de sus derechos y
-              contribuir a la verdad histórica.
+              (CELTyV) es una Asociación Civil fundada en 2003.{" "}
+              <span className="vv-estilo-celtyv">
+                Esta organización no gubernamental se dedica a la asistencia de
+                las víctimas del terrorismo en Argentina.
+              </span>{" "}
+              CELTyV trabaja tanto a nivel nacional como internacional, con el
+              propósito de{" "}
+              <span className="vv-estilo-celtyv">
+                visibilizar a las víctimas, luchar por el reconocimiento de sus
+                derechos y contribuir a la verdad histórica.
+              </span>{" "}
             </p>
 
             <h4 className="subtitulo-seccion-celtyv">Objetivos y Trabajo</h4>
             <p className="parrafo-seccion-celtyv">
-              Las víctimas inocentes de la violencia armada ejercida por las
-              organizaciones guerrilleras durante la guerra revolucionaria en
-              Argentina no han recibido justicia, verdad, reparación ni paz. En
-              cambio, han sido sometidas a un deliberado olvido, un cómplice
-              silencio y un injustificable abandono. CELTyV busca cambiar esta
-              situación a través de su labor diaria, enfrentando la parcialidad
-              y desamparo en que los gobiernos han dejado a estas víctimas. El
+              <span className="vv-estilo-celtyv">
+                Las víctimas inocentes de la violencia armada ejercida por las
+                organizaciones guerrilleras durante la guerra revolucionaria en
+                Argentina no han recibido justicia, verdad, reparación ni paz.
+              </span>{" "}
+              En cambio, han sido sometidas a un deliberado olvido, un cómplice
+              silencio y un injustificable abandono.{" "}
+              <span className="vv-estilo-celtyv">
+                CELTyV busca cambiar esta situación
+              </span>{" "}
+              a través de su labor diaria, enfrentando la parcialidad y
+              desamparo en que los gobiernos han dejado a estas víctimas. El
               Estado argentino, al no respetar los tratados vigentes de derechos
               humanos y proteger la impunidad de los perpetradores, incurre en
-              responsabilidad internacional. Desde su creación, CELTyV ha
-              trabajado en la identificación y documentación de las víctimas, la
-              investigación y elaboración de artículos doctrinales sobre la
-              problemática del terrorismo y la difusión de la verdadera historia
-              de la agresión armada de las organizaciones terroristas contra la
-              población civil no combatiente.
+              responsabilidad internacional. Desde su creación,{" "}
+              <span className="vv-estilo-celtyv">
+                CELTyV ha trabajado en la identificación y documentación de las
+                víctimas,
+              </span>{" "}
+              la investigación y elaboración de artículos doctrinales sobre la
+              problemática del terrorismo y la{" "}
+              <span className="vv-estilo-celtyv">
+                difusión de la verdadera historia de la agresión armada de las
+                organizaciones terroristas contra la población civil no
+                combatiente.
+              </span>
             </p>
 
             <h4 className="subtitulo-seccion-celtyv">Autoridades de CELTyV</h4>
 
             <div className="parrafo-seccion-celtyv">
               <ul>
-                <li>Presidente: Victoria Villarruel – Abogada</li>
-                <li>
-                  Vicepresidente: Isaac Barrios – Padre de un niño asesinado por
-                  Montoneros
-                </li>
+                <li>Presidente: Vacante</li>
+                <li>Vicepresidente: Vacante</li>
                 <li>
                   Secretario: Sergio Renó – Hijo de un policía asesinado por
                   Montoneros
@@ -199,14 +212,23 @@ const Celtyv = () => {
           <div className="col">
             <h2 className="titulo-seccion-celtyv">Las Víctimas</h2>
             <p className="parrafo-seccion-celtyv">
-              CELTyV se centra en la situación de las víctimas de la violencia
-              armada ejercida por organizaciones guerrilleras como Montoneros y
-              ERP. Estas víctimas incluyen civiles y no combatientes que
-              sufrieron ataques, secuestros y asesinatos. La organización se
-              dedica a documentar sus historias, proporcionando asistencia legal
-              y emocional, y promoviendo el reconocimiento de sus derechos. La
-              labor de CELTyV busca asegurar que estas víctimas obtengan
-              justicia y se reconozca el sufrimiento que han soportado.
+              <span className="vv-estilo-celtyv">
+                {" "}
+                CELTyV se centra en la situación de las víctimas{" "}
+              </span>
+              de la violencia armada ejercida por organizaciones guerrilleras
+              como Montoneros y ERP. Estas víctimas incluyen civiles y no
+              combatientes que sufrieron ataques, secuestros y asesinatos. La
+              organización se dedica a{" "}
+              <span className="vv-estilo-celtyv">
+                documentar sus historias, proporcionando asistencia legal y
+                emocional,
+              </span>{" "}
+              y promoviendo el reconocimiento de sus derechos. La labor de{" "}
+              <span className="vv-estilo-celtyv">
+                CELTyV busca asegurar que estas víctimas obtengan justicia y se
+                reconozca el sufrimiento que han soportado.
+              </span>
             </p>
           </div>
         </div>
@@ -223,20 +245,32 @@ const Celtyv = () => {
               Victoria Villarruel y su Lucha
             </h2>
             <p className="parrafo-seccion-celtyv">
-              Victoria Villarruel, presidenta de CELTyV, es una abogada
-              comprometida con la defensa de los derechos de las víctimas del
-              terrorismo. Su trabajo incluye la publicación de libros y
-              artículos que buscan dar voz a estas víctimas y visibilizar su
-              sufrimiento. Villarruel ha sido una figura clave en la lucha por
-              la verdad histórica y el reconocimiento de los derechos de las
-              víctimas del terrorismo en Argentina.
+              <span className="vv-estilo-celtyv">
+                Victoria Villarruel, ex presidente de CELTyV,
+              </span>{" "}
+              es una abogada comprometida con la defensa de los derechos de las
+              víctimas del terrorismo.{" "}
+              <span className="vv-estilo-celtyv">
+                Su trabajo incluyó la publicación de libros y artículos que
+                buscan dar voz a estas víctimas
+              </span>{" "}
+              y visibilizar su sufrimiento.
+              <span className="vv-estilo-celtyv">
+                {" "}
+                Villarruel ha sido una figura clave en la lucha por la verdad
+                histórica
+              </span>{" "}
+              y el reconocimiento de los derechos de las víctimas del terrorismo
+              en Argentina.
             </p>
 
             <h4 className="subtitulo-seccion-publicaciones">
               Publicaciones Relevantes
             </h4>
 
-            <h6 className="titulo-libro-celtyv">“Los otros muertos”</h6>
+            <h6 className="titulo-libro-celtyv vv-estilo-celtyv">
+              “Los otros muertos” por Carlos Manfroni y Victoria Villarruel
+            </h6>
 
             <div className="parrafo-seccion-celtyv">
               <ul>
@@ -248,7 +282,7 @@ const Celtyv = () => {
               </ul>
             </div>
 
-            <h6 className="titulo-libro-celtyv">
+            <h6 className="titulo-libro-celtyv vv-estilo-celtyv">
               “Los llaman… jóvenes idealistas” por Victoria Villarruel
             </h6>
 
@@ -263,7 +297,7 @@ const Celtyv = () => {
               </ul>
             </div>
 
-            <h6 className="titulo-libro-celtyv">
+            <h6 className="titulo-libro-celtyv vv-estilo-celtyv">
               “El terrorismo como crimen de lesa humanidad”
             </h6>
 
@@ -278,7 +312,7 @@ const Celtyv = () => {
               </ul>
             </div>
 
-            <h6 className="titulo-libro-celtyv">
+            <h6 className="titulo-libro-celtyv vv-estilo-celtyv">
               “Amar al enemigo” por Javier Vigo Leguizamón
             </h6>
 
@@ -292,7 +326,7 @@ const Celtyv = () => {
               </ul>
             </div>
 
-            <h6 className="titulo-libro-celtyv">
+            <h6 className="titulo-libro-celtyv vv-estilo-celtyv">
               “Un canto a la patria” por Arturo Larrabure
             </h6>
 
@@ -319,26 +353,33 @@ const Celtyv = () => {
               ¿Por qué unirse a CELTyV?
             </h4>
             <p className="parrafo-seccion-celtyv">
-              Unirse a CELTyV significa apoyar el reconocimiento de los derechos
-              humanos para las víctimas del terrorismo. La asociación realiza
-              diversas actividades como conferencias, investigaciones
-              históricas, eventos y la publicación de libros y videos. Al
-              convertirse en socio, se contribuye a la lucha por la justicia y
-              la memoria histórica.
+              <span className="vv-estilo-celtyv">
+                Unirse a CELTyV significa apoyar el reconocimiento de los
+                derechos humanos
+              </span>{" "}
+              para las víctimas del terrorismo. La asociación realiza diversas
+              actividades como conferencias, investigaciones históricas, eventos
+              y la publicación de libros y videos.{" "}
+              <span className="vv-estilo-celtyv">
+                Al convertirse en socio, se contribuye a la lucha por la
+                justicia y la memoria histórica.
+              </span>
             </p>
 
-            <h5 className="categorias-celtyv">Categorías de Socios</h5>
+            {/* <h5 className="categorias-celtyv">Categorías de Socios</h5>
             <div className="parrafo-seccion-celtyv">
               <ul>
                 <li>Socio Adherente: Cuota mensual de $1000. .</li>
                 <li>Socio Activo: Cuota mensual de $1500.</li>
                 <li> Socio Protector: Cuota mensual de $2000</li>
               </ul>
-            </div>
+            </div> */}
 
             <p className="parrafo-seccion-celtyv">
-              Para más información sobre cómo asociarse, envíe un correo a
-              informaciones@victimasdeargentina.com o{" "}
+              <span className="vv-estilo-celtyv">
+                Para más información sobre cómo asociarse, envíe un correo a
+                informaciones@victimasdeargentina.com o
+              </span>{" "}
               <a
                 href="https://celtyv.org/asociate/"
                 target="_blank"
