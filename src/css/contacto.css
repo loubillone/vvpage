@@ -39,7 +39,7 @@
   color: #050505;
 }
 .iconos-contacto img {
-  width: 1.5rem;
+  width: 1.8rem;
   margin-right: 1.5rem;
 }
 
@@ -53,6 +53,12 @@
 .titulos-form {
   font-family: "monterrat-regular";
   color: #838383;
+  font-size: 1.5rem;
+}
+
+.texto-contacto-desc {
+  font-family: "monterrat-regular";
+  color: #838383;
   font-size: 1.2rem;
 }
 
@@ -64,10 +70,13 @@
 .contacto-datos {
   font-family: "monterrat-regular";
   color: #0e0e0e;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
-@media (max-width: 768px) and (min-width: 469px) {
+.btn.boton-contacto {
+  font-family: "monterrat-semiBold";
+  font-size: 1.3rem;
+  padding: 0.5rem 2rem;
 }
 
 @media (max-width: 468px) {
@@ -89,10 +98,15 @@
   }
 
   .titulos-contacto {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .contacto-datos {
+    font-size: 1.5rem;
+  }
+
+  .btn.boton-contacto {
     font-size: 1rem;
+    padding: 0.5rem 2rem;
   }
 }
