@@ -167,11 +167,17 @@ const VictoriaBio = () => {
             <h6 className="subtitulo-box">Vicepresidente de la Nación</h6>
             <p className="texto-parrafo-box">
               Victoria Eugenia Villarruel (Buenos Aires, 13 de abril de 1975) es
-              una abogada, escritora, activista y política argentina, actual
-              Vicepresidente de la Nación Argentina desde el 10 de diciembre de
-              2023. Es fundadora de la asociación civil autodenominada Centro de
-              Estudios Legales sobre el Terrorismo y sus Víctimas (CELTYV), la
-              cual presidió desde sus inicios.
+              una{" "}
+              <span className="vv-estilo">
+                abogada, escritora, activista y política argentina,
+              </span>{" "}
+              actual Vicepresidente de la Nación Argentina desde el 10 de
+              diciembre de 2023. Es{" "}
+              <span className="vv-estilo">
+                fundadora de la asociación civil autodenominada Centro de
+                Estudios Legales sobre el Terrorismo y sus Víctimas (CELTYV)
+              </span>
+              , la cual presidió desde sus inicios.
             </p>
           </div>
         </div>
@@ -187,16 +193,25 @@ const VictoriaBio = () => {
 
             <h6 className="subtitulo-box">Inicios</h6>
             <p className="texto-parrafo-box">
-              Villarruel fue parte de la Asociación de Familiares y Amigos de
-              los Presos Políticos de la Argentina (AFyAPPA). Lideró un programa
-              de radio llamado Proyecto Verdad y fue miembro de Jóvenes por la
-              Verdad. Centro de Estudios Legales sobre el Terrorismo y sus
-              Víctimas (CELTYV). En 2003, fundó CELTYV con el objetivo de
-              defender a las víctimas del terrorismo de izquierda en Argentina.
+              Villarruel fue parte de la{" "}
+              <span className="vv-estilo">
+                Asociación de Familiares y Amigos de los Presos Políticos de la
+                Argentina (AFyAPPA).
+              </span>{" "}
+              Lideró un programa de radio llamado Proyecto Verdad y fue miembro
+              de Jóvenes por la Verdad.{" "}
+              <span className="vv-estilo">En 2003, fundó CELTYV,</span>Centro de
+              Estudios Legales sobre el Terrorismo y sus Víctimas (CELTYV),{" "}
+              <span className="vv-estilo">
+                con el objetivo de defender a las víctimas del terrorismo de
+                izquierda en Argentina.
+              </span>{" "}
               Este centro ha sido objeto de polémicas, siendo entrevistada por
-              medios internacionales como el Wall Street Journal y ABC. En 2011,
-              disertó en el Oslo Freedom Forum cuestionando la "historia
-              oficial" Argentina.
+              medios internacionales como el Wall Street Journal y ABC. En 2011,{" "}
+              <span className="vv-estilo">
+                disertó en el Oslo Freedom Forum cuestionando la "historia
+                oficial" Argentina.
+              </span>
             </p>
           </div>
         </div>
@@ -211,20 +226,32 @@ const VictoriaBio = () => {
             <h2 className="titulo-box">Familia y</h2>
             <h2 className="titulo-box-dos">Formación Academica</h2>
             <p className="texto-parrafo-box">
-              Villarruel nació en Buenos Aires, hija del teniente coronel
-              retirado Eduardo Villarruel, un veterano de la guerra de Malvinas.
-              Su padre participó en el Operativo Independencia. Villarruel
-              completó sus estudios secundarios en el Instituto Social Militar
-              Dr. Dámaso Centeno. Se graduó como abogada en la UBA y obtuvo un
-              título de técnica de seguridad urbana y portuaria de la
-              Universidad Tecnológica Nacional. En 2008, realizó un curso de
-              coordinación interinstitucional y lucha contra el terrorismo en el
-              Centro de Estudios de Defensa Hemisférica William J. Perry.
+              Villarruel nació en Buenos Aires,{" "}
+              <span className="vv-estilo">
+                hija del teniente coronel retirado Eduardo Villarruel,
+              </span>{" "}
+              un veterano de la guerra de Malvinas. Su padre participó en el
+              Operativo Independencia. Villarruel completó sus estudios
+              secundarios en el{" "}
+              <span className="vv-estilo">
+                {" "}
+                Instituto Social Militar Dr. Dámaso Centeno.
+              </span>{" "}
+              Se graduó como abogada en la UBA y obtuvo un título de{" "}
+              <span className="vv-estilo">
+                técnica de seguridad urbana y portuaria
+              </span>{" "}
+              de la Universidad Tecnológica Nacional. En 2008,{" "}
+              <span className="vv-estilo">
+                realizó un curso de coordinación interinstitucional y lucha
+                contra el terrorismo
+              </span>{" "}
+              en el Centro de Estudios de Defensa Hemisférica William J. Perry.
             </p>
           </div>
         </div>
 
-        {/* Box EEUU */}
+        {/* Box colegio militar */}
         <div
           className={`box-eeuu ${activeBoxes.has("boxEEUU") ? "active" : ""}`}
         >
@@ -233,10 +260,13 @@ const VictoriaBio = () => {
             <h2 className="titulo-box-dos">Posturas</h2>
             <h6 className="subtitulo-box">Historia y Derechos Humanos</h6>
             <p className="texto-parrafo-box">
-              Villarruel ha cuestionado la versión oficial de la historia
-              argentina moderna, defendiendo a las víctimas de los grupos
-              guerrilleros y criticando la protección otorgada a exmiembros de
-              estos grupos por gobiernos posteriores.
+              <span className="vv-estilo">
+                Villarruel ha cuestionado la versión oficial de la historia
+                argentina moderna,
+              </span>{" "}
+              defendiendo a las víctimas de los grupos guerrilleros y criticando
+              la protección otorgada a exmiembros de estos grupos por gobiernos
+              posteriores.
             </p>
           </div>
         </div>
@@ -249,15 +279,21 @@ const VictoriaBio = () => {
             <h2 className="titulo-box-dos">Soldados de Malvinas</h2>
             <p className="texto-parrafo-box">
               Victoria Villarruel ha sido una firme defensora de los derechos de
-              los veteranos de la Guerra de Malvinas. Durante su mandato, ha
-              trabajado en promover el reconocimiento y apoyo a los soldados,
-              destacando la importancia de honrar su sacrificio. Victoria ha
-              hablado sobre la influencia de su padre, Eduardo Villarruel, un
-              militar del Ejército Argentino, en su vida y carrera. Él le
-              inculcó valores de disciplina, honor y servicio al país, guiando
-              su trayectoria política. Victoria considera que su compromiso con
-              los veteranos de Malvinas y su lucha por los derechos humanos
-              están enraizados en las enseñanzas y el ejemplo de su padre.
+              los veteranos de la Guerra de Malvinas.{" "}
+              <span className="vv-estilo">
+                Durante su mandato, ha trabajado en promover el reconocimiento y
+                apoyo a los soldados, destacando la importancia de honrar su
+                sacrificio.
+              </span>{" "}
+              Victoria ha hablado sobre la influencia de su padre, Eduardo
+              Villarruel, un militar del Ejército Argentino, en su vida y
+              carrera. Él le inculcó valores de disciplina, honor y servicio al
+              país, guiando su trayectoria política.{" "}
+              <span className="vv-estilo">
+                Victoria considera que su compromiso con los veteranos de
+                Malvinas y su lucha por los derechos humanos están enraizados en
+                las enseñanzas y el ejemplo de su padre.
+              </span>
             </p>
           </div>
         </div>
@@ -271,9 +307,15 @@ const VictoriaBio = () => {
           <div className="texto-box">
             <h2 className="titulo-box-dos">Publicaciones</h2>
             <p className="texto-parrafo-box">
-              Los llaman... jóvenes idealistas (2009) Los otros muertos - Las
-              víctimas civiles del terrorismo guerrillero de los 70 (2014), en
-              coautoría con Carlos A. Manfroni.
+              <span className="vv-estilo">
+                Los llaman... jóvenes idealistas
+              </span>{" "}
+              (2009){" "}
+              <span className="vv-estilo">
+                Los otros muertos - Las víctimas civiles del terrorismo
+                guerrillero de los 70
+              </span>{" "}
+              (2014), en coautoría con Carlos A. Manfroni.
             </p>
           </div>
         </div>

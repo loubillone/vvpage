@@ -330,7 +330,7 @@ const MapaArgentina = () => {
           "path, polygon, polyline, g"
         );
 
-        console.log(`Se encontraron ${provincias.length} elementos en el SVG`);
+        // console.log(`Se encontraron ${provincias.length} elementos en el SVG`);
 
         let provinciasProcesadas = 0;
 
@@ -438,9 +438,9 @@ const MapaArgentina = () => {
           }
         });
 
-        console.log(
-          `Se procesaron ${provinciasProcesadas} provincias visitadas`
-        );
+        // console.log(
+        //   `Se procesaron ${provinciasProcesadas} provincias visitadas`
+        // );
       }, 300);
     }
   }, [svgLoaded, svgContent, navigate]);

@@ -71,15 +71,27 @@ const FotosIndex = () => {
             <h6 className="subtitulo-box">Vicepresidente de la Nación</h6>
             <h5 className="titulo-parrafo-box">Por la unidad nacional</h5>
             <p className="texto-parrafo-box">
-              La verdad, la justicia y la reparación de las víctimas del
-              terrorismo son los pilares que guían la labor de Victoria
-              Villarruel. Su patriotismo, fe católica y defensa de la causa
-              Malvinas fortalecen su compromiso de proteger los derechos de cada
-              argentino y preservar la memoria histórica de la Nación. Lucha por
-              una Argentina unida, donde el amor a la Patria impulse el
-              progreso. Construye una Argentina que incluya, abrace y proyecte a
-              todos, para legar a las nuevas generaciones la patria pujante que
-              soñamos.
+              <span className="vv-estilo">
+                La verdad, la justicia y la reparación de las víctimas del
+                terrorismo
+              </span>{" "}
+              son los pilares que guían la labor de Victoria Villarruel. Su
+              <span className="vv-estilo">
+                {" "}
+                patriotismo, fe católica y defensa de la causa Malvinas
+              </span>{" "}
+              fortalecen su compromiso de proteger los derechos de cada
+              argentino y{" "}
+              <span className="vv-estilo">
+                preservar la memoria histórica de la Nación
+              </span>
+              . Lucha por una Argentina unida, donde el amor a la Patria impulse
+              el progreso.{" "}
+              <span className="vv-estilo">
+                Construye una Argentina que incluya, abrace y proyecte a todos,
+              </span>{" "}
+              para legar a las nuevas generaciones{" "}
+              <span className="vv-estilo">la patria pujante que soñamos.</span>
             </p>
           </div>
         </div>
