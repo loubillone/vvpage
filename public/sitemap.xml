@@ -3,42 +3,42 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
   <url>
-    <loc>https://www.todoporargentina.com.ar/</loc>
+    <loc>https://todoporargentina.com.ar/</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.todoporargentina.com.ar/biografia</loc>
+    <loc>https://todoporargentina.com.ar/biografia</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.todoporargentina.com.ar/celtyv</loc>
+    <loc>https://todoporargentina.com.ar/celtyv</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.todoporargentina.com.ar/trayectoria</loc>
+    <loc>https://todoporargentina.com.ar/trayectoria</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.todoporargentina.com.ar/senado/malvinas</loc>
+    <loc>https://todoporargentina.com.ar/senado/malvinas</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.todoporargentina.com.ar/senado/victimasDelTerrorismo</loc>
+    <loc>https://todoporargentina.com.ar/senado/victimasDelTerrorismo</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.todoporargentina.com.ar/galeria</loc>
+    <loc>https://todoporargentina.com.ar/galeria</loc>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.todoporargentina.com.ar/contacto</loc>
+    <loc>https://todoporargentina.com.ar/contacto</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
