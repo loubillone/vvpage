@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.todoporargentina.com.ar/sitemap.xml
+Sitemap: https://todoporargentina.com.ar/sitemap.xml
