@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import SenadoTemas from "../components/SenadoTemas";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
-const SITE_URL = import.meta.env.VITE_SITE_URL;
 
 const Senado = () => {
   const { tema } = useParams();
