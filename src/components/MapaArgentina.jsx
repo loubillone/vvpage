@@ -245,6 +245,24 @@ const MapaArgentina = () => {
   const [svgContent, setSvgContent] = useState("");
   const svgContainerRef = useRef(null);
 
+  // Calcular el progreso de provincias visitadas
+  const calcularProgreso = () => {
+    const totalProvincias = 23;
+    const provinciasVisitadasCount = Object.values(provinciasVisitadas).filter(
+      (provincia) => provincia.visitada,
+    ).length;
+    const porcentaje = Math.round(
+      (provinciasVisitadasCount / totalProvincias) * 100,
+    );
+    return {
+      visitadas: provinciasVisitadasCount,
+      total: totalProvincias,
+      porcentaje: porcentaje,
+    };
+  };
+
+  const progreso = calcularProgreso();
+
   const handleProvinciaClick = (provincia) => {
     const provinciaNormalizada = mapeoProvincias[provincia] || provincia;
     if (provinciasVisitadas[provinciaNormalizada]?.visitada) {
@@ -327,7 +345,7 @@ const MapaArgentina = () => {
         svgElement.classList.add("mapa-svg");
 
         const provincias = svgElement.querySelectorAll(
-          "path, polygon, polyline, g"
+          "path, polygon, polyline, g",
         );
 
         // console.log(`Se encontraron ${provincias.length} elementos en el SVG`);
@@ -492,6 +510,24 @@ const MapaArgentina = () => {
               Haz clic en las provincias marcadas en celeste para ver los
               detalles de cada visita
             </p>
+            {/* Barra de progreso */}
+            <div className="progreso-container">
+              <div className="progreso-info">
+                <span className="progreso-texto">
+                  Provincias recorridas: {progreso.visitadas} de{" "}
+                  {progreso.total}
+                </span>
+                <span className="progreso-porcentaje">
+                  {progreso.porcentaje}%
+                </span>
+              </div>
+              <div className="progreso-bar-container">
+                <div
+                  className="progreso-bar-fill"
+                  style={{ width: `${progreso.porcentaje}%` }}
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="row">
