@@ -180,7 +180,49 @@ import fiestaPonchoVV from "../assets/img/mapaArg/catamarca/fiestaPonchoVV.webp"
 import fiestaPonchoVVDos from "../assets/img/mapaArg/catamarca/fiestaPonchoVV2.webp";
 import fiestaPonchoVVTres from "../assets/img/mapaArg/catamarca/fiestaPonchoVV3.webp";
 import fiestaPonchoVVCuatro from "../assets/img/mapaArg/catamarca/fiestaPonchoVV4.webp";
-
+import lariojaVVQuiroga from "../assets/img/mapaArg/larioja/lariojaVVQuiroga.jpeg";
+import lariojaVVQuirogaUno from "../assets/img/mapaArg/larioja/lariojaVVQuiroga2.jpeg";
+import lariojaVVQuirogaDos from "../assets/img/mapaArg/larioja/lariojaVVQuiroga3.jpg";
+import lariojaQuintelaVV from "../assets/img/mapaArg/larioja/lariojaQuintelaVV.jpg";
+import lariojaQuintelaVVUno from "../assets/img/mapaArg/larioja/lariojaQuintelaVV1.jpg";
+import lariojaQuintelaVVDos from "../assets/img/mapaArg/larioja/lariojaQuintelaVV2.jpg";
+import lariojaQuintelaVVTres from "../assets/img/mapaArg/larioja/lariojaQuintelaVV3.jpg";
+import lariojaQuintelaVVCuatro from "../assets/img/mapaArg/larioja/lariojaQuintelaVV4.jpg";
+import lariojaQuintelaVVCinco from "../assets/img/mapaArg/larioja/lariojaQuintelaVV5.jpg";
+import lariojaQuintelaVVSeis from "../assets/img/mapaArg/larioja/lariojaQuintelaVV6.jpg";
+import lariojaQuintelaVVSiete from "../assets/img/mapaArg/larioja/lariojaQuintelaVV7.jpg";
+import lariojaObispoVV from "../assets/img/mapaArg/larioja/lariojaObispoVV.jpg";
+import lariojaObispoVVUno from "../assets/img/mapaArg/larioja/lariojaObispoVV1.jpg";
+import lariojaObispoVVDos from "../assets/img/mapaArg/larioja/lariojaObispoVV2.jpg";
+import lariojaObispoVVTres from "../assets/img/mapaArg/larioja/lariojaObispoVV3.jpg";
+import lariojaObispoVVCuatro from "../assets/img/mapaArg/larioja/lariojaObispoVV4.jpg";
+import lariojaObispoVVCinco from "../assets/img/mapaArg/larioja/lariojaObispoVV5.jpg";
+import lariojaBodegaVV from "../assets/img/mapaArg/larioja/lariojaBodegaVV.jpg";
+import lariojaBodegaVVUno from "../assets/img/mapaArg/larioja/lariojaBodegaVV1.jpg";
+import lariojaBodegaVVDos from "../assets/img/mapaArg/larioja/lariojaBodegaVV2.jpg";
+import lariojaBodegaVVTres from "../assets/img/mapaArg/larioja/lariojaBodegaVV3.jpg";
+import lariojaBodegaVVCuatro from "../assets/img/mapaArg/larioja/lariojaBodegaVV4.jpg";
+import lariojaBodegaVVCinco from "../assets/img/mapaArg/larioja/lariojaBodegaVV5.jpg";
+import lariojaBodegaVVSeis from "../assets/img/mapaArg/larioja/lariojaBodegaVV6.jpg";
+import lariojaChayaVV from "../assets/img/mapaArg/larioja/lariojaChayaVV.jpg";
+import lariojaChayaVVUno from "../assets/img/mapaArg/larioja/lariojaChayaVV1.jpg";
+import lariojaChayaVVDos from "../assets/img/mapaArg/larioja/lariojaChayaVV2.jpg";
+import lariojaChayaVVTres from "../assets/img/mapaArg/larioja/lariojaChayaVV3.jpg";
+import lariojaChayaVVCuatro from "../assets/img/mapaArg/larioja/lariojaChayaVV4.jpg";
+import lariojaParquesVV from "../assets/img/mapaArg/larioja/lariojaParquesVV.jpg";
+import lariojaParquesVVUno from "../assets/img/mapaArg/larioja/lariojaParquesVV1.jpg";
+import lariojaParquesVVDos from "../assets/img/mapaArg/larioja/lariojaParquesVV2.jpg";
+import lariojaParquesVVTres from "../assets/img/mapaArg/larioja/lariojaParquesVV3.jpg";
+import lariojaParquesVVCuatro from "../assets/img/mapaArg/larioja/lariojaParquesVV4.jpg";
+import lariojaParquesVVCinco from "../assets/img/mapaArg/larioja/lariojaParquesVV5.jpg";
+import lariojaParquesVVSeis from "../assets/img/mapaArg/larioja/lariojaParquesVV6.jpg";
+import lariojaParquesVVSiete from "../assets/img/mapaArg/larioja/lariojaParquesVV7.jpg";
+import lariojaParquesVVOcho from "../assets/img/mapaArg/larioja/lariojaParquesVV8.jpg";
+import lariojaParquesVVNueve from "../assets/img/mapaArg/larioja/lariojaParquesVV9.jpg";
+import lariojaTalampayaVV from "../assets/img/mapaArg/larioja/lariojaTalampayaVV.jpg";
+import lariojaTalampayaVVUno from "../assets/img/mapaArg/larioja/lariojaTalampayaVV1.jpg";
+import lariojaTalampayaVVDos from "../assets/img/mapaArg/larioja/lariojaTalampayaVV2.jpg";
+import lariojaTalampayaVVTres from "../assets/img/mapaArg/larioja/lariojaTalampayaVV3.jpg";
 import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 
@@ -1378,53 +1420,72 @@ const ProvinciaDetalle = () => {
                   <p>
                     La vicepresidente Victoria Villarruel arribó a la provincia
                     de <span className="vv-estilo-detalle">La Rioja</span> el
-                    sábado 14 de Febrero, donde mantuvo un encuentro
-                    institucional con el gobernador{" "}
-                    <span className="vv-estilo-detalle">Ricardo Quintela</span>
-                    , junto a los senadores nacionales Florencia López y
-                    Fernando Rejal. <br />
+                    sábado 14 de Febrero, donde inició una agenda institucional
+                    que combinó diálogo político, producción, cultura y
+                    patrimonio. En su llegada, mantuvo un encuentro con el
+                    gobernador
+                    <span className="vv-estilo-detalle">
+                      {" "}
+                      Ricardo Quintela,{" "}
+                    </span>
+                    junto a los senadores nacionales Florencia López y Fernando
+                    Rejal. <br />
                     <br />
-                    Durante la reunión dialogaron sobre la realidad provincial y
-                    el desarrollo federal, reafirmando la importancia del
-                    vínculo entre Nación y provincias. En ese marco, la
-                    vicepresidente expresó:{" "}
-                    <blockquote className="cita">
-                      “Seguimos fortaleciendo el vínculo con cada provincia,
-                      acompañando el crecimiento y apostando al desarrollo
-                      federal de la Argentina.”
-                    </blockquote>
-                    La imagen junto a Quintela —referente del peronismo riojano—
-                    generó debate político nacional, especialmente en sectores
-                    libertarios que cuestionaron la foto institucional .
-                    Villarruel respondió públicamente defendiendo el carácter
-                    federal de su visita y la necesidad de diálogo con todas las
-                    provincias .
-                    <blockquote className="cita">
-                      "Años atrás cuando{" "}
-                      <span className="vv-estilo-detalle">
-                        la casta repartía planes, IFEs y hablaba en inclusivo,
-                        dándose la buena vida
-                      </span>{" "}
-                      mientras nos encerraban a todos, los operadores que juegan
-                      a criticarme como{" "}
-                      <span className="vv-estilo-detalle">
-                        catadores de ideologías
-                      </span>{" "}
-                      no eran tan incisivos, ni ponían el cuerpo para resistir a
-                      eso. Por eso, si en la Argentina profunda alguien vende
-                      más aceitunas o visita un Parque Nacional, yo estoy feliz.
-                      Después de todo, de eso se trata ésto, de{" "}
-                      <span className="vv-estilo-detalle">
-                        que los argentinos vivamos mejor,
-                      </span>{" "}
-                      tengamos trabajo y podamos vivir con nuestras familias en
-                      Argentina."{" "}
-                    </blockquote>
+                    Durante la reunión dialogaron sobre la{" "}
+                    <span className="vv-estilo-detalle">
+                      realidad provincial y el desarrollo federal
+                    </span>
+                    , reafirmando la importancia del vínculo entre Nación y
+                    provincias. En ese marco, la vicepresidente expresó:{" "}
                   </p>
+                  <blockquote className="cita">
+                    "Seguimos fortaleciendo el vínculo con cada provincia,
+                    acompañando el crecimiento y apostando al desarrollo federal
+                    de la Argentina."
+                  </blockquote>
+                  <br />
+                  <p>
+                    <span className="vv-estilo-detalle">
+                      La imagen junto al mandatario riojano generó debate
+                      político
+                    </span>{" "}
+                    a nivel nacional. Frente a las críticas, Villarruel defendió
+                    el carácter federal de su visita y la necesidad de diálogo
+                    con todas las jurisdicciones del país. En sus redes sociales
+                    manifestó:
+                  </p>
+                  <blockquote className="cita">
+                    "Años atrás cuando{" "}
+                    <span className="vv-estilo-detalle">
+                      la casta repartía planes, IFEs y hablaba en inclusivo,
+                      dándose la buena vida
+                    </span>{" "}
+                    mientras nos encerraban a todos, los operadores que juegan a
+                    criticarme como{" "}
+                    <span className="vv-estilo-detalle">
+                      catadores de ideologías
+                    </span>{" "}
+                    no eran tan incisivos, ni ponían el cuerpo para resistir a
+                    eso. Por eso, si en la Argentina profunda alguien vende más
+                    aceitunas o visita un Parque Nacional, yo estoy feliz.
+                    Después de todo, de eso se trata ésto, de{" "}
+                    <span className="vv-estilo-detalle">
+                      que los argentinos vivamos mejor,
+                    </span>{" "}
+                    tengamos trabajo y podamos vivir con nuestras familias en
+                    Argentina."{" "}
+                  </blockquote>
                 </>
               ),
               imagenes: [
-                // Agregar aquí las imágenes de la actividad 1
+                lariojaQuintelaVV,
+                lariojaQuintelaVVUno,
+                lariojaQuintelaVVDos,
+                lariojaQuintelaVVTres,
+                lariojaQuintelaVVCuatro,
+                lariojaQuintelaVVCinco,
+                lariojaQuintelaVVSeis,
+                lariojaQuintelaVVSiete,
               ],
             },
             {
@@ -1432,28 +1493,31 @@ const ProvinciaDetalle = () => {
               descripcion: (
                 <>
                   <p>
-                    En el marco de su visita a La Rioja, la vicepresidente
-                    recorrió la{" "}
+                    En el plano espiritual, la vicepresidente recorrió la{" "}
                     <span className="vv-estilo-detalle">
                       Catedral y Santuario de San Nicolás de Bari
-                    </span>
-                    , donde fue recibida por el obispo Dante Braida. <br />
-                    <br />
-                    Durante la visita, conoció la capilla y el templo,
-                    destacando su arquitectura de impronta neogótica,
-                    característica de comienzos del siglo XX. Asimismo,{" "}
+                    </span>{" "}
+                    donde fue recibida por el obispo Dante Braida. Allí visitó
+                    la capilla y el templo, destacando su arquitectura de
+                    impronta neogótica, característica de comienzos del siglo
+                    XX. También{" "}
                     <span className="vv-estilo-detalle">
                       dedicó un momento para la oración
                     </span>{" "}
                     y valoró el proceso de restauración realizado tras el
                     incendio intencional ocurrido en 2017, que permitió
                     recuperar este patrimonio histórico y espiritual de los
-                    riojanos.
+                    riojanos. <br />
                   </p>
                 </>
               ),
               imagenes: [
-                // Agregar aquí las imágenes de la actividad 2
+                lariojaObispoVV,
+                lariojaObispoVVUno,
+                lariojaObispoVVDos,
+                lariojaObispoVVTres,
+                lariojaObispoVVCuatro,
+                lariojaObispoVVCinco,
               ],
             },
             {
@@ -1461,20 +1525,30 @@ const ProvinciaDetalle = () => {
               descripcion: (
                 <>
                   <p>
-                    La vicepresidente visitó la bodega{" "}
+                    La agenda continuó con una fuerte impronta productiva,
+                    Villarruel visitó la bodega{" "}
                     <span className="vv-estilo-detalle">Vista Larga</span>
                     , empresa familiar que elabora vinos, aceite de oliva,
                     aceitunas y nueces, reflejando el espíritu productivo
                     riojano. <br />
                     <br />
-                    Durante la recorrida destacó la importancia de las economías
-                    regionales, el trabajo genuino y el compromiso de quienes
-                    apuestan al crecimiento productivo de la provincia.
+                    Durante la recorrida{" "}
+                    <span className="vv-estilo-detalle">
+                      destacó la importancia de las economías regionales,
+                    </span>{" "}
+                    el trabajo genuino y el compromiso de quienes apuestan al
+                    crecimiento productivo de la provincia.
                   </p>
                 </>
               ),
               imagenes: [
-                // Agregar aquí las imágenes de la actividad 3
+                lariojaBodegaVV,
+                lariojaBodegaVVUno,
+                lariojaBodegaVVDos,
+                lariojaBodegaVVTres,
+                lariojaBodegaVVCuatro,
+                lariojaBodegaVVCinco,
+                lariojaBodegaVVSeis,
               ],
             },
             {
@@ -1482,27 +1556,32 @@ const ProvinciaDetalle = () => {
               descripcion: (
                 <>
                   <p>
-                    Villarruel participó en la{" "}
+                    En el ámbito cultural, participó de la{" "}
                     <span className="vv-estilo-detalle">
                       Fiesta Nacional de la Chaya
-                    </span>
-                    , uno de los eventos culturales más importantes del norte
-                    argentino, celebración que une historia, cultura y
-                    tradición. Medios nacionales destacaron su presencia entre
-                    el público y su interacción con los asistentes. <br />
+                    </span>{" "}
+                    uno de los eventos más representativos del norte argentino.
+                    La música, la alegría y las tradiciones populares marcaron
+                    una noche donde la identidad riojana se expresó con fuerza.
                     <br />
-                    Fue una noche donde la música, la alegría y las raíces
-                    fueron protagonistas, reafirmando el valor de las
-                    festividades populares como expresión viva de la
-                    argentinidad. Durante la jornada, la vicepresidente también
-                    compartió la gastronomía típica de la región, degustando
-                    humitas y empanadas riojanas, que destacó por su sabor y
-                    tradición.
+                    <br />
+                    Medios nacionales destacaron{" "}
+                    <span className="vv-estilo-detalle">
+                      su presencia entre el público y su interacción con los
+                      asistentes.
+                    </span>{" "}
+                    Durante la celebración compartió la gastronomía típica de la
+                    región, degustando humitas y empanadas riojanas, que destacó
+                    por su sabor y tradición.
                   </p>
                 </>
               ),
               imagenes: [
-                // Agregar aquí las imágenes de la actividad 4
+                lariojaChayaVV,
+                lariojaChayaVVUno,
+                lariojaChayaVVDos,
+                lariojaChayaVVTres,
+                lariojaChayaVVCuatro,
               ],
             },
 
@@ -1511,8 +1590,8 @@ const ProvinciaDetalle = () => {
               descripcion: (
                 <>
                   <p>
-                    En su agenda de desarrollo e innovación, la vicepresidente
-                    recorrió el{" "}
+                    Su recorrido incluyó también una mirada hacia el desarrollo
+                    y la innovación, la vicepresidente recorrió el{" "}
                     <span className="vv-estilo-detalle">
                       Parque Eólico Arauco
                     </span>
@@ -1530,7 +1609,16 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                // Agregar aquí las imágenes de la actividad 4
+                lariojaParquesVV,
+                lariojaParquesVVUno,
+                lariojaParquesVVDos,
+                lariojaParquesVVTres,
+                lariojaParquesVVCuatro,
+                lariojaParquesVVCinco,
+                lariojaParquesVVSeis,
+                lariojaParquesVVSiete,
+                lariojaParquesVVOcho,
+                lariojaParquesVVNueve,
               ],
             },
             {
@@ -1543,7 +1631,9 @@ const ProvinciaDetalle = () => {
                       Parque Nacional Talampaya
                     </span>
                     , declarado Patrimonio de la Humanidad y considerado uno de
-                    los paisajes naturales más imponentes del país. <br />
+                    los paisajes naturales más imponentes del país. Allí destacó
+                    la belleza y el valor cultural de este símbolo del
+                    patrimonio argentino. <br />
                     <br />
                     Asimismo, recorrió el{" "}
                     <span className="vv-estilo-detalle">
@@ -1552,17 +1642,23 @@ const ProvinciaDetalle = () => {
                     , donde se encuentra el monumento a Juan Facundo Quiroga,
                     figura central del federalismo argentino. Desde ese lugar
                     histórico, expresó:{" "}
-                    <blockquote className="cita">
-                      {" "}
-                      “Renuevo mi compromiso con una Argentina verdaderamente
-                      federal, donde cada provincia tenga voz, protagonismo y
-                      futuro.”
-                    </blockquote>
                   </p>
+                  <blockquote className="cita">
+                    {" "}
+                    “Renuevo mi compromiso con una Argentina verdaderamente
+                    federal, donde cada provincia tenga voz, protagonismo y
+                    futuro.”
+                  </blockquote>
                 </>
               ),
               imagenes: [
-                // Agregar aquí las imágenes de la actividad 4
+                lariojaTalampayaVV,
+                lariojaTalampayaVVUno,
+                lariojaTalampayaVVDos,
+                lariojaTalampayaVVTres,
+                lariojaVVQuiroga,
+                lariojaVVQuirogaDos,
+                lariojaVVQuirogaUno,
               ],
             },
           ],
