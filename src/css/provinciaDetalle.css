@@ -113,6 +113,26 @@
   text-align: justify;
 }
 
+/* Estilos para actividades dentro de una visita */
+.actividad-container {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.actividad-container:last-child {
+  border-bottom: none;
+}
+
+.titulo-actividad {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.2rem;
+  color: #043d83;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #87ceeb;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .titulo-provincia {
     font-size: 2.5rem;
@@ -186,6 +206,16 @@
   .lugar-visita {
     font-size: 1.5rem;
   }
+
+  .titulo-actividad {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-actividad {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -240,5 +270,9 @@
 
   .descripcion-container {
     padding: 1rem;
+  }
+
+  .titulo-actividad {
+    font-size: 1.6rem;
   }
 }

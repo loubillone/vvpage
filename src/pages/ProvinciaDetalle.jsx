@@ -180,6 +180,7 @@ import fiestaPonchoVV from "../assets/img/mapaArg/catamarca/fiestaPonchoVV.webp"
 import fiestaPonchoVVDos from "../assets/img/mapaArg/catamarca/fiestaPonchoVV2.webp";
 import fiestaPonchoVVTres from "../assets/img/mapaArg/catamarca/fiestaPonchoVV3.webp";
 import fiestaPonchoVVCuatro from "../assets/img/mapaArg/catamarca/fiestaPonchoVV4.webp";
+
 import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 
@@ -971,7 +972,8 @@ const ProvinciaDetalle = () => {
                 <span className="vv-estilo-detalle">
                   También visitó la cocina de la Peña, donde compartió la cena y
                   saludó a todos los presentes, destacando el esfuerzo y la
-                  dedicación de quienes mantienen vivas las tradiciones locales.{" "}
+                  dedicación de quienes mantienen vivas las tradiciones
+                  locales.{" "}
                 </span>
                 La vicepresidente expresó su gratitud por la calidez de los
                 catamarqueños:{" "}
@@ -1366,13 +1368,204 @@ const ProvinciaDetalle = () => {
       nombre: "La Rioja",
       visitas: [
         {
-          fecha: "2024",
-          descripcion:
-            "Victoria Villarruel visitó la provincia de La Rioja para participar en diversos actos oficiales y reunirse con autoridades locales.",
-          descripcionCorta:
-            "Victoria Villarruel visitó La Rioja para actos oficiales y reuniones con autoridades.",
-          imagenes: [],
-          lugar: "Ciudad de La Rioja",
+          fecha: "Febrero de 2026",
+          lugar: "La Rioja",
+          actividades: [
+            {
+              titulo: "Recepción Oficial",
+              descripcion: (
+                <>
+                  <p>
+                    La vicepresidente Victoria Villarruel arribó a la provincia
+                    de <span className="vv-estilo-detalle">La Rioja</span> el
+                    sábado 14 de Febrero, donde mantuvo un encuentro
+                    institucional con el gobernador{" "}
+                    <span className="vv-estilo-detalle">Ricardo Quintela</span>
+                    , junto a los senadores nacionales Florencia López y
+                    Fernando Rejal. <br />
+                    <br />
+                    Durante la reunión dialogaron sobre la realidad provincial y
+                    el desarrollo federal, reafirmando la importancia del
+                    vínculo entre Nación y provincias. En ese marco, la
+                    vicepresidente expresó:{" "}
+                    <blockquote className="cita">
+                      “Seguimos fortaleciendo el vínculo con cada provincia,
+                      acompañando el crecimiento y apostando al desarrollo
+                      federal de la Argentina.”
+                    </blockquote>
+                    La imagen junto a Quintela —referente del peronismo riojano—
+                    generó debate político nacional, especialmente en sectores
+                    libertarios que cuestionaron la foto institucional .
+                    Villarruel respondió públicamente defendiendo el carácter
+                    federal de su visita y la necesidad de diálogo con todas las
+                    provincias .
+                    <blockquote className="cita">
+                      "Años atrás cuando{" "}
+                      <span className="vv-estilo-detalle">
+                        la casta repartía planes, IFEs y hablaba en inclusivo,
+                        dándose la buena vida
+                      </span>{" "}
+                      mientras nos encerraban a todos, los operadores que juegan
+                      a criticarme como{" "}
+                      <span className="vv-estilo-detalle">
+                        catadores de ideologías
+                      </span>{" "}
+                      no eran tan incisivos, ni ponían el cuerpo para resistir a
+                      eso. Por eso, si en la Argentina profunda alguien vende
+                      más aceitunas o visita un Parque Nacional, yo estoy feliz.
+                      Después de todo, de eso se trata ésto, de{" "}
+                      <span className="vv-estilo-detalle">
+                        que los argentinos vivamos mejor,
+                      </span>{" "}
+                      tengamos trabajo y podamos vivir con nuestras familias en
+                      Argentina."{" "}
+                    </blockquote>
+                  </p>
+                </>
+              ),
+              imagenes: [
+                // Agregar aquí las imágenes de la actividad 1
+              ],
+            },
+            {
+              titulo: "Catedral",
+              descripcion: (
+                <>
+                  <p>
+                    En el marco de su visita a La Rioja, la vicepresidente
+                    recorrió la{" "}
+                    <span className="vv-estilo-detalle">
+                      Catedral y Santuario de San Nicolás de Bari
+                    </span>
+                    , donde fue recibida por el obispo Dante Braida. <br />
+                    <br />
+                    Durante la visita, conoció la capilla y el templo,
+                    destacando su arquitectura de impronta neogótica,
+                    característica de comienzos del siglo XX. Asimismo,{" "}
+                    <span className="vv-estilo-detalle">
+                      dedicó un momento para la oración
+                    </span>{" "}
+                    y valoró el proceso de restauración realizado tras el
+                    incendio intencional ocurrido en 2017, que permitió
+                    recuperar este patrimonio histórico y espiritual de los
+                    riojanos.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                // Agregar aquí las imágenes de la actividad 2
+              ],
+            },
+            {
+              titulo: "Bodega y producción regional",
+              descripcion: (
+                <>
+                  <p>
+                    La vicepresidente visitó la bodega{" "}
+                    <span className="vv-estilo-detalle">Vista Larga</span>
+                    , empresa familiar que elabora vinos, aceite de oliva,
+                    aceitunas y nueces, reflejando el espíritu productivo
+                    riojano. <br />
+                    <br />
+                    Durante la recorrida destacó la importancia de las economías
+                    regionales, el trabajo genuino y el compromiso de quienes
+                    apuestan al crecimiento productivo de la provincia.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                // Agregar aquí las imágenes de la actividad 3
+              ],
+            },
+            {
+              titulo: "Fiesta Nacional de la Chaya",
+              descripcion: (
+                <>
+                  <p>
+                    Villarruel participó en la{" "}
+                    <span className="vv-estilo-detalle">
+                      Fiesta Nacional de la Chaya
+                    </span>
+                    , uno de los eventos culturales más importantes del norte
+                    argentino, celebración que une historia, cultura y
+                    tradición. Medios nacionales destacaron su presencia entre
+                    el público y su interacción con los asistentes. <br />
+                    <br />
+                    Fue una noche donde la música, la alegría y las raíces
+                    fueron protagonistas, reafirmando el valor de las
+                    festividades populares como expresión viva de la
+                    argentinidad. Durante la jornada, la vicepresidente también
+                    compartió la gastronomía típica de la región, degustando
+                    humitas y empanadas riojanas, que destacó por su sabor y
+                    tradición.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                // Agregar aquí las imágenes de la actividad 4
+              ],
+            },
+
+            {
+              titulo: "Parque Eólico Arauco y Parque de Dinosaurios",
+              descripcion: (
+                <>
+                  <p>
+                    En su agenda de desarrollo e innovación, la vicepresidente
+                    recorrió el{" "}
+                    <span className="vv-estilo-detalle">
+                      Parque Eólico Arauco
+                    </span>
+                    , ejemplo de apuesta a las energías renovables que posiciona
+                    a la provincia en la transición energética. <br />
+                    <br />
+                    También visitó el{" "}
+                    <span className="vv-estilo-detalle">
+                      Parque de Dinosaurios de Sanagasta
+                    </span>
+                    , un orgullo riojano que pone en valor la riqueza
+                    paleontológica de la provincia y fortalece el turismo
+                    regional.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                // Agregar aquí las imágenes de la actividad 4
+              ],
+            },
+            {
+              titulo: "Talampaya y Paseo Cultural Castro Barros",
+              descripcion: (
+                <>
+                  <p>
+                    Antes de finalizar su estadía, Victoria Villarruel visitó el{" "}
+                    <span className="vv-estilo-detalle">
+                      Parque Nacional Talampaya
+                    </span>
+                    , declarado Patrimonio de la Humanidad y considerado uno de
+                    los paisajes naturales más imponentes del país. <br />
+                    <br />
+                    Asimismo, recorrió el{" "}
+                    <span className="vv-estilo-detalle">
+                      Paseo Cultural Castro Barros
+                    </span>
+                    , donde se encuentra el monumento a Juan Facundo Quiroga,
+                    figura central del federalismo argentino. Desde ese lugar
+                    histórico, expresó:{" "}
+                    <blockquote className="cita">
+                      {" "}
+                      “Renuevo mi compromiso con una Argentina verdaderamente
+                      federal, donde cada provincia tenga voz, protagonismo y
+                      futuro.”
+                    </blockquote>
+                  </p>
+                </>
+              ),
+              imagenes: [
+                // Agregar aquí las imágenes de la actividad 4
+              ],
+            },
+          ],
         },
       ],
     },
@@ -1411,7 +1604,8 @@ const ProvinciaDetalle = () => {
                 <br />
                 <span className="vv-estilo-detalle">
                   En su paso por Añelo, acompañada por el intendente Fernando
-                  Banderet, recorrió la zona núcleo de explotación de Oil & Gas,{" "}
+                  Banderet, recorrió la zona núcleo de explotación de Oil &
+                  Gas,{" "}
                 </span>
                 interiorizándose sobre las necesidades de infraestructura,
                 educación y salud que acompañan el crecimiento de la región.{" "}
@@ -1913,57 +2107,145 @@ const ProvinciaDetalle = () => {
                   <p className="fecha-visita">
                     <strong>Fecha de visita:</strong> {visita.fecha}
                   </p>
-                  <p className="lugar-visita">
-                    <strong>Lugar:</strong> {visita.lugar}
-                  </p>
+                  {visita.lugar && (
+                    <p className="lugar-visita">
+                      <strong>Lugar:</strong> {visita.lugar}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
 
-            {visita.imagenes && visita.imagenes.length > 0 ? (
-              <div className="row">
-                <div className="col-12">
-                  <Carousel
-                    fade
-                    indicators={visita.imagenes.length > 1}
-                    className="carousel-provincia"
-                    activeIndex={imagenIndex[visitaIndex] || 0}
-                    onSelect={(index) =>
-                      setImagenIndex({ ...imagenIndex, [visitaIndex]: index })
-                    }
-                  >
-                    {visita.imagenes.map((imagen, index) => (
-                      <Carousel.Item key={index}>
-                        <img
-                          src={imagen}
-                          alt={`${provincia.nombre} - Visita ${
-                            visitaIndex + 1
-                          } - Imagen ${index + 1}`}
-                          className="imagen-provincia"
-                        />
-                      </Carousel.Item>
-                    ))}
-                  </Carousel>
-                </div>
-              </div>
-            ) : (
-              <div className="row">
-                <div className="col-12">
-                  <div className="placeholder-imagen">
-                    <p>Imagen no disponible</p>
+            {/* Si la visita tiene actividades, renderizar cada una */}
+            {visita.actividades && visita.actividades.length > 0 ? (
+              visita.actividades.map((actividad, actividadIndex) => (
+                <div
+                  key={actividadIndex}
+                  style={{ marginBottom: "3rem" }}
+                  className="actividad-container"
+                >
+                  <div className="row">
+                    <div className="col-12">
+                      <h2 className="titulo-actividad">
+                        {actividad.titulo || `Actividad ${actividadIndex + 1}`}
+                      </h2>
+                    </div>
+                  </div>
+
+                  {actividad.imagenes && actividad.imagenes.length > 0 ? (
+                    <div className="row">
+                      <div className="col-12">
+                        <Carousel
+                          fade
+                          indicators={actividad.imagenes.length > 1}
+                          className="carousel-provincia"
+                          activeIndex={
+                            imagenIndex[
+                              `visita-${visitaIndex}-actividad-${actividadIndex}`
+                            ] || 0
+                          }
+                          onSelect={(index) =>
+                            setImagenIndex({
+                              ...imagenIndex,
+                              [`visita-${visitaIndex}-actividad-${actividadIndex}`]:
+                                index,
+                            })
+                          }
+                        >
+                          {actividad.imagenes.map((imagen, index) => (
+                            <Carousel.Item key={index}>
+                              <img
+                                src={imagen}
+                                alt={`${provincia.nombre} - ${
+                                  actividad.titulo ||
+                                  `Actividad ${actividadIndex + 1}`
+                                } - Imagen ${index + 1}`}
+                                className="imagen-provincia"
+                              />
+                            </Carousel.Item>
+                          ))}
+                        </Carousel>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="row">
+                      <div className="col-12">
+                        <div className="placeholder-imagen">
+                          <p>Imagen no disponible</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="descripcion-container">
+                        <div className="descripcion-visita">
+                          {actividad.descripcion}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              ))
+            ) : (
+              /* Formato tradicional: descripción general y galería general */
+              <>
+                {visita.imagenes && visita.imagenes.length > 0 ? (
+                  <div className="row">
+                    <div className="col-12">
+                      <Carousel
+                        fade
+                        indicators={visita.imagenes.length > 1}
+                        className="carousel-provincia"
+                        activeIndex={imagenIndex[visitaIndex] || 0}
+                        onSelect={(index) =>
+                          setImagenIndex({
+                            ...imagenIndex,
+                            [visitaIndex]: index,
+                          })
+                        }
+                      >
+                        {visita.imagenes.map((imagen, index) => (
+                          <Carousel.Item key={index}>
+                            <img
+                              src={imagen}
+                              alt={`${provincia.nombre} - Visita ${
+                                visitaIndex + 1
+                              } - Imagen ${index + 1}`}
+                              className="imagen-provincia"
+                            />
+                          </Carousel.Item>
+                        ))}
+                      </Carousel>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="placeholder-imagen">
+                        <p>Imagen no disponible</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
-            <div className="row">
-              <div className="col-12">
-                <div className="descripcion-container">
-                  <h2 className="subtitulo-descripcion">Sobre la visita</h2>
-                  <div className="descripcion-visita">{visita.descripcion}</div>
-                </div>
-              </div>
-            </div>
+                {visita.descripcion && (
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="descripcion-container">
+                        <h2 className="subtitulo-descripcion">
+                          Sobre la visita
+                        </h2>
+                        <div className="descripcion-visita">
+                          {visita.descripcion}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
           </div>
         ))}
       </Container>
