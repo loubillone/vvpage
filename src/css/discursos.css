@@ -25,13 +25,19 @@
   text-align: center;
 }
 
-.discursos-titulo {
-  font-size: 4.5rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
-  margin-bottom: 3rem;
-  color: #2f2f2f;
-  letter-spacing: 2px;
+.discursos-titulo-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem 0 4rem 0;
+  padding: 0 2rem;
+}
+
+.discursos-titulo-imagen img {
+  max-width: 28%;
+  height: auto;
 }
 
 /* Filtros */
@@ -40,15 +46,16 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
 .filtro-btn {
   padding: 0.8rem 2.5rem;
   font-size: 1.7rem;
-  border: 2px solid #2f2f2f;
+  border: 2px solid #043d83;
   background-color: transparent;
-  color: #2f2f2f;
+  color: #043d83;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 3rem;
@@ -58,12 +65,12 @@
 }
 
 .filtro-btn:hover {
-  background-color: #2f2f2f;
+  background-color: #043d83;
   color: white;
 }
 
 .filtro-btn.active {
-  background-color: #2f2f2f;
+  background-color: #043d83;
   color: white;
   font-family: "raleway-semibold";
 }
@@ -75,11 +82,11 @@
 
 .año-titulo {
   font-size: 3.5rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
+  font-family: "raleway-bold", sans-serif;
+  font-weight: bold;
   margin-bottom: 3rem;
-  color: #2f2f2f;
-  border-bottom: 2px solid rgba(47, 47, 47, 0.2);
+  color: #043d83;
+  border-bottom: 2px solid rgba(4, 61, 131, 0.3);
   padding-bottom: 1.5rem;
   letter-spacing: 1px;
 }
@@ -96,7 +103,9 @@
 
 .video-card {
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   background-color: white;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -132,8 +141,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(47, 47, 47, 0.1) 0%, rgba(47, 47, 47, 0.2) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(47, 47, 47, 0.15) 0%,
+    rgba(47, 47, 47, 0.25) 100%
+  );
   color: #838383;
+  min-height: 200px;
 }
 
 /* Overlay con botón play */
@@ -156,18 +170,28 @@
 }
 
 .play-button {
-  width: 64px;
-  height: 64px;
-  background-color: rgba(255, 255, 255, 0.9);
+  width: 72px;
+  height: 72px;
+  background-color: rgba(47, 47, 47, 0.95);
+  border: 3px solid rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.play-button svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .video-card:hover .play-button {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  background-color: rgba(47, 47, 47, 1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Información del video */
@@ -182,9 +206,9 @@
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #000000;
+  color: #043d83;
   line-height: 1.5;
-  font-family: "raleway-semibold";
+  font-family: "raleway-bold", sans-serif;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -234,8 +258,8 @@
 .video-modal-header .modal-title {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #000000;
-  font-family: "raleway-semibold";
+  color: #043d83;
+  font-family: "raleway-bold", sans-serif;
 }
 
 .video-modal-body {
@@ -293,8 +317,13 @@
     padding: 4rem 2rem;
   }
 
-  .discursos-titulo {
-    font-size: 3.5rem;
+  .discursos-titulo-imagen {
+    margin: 1rem 0 2rem 0;
+    padding: 0 1rem;
+  }
+
+  .discursos-titulo-imagen img {
+    max-width: 50%;
   }
 
   .año-titulo {
@@ -312,8 +341,13 @@
     padding: 3rem 1.5rem;
   }
 
-  .discursos-titulo {
-    font-size: 2.8rem;
+  .discursos-titulo-imagen {
+    margin: 1rem 0 2rem 0;
+    padding: 0 1rem;
+  }
+
+  .discursos-titulo-imagen img {
+    max-width: 60%;
   }
 
   .año-titulo {
@@ -330,8 +364,8 @@
   }
 
   .video-col {
-    padding: 0 0.8rem;
-    margin-bottom: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
   }
 
   .video-info {
@@ -354,11 +388,21 @@
 
 @media (max-width: 480px) {
   .discursos-container {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem !important;
   }
 
-  .discursos-titulo {
-    font-size: 2.2rem;
+  .discursos-container .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .discursos-titulo-imagen {
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 0 1rem;
+  }
+
+  .discursos-titulo-imagen img {
+    max-width: 50%;
   }
 
   .año-titulo {
@@ -376,8 +420,13 @@
   }
 
   .video-col {
-    padding: 0 0.5rem;
-    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .video-grid {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
   }
 
   .video-info {

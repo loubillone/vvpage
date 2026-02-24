@@ -5,6 +5,7 @@ import "../css/discursos.css";
 import VideoGrid from "../components/VideoGrid";
 import VideoModal from "../components/VideoModal";
 import Footer from "../components/Footer";
+import discursosTitulo from "../assets/img/discursos/discursos.png";
 
 // Importar videos desde assets - 2024
 import villarruel_diplomaVeteranos from "../assets/videos/2024/villarruel_diplomaVeteranos.mp4";
@@ -75,7 +76,7 @@ const Discursos = () => {
           "Reconocimiento al rol de las iglesias evangélicas en la sociedad argentina, destacando su aporte en el ámbito social, espiritual y comunitario.",
         videoUrl: villarruel_iglesiaEvangelica,
         fecha: "2024-11",
-        categoria: "Actos",
+        categoria: "Varios",
       },
       {
         id: 6,
@@ -186,7 +187,7 @@ const Discursos = () => {
   const [mostrarModal, setMostrarModal] = useState(false);
 
   // Categorías disponibles
-  const categorias = ["Todos", "Senado", "Provincias", "Actos"];
+  const categorias = ["Todos", "Senado", "Provincias", "Varios"];
 
   // Combinar todos los videos y ordenar por año (más reciente primero)
   const todosLosVideos = useMemo(() => {
@@ -256,7 +257,9 @@ const Discursos = () => {
 
       <Container className="discursos-container">
         <div className="discursos-header">
-          <h2 className="discursos-titulo">Discursos</h2>
+          <div className="discursos-titulo-imagen">
+            <img src={discursosTitulo} alt="Discursos" />
+          </div>
 
           {/* Filtros */}
           <div className="filtros-container">
