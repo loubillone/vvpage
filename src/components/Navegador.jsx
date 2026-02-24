@@ -108,6 +108,14 @@ const Navegador = () => {
               >
                 Trayectoria
               </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/discursos"
+                className="nav-items"
+                onClick={handleNavClick}
+              >
+                Discursos
+              </Nav.Link>
               {/* <Nav.Link
                 as={NavLink}
                 to="/noticias"
