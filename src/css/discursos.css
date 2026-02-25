@@ -270,12 +270,15 @@
   width: 100%;
   aspect-ratio: 16 / 9; /* Formato YouTube */
   background-color: #000;
+  overflow: hidden;
 }
 
 .video-player {
   width: 100%;
   height: 100%;
+  object-fit: contain;
   outline: none;
+  display: block;
 }
 
 .video-descripcion {
