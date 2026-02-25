@@ -1,0 +1,468 @@
+@font-face {
+  font-family: "raleway-regular";
+  src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "raleway-semibold";
+  src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "raleway-bold";
+  src: url("../assets/fonts/Raleway/static/Raleway-Bold.ttf");
+}
+
+/* Contenedor principal */
+.discursos-container {
+  padding: 5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.discursos-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.discursos-titulo-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem 0 4rem 0;
+  padding: 0 2rem;
+}
+
+.discursos-titulo-imagen img {
+  max-width: 28%;
+  height: auto;
+}
+
+/* Filtros */
+.filtros-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.filtro-btn {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.7rem;
+  border: 2px solid #043d83;
+  background-color: transparent;
+  color: #043d83;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 3rem;
+  font-family: "raleway-regular";
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.filtro-btn:hover {
+  background-color: #043d83;
+  color: white;
+}
+
+.filtro-btn.active {
+  background-color: #043d83;
+  color: white;
+  font-family: "raleway-semibold";
+}
+
+/* Sección por año */
+.videos-por-año {
+  margin-bottom: 5rem;
+}
+
+.año-titulo {
+  font-size: 3.5rem;
+  font-family: "raleway-bold", sans-serif;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #043d83;
+  border-bottom: 2px solid rgba(4, 61, 131, 0.3);
+  padding-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Grid de videos */
+.video-grid {
+  margin: 0;
+}
+
+.video-col {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.video-card {
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  background-color: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail container - Formato 16:9 */
+.video-thumbnail-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Formato YouTube */
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-thumbnail-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(47, 47, 47, 0.15) 0%,
+    rgba(47, 47, 47, 0.25) 100%
+  );
+  color: #838383;
+  min-height: 200px;
+}
+
+/* Overlay con botón play */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-card:hover .video-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  width: 72px;
+  height: 72px;
+  background-color: rgba(47, 47, 47, 0.95);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.play-button svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.video-card:hover .play-button {
+  transform: scale(1.15);
+  background-color: rgba(47, 47, 47, 1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Información del video */
+.video-info {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-titulo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #043d83;
+  line-height: 1.5;
+  font-family: "raleway-bold", sans-serif;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-fecha {
+  font-size: 1.4rem;
+  color: #838383;
+  margin-bottom: 1rem;
+  font-family: "raleway-regular";
+}
+
+.video-categoria-badge {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: rgba(47, 47, 47, 0.1);
+  color: #2f2f2f;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  margin-top: auto;
+  width: fit-content;
+  font-family: "raleway-regular";
+}
+
+/* Sin videos */
+.sin-videos {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #838383;
+  font-size: 1.8rem;
+  font-family: "raleway-regular";
+}
+
+/* Modal de video */
+.video-modal .modal-content {
+  border-radius: 2rem;
+  border: none;
+  overflow: hidden;
+}
+
+.video-modal-header {
+  border-bottom: 2px solid rgba(47, 47, 47, 0.1);
+  padding: 2rem;
+}
+
+.video-modal-header .modal-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #043d83;
+  font-family: "raleway-bold", sans-serif;
+}
+
+.video-modal-body {
+  padding: 0;
+}
+
+.video-player-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Formato YouTube */
+  background-color: #000;
+  overflow: hidden;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  outline: none;
+  display: block;
+}
+
+.video-descripcion {
+  padding: 2rem;
+  margin: 0;
+  color: #4e4e4e;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  font-family: "raleway-regular";
+}
+
+.video-metadata {
+  padding: 0 2rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.video-fecha-modal {
+  font-size: 1.4rem;
+  color: #838383;
+  font-family: "raleway-regular";
+}
+
+.video-categoria-modal {
+  padding: 0.5rem 1.2rem;
+  background-color: rgba(47, 47, 47, 0.1);
+  color: #2f2f2f;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-family: "raleway-regular";
+}
+
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1300px) {
+  .discursos-container {
+    padding: 4rem 2rem;
+  }
+
+  .discursos-titulo-imagen {
+    margin: 1rem 0 2rem 0;
+    padding: 0 1rem;
+  }
+
+  .discursos-titulo-imagen img {
+    max-width: 50%;
+  }
+
+  .año-titulo {
+    font-size: 2.8rem;
+  }
+
+  .filtro-btn {
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .discursos-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .discursos-titulo-imagen {
+    margin: 1rem 0 2rem 0;
+    padding: 0 1rem;
+  }
+
+  .discursos-titulo-imagen img {
+    max-width: 60%;
+  }
+
+  .año-titulo {
+    font-size: 2.2rem;
+  }
+
+  .filtros-container {
+    gap: 1rem;
+  }
+
+  .filtro-btn {
+    padding: 0.6rem 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  .video-col {
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .video-info {
+    padding: 1.5rem;
+  }
+
+  .video-titulo {
+    font-size: 1.5rem;
+  }
+
+  .video-fecha {
+    font-size: 1.3rem;
+  }
+
+  .video-categoria-badge {
+    font-size: 1.3rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .discursos-container {
+    padding: 2rem 2rem !important;
+  }
+
+  .discursos-container .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .discursos-titulo-imagen {
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 0 1rem;
+  }
+
+  .discursos-titulo-imagen img {
+    max-width: 50%;
+  }
+
+  .año-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .filtros-container {
+    gap: 0.8rem;
+  }
+
+  .filtro-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .video-col {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .video-grid {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+
+  .video-info {
+    padding: 1.2rem;
+  }
+
+  .video-titulo {
+    font-size: 1.6rem;
+  }
+
+  .video-fecha {
+    font-size: 1.4rem;
+  }
+
+  .video-categoria-badge {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .video-modal-header .modal-title {
+    font-size: 1.8rem;
+  }
+
+  .video-descripcion {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+  }
+
+  .video-fecha-modal {
+    font-size: 1.1rem;
+  }
+
+  .video-categoria-modal {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+}

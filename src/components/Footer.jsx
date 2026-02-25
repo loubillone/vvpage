@@ -93,6 +93,11 @@ const Footer = () => {
               </NavLink>
             </div>
             <div className="col enlaces-footer">
+              <NavLink to="/discursos" onClick={handleNavClick}>
+                Discursos
+              </NavLink>
+            </div>
+            <div className="col enlaces-footer">
               <NavLink to="/senado/malvinas" onClick={handleNavClick}>
                 Senado
               </NavLink>
