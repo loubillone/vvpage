@@ -8,24 +8,24 @@ import Footer from "../components/Footer";
 import discursosTitulo from "../assets/img/discursos/discursos.png";
 
 // Importar videos desde assets - 2024
-import villarruel_diplomaVeteranos from "../assets/videos/2024/villarruel_diplomaVeteranos.mp4";
-import villarruel_educacion from "../assets/videos/2024/villarruel_educacion.mp4";
-import villarruel_homenaje from "../assets/videos/2024/villarruel_homenaje.mp4";
-import villarruel_hospitalMil from "../assets/videos/2024/villarruel_hospitalMil.mp4";
-import villarruel_iglesiaEvangelica from "../assets/videos/2024/villarruel_iglesiaEvangelica.mp4";
-import villarruel_tratadoCchile from "../assets/videos/2024/villarruel_tratadoCchile.mp4";
+import villarruel_diplomaVeteranos from "../assets/videos/2024/villarruel_diplomaVeteranosVV.mp4";
+import villarruel_educacion from "../assets/videos/2024/villarruel_educacionVV.mp4";
+import villarruel_homenaje from "../assets/videos/2024/villarruel_homenajeVV.mp4";
+import villarruel_hospitalMil from "../assets/videos/2024/villarruel_hospitalMilVV.mp4";
+import villarruel_iglesiaEvangelica from "../assets/videos/2024/villarruel_iglesiaEvangelicaVV.mp4";
+import villarruel_tratadoCchile from "../assets/videos/2024/villarruel_tratadoCchileVV.mp4";
 
 // Importar videos desde assets - 2025
-import villarruel_coloquiTurquia from "../assets/videos/2025/villarruel_coloquiTurquia.mp4";
-import villarruel_corrientesCabral from "../assets/videos/2025/villarruel_corrientesCabral.mp4";
-import villarruel_formosa from "../assets/videos/2025/villarruel_formosa.mp4";
-import villarruel_homenajeTerrorismo from "../assets/videos/2025/villarruel_homenajeTerrorismo.mp4";
-import villarruel_malvinasEpopeya from "../assets/videos/2025/villarruel_malvinasEpopeya.mp4";
-import villarruel_manchala from "../assets/videos/2025/villarruel_manchala.mp4";
-import villarruel_ninoPorNacer from "../assets/videos/2025/villarruel_ninoPorNacer.mp4";
-import villarruel_pandemia from "../assets/videos/2025/villarruel_pandemia.mp4";
-import villarruel_premiosLabor from "../assets/videos/2025/villarruel_premiosLabor.mp4";
-import villarruel_ushuahiaVeterano from "../assets/videos/2025/villarruel_ushuahiaVeterano.mp4";
+import villarruel_coloquiTurquia from "../assets/videos/2025/villarruel_coloquiTurquiaVV.mp4";
+import villarruel_corrientesCabral from "../assets/videos/2025/villarruel_corrientesCabralVV.mp4";
+import villarruel_formosa from "../assets/videos/2025/villarruel_formosaVV.mp4";
+import villarruel_homenajeTerrorismo from "../assets/videos/2025/villarruel_homenajeTerrorismoVV.mp4";
+import villarruel_malvinasEpopeya from "../assets/videos/2025/villarruel_malvinasEpopeyaVV.mp4";
+import villarruel_manchala from "../assets/videos/2025/villarruel_manchalaVV.mp4";
+import villarruel_ninoPorNacer from "../assets/videos/2025/villarruel_ninoPorNacerVV.mp4";
+import villarruel_pandemia from "../assets/videos/2025/villarruel_pandemiaVV.mp4";
+import villarruel_premiosLabor from "../assets/videos/2025/villarruel_premiosLaborVV.mp4";
+import villarruel_ushuahiaVeterano from "../assets/videos/2025/villarruel_ushuahiaVeteranoVV.mp4";
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 const Discursos = () => {
   const discursos = {
