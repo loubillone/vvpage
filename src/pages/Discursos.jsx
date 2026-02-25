@@ -26,9 +26,7 @@ import villarruel_ninoPorNacer from "../assets/videos/2025/villarruel_ninoPorNac
 import villarruel_pandemia from "../assets/videos/2025/villarruel_pandemia.mp4";
 import villarruel_premiosLabor from "../assets/videos/2025/villarruel_premiosLabor.mp4";
 import villarruel_ushuahiaVeterano from "../assets/videos/2025/villarruel_ushuahiaVeterano.mp4";
-
 const SITE_URL = import.meta.env.VITE_SITE_URL;
-
 const Discursos = () => {
   const discursos = {
     2024: [
