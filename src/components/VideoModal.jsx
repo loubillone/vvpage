@@ -37,8 +37,10 @@ const VideoModal = ({ video, onClose }) => {
           <video
             ref={videoRef}
             controls
+            controlsList="nodownload"
             className="video-player"
             preload="metadata"
+            onContextMenu={(e) => e.preventDefault()}
           >
             <source src={video.videoUrl} type="video/mp4" />
             Tu navegador no soporta la reproducción de videos.
