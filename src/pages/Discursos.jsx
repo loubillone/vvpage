@@ -30,7 +30,6 @@ import villarruel_ushuahiaVeterano from "../assets/videos/2025/villarruel_ushuah
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 
 const Discursos = () => {
-  // Datos de videos - Videos desde assets/videos/2024/
   const discursos = {
     2024: [
       {
