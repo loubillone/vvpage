@@ -379,11 +379,11 @@
   }
 
   .video-fecha {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .video-categoria-badge {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 0.4rem 1rem;
   }
 }
@@ -436,15 +436,15 @@
   }
 
   .video-titulo {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   .video-fecha {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .video-categoria-badge {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.3rem 0.8rem;
   }
 
