@@ -196,6 +196,15 @@ const Discursos = () => {
         fecha: "2025-04",
         categoria: "Provincias",
       },
+      {
+        id: 11,
+        titulo: "Chubut - 90° aniversario de Río Mayo",
+        descripcion:
+          "Durante la ceremonia, Villarruel recordó con emoción su niñez en la localidad de Río Mayo.",
+        videoUrl: "https://www.youtube.com/watch?v=NQGe2Y87jGU",
+        fecha: "2025-08",
+        categoria: "Provincias",
+      },
     ],
   };
 
@@ -268,9 +277,8 @@ const Discursos = () => {
         />
         <link rel="canonical" href={`${SITE_URL}/discursos`} />
       </Helmet>
-      <h1 className="visually-hidden">
-        Discursos y videos de Victoria Villarruel
-      </h1>
+
+      <h1 className="visually-hidden">Discursos de Victoria Villarruel</h1>
 
       <Container className="discursos-container">
         <div className="discursos-header">
