@@ -277,9 +277,8 @@ const Discursos = () => {
         />
         <link rel="canonical" href={`${SITE_URL}/discursos`} />
       </Helmet>
-      <h1 className="visually-hidden">
-        Discursos y videos de Victoria Villarruel
-      </h1>
+
+      <h1 className="visually-hidden">Discursos de Victoria Villarruel</h1>
 
       <Container className="discursos-container">
         <div className="discursos-header">
