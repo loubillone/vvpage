@@ -93,13 +93,6 @@ const VideoThumbnail = ({ videoUrl, titulo }) => {
         alt={titulo}
         className="video-thumbnail"
         onError={() => setError(true)}
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-        }}
-        onDragStart={(e) => {
-          e.preventDefault();
-        }}
       />
     );
   }
@@ -130,22 +123,6 @@ const VideoThumbnail = ({ videoUrl, titulo }) => {
 };
 
 const VideoGrid = ({ videos, onVideoClick }) => {
-  const handleCardClick = (e, video) => {
-    // Prevenir cualquier comportamiento por defecto
-    e.preventDefault();
-    e.stopPropagation();
-    e.nativeEvent?.stopImmediatePropagation?.();
-    
-    // Prevenir navegación
-    if (e.target.tagName === 'A' || e.target.closest('a')) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    
-    // Abrir modal
-    onVideoClick(video);
-  };
-
   return (
     <Row className="video-grid">
       {videos.map((video) => (
@@ -159,20 +136,7 @@ const VideoGrid = ({ videos, onVideoClick }) => {
         >
           <div
             className="video-card"
-            onClick={(e) => handleCardClick(e, video)}
-            onMouseDown={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            onTouchStart={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            onTouchEnd={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              handleCardClick(e, video);
-            }}
+            onClick={() => onVideoClick(video)}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
@@ -182,60 +146,20 @@ const VideoGrid = ({ videos, onVideoClick }) => {
               }
             }}
           >
-            <div 
-              className="video-thumbnail-container"
-              onClick={(e) => handleCardClick(e, video)}
-            >
+            <div className="video-thumbnail-container">
               <VideoThumbnail 
                 key={`thumb-${video.id}-${video.videoUrl}`}
                 videoUrl={video.videoUrl} 
                 titulo={video.titulo} 
               />
-              <div 
-                className="video-overlay"
-                onClick={(e) => handleCardClick(e, video)}
-                onTouchStart={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
-                onTouchEnd={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  handleCardClick(e, video);
-                }}
-              >
-                <div 
-                  className="play-button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    e.nativeEvent?.stopImmediatePropagation?.();
-                    handleCardClick(e, video);
-                  }}
-                  onTouchStart={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                  }}
-                  onTouchEnd={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    handleCardClick(e, video);
-                  }}
-                >
+              <div className="video-overlay">
+                <div className="play-button">
                   <svg
                     width="48"
                     height="48"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                    }}
-                    onTouchStart={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                    }}
                   >
                     <path
                       d="M8 5V19L19 12L8 5Z"

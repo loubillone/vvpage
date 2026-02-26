@@ -113,13 +113,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  -webkit-tap-highlight-color: transparent; /* Eliminar highlight en móviles */
-  touch-action: manipulation; /* Mejorar respuesta táctil */
-  user-select: none; /* Prevenir selección de texto */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
 }
 
 .video-card:hover {
@@ -134,26 +127,12 @@
   aspect-ratio: 16 / 9; /* Formato YouTube */
   overflow: hidden;
   background-color: #000;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  pointer-events: auto;
-}
-
-.video-thumbnail-container * {
-  pointer-events: none;
-}
-
-.video-thumbnail-container .video-overlay {
-  pointer-events: auto;
 }
 
 .video-thumbnail {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  pointer-events: none; /* Prevenir clics en la imagen */
-  user-select: none; /* Prevenir selección */
-  -webkit-user-drag: none; /* Prevenir arrastre en iOS */
 }
 
 .video-thumbnail-placeholder {
@@ -182,24 +161,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1; /* Siempre visible en móviles */
+  opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 10; /* Asegurar que esté por encima */
-  pointer-events: auto; /* Asegurar que capture clics */
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation; /* Mejorar respuesta táctil */
 }
 
-/* En desktop, ocultar por defecto y mostrar en hover */
-@media (hover: hover) and (pointer: fine) {
-  .video-overlay {
-    opacity: 0;
-  }
-  
-  .video-card:hover .video-overlay {
-    opacity: 1;
-  }
+.video-card:hover .video-overlay {
+  opacity: 1;
 }
 
 .play-button {
@@ -215,18 +182,10 @@
     transform 0.3s ease,
     background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  pointer-events: auto !important; /* Asegurar que capture clics */
-  z-index: 20; /* Por encima de todo */
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-  position: relative; /* Para que z-index funcione */
 }
 
 .play-button svg {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-  pointer-events: none; /* El SVG no debe capturar clics, solo el contenedor */
-  user-select: none;
 }
 
 .video-card:hover .play-button {
