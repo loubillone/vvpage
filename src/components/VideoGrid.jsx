@@ -2,245 +2,150 @@ import React, { useState, useRef, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import "../css/discursos.css";
 
+// Función helper para extraer el ID de YouTube
+const getYouTubeId = (url) => {
+  if (!url) return null;
+  
+  // Si ya es un ID (sin URL), devolverlo directamente
+  if (!url.includes('youtube.com') && !url.includes('youtu.be') && !url.includes('http')) {
+    return url;
+  }
+  
+  // Diferentes formatos de URL de YouTube
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
+    /youtube\.com\/.*[?&]v=([^&\n?#]+)/,
+  ];
+  
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match && match[1]) {
+      return match[1];
+    }
+  }
+  
+  return null;
+};
+
+// Función para obtener thumbnail de YouTube
+const getYouTubeThumbnail = (videoUrl) => {
+  const videoId = getYouTubeId(videoUrl);
+  if (!videoId) return null;
+  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+};
+
 const VideoThumbnail = ({ videoUrl, titulo }) => {
   const [thumbnail, setThumbnail] = useState(null);
   const [loading, setLoading] = useState(true);
-  const videoRef = useRef(null);
-  const canvasRef = useRef(null);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    // Resetear estado cuando cambia el videoUrl
-    setThumbnail(null);
-    setLoading(true);
-
-    const video = videoRef.current;
-    const canvas = canvasRef.current;
-
-    if (!video || !canvas) {
+    if (!videoUrl) {
       setLoading(false);
+      setError(true);
       return;
     }
 
-    let isMounted = true;
-    let timeoutId = null;
-
-    const captureFrame = () => {
-      try {
-        if (!isMounted || !video) return;
-
-        // Verificar que el video tenga dimensiones válidas
-        const hasValidDimensions = 
-          video.videoWidth > 0 && 
-          video.videoHeight > 0 &&
-          !isNaN(video.videoWidth) &&
-          !isNaN(video.videoHeight);
-
-        if (video.readyState >= 2 && hasValidDimensions) {
-          const ctx = canvas.getContext("2d");
-          
-          // Asegurarse de que las dimensiones sean válidas
-          const width = Math.max(1, video.videoWidth);
-          const height = Math.max(1, video.videoHeight);
-          
-          canvas.width = width;
-          canvas.height = height;
-          
-          try {
-            ctx.drawImage(video, 0, 0, width, height);
-            const dataUrl = canvas.toDataURL("image/jpeg", 0.8);
-            
-            // Verificar que la data URL sea válida
-            if (dataUrl && dataUrl.length > 100 && isMounted) {
-              setThumbnail(dataUrl);
-              setLoading(false);
-            } else if (isMounted && attempts < maxAttempts) {
-              // Reintentar si la data URL no es válida
-              tryCaptureFrame();
-            } else if (isMounted) {
-              setLoading(false);
-            }
-          } catch (e) {
-            console.error("Error generando data URL:", e);
-            if (isMounted && attempts < maxAttempts) {
-              tryCaptureFrame();
-            } else if (isMounted) {
-              setLoading(false);
-            }
-          }
-        } else if (isMounted && attempts < maxAttempts) {
-          // Si aún no tiene dimensiones válidas, reintentar
-          tryCaptureFrame();
-        }
-      } catch (error) {
-        console.error("Error capturando thumbnail:", error);
-        if (isMounted && attempts < maxAttempts) {
-          tryCaptureFrame();
-        } else if (isMounted) {
-          setLoading(false);
-        }
-      }
-    };
-
-    let attempts = 0;
-    const maxAttempts = 3;
-
-    const tryCaptureFrame = () => {
-      attempts++;
-      if (isMounted && attempts <= maxAttempts) {
-        setTimeout(() => {
-          if (isMounted && video && video.readyState >= 2) {
-            captureFrame();
-          }
-        }, 100 * attempts);
-      }
-    };
-
-    const handleLoadedMetadata = () => {
-      if (!isMounted || !video) return;
-      try {
-        if (video.duration > 0 && video.duration !== Infinity) {
-          video.currentTime = Math.min(1, video.duration / 10);
-        } else {
-          video.currentTime = 1;
-        }
-      } catch (e) {
-        console.error("Error setting currentTime:", e);
-        // Intentar capturar de todas formas
-        tryCaptureFrame();
-      }
-    };
-
-    const handleSeeked = () => {
-      if (isMounted) {
-        captureFrame();
-      }
-    };
-
-    const handleLoadedData = () => {
-      if (isMounted) {
-        tryCaptureFrame();
-      }
-    };
-
-    const handleCanPlay = () => {
-      if (isMounted) {
-        tryCaptureFrame();
-      }
-    };
-
-    const handleTimeUpdate = () => {
-      // Si el video está en un frame válido, intentar capturar
-      if (isMounted && video && video.readyState >= 2 && !thumbnail) {
-        captureFrame();
-      }
-    };
-
-    const handleError = (e) => {
-      console.error("Error cargando video para thumbnail:", videoUrl, e);
-      if (isMounted) {
-        setLoading(false);
-      }
-    };
-
-    // Limpiar video anterior
-    video.pause();
-    video.src = "";
-    video.load();
-
-    // Configurar el nuevo video
-    video.muted = true;
-    video.playsInline = true;
-    video.preload = "metadata";
+    // Obtener thumbnail de YouTube
+    const youtubeThumbnail = getYouTubeThumbnail(videoUrl);
     
-    // Solo usar crossOrigin si es una URL externa
-    if (typeof videoUrl === "string" && (videoUrl.startsWith("http://") || videoUrl.startsWith("https://"))) {
-      video.crossOrigin = "anonymous";
-    }
-
-    // Agregar event listeners
-    video.addEventListener("loadedmetadata", handleLoadedMetadata);
-    video.addEventListener("seeked", handleSeeked);
-    video.addEventListener("loadeddata", handleLoadedData);
-    video.addEventListener("canplay", handleCanPlay);
-    video.addEventListener("timeupdate", handleTimeUpdate);
-    video.addEventListener("error", handleError);
-
-    // Timeout de seguridad
-    timeoutId = setTimeout(() => {
-      if (isMounted && loading) {
-        console.warn("Timeout cargando thumbnail para:", videoUrl);
+    if (youtubeThumbnail) {
+      setLoading(true);
+      setError(false);
+      
+      // Pre-cargar la imagen para verificar que existe
+      const img = new Image();
+      
+      img.onload = () => {
+        setThumbnail(youtubeThumbnail);
         setLoading(false);
-      }
-    }, 8000);
-
-    // Cargar el video
-    try {
-      video.src = videoUrl;
-      video.load();
-    } catch (error) {
-      console.error("Error al cargar video:", error);
-      if (isMounted) {
-        setLoading(false);
-      }
+      };
+      
+      img.onerror = () => {
+        // Si maxresdefault falla, intentar con hqdefault
+        const fallbackThumbnail = youtubeThumbnail.replace('maxresdefault', 'hqdefault');
+        const fallbackImg = new Image();
+        
+        fallbackImg.onload = () => {
+          setThumbnail(fallbackThumbnail);
+          setLoading(false);
+        };
+        
+        fallbackImg.onerror = () => {
+          setError(true);
+          setLoading(false);
+        };
+        
+        fallbackImg.src = fallbackThumbnail;
+      };
+      
+      img.src = youtubeThumbnail;
+    } else {
+      setError(true);
+      setLoading(false);
     }
-
-    return () => {
-      isMounted = false;
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-      if (video) {
-        video.pause();
-        video.src = "";
-        video.removeEventListener("loadedmetadata", handleLoadedMetadata);
-        video.removeEventListener("seeked", handleSeeked);
-        video.removeEventListener("loadeddata", handleLoadedData);
-        video.removeEventListener("canplay", handleCanPlay);
-        video.removeEventListener("timeupdate", handleTimeUpdate);
-        video.removeEventListener("error", handleError);
-      }
-    };
   }, [videoUrl]);
 
-  return (
-    <>
-      <video
-        ref={videoRef}
-        preload="metadata"
-        style={{ display: "none" }}
-        muted
-        playsInline
+  if (thumbnail && !error) {
+    return (
+      <img
+        src={thumbnail}
+        alt={titulo}
+        className="video-thumbnail"
+        onError={() => setError(true)}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+        }}
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
       />
-      <canvas ref={canvasRef} style={{ display: "none" }} />
-      {thumbnail ? (
-        <img
-          src={thumbnail}
-          alt={titulo}
-          className="video-thumbnail"
-          onError={() => setThumbnail(null)}
-        />
-      ) : (
-        <div className="video-thumbnail-placeholder">
-          <svg
-            width="64"
-            height="64"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8 5V19L19 12L8 5Z"
-              fill="currentColor"
-              opacity="0.6"
-            />
-          </svg>
+    );
+  }
+
+  return (
+    <div className="video-thumbnail-placeholder">
+      {loading ? (
+        <div className="spinner-border text-secondary" role="status">
+          <span className="visually-hidden">Cargando...</span>
         </div>
+      ) : (
+        <svg
+          width="64"
+          height="64"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 5V19L19 12L8 5Z"
+            fill="currentColor"
+            opacity="0.6"
+          />
+        </svg>
       )}
-    </>
+    </div>
   );
 };
 
 const VideoGrid = ({ videos, onVideoClick }) => {
+  const handleCardClick = (e, video) => {
+    // Prevenir cualquier comportamiento por defecto
+    e.preventDefault();
+    e.stopPropagation();
+    e.nativeEvent?.stopImmediatePropagation?.();
+    
+    // Prevenir navegación
+    if (e.target.tagName === 'A' || e.target.closest('a')) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    
+    // Abrir modal
+    onVideoClick(video);
+  };
+
   return (
     <Row className="video-grid">
       {videos.map((video) => (
@@ -254,7 +159,20 @@ const VideoGrid = ({ videos, onVideoClick }) => {
         >
           <div
             className="video-card"
-            onClick={() => onVideoClick(video)}
+            onClick={(e) => handleCardClick(e, video)}
+            onMouseDown={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            onTouchStart={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            onTouchEnd={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleCardClick(e, video);
+            }}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
@@ -264,28 +182,60 @@ const VideoGrid = ({ videos, onVideoClick }) => {
               }
             }}
           >
-            <div className="video-thumbnail-container">
-              {video.thumbnail ? (
-                <img
-                  src={video.thumbnail}
-                  alt={video.titulo}
-                  className="video-thumbnail"
-                />
-              ) : (
-                <VideoThumbnail 
-                  key={`thumb-${video.id}-${video.videoUrl}`}
-                  videoUrl={video.videoUrl} 
-                  titulo={video.titulo} 
-                />
-              )}
-              <div className="video-overlay">
-                <div className="play-button">
+            <div 
+              className="video-thumbnail-container"
+              onClick={(e) => handleCardClick(e, video)}
+            >
+              <VideoThumbnail 
+                key={`thumb-${video.id}-${video.videoUrl}`}
+                videoUrl={video.videoUrl} 
+                titulo={video.titulo} 
+              />
+              <div 
+                className="video-overlay"
+                onClick={(e) => handleCardClick(e, video)}
+                onTouchStart={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                }}
+                onTouchEnd={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  handleCardClick(e, video);
+                }}
+              >
+                <div 
+                  className="play-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.nativeEvent?.stopImmediatePropagation?.();
+                    handleCardClick(e, video);
+                  }}
+                  onTouchStart={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                  }}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleCardClick(e, video);
+                  }}
+                >
                   <svg
                     width="48"
                     height="48"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                    }}
+                    onTouchStart={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                    }}
                   >
                     <path
                       d="M8 5V19L19 12L8 5Z"
