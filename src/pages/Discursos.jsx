@@ -100,9 +100,46 @@ const Discursos = () => {
           "Yapeyú - 246° aniversario del natalicio del General José de San Martín",
         descripcion:
           "Celebración del 246° aniversario del natalicio del General José de San Martín en Yapeyú, destacando su papel en la historia argentina.",
-        videoUrl: "https://www.youtube.com/watch?v=ivEwhb_O6lU",
+        videoUrl: "https://youtu.be/y7lllam9TjE",
         fecha: "2024-02",
         categoria: "Provincias",
+      },
+      {
+        id: 8,
+        titulo: "1° de Mayo - Almuerzo día del trabajador en UTHGRA",
+        descripcion:
+          "Victoria participó del almuerzo por el día del trabajador organizado por el sindicato UTHGRA.",
+        videoUrl: "https://youtu.be/jJc920ysjaQ",
+        fecha: "2024-05",
+        categoria: "Varios",
+      },
+      {
+        id: 9,
+        titulo:
+          "Mendoza - Almuerzo en Bodegas de Argentina por Fiesta de la Vendimia",
+        descripcion:
+          "Villarruel participó del almuerzo en Bodegas de Argentina, una de las actividades más importantes de los Festejos por la Fiesta de la Vendimia 2024.",
+        videoUrl: "https://youtu.be/LRnlUVxvwi4",
+        fecha: "2024-03",
+        categoria: "Provincias",
+      },
+      {
+        id: 10,
+        titulo: "Visita al Colegio Militar de la Nación",
+        descripcion:
+          "Villarruel visitó el Colegio Militar de la Nación, el Jefe del Ejército Grl Presti, el Director del CMN Cnl My Liberatori y su plana mayor la invitaron a conocerlo y almorzar con los cadetes.",
+        videoUrl: "https://youtu.be/es4bP2On9qM",
+        fecha: "2024-06",
+        categoria: "Varios",
+      },
+      {
+        id: 11,
+        titulo: "Conferencia en la UCA",
+        descripcion:
+          "Villarruel brindó una conferencia el jueves 9 de mayo en el Campus Puerto Madero en el marco de la Diplomatura en Liderazgo Humanista, dirigida por el Mg. Emilio Pintos.",
+        videoUrl: "https://youtu.be/sibAQ4IUnVU?si=tztuA5D7JglgBPkY",
+        fecha: "2024-05",
+        categoria: "Varios",
       },
     ],
     2025: [
@@ -120,7 +157,7 @@ const Discursos = () => {
         titulo: "Corrientes - Homenaje a Cabral",
         descripcion:
           "Ceremonia de traslado y homenaje a los restos del sargento Juan Bautista Cabral, héroe del Combate de San Lorenzo.",
-        videoUrl: "https://www.youtube.com/watch?v=i5_KQRjIooo",
+        videoUrl: "https://youtu.be/lESpMl-vtEQ",
         fecha: "2025-08",
         categoria: "Provincias",
       },
@@ -175,7 +212,7 @@ const Discursos = () => {
         descripcion:
           "Mensaje institucional en el que la vicepresidente reflexiona sobre el impacto social, económico y humano de la pandemia de COVID-19.",
         videoUrl: "https://www.youtube.com/watch?v=kwQtl0CCZBY",
-        fecha: "2025-11",
+        fecha: "2025-12",
         categoria: "Senado",
       },
       {
@@ -201,8 +238,29 @@ const Discursos = () => {
         titulo: "Chubut - 90° aniversario de Río Mayo",
         descripcion:
           "Durante la ceremonia, Villarruel recordó con emoción su niñez en la localidad de Río Mayo.",
-        videoUrl: "https://www.youtube.com/watch?v=NQGe2Y87jGU",
+        videoUrl: "https://youtu.be/B_THMuajGK0",
         fecha: "2025-08",
+        categoria: "Provincias",
+      },
+      {
+        id: 12,
+        titulo: "Disertación en la USAL",
+        descripcion:
+          "Villarruel brindó una disertación titulada “La política como servicio al bien común desde la vivencia personal” ante estudiantes, docentes y autoridades.",
+        videoUrl: "https://youtu.be/AV6PgnsRbTY",
+        fecha: "2025-09",
+        categoria: "Varios",
+      },
+    ],
+    2026: [
+      {
+        id: 1,
+        titulo:
+          "2 De Abril - Día del Veterano y de los Caídos en la Guerra de Malvinas",
+        descripcion:
+          "Victoria Villarruel participó en el acto conmemorativo del 2 de abril, Día del Veterano y de los Caídos en la Guerra de Malvinas, realizado en Chivilcoy, Provincia de Buenos Aires.",
+        videoUrl: "https://youtu.be/LYZkWdFRGg0",
+        fecha: "2026-04",
         categoria: "Provincias",
       },
     ],
@@ -218,7 +276,10 @@ const Discursos = () => {
   // Combinar todos los videos y ordenar por año (más reciente primero)
   const todosLosVideos = useMemo(() => {
     const videos = [];
-    // Primero 2025, luego 2024
+    // Primero 2025, luego 2024, luego 2026
+    if (discursos[2026]) {
+      videos.push(...discursos[2026].map((v) => ({ ...v, año: 2026 })));
+    }
     if (discursos[2025]) {
       videos.push(...discursos[2025].map((v) => ({ ...v, año: 2025 })));
     }
