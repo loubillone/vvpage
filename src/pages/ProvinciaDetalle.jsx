@@ -36,6 +36,11 @@ import sanpedroVVTres from "../assets/img/mapaArg/buenos-aires/sanpedroVV3.webp"
 import sanpedroVVCuatro from "../assets/img/mapaArg/buenos-aires/sanpedroVV4.webp";
 import sanpedroVVCinco from "../assets/img/mapaArg/buenos-aires/sanpedroVV5.webp";
 import sanpedroVVSeis from "../assets/img/mapaArg/buenos-aires/sanpedroVV6.webp";
+import pilarVV from "../assets/img/mapaArg/buenos-aires/vvPilar.webp";
+import pilarVVDos from "../assets/img/mapaArg/buenos-aires/vvPilar2.webp";
+import pilarVVTres from "../assets/img/mapaArg/buenos-aires/vvPilar3.webp";
+import pilarVVCuatro from "../assets/img/mapaArg/buenos-aires/vvPilar4.webp";
+import pilarVVCinco from "../assets/img/mapaArg/buenos-aires/vvPilar5.webp";
 import cordobaVV from "../assets/img/mapaArg/cordoba/corVV.webp";
 import cordobaVVDos from "../assets/img/mapaArg/cordoba/corVV2.webp";
 import cordobaVVTres from "../assets/img/mapaArg/cordoba/corVV3.webp";
@@ -330,6 +335,92 @@ const ProvinciaDetalle = () => {
         },
 
         {
+          fecha: "Junio de 2024",
+          descripcion: (
+            <>
+              <p>
+                Durante una recorrida por el partido de{" "}
+                <span className="vv-estilo-detalle">Pilar</span>, en la
+                provincia de{" "}
+                <span className="vv-estilo-detalle">Buenos Aires</span>, la
+                vicepresidente Victoria Villarruel se acercó al barrio{" "}
+                <span className="vv-estilo-detalle">Sans Soucí</span> para{" "}
+                <span className="vv-estilo-detalle">
+                  escuchar de primera mano las problemáticas de los vecinos
+                </span>
+                . <br />
+                <br />
+                La actividad contó con la participación de la concejal{" "}
+                <span className="vv-estilo-detalle">Analía Leguizamón</span>, el
+                referente local{" "}
+                <span className="vv-estilo-detalle">Jorge Gabriel Juárez</span>{" "}
+                y <span className="vv-estilo-detalle">Claudia Rucci</span>,
+                directora de Derechos Humanos, en un encuentro centrado en la
+                realidad cotidiana del distrito.
+              </p>
+
+              <br />
+
+              <p>
+                En diálogo con los vecinos, Villarruel reafirmó su compromiso
+                con una agenda basada en la cercanía y la búsqueda de soluciones
+                concretas:
+              </p>
+
+              <blockquote className="cita">
+                "Estamos seguros de que este es el camino y estamos trabajando
+                para que cada paso sea el correcto, cuenten conmigo en todo
+                momento y háganme saber todo para encontrar las verdaderas
+                soluciones a lo que está pasando"
+              </blockquote>
+
+              <br />
+
+              <p>
+                Durante la jornada, los vecinos pudieron expresar sus
+                preocupaciones en torno a{" "}
+                <span className="vv-estilo-detalle">
+                  la situación social, el deterioro del entorno y la falta de
+                  respuestas
+                </span>
+                , en un intercambio directo que puso en evidencia la necesidad
+                de{" "}
+                <span className="vv-estilo-detalle">
+                  mayor presencia y compromiso en el territorio
+                </span>{" "}
+                .
+              </p>
+
+              <br />
+
+              <p>
+                En ese marco, desde el ámbito local destacaron la importancia de
+                que las autoridades nacionales{" "}
+                <span className="vv-estilo-detalle">
+                  se involucren activamente en la realidad de los barrios
+                </span>
+                , valorando la instancia de escucha y el contacto directo con la
+                comunidad. <br />
+                <br /> La recorrida dejó como eje central la idea de que{" "}
+                <span className="vv-estilo-detalle">
+                  el camino para salir adelante está en el trabajo, la cercanía
+                  y el compromiso con los vecinos
+                </span>
+                .
+              </p>
+            </>
+          ),
+          imagenes: [
+            pilarVV,
+            pilarVVDos,
+            pilarVVTres,
+            pilarVVCuatro,
+            pilarVVCinco,
+          ],
+          lugar: "Pilar",
+        },
+
+        {
           fecha: "Mayo de 2025",
           descripcion: (
             <>
@@ -489,6 +580,7 @@ const ProvinciaDetalle = () => {
           ],
           lugar: "Saladillo",
         },
+
         {
           fecha: "Septiembre de 2025",
           descripcion: (
