@@ -41,6 +41,27 @@ import pilarVVDos from "../assets/img/mapaArg/buenos-aires/vvPilar2.webp";
 import pilarVVTres from "../assets/img/mapaArg/buenos-aires/vvPilar3.webp";
 import pilarVVCuatro from "../assets/img/mapaArg/buenos-aires/vvPilar4.webp";
 import pilarVVCinco from "../assets/img/mapaArg/buenos-aires/vvPilar5.webp";
+import chivilcoyVVVeteranos from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv.webp";
+import chivilcoyVVVeteranosDos from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv2.webp";
+import chivilcoyVVVeteranosTres from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv3.webp";
+import chivilcoyVVVeteranosCuatro from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv4.webp";
+import chivilcoyVVVeteranosCinco from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv5.webp";
+import chivilcoyVVVeteranosSeis from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv6.webp";
+import chivilcoyVVVeteranosSiete from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv7.webp";
+import chivilcoyVVVeteranosOcho from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv8.webp";
+import chivilcoyVVVeteranosNueve from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv9.webp";
+import chivilcoyVVVeteranosDiez from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv10.webp";
+import chivilcoyVVVeteranosOnce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv11.webp";
+import chivilcoyVVVeteranosDoce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv12.webp";
+import chivilcoyVVVeteranosTrece from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv13.webp";
+import chivilcoyVVVeteranosCatorce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv14.webp";
+import chivilcoyVVVeteranosQuince from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv15.webp";
+import chivilcoyVVVeteranosDieciseis from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv16.webp";
+import chivilcoyVVVeteranosDiecisiete from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv17.webp";
+import chivilcoyVVVeteranosDieciocho from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv18.webp";
+import chivilcoyVVVeteranosDiecinueve from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv19.webp";
+import chivilcoyVVVeteranosVeinte from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv20.webp";
+import chivilcoyVVVeteranosVeintiuno from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv21.webp";
 import cordobaVV from "../assets/img/mapaArg/cordoba/corVV.webp";
 import cordobaVVDos from "../assets/img/mapaArg/cordoba/corVV2.webp";
 import cordobaVVTres from "../assets/img/mapaArg/cordoba/corVV3.webp";
@@ -622,6 +643,109 @@ const ProvinciaDetalle = () => {
             sanpedroVVSeis,
           ],
           lugar: "San Pedro",
+        },
+
+        {
+          fecha: "Abril de 2026",
+          descripcion: (
+            <>
+              <p>
+                En el marco del{" "}
+                <span className="vv-estilo-detalle">
+                  Día del Veterano y de los Caídos en la Guerra de Malvinas
+                </span>
+                , la vicepresidente Victoria Villarruel participó de un acto
+                conmemorativo en la ciudad de{" "}
+                <span className="vv-estilo-detalle">Chivilcoy</span>, provincia
+                de <span className="vv-estilo-detalle">Buenos Aires</span>,
+                donde rindió homenaje a quienes defendieron la soberanía
+                nacional. <br />
+                <br />
+                Durante la ceremonia realizada en la{" "}
+                <span className="vv-estilo-detalle">Plaza 25 de Mayo</span>,
+                destacó la importancia de{" "}
+                <span className="vv-estilo-detalle">
+                  preservar la causa Malvinas por fuera de las disputas
+                  partidarias
+                </span>
+                , subrayando que se trata de una causa que{" "}
+                <span className="vv-estilo-detalle">
+                  trasciende intereses personales y une a los argentinos
+                </span>
+                .
+              </p>
+
+              <br />
+
+              <p>
+                En ese sentido, remarcó el valor histórico y simbólico del
+                conflicto, definiéndolo como un acto de{" "}
+                <span className="vv-estilo-detalle">
+                  defensa de la patria frente al invasor
+                </span>{" "}
+                y como un punto de encuentro para la identidad nacional.
+                Asimismo, puso el foco en la necesidad de{" "}
+                <span className="vv-estilo-detalle">
+                  sostener la memoria y el reconocimiento a los veteranos
+                </span>
+                , muchas veces postergados tras el conflicto.
+              </p>
+
+              <br />
+
+              <p>
+                Durante su discurso, también hizo referencia al proceso
+                posterior a la guerra, señalando que existió una{" "}
+                <span className="vv-estilo-detalle">
+                  desmalvinización que invisibilizó a los combatientes
+                </span>{" "}
+                y debilitó el reconocimiento hacia su entrega, además de
+                impactar en el rol de las Fuerzas Armadas.
+              </p>
+
+              <br />
+
+              <blockquote className="cita">
+                "Malvinas no es una excusa para que se diriman internas de un
+                partido político"
+              </blockquote>
+
+              <br />
+
+              <p>
+                De esta manera, Villarruel reafirmó una postura centrada en la{" "}
+                <span className="vv-estilo-detalle">
+                  soberanía, la memoria y la unidad nacional
+                </span>
+                , colocando a la causa Malvinas como un eje permanente de la
+                identidad argentina.
+              </p>
+            </>
+          ),
+          imagenes: [
+            chivilcoyVVVeteranos,
+            chivilcoyVVVeteranosDos,
+            chivilcoyVVVeteranosTres,
+            chivilcoyVVVeteranosCuatro,
+            chivilcoyVVVeteranosCinco,
+            chivilcoyVVVeteranosSeis,
+            chivilcoyVVVeteranosSiete,
+            chivilcoyVVVeteranosOcho,
+            chivilcoyVVVeteranosNueve,
+            chivilcoyVVVeteranosDiez,
+            chivilcoyVVVeteranosOnce,
+            chivilcoyVVVeteranosDoce,
+            chivilcoyVVVeteranosTrece,
+            chivilcoyVVVeteranosCatorce,
+            chivilcoyVVVeteranosQuince,
+            chivilcoyVVVeteranosDieciseis,
+            chivilcoyVVVeteranosDiecisiete,
+            chivilcoyVVVeteranosDieciocho,
+            chivilcoyVVVeteranosDiecinueve,
+            chivilcoyVVVeteranosVeinte,
+            chivilcoyVVVeteranosVeintiuno,
+          ],
+          lugar: "Chivilcoy",
         },
       ],
     },
