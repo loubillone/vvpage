@@ -644,7 +644,6 @@ const ProvinciaDetalle = () => {
           ],
           lugar: "San Pedro",
         },
-
         {
           fecha: "Abril de 2026",
           descripcion: (
