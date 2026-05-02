@@ -36,6 +36,32 @@ import sanpedroVVTres from "../assets/img/mapaArg/buenos-aires/sanpedroVV3.webp"
 import sanpedroVVCuatro from "../assets/img/mapaArg/buenos-aires/sanpedroVV4.webp";
 import sanpedroVVCinco from "../assets/img/mapaArg/buenos-aires/sanpedroVV5.webp";
 import sanpedroVVSeis from "../assets/img/mapaArg/buenos-aires/sanpedroVV6.webp";
+import pilarVV from "../assets/img/mapaArg/buenos-aires/vvPilar.webp";
+import pilarVVDos from "../assets/img/mapaArg/buenos-aires/vvPilar2.webp";
+import pilarVVTres from "../assets/img/mapaArg/buenos-aires/vvPilar3.webp";
+import pilarVVCuatro from "../assets/img/mapaArg/buenos-aires/vvPilar4.webp";
+import pilarVVCinco from "../assets/img/mapaArg/buenos-aires/vvPilar5.webp";
+import chivilcoyVVVeteranos from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv.webp";
+import chivilcoyVVVeteranosDos from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv2.webp";
+import chivilcoyVVVeteranosTres from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv3.webp";
+import chivilcoyVVVeteranosCuatro from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv4.webp";
+import chivilcoyVVVeteranosCinco from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv5.webp";
+import chivilcoyVVVeteranosSeis from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv6.webp";
+import chivilcoyVVVeteranosSiete from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv7.webp";
+import chivilcoyVVVeteranosOcho from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv8.webp";
+import chivilcoyVVVeteranosNueve from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv9.webp";
+import chivilcoyVVVeteranosDiez from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv10.webp";
+import chivilcoyVVVeteranosOnce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv11.webp";
+import chivilcoyVVVeteranosDoce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv12.webp";
+import chivilcoyVVVeteranosTrece from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv13.webp";
+import chivilcoyVVVeteranosCatorce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv14.webp";
+import chivilcoyVVVeteranosQuince from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv15.webp";
+import chivilcoyVVVeteranosDieciseis from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv16.webp";
+import chivilcoyVVVeteranosDiecisiete from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv17.webp";
+import chivilcoyVVVeteranosDieciocho from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv18.webp";
+import chivilcoyVVVeteranosDiecinueve from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv19.webp";
+import chivilcoyVVVeteranosVeinte from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv20.webp";
+import chivilcoyVVVeteranosVeintiuno from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv21.webp";
 import cordobaVV from "../assets/img/mapaArg/cordoba/corVV.webp";
 import cordobaVVDos from "../assets/img/mapaArg/cordoba/corVV2.webp";
 import cordobaVVTres from "../assets/img/mapaArg/cordoba/corVV3.webp";
@@ -64,6 +90,26 @@ import mendozaVVTres from "../assets/img/mapaArg/mendoza/mendozaVV3.webp";
 import mendozaVVCuatro from "../assets/img/mapaArg/mendoza/mendozaVV4.webp";
 import mendozaVVCinco from "../assets/img/mapaArg/mendoza/mendozaVV5.webp";
 import mendozaVVSeis from "../assets/img/mapaArg/mendoza/mendozaVV6.webp";
+import mendozaVV2VV from "../assets/img/mapaArg/mendoza/vv-mendoza-coviar.webp";
+import mendozaVV2VVDos from "../assets/img/mapaArg/mendoza/vv-mendoza-coviar2.webp";
+import mendozaVV2VVTres from "../assets/img/mapaArg/mendoza/vv-mendoza-coviar3.webp";
+import mendozaVV2VVCuatro from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia.webp";
+import mendozaVV2VVCinco from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia2.webp";
+import mendozaVV2VVSeis from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia3.webp";
+import mendozaVV2VVSiete from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia4.webp";
+import mendozaVV2VVOcho from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia5.webp";
+import mendozaVV2VVNueve from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia6.webp";
+import mendozaVV2VVDiez from "../assets/img/mapaArg/mendoza/vv-mendoza-prod.webp";
+import mendozaVV2VVOnce from "../assets/img/mapaArg/mendoza/vv-mendoza-prod2.webp";
+import mendozaVV2VVDoce from "../assets/img/mapaArg/mendoza/vv-mendoza-prod3.webp";
+import mendozaVV2VVTrece from "../assets/img/mapaArg/mendoza/vv-mendoza-prod4.webp";
+import mendozaVV2VVCatorce from "../assets/img/mapaArg/mendoza/vv-mendoza-prod5.webp";
+import mendozaVV2VVQuince from "../assets/img/mapaArg/mendoza/vv-mendoza-prod6.webp";
+import mendozaVV2VVDieciseis from "../assets/img/mapaArg/mendoza/vv-mendoza-prod7.webp";
+import mendozaVV2VVDiecisiete from "../assets/img/mapaArg/mendoza/vv-mendoza-prod8.webp";
+import mendozaVV2VVDieciocho from "../assets/img/mapaArg/mendoza/vv-mendoza-prod9.webp";
+import mendozaVV2VVDiecinueve from "../assets/img/mapaArg/mendoza/vv-mendoza-prod10.webp";
+import mendozaVV2VVVeinte from "../assets/img/mapaArg/mendoza/vv-mendoza-prod11.webp";
 import sanLuisVV from "../assets/img/mapaArg/san-luis/sanluisVV.webp";
 import sanLuisVVDos from "../assets/img/mapaArg/san-luis/sanluisVV2.webp";
 import sanLuisVVTres from "../assets/img/mapaArg/san-luis/sanluisVV3.webp";
@@ -310,6 +356,92 @@ const ProvinciaDetalle = () => {
         },
 
         {
+          fecha: "Junio de 2024",
+          descripcion: (
+            <>
+              <p>
+                Durante una recorrida por el partido de{" "}
+                <span className="vv-estilo-detalle">Pilar</span>, en la
+                provincia de{" "}
+                <span className="vv-estilo-detalle">Buenos Aires</span>, la
+                vicepresidente Victoria Villarruel se acercó al barrio{" "}
+                <span className="vv-estilo-detalle">Sans Soucí</span> para{" "}
+                <span className="vv-estilo-detalle">
+                  escuchar de primera mano las problemáticas de los vecinos
+                </span>
+                . <br />
+                <br />
+                La actividad contó con la participación de la concejal{" "}
+                <span className="vv-estilo-detalle">Analía Leguizamón</span>, el
+                referente local{" "}
+                <span className="vv-estilo-detalle">Jorge Gabriel Juárez</span>{" "}
+                y <span className="vv-estilo-detalle">Claudia Rucci</span>,
+                directora de Derechos Humanos, en un encuentro centrado en la
+                realidad cotidiana del distrito.
+              </p>
+
+              <br />
+
+              <p>
+                En diálogo con los vecinos, Villarruel reafirmó su compromiso
+                con una agenda basada en la cercanía y la búsqueda de soluciones
+                concretas:
+              </p>
+
+              <blockquote className="cita">
+                "Estamos seguros de que este es el camino y estamos trabajando
+                para que cada paso sea el correcto, cuenten conmigo en todo
+                momento y háganme saber todo para encontrar las verdaderas
+                soluciones a lo que está pasando"
+              </blockquote>
+
+              <br />
+
+              <p>
+                Durante la jornada, los vecinos pudieron expresar sus
+                preocupaciones en torno a{" "}
+                <span className="vv-estilo-detalle">
+                  la situación social, el deterioro del entorno y la falta de
+                  respuestas
+                </span>
+                , en un intercambio directo que puso en evidencia la necesidad
+                de{" "}
+                <span className="vv-estilo-detalle">
+                  mayor presencia y compromiso en el territorio
+                </span>{" "}
+                .
+              </p>
+
+              <br />
+
+              <p>
+                En ese marco, desde el ámbito local destacaron la importancia de
+                que las autoridades nacionales{" "}
+                <span className="vv-estilo-detalle">
+                  se involucren activamente en la realidad de los barrios
+                </span>
+                , valorando la instancia de escucha y el contacto directo con la
+                comunidad. <br />
+                <br /> La recorrida dejó como eje central la idea de que{" "}
+                <span className="vv-estilo-detalle">
+                  el camino para salir adelante está en el trabajo, la cercanía
+                  y el compromiso con los vecinos
+                </span>
+                .
+              </p>
+            </>
+          ),
+          imagenes: [
+            pilarVV,
+            pilarVVDos,
+            pilarVVTres,
+            pilarVVCuatro,
+            pilarVVCinco,
+          ],
+          lugar: "Pilar",
+        },
+
+        {
           fecha: "Mayo de 2025",
           descripcion: (
             <>
@@ -469,6 +601,7 @@ const ProvinciaDetalle = () => {
           ],
           lugar: "Saladillo",
         },
+
         {
           fecha: "Septiembre de 2025",
           descripcion: (
@@ -510,6 +643,108 @@ const ProvinciaDetalle = () => {
             sanpedroVVSeis,
           ],
           lugar: "San Pedro",
+        },
+        {
+          fecha: "Abril de 2026",
+          descripcion: (
+            <>
+              <p>
+                En el marco del{" "}
+                <span className="vv-estilo-detalle">
+                  Día del Veterano y de los Caídos en la Guerra de Malvinas
+                </span>
+                , la vicepresidente Victoria Villarruel participó de un acto
+                conmemorativo en la ciudad de{" "}
+                <span className="vv-estilo-detalle">Chivilcoy</span>, provincia
+                de <span className="vv-estilo-detalle">Buenos Aires</span>,
+                donde rindió homenaje a quienes defendieron la soberanía
+                nacional. <br />
+                <br />
+                Durante la ceremonia realizada en la{" "}
+                <span className="vv-estilo-detalle">Plaza 25 de Mayo</span>,
+                destacó la importancia de{" "}
+                <span className="vv-estilo-detalle">
+                  preservar la causa Malvinas por fuera de las disputas
+                  partidarias
+                </span>
+                , subrayando que se trata de una causa que{" "}
+                <span className="vv-estilo-detalle">
+                  trasciende intereses personales y une a los argentinos
+                </span>
+                .
+              </p>
+
+              <br />
+
+              <p>
+                En ese sentido, remarcó el valor histórico y simbólico del
+                conflicto, definiéndolo como un acto de{" "}
+                <span className="vv-estilo-detalle">
+                  defensa de la patria frente al invasor
+                </span>{" "}
+                y como un punto de encuentro para la identidad nacional.
+                Asimismo, puso el foco en la necesidad de{" "}
+                <span className="vv-estilo-detalle">
+                  sostener la memoria y el reconocimiento a los veteranos
+                </span>
+                , muchas veces postergados tras el conflicto.
+              </p>
+
+              <br />
+
+              <p>
+                Durante su discurso, también hizo referencia al proceso
+                posterior a la guerra, señalando que existió una{" "}
+                <span className="vv-estilo-detalle">
+                  desmalvinización que invisibilizó a los combatientes
+                </span>{" "}
+                y debilitó el reconocimiento hacia su entrega, además de
+                impactar en el rol de las Fuerzas Armadas.
+              </p>
+
+              <br />
+
+              <blockquote className="cita">
+                "Malvinas no es una excusa para que se diriman internas de un
+                partido político"
+              </blockquote>
+
+              <br />
+
+              <p>
+                De esta manera, Villarruel reafirmó una postura centrada en la{" "}
+                <span className="vv-estilo-detalle">
+                  soberanía, la memoria y la unidad nacional
+                </span>
+                , colocando a la causa Malvinas como un eje permanente de la
+                identidad argentina.
+              </p>
+            </>
+          ),
+          imagenes: [
+            chivilcoyVVVeteranos,
+            chivilcoyVVVeteranosDos,
+            chivilcoyVVVeteranosTres,
+            chivilcoyVVVeteranosCuatro,
+            chivilcoyVVVeteranosCinco,
+            chivilcoyVVVeteranosSeis,
+            chivilcoyVVVeteranosSiete,
+            chivilcoyVVVeteranosOcho,
+            chivilcoyVVVeteranosNueve,
+            chivilcoyVVVeteranosDiez,
+            chivilcoyVVVeteranosOnce,
+            chivilcoyVVVeteranosDoce,
+            chivilcoyVVVeteranosTrece,
+            chivilcoyVVVeteranosCatorce,
+            chivilcoyVVVeteranosQuince,
+            chivilcoyVVVeteranosDieciseis,
+            chivilcoyVVVeteranosDiecisiete,
+            chivilcoyVVVeteranosDieciocho,
+            chivilcoyVVVeteranosDiecinueve,
+            chivilcoyVVVeteranosVeinte,
+            chivilcoyVVVeteranosVeintiuno,
+          ],
+          lugar: "Chivilcoy",
         },
       ],
     },
@@ -1178,6 +1413,224 @@ const ProvinciaDetalle = () => {
             mendozaVVSeis,
           ],
           lugar: "Ciudad de Mendoza",
+        },
+        {
+          fecha: "Marzo de 2026",
+          lugar: "Mendoza",
+          actividades: [
+            {
+              titulo: "Desayuno COVIAR",
+              descripcion: (
+                <>
+                  <p>
+                    La vicepresidente Victoria Villarruel participó del{" "}
+                    <span className="vv-estilo-detalle">
+                      tradicional desayuno de la Corporación Vitivinícola
+                      Argentina (COVIAR)
+                    </span>{" "}
+                    en la provincia de{" "}
+                    <span className="vv-estilo-detalle">Mendoza</span>, en el
+                    marco de la{" "}
+                    <span className="vv-estilo-detalle">
+                      Fiesta Nacional de la Vendimia
+                    </span>
+                    , uno de los eventos más representativos del país y del
+                    trabajo productivo regional. <br />
+                    <br />
+                    Durante su llegada, la titular del Senado evitó profundizar
+                    en tensiones políticas para{" "}
+                    <span className="vv-estilo-detalle">
+                      priorizar el protagonismo de la celebración mendocina
+                    </span>
+                    , destacando el valor histórico y económico de la actividad
+                    vitivinícola. En ese sentido, expresó:
+                  </p>
+
+                  <blockquote className="cita">
+                    "Entiendo que es un momento muy importante para los
+                    mendocinos y no me interesa tampoco desviar la atención de
+                    eso porque son 90 años trabajando para crear una marca país,
+                    un producto del cual dependen muchos mendocinos"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    En la misma línea, Villarruel remarcó la necesidad de{" "}
+                    <span className="vv-estilo-detalle">
+                      poner en el centro la producción y el trabajo
+                    </span>{" "}
+                    como pilares del desarrollo regional, subrayando:
+                  </p>
+
+                  <blockquote className="cita">
+                    "Solamente quiero hablar de lo que hoy es lo más importante:
+                    la Fiesta de la Vendimia"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    De este modo, Villarruel buscó{" "}
+                    <span className="vv-estilo-detalle">
+                      cerrar la polémica política y enfocarse en la agenda
+                      institucional
+                    </span>
+                    , acompañando una actividad clave para la economía mendocina
+                    y reafirmando el valor del{" "}
+                    <span className="vv-estilo-detalle">
+                      federalismo productivo
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [mendozaVV2VV, mendozaVV2VVDos, mendozaVV2VVTres],
+            },
+            {
+              titulo: "Recorrida por fincas productivas",
+              descripcion: (
+                <>
+                  <p>
+                    Luego, la vicepresidente realizó una{" "}
+                    <span className="vv-estilo-detalle">
+                      recorrida por distintas fincas productivas
+                    </span>{" "}
+                    donde se cultivan alimentos clave para las economías
+                    regionales como orégano, cebolla, papa, espárragos,
+                    zanahoria y ajo. <br />
+                    <br />
+                    Durante la jornada, compartió encuentros con las familias{" "}
+                    <span className="vv-estilo-detalle">
+                      Moronta, Testa y Castillo
+                    </span>
+                    , quienes le detallaron los{" "}
+                    <span className="vv-estilo-detalle">
+                      procesos de producción, el esfuerzo detrás de cada cosecha
+                    </span>{" "}
+                    y las dificultades que actualmente enfrenta el sector. En
+                    ese contexto, la vicepresidente destacó:
+                  </p>
+
+                  <blockquote className="cita">
+                    "Durante la visita me contaron en detalle sobre los procesos
+                    de producción, el esfuerzo que implica cada cosecha y
+                    también las preocupaciones que hoy atraviesa el sector"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    La actividad permitió visibilizar de primera mano la
+                    realidad de quienes sostienen la producción en el interior
+                    del país, reafirmando la importancia de{" "}
+                    <span className="vv-estilo-detalle">
+                      acompañar al campo y fortalecer las economías regionales
+                    </span>
+                    . En ese sentido, Villarruel expresó:
+                  </p>
+
+                  <blockquote className="cita">
+                    "En cada cultivo y en cada familia que trabaja la tierra, se
+                    ve con claridad algo muy profundo, acá está la Argentina que
+                    trabaja, la que produce, que se esfuerza todos los días y
+                    que sigue apostando al futuro"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    De este modo, la vicepresidente volvió a poner el foco en{" "}
+                    <span className="vv-estilo-detalle">
+                      la cultura del trabajo y la producción
+                    </span>{" "}
+                    como ejes del desarrollo nacional, destacando el rol
+                    fundamental de las familias que sostienen el entramado
+                    productivo del país.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                mendozaVV2VVDiez,
+                mendozaVV2VVOnce,
+                mendozaVV2VVDoce,
+                mendozaVV2VVTrece,
+                mendozaVV2VVCatorce,
+                mendozaVV2VVQuince,
+                mendozaVV2VVDieciseis,
+                mendozaVV2VVDiecisiete,
+                mendozaVV2VVDieciocho,
+                mendozaVV2VVDiecinueve,
+                mendozaVV2VVVeinte,
+              ],
+            },
+            {
+              titulo: "Basílica de San Francisco",
+              descripcion: (
+                <>
+                  <p>
+                    En la misma jornada Victoria Villarruel recorrió la{" "}
+                    <span className="vv-estilo-detalle">
+                      Basílica de San Francisco
+                    </span>
+                    , un sitio de profundo valor histórico y espiritual para la
+                    Argentina. <br />
+                    <br />
+                    Allí descansan los restos de la hija del{" "}
+                    <span className="vv-estilo-detalle">
+                      General José de San Martín
+                    </span>
+                    , y se conserva el legado vinculado a la{" "}
+                    <span className="vv-estilo-detalle">Virgen del Carmen</span>
+                    , a quien el prócer nombró{" "}
+                    <span className="vv-estilo-detalle">
+                      Generala del Ejército de los Andes
+                    </span>
+                    , encomendando bajo su protección la gesta libertadora. En
+                    ese contexto, la vicepresidente expresó:
+                  </p>
+
+                  <blockquote className="cita">
+                    "Visité la Basílica de San Francisco donde yacen los restos
+                    de la hija del General San Martín y que bajo la advocación
+                    de la Virgen del Carmen nuestro prócer la nombró Generala
+                    del Ejército"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    Durante la visita, Villarruel también pudo observar el{" "}
+                    <span className="vv-estilo-detalle">
+                      bastón de mando del Libertador
+                    </span>{" "}
+                    y fue recibida por la{" "}
+                    <span className="vv-estilo-detalle">
+                      Cofradía de la Virgen del Carmen
+                    </span>
+                    , quienes le hicieron entrega de un{" "}
+                    <span className="vv-estilo-detalle">escapulario</span>
+                    , símbolo de fe y tradición. <br />
+                    <br />
+                    La actividad formó parte de un recorrido que integró{" "}
+                    <span className="vv-estilo-detalle">
+                      historia, identidad nacional y espiritualidad
+                    </span>
+                    , resaltando los valores que marcaron el origen de la
+                    Nación.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                mendozaVV2VVCuatro,
+                mendozaVV2VVCinco,
+                mendozaVV2VVSeis,
+                mendozaVV2VVSiete,
+                mendozaVV2VVOcho,
+                mendozaVV2VVNueve,
+              ],
+            },
+          ],
         },
       ],
     },
@@ -2273,15 +2726,20 @@ const ProvinciaDetalle = () => {
                     </div>
                   )}
 
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="descripcion-container">
-                        <div className="descripcion-visita">
-                          {actividad.descripcion}
+                  {actividad.descripcion && (
+                    <div className="row">
+                      <div className="col-12">
+                        <div className="descripcion-container">
+                          <h2 className="subtitulo-descripcion">
+                            Sobre la visita
+                          </h2>
+                          <div className="descripcion-visita">
+                            {actividad.descripcion}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               ))
             ) : (
