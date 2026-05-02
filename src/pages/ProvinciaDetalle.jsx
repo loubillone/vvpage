@@ -2511,15 +2511,20 @@ const ProvinciaDetalle = () => {
                     </div>
                   )}
 
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="descripcion-container">
-                        <div className="descripcion-visita">
-                          {actividad.descripcion}
+                  {actividad.descripcion && (
+                    <div className="row">
+                      <div className="col-12">
+                        <div className="descripcion-container">
+                          <h2 className="subtitulo-descripcion">
+                            Sobre la visita
+                          </h2>
+                          <div className="descripcion-visita">
+                            {actividad.descripcion}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               ))
             ) : (
