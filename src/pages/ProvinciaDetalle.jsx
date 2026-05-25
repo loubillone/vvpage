@@ -1,277 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import rioNegroUno from "../assets/img/mapaArg/rio-negro/rioNegro1.webp";
-import rioNegroDos from "../assets/img/mapaArg/rio-negro/rioNegro2.webp";
-import rioNegroTres from "../assets/img/mapaArg/rio-negro/rioNegro3.webp";
-import rioNegroCuatro from "../assets/img/mapaArg/rio-negro/rioNegro4.webp";
-import rioNegroCinco from "../assets/img/mapaArg/rio-negro/rioNegro5.webp";
-import rioNegroSeis from "../assets/img/mapaArg/rio-negro/rioNegro6.webp";
-import azulVV from "../assets/img/mapaArg/buenos-aires/azulVV.webp";
-import azulVVDos from "../assets/img/mapaArg/buenos-aires/azulVV2.webp";
-import azulVVTres from "../assets/img/mapaArg/buenos-aires/azulVV3.webp";
-import azulVVCuatro from "../assets/img/mapaArg/buenos-aires/azulVV4.webp";
-import lujanVV from "../assets/img/mapaArg/buenos-aires/lujanVV.webp";
-import lujanVVUno from "../assets/img/mapaArg/buenos-aires/lujanVV1.webp";
-import lujanVVDos from "../assets/img/mapaArg/buenos-aires/lujanVV2.webp";
-import lujanVVTres from "../assets/img/mapaArg/buenos-aires/lujanVV3.webp";
-import lujanVVCuatro from "../assets/img/mapaArg/buenos-aires/lujanVV4.webp";
-import chivilcoyVV from "../assets/img/mapaArg/buenos-aires/chivilcoyVV.webp";
-import chivilcoyVVUno from "../assets/img/mapaArg/buenos-aires/chivilcoyVV1.webp";
-import chivilcoyVVDos from "../assets/img/mapaArg/buenos-aires/chivilcoyVV2.webp";
-import chivilcoyVVTres from "../assets/img/mapaArg/buenos-aires/chivilcoyVV3.webp";
-import chivilcoyVVCuatro from "../assets/img/mapaArg/buenos-aires/chivilcoyVV4.webp";
-import chivilcoyVVCinco from "../assets/img/mapaArg/buenos-aires/chivilcoyVV5.webp";
-import chivilcoyVVSeis from "../assets/img/mapaArg/buenos-aires/chivilcoyVV6.webp";
-import chivilcoyVVSiete from "../assets/img/mapaArg/buenos-aires/chivilcoyVV7.webp";
-import saladilloVV from "../assets/img/mapaArg/buenos-aires/saladilloVV.webp";
-import saladilloVVUno from "../assets/img/mapaArg/buenos-aires/saladilloVV1.webp";
-import saladilloVVDos from "../assets/img/mapaArg/buenos-aires/saladilloVV2.webp";
-import saladilloVVTres from "../assets/img/mapaArg/buenos-aires/saladilloVV3.webp";
-import saladilloVVCuatro from "../assets/img/mapaArg/buenos-aires/saladilloVV4.webp";
-import saladilloVVCinco from "../assets/img/mapaArg/buenos-aires/saladilloVV5.webp";
-import sanpedroVV from "../assets/img/mapaArg/buenos-aires/sanpedroVV.webp";
-import sanpedroVVUno from "../assets/img/mapaArg/buenos-aires/sanpedroVV1.webp";
-import sanpedroVVDos from "../assets/img/mapaArg/buenos-aires/sanpedroVV2.webp";
-import sanpedroVVTres from "../assets/img/mapaArg/buenos-aires/sanpedroVV3.webp";
-import sanpedroVVCuatro from "../assets/img/mapaArg/buenos-aires/sanpedroVV4.webp";
-import sanpedroVVCinco from "../assets/img/mapaArg/buenos-aires/sanpedroVV5.webp";
-import sanpedroVVSeis from "../assets/img/mapaArg/buenos-aires/sanpedroVV6.webp";
-import pilarVV from "../assets/img/mapaArg/buenos-aires/vvPilar.webp";
-import pilarVVDos from "../assets/img/mapaArg/buenos-aires/vvPilar2.webp";
-import pilarVVTres from "../assets/img/mapaArg/buenos-aires/vvPilar3.webp";
-import pilarVVCuatro from "../assets/img/mapaArg/buenos-aires/vvPilar4.webp";
-import pilarVVCinco from "../assets/img/mapaArg/buenos-aires/vvPilar5.webp";
-import chivilcoyVVVeteranos from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv.webp";
-import chivilcoyVVVeteranosDos from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv2.webp";
-import chivilcoyVVVeteranosTres from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv3.webp";
-import chivilcoyVVVeteranosCuatro from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv4.webp";
-import chivilcoyVVVeteranosCinco from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv5.webp";
-import chivilcoyVVVeteranosSeis from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv6.webp";
-import chivilcoyVVVeteranosSiete from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv7.webp";
-import chivilcoyVVVeteranosOcho from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv8.webp";
-import chivilcoyVVVeteranosNueve from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv9.webp";
-import chivilcoyVVVeteranosDiez from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv10.webp";
-import chivilcoyVVVeteranosOnce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv11.webp";
-import chivilcoyVVVeteranosDoce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv12.webp";
-import chivilcoyVVVeteranosTrece from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv13.webp";
-import chivilcoyVVVeteranosCatorce from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv14.webp";
-import chivilcoyVVVeteranosQuince from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv15.webp";
-import chivilcoyVVVeteranosDieciseis from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv16.webp";
-import chivilcoyVVVeteranosDiecisiete from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv17.webp";
-import chivilcoyVVVeteranosDieciocho from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv18.webp";
-import chivilcoyVVVeteranosDiecinueve from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv19.webp";
-import chivilcoyVVVeteranosVeinte from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv20.webp";
-import chivilcoyVVVeteranosVeintiuno from "../assets/img/mapaArg/buenos-aires/vvChivilcoyMalv21.webp";
-import cordobaVV from "../assets/img/mapaArg/cordoba/corVV.webp";
-import cordobaVVDos from "../assets/img/mapaArg/cordoba/corVV2.webp";
-import cordobaVVTres from "../assets/img/mapaArg/cordoba/corVV3.webp";
-import cordobaVVCuatro from "../assets/img/mapaArg/cordoba/corVV4.webp";
-import cordobaVVCinco from "../assets/img/mapaArg/cordoba/corVV5.webp";
-import cordobaVVSeis from "../assets/img/mapaArg/cordoba/corVV6.webp";
-import santafeVV from "../assets/img/mapaArg/santa-fe/santafeVV.webp";
-import santafeVVDos from "../assets/img/mapaArg/santa-fe/santafeVV2.webp";
-import santafeVVTres from "../assets/img/mapaArg/santa-fe/santafeVV3.webp";
-import santafeVVCuatro from "../assets/img/mapaArg/santa-fe/santafeVV4.webp";
-import saltaVV from "../assets/img/mapaArg/salta/saltaVV.webp";
-import saltaVVDos from "../assets/img/mapaArg/salta/saltaVV1.webp";
-import saltaVVTres from "../assets/img/mapaArg/salta/saltaVV2.webp";
-import saltaVVCuatro from "../assets/img/mapaArg/salta/saltaVV3.webp";
-import saltaVVCinco from "../assets/img/mapaArg/salta/saltaVV4.webp";
-import saltaVVSeis from "../assets/img/mapaArg/salta/saltaVV5.webp";
-import corrientesVV from "../assets/img/mapaArg/corrientes/corrientesVV.webp";
-import corrientesVVDos from "../assets/img/mapaArg/corrientes/corrientesVV2.webp";
-import corrientesVVTres from "../assets/img/mapaArg/corrientes/corrientesVV3.webp";
-import corrientesVVCuatro from "../assets/img/mapaArg/corrientes/corrientesVV4.webp";
-import corrientesVVCinco from "../assets/img/mapaArg/corrientes/corrientesVV5.webp";
-import corrientesVVSeis from "../assets/img/mapaArg/corrientes/corrientesVV6.webp";
-import mendozaVV from "../assets/img/mapaArg/mendoza/mendozaVV.webp";
-import mendozaVVDos from "../assets/img/mapaArg/mendoza/mendozaVV2.webp";
-import mendozaVVTres from "../assets/img/mapaArg/mendoza/mendozaVV3.webp";
-import mendozaVVCuatro from "../assets/img/mapaArg/mendoza/mendozaVV4.webp";
-import mendozaVVCinco from "../assets/img/mapaArg/mendoza/mendozaVV5.webp";
-import mendozaVVSeis from "../assets/img/mapaArg/mendoza/mendozaVV6.webp";
-import mendozaVV2VV from "../assets/img/mapaArg/mendoza/vv-mendoza-coviar.webp";
-import mendozaVV2VVDos from "../assets/img/mapaArg/mendoza/vv-mendoza-coviar2.webp";
-import mendozaVV2VVTres from "../assets/img/mapaArg/mendoza/vv-mendoza-coviar3.webp";
-import mendozaVV2VVCuatro from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia.webp";
-import mendozaVV2VVCinco from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia2.webp";
-import mendozaVV2VVSeis from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia3.webp";
-import mendozaVV2VVSiete from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia4.webp";
-import mendozaVV2VVOcho from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia5.webp";
-import mendozaVV2VVNueve from "../assets/img/mapaArg/mendoza/vv-mendoza-parroquia6.webp";
-import mendozaVV2VVDiez from "../assets/img/mapaArg/mendoza/vv-mendoza-prod.webp";
-import mendozaVV2VVOnce from "../assets/img/mapaArg/mendoza/vv-mendoza-prod2.webp";
-import mendozaVV2VVDoce from "../assets/img/mapaArg/mendoza/vv-mendoza-prod3.webp";
-import mendozaVV2VVTrece from "../assets/img/mapaArg/mendoza/vv-mendoza-prod4.webp";
-import mendozaVV2VVCatorce from "../assets/img/mapaArg/mendoza/vv-mendoza-prod5.webp";
-import mendozaVV2VVQuince from "../assets/img/mapaArg/mendoza/vv-mendoza-prod6.webp";
-import mendozaVV2VVDieciseis from "../assets/img/mapaArg/mendoza/vv-mendoza-prod7.webp";
-import mendozaVV2VVDiecisiete from "../assets/img/mapaArg/mendoza/vv-mendoza-prod8.webp";
-import mendozaVV2VVDieciocho from "../assets/img/mapaArg/mendoza/vv-mendoza-prod9.webp";
-import mendozaVV2VVDiecinueve from "../assets/img/mapaArg/mendoza/vv-mendoza-prod10.webp";
-import mendozaVV2VVVeinte from "../assets/img/mapaArg/mendoza/vv-mendoza-prod11.webp";
-import sanLuisVV from "../assets/img/mapaArg/san-luis/sanluisVV.webp";
-import sanLuisVVDos from "../assets/img/mapaArg/san-luis/sanluisVV2.webp";
-import sanLuisVVTres from "../assets/img/mapaArg/san-luis/sanluisVV3.webp";
-import sanLuisVVCuatro from "../assets/img/mapaArg/san-luis/sanluisVV4.webp";
-import sanLuisVVCinco from "../assets/img/mapaArg/san-luis/sanluisVV5.webp";
-import sanLuisVVSeis from "../assets/img/mapaArg/san-luis/sanluisVV6.webp";
-import catamarcaVV from "../assets/img/mapaArg/catamarca/cataVV.webp";
-import catamarcaVVDos from "../assets/img/mapaArg/catamarca/cataVV2.webp";
-import catamarcaVVTres from "../assets/img/mapaArg/catamarca/cataVV3.webp";
-import catamarcaVVCinco from "../assets/img/mapaArg/catamarca/cataVV5.webp";
-import catamarcaVVSeis from "../assets/img/mapaArg/catamarca/cataVV6.webp";
-import jujuyUno from "../assets/img/mapaArg/jujuy/jujuyVV1.webp";
-import jujuyVVDos from "../assets/img/mapaArg/jujuy/jujuyVV2.webp";
-import jujuyVVTres from "../assets/img/mapaArg/jujuy/jujuyVV3.webp";
-import jujuyVVCuatro from "../assets/img/mapaArg/jujuy/jujuyVV4.webp";
-import jujuyVVCinco from "../assets/img/mapaArg/jujuy/jujuyVV5.webp";
-import jujuyVVSeis from "../assets/img/mapaArg/jujuy/jujuyVV6.webp";
-import misionesVV from "../assets/img/mapaArg/misiones/misionesVV.webp";
-import misionesVVDos from "../assets/img/mapaArg/misiones/misionesVV2.webp";
-import misionesVVTres from "../assets/img/mapaArg/misiones/misionesVV3.webp";
-import misionesVVCuatro from "../assets/img/mapaArg/misiones/misionesVV4.webp";
-import misionesVVCinco from "../assets/img/mapaArg/misiones/misionesVV5.webp";
-import misionesVVSeis from "../assets/img/mapaArg/misiones/misionesVV6.webp";
-import neuquenVV from "../assets/img/mapaArg/neuquen/neuquenVV.webp";
-import neuquenVVDos from "../assets/img/mapaArg/neuquen/neuquenVV2.webp";
-import neuquenVVTres from "../assets/img/mapaArg/neuquen/neuquenVV3.webp";
-import neuquenVVCuatro from "../assets/img/mapaArg/neuquen/neuquenVV4.webp";
-import neuquenVVCinco from "../assets/img/mapaArg/neuquen/neuquenVV5.webp";
-import neuquenVVSeis from "../assets/img/mapaArg/neuquen/neuquenVV6.webp";
-import entreriosVV from "../assets/img/mapaArg/entre-rios/entreriosVV.webp";
-import entreriosVVDos from "../assets/img/mapaArg/entre-rios/entreriosVV2.webp";
-import entreriosVVTres from "../assets/img/mapaArg/entre-rios/entreriosVV3.webp";
-import entreriosVVCuatro from "../assets/img/mapaArg/entre-rios/entreriosVV4.webp";
-import entreriosVVCinco from "../assets/img/mapaArg/entre-rios/entreriosVV5.webp";
-import entreriosVVSeis from "../assets/img/mapaArg/entre-rios/entreriosVV6.webp";
-import santiagoVV from "../assets/img/mapaArg/santiago/santiagoVV.webp";
-import santiagoVVDos from "../assets/img/mapaArg/santiago/santiagoVV2.webp";
-import chubutVV from "../assets/img/mapaArg/chubut/chubutVV.webp";
-import chubutVVUno from "../assets/img/mapaArg/chubut/chubutVV1.webp";
-import chubutVVDos from "../assets/img/mapaArg/chubut/chubutVV2.webp";
-import chubutVVTres from "../assets/img/mapaArg/chubut/chubutVV3.webp";
-import chubutVVCuatro from "../assets/img/mapaArg/chubut/chubutVV4.webp";
-import chubutVVCinco from "../assets/img/mapaArg/chubut/chubutVV5.webp";
-import chubutVVSeis from "../assets/img/mapaArg/chubut/chubutVV6.webp";
-import chubutVVOcho from "../assets/img/mapaArg/chubut/chubutVV8.webp";
-import chubutVVNueve from "../assets/img/mapaArg/chubut/chubutVV9.webp";
-import chubutVVDiez from "../assets/img/mapaArg/chubut/chubutVV10.webp";
-import chubutVVOnce from "../assets/img/mapaArg/chubut/chubutVV11.webp";
-import chubutVVDoce from "../assets/img/mapaArg/chubut/chubutVV12.webp";
-import chubutVVTrece from "../assets/img/mapaArg/chubut/chubutVV13.webp";
-import tierraVV from "../assets/img/mapaArg/tierra-del-fuego/tierraVV.webp";
-import tierraVVDos from "../assets/img/mapaArg/tierra-del-fuego/tierraVV2.webp";
-import tierraVVTres from "../assets/img/mapaArg/tierra-del-fuego/tierraVV3.webp";
-import tierraVVCuatro from "../assets/img/mapaArg/tierra-del-fuego/tierraVV4.webp";
-import tierraVVCinco from "../assets/img/mapaArg/tierra-del-fuego/tierraVV5.webp";
-import tierraVVSeis from "../assets/img/mapaArg/tierra-del-fuego/tierraVV6.webp";
-import tucuVV from "../assets/img/mapaArg/tucuman/tucumanVV.webp";
-import tucuVVDos from "../assets/img/mapaArg/tucuman/tucumanVV2.webp";
-import tucuVVTres from "../assets/img/mapaArg/tucuman/tucumanVV3.webp";
-import tucuVVCuatro from "../assets/img/mapaArg/tucuman/tucumanVV4.webp";
-import tucuVVCinco from "../assets/img/mapaArg/tucuman/tucumanVV5.webp";
-import formosaVV from "../assets/img/mapaArg/formosa/formosaVV.webp";
-import formosaVVDos from "../assets/img/mapaArg/formosa/formosaVV2.webp";
-import formosaVVTres from "../assets/img/mapaArg/formosa/formosaVV3.webp";
-import formosaVVCuatro from "../assets/img/mapaArg/formosa/formosaVV4.webp";
-import saladasVV from "../assets/img/mapaArg/corrientes/saladasVV.webp";
-import saladasVVUno from "../assets/img/mapaArg/corrientes/saladasVV1.webp";
-import saladasVVDos from "../assets/img/mapaArg/corrientes/saladasVV2.webp";
-import saladasVVTres from "../assets/img/mapaArg/corrientes/saladasVV3.webp";
-import saladasVVCuatro from "../assets/img/mapaArg/corrientes/saladasVV4.webp";
-import saladasVVCinco from "../assets/img/mapaArg/corrientes/saladasVV5.webp";
-import saladasVVSeis from "../assets/img/mapaArg/corrientes/saladasVV6.webp";
-import saladasVVSiete from "../assets/img/mapaArg/corrientes/saladasVV7.webp";
-import saladasVVOcho from "../assets/img/mapaArg/corrientes/saladasVV8.webp";
-import saladasVVNueve from "../assets/img/mapaArg/corrientes/saladasVV9.webp";
-import saladasVVDiez from "../assets/img/mapaArg/corrientes/saladasVV10.webp";
-import elrodeoVV from "../assets/img/mapaArg/catamarca/elrodeoVV.webp";
-import elrodeoVVUno from "../assets/img/mapaArg/catamarca/elrodeoVV1.webp";
-import elrodeoVVDos from "../assets/img/mapaArg/catamarca/elrodeoVV2.webp";
-import elrodeoVVTres from "../assets/img/mapaArg/catamarca/elrodeoVV3.webp";
-import elrodeoVVCuatro from "../assets/img/mapaArg/catamarca/elrodeoVV4.webp";
-import elrodeoVVCinco from "../assets/img/mapaArg/catamarca/elrodeoVV5.webp";
-import elrodeoVVSeis from "../assets/img/mapaArg/catamarca/elrodeoVV6.webp";
-import elrodeoVVSiete from "../assets/img/mapaArg/catamarca/elrodeoVV7.webp";
-import elrodeoVVOcho from "../assets/img/mapaArg/catamarca/elrodeoVV8.webp";
-import elrodeoVVNueve from "../assets/img/mapaArg/catamarca/elrodeoVV9.webp";
-import elrodeoVVDiez from "../assets/img/mapaArg/catamarca/elrodeoVV10.webp";
-import elrodeoVVOnce from "../assets/img/mapaArg/catamarca/elrodeoVV11.webp";
-import elrodeoVVDoce from "../assets/img/mapaArg/catamarca/elrodeoVV12.webp";
-import banderaVV from "../assets/img/mapaArg/santa-fe/banderaVV.webp";
-import banderaVVDos from "../assets/img/mapaArg/santa-fe/banderaVV2.webp";
-import banderaVVTres from "../assets/img/mapaArg/santa-fe/banderaVV3.webp";
-import banderaVVCuatro from "../assets/img/mapaArg/santa-fe/banderaVV4.webp";
-import banderaVVCinco from "../assets/img/mapaArg/santa-fe/banderaVV5.webp";
-import ruralsaltaVV from "../assets/img/mapaArg/salta/ruralsaltaVV.webp";
-import ruralsaltaVVDos from "../assets/img/mapaArg/salta/ruralsaltaVV2.webp";
-import ruralsaltaVVTres from "../assets/img/mapaArg/salta/ruralsaltaVV3.webp";
-import guemesVV from "../assets/img/mapaArg/salta/guemesVV.webp";
-import guemesVVDos from "../assets/img/mapaArg/salta/guemesVV2.webp";
-import guemesVVCuatro from "../assets/img/mapaArg/salta/guemesVV4.webp";
-import guemesVVCinco from "../assets/img/mapaArg/salta/guemesVV5.webp";
-import banderaroVV from "../assets/img/mapaArg/santa-fe/banderaroVV.webp";
-import banderaroVVDos from "../assets/img/mapaArg/santa-fe/banderaroVV2.webp";
-import banderaroVVTres from "../assets/img/mapaArg/santa-fe/banderaroVV3.webp";
-import banderaroVVCuatro from "../assets/img/mapaArg/santa-fe/banderaroVV4.webp";
-import cordoVV from "../assets/img/mapaArg/cordoba/cordoVV.webp";
-import cordoVVDos from "../assets/img/mapaArg/cordoba/cordoVV2.webp";
-import mardelVV from "../assets/img/mapaArg/buenos-aires/mardelVV.webp";
-import mardelVVDos from "../assets/img/mapaArg/buenos-aires/mardelVV2.webp";
-import mardelVVTres from "../assets/img/mapaArg/buenos-aires/mardelVV3.webp";
-import mardelVVCuatro from "../assets/img/mapaArg/buenos-aires/mardelVV4.webp";
-import mardelVVCinco from "../assets/img/mapaArg/buenos-aires/mardelVV5.webp";
-import fiestaPonchoVV from "../assets/img/mapaArg/catamarca/fiestaPonchoVV.webp";
-import fiestaPonchoVVDos from "../assets/img/mapaArg/catamarca/fiestaPonchoVV2.webp";
-import fiestaPonchoVVTres from "../assets/img/mapaArg/catamarca/fiestaPonchoVV3.webp";
-import fiestaPonchoVVCuatro from "../assets/img/mapaArg/catamarca/fiestaPonchoVV4.webp";
-import lariojaVVQuiroga from "../assets/img/mapaArg/larioja/lariojaVVQuiroga.jpeg";
-import lariojaVVQuirogaUno from "../assets/img/mapaArg/larioja/lariojaVVQuiroga2.jpeg";
-import lariojaVVQuirogaDos from "../assets/img/mapaArg/larioja/lariojaVVQuiroga3.jpg";
-import lariojaQuintelaVV from "../assets/img/mapaArg/larioja/lariojaQuintelaVV.jpg";
-import lariojaQuintelaVVUno from "../assets/img/mapaArg/larioja/lariojaQuintelaVV1.jpg";
-import lariojaQuintelaVVDos from "../assets/img/mapaArg/larioja/lariojaQuintelaVV2.jpg";
-import lariojaQuintelaVVTres from "../assets/img/mapaArg/larioja/lariojaQuintelaVV3.jpg";
-import lariojaQuintelaVVCuatro from "../assets/img/mapaArg/larioja/lariojaQuintelaVV4.jpg";
-import lariojaQuintelaVVCinco from "../assets/img/mapaArg/larioja/lariojaQuintelaVV5.jpg";
-import lariojaQuintelaVVSeis from "../assets/img/mapaArg/larioja/lariojaQuintelaVV6.jpg";
-import lariojaQuintelaVVSiete from "../assets/img/mapaArg/larioja/lariojaQuintelaVV7.jpg";
-import lariojaObispoVV from "../assets/img/mapaArg/larioja/lariojaObispoVV.jpg";
-import lariojaObispoVVUno from "../assets/img/mapaArg/larioja/lariojaObispoVV1.jpg";
-import lariojaObispoVVDos from "../assets/img/mapaArg/larioja/lariojaObispoVV2.jpg";
-import lariojaObispoVVTres from "../assets/img/mapaArg/larioja/lariojaObispoVV3.jpg";
-import lariojaObispoVVCuatro from "../assets/img/mapaArg/larioja/lariojaObispoVV4.jpg";
-import lariojaObispoVVCinco from "../assets/img/mapaArg/larioja/lariojaObispoVV5.jpg";
-import lariojaBodegaVV from "../assets/img/mapaArg/larioja/lariojaBodegaVV.jpg";
-import lariojaBodegaVVUno from "../assets/img/mapaArg/larioja/lariojaBodegaVV1.jpg";
-import lariojaBodegaVVDos from "../assets/img/mapaArg/larioja/lariojaBodegaVV2.jpg";
-import lariojaBodegaVVTres from "../assets/img/mapaArg/larioja/lariojaBodegaVV3.jpg";
-import lariojaBodegaVVCuatro from "../assets/img/mapaArg/larioja/lariojaBodegaVV4.jpg";
-import lariojaBodegaVVCinco from "../assets/img/mapaArg/larioja/lariojaBodegaVV5.jpg";
-import lariojaBodegaVVSeis from "../assets/img/mapaArg/larioja/lariojaBodegaVV6.jpg";
-import lariojaChayaVV from "../assets/img/mapaArg/larioja/lariojaChayaVV.jpg";
-import lariojaChayaVVUno from "../assets/img/mapaArg/larioja/lariojaChayaVV1.jpg";
-import lariojaChayaVVDos from "../assets/img/mapaArg/larioja/lariojaChayaVV2.jpg";
-import lariojaChayaVVTres from "../assets/img/mapaArg/larioja/lariojaChayaVV3.jpg";
-import lariojaChayaVVCuatro from "../assets/img/mapaArg/larioja/lariojaChayaVV4.jpg";
-import lariojaParquesVV from "../assets/img/mapaArg/larioja/lariojaParquesVV.jpg";
-import lariojaParquesVVUno from "../assets/img/mapaArg/larioja/lariojaParquesVV1.jpg";
-import lariojaParquesVVDos from "../assets/img/mapaArg/larioja/lariojaParquesVV2.jpg";
-import lariojaParquesVVTres from "../assets/img/mapaArg/larioja/lariojaParquesVV3.jpg";
-import lariojaParquesVVCuatro from "../assets/img/mapaArg/larioja/lariojaParquesVV4.jpg";
-import lariojaParquesVVCinco from "../assets/img/mapaArg/larioja/lariojaParquesVV5.jpg";
-import lariojaParquesVVSeis from "../assets/img/mapaArg/larioja/lariojaParquesVV6.jpg";
-import lariojaParquesVVSiete from "../assets/img/mapaArg/larioja/lariojaParquesVV7.jpg";
-import lariojaParquesVVOcho from "../assets/img/mapaArg/larioja/lariojaParquesVV8.jpg";
-import lariojaParquesVVNueve from "../assets/img/mapaArg/larioja/lariojaParquesVV9.jpg";
-import lariojaTalampayaVV from "../assets/img/mapaArg/larioja/lariojaTalampayaVV.jpg";
-import lariojaTalampayaVVUno from "../assets/img/mapaArg/larioja/lariojaTalampayaVV1.jpg";
-import lariojaTalampayaVVDos from "../assets/img/mapaArg/larioja/lariojaTalampayaVV2.jpg";
-import lariojaTalampayaVVTres from "../assets/img/mapaArg/larioja/lariojaTalampayaVV3.jpg";
 import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 
+const CLOUD_NAME = "dwb5tmtqg";
+
+export const getCloudinaryUrl = (publicId) => {
+  return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/w_1000,h_600,c_fill,g_auto,f_auto,q_auto/${publicId}`;
+};
 const ProvinciaDetalle = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -304,7 +40,12 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [azulVV, azulVVDos, azulVVTres, azulVVCuatro],
+          imagenes: [
+            "tpa-web/provincias/bsas/azul/ba-azul-1",
+            "tpa-web/provincias/bsas/azul/ba-azul-2",
+            "tpa-web/provincias/bsas/azul/ba-azul-3",
+            "tpa-web/provincias/bsas/azul/ba-azul-4",
+          ],
           lugar: "Azul",
         },
 
@@ -346,11 +87,11 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            mardelVV,
-            mardelVVDos,
-            mardelVVTres,
-            mardelVVCuatro,
-            mardelVVCinco,
+            "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-1",
+            "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-2",
+            "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-3",
+            "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-4",
+            "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-5",
           ],
           lugar: "Mar Del Plata",
         },
@@ -432,11 +173,11 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            pilarVV,
-            pilarVVDos,
-            pilarVVTres,
-            pilarVVCuatro,
-            pilarVVCinco,
+            "tpa-web/provincias/bsas/pilar/ba-pilar-1",
+            "tpa-web/provincias/bsas/pilar/ba-pilar-2",
+            "tpa-web/provincias/bsas/pilar/ba-pilar-3",
+            "tpa-web/provincias/bsas/pilar/ba-pilar-4",
+            "tpa-web/provincias/bsas/pilar/ba-pilar-5",
           ],
           lugar: "Pilar",
         },
@@ -471,11 +212,11 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            lujanVV,
-            lujanVVUno,
-            lujanVVDos,
-            lujanVVTres,
-            lujanVVCuatro,
+            "tpa-web/provincias/bsas/lujan/ba-lujan-1",
+            "tpa-web/provincias/bsas/lujan/ba-lujan-2",
+            "tpa-web/provincias/bsas/lujan/ba-lujan-3",
+            "tpa-web/provincias/bsas/lujan/ba-lujan-4",
+            "tpa-web/provincias/bsas/lujan/ba-lujan-5",
           ],
           lugar: "Luján",
         },
@@ -522,14 +263,14 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            chivilcoyVV,
-            chivilcoyVVUno,
-            chivilcoyVVDos,
-            chivilcoyVVTres,
-            chivilcoyVVCuatro,
-            chivilcoyVVCinco,
-            chivilcoyVVSeis,
-            chivilcoyVVSiete,
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-1",
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-2",
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-3",
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-4",
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-5",
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-6",
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-7",
+            "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-8",
           ],
           lugar: "Chivilcoy - Suipacha",
         },
@@ -592,12 +333,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            saladilloVV,
-            saladilloVVUno,
-            saladilloVVDos,
-            saladilloVVTres,
-            saladilloVVCuatro,
-            saladilloVVCinco,
+            "tpa-web/provincias/bsas/saladillo/ba-saladillo-1",
+            "tpa-web/provincias/bsas/saladillo/ba-saladillo-2",
+            "tpa-web/provincias/bsas/saladillo/ba-saladillo-3",
+            "tpa-web/provincias/bsas/saladillo/ba-saladillo-4",
+            "tpa-web/provincias/bsas/saladillo/ba-saladillo-5",
+            "tpa-web/provincias/bsas/saladillo/ba-saladillo-6",
           ],
           lugar: "Saladillo",
         },
@@ -634,13 +375,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            sanpedroVV,
-            sanpedroVVUno,
-            sanpedroVVDos,
-            sanpedroVVTres,
-            sanpedroVVCuatro,
-            sanpedroVVCinco,
-            sanpedroVVSeis,
+            "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-1",
+            "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-2",
+            "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-3",
+            "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-4",
+            "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-5",
+            "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-6",
           ],
           lugar: "San Pedro",
         },
@@ -722,27 +462,27 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            chivilcoyVVVeteranos,
-            chivilcoyVVVeteranosDos,
-            chivilcoyVVVeteranosTres,
-            chivilcoyVVVeteranosCuatro,
-            chivilcoyVVVeteranosCinco,
-            chivilcoyVVVeteranosSeis,
-            chivilcoyVVVeteranosSiete,
-            chivilcoyVVVeteranosOcho,
-            chivilcoyVVVeteranosNueve,
-            chivilcoyVVVeteranosDiez,
-            chivilcoyVVVeteranosOnce,
-            chivilcoyVVVeteranosDoce,
-            chivilcoyVVVeteranosTrece,
-            chivilcoyVVVeteranosCatorce,
-            chivilcoyVVVeteranosQuince,
-            chivilcoyVVVeteranosDieciseis,
-            chivilcoyVVVeteranosDiecisiete,
-            chivilcoyVVVeteranosDieciocho,
-            chivilcoyVVVeteranosDiecinueve,
-            chivilcoyVVVeteranosVeinte,
-            chivilcoyVVVeteranosVeintiuno,
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-1",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-2",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-3",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-4",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-5",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-6",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-7",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-8",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-9",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-10",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-11",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-12",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-13",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-14",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-15",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-16",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-17",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-18",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-19",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-20",
+            "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-21",
           ],
           lugar: "Chivilcoy",
         },
@@ -797,12 +537,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            cordobaVV,
-            cordobaVVDos,
-            cordobaVVTres,
-            cordobaVVCuatro,
-            cordobaVVCinco,
-            cordobaVVSeis,
+            "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-1",
+            "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-2",
+            "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-3",
+            "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-4",
+            "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-5",
+            "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-6",
           ],
           lugar: "Jesús María",
         },
@@ -838,7 +578,10 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [cordoVV, cordoVVDos],
+          imagenes: [
+            "tpa-web/provincias/cordoba/25demayo/cordoba-act25-1",
+            "tpa-web/provincias/cordoba/25demayo/cordoba-act25-2",
+          ],
           lugar: "Cordoba Capital",
         },
       ],
@@ -884,7 +627,13 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [tucuVV, tucuVVDos, tucuVVTres, tucuVVCuatro, tucuVVCinco],
+          imagenes: [
+            "tpa-web/provincias/tucuman/tucuman-casa-1",
+            "tpa-web/provincias/tucuman/tucuman-casa-2",
+            "tpa-web/provincias/tucuman/tucuman-casa-3",
+            "tpa-web/provincias/tucuman/tucuman-casa-4",
+            "tpa-web/provincias/tucuman/tucuman-catedral-1",
+          ],
           lugar: "San Miguel de Tucumán",
         },
       ],
@@ -924,12 +673,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            saltaVV,
-            saltaVVDos,
-            saltaVVTres,
-            saltaVVCuatro,
-            saltaVVCinco,
-            saltaVVSeis,
+            "tpa-web/provincias/salta/batalla-de-salta/salta-batalla-1",
+            "tpa-web/provincias/salta/batalla-de-salta/salta-batalla-2",
+            "tpa-web/provincias/salta/batalla-de-salta/salta-batalla-3",
+            "tpa-web/provincias/salta/batalla-de-salta/salta-batalla-4",
+            "tpa-web/provincias/salta/batalla-de-salta/salta-batalla-5",
+            "tpa-web/provincias/salta/batalla-de-salta/salta-batalla-6",
           ],
           lugar: "Ciudad de Salta",
         },
@@ -969,7 +718,12 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [guemesVV, guemesVVDos, guemesVVCuatro, guemesVVCinco],
+          imagenes: [
+            "tpa-web/provincias/salta/guemes/salta-guemes-1",
+            "tpa-web/provincias/salta/guemes/salta-guemes-2",
+            "tpa-web/provincias/salta/guemes/salta-guemes-3",
+            "tpa-web/provincias/salta/guemes/salta-guemes-4",
+          ],
           lugar: "Ciudad de Salta",
         },
 
@@ -1024,7 +778,11 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [ruralsaltaVV, ruralsaltaVVDos, ruralsaltaVVTres],
+          imagenes: [
+            "tpa-web/provincias/salta/rural/salta-rural-1",
+            "tpa-web/provincias/salta/rural/salta-rural-2",
+            "tpa-web/provincias/salta/rural/salta-rural-3",
+          ],
           lugar: "Jujuy - Salta",
         },
       ],
@@ -1097,19 +855,19 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            chubutVV,
-            chubutVVUno,
-            chubutVVDos,
-            chubutVVTres,
-            chubutVVCuatro,
-            chubutVVCinco,
-            chubutVVSeis,
-            chubutVVOcho,
-            chubutVVNueve,
-            chubutVVDiez,
-            chubutVVOnce,
-            chubutVVDoce,
-            chubutVVTrece,
+            "tpa-web/provincias/chubut/chubut-riomayo-1",
+            "tpa-web/provincias/chubut/chubut-riomayo-2",
+            "tpa-web/provincias/chubut/chubut-riomayo-3",
+            "tpa-web/provincias/chubut/chubut-riomayo-4",
+            "tpa-web/provincias/chubut/chubut-riomayo-5",
+            "tpa-web/provincias/chubut/chubut-riomayo-14",
+            "tpa-web/provincias/chubut/chubut-riomayo-7",
+            "tpa-web/provincias/chubut/chubut-riomayo-8",
+            "tpa-web/provincias/chubut/chubut-riomayo-9",
+            "tpa-web/provincias/chubut/chubut-riomayo-10",
+            "tpa-web/provincias/chubut/chubut-riomayo-11",
+            "tpa-web/provincias/chubut/chubut-riomayo-12",
+            "tpa-web/provincias/chubut/chubut-riomayo-13",
           ],
           lugar: "Río Mayo - Comodoro Rivadavia - Rada Tilly",
         },
@@ -1156,12 +914,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            tierraVV,
-            tierraVVDos,
-            tierraVVTres,
-            tierraVVCuatro,
-            tierraVVCinco,
-            tierraVVSeis,
+            "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-1",
+            "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-2",
+            "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-3",
+            "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-4",
+            "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-5",
+            "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-6",
           ],
           lugar: "Ushuaia",
         },
@@ -1220,11 +978,11 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            catamarcaVV,
-            catamarcaVVDos,
-            catamarcaVVTres,
-            catamarcaVVCinco,
-            catamarcaVVSeis,
+            "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-1",
+            "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-2",
+            "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-3",
+            "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-4",
+            "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-5",
           ],
           lugar: "San Fernando del Valle de Catamarca",
         },
@@ -1270,10 +1028,10 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            fiestaPonchoVV,
-            fiestaPonchoVVDos,
-            fiestaPonchoVVTres,
-            fiestaPonchoVVCuatro,
+            "tpa-web/provincias/catamarca/fiesta-del-poncho/catamarca-poncho-1",
+            "tpa-web/provincias/catamarca/fiesta-del-poncho/catamarca-poncho-2",
+            "tpa-web/provincias/catamarca/fiesta-del-poncho/catamarca-poncho-3",
+            "tpa-web/provincias/catamarca/fiesta-del-poncho/catamarca-poncho-4",
           ],
           lugar: "San Fernando del Valle de Catamarca",
         },
@@ -1334,19 +1092,19 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            elrodeoVV,
-            elrodeoVVUno,
-            elrodeoVVDos,
-            elrodeoVVTres,
-            elrodeoVVCuatro,
-            elrodeoVVCinco,
-            elrodeoVVSeis,
-            elrodeoVVSiete,
-            elrodeoVVOcho,
-            elrodeoVVNueve,
-            elrodeoVVDiez,
-            elrodeoVVOnce,
-            elrodeoVVDoce,
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-1",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-2",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-3",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-4",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-5",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-6",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-7",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-8",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-9",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-10",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-11",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-12",
+            "tpa-web/provincias/catamarca/belen/catamarca-belen-13",
           ],
           lugar: "San Fernando del Valle de Catamarca - Belén – El Rodeo",
         },
@@ -1405,12 +1163,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            mendozaVV,
-            mendozaVVDos,
-            mendozaVVTres,
-            mendozaVVCuatro,
-            mendozaVVCinco,
-            mendozaVVSeis,
+            "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-1",
+            "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-2",
+            "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-3",
+            "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-4",
+            "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-5",
+            "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-6",
           ],
           lugar: "Ciudad de Mendoza",
         },
@@ -1485,7 +1243,12 @@ const ProvinciaDetalle = () => {
                   </p>
                 </>
               ),
-              imagenes: [mendozaVV2VV, mendozaVV2VVDos, mendozaVV2VVTres],
+              imagenes: [
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-1",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-2",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-3",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-4",
+              ],
             },
             {
               titulo: "Recorrida por fincas productivas",
@@ -1551,17 +1314,16 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                mendozaVV2VVDiez,
-                mendozaVV2VVOnce,
-                mendozaVV2VVDoce,
-                mendozaVV2VVTrece,
-                mendozaVV2VVCatorce,
-                mendozaVV2VVQuince,
-                mendozaVV2VVDieciseis,
-                mendozaVV2VVDiecisiete,
-                mendozaVV2VVDieciocho,
-                mendozaVV2VVDiecinueve,
-                mendozaVV2VVVeinte,
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-5",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-6",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-7",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-8",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-9",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-10",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-11",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-12",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-13",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-14",
               ],
             },
             {
@@ -1622,12 +1384,12 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                mendozaVV2VVCuatro,
-                mendozaVV2VVCinco,
-                mendozaVV2VVSeis,
-                mendozaVV2VVSiete,
-                mendozaVV2VVOcho,
-                mendozaVV2VVNueve,
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-15",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-16",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-17",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-18",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-19",
+                "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-20",
               ],
             },
           ],
@@ -1686,12 +1448,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            jujuyUno,
-            jujuyVVDos,
-            jujuyVVTres,
-            jujuyVVCuatro,
-            jujuyVVCinco,
-            jujuyVVSeis,
+            "tpa-web/provincias/jujuy/jujuy-exodo-1",
+            "tpa-web/provincias/jujuy/jujuy-exodo-2",
+            "tpa-web/provincias/jujuy/jujuy-exodo-3",
+            "tpa-web/provincias/jujuy/jujuy-exodo-4",
+            "tpa-web/provincias/jujuy/jujuy-exodo-5",
+            "tpa-web/provincias/jujuy/jujuy-exodo-6",
           ],
           lugar: "San Pedro – Volcán – Tilcara – Olaroz – Salinas Grandes",
         },
@@ -1742,12 +1504,11 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            entreriosVV,
-            entreriosVVDos,
-            entreriosVVTres,
-            entreriosVVCuatro,
-            entreriosVVCinco,
-            entreriosVVSeis,
+            "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-1",
+            "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-2",
+            "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-3",
+            "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-4",
+            "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-5",
           ],
           lugar: "San Salvador – Paraná",
         },
@@ -1786,7 +1547,12 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [formosaVV, formosaVVDos, formosaVVTres, formosaVVCuatro],
+          imagenes: [
+            "tpa-web/provincias/formosa/formosa-heroe-1",
+            "tpa-web/provincias/formosa/formosa-heroe-2",
+            "tpa-web/provincias/formosa/formosa-heroe-3",
+            "tpa-web/provincias/formosa/formosa-heroe-4",
+          ],
           lugar: "Ciudad de Formosa",
         },
       ],
@@ -1847,12 +1613,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            misionesVV,
-            misionesVVDos,
-            misionesVVTres,
-            misionesVVCuatro,
-            misionesVVCinco,
-            misionesVVSeis,
+            "tpa-web/provincias/misiones/misiones-ciudad-1",
+            "tpa-web/provincias/misiones/misiones-ciudad-2",
+            "tpa-web/provincias/misiones/misiones-ciudad-3",
+            "tpa-web/provincias/misiones/misiones-ciudad-4",
+            "tpa-web/provincias/misiones/misiones-ciudad-5",
+            "tpa-web/provincias/misiones/misiones-ciudad-6",
           ],
           lugar: "Oberá – Puerto Iguazú – Colonia Wanda",
         },
@@ -1931,14 +1697,14 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                lariojaQuintelaVV,
-                lariojaQuintelaVVUno,
-                lariojaQuintelaVVDos,
-                lariojaQuintelaVVTres,
-                lariojaQuintelaVVCuatro,
-                lariojaQuintelaVVCinco,
-                lariojaQuintelaVVSeis,
-                lariojaQuintelaVVSiete,
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-1",
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-2",
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-3",
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-4",
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-5",
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-6",
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-7",
+                "tpa-web/provincias/la-rioja/recepcion/larioja-recepcion-8",
               ],
             },
             {
@@ -1965,12 +1731,12 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                lariojaObispoVV,
-                lariojaObispoVVUno,
-                lariojaObispoVVDos,
-                lariojaObispoVVTres,
-                lariojaObispoVVCuatro,
-                lariojaObispoVVCinco,
+                "tpa-web/provincias/la-rioja/catedral/larioja-catedral-1",
+                "tpa-web/provincias/la-rioja/catedral/larioja-catedral-2",
+                "tpa-web/provincias/la-rioja/catedral/larioja-catedral-3",
+                "tpa-web/provincias/la-rioja/catedral/larioja-catedral-4",
+                "tpa-web/provincias/la-rioja/catedral/larioja-catedral-5",
+                "tpa-web/provincias/la-rioja/catedral/larioja-catedral-6",
               ],
             },
             {
@@ -1995,13 +1761,13 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                lariojaBodegaVV,
-                lariojaBodegaVVUno,
-                lariojaBodegaVVDos,
-                lariojaBodegaVVTres,
-                lariojaBodegaVVCuatro,
-                lariojaBodegaVVCinco,
-                lariojaBodegaVVSeis,
+                "tpa-web/provincias/la-rioja/bodega/larioja-bodega-1",
+                "tpa-web/provincias/la-rioja/bodega/larioja-bodega-2",
+                "tpa-web/provincias/la-rioja/bodega/larioja-bodega-3",
+                "tpa-web/provincias/la-rioja/bodega/larioja-bodega-4",
+                "tpa-web/provincias/la-rioja/bodega/larioja-bodega-5",
+                "tpa-web/provincias/la-rioja/bodega/larioja-bodega-6",
+                "tpa-web/provincias/la-rioja/bodega/larioja-bodega-7",
               ],
             },
             {
@@ -2030,11 +1796,11 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                lariojaChayaVV,
-                lariojaChayaVVUno,
-                lariojaChayaVVDos,
-                lariojaChayaVVTres,
-                lariojaChayaVVCuatro,
+                "tpa-web/provincias/la-rioja/chaya/larioja-chaya-1",
+                "tpa-web/provincias/la-rioja/chaya/larioja-chaya-2",
+                "tpa-web/provincias/la-rioja/chaya/larioja-chaya-3",
+                "tpa-web/provincias/la-rioja/chaya/larioja-chaya-4",
+                "tpa-web/provincias/la-rioja/chaya/larioja-chaya-5",
               ],
             },
 
@@ -2062,16 +1828,16 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                lariojaParquesVV,
-                lariojaParquesVVUno,
-                lariojaParquesVVDos,
-                lariojaParquesVVTres,
-                lariojaParquesVVCuatro,
-                lariojaParquesVVCinco,
-                lariojaParquesVVSeis,
-                lariojaParquesVVSiete,
-                lariojaParquesVVOcho,
-                lariojaParquesVVNueve,
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-4",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-5",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-6",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-7",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-8",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-9",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-10",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-1",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-2",
+                "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-3",
               ],
             },
             {
@@ -2105,13 +1871,13 @@ const ProvinciaDetalle = () => {
                 </>
               ),
               imagenes: [
-                lariojaTalampayaVV,
-                lariojaTalampayaVVUno,
-                lariojaTalampayaVVDos,
-                lariojaTalampayaVVTres,
-                lariojaVVQuiroga,
-                lariojaVVQuirogaDos,
-                lariojaVVQuirogaUno,
+                "tpa-web/provincias/la-rioja/talampaya/larioja-talampaya-1",
+                "tpa-web/provincias/la-rioja/talampaya/larioja-talampaya-2",
+                "tpa-web/provincias/la-rioja/talampaya/larioja-talampaya-3",
+                "tpa-web/provincias/la-rioja/talampaya/larioja-talampaya-4",
+                "tpa-web/provincias/la-rioja/parque/larioja-parque-1",
+                "tpa-web/provincias/la-rioja/parque/larioja-parque-2",
+                "tpa-web/provincias/la-rioja/parque/larioja-parque-3",
               ],
             },
           ],
@@ -2172,12 +1938,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            neuquenVV,
-            neuquenVVDos,
-            neuquenVVTres,
-            neuquenVVCuatro,
-            neuquenVVCinco,
-            neuquenVVSeis,
+            "tpa-web/provincias/neuquen/neuquen-ciudad-1",
+            "tpa-web/provincias/neuquen/neuquen-ciudad-2",
+            "tpa-web/provincias/neuquen/neuquen-ciudad-3",
+            "tpa-web/provincias/neuquen/neuquen-ciudad-4",
+            "tpa-web/provincias/neuquen/neuquen-ciudad-5",
+            "tpa-web/provincias/neuquen/neuquen-ciudad-6",
           ],
           lugar: "Ciudad de Neuquén – Añelo",
         },
@@ -2240,12 +2006,11 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            rioNegroUno,
-            rioNegroDos,
-            rioNegroTres,
-            rioNegroCuatro,
-            rioNegroCinco,
-            rioNegroSeis,
+            "tpa-web/provincias/rio-negro/rionegro-bariloche-1",
+            "tpa-web/provincias/rio-negro/rionegro-bariloche-2",
+            "tpa-web/provincias/rio-negro/rionegro-bariloche-3",
+            "tpa-web/provincias/rio-negro/rionegro-bariloche-4",
+            "tpa-web/provincias/rio-negro/rionegro-bariloche-5",
           ],
           lugar: "San Carlos de Bariloche",
         },
@@ -2292,12 +2057,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            sanLuisVV,
-            sanLuisVVDos,
-            sanLuisVVTres,
-            sanLuisVVCuatro,
-            sanLuisVVCinco,
-            sanLuisVVSeis,
+            "tpa-web/provincias/san-luis/sanluis-cristo-1",
+            "tpa-web/provincias/san-luis/sanluis-cristo-2",
+            "tpa-web/provincias/san-luis/sanluis-cristo-3",
+            "tpa-web/provincias/san-luis/sanluis-cristo-4",
+            "tpa-web/provincias/san-luis/sanluis-cristo-5",
+            "tpa-web/provincias/san-luis/sanluis-cristo-6",
           ],
           lugar: "San Luis – Renca – Villa de la Quebrada",
         },
@@ -2343,7 +2108,12 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [santafeVV, santafeVVDos, santafeVVTres, santafeVVCuatro],
+          imagenes: [
+            "tpa-web/provincias/santa-fe/san-lorenzo/santafe-sanlorenzo-1",
+            "tpa-web/provincias/santa-fe/san-lorenzo/santafe-sanlorenzo-2",
+            "tpa-web/provincias/santa-fe/san-lorenzo/santafe-sanlorenzo-3",
+            "tpa-web/provincias/santa-fe/san-lorenzo/santafe-sanlorenzo-4",
+          ],
           lugar: "San Lorenzo",
         },
 
@@ -2381,10 +2151,10 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            banderaroVV,
-            banderaroVVDos,
-            banderaroVVTres,
-            banderaroVVCuatro,
+            "tpa-web/provincias/santa-fe/rosario/diabandera24/santafe-rosario-1",
+            "tpa-web/provincias/santa-fe/rosario/diabandera24/santafe-rosario-2",
+            "tpa-web/provincias/santa-fe/rosario/diabandera24/santafe-rosario-3",
+            "tpa-web/provincias/santa-fe/rosario/diabandera24/santafe-rosario-4",
           ],
           lugar: "Rosario",
         },
@@ -2421,11 +2191,10 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            banderaVV,
-            banderaVVDos,
-            banderaVVTres,
-            banderaVVCuatro,
-            banderaVVCinco,
+            "tpa-web/provincias/santa-fe/rosario/diabandera25/santafe-bandera-1",
+            "tpa-web/provincias/santa-fe/rosario/diabandera25/santafe-bandera-2",
+            "tpa-web/provincias/santa-fe/rosario/diabandera25/santafe-bandera-3",
+            "tpa-web/provincias/santa-fe/rosario/diabandera25/santafe-bandera-4",
           ],
           lugar: "Rosario – San Nicolás",
         },
@@ -2473,7 +2242,10 @@ const ProvinciaDetalle = () => {
               </p>
             </>
           ),
-          imagenes: [santiagoVV, santiagoVVDos],
+          imagenes: [
+            "tpa-web/provincias/santiago-del-estero/santiago-casagob-1",
+            "tpa-web/provincias/santiago-del-estero/santiago-casagob-2",
+          ],
           lugar: "Santiago del Estero Capital",
         },
       ],
@@ -2522,12 +2294,12 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            corrientesVV,
-            corrientesVVDos,
-            corrientesVVTres,
-            corrientesVVCuatro,
-            corrientesVVCinco,
-            corrientesVVSeis,
+            "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-1",
+            "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-2",
+            "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-3",
+            "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-4",
+            "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-5",
+            "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-6",
           ],
           lugar: "Yapeyú",
         },
@@ -2587,17 +2359,17 @@ const ProvinciaDetalle = () => {
             </>
           ),
           imagenes: [
-            saladasVV,
-            saladasVVUno,
-            saladasVVDos,
-            saladasVVTres,
-            saladasVVCuatro,
-            saladasVVCinco,
-            saladasVVSeis,
-            saladasVVSiete,
-            saladasVVOcho,
-            saladasVVNueve,
-            saladasVVDiez,
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-1",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-2",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-3",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-4",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-5",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-6",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-7",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-8",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-9",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-10",
+            "tpa-web/provincias/corrientes/saladas/corrientes-saladas-11",
           ],
           lugar: "Saladas",
         },
@@ -2704,12 +2476,14 @@ const ProvinciaDetalle = () => {
                           {actividad.imagenes.map((imagen, index) => (
                             <Carousel.Item key={index}>
                               <img
-                                src={imagen}
+                                src={getCloudinaryUrl(imagen)}
                                 alt={`${provincia.nombre} - ${
                                   actividad.titulo ||
                                   `Actividad ${actividadIndex + 1}`
                                 } - Imagen ${index + 1}`}
                                 className="imagen-provincia"
+                                decoding="async"
+                                fetchPriority={index === 0 ? "high" : "auto"}
                               />
                             </Carousel.Item>
                           ))}
@@ -2763,11 +2537,13 @@ const ProvinciaDetalle = () => {
                         {visita.imagenes.map((imagen, index) => (
                           <Carousel.Item key={index}>
                             <img
-                              src={imagen}
+                              src={getCloudinaryUrl(imagen)}
                               alt={`${provincia.nombre} - Visita ${
                                 visitaIndex + 1
                               } - Imagen ${index + 1}`}
                               className="imagen-provincia"
+                              decoding="async"
+                              fetchPriority={index === 0 ? "high" : "auto"}
                             />
                           </Carousel.Item>
                         ))}
