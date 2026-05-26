@@ -128,7 +128,7 @@ const Discursos = () => {
         titulo: "Visita al Colegio Militar de la Nación",
         descripcion:
           "Villarruel visitó el Colegio Militar de la Nación, el Jefe del Ejército Grl Presti, el Director del CMN Cnl My Liberatori y su plana mayor la invitaron a conocerlo y almorzar con los cadetes.",
-        videoUrl: "https://youtu.be/es4bP2On9qM",
+        videoUrl: "https://youtu.be/tQ74cVU9tQI",
         fecha: "2024-06",
         categoria: "Varios",
       },
@@ -249,6 +249,15 @@ const Discursos = () => {
           "Villarruel brindó una disertación titulada “La política como servicio al bien común desde la vivencia personal” ante estudiantes, docentes y autoridades.",
         videoUrl: "https://youtu.be/AV6PgnsRbTY",
         fecha: "2025-09",
+        categoria: "Varios",
+      },
+      {
+        id: 13,
+        titulo: "Reunión Comunidad Iberoamericana (Madrid)",
+        descripcion:
+          " Victoria Villarruel, participó este 5 de diciembre de 2025 en la Reunión de Presidentes de Parlamentos de Países de la Comunidad Iberoamericana.",
+        videoUrl: "https://youtu.be/AvOFsP8AjIo",
+        fecha: "2025-12",
         categoria: "Varios",
       },
     ],
