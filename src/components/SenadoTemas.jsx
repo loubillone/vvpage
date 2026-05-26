@@ -1,12 +1,19 @@
 import React from "react";
 import "../css/malvinas.css";
 import malvinasTitle from "../assets/img/senado/malvinas/malvinasTitle.webp";
-import vvMalvinas from "../assets/img/senado/malvinas/vvMalvinas.webp";
-import vvMalvinasU from "../assets/img/senado/malvinas/vvMalvinasUshuaia.webp";
-import vvMalvinasE from "../assets/img/senado/malvinas/vvMalvinasEpopeya.webp";
 import victimasTitle from "../assets/img/senado/victimas/victimasdelterrorismo.webp";
-import vvVictimasUno from "../assets/img/senado/victimas/vvterrorismoUno.webp";
-import vvVictimasDos from "../assets/img/senado/victimas/vvterrorismoDos.webp";
+
+const CLOUD_NAME = "dwb5tmtqg";
+
+export const getCloudinaryUrl = (publicId) => {
+  return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/w_1000,h_600,c_fill,g_auto,f_auto,q_auto/${publicId}`;
+};
+
+const getSectionImgSrc = (img) =>
+  typeof img === "string" && img.startsWith("tpa-web/")
+    ? getCloudinaryUrl(img)
+    : img;
+
 const SenadoTemas = ({ tema }) => {
   const data =
     tema === "victimasDelTerrorismo"
@@ -15,7 +22,7 @@ const SenadoTemas = ({ tema }) => {
           sections: [
             {
               titulo: "HOMENAJE A LAS VICTIMAS DEL TERRORISMO",
-              img: vvVictimasDos,
+              img: "tpa-web/senado/victimas/senado-victimas-1",
               texto: (
                 <>
                   <p>
@@ -68,7 +75,7 @@ const SenadoTemas = ({ tema }) => {
               titulo:
                 "DÍA INTERNACIONAL DE CONMEMORACIÓN Y HOMENAJE A LAS VÍCTIMAS DEL TERRORISMO ",
 
-              img: vvVictimasUno,
+              img: "tpa-web/senado/victimas/senado-victimas-2",
               texto: (
                 <>
                   <p>
@@ -124,7 +131,7 @@ const SenadoTemas = ({ tema }) => {
             {
               titulo:
                 "ENTREGA DE DIPLOMAS DE HONOR A MILITARES VETERANOS DE MALVINAS",
-              img: vvMalvinas,
+              img: "tpa-web/senado/malvinas/senado-malv-1",
               texto: (
                 <>
                   <p>
@@ -171,7 +178,7 @@ const SenadoTemas = ({ tema }) => {
               titulo:
                 "A 43 AÑOS DE LA GESTA DE MALVINAS, VICTORIA VILLARRUEL ENCABEZÓ EN USHUAIA EL ACTO OFICIAL EN HOMENAJE A LOS EX COMBATIENTES Y CAÍDOS EN LA GUERRA",
 
-              img: vvMalvinasU,
+              img: "tpa-web/senado/malvinas/senado-malv-2",
               texto: (
                 <>
                   <p>
@@ -218,7 +225,7 @@ const SenadoTemas = ({ tema }) => {
               titulo:
                 "VICTORIA VILLARRUEL ENCABEZÓ EL ACTO “MALVINAS, EPOPEYA NACIONAL” Y DISTINGUIÓ A VETERANOS DE MALVINAS",
 
-              img: vvMalvinasE,
+              img: "tpa-web/senado/malvinas/senado-malv-3",
               texto: (
                 <>
                   <p>
@@ -265,6 +272,73 @@ const SenadoTemas = ({ tema }) => {
                 </>
               ),
             },
+
+            {
+              titulo:
+                "ACTO HOMENAJE A LOS VETERANOS Y CAÍDOS EN MALVINAS EN CHIVILCOY",
+              img: "tpa-web/senado/malvinas/senado-malv-4",
+              texto: (
+                <>
+                  <p>
+                    <span className="tema-fecha">- ABRIL 2026 -</span> La
+                    vicepresidente de la Nación, Victoria Villarruel, participó
+                    en la ciudad de Chivilcoy de un acto homenaje a los
+                    Veteranos y Caídos en la Guerra de Malvinas, realizado en la
+                    Plaza 25 de Mayo junto al intendente Guillermo Britos.{" "}
+                    <span className="vv-estilo-detalle">
+                      Durante su discurso, reafirmó que la causa Malvinas debe
+                      mantenerse alejada de las disputas partidarias y destacó
+                      su carácter de unidad nacional.
+                    </span>{" "}
+                    <br />
+                    <br />
+                    Villarruel explicó que, a diferencia de años anteriores,
+                    decidió no participar de la tradicional vigilia en Tierra
+                    del Fuego porque no quería prestarse a una utilización
+                    política de la causa. En ese marco, expresó:
+                  </p>
+
+                  <blockquote className="cita">
+                    “Malvinas no es una excusa para que se diriman internas de
+                    un partido político. Es homenaje y gratitud para los
+                    argentinos que defendieron nuestra tierra frente al invasor
+                    inglés.”
+                  </blockquote>
+
+                  <p>
+                    La titular del Senado sostuvo además que{" "}
+                    <span className="vv-estilo-detalle">
+                      “Malvinas trasciende los intereses personales” y que
+                      representa “la única causa nacional que une a los
+                      argentinos sin diferencias de ideología, religión u origen
+                      social”.
+                    </span>{" "}
+                    <br />
+                    <br />
+                    En otro tramo de su intervención, recordó el proceso de
+                    “desmalvinización” posterior a la guerra y cuestionó la
+                    invisibilización de los veteranos:
+                  </p>
+
+                  <blockquote className="cita">
+                    “Fueron hombres, fueron argentinos que defendieron lo
+                    nuestro y fueron inmensos en su juventud.”
+                  </blockquote>
+
+                  <p>
+                    Villarruel también advirtió sobre el deterioro de las
+                    Fuerzas Armadas tras el conflicto y remarcó la necesidad de
+                    recuperar el reconocimiento y respeto hacia quienes
+                    combatieron por la Patria.{" "}
+                    <span className="vv-estilo-detalle">
+                      El acto reunió a veteranos, vecinos y autoridades locales
+                      en una jornada de homenaje y memoria por los héroes de
+                      Malvinas.
+                    </span>
+                  </p>
+                </>
+              ),
+            },
           ],
           frase:
             "El soldado no muere en el frente de batalla, muere cuando su patria lo olvida.",
@@ -283,7 +357,11 @@ const SenadoTemas = ({ tema }) => {
             <h3 className="titulo-parrafo-malvinas">{sec.titulo}</h3>
           </div>
           <div className="imagen-malvinas">
-            <img src={sec.img} alt={sec.titulo} />
+            <img
+              src={getSectionImgSrc(sec.img)}
+              alt={sec.titulo}
+              fetchpriority={i === 0 ? "high" : "auto"}
+            />
           </div>
           <div className="col columna-malvinas">
             <div className="contenedor-parrafo-malvinas">

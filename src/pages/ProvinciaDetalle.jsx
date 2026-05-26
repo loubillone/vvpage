@@ -2803,7 +2803,7 @@ const ProvinciaDetalle = () => {
                                 } - Imagen ${index + 1}`}
                                 className="imagen-provincia"
                                 decoding="async"
-                                fetchPriority={index === 0 ? "high" : "auto"}
+                                fetchpriority={index === 0 ? "high" : "auto"}
                               />
                             </Carousel.Item>
                           ))}
@@ -2863,7 +2863,7 @@ const ProvinciaDetalle = () => {
                               } - Imagen ${index + 1}`}
                               className="imagen-provincia"
                               decoding="async"
-                              fetchPriority={index === 0 ? "high" : "auto"}
+                              fetchpriority={index === 0 ? "high" : "auto"}
                             />
                           </Carousel.Item>
                         ))}
