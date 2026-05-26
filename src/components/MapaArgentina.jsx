@@ -96,7 +96,7 @@ const provinciasVisitadas = {
   },
   "Santa Cruz": {
     nombre: "Santa Cruz",
-    visitada: false,
+    visitada: true,
     slug: "santa-cruz",
   },
   "Santa Fe": {

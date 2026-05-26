@@ -2375,6 +2375,326 @@ const ProvinciaDetalle = () => {
         },
       ],
     },
+
+    "santa-cruz": {
+      fecha: "Abril de 2026",
+      lugar: "Santa Cruz",
+      actividades: [
+        {
+          titulo: "Municipalidad de Las Heras",
+          descripcion: (
+            <>
+              <p>
+                La vicepresidente Victoria Villarruel inició una recorrida por
+                el norte de{" "}
+                <span className="vv-estilo-detalle">Santa Cruz</span> con el
+                objetivo de{" "}
+                <span className="vv-estilo-detalle">
+                  conocer la producción, el turismo y las problemáticas de la
+                  región
+                </span>
+                , en una agenda centrada en el contacto directo con las
+                comunidades patagónicas. <br />
+                <br />
+                Durante su paso por{" "}
+                <span className="vv-estilo-detalle">Las Heras</span>, fue
+                recibida por el intendente{" "}
+                <span className="vv-estilo-detalle">Antonio Carambia</span>,
+                junto a los senadores nacionales{" "}
+                <span className="vv-estilo-detalle">
+                  José María Carambia y Natalia Gadano
+                </span>
+                , con quienes mantuvo reuniones de trabajo y diálogo sobre la
+                realidad de la provincia.
+              </p>
+
+              <br />
+
+              <p>
+                La visita formó parte de una gira federal que incluyó recorridas
+                por distintas localidades de Santa Cruz, reafirmando la
+                importancia de{" "}
+                <span className="vv-estilo-detalle">
+                  escuchar, dialogar y estar presente en cada rincón del país
+                </span>
+                . En ese marco, Villarruel expresó su alegría por continuar
+                recorriendo la Patagonia argentina y destacó los valores del{" "}
+                <span className="vv-estilo-detalle">
+                  federalismo, el trabajo y la identidad nacional
+                </span>
+                .
+              </p>
+            </>
+          ),
+          imagenes: [
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-1",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-2",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-3",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-4",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-5",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-6",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-7",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-8",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-9",
+            "tpa-web/provincias/santa-cruz/muniLasHeras/santacruz-muni-10",
+          ],
+        },
+
+        {
+          titulo: "Plaza Bicentenario",
+          descripcion: (
+            <>
+              <p>
+                Como parte de su agenda en{" "}
+                <span className="vv-estilo-detalle">Las Heras</span>, la
+                vicepresidente recorrió la{" "}
+                <span className="vv-estilo-detalle">Plaza Bicentenario</span>
+                , acompañada por el intendente Antonio Carambia y los senadores
+                nacionales Gadano y Carambia. <br />
+              </p>
+
+              <br />
+
+              <p>
+                La actividad formó parte de una agenda orientada a{" "}
+                <span className="vv-estilo-detalle">
+                  fortalecer el vínculo con las provincias y visibilizar la
+                  realidad del interior profundo
+                </span>
+                , destacando la importancia de mantener una presencia activa en
+                el territorio.
+              </p>
+            </>
+          ),
+          imagenes: [
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-1",
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-2",
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-3",
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-4",
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-5",
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-6",
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-7",
+            "tpa-web/provincias/santa-cruz/plazaBicentenario/sc-plazabicentenario-8",
+          ],
+        },
+
+        {
+          titulo: "Yacimiento YPF",
+          descripcion: (
+            <>
+              <p>
+                Posteriormente, Villarruel recorrió yacimientos de{" "}
+                <span className="vv-estilo-detalle">YPF</span> en la zona de{" "}
+                <span className="vv-estilo-detalle">Las Heras</span>, donde pudo
+                interiorizarse sobre la{" "}
+                <span className="vv-estilo-detalle">
+                  realidad operativa y los desafíos del sector energético
+                </span>{" "}
+                en el norte de Santa Cruz. <br />
+                <br />
+                Durante la visita, se abordaron temas vinculados a la producción
+                petrolera, la actividad laboral y el rol estratégico de los
+                recursos energéticos para el desarrollo nacional.
+              </p>
+
+              <br />
+
+              <p>
+                La recorrida puso el foco en la importancia de{" "}
+                <span className="vv-estilo-detalle">
+                  la soberanía energética y el trabajo argentino
+                </span>
+                , reconociendo el esfuerzo de quienes sostienen una de las
+                principales actividades productivas de la Patagonia.
+              </p>
+            </>
+          ),
+          imagenes: [
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-1",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-2",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-3",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-4",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-5",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-6",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-7",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-8",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-9",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-10",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-11",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-12",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-13",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-14",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-15",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-16",
+            "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-17",
+          ],
+        },
+
+        {
+          titulo: "Municipalidad de Los Antiguos",
+          descripcion: (
+            <>
+              <p>
+                La gira federal continuó en la localidad de{" "}
+                <span className="vv-estilo-detalle">Los Antiguos</span>, donde
+                la vicepresidente fue recibida por la intendenta{" "}
+                <span className="vv-estilo-detalle">Zulma Neira</span>. <br />
+                <br />
+                Durante el encuentro mantuvieron una reunión de trabajo enfocada
+                en{" "}
+                <span className="vv-estilo-detalle">
+                  las necesidades productivas, turísticas y sociales de la
+                  región cordillerana
+                </span>
+                , destacando el potencial de la zona y las oportunidades de
+                crecimiento para las economías regionales.
+              </p>
+
+              <br />
+
+              <p>
+                En reconocimiento a su visita institucional, Villarruel fue
+                distinguida como{" "}
+                <span className="vv-estilo-detalle">Huésped de Honor</span>,
+                reafirmando el compromiso de integración y cercanía con los
+                municipios del interior del país.
+              </p>
+            </>
+          ),
+          imagenes: [
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-1",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-2",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-3",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-4",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-5",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-6",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-7",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-8",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-9",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-10",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-11",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-12",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-13",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-14",
+            "tpa-web/provincias/santa-cruz/losantiguos/muniLosAntiguos/sc-muniLA-15",
+          ],
+        },
+
+        {
+          titulo: "Emprendimientos productivos",
+          descripcion: (
+            <>
+              <p>
+                Durante su estadía en{" "}
+                <span className="vv-estilo-detalle">Los Antiguos</span>, la
+                vicepresidente recorrió distintos{" "}
+                <span className="vv-estilo-detalle">
+                  emprendimientos familiares
+                </span>{" "}
+                que representan el potencial productivo de Santa Cruz. <br />
+                <br />
+                En <span className="vv-estilo-detalle">GirgolAR</span>, conoció
+                el trabajo dedicado al cultivo de gírgolas y hongos sobre
+                álamos, interiorizándose sobre los procesos de producción y el
+                desarrollo de productos regionales.
+              </p>
+
+              <br />
+
+              <p>
+                También visitó la chacra{" "}
+                <span className="vv-estilo-detalle">La Querencia</span>, donde
+                se impulsa la producción de frambuesas, cerezas, manzanas y
+                elaboraciones artesanales como mermeladas, postres y tés. <br />
+                <br />
+                La recorrida destacó el valor del{" "}
+                <span className="vv-estilo-detalle">
+                  trabajo genuino, el esfuerzo familiar y las economías
+                  regionales
+                </span>
+                , pilares fundamentales para el crecimiento del interior
+                argentino.
+              </p>
+            </>
+          ),
+          imagenes: [
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-1",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-2",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-3",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-5",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-6",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-7",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-8",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-9",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-10",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-11",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-12",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-13",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-14",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-15",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-16",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-17",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-18",
+            "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-19",
+          ],
+        },
+
+        {
+          titulo: "Cueva de las Manos",
+          descripcion: (
+            <>
+              <p>
+                Como cierre de su paso por el norte santacruceño, Victoria
+                Villarruel visitó la{" "}
+                <span className="vv-estilo-detalle">Cueva de las Manos</span>
+                , uno de los sitios arqueológicos más importantes de la
+                Argentina y patrimonio histórico de la humanidad. <br />
+                <br />
+                Ubicada sobre el cañón del{" "}
+                <span className="vv-estilo-detalle">río Pinturas</span>, la
+                cueva conserva pinturas rupestres de más de{" "}
+                <span className="vv-estilo-detalle">
+                  10.000 años de antigüedad
+                </span>
+                , testimonio de los pueblos nómades que habitaron la Patagonia.
+              </p>
+
+              <br />
+
+              <p>
+                La visita formó parte de una agenda que combinó{" "}
+                <span className="vv-estilo-detalle">
+                  producción, turismo, identidad e historia nacional
+                </span>
+                . Al finalizar el recorrido, un cóndor acompañó la despedida de
+                la comitiva antes del regreso a Buenos Aires, cerrando una gira
+                marcada por el contacto con las comunidades y el reconocimiento
+                del enorme potencial de Santa Cruz.
+              </p>
+            </>
+          ),
+          imagenes: [
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-1",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-2",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-3",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-4",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-5",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-6",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-7",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-8",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-9",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-10",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-11",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-12",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-13",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-14",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-15",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-16",
+            "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-17",
+          ],
+        },
+      ],
+    },
   };
 
   const provincia = visitasProvincias[slug];
