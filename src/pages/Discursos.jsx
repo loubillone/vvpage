@@ -272,6 +272,17 @@ const Discursos = () => {
         fecha: "2026-04",
         categoria: "Provincias",
       },
+
+      {
+        id: 2,
+        titulo:
+          "Reconocimiento al depto de conservación y restauración del Senado",
+        descripcion:
+          "Victoria Villarruel, participó de la entrega de diplomas de reconocimiento al Departamento de Conservación y Restauración del Senado de la Nación.",
+        videoUrl: "https://youtu.be/WgF7TtMzPow",
+        fecha: "2026-05",
+        categoria: "Senado",
+      },
     ],
   };
 
