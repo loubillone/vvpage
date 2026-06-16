@@ -141,6 +141,15 @@ const Discursos = () => {
         fecha: "2024-05",
         categoria: "Varios",
       },
+      {
+        id: 12,
+        titulo: "XIII Fórum Nacional de Agronegocios",
+        descripcion:
+          "Victoria Villarruel dejó un mensaje a los presentes en el XIII Fórum Nacional de Agronegocios LIDE Argentina.",
+        videoUrl: "https://youtu.be/NxR-OwvWnZs?si=HhZkdODOfswA---Y",
+        fecha: "2024-11",
+        categoria: "Varios",
+      },
     ],
     2025: [
       {
