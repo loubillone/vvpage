@@ -636,6 +636,435 @@ const ProvinciaDetalle = () => {
           ],
           lugar: "San Miguel de Tucumán",
         },
+        {
+          fecha: "Julio de 2026",
+          lugar: "Tucumán",
+          actividades: [
+            {
+              titulo: "Recepción",
+              descripcion: (
+                <>
+                  <p>
+                    La vicepresidente Victoria Villarruel arribó a{" "}
+                    <span className="vv-estilo-detalle">Tucumán</span> durante
+                    la noche del 8 de julio, para participar de las
+                    celebraciones por el{" "}
+                    <span className="vv-estilo-detalle">
+                      210° aniversario de la Declaración de la Independencia
+                      Argentina
+                    </span>
+                    . <br />
+                    <br />A su llegada al{" "}
+                    <span className="vv-estilo-detalle">
+                      Aeropuerto Internacional Benjamín Matienzo
+                    </span>
+                    , fue recibida por el vicegobernador{" "}
+                    <span className="vv-estilo-detalle">Miguel Acevedo</span>,
+                    quien le dio la bienvenida en representación de las
+                    autoridades provinciales.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Desde allí comenzó una extensa agenda que se prolongaría
+                    durante toda la jornada patria, combinando{" "}
+                    <span className="vv-estilo-detalle">
+                      actos institucionales, celebraciones religiosas,
+                      encuentros con los tucumanos y actividades vinculadas con
+                      la producción provincial
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/tucuman/2026/recepcion/tucuman-recepcion-1",
+                "tpa-web/provincias/tucuman/2026/recepcion/tucuman-recepcion-2",
+                "tpa-web/provincias/tucuman/2026/recepcion/tucuman-recepcion-3",
+                "tpa-web/provincias/tucuman/2026/recepcion/tucuman-recepcion-4",
+                "tpa-web/provincias/tucuman/2026/recepcion/tucuman-recepcion-5",
+              ],
+            },
+
+            {
+              titulo: "Vigilia en la Casa Histórica",
+              descripcion: (
+                <>
+                  <p>
+                    Poco después de su llegada, Villarruel se trasladó al centro
+                    de{" "}
+                    <span className="vv-estilo-detalle">
+                      San Miguel de Tucumán
+                    </span>{" "}
+                    para participar de la{" "}
+                    <span className="vv-estilo-detalle">
+                      Vigilia por el Día de la Independencia
+                    </span>{" "}
+                    frente a la Casa Histórica, acompañando el inicio de las
+                    celebraciones del 9 de julio. <br />
+                    <br />
+                    En el mismo lugar donde en 1816 los representantes de las
+                    Provincias Unidas declararon la Independencia, la
+                    vicepresidente participó de la conmemoración por los{" "}
+                    <span className="vv-estilo-detalle">
+                      210 años de aquel acontecimiento fundamental para la
+                      Nación Argentina
+                    </span>
+                    .
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Su presencia en la{" "}
+                    <span className="vv-estilo-detalle">Casa Histórica</span>{" "}
+                    marcó el comienzo de una jornada profundamente ligada a la{" "}
+                    <span className="vv-estilo-detalle">
+                      identidad nacional, la unidad y el federalismo
+                    </span>
+                    , valores que atravesaron el resto de las actividades
+                    desarrolladas en la provincia.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-1",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-2",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-3",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-4",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-5",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-6",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-7",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-8",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-9",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-10",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-11",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-12",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-13",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-14",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-15",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-16",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-17",
+                "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-18",
+              ],
+            },
+
+            {
+              titulo: "Casa de Gobierno",
+              descripcion: (
+                <>
+                  <p>
+                    Durante la mañana del 9 de julio, la agenda continuó en la{" "}
+                    <span className="vv-estilo-detalle">
+                      Casa de Gobierno de Tucumán
+                    </span>
+                    , donde Villarruel fue recibida por el gobernador{" "}
+                    <span className="vv-estilo-detalle">Osvaldo Jaldo</span>,
+                    acompañado por su esposa Ana María Grillo y el
+                    vicegobernador Miguel Acevedo. Allí mantuvieron un encuentro
+                    protocolar antes del comienzo de los actos oficiales.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Posteriormente, Villarruel y Jaldo encabezaron el{" "}
+                    <span className="vv-estilo-detalle">
+                      tradicional izamiento de la Bandera Nacional en Plaza
+                      Independencia
+                    </span>
+                    , acompañados por autoridades provinciales y municipales,
+                    representantes de distintas instituciones, fuerzas y vecinos
+                    que se acercaron a participar de la celebración patria.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Durante su paso por la provincia, la vicepresidente destacó
+                    la importancia de avanzar hacia un{" "}
+                    <span className="vv-estilo-detalle">
+                      federalismo real, basado en el vínculo y el trabajo
+                      conjunto con las provincias
+                    </span>
+                    , y valoró especialmente la hospitalidad con la que fue
+                    recibida por los tucumanos.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-1",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-2",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-3",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-4",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-5",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-6",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-7",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-8",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-9",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-10",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-11",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-12",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-13",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-14",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-15",
+                "tpa-web/provincias/tucuman/2026/casa-gobierno/tucuman-casagob-16",
+              ],
+            },
+
+            {
+              titulo: "Solemne Tedeum",
+              descripcion: (
+                <>
+                  <p>
+                    Finalizado el izamiento, Villarruel se dirigió junto a las
+                    autoridades provinciales hacia la{" "}
+                    <span className="vv-estilo-detalle">
+                      Catedral de Nuestra Señora de la Encarnación
+                    </span>
+                    , donde participó del{" "}
+                    <span className="vv-estilo-detalle">
+                      Solemne Tedeum por el Día de la Independencia
+                    </span>
+                    .
+                  </p>
+
+                  <br />
+
+                  <p>
+                    La ceremonia religiosa reunió a autoridades nacionales,
+                    provinciales y municipales en una de las tradiciones
+                    centrales de cada{" "}
+                    <span className="vv-estilo-detalle">9 de julio</span> en la
+                    provincia donde nació la Independencia Argentina.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Al finalizar, la vicepresidente destacó la importancia de{" "}
+                    <span className="vv-estilo-detalle">
+                      preservar la unidad nacional y fortalecer los vínculos
+                      entre las provincias
+                    </span>
+                    , poniendo nuevamente en valor el carácter federal de la
+                    Argentina a 210 años de la Declaración de la Independencia.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-1",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-2",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-3",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-4",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-5",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-6",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-7",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-8",
+                "tpa-web/provincias/tucuman/2026/tedeum/tucuman-tedeum-9",
+              ],
+            },
+
+            {
+              titulo: "Desfile cívico-militar",
+              descripcion: (
+                <>
+                  <p>
+                    Las celebraciones continuaron en el{" "}
+                    <span className="vv-estilo-detalle">Parque 9 de Julio</span>
+                    , donde Victoria Villarruel y el gobernador Osvaldo Jaldo
+                    participaron del{" "}
+                    <span className="vv-estilo-detalle">
+                      desfile cívico-militar por el Día de la Independencia
+                    </span>{" "}
+                    ante una multitud de tucumanos y visitantes.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Desde el palco oficial, la vicepresidente presenció el paso
+                    de{" "}
+                    <span className="vv-estilo-detalle">
+                      estudiantes, docentes, instituciones civiles, agrupaciones
+                      y distintas fuerzas
+                    </span>
+                    , en una celebración que reunió a miles de personas y
+                    convirtió la fecha patria en una jornada abierta a toda la
+                    comunidad.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    El desfile reafirmó el carácter popular de una conmemoración
+                    que une{" "}
+                    <span className="vv-estilo-detalle">
+                      historia, identidad y sentimiento nacional
+                    </span>
+                    , precisamente en la provincia que fue escenario de uno de
+                    los acontecimientos decisivos para la construcción de la
+                    Nación.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-1",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-2",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-3",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-4",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-5",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-6",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-7",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-8",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-9",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-10",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-11",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-12",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-13",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-14",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-15",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-16",
+                "tpa-web/provincias/tucuman/2026/desfile/tucuman-desfile-17",
+              ],
+            },
+
+            {
+              titulo: "Nuestra Señora del Valle - La Florida",
+              descripcion: (
+                <>
+                  <p>
+                    Tras concluir las actividades centrales en la capital
+                    tucumana, Villarruel se trasladó hacia{" "}
+                    <span className="vv-estilo-detalle">La Florida</span>, donde
+                    visitó la comunidad de{" "}
+                    <span className="vv-estilo-detalle">
+                      Nuestra Señora del Valle
+                    </span>
+                    . <br />
+                    <br />
+                    Allí compartió un momento de{" "}
+                    <span className="vv-estilo-detalle">
+                      oración por la Patria
+                    </span>
+                    , incorporando a su recorrido una instancia de recogimiento
+                    antes de continuar con la agenda productiva.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    La visita permitió sumar a las celebraciones del 9 de julio
+                    una dimensión vinculada a la{" "}
+                    <span className="vv-estilo-detalle">
+                      fe, la tradición y el compromiso con la Nación
+                    </span>
+                    , antes de trasladarse hacia uno de los principales
+                    establecimientos industriales de la zona.
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-1",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-2",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-3",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-4",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-5",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-6",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-7",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-8",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-9",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-10",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-11",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-12",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-13",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-14",
+                "tpa-web/provincias/tucuman/2026/capilla/tucuman-capilla-15",
+              ],
+            },
+
+            {
+              titulo: "Ingenio La Florida - Los Balcanes",
+              descripcion: (
+                <>
+                  <p>
+                    Como última actividad de su jornada en Tucumán, la
+                    vicepresidente recorrió el{" "}
+                    <span className="vv-estilo-detalle">
+                      Ingenio La Florida
+                    </span>
+                    , perteneciente a la{" "}
+                    <span className="vv-estilo-detalle">
+                      Compañía Azucarera Los Balcanes
+                    </span>
+                    , con el objetivo de conocer de primera mano la situación de
+                    la{" "}
+                    <span className="vv-estilo-detalle">
+                      agroindustria tucumana y del sector sucroalcoholero
+                    </span>
+                    .
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Villarruel fue recibida por{" "}
+                    <span className="vv-estilo-detalle">
+                      Jorge Rocchia Ferro
+                    </span>
+                    , presidente de la compañía y titular de la Unión Industrial
+                    de Tucumán, junto a directivos de Los Balcanes,
+                    representantes del sector industrial, autoridades y
+                    trabajadores del ingenio.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Durante el encuentro se abordaron los{" "}
+                    <span className="vv-estilo-detalle">
+                      desafíos de la actividad azucarera, la producción de
+                      bioetanol, la provisión energética y las dificultades que
+                      enfrenta la industria del norte argentino
+                    </span>
+                    . La vicepresidente manifestó además su voluntad de impulsar
+                    el tratamiento de la{" "}
+                    <span className="vv-estilo-detalle">
+                      Ley de Biocombustibles
+                    </span>
+                    , una iniciativa de especial relevancia para Tucumán y las
+                    provincias productoras de bioetanol.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    La recorrida por el ingenio cerró una extensa visita que
+                    comenzó en el lugar donde nació políticamente la Argentina
+                    independiente y terminó conociendo una de las actividades
+                    que sostienen el presente productivo provincial, uniendo{" "}
+                    <span className="vv-estilo-detalle">
+                      historia, federalismo, fe, industria y trabajo argentino
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-1",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-2",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-3",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-4",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-5",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-6",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-7",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-8",
+                "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-9",
+              ],
+            },
+          ],
+        },
       ],
     },
 
@@ -2197,6 +2626,151 @@ const ProvinciaDetalle = () => {
             "tpa-web/provincias/santa-fe/rosario/diabandera25/santafe-bandera-4",
           ],
           lugar: "Rosario – San Nicolás",
+        },
+        {
+          fecha: "Agosto de 2026",
+          lugar: "Venado Tuerto",
+          actividades: [
+            {
+              titulo: "ExpoVenado 2026",
+              descripcion: (
+                <>
+                  <p>
+                    La vicepresidente Victoria Villarruel visitó{" "}
+                    <span className="vv-estilo-detalle">Venado Tuerto</span>, en
+                    la provincia de Santa Fe, para participar de la apertura de
+                    la{" "}
+                    <span className="vv-estilo-detalle">
+                      90ª edición de ExpoVenado
+                    </span>
+                    , una de las muestras agroindustriales más representativas
+                    del sur santafesino y un espacio que reúne al campo, la
+                    industria, el comercio, la innovación y el trabajo de toda
+                    la región. <br />
+                    <br />
+                    Villarruel participó del tradicional corte de cintas junto
+                    al intendente{" "}
+                    <span className="vv-estilo-detalle">Leonel Chiarella</span>,
+                    la presidenta de la Sociedad Rural de Venado Tuerto{" "}
+                    <span className="vv-estilo-detalle">Noelia Castagnani</span>{" "}
+                    y el ministro de Desarrollo Productivo de Santa Fe{" "}
+                    <span className="vv-estilo-detalle">Gustavo Puccini</span>,
+                    además de autoridades provinciales, locales y representantes
+                    del sector productivo.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Durante su recorrido por la exposición, la vicepresidente
+                    mantuvo contacto con{" "}
+                    <span className="vv-estilo-detalle">
+                      productores, industriales y emprendedores
+                    </span>
+                    , y destacó especialmente el modelo productivo de Venado
+                    Tuerto, basado en la articulación entre el campo y la
+                    industria, la incorporación de tecnología y la generación de
+                    valor agregado.
+                  </p>
+
+                  <blockquote className="cita">
+                    "ExpoVenado de alguna manera representa lo mejor de la
+                    Argentina"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    Villarruel puso en valor el esfuerzo de las familias
+                    venadenses y señaló a la ciudad como{" "}
+                    <span className="vv-estilo-detalle">
+                      un ejemplo del potencial que tiene el interior productivo
+                      argentino
+                    </span>
+                    . También destacó el peso histórico de Santa Fe dentro del
+                    desarrollo nacional y sostuvo que el futuro del país debe
+                    pensarse desde la complementariedad entre la producción
+                    agropecuaria y la actividad industrial.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    En diálogo con la prensa, fijó además una posición respecto
+                    de uno de los principales reclamos del sector productivo y
+                    manifestó que el objetivo debe ser avanzar hacia una
+                    Argentina en la que{" "}
+                    <span className="vv-estilo-detalle">
+                      el campo y la industria puedan producir y exportar sin
+                      retenciones
+                    </span>
+                    .
+                  </p>
+
+                  <blockquote className="cita">
+                    "Por supuesto el futuro de nuestro campo y de nuestra
+                    industria debe ser sin retenciones a las exportaciones"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    La vicepresidente también puso el foco en la{" "}
+                    <span className="vv-estilo-detalle">
+                      generación de trabajo genuino
+                    </span>{" "}
+                    y en las dificultades que atraviesan muchas familias
+                    argentinas, planteando la necesidad de priorizar la
+                    producción y el empleo por encima de las disputas
+                    electorales. Su participación en ExpoVenado reafirmó así una
+                    mirada federal orientada a{" "}
+                    <span className="vv-estilo-detalle">
+                      acompañar al interior, fortalecer la producción nacional y
+                      reconocer a quienes trabajan e invierten en el país
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-1",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-2",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-3",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-4",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-111",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-6",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-7",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-8",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-9",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-10",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-13",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-11",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-12",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-14",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-15",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-16",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-17",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-18",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-19",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-20",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-21",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-22",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-23",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-24",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-25",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-26",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-27",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-28",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-29",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-30",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-31",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-32",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-33",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-34",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-35",
+              ],
+            },
+          ],
         },
       ],
     },
