@@ -2745,9 +2745,7 @@ const ProvinciaDetalle = () => {
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-10",
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-13",
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-11",
-
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-12",
-
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-14",
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-15",
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-16",

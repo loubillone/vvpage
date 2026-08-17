@@ -292,6 +292,15 @@ const Discursos = () => {
         fecha: "2026-05",
         categoria: "Senado",
       },
+      {
+        id: 3,
+        titulo: "ExpoVenado 2026",
+        descripcion:
+          "Victoria Villarruel participó de la apertura de la 90ª edición de ExpoVenado, en Venado Tuerto, Santa Fe, donde destacó el valor del campo, la industria, la producción y el trabajo argentino como motores del desarrollo nacional.",
+        videoUrl: "https://youtu.be/wJd1NgW4Xlk",
+        fecha: "2026-08",
+        categoria: "Provincias",
+      },
     ],
   };
 
