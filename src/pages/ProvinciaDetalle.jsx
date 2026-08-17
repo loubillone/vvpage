@@ -2627,6 +2627,153 @@ const ProvinciaDetalle = () => {
           ],
           lugar: "Rosario – San Nicolás",
         },
+        {
+          fecha: "Agosto de 2026",
+          lugar: "Venado Tuerto",
+          actividades: [
+            {
+              titulo: "ExpoVenado 2026",
+              descripcion: (
+                <>
+                  <p>
+                    La vicepresidente Victoria Villarruel visitó{" "}
+                    <span className="vv-estilo-detalle">Venado Tuerto</span>, en
+                    la provincia de Santa Fe, para participar de la apertura de
+                    la{" "}
+                    <span className="vv-estilo-detalle">
+                      90ª edición de ExpoVenado
+                    </span>
+                    , una de las muestras agroindustriales más representativas
+                    del sur santafesino y un espacio que reúne al campo, la
+                    industria, el comercio, la innovación y el trabajo de toda
+                    la región. <br />
+                    <br />
+                    Villarruel participó del tradicional corte de cintas junto
+                    al intendente{" "}
+                    <span className="vv-estilo-detalle">Leonel Chiarella</span>,
+                    la presidenta de la Sociedad Rural de Venado Tuerto{" "}
+                    <span className="vv-estilo-detalle">Noelia Castagnani</span>{" "}
+                    y el ministro de Desarrollo Productivo de Santa Fe{" "}
+                    <span className="vv-estilo-detalle">Gustavo Puccini</span>,
+                    además de autoridades provinciales, locales y representantes
+                    del sector productivo.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Durante su recorrido por la exposición, la vicepresidente
+                    mantuvo contacto con{" "}
+                    <span className="vv-estilo-detalle">
+                      productores, industriales y emprendedores
+                    </span>
+                    , y destacó especialmente el modelo productivo de Venado
+                    Tuerto, basado en la articulación entre el campo y la
+                    industria, la incorporación de tecnología y la generación de
+                    valor agregado.
+                  </p>
+
+                  <blockquote className="cita">
+                    "ExpoVenado de alguna manera representa lo mejor de la
+                    Argentina"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    Villarruel puso en valor el esfuerzo de las familias
+                    venadenses y señaló a la ciudad como{" "}
+                    <span className="vv-estilo-detalle">
+                      un ejemplo del potencial que tiene el interior productivo
+                      argentino
+                    </span>
+                    . También destacó el peso histórico de Santa Fe dentro del
+                    desarrollo nacional y sostuvo que el futuro del país debe
+                    pensarse desde la complementariedad entre la producción
+                    agropecuaria y la actividad industrial.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    En diálogo con la prensa, fijó además una posición respecto
+                    de uno de los principales reclamos del sector productivo y
+                    manifestó que el objetivo debe ser avanzar hacia una
+                    Argentina en la que{" "}
+                    <span className="vv-estilo-detalle">
+                      el campo y la industria puedan producir y exportar sin
+                      retenciones
+                    </span>
+                    .
+                  </p>
+
+                  <blockquote className="cita">
+                    "Por supuesto el futuro de nuestro campo y de nuestra
+                    industria debe ser sin retenciones a las exportaciones"
+                  </blockquote>
+
+                  <br />
+
+                  <p>
+                    La vicepresidente también puso el foco en la{" "}
+                    <span className="vv-estilo-detalle">
+                      generación de trabajo genuino
+                    </span>{" "}
+                    y en las dificultades que atraviesan muchas familias
+                    argentinas, planteando la necesidad de priorizar la
+                    producción y el empleo por encima de las disputas
+                    electorales. Su participación en ExpoVenado reafirmó así una
+                    mirada federal orientada a{" "}
+                    <span className="vv-estilo-detalle">
+                      acompañar al interior, fortalecer la producción nacional y
+                      reconocer a quienes trabajan e invierten en el país
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-1",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-2",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-3",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-4",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-111",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-6",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-7",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-8",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-9",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-10",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-13",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-11",
+
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-12",
+
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-14",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-15",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-16",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-17",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-18",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-19",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-20",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-21",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-22",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-23",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-24",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-25",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-26",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-27",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-28",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-29",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-30",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-31",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-32",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-33",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-34",
+                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-35",
+              ],
+            },
+          ],
+        },
       ],
     },
 
