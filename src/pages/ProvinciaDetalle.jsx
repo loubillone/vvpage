@@ -486,6 +486,184 @@ const ProvinciaDetalle = () => {
           ],
           lugar: "Chivilcoy",
         },
+        {
+          fecha: "Agosto de 2026",
+          lugar: "González Catán",
+          actividades: [
+            {
+              titulo: "Obra del Padre Mario Pantaleo",
+              descripcion: (
+                <>
+                  <p>
+                    La vicepresidente Victoria Villarruel visitó la{" "}
+                    <span className="vv-estilo-detalle">
+                      Obra del Padre Mario Pantaleo
+                    </span>
+                    , ubicada en{" "}
+                    <span className="vv-estilo-detalle">
+                      González Catán, partido de La Matanza
+                    </span>
+                    , una institución que desde hace décadas transforma la
+                    realidad de su comunidad a través de la educación, la salud,
+                    la inclusión y el acompañamiento a las familias. <br />
+                    <br />
+                    Durante la recorrida conoció las distintas áreas que
+                    integran una obra destinada a acompañar a las personas en
+                    diferentes etapas de sus vidas, combinando{" "}
+                    <span className="vv-estilo-detalle">
+                      educación, formación, asistencia social, deporte y
+                      contención
+                    </span>
+                    .
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Con más de{" "}
+                    <span className="vv-estilo-detalle">600 trabajadores</span>,
+                    la institución constituye además uno de los principales
+                    empleadores de La Matanza, detrás del Municipio y
+                    Mercedes-Benz. Su dimensión refleja el impacto de una obra
+                    que, además de brindar oportunidades y acompañamiento,{" "}
+                    <span className="vv-estilo-detalle">
+                      genera trabajo y contribuye al desarrollo de su comunidad
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-1",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-2",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-3",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-4",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-5",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-6",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-7",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-8",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-9",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-10",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-11",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-12",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-13",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-14",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-15",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-16",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-17",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-18",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-19",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-20",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-21",
+                "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-22",
+              ],
+            },
+
+            {
+              titulo: "Educación y formación",
+              descripcion: (
+                <>
+                  <p>
+                    La visita continuó por los espacios educativos de la
+                    institución, donde Villarruel pudo conocer el trabajo que se
+                    desarrolla desde los primeros años de formación hasta la
+                    educación superior. La Obra cuenta con{" "}
+                    <span className="vv-estilo-detalle">
+                      jardín de infantes, colegio primario, secundario y nivel
+                      terciario
+                    </span>
+                    , acompañando a niños y jóvenes de la comunidad a lo largo
+                    de las distintas etapas de su educación.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    A esta tarea se suma la{" "}
+                    <span className="vv-estilo-detalle">
+                      enseñanza de oficios
+                    </span>
+                    , orientada a brindar herramientas concretas para ampliar
+                    las oportunidades laborales y favorecer la autonomía. La
+                    recorrida puso en valor la{" "}
+                    <span className="vv-estilo-detalle">
+                      educación y el trabajo como herramientas de transformación
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-1",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-3",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-4",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-5",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-6",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-7",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-8",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-9",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-10",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-11",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-12",
+                "tpa-web/provincias/bsas/gonzalez-catan/educacion/ba-gonzalezcatan-educacion-13",
+              ],
+            },
+
+            {
+              titulo: "Inclusión, comunidad y legado",
+              descripcion: (
+                <>
+                  <p>
+                    El recorrido incluyó también espacios destinados al
+                    acompañamiento y bienestar de la comunidad.
+                  </p>
+
+                  <p>
+                    Villarruel destacó especialmente el legado del{" "}
+                    <span className="vv-estilo-detalle">
+                      Padre Mario Pantaleo
+                    </span>
+                    , que continúa presente en quienes sostienen diariamente la
+                    institución y en una forma de comprender el compromiso con
+                    los demás basada en la{" "}
+                    <span className="vv-estilo-detalle">
+                      solidaridad, la vocación de servicio y el trabajo
+                      cotidiano
+                    </span>
+                    .
+                  </p>
+
+                  <br />
+
+                  <p>
+                    La visita puso en valor el papel de las instituciones que
+                    nacen y crecen junto a sus comunidades, reafirmando que{" "}
+                    <span className="vv-estilo-detalle">
+                      la Argentina también se construye desde cada comunidad,
+                      sus instituciones y, sobre todo, desde su gente
+                    </span>
+                    .
+                  </p>
+                </>
+              ),
+              imagenes: [
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-1",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-2",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-3",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-4",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-5",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-6",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-7",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-8",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-9",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-10",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-11",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-12",
+                "tpa-web/provincias/bsas/gonzalez-catan/comunidad/ba-gonzalezcatan-comunidad-13",
+              ],
+            },
+          ],
+        },
       ],
     },
 
@@ -2766,7 +2944,6 @@ const ProvinciaDetalle = () => {
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-31",
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-32",
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-33",
-                "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-34",
                 "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-35",
               ],
             },
