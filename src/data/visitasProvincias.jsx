@@ -5,6 +5,11 @@ export const visitasProvincias = {
       nombre: "Buenos Aires",
       visitas: [
         {
+          titulo: "Homenaje a la Guarnición de Azul",
+          slug: "azul-2024",
+          fechaISO: "2024-01",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/azul/ba-azul-1",
           fecha: "Enero de 2024",
           descripcion: (
             <>
@@ -38,6 +43,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Producción y deporte en Mar del Plata",
+          slug: "mar-del-plata-2024",
+          fechaISO: "2024-05",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-1",
           fecha: "Mayo de 2024",
           descripcion: (
             <>
@@ -85,6 +95,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Vecinos del Barrio Sans Soucí",
+          slug: "pilar-2024",
+          fechaISO: "2024-06",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/pilar/ba-pilar-1",
           fecha: "Junio de 2024",
           descripcion: (
             <>
@@ -171,6 +186,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Basílica de Luján",
+          slug: "lujan-2025",
+          fechaISO: "2025-05",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/lujan/ba-lujan-1",
           fecha: "Mayo de 2025",
           descripcion: (
             <>
@@ -210,6 +230,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Producción en Chivilcoy y Suipacha",
+          slug: "chivilcoy-suipacha-2025",
+          fechaISO: "2025-05",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-1",
           fecha: "Mayo de 2025",
           descripcion: (
             <>
@@ -264,6 +289,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Educación Rural en Saladillo",
+          slug: "saladillo-2025",
+          fechaISO: "2025-05",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/saladillo/ba-saladillo-1",
           fecha: "Mayo de 2025",
           descripcion: (
             <>
@@ -332,6 +362,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Basílica del Perpetuo Socorro",
+          slug: "san-pedro-2025",
+          fechaISO: "2025-09",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-1",
           fecha: "Septiembre de 2025",
           descripcion: (
             <>
@@ -373,6 +408,11 @@ export const visitasProvincias = {
           lugar: "San Pedro",
         },
         {
+          titulo: "Día del Veterano de Malvinas",
+          slug: "malvinas-chivilcoy-2026",
+          fechaISO: "2026-04",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-1",
           fecha: "Abril de 2026",
           descripcion: (
             <>
@@ -475,6 +515,11 @@ export const visitasProvincias = {
           lugar: "Chivilcoy",
         },
         {
+          titulo: "Obra del Padre Mario Pantaleo",
+          slug: "padre-mario-2026",
+          fechaISO: "2026-08",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-1",
           fecha: "Agosto de 2026",
           lugar: "González Catán",
           actividades: [
@@ -659,6 +704,11 @@ export const visitasProvincias = {
       nombre: "Córdoba",
       visitas: [
         {
+          titulo: "Festival de Jesús María",
+          slug: "jesus-maria-2024",
+          fechaISO: "2024-01",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-1",
           fecha: "Enero de 2024",
           descripcion: (
             <>
@@ -714,6 +764,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Acto Oficial del 25 de Mayo",
+          slug: "25-mayo-2024",
+          fechaISO: "2024-05-25",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/cordoba/25demayo/cordoba-act25-1",
           fecha: "Mayo de 2024",
           descripcion: (
             <>
@@ -757,6 +812,11 @@ export const visitasProvincias = {
       nombre: "Tucumán",
       visitas: [
         {
+          titulo: "Día de la Independencia 2025",
+          slug: "independencia-2025",
+          fechaISO: "2025-07",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/tucuman/tucuman-casa-1",
           fecha: "Julio de 2025",
           descripcion: (
             <>
@@ -803,6 +863,11 @@ export const visitasProvincias = {
           lugar: "San Miguel de Tucumán",
         },
         {
+          titulo: "Día de la Independencia 2026",
+          slug: "independencia-2026",
+          fechaISO: "2026-07-09",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/tucuman/2026/vigilia/tucuman-vigilia-1",
           fecha: "Julio de 2026",
           lugar: "Tucumán",
           actividades: [
@@ -1238,6 +1303,11 @@ export const visitasProvincias = {
       nombre: "Salta",
       visitas: [
         {
+          titulo: "Batalla de Salta 2024",
+          slug: "batalla-2024",
+          fechaISO: "2024-02-20",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/salta/batalla-de-salta/salta-batalla-1",
           fecha: "Febrero de 2024",
           descripcion: (
             <>
@@ -1278,6 +1348,11 @@ export const visitasProvincias = {
           lugar: "Ciudad de Salta",
         },
         {
+          titulo: "Homenaje al General Güemes",
+          slug: "guemes-2024",
+          fechaISO: "2024-06-17",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/salta/guemes/salta-guemes-1",
           fecha: "Junio de 2024",
           descripcion: (
             <>
@@ -1323,6 +1398,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "80ª Exposición Rural de Salta",
+          slug: "expo-rural-2024",
+          fechaISO: "2024-08",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/salta/rural/salta-rural-1",
           fecha: "Agosto de 2024",
           descripcion: (
             <>
@@ -1387,6 +1467,11 @@ export const visitasProvincias = {
       nombre: "Chubut",
       visitas: [
         {
+          titulo: "90° Aniversario de Río Mayo",
+          slug: "rio-mayo-2025",
+          fechaISO: "2025-08-22",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/chubut/chubut-riomayo-1",
           fecha: "Agosto de 2025",
           descripcion: (
             <>
@@ -1473,6 +1558,11 @@ export const visitasProvincias = {
       nombre: "Tierra del Fuego",
       visitas: [
         {
+          titulo: "Día del Veterano de Malvinas",
+          slug: "malvinas-2025",
+          fechaISO: "2025-04-02",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-1",
           fecha: "Abril de 2025",
           descripcion: (
             <>
@@ -1525,6 +1615,11 @@ export const visitasProvincias = {
       nombre: "Catamarca",
       visitas: [
         {
+          titulo: "Bajada de la Virgen del Valle",
+          slug: "bajada-virgen-2024",
+          fechaISO: "2024-04",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-1",
           fecha: "Abril de 2024",
           descripcion: (
             <>
@@ -1583,6 +1678,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Fiesta Nacional del Poncho",
+          slug: "fiesta-poncho-2024",
+          fechaISO: "2024-07",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/catamarca/fiesta-del-poncho/catamarca-poncho-1",
           fecha: "Julio de 2024",
           descripcion: (
             <>
@@ -1631,6 +1731,11 @@ export const visitasProvincias = {
           lugar: "San Fernando del Valle de Catamarca",
         },
         {
+          titulo: "Cuna del Poncho en Belén",
+          slug: "belen-el-rodeo-2025",
+          fechaISO: "2025-07",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-1",
           fecha: "Julio 2025",
           descripcion: (
             <>
@@ -1710,6 +1815,11 @@ export const visitasProvincias = {
       nombre: "Mendoza",
       visitas: [
         {
+          titulo: "Vendimia 2024",
+          slug: "vendimia-2024",
+          fechaISO: "2024-03-03",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-1",
           fecha: "Marzo de 2024",
           descripcion: (
             <>
@@ -1768,6 +1878,11 @@ export const visitasProvincias = {
           lugar: "Ciudad de Mendoza",
         },
         {
+          titulo: "Vendimia 2026",
+          slug: "vendimia-2026",
+          fechaISO: "2026-03",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-1",
           fecha: "Marzo de 2026",
           lugar: "Mendoza",
           actividades: [
@@ -1996,6 +2111,11 @@ export const visitasProvincias = {
       nombre: "Jujuy",
       visitas: [
         {
+          titulo: "Éxodo Jujeño 2024",
+          slug: "exodo-jujeno-2024",
+          fechaISO: "2024-08",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/jujuy/jujuy-exodo-1",
           fecha: "Agosto de 2024",
           descripcion: (
             <>
@@ -2059,6 +2179,11 @@ export const visitasProvincias = {
       nombre: "Entre Ríos",
       visitas: [
         {
+          titulo: "Fiesta Nacional del Arroz",
+          slug: "fiesta-arroz-2024",
+          fechaISO: "2024-10",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-1",
           fecha: "Octubre de 2024",
           descripcion: (
             <>
@@ -2114,6 +2239,11 @@ export const visitasProvincias = {
       nombre: "Formosa",
       visitas: [
         {
+          titulo: "Día del Héroe Formoseño",
+          slug: "heroe-formoseno-2025",
+          fechaISO: "2025-10",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/formosa/formosa-heroe-1",
           fecha: "Octubre de 2025",
           descripcion: (
             <>
@@ -2157,6 +2287,11 @@ export const visitasProvincias = {
       nombre: "Misiones",
       visitas: [
         {
+          titulo: "Fiesta del Inmigrante",
+          slug: "fiesta-inmigrante-2024",
+          fechaISO: "2024-09",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/misiones/misiones-ciudad-1",
           fecha: "Septiembre de 2024",
           descripcion: (
             <>
@@ -2224,6 +2359,11 @@ export const visitasProvincias = {
       nombre: "La Rioja",
       visitas: [
         {
+          titulo: "Fiesta Nacional de la Chaya",
+          slug: "chaya-2026",
+          fechaISO: "2026-02-14",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/la-rioja/chaya/larioja-chaya-1",
           fecha: "Febrero de 2026",
           lugar: "La Rioja",
           actividades: [
@@ -2484,6 +2624,11 @@ export const visitasProvincias = {
       nombre: "Neuquén",
       visitas: [
         {
+          titulo: "Argentina-Texas Summit 2024",
+          slug: "texas-summit-2024",
+          fechaISO: "2024-10-22",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/neuquen/neuquen-ciudad-1",
           fecha: "Octubre de 2024",
           descripcion: (
             <>
@@ -2549,6 +2694,11 @@ export const visitasProvincias = {
       nombre: "Río Negro",
       visitas: [
         {
+          titulo: "Agenda Institucional en Bariloche",
+          slug: "bariloche-2024",
+          fechaISO: "2024-01",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/rio-negro/rionegro-bariloche-1",
           fecha: "Enero de 2024",
           descripcion: (
             <>
@@ -2616,6 +2766,11 @@ export const visitasProvincias = {
       nombre: "San Luis",
       visitas: [
         {
+          titulo: "Festividades de Renca y La Quebrada",
+          slug: "renca-quebrada-2024",
+          fechaISO: "2024-05-02",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/san-luis/sanluis-cristo-1",
           fecha: "Mayo de 2024",
           descripcion: (
             <>
@@ -2668,6 +2823,11 @@ export const visitasProvincias = {
       nombre: "Santa Fe",
       visitas: [
         {
+          titulo: "Batalla de San Lorenzo 2024",
+          slug: "san-lorenzo-2024",
+          fechaISO: "2024-02-03",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/santa-fe/san-lorenzo/santafe-sanlorenzo-1",
           fecha: "Febrero de 2024",
           descripcion: (
             <>
@@ -2713,6 +2873,11 @@ export const visitasProvincias = {
         },
 
         {
+          titulo: "Día de la Bandera 2024",
+          slug: "bandera-2024",
+          fechaISO: "2024-06",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/santa-fe/rosario/diabandera24/santafe-rosario-1",
           fecha: "Junio de 2024",
           descripcion: (
             <>
@@ -2754,6 +2919,11 @@ export const visitasProvincias = {
           lugar: "Rosario",
         },
         {
+          titulo: "Promesa a la Bandera 2025",
+          slug: "bandera-2025",
+          fechaISO: "2025-06",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/santa-fe/rosario/diabandera25/santafe-bandera-1",
           fecha: "Junio de 2025",
           descripcion: (
             <>
@@ -2794,6 +2964,11 @@ export const visitasProvincias = {
           lugar: "Rosario – San Nicolás",
         },
         {
+          titulo: "ExpoVenado 2026",
+          slug: "expovenado-2026",
+          fechaISO: "2026-08",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-1",
           fecha: "Agosto de 2026",
           lugar: "Venado Tuerto",
           actividades: [
@@ -2944,6 +3119,11 @@ export const visitasProvincias = {
       nombre: "Santiago del Estero",
       visitas: [
         {
+          titulo: "Reunión con el Gobernador Zamora",
+          slug: "gobernador-zamora-2025",
+          fechaISO: "2025-07-20",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/santiago-del-estero/santiago-casagob-1",
           fecha: "Julio de 2025",
           descripcion: (
             <>
@@ -2994,6 +3174,11 @@ export const visitasProvincias = {
       nombre: "Corrientes",
       visitas: [
         {
+          titulo: "Natalicio del General San Martín",
+          slug: "natalicio-san-martin-2024",
+          fechaISO: "2024-02-25",
+          precisionFecha: "dia",
+          imagenPortada: "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-1",
           fecha: "Febrero de 2024",
           descripcion: (
             <>
@@ -3043,11 +3228,16 @@ export const visitasProvincias = {
           lugar: "Yapeyú",
         },
         {
+          titulo: "Homenaje al Sargento Cabral",
+          slug: "sargento-cabral-2025",
+          fechaISO: "2025-08",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/corrientes/saladas/corrientes-saladas-1",
           fecha: "Agosto de 2025",
           descripcion: (
             <>
               <p>
-                En 2024, la vicepresidente Victoria Villarruel visitó nuevamente
+                En 2025, la vicepresidente Victoria Villarruel visitó nuevamente
                 la provincia de Corrientes, participando en la{" "}
                 <span className="vv-estilo-detalle">
                   recepción de los restos del sargento Juan Bautista Cabral en
@@ -3119,6 +3309,11 @@ export const visitasProvincias = {
       nombre: "Santa Cruz",
       visitas: [
         {
+          titulo: "Gira por el Norte de Santa Cruz",
+          slug: "gira-norte-2026",
+          fechaISO: "2026-04",
+          precisionFecha: "mes",
+          imagenPortada: "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-1",
           fecha: "Abril de 2026",
           lugar: "Santa Cruz",
           actividades: [
