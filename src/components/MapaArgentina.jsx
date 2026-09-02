@@ -1,124 +1,136 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/mapaArgentina.css";
+import { visitasProvincias } from "../data/visitasProvincias";
+
+// Universo total: 23 provincias + CABA.
+const TOTAL_JURISDICCIONES = 24;
+// CABA se cuenta como jurisdicción recorrida a nivel informativo, pero no
+// tiene (ni debe tener) una entrada propia en visitasProvincias.
+const JURISDICCIONES_EXTRA = 1;
+
+const provinciasConVisitas = Object.values(visitasProvincias).filter(
+  (provincia) => provincia.visitas?.length > 0,
+).length;
+
+const jurisdiccionesRecorridas = provinciasConVisitas + JURISDICCIONES_EXTRA;
+
+const porcentajeRecorrido = Math.floor(
+  (jurisdiccionesRecorridas / TOTAL_JURISDICCIONES) * 100,
+);
+
+const TOTAL_VISITAS = Object.values(visitasProvincias).reduce(
+  (total, provincia) => total + (provincia.visitas?.length ?? 0),
+  0,
+);
+
+const cantidadVisitas = (slug) => visitasProvincias[slug]?.visitas?.length ?? 0;
+
+const tieneContenido = (slug) => cantidadVisitas(slug) > 0;
 
 const provinciasVisitadas = {
   "Buenos Aires": {
     nombre: "Buenos Aires",
-    visitada: true,
     slug: "buenos-aires",
   },
   Catamarca: {
     nombre: "Catamarca",
-    visitada: true,
     slug: "catamarca",
   },
   Chaco: {
     nombre: "Chaco",
-    visitada: false,
     slug: "chaco",
   },
   Chubut: {
     nombre: "Chubut",
-    visitada: true,
     slug: "chubut",
   },
   Córdoba: {
     nombre: "Córdoba",
-    visitada: true,
     slug: "cordoba",
   },
   Corrientes: {
     nombre: "Corrientes",
-    visitada: true,
     slug: "corrientes",
   },
   "Entre Rios": {
     nombre: "Entre Ríos",
-    visitada: true,
     slug: "entre-rios",
   },
   Formosa: {
     nombre: "Formosa",
-    visitada: true,
     slug: "formosa",
   },
   Jujuy: {
     nombre: "Jujuy",
-    visitada: true,
     slug: "jujuy",
   },
   "La Pampa": {
     nombre: "La Pampa",
-    visitada: false,
     slug: "la-pampa",
   },
   "La Rioja": {
     nombre: "La Rioja",
-    visitada: true,
     slug: "la-rioja",
   },
   Mendoza: {
     nombre: "Mendoza",
-    visitada: true,
     slug: "mendoza",
   },
   Misiones: {
     nombre: "Misiones",
-    visitada: true,
     slug: "misiones",
   },
   Neuquén: {
     nombre: "Neuquén",
-    visitada: true,
     slug: "neuquen",
   },
 
   "Rio Negro": {
     nombre: "Río Negro",
-    visitada: true,
     slug: "rio-negro",
   },
   Salta: {
     nombre: "Salta",
-    visitada: true,
     slug: "salta",
   },
   "San Juan": {
     nombre: "San Juan",
-    visitada: false,
     slug: "san-juan",
   },
   "San Luis": {
     nombre: "San Luis",
-    visitada: true,
     slug: "san-luis",
   },
   "Santa Cruz": {
     nombre: "Santa Cruz",
-    visitada: true,
     slug: "santa-cruz",
   },
   "Santa Fe": {
     nombre: "Santa Fe",
-    visitada: true,
     slug: "santa-fe",
   },
   "Santiago del Estero": {
     nombre: "Santiago del Estero",
-    visitada: true,
     slug: "santiago-del-estero",
   },
   "Tierra del Fuego": {
     nombre: "Tierra del Fuego",
-    visitada: true,
     slug: "tierra-del-fuego",
   },
   Tucumán: {
     nombre: "Tucumán",
-    visitada: true,
     slug: "tucuman",
   },
+};
+
+// Una provincia es navegable si existe en visitasProvincias y tiene al
+// menos una visita documentada (Chaco, La Pampa y San Juan quedan sin
+// contenido y por lo tanto no navegan).
+const esProvinciaVisitada = (nombreClave) => {
+  const info = provinciasVisitadas[nombreClave];
+  if (!info) return false;
+  return tieneContenido(info.slug);
 };
 
 const mapeoProvincias = {
@@ -245,34 +257,16 @@ const MapaArgentina = () => {
   const [svgContent, setSvgContent] = useState("");
   const svgContainerRef = useRef(null);
 
-  // Calcular el progreso de provincias visitadas
-  const calcularProgreso = () => {
-    const totalProvincias = 23;
-    const provinciasVisitadasCount = Object.values(provinciasVisitadas).filter(
-      (provincia) => provincia.visitada,
-    ).length;
-    const porcentaje = Math.round(
-      (provinciasVisitadasCount / totalProvincias) * 100,
-    );
-    return {
-      visitadas: provinciasVisitadasCount,
-      total: totalProvincias,
-      porcentaje: porcentaje,
-    };
-  };
-
-  const progreso = calcularProgreso();
-
   const handleProvinciaClick = (provincia) => {
     const provinciaNormalizada = mapeoProvincias[provincia] || provincia;
-    if (provinciasVisitadas[provinciaNormalizada]?.visitada) {
+    if (esProvinciaVisitada(provinciaNormalizada)) {
       navigate(`/provincia/${provinciasVisitadas[provinciaNormalizada].slug}`);
     }
   };
 
   const handleProvinciaHover = (provincia, event) => {
     const provinciaNormalizada = mapeoProvincias[provincia] || provincia;
-    if (provinciasVisitadas[provinciaNormalizada]?.visitada) {
+    if (esProvinciaVisitada(provinciaNormalizada)) {
       setHoverProvincia(provinciaNormalizada);
       const rect = event.currentTarget.getBoundingClientRect();
       const container = svgContainerRef.current;
@@ -374,7 +368,7 @@ const MapaArgentina = () => {
               const provinciaNormalizada =
                 mapeoProvincias[parentNombre] || parentNombre;
 
-              if (provinciasVisitadas[provinciaNormalizada]?.visitada) {
+              if (esProvinciaVisitada(provinciaNormalizada)) {
                 element.classList.add("visitada");
                 element.style.cursor = "pointer";
                 provinciasProcesadas++;
@@ -400,7 +394,7 @@ const MapaArgentina = () => {
             const provinciaNormalizada =
               mapeoProvincias[provinciaNombre] || provinciaNombre;
 
-            if (provinciasVisitadas[provinciaNormalizada]?.visitada) {
+            if (esProvinciaVisitada(provinciaNormalizada)) {
               element.classList.add("visitada");
               element.style.cursor = "pointer";
               provinciasProcesadas++;
@@ -432,7 +426,7 @@ const MapaArgentina = () => {
             const title = element.parentElement.getAttribute("title");
             const provinciaNormalizada = mapeoProvincias[title] || title;
 
-            if (provinciasVisitadas[provinciaNormalizada]?.visitada) {
+            if (esProvinciaVisitada(provinciaNormalizada)) {
               element.classList.add("visitada");
               element.style.cursor = "pointer";
               provinciasProcesadas++;
@@ -507,25 +501,32 @@ const MapaArgentina = () => {
           <div className="col-12">
             <h2 className="titulo-mapa">Victoria Federal</h2>
             <p className="subtitulo-mapa">
-              Haz clic en las provincias marcadas en celeste para ver los
-              detalles de cada visita
+              Explorá las recorridas de Victoria Villarruel por la Argentina.
             </p>
-            {/* Barra de progreso */}
+            {/* Barra de progreso de jurisdicciones recorridas */}
             <div className="progreso-container">
               <div className="progreso-info">
                 <span className="progreso-texto">
-                  Provincias recorridas: {progreso.visitadas} de{" "}
-                  {progreso.total}
+                  Provincias recorridas: {jurisdiccionesRecorridas} de{" "}
+                  {TOTAL_JURISDICCIONES}
                 </span>
                 <span className="progreso-porcentaje">
-                  {progreso.porcentaje}%
+                  {porcentajeRecorrido}%
                 </span>
               </div>
               <div className="progreso-bar-container">
                 <div
                   className="progreso-bar-fill"
-                  style={{ width: `${progreso.porcentaje}%` }}
+                  style={{ width: `${porcentajeRecorrido}%` }}
                 ></div>
+              </div>
+              <div className="visitas-documentadas">
+                <span className="visitas-documentadas-numero">
+                  {TOTAL_VISITAS}
+                </span>
+                <span className="visitas-documentadas-texto">
+                  visitas documentadas
+                </span>
               </div>
             </div>
           </div>
@@ -533,17 +534,26 @@ const MapaArgentina = () => {
         <div className="row">
           <div className="col-12 mapa-container">
             {/* Tooltip flotante */}
-            {hoverProvincia && (
-              <div
-                className="tooltip-provincia"
-                style={{
-                  left: `${tooltipPosition.x}px`,
-                  top: `${tooltipPosition.y}px`,
-                }}
-              >
-                {hoverProvincia}
-              </div>
-            )}
+            {hoverProvincia &&
+              (() => {
+                const slug = provinciasVisitadas[hoverProvincia]?.slug;
+                const visitas = cantidadVisitas(slug);
+                return (
+                  <div
+                    className="tooltip-provincia"
+                    style={{
+                      left: `${tooltipPosition.x}px`,
+                      top: `${tooltipPosition.y}px`,
+                    }}
+                  >
+                    <span className="tooltip-nombre">{hoverProvincia}</span>
+                    <span className="tooltip-visitas">
+                      {visitas}{" "}
+                      {visitas === 1 ? "visita" : "visitas"}
+                    </span>
+                  </div>
+                );
+              })()}
 
             {svgLoaded && svgContent && (
               <div

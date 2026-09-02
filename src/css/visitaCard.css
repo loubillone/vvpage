@@ -5,7 +5,8 @@
 
 .visitas-count {
   font-family: "raleway-regular", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
   color: #4e4e4e;
   text-align: center;
   margin-bottom: 2.5rem;
@@ -13,7 +14,14 @@
 
 .visitas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* Mismo ancho de card que repeat(3, 1fr) (3 columnas + 2 gaps), pero al
+     usar auto-fit + justify-content, si hay menos de 3 cards el grupo queda
+     centrado en vez de estirarse o pegarse a la izquierda. */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(0, calc((100% - 2 * 2rem) / 3))
+  );
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
 }
@@ -85,7 +93,7 @@
 
 .visita-card-titulo {
   font-family: "raleway-bold", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   color: #043d83;
   margin-bottom: 0.15rem;
 }
@@ -93,7 +101,7 @@
 .visita-card-fecha,
 .visita-card-lugar {
   font-family: "raleway-regular", sans-serif;
-  font-size: 1rem;
+  font-size: 1.45rem;
   color: #4e4e4e;
   margin: 0;
 }
@@ -102,18 +110,47 @@
   margin-top: auto;
   padding-top: 0.85rem;
   font-family: "raleway-bold", sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.45rem;
   color: #0037a0;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .visitas-grid {
-    grid-template-columns: repeat(2, 1fr);
+    /* Mismo ancho de card que repeat(2, 1fr) (2 columnas + 1 gap), pero
+       centrado cuando hay una sola visita. */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(0, calc((100% - 1 * 2rem) / 2))
+    );
+  }
+
+  .visita-card-titulo {
+    font-size: 1.6rem;
+  }
+
+  .visita-card-fecha,
+  .visita-card-lugar,
+  .visita-card-cta {
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 767px) {
   .visitas-grid {
     grid-template-columns: 1fr;
+  }
+
+  .visitas-count {
+    font-size: 1.45rem;
+  }
+
+  .visita-card-titulo {
+    font-size: 1.6rem;
+  }
+
+  .visita-card-fecha,
+  .visita-card-lugar,
+  .visita-card-cta {
+    font-size: 1.4rem;
   }
 }

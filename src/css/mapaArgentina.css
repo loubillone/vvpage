@@ -20,7 +20,7 @@
   margin-bottom: 2rem;
 }
 
-/* Estilos para la barra de progreso */
+/* Estilos para la barra de progreso de jurisdicciones recorridas */
 .progreso-container {
   max-width: 600px;
   margin: 0 auto 3rem;
@@ -91,6 +91,28 @@
   }
 }
 
+.visitas-documentadas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.visitas-documentadas-numero {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #0037a0;
+  line-height: 1;
+}
+
+.visitas-documentadas-texto {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.5rem;
+  color: #4e4e4e;
+  margin-top: 0.3rem;
+}
+
 .mapa-container {
   display: flex;
   justify-content: center;
@@ -149,17 +171,29 @@
 
 .tooltip-provincia {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #0037a0;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-family: "raleway-bold", sans-serif;
-  font-size: 1.1rem;
   pointer-events: none;
   z-index: 1000;
   transform: translateX(-50%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
+}
+
+.tooltip-nombre {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.1rem;
+}
+
+.tooltip-visitas {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -181,6 +215,14 @@
   }
 
   .progreso-porcentaje {
+    font-size: 1.4rem;
+  }
+
+  .visitas-documentadas-numero {
+    font-size: 3.4rem;
+  }
+
+  .visitas-documentadas-texto {
     font-size: 1.4rem;
   }
 
@@ -228,6 +270,14 @@
     height: 25px;
   }
 
+  .visitas-documentadas-numero {
+    font-size: 3.2rem;
+  }
+
+  .visitas-documentadas-texto {
+    font-size: 1.4rem;
+  }
+
   .mapa-container {
     padding: 1rem;
   }
@@ -258,8 +308,8 @@
   .progreso-container {
     margin-bottom: 2rem;
     padding: 0 1rem;
-    max-width: 80%;
-    width: 80%;
+    max-width: 100%;
+    width: 100%;
   }
 
   .progreso-info {
@@ -267,18 +317,18 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .progreso-texto {
-    font-size: 1.3rem;
-    white-space: nowrap;
+    font-size: 1.15rem;
+    white-space: normal;
     flex-shrink: 1;
     min-width: 0;
   }
 
   .progreso-porcentaje {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -286,6 +336,14 @@
   .progreso-bar-container {
     height: 22px;
     width: 100%;
+  }
+
+  .visitas-documentadas-numero {
+    font-size: 2.8rem;
+  }
+
+  .visitas-documentadas-texto {
+    font-size: 1.4rem;
   }
 
   .mapa-container {

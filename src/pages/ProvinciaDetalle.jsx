@@ -68,8 +68,7 @@ const ProvinciaDetalle = () => {
         </div>
 
         <p className="visitas-count">
-          {visitas.length}{" "}
-          {visitas.length === 1 ? "visita registrada" : "visitas registradas"}
+          {visitas.length} {visitas.length === 1 ? "visita" : "visitas"}
         </p>
 
         <div className="visitas-grid">
