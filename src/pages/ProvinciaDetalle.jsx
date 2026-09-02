@@ -1,20 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../css/provinciaDetalle.css";
-import { Carousel, Container, Button } from "react-bootstrap";
+import "../css/visitaCard.css";
+import { Container, Button } from "react-bootstrap";
 import { visitasProvincias } from "../data/visitasProvincias";
+import VisitaCard from "../components/VisitaCard";
 
-const CLOUD_NAME = "dwb5tmtqg";
-
-export const getCloudinaryUrl = (publicId) => {
-  return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/w_1000,h_600,c_fill,g_auto,f_auto,q_auto/${publicId}`;
+// Convierte "YYYY-MM-DD" o "YYYY-MM" en un número comparable (YYYYMMDD),
+// para poder ordenar visitas sin importar la precisión de la fecha.
+const fechaISOaNumero = (fechaISO) => {
+  if (!fechaISO) return 0;
+  const [anio, mes, dia] = fechaISO.split("-");
+  const anioNum = parseInt(anio, 10) || 0;
+  const mesNum = mes ? parseInt(mes, 10) : 1;
+  const diaNum = dia ? parseInt(dia, 10) : 1;
+  return anioNum * 10000 + mesNum * 100 + diaNum;
 };
+
 const ProvinciaDetalle = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
   const provincia = visitasProvincias[slug];
-  const [imagenIndex, setImagenIndex] = useState({});
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -33,7 +40,11 @@ const ProvinciaDetalle = () => {
     );
   }
 
-  const visitas = provincia.visitas || [provincia];
+  const visitasOriginales = provincia.visitas || [];
+  // Copia antes de ordenar: no se muta el array original de datos.
+  const visitas = [...visitasOriginales].sort(
+    (a, b) => fechaISOaNumero(b.fechaISO) - fechaISOaNumero(a.fechaISO)
+  );
 
   return (
     <div className="container-provincia-detalle">
@@ -41,7 +52,7 @@ const ProvinciaDetalle = () => {
         <div className="row">
           <div className="col-12">
             <Button
-              onClick={() => navigate(-1)}
+              onClick={() => navigate("/#mapa-argentina")}
               variant="outline-primary"
               className="boton-volver"
             >
@@ -56,164 +67,20 @@ const ProvinciaDetalle = () => {
           </div>
         </div>
 
-        {visitas.map((visita, visitaIndex) => (
-          <div key={visitaIndex} style={{ marginBottom: "4rem" }}>
-            <div className="row">
-              <div className="col-12">
-                <div className="info-visita">
-                  <p className="fecha-visita">
-                    <strong>Fecha de visita:</strong> {visita.fecha}
-                  </p>
-                  {visita.lugar && (
-                    <p className="lugar-visita">
-                      <strong>Lugar:</strong> {visita.lugar}
-                    </p>
-                  )}
-                </div>
-              </div>
-            </div>
+        <p className="visitas-count">
+          {visitas.length}{" "}
+          {visitas.length === 1 ? "visita registrada" : "visitas registradas"}
+        </p>
 
-            {/* Si la visita tiene actividades, renderizar cada una */}
-            {visita.actividades && visita.actividades.length > 0 ? (
-              visita.actividades.map((actividad, actividadIndex) => (
-                <div
-                  key={actividadIndex}
-                  style={{ marginBottom: "3rem" }}
-                  className="actividad-container"
-                >
-                  <div className="row">
-                    <div className="col-12">
-                      <h2 className="titulo-actividad">
-                        {actividad.titulo || `Actividad ${actividadIndex + 1}`}
-                      </h2>
-                    </div>
-                  </div>
-
-                  {actividad.imagenes && actividad.imagenes.length > 0 ? (
-                    <div className="row">
-                      <div className="col-12">
-                        <Carousel
-                          fade
-                          indicators={actividad.imagenes.length > 1}
-                          className="carousel-provincia"
-                          activeIndex={
-                            imagenIndex[
-                              `visita-${visitaIndex}-actividad-${actividadIndex}`
-                            ] || 0
-                          }
-                          onSelect={(index) =>
-                            setImagenIndex({
-                              ...imagenIndex,
-                              [`visita-${visitaIndex}-actividad-${actividadIndex}`]:
-                                index,
-                            })
-                          }
-                        >
-                          {actividad.imagenes.map((imagen, index) => (
-                            <Carousel.Item key={index}>
-                              <img
-                                src={getCloudinaryUrl(imagen)}
-                                alt={`${provincia.nombre} - ${
-                                  actividad.titulo ||
-                                  `Actividad ${actividadIndex + 1}`
-                                } - Imagen ${index + 1}`}
-                                className="imagen-provincia"
-                                decoding="async"
-                                fetchpriority={index === 0 ? "high" : "auto"}
-                              />
-                            </Carousel.Item>
-                          ))}
-                        </Carousel>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="row">
-                      <div className="col-12">
-                        <div className="placeholder-imagen">
-                          <p>Imagen no disponible</p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  {actividad.descripcion && (
-                    <div className="row">
-                      <div className="col-12">
-                        <div className="descripcion-container">
-                          <h2 className="subtitulo-descripcion">
-                            Sobre la visita
-                          </h2>
-                          <div className="descripcion-visita">
-                            {actividad.descripcion}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))
-            ) : (
-              /* Formato tradicional: descripción general y galería general */
-              <>
-                {visita.imagenes && visita.imagenes.length > 0 ? (
-                  <div className="row">
-                    <div className="col-12">
-                      <Carousel
-                        fade
-                        indicators={visita.imagenes.length > 1}
-                        className="carousel-provincia"
-                        activeIndex={imagenIndex[visitaIndex] || 0}
-                        onSelect={(index) =>
-                          setImagenIndex({
-                            ...imagenIndex,
-                            [visitaIndex]: index,
-                          })
-                        }
-                      >
-                        {visita.imagenes.map((imagen, index) => (
-                          <Carousel.Item key={index}>
-                            <img
-                              src={getCloudinaryUrl(imagen)}
-                              alt={`${provincia.nombre} - Visita ${
-                                visitaIndex + 1
-                              } - Imagen ${index + 1}`}
-                              className="imagen-provincia"
-                              decoding="async"
-                              fetchpriority={index === 0 ? "high" : "auto"}
-                            />
-                          </Carousel.Item>
-                        ))}
-                      </Carousel>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="placeholder-imagen">
-                        <p>Imagen no disponible</p>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {visita.descripcion && (
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="descripcion-container">
-                        <h2 className="subtitulo-descripcion">
-                          Sobre la visita
-                        </h2>
-                        <div className="descripcion-visita">
-                          {visita.descripcion}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </>
-            )}
-          </div>
-        ))}
+        <div className="visitas-grid">
+          {visitas.map((visita) => (
+            <VisitaCard
+              key={visita.slug}
+              visita={visita}
+              provinciaSlug={slug}
+            />
+          ))}
+        </div>
       </Container>
     </div>
   );

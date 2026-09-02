@@ -10,6 +10,7 @@ import Celtyv from "../components/Celtyv";
 import GaleriaDetalle from "../components/GaleriaDetalle";
 import Senado from "../pages/Senado";
 import ProvinciaDetalle from "../pages/ProvinciaDetalle";
+import VisitaDetalle from "../pages/VisitaDetalle";
 import Discursos from "../pages/Discursos";
 import ScrollToTop from "../components/ScrollToTop";
 
@@ -28,6 +29,10 @@ const AppContent = () => {
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
         <Route path="/provincia/:slug" element={<ProvinciaDetalle />} />
+        <Route
+          path="/provincia/:slug/:visitaSlug"
+          element={<VisitaDetalle />}
+        />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </>

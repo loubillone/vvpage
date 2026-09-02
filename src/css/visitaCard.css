@@ -1,0 +1,119 @@
+.visitas-header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.visitas-count {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.3rem;
+  color: #4e4e4e;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.visitas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.visita-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.visita-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .visita-card-link:hover .visita-card {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.visita-card-imagen-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.visita-card-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.visita-card-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.visita-card-placeholder p {
+  font-family: "raleway-regular", sans-serif;
+  color: #4e4e4e;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.visita-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.35rem;
+}
+
+.visita-card-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.4rem;
+  color: #043d83;
+  margin-bottom: 0.15rem;
+}
+
+.visita-card-fecha,
+.visita-card-lugar {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1rem;
+  color: #4e4e4e;
+  margin: 0;
+}
+
+.visita-card-cta {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 0.95rem;
+  color: #0037a0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .visitas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .visitas-grid {
+    grid-template-columns: 1fr;
+  }
+}

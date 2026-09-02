@@ -501,7 +501,7 @@ const MapaArgentina = () => {
   }, []);
 
   return (
-    <div className="container-mapa-argentina">
+    <div id="mapa-argentina" className="container-mapa-argentina">
       <div className="container">
         <div className="row">
           <div className="col-12">
