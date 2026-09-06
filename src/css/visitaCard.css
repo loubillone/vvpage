@@ -1,0 +1,156 @@
+.visitas-header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.visitas-count {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #4e4e4e;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.visitas-grid {
+  display: grid;
+  /* Mismo ancho de card que repeat(3, 1fr) (3 columnas + 2 gaps), pero al
+     usar auto-fit + justify-content, si hay menos de 3 cards el grupo queda
+     centrado en vez de estirarse o pegarse a la izquierda. */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(0, calc((100% - 2 * 2rem) / 3))
+  );
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.visita-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.visita-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .visita-card-link:hover .visita-card {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.visita-card-imagen-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.visita-card-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.visita-card-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.visita-card-placeholder p {
+  font-family: "raleway-regular", sans-serif;
+  color: #4e4e4e;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.visita-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.35rem;
+}
+
+.visita-card-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.7rem;
+  color: #043d83;
+  margin-bottom: 0.15rem;
+}
+
+.visita-card-fecha,
+.visita-card-lugar {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.45rem;
+  color: #4e4e4e;
+  margin: 0;
+}
+
+.visita-card-cta {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.45rem;
+  color: #0037a0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .visitas-grid {
+    /* Mismo ancho de card que repeat(2, 1fr) (2 columnas + 1 gap), pero
+       centrado cuando hay una sola visita. */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(0, calc((100% - 1 * 2rem) / 2))
+    );
+  }
+
+  .visita-card-titulo {
+    font-size: 1.6rem;
+  }
+
+  .visita-card-fecha,
+  .visita-card-lugar,
+  .visita-card-cta {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .visitas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visitas-count {
+    font-size: 1.45rem;
+  }
+
+  .visita-card-titulo {
+    font-size: 1.6rem;
+  }
+
+  .visita-card-fecha,
+  .visita-card-lugar,
+  .visita-card-cta {
+    font-size: 1.4rem;
+  }
+}

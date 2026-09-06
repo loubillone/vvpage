@@ -1,0 +1,280 @@
+.ultimas-visitas {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.ultimas-visitas-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ultimas-visitas-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 0.8rem;
+}
+
+.ultimas-visitas-subtitulo {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: #4e4e4e;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.ultimas-visitas-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Carrusel horizontal con scroll-snap: sin librerías, con swipe nativo */
+.ultimas-visitas-scroll {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 0.5rem 0 1.5rem;
+  scrollbar-width: none;
+}
+
+.ultimas-visitas-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.ultima-visita-card-link {
+  flex: 0 0 calc((100% - 2 * 2rem) / 3);
+  min-width: 0;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.ultima-visita-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .ultima-visita-card-link:hover .ultima-visita-card {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+  }
+}
+
+.ultima-visita-imagen-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.ultima-visita-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ultima-visita-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.ultima-visita-placeholder span {
+  font-family: "raleway-regular", sans-serif;
+  color: #4e4e4e;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.ultima-visita-provincia {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #043d83;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ultima-visita-body {
+  padding: 1.5rem 1.6rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.4rem;
+}
+
+.ultima-visita-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.9rem;
+  color: #043d83;
+  margin-bottom: 0.1rem;
+}
+
+.ultima-visita-fecha {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.4rem;
+  color: #0037a0;
+  margin: 0;
+}
+
+.ultima-visita-lugar {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.3rem;
+  color: #4e4e4e;
+  margin: 0;
+}
+
+.ultima-visita-cta {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.4rem;
+  color: #0037a0;
+}
+
+/* Flechas de navegación (solo desktop) */
+.ultimas-visitas-flecha {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 4.4rem;
+  height: 4.4rem;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  color: #0037a0;
+  font-size: 2.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.ultimas-visitas-flecha-icono {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  /* Ajuste óptico mínimo: el glifo ‹ › no queda perfectamente centrado
+     dentro de su caja de línea en la tipografía del sitio. */
+  transform: translateY(-1px);
+}
+
+.ultimas-visitas-flecha:hover:not(:disabled) {
+  background-color: #0037a0;
+  color: #ffffff;
+}
+
+.ultimas-visitas-flecha:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.ultimas-visitas-flecha-prev {
+  left: 0.5rem;
+}
+
+.ultimas-visitas-flecha-next {
+  right: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ultimas-visitas-scroll {
+    scroll-behavior: auto;
+  }
+
+  .ultima-visita-card,
+  .ultimas-visitas-flecha {
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ultimas-visitas-titulo {
+    font-size: 2.5rem;
+  }
+
+  .ultimas-visitas-subtitulo {
+    font-size: 1.6rem;
+  }
+
+  .ultima-visita-card-link {
+    flex-basis: calc((100% - 1 * 2rem) / 2);
+  }
+
+  .ultimas-visitas-flecha {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .ultimas-visitas {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .ultimas-visitas-header {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .ultimas-visitas-titulo {
+    font-size: 2.2rem;
+  }
+
+  .ultimas-visitas-subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .ultima-visita-card-link {
+    /* Ancho principal con un pequeño adelanto de la siguiente card,
+       para comunicar que se puede seguir deslizando. */
+    flex-basis: 84%;
+  }
+
+  .ultima-visita-titulo {
+    font-size: 1.7rem;
+  }
+
+  .ultimas-visitas-flecha {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ultima-visita-card-link {
+    flex-basis: 86%;
+  }
+
+  .ultimas-visitas-titulo {
+    font-size: 1.9rem;
+  }
+}
