@@ -3617,4 +3617,239 @@ export const visitasProvincias = {
       },
     ],
   },
+
+  "san-juan": {
+    nombre: "San Juan",
+    visitas: [
+      {
+        titulo: "Producción e industria en San Juan",
+        slug: "produccion-industria-2026",
+        fechaISO: "2026-09",
+        precisionFecha: "mes",
+
+        imagenPortada: "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-2.jpg",
+
+        fecha: "Septiembre de 2026",
+        lugar: "Capital, Rivadavia, Albardón, Pocito, Rawson y San Martín",
+
+        actividades: [
+          {
+            titulo: "Encuentro con el gobernador Marcelo Orrego",
+            descripcion: (
+              <>
+                <p>
+                  Una de las primeras actividades de la jornada fue el encuentro
+                  institucional entre la vicepresidente Victoria Villarruel y el{" "}
+                  <span className="vv-estilo-detalle">
+                    gobernador de San Juan, Marcelo Orrego
+                  </span>
+                  , en la Casa de Gobierno provincial.
+                </p>
+
+                <p>
+                  La reunión abrió una extensa agenda de recorridas por distintos puntos
+                  de San Juan, centrada principalmente en conocer de primera mano sectores
+                  vinculados con la producción, la industria, la minería y la actividad
+                  olivícola.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/san-juan/gobernador/sanjuan-gobernador-1.jpg",
+              "tpa-web/provincias/san-juan/gobernador/sanjuan-gobernador-2.jpg",
+            ],
+          },
+
+          {
+            titulo: "ArgOliva 2026",
+            descripcion: (
+              <>
+                <p>
+                  Villarruel se trasladó a la{" "}
+                  <span className="vv-estilo-detalle">
+                    Universidad Católica de Cuyo
+                  </span>
+                  , donde recorrió el Centro de Referencia en Evaluación Sensorial de
+                  Aceite de Oliva y otros Alimentos (CRESA) y participó de una cata de
+                  aceite de oliva junto a jurados internacionales, en el marco de{" "}
+                  <span className="vv-estilo-detalle">ArgOliva 2026</span>.
+                </p>
+
+                <p>
+                  ArgOliva es un encuentro internacional dedicado al desarrollo del
+                  sector olivícola, que reúne a productores, especialistas e
+                  instituciones públicas y privadas. La actividad permitió acercarse a
+                  uno de los sectores productivos característicos de San Juan y conocer
+                  el trabajo de evaluación y análisis de la calidad de los aceites.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/san-juan/ArgOliva/sanjuan-argoliva-1.jpg",
+              "tpa-web/provincias/san-juan/ArgOliva/sanjuan-argoliva-2.jpg",
+              "tpa-web/provincias/san-juan/ArgOliva/sanjuan-argoliva-3.jpg",
+            ],
+          },
+
+          {
+            titulo: "Cámara de Proveedores Mineros de San Juan",
+            descripcion: (
+              <>
+                <p>
+                  En Las Tapias, departamento de Albardón, la vicepresidente participó
+                  de un encuentro organizado por la{" "}
+                  <span className="vv-estilo-detalle">
+                    Cámara de Proveedores Interdepartamentales Mineros de San Juan
+                    (CAPRIMSA)
+                  </span>
+                  .
+                </p>
+
+                <p>
+                  Treinta empresas asociadas participaron de la reunión, donde
+                  expusieron sus actividades, capacidades y los principales desafíos que
+                  enfrentan como proveedores de la actividad minera. El intercambio
+                  permitió abordar especialmente la situación de las PyMEs sanjuaninas
+                  que forman parte de esta cadena productiva y su participación en el
+                  desarrollo de la minería provincial.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/san-juan/camara-mineros/sanjuan-mineros-1.jpg",
+              "tpa-web/provincias/san-juan/camara-mineros/sanjuan-mineros-2.jpg",
+              "tpa-web/provincias/san-juan/camara-mineros/sanjuan-mineros-3.jpg",
+            ],
+          },
+
+          {
+            titulo: "Empresa MTZ",
+            descripcion: (
+              <>
+                <p>
+                  La agenda vinculada con la minería continuó con una visita a{" "}
+                  <span className="vv-estilo-detalle">MTZ</span>, empresa sanjuanina
+                  dedicada a brindar servicios de logística y transporte para el sector
+                  minero.
+                </p>
+
+                <p>
+                  Durante la recorrida, Villarruel conoció las instalaciones de la firma
+                  y su actividad como parte del entramado de empresas locales que prestan
+                  servicios y soporte a los proyectos mineros de la provincia.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/san-juan/mtz-logistica/sanjuan-mtz-1.jpg",
+            ],
+          },
+
+          {
+            titulo: "Planta industrial de ARCOR",
+            descripcion: (
+              <>
+                <p>
+                  Villarruel recorrió la{" "}
+                  <span className="vv-estilo-detalle">
+                    planta industrial de ARCOR
+                  </span>{" "}
+                  ubicada en Villa Krause, departamento Rawson, dedicada a la elaboración
+                  de conservas de tomate y salsas.
+                </p>
+
+                <p>
+                  Durante la visita conoció el proceso productivo que articula la
+                  producción primaria con la industrialización y el envasado. Los tomates
+                  producidos en San Juan atraviesan procesos de selección y elaboración
+                  en la planta antes de convertirse en productos destinados tanto al
+                  mercado interno como al exterior.
+                </p>
+
+                <p>
+                  La recorrida permitió observar una{" "}
+                  <span className="vv-estilo-detalle">cadena de valor</span> que comienza
+                  en el productor y continúa dentro de la industria hasta el producto
+                  terminado y su packaging.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/san-juan/arcor/sanjuan-arcor-1.jpg",
+              "tpa-web/provincias/san-juan/arcor/sanjuan-arcor-2.jpg",
+              "tpa-web/provincias/san-juan/arcor/sanjuan-arcor-3.jpg",
+              "tpa-web/provincias/san-juan/arcor/sanjuan-arcor-4.jpg",
+            ],
+          },
+
+          {
+            titulo: "Trilogía",
+            descripcion: (
+              <>
+                <p>
+                  Más tarde, la vicepresidente visitó{" "}
+                  <span className="vv-estilo-detalle">Trilogía</span>, una PyME familiar
+                  sanjuanina dedicada a la producción de aceite de oliva extra virgen de
+                  alta gama.
+                </p>
+
+                <p>
+                  Ubicada en el departamento San Martín, la empresa forma parte del
+                  sector olivícola provincial y representa otra escala de la producción
+                  recorrida durante la jornada: la de los emprendimientos familiares que
+                  transforman la producción primaria y generan productos con valor
+                  agregado.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-1.jpg",
+              "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-2.jpg",
+              "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-3.jpg",
+            ],
+          },
+
+          {
+            titulo: "Campo San Martín del INTA",
+            descripcion: (
+              <>
+                <p>
+                  La jornada finalizó en el{" "}
+                  <span className="vv-estilo-detalle">
+                    Campo San Martín del INTA
+                  </span>
+                  , donde Villarruel conoció el Banco Mundial de Germoplasma de Olivo y
+                  el trabajo de investigación y preservación que se desarrolla en ese
+                  espacio.
+                </p>
+
+                <p>
+                  La colección sanjuanina fue reconocida por el Consejo Oleícola
+                  Internacional e integra la red mundial de bancos de germoplasma de
+                  olivo. Su función es conservar material genético de distintas
+                  variedades, resguardar la biodiversidad de la especie y poner ese
+                  patrimonio a disposición de la investigación y del desarrollo
+                  productivo.
+                </p>
+
+                <p>
+                  El banco conserva cientos de variedades y accesiones mediante plantas
+                  vivas, constituyendo un recurso científico de relevancia internacional
+                  y una herramienta para estudiar, preservar y mejorar la producción
+                  olivícola.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/san-juan/inta/sanjuan-inta-1.jpg",
+              "tpa-web/provincias/san-juan/inta/sanjuan-inta-2.jpg",
+              "tpa-web/provincias/san-juan/inta/sanjuan-inta-3.jpg",
+              "tpa-web/provincias/san-juan/inta/sanjuan-inta-4.jpg",
+              "tpa-web/provincias/san-juan/inta/sanjuan-inta-5.jpg",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 };
