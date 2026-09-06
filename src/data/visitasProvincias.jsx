@@ -694,6 +694,157 @@ export const visitasProvincias = {
           },
         ],
       },
+
+      {
+        titulo: "Industria metalúrgica en Ituzaingó",
+        slug: "industria-ituzaingo-2026",
+        fechaISO: "2026-09",
+        precisionFecha: "mes",
+
+        imagenPortada:
+          "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-1.jpg",
+
+        fecha: "Septiembre de 2026",
+        lugar: "Ituzaingó, Buenos Aires",
+
+        descripcion: (
+          <>
+            <p>
+              La vicepresidente Victoria Villarruel visitó{" "}
+              <span className="vv-estilo-detalle">Cíntolo Hermanos</span>, una
+              empresa metalúrgica argentina fundada en 1932 y ubicada en Ituzaingó,
+              provincia de Buenos Aires.
+            </p>
+
+            <p>
+              La compañía genera{" "}
+              <span className="vv-estilo-detalle">
+                más de 200 puestos de trabajo
+              </span>{" "}
+              y forma parte de la industria nacional. Durante la recorrida,
+              Villarruel destacó la importancia de conocer de cerca a las empresas
+              que producen, invierten y generan empleo formal en el país.
+            </p>
+
+            <p>
+              En el marco del Día de la Industria, la vicepresidente puso en valor
+              la experiencia de las empresas argentinas, la capacitación de sus
+              trabajadores y su capacidad para crecer y generar nuevas
+              oportunidades.
+            </p>
+
+            <blockquote className="cita">
+              "Conocer de cerca empresas que producen, invierten y generan empleo
+              formal es también conocer el potencial que tiene nuestro país."
+            </blockquote>
+          </>
+        ),
+
+        imagenes: [
+          "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-1.jpg",
+          "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-2.jpg",
+          "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-3.jpg",
+          "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-4.jpg",
+        ],
+      },
+
+      {
+        titulo: "74ª Exposición Rural de Chivilcoy",
+        slug: "rural-chivilcoy-2026",
+        fechaISO: "2026-09",
+        precisionFecha: "mes",
+
+        imagenPortada:
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-4.jpg",
+
+        fecha: "Septiembre de 2026",
+        lugar: "Chivilcoy, Buenos Aires",
+
+        descripcion: (
+          <>
+            <p>
+              El 5 de septiembre de 2026, la vicepresidente Victoria Villarruel
+              participó de la{" "}
+              <span className="vv-estilo-detalle">
+                74ª Exposición Rural de Chivilcoy
+              </span>
+              , una muestra vinculada con la actividad agrícola, ganadera,
+              industrial y comercial de la región.
+            </p>
+
+            <p>
+              Junto al intendente Guillermo Britos y la presidenta de la Asociación
+              Rural de Chivilcoy, Yamila Farrell, recorrió los distintos stands de
+              la exposición y mantuvo contacto con productores y representantes del
+              entramado productivo local.
+            </p>
+
+            <p>
+              Durante el acto inaugural, Villarruel destacó el peso productivo de
+              Chivilcoy y sostuvo que la actividad del campo forma parte de una
+              cadena mucho más amplia que involucra a la industria, el comercio,
+              los servicios, las PyMEs y las familias.
+            </p>
+
+            <p>
+              En ese marco, planteó la necesidad de avanzar hacia una{" "}
+              <span className="vv-estilo-detalle">reforma impositiva</span> que
+              genere incentivos para quienes producen, invierten y crean empleo,
+              y señaló la importancia de generar condiciones que permitan ampliar
+              la producción y el trabajo formal.
+            </p>
+
+            <p>
+              También remarcó que una política productiva debe prestar atención al
+              territorio y mencionó la necesidad de contar con{" "}
+              <span className="vv-estilo-detalle">
+                caminos rurales, puentes, desagües, conectividad, energía y rutas
+              </span>{" "}
+              que acompañen el crecimiento de las distintas regiones productivas.
+            </p>
+
+            <p>
+              La vicepresidente destacó además la importancia de la articulación
+              entre el sector público y el privado para favorecer la inversión,
+              la innovación y la generación de empleo. Vinculó el crecimiento de
+              la producción con una mayor capacidad exportadora, el ingreso de
+              divisas y la incorporación de tecnología.
+            </p>
+
+            <p>
+              Durante su intervención también puso en valor el papel de organismos
+              como SENASA, INTA, INTI y CONICET dentro del entramado productivo,
+              científico y tecnológico relacionado con el sector agropecuario
+              argentino.
+            </p>
+
+            <blockquote className="cita">
+              "El desarrollo comienza en el territorio".
+            </blockquote>
+          </>
+        ),
+
+        imagenes: [
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-1.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-2.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-3.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-4.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-5.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-6.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-7.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-8.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-9.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-10.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-11.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-12.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-13.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-14.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-15.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-16.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-17.jpg",
+          "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-18.jpg",
+        ],
+      },
     ],
   },
 
