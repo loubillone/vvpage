@@ -7,8 +7,8 @@ export const visitasProvincias = {
       {
         titulo: "Homenaje a la Guarnición de Azul",
         slug: "azul-2024",
-        fechaISO: "2024-01",
-        precisionFecha: "mes",
+        fechaISO: "2024-01-19",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/bsas/azul/ba-azul-1",
         fecha: "Enero de 2024",
         descripcion: (
@@ -45,8 +45,8 @@ export const visitasProvincias = {
       {
         titulo: "Producción y deporte en Mar del Plata",
         slug: "mar-del-plata-2024",
-        fechaISO: "2024-05",
-        precisionFecha: "mes",
+        fechaISO: "2024-05-20",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-1",
         fecha: "Mayo de 2024",
         descripcion: (
@@ -360,8 +360,8 @@ export const visitasProvincias = {
       {
         titulo: "Basílica del Perpetuo Socorro",
         slug: "san-pedro-2025",
-        fechaISO: "2025-09",
-        precisionFecha: "mes",
+        fechaISO: "2025-09-08",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/bsas/san-pedro/ba-sanpedro-1",
         fecha: "Septiembre de 2025",
         descripcion: (
@@ -406,8 +406,8 @@ export const visitasProvincias = {
       {
         titulo: "Día del Veterano de Malvinas",
         slug: "malvinas-chivilcoy-2026",
-        fechaISO: "2026-04",
-        precisionFecha: "mes",
+        fechaISO: "2026-04-02",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-1",
         fecha: "Abril de 2026",
@@ -514,8 +514,8 @@ export const visitasProvincias = {
       {
         titulo: "Obra del Padre Mario Pantaleo",
         slug: "padre-mario-2026",
-        fechaISO: "2026-08",
-        precisionFecha: "mes",
+        fechaISO: "2026-08-28",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/bsas/gonzalez-catan/obra/ba-gonzalezcatan-obra-10",
         fecha: "Agosto de 2026",
@@ -698,8 +698,8 @@ export const visitasProvincias = {
       {
         titulo: "Industria metalúrgica en Ituzaingó",
         slug: "industria-ituzaingo-2026",
-        fechaISO: "2026-09",
-        precisionFecha: "mes",
+        fechaISO: "2026-09-03",
+        precisionFecha: "dia",
 
         imagenPortada:
           "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-1.jpg",
@@ -751,8 +751,8 @@ export const visitasProvincias = {
       {
         titulo: "74ª Exposición Rural de Chivilcoy",
         slug: "rural-chivilcoy-2026",
-        fechaISO: "2026-09",
-        precisionFecha: "mes",
+        fechaISO: "2026-09-06",
+        precisionFecha: "dia",
 
         imagenPortada:
           "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-4.jpg",
@@ -845,6 +845,63 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-18.jpg",
         ],
       },
+
+      {
+        titulo: "Visita a FATE en Victoria",
+        slug: "fate-victoria-2025",
+        fechaISO: "2025-09-02",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/victoria/fate/bsas-victoria-fate-4.jpg",
+        fecha: "Septiembre de 2025",
+        lugar: "Victoria, Buenos Aires",
+
+        descripcion: (
+          <>
+            <p>
+              En el marco del{" "}
+              <span className="vv-estilo-detalle">Día de la Industria</span>, la
+              vicepresidente Victoria Villarruel visitó la planta industrial de{" "}
+              <span className="vv-estilo-detalle">FATE</span>, en la localidad de
+              Victoria, provincia de Buenos Aires.
+            </p>
+
+            <p>
+              Durante la recorrida fue recibida por el presidente de la compañía,{" "}
+              <span className="vv-estilo-detalle">
+                Javier Madanes Quintanilla
+              </span>
+              , junto a su equipo directivo, quienes le brindaron un panorama sobre
+              la actualidad de la empresa y su producción a lo largo de los distintos
+              sectores de la planta.
+            </p>
+
+            <p>
+              FATE es una empresa argentina dedicada a la fabricación y exportación
+              de neumáticos. Según informa la compañía, emplea de manera directa a
+              más de{" "}
+              <span className="vv-estilo-detalle">2.000 personas</span> y cuenta con
+              la planta industrial de neumáticos más grande y moderna del país, con
+              una capacidad productiva que supera los cinco millones de neumáticos
+              por año.
+            </p>
+
+            <p>
+              La firma produce neumáticos para automóviles, camionetas, camiones,
+              colectivos, tractores y maquinaria vial, y forma parte del entramado
+              industrial argentino orientado tanto al mercado interno como a la
+              exportación.
+            </p>
+          </>
+        ),
+
+        imagenes: [
+          "tpa-web/provincias/bsas/victoria/fate/bsas-victoria-fate-1.jpg",
+          "tpa-web/provincias/bsas/victoria/fate/bsas-victoria-fate-2.jpg",
+          "tpa-web/provincias/bsas/victoria/fate/bsas-victoria-fate-3.jpg",
+          "tpa-web/provincias/bsas/victoria/fate/bsas-victoria-fate-4.jpg",
+        ],
+      },
     ],
   },
 
@@ -854,8 +911,8 @@ export const visitasProvincias = {
       {
         titulo: "Festival de Jesús María",
         slug: "jesus-maria-2024",
-        fechaISO: "2024-01",
-        precisionFecha: "mes",
+        fechaISO: "2024-01-13",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/cordoba/jesus-maria/cordoba-jesus-1",
         fecha: "Enero de 2024",
         descripcion: (
@@ -961,8 +1018,8 @@ export const visitasProvincias = {
       {
         titulo: "Día de la Independencia 2025",
         slug: "independencia-2025",
-        fechaISO: "2025-07",
-        precisionFecha: "mes",
+        fechaISO: "2025-07-09",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/tucuman/tucuman-casa-1",
         fecha: "Julio de 2025",
         descripcion: (
@@ -1540,8 +1597,8 @@ export const visitasProvincias = {
       {
         titulo: "80ª Exposición Rural de Salta",
         slug: "expo-rural-2024",
-        fechaISO: "2024-08",
-        precisionFecha: "mes",
+        fechaISO: "2024-08-25",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/salta/rural/salta-rural-1",
         fecha: "Agosto de 2024",
         descripcion: (
@@ -1608,7 +1665,7 @@ export const visitasProvincias = {
       {
         titulo: "90° Aniversario de Río Mayo",
         slug: "rio-mayo-2025",
-        fechaISO: "2025-08-22",
+        fechaISO: "2025-08-23",
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/chubut/chubut-riomayo-1",
         fecha: "Agosto de 2025",
@@ -1757,8 +1814,8 @@ export const visitasProvincias = {
       {
         titulo: "Bajada de la Virgen del Valle",
         slug: "bajada-virgen-2024",
-        fechaISO: "2024-04",
-        precisionFecha: "mes",
+        fechaISO: "2024-04-06",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-1",
         fecha: "Abril de 2024",
@@ -1819,8 +1876,8 @@ export const visitasProvincias = {
       {
         titulo: "Fiesta Nacional del Poncho",
         slug: "fiesta-poncho-2024",
-        fechaISO: "2024-07",
-        precisionFecha: "mes",
+        fechaISO: "2024-07-20",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/catamarca/fiesta-del-poncho/catamarca-poncho-1",
         fecha: "Julio de 2024",
@@ -1873,8 +1930,8 @@ export const visitasProvincias = {
       {
         titulo: "Cuna del Poncho en Belén",
         slug: "belen-el-rodeo-2025",
-        fechaISO: "2025-07",
-        precisionFecha: "mes",
+        fechaISO: "2025-07-18",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-1",
         fecha: "Julio 2025",
         descripcion: (
@@ -2017,8 +2074,8 @@ export const visitasProvincias = {
       {
         titulo: "Vendimia 2026",
         slug: "vendimia-2026",
-        fechaISO: "2026-03",
-        precisionFecha: "mes",
+        fechaISO: "2026-03-07",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-1",
         fecha: "Marzo de 2026",
@@ -2250,8 +2307,8 @@ export const visitasProvincias = {
       {
         titulo: "Éxodo Jujeño 2024",
         slug: "exodo-jujeno-2024",
-        fechaISO: "2024-08",
-        precisionFecha: "mes",
+        fechaISO: "2024-08-23",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/jujuy/jujuy-exodo-1",
         fecha: "Agosto de 2024",
         descripcion: (
@@ -2318,8 +2375,8 @@ export const visitasProvincias = {
       {
         titulo: "Fiesta Nacional del Arroz",
         slug: "fiesta-arroz-2024",
-        fechaISO: "2024-10",
-        precisionFecha: "mes",
+        fechaISO: "2024-11-16",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-1",
         fecha: "Octubre de 2024",
         descripcion: (
@@ -2378,8 +2435,8 @@ export const visitasProvincias = {
       {
         titulo: "Día del Héroe Formoseño",
         slug: "heroe-formoseno-2025",
-        fechaISO: "2025-10",
-        precisionFecha: "mes",
+        fechaISO: "2025-10-06",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/formosa/formosa-heroe-1",
         fecha: "Octubre de 2025",
         descripcion: (
@@ -2426,8 +2483,8 @@ export const visitasProvincias = {
       {
         titulo: "Fiesta del Inmigrante",
         slug: "fiesta-inmigrante-2024",
-        fechaISO: "2024-09",
-        precisionFecha: "mes",
+        fechaISO: "2024-09-07",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/misiones/misiones-ciudad-1",
         fecha: "Septiembre de 2024",
         descripcion: (
@@ -2498,7 +2555,7 @@ export const visitasProvincias = {
       {
         titulo: "Fiesta Nacional de la Chaya",
         slug: "chaya-2026",
-        fechaISO: "2026-02-14",
+        fechaISO: "2026-02-15",
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/la-rioja/chaya/larioja-chaya-1",
         fecha: "Febrero de 2026",
@@ -2825,8 +2882,8 @@ export const visitasProvincias = {
       {
         titulo: "Agenda Institucional en Bariloche",
         slug: "bariloche-2024",
-        fechaISO: "2024-01",
-        precisionFecha: "mes",
+        fechaISO: "2024-01-06",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/rio-negro/rionegro-bariloche-1",
         fecha: "Enero de 2024",
         descripcion: (
@@ -2896,7 +2953,7 @@ export const visitasProvincias = {
       {
         titulo: "Festividades de Renca y La Quebrada",
         slug: "renca-quebrada-2024",
-        fechaISO: "2024-05-02",
+        fechaISO: "2024-05-04",
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/san-luis/sanluis-cristo-1",
         fecha: "Mayo de 2024",
@@ -2952,7 +3009,7 @@ export const visitasProvincias = {
       {
         titulo: "Batalla de San Lorenzo 2024",
         slug: "san-lorenzo-2024",
-        fechaISO: "2024-02-03",
+        fechaISO: "2024-02-04",
         precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/santa-fe/san-lorenzo/santafe-sanlorenzo-1",
@@ -3001,8 +3058,8 @@ export const visitasProvincias = {
       {
         titulo: "Día de la Bandera 2024",
         slug: "bandera-2024",
-        fechaISO: "2024-06",
-        precisionFecha: "mes",
+        fechaISO: "2024-06-20",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/santa-fe/rosario/diabandera24/santafe-rosario-1",
         fecha: "Junio de 2024",
@@ -3048,8 +3105,8 @@ export const visitasProvincias = {
       {
         titulo: "Promesa a la Bandera 2025",
         slug: "bandera-2025",
-        fechaISO: "2025-06",
-        precisionFecha: "mes",
+        fechaISO: "2025-06-20",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/santa-fe/rosario/diabandera25/santafe-bandera-1",
         fecha: "Junio de 2025",
@@ -3094,8 +3151,8 @@ export const visitasProvincias = {
       {
         titulo: "ExpoVenado 2026",
         slug: "expovenado-2026",
-        fechaISO: "2026-08",
-        precisionFecha: "mes",
+        fechaISO: "2026-08-15",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-1",
         fecha: "Agosto de 2026",
@@ -3360,8 +3417,8 @@ export const visitasProvincias = {
       {
         titulo: "Homenaje al Sargento Cabral",
         slug: "sargento-cabral-2025",
-        fechaISO: "2025-08",
-        precisionFecha: "mes",
+        fechaISO: "2025-08-02",
+        precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/corrientes/saladas/corrientes-saladas-1",
         fecha: "Agosto de 2025",
@@ -3442,8 +3499,8 @@ export const visitasProvincias = {
       {
         titulo: "Gira por el Norte de Santa Cruz",
         slug: "gira-norte-2026",
-        fechaISO: "2026-04",
-        precisionFecha: "mes",
+        fechaISO: "2026-04-24",
+        precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/santa-cruz/cuevamanos/sc-cueva-1",
         fecha: "Abril de 2026",
         lugar: "Santa Cruz",
@@ -3775,8 +3832,8 @@ export const visitasProvincias = {
       {
         titulo: "Producción e industria en San Juan",
         slug: "produccion-industria-2026",
-        fechaISO: "2026-09",
-        precisionFecha: "mes",
+        fechaISO: "2026-09-02",
+        precisionFecha: "dia",
 
         imagenPortada: "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-2.jpg",
 
