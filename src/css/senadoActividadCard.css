@@ -1,0 +1,113 @@
+/* Card de actividad de Senado. Mismo lenguaje visual que visitaCard.css
+   (imagen protagonista, título claro, fecha secundaria, CTA pequeño, hover
+   suave), sin acoplarse directamente al componente de Provincias. */
+
+.senado-actividad-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.senado-actividad-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .senado-actividad-card-link:hover .senado-actividad-card {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.senado-actividad-card-imagen-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.senado-actividad-card-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.senado-actividad-card-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.senado-actividad-card-placeholder p {
+  font-family: "raleway-regular", sans-serif;
+  color: #4e4e4e;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.senado-actividad-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.35rem;
+}
+
+.senado-actividad-card-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.5rem;
+  color: #043d83;
+  margin-bottom: 0.15rem;
+  line-height: 1.3;
+}
+
+.senado-actividad-card-fecha {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.45rem;
+  color: #4e4e4e;
+  margin: 0;
+}
+
+.senado-actividad-card-cta {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.45rem;
+  color: #0037a0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .senado-actividad-card-titulo {
+    font-size: 1.4rem;
+  }
+
+  .senado-actividad-card-fecha,
+  .senado-actividad-card-cta {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .senado-actividad-card-titulo {
+    font-size: 1.4rem;
+  }
+
+  .senado-actividad-card-fecha,
+  .senado-actividad-card-cta {
+    font-size: 1.4rem;
+  }
+}

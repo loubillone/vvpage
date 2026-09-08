@@ -1,0 +1,111 @@
+/* Card editorial de año (índice /senado/:tema). Misma línea visual que
+   visitaCard.css / senadoActividadCard.css: imagen arriba, borde suave,
+   sombra muy leve, título con peso, texto secundario liviano, CTA discreto,
+   hover suave en desktop, card completa clickeable. */
+
+.senado-anio-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.senado-anio-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .senado-anio-card-link:hover .senado-anio-card {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.senado-anio-card-imagen-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.senado-anio-card-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.senado-anio-card-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+.senado-anio-card-anio {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.6rem;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+  line-height: 1;
+}
+
+.senado-anio-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.5rem;
+}
+
+.senado-anio-card-referencias {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.35rem;
+  color: #4e4e4e;
+  margin: 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.senado-anio-card-cta {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.4rem;
+  color: #0037a0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .senado-anio-card-anio {
+    font-size: 2.3rem;
+  }
+
+  .senado-anio-card-referencias,
+  .senado-anio-card-cta {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .senado-anio-card-anio {
+    font-size: 2.2rem;
+  }
+
+  .senado-anio-card-referencias,
+  .senado-anio-card-cta {
+    font-size: 1.35rem;
+  }
+}

@@ -1,0 +1,238 @@
+/* Estilos compartidos por las páginas de Senado: índice por tema
+   (SenadoTemas) y listado de actividades por año (SenadoAnio). Sigue la
+   misma línea visual que provinciaDetalle.css / visitaCard.css: azul TPA,
+   sombras muy suaves, bordes redondeados moderados, tipografía raleway.
+
+   IMPORTANTE: .boton-volver-senado, .titulo-senado-anio,
+   .senado-anios-subtitulo y .senado-actividades-grid también los usa
+   SenadoAnio.jsx (página de año, no se modifica en este cambio). */
+
+.container-senado-tema {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  padding: 2rem 0;
+}
+
+/* --- Encabezado editorial del tema (SenadoTemas) ---
+   La imagen/título gráfica (imagenTitulo) es el único título visual: no se
+   duplica con un título textual, para evitar redundancia. Queda centrado,
+   con la bajada debajo. Sin contador: la cantidad de actividades solo se
+   muestra dentro de la página del año (/senado/:tema/:anio).
+
+   Como el título es gráfico (no texto), su jerarquía visual se controla
+   con el max-width de .senado-tema-header-imagen por breakpoint, en vez
+   de font-size: 480px desktop, 350px tablet, 240px mobile, 200px mobile
+   chico.
+
+   Encabezado editorial "plano": sin box-shadow ni border-radius, para no
+   repetir el recurso visual de "card" que ya usan las cards de año. */
+.senado-tema-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2.5rem 0 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.senado-tema-header-imagen {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+}
+
+.senado-tema-header-imagen img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.senado-tema-bajada {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: #4e4e4e;
+  max-width: 46ch;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* --- Botón volver --- */
+.boton-volver-senado {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.boton-volver-senado:hover {
+  background-color: #0037a0;
+  color: #ffffff;
+  border-color: #0037a0;
+}
+
+/* --- Títulos --- */
+.titulo-senado-anio {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.senado-anios-subtitulo {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #4e4e4e;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* --- Grid de años (cards editoriales, ver SenadoAnioCard) --- */
+.senado-anios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, calc((100% - 4rem) / 3)));
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  align-items: stretch;
+}
+
+/* --- Grid de actividades (página de año) --- */
+.senado-actividades-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(0, calc((100% - 2 * 2rem) / 3))
+  );
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* --- Cierre editorial (frase final del tema) --- */
+.senado-tema-cierre {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem;
+}
+
+.senado-tema-frase {
+  position: relative;
+  max-width: 56ch;
+  margin: 0;
+  padding: 2.5rem 3rem;
+  background-color: #f5f8fd;
+  border: 1px solid #dde7f5;
+  border-radius: 14px;
+  text-align: center;
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.9rem;
+  font-style: italic;
+  color: #0037a0;
+  line-height: 1.5;
+}
+
+.senado-tema-frase::before {
+  content: "\201C";
+  display: block;
+  font-family: "raleway-bold", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  color: #0037a0;
+  opacity: 0.35;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .senado-anios-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(0, calc((100% - 1 * 2rem) / 2))
+    );
+  }
+
+  .senado-actividades-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(0, calc((100% - 1 * 2rem) / 2))
+    );
+  }
+
+  .titulo-senado-anio {
+    font-size: 2.5rem;
+  }
+
+  .senado-tema-header {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .senado-tema-header-imagen {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .senado-anios-grid,
+  .senado-actividades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo-senado-anio {
+    font-size: 2rem;
+  }
+
+  .senado-anios-subtitulo {
+    font-size: 1.45rem;
+  }
+
+  .senado-tema-header {
+    padding: 1.75rem 1rem 1.5rem;
+  }
+
+  .senado-tema-bajada {
+    font-size: 1.5rem;
+  }
+
+  .senado-tema-header-imagen {
+    max-width: 240px;
+    margin-bottom: 1.25rem;
+  }
+
+  .senado-tema-frase {
+    font-size: 1.6rem;
+    padding: 2rem 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-senado-tema {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 0.5rem 0;
+  }
+
+  .senado-tema-header {
+    padding: 1.5rem 1rem 1.25rem;
+  }
+
+  .senado-tema-header-imagen {
+    max-width: 200px;
+  }
+
+  .senado-tema-bajada {
+    font-size: 1.4rem;
+  }
+
+  .senado-tema-frase {
+    font-size: 1.5rem;
+    padding: 1.75rem 1.25rem;
+  }
+}
