@@ -301,6 +301,15 @@ const Discursos = () => {
         fecha: "2026-08",
         categoria: "Provincias",
       },
+      {
+        id: 4,
+        titulo: "74ª Exposición Rural de Chivilcoy",
+        descripcion:
+          "Victoria Villarruel en la 74ª Exposición Rural de Chivilcoy, donde destacó la importancia del sector agropecuario y la producción nacional para el desarrollo del país.",
+        videoUrl: "https://youtu.be/SlGRlKIuZ5Y",
+        fecha: "2026-09",
+        categoria: "Provincias",
+      },
     ],
   };
 
