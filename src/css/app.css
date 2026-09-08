@@ -3,6 +3,20 @@ body {
   /* background-size: contain; */
 }
 
+/* Estilo único y compartido para citas textuales de Victoria Villarruel.
+   Se usa vía <blockquote className="cita"> tanto en Senado (senadoTemas.jsx)
+   como en Provincias (visitasProvincias.jsx). Definido acá porque app.css
+   se importa una sola vez, en App.jsx, y queda disponible en toda la app. */
+.cita {
+  display: block;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #0037a0;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
