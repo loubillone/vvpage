@@ -33,8 +33,10 @@ const senadoTemas = {
                 de la Guerra de Malvinas,
               </span>{" "}
               en conmemoración del 42° aniversario de la Recuperación de las
-              Islas. <br />
-              <br />
+              Islas.
+            </p>
+
+            <p>
               El acto fue encabezado por la presidente del Senado, Victoria
               Villarruel, quien{" "}
               <span className="vv-estilo-detalle">
@@ -80,8 +82,9 @@ const senadoTemas = {
               </span>{" "}
               junto al gobernador Gustavo Melella, el intendente Walter Vuoto y
               el presidente del Centro de Excombatientes, Juan Carlos Parodi.
-              <br />
-              <br />
+            </p>
+
+            <p>
               Durante la ceremonia, realizada en el pabellón nacional Puerto
               Argentino,{" "}
               <span className="vv-estilo-detalle">
@@ -122,10 +125,12 @@ const senadoTemas = {
               <span className="vv-estilo-detalle">
                 acto "Malvinas, Epopeya Nacional", en el marco del 43°
                 aniversario de la Gesta de Malvinas.
-              </span>{" "}
-              <br />
-              <br /> Durante la ceremonia, organizada por la Dirección de Gesta
-              de Malvinas y la Dirección de Cultura,{" "}
+              </span>
+            </p>
+
+            <p>
+              Durante la ceremonia, organizada por la Dirección de Gesta de
+              Malvinas y la Dirección de Cultura,{" "}
               <span className="vv-estilo-detalle">
                 {" "}
                 se entregaron distinciones a veteranos en reconocimiento a su
@@ -147,9 +152,12 @@ const senadoTemas = {
               </span>{" "}
               con una exposición itinerante que recorra las escuelas del país,
               para que los niños conozcan y valoren el testimonio de los
-              veteranos. <br />
-              <br /> "Malvinizar es sembrar en las nuevas generaciones el amor
-              por nuestra tierra y recuperar el orgullo de ser argentinos."{" "}
+              veteranos.
+            </p>
+
+            <p>
+              "Malvinizar es sembrar en las nuevas generaciones el amor por
+              nuestra tierra y recuperar el orgullo de ser argentinos."{" "}
               <span className="vv-estilo-detalle">
                 El acto concluyó con los homenajeados y Villarruel entonando la
                 Marcha de las Malvinas.
@@ -178,9 +186,10 @@ const senadoTemas = {
                 Durante su discurso, reafirmó que la causa Malvinas debe
                 mantenerse alejada de las disputas partidarias y destacó su
                 carácter de unidad nacional.
-              </span>{" "}
-              <br />
-              <br />
+              </span>
+            </p>
+
+            <p>
               Villarruel explicó que, a diferencia de años anteriores, decidió
               no participar de la tradicional vigilia en Tierra del Fuego porque
               no quería prestarse a una utilización política de la causa. En ese
@@ -199,9 +208,10 @@ const senadoTemas = {
                 "Malvinas trasciende los intereses personales" y que representa
                 "la única causa nacional que une a los argentinos sin
                 diferencias de ideología, religión u origen social".
-              </span>{" "}
-              <br />
-              <br />
+              </span>
+            </p>
+
+            <p>
               En otro tramo de su intervención, recordó el proceso de
               "desmalvinización" posterior a la guerra y cuestionó la
               invisibilización de los veteranos:
@@ -287,16 +297,19 @@ const senadoTemas = {
               </span>{" "}
               en el Salón Azul del Palacio Legislativo, en el marco del Día
               Internacional de Conmemoración y Homenaje a las Víctimas del
-              Terrorismo. <br />
-              <br />{" "}
+              Terrorismo.
+            </p>
+
+            <p>
               <span className="vv-estilo-detalle">
                 El acto contó con testimonios de familiares de víctimas, entre
                 ellos Claudia Rucci, Gloria Paulik y Luis Czyzewski, quienes
                 recordaron a sus seres queridos
               </span>{" "}
               y reclamaron que la memoria y la verdad se mantengan vigentes.
-              <br />
-              <br />
+            </p>
+
+            <p>
               También se proyectó un video con los hechos ocurridos en Argentina
               y otros países. La presidente del Senado, Victoria{" "}
               <span className="vv-estilo-detalle">
@@ -315,7 +328,7 @@ const senadoTemas = {
             <p>
               El homenaje contó con la presencia de autoridades legislativas y
               nacionales, consolidando el acto como un reconocimiento histórico
-              a quienes fueron silenciados y olvidados."
+              a quienes fueron silenciados y olvidados.
             </p>
           </>
         ),
@@ -337,9 +350,10 @@ const senadoTemas = {
                 Día Internacional de las Víctimas del Terrorismo
               </span>{" "}
               en el Salón Azul del Palacio Legislativo, encabezado por la
-              vicepresidente y presidente del Senado, Victoria Villarruel.{" "}
-              <br />
-              <br />
+              vicepresidente y presidente del Senado, Victoria Villarruel.
+            </p>
+
+            <p>
               <span className="vv-estilo-detalle">
                 El acto incluyó testimonios de familiares de víctimas de
                 distintos ataques terroristas en Argentina y el mundo,

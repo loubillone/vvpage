@@ -73,6 +73,17 @@
   text-align: justify;
 }
 
+/* Espaciado consistente entre párrafos, igual criterio que en Provincias
+   (.descripcion-visita en provinciaDetalle.css). Controla el espacio por
+   CSS en lugar de <br /> sueltos en el JSX. */
+.texto-senado-detalle p {
+  margin-bottom: 1.25rem;
+}
+
+.texto-senado-detalle p:last-child {
+  margin-bottom: 0;
+}
+
 .texto-senado-detalle .vv-estilo-detalle {
   font-weight: bold;
   color: #043d83;
