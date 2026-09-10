@@ -1,6 +1,6 @@
 .ultimas-visitas {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 0;
+  margin-bottom: 8rem;
 }
 
 .ultimas-visitas-header {
@@ -218,6 +218,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .ultimas-visitas {
+    margin-bottom: 6rem;
+  }
+
   .ultimas-visitas-titulo {
     font-size: 2.5rem;
   }
@@ -237,7 +241,7 @@
 
 @media (max-width: 767px) {
   .ultimas-visitas {
-    margin-top: 4rem;
+    margin-top: 0;
     margin-bottom: 4rem;
   }
 

@@ -4,7 +4,7 @@ import "../css/flyer.css";
 
 const FlyerHome = () => {
   return (
-    <div>
+    <div className="flyer-home-wrapper">
       <img
         src={flyer}
         alt="sol de mayo"

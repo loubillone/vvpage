@@ -1,7 +1,8 @@
 .container-mapa-argentina {
-  margin-top: 8rem;
+  margin-top: 0;
   margin-bottom: 8rem;
-  padding: 2rem 0;
+  padding: 6rem 0;
+  background-color: #f8f9fa;
 }
 
 .titulo-mapa {
@@ -20,107 +21,11 @@
   margin-bottom: 2rem;
 }
 
-/* Estilos para la barra de progreso de jurisdicciones recorridas */
-.progreso-container {
-  max-width: 600px;
-  margin: 0 auto 3rem;
-  padding: 0 1rem;
-}
-
-.progreso-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.8rem;
-}
-
-.progreso-texto {
-  font-family: "raleway-regular", sans-serif;
-  font-size: 1.6rem;
-  color: #4e4e4e;
-}
-
-.progreso-porcentaje {
-  font-family: "raleway-bold", sans-serif;
-  font-size: 2rem;
-  color: #0037a0;
-}
-
-.progreso-bar-container {
-  width: 100%;
-  height: 30px;
-  background-color: #e0e0e0;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.progreso-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #87ceeb 0%, #ff66c4 100%);
-  border-radius: 15px;
-  transition: width 0.6s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.progreso-bar-fill::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    transparent 100%
-  );
-  animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.visitas-documentadas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.6rem;
-}
-
-.visitas-documentadas-numero {
-  font-family: "raleway-bold", sans-serif;
-  font-size: 3.6rem;
-  font-weight: 700;
-  color: #0037a0;
-  line-height: 1;
-}
-
-.visitas-documentadas-texto {
-  font-family: "raleway-regular", sans-serif;
-  font-size: 1.5rem;
-  color: #4e4e4e;
-  margin-top: 0.3rem;
-}
-
 .mapa-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -205,25 +110,8 @@
     font-size: 1.8rem;
   }
 
-  .progreso-container {
-    max-width: 80%;
-    width: 80%;
-  }
-
-  .progreso-texto {
-    font-size: 1.3rem;
-  }
-
-  .progreso-porcentaje {
-    font-size: 1.4rem;
-  }
-
-  .visitas-documentadas-numero {
-    font-size: 3.4rem;
-  }
-
-  .visitas-documentadas-texto {
-    font-size: 1.4rem;
+  .container-mapa-argentina {
+    padding: 4rem 0;
   }
 
   .mapa-container {
@@ -238,9 +126,9 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .container-mapa-argentina {
-    margin-top: 5rem;
+    margin-top: 0;
     margin-bottom: 5rem;
-    padding: 1rem 0;
+    padding: 3rem 0;
   }
 
   .titulo-mapa {
@@ -250,32 +138,6 @@
   .subtitulo-mapa {
     font-size: 1.5rem;
     padding: 0 1rem;
-  }
-
-  .progreso-container {
-    margin-bottom: 2rem;
-    max-width: 80%;
-    width: 80%;
-  }
-
-  .progreso-texto {
-    font-size: 1.3rem;
-  }
-
-  .progreso-porcentaje {
-    font-size: 1.3rem;
-  }
-
-  .progreso-bar-container {
-    height: 25px;
-  }
-
-  .visitas-documentadas-numero {
-    font-size: 3.2rem;
-  }
-
-  .visitas-documentadas-texto {
-    font-size: 1.4rem;
   }
 
   .mapa-container {
@@ -290,9 +152,9 @@
 
 @media (max-width: 480px) {
   .container-mapa-argentina {
-    margin-top: 3rem;
+    margin-top: 0;
     margin-bottom: 3rem;
-    padding: 0.5rem 0;
+    padding: 2rem 0;
   }
 
   .titulo-mapa {
@@ -303,47 +165,6 @@
   .subtitulo-mapa {
     font-size: 1.5rem;
     padding: 0 1rem;
-  }
-
-  .progreso-container {
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .progreso-info {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  .progreso-texto {
-    font-size: 1.15rem;
-    white-space: normal;
-    flex-shrink: 1;
-    min-width: 0;
-  }
-
-  .progreso-porcentaje {
-    font-size: 1.3rem;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  .progreso-bar-container {
-    height: 22px;
-    width: 100%;
-  }
-
-  .visitas-documentadas-numero {
-    font-size: 2.8rem;
-  }
-
-  .visitas-documentadas-texto {
-    font-size: 1.4rem;
   }
 
   .mapa-container {

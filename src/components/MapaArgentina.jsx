@@ -3,27 +3,11 @@ import { useNavigate } from "react-router-dom";
 import "../css/mapaArgentina.css";
 import { visitasProvincias } from "../data/visitasProvincias";
 
-// Universo total: 23 provincias + CABA.
-const TOTAL_JURISDICCIONES = 24;
-// CABA se cuenta como jurisdicción recorrida a nivel informativo, pero no
-// tiene (ni debe tener) una entrada propia en visitasProvincias.
-const JURISDICCIONES_EXTRA = 1;
-
-const provinciasConVisitas = Object.values(visitasProvincias).filter(
-  (provincia) => provincia.visitas?.length > 0,
-).length;
-
-const jurisdiccionesRecorridas = provinciasConVisitas + JURISDICCIONES_EXTRA;
-
-const porcentajeRecorrido = Math.floor(
-  (jurisdiccionesRecorridas / TOTAL_JURISDICCIONES) * 100,
-);
-
-const TOTAL_VISITAS = Object.values(visitasProvincias).reduce(
-  (total, provincia) => total + (provincia.visitas?.length ?? 0),
-  0,
-);
-
+// Las estadísticas agregadas (jurisdicciones recorridas, % del país,
+// visitas documentadas) ya no se calculan acá: viven en
+// src/utils/estadisticasRecorrido.js y las consume la sección
+// "Victoria en números". Este componente solo necesita el detalle
+// por provincia para el tooltip y la navegación.
 const cantidadVisitas = (slug) => visitasProvincias[slug]?.visitas?.length ?? 0;
 
 const tieneContenido = (slug) => cantidadVisitas(slug) > 0;
@@ -503,32 +487,6 @@ const MapaArgentina = () => {
             <p className="subtitulo-mapa">
               Explorá las recorridas de Victoria Villarruel por la Argentina.
             </p>
-            {/* Barra de progreso de jurisdicciones recorridas */}
-            <div className="progreso-container">
-              <div className="progreso-info">
-                <span className="progreso-texto">
-                  Provincias recorridas: {jurisdiccionesRecorridas} de{" "}
-                  {TOTAL_JURISDICCIONES}
-                </span>
-                <span className="progreso-porcentaje">
-                  {porcentajeRecorrido}%
-                </span>
-              </div>
-              <div className="progreso-bar-container">
-                <div
-                  className="progreso-bar-fill"
-                  style={{ width: `${porcentajeRecorrido}%` }}
-                ></div>
-              </div>
-              <div className="visitas-documentadas">
-                <span className="visitas-documentadas-numero">
-                  {TOTAL_VISITAS}
-                </span>
-                <span className="visitas-documentadas-texto">
-                  visitas documentadas
-                </span>
-              </div>
-            </div>
           </div>
         </div>
         <div className="row">

@@ -1,0 +1,162 @@
+.victoria-en-numeros {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #f8f9fa;
+}
+
+.victoria-en-numeros-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.victoria-en-numeros-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 0.8rem;
+}
+
+.victoria-en-numeros-subtitulo {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: #4e4e4e;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.victoria-en-numeros-fila {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.victoria-en-numeros-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4.5rem;
+  border-right: 1px solid #e0e0e0;
+}
+
+.victoria-en-numeros-item:last-child {
+  border-right: none;
+}
+
+.victoria-en-numeros-cifra {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 5rem;
+  color: #0037a0;
+  line-height: 1;
+}
+
+.victoria-en-numeros-cifra-total {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 2.4rem;
+  color: #4e4e4e;
+  margin-left: 0.2rem;
+}
+
+.victoria-en-numeros-etiqueta {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: #4e4e4e;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .victoria-en-numeros {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .victoria-en-numeros-cifra {
+    font-size: 4.2rem;
+  }
+
+  .victoria-en-numeros-item {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .victoria-en-numeros {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .victoria-en-numeros-titulo {
+    font-size: 2.2rem;
+  }
+
+  .victoria-en-numeros-subtitulo {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .victoria-en-numeros-fila {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .victoria-en-numeros-item {
+    padding: 0 1rem 2rem;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .victoria-en-numeros-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .victoria-en-numeros-cifra {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .victoria-en-numeros {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .victoria-en-numeros-titulo {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .victoria-en-numeros-subtitulo {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  .victoria-en-numeros-fila {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .victoria-en-numeros-item {
+    padding: 0 1rem 1.6rem;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .victoria-en-numeros-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .victoria-en-numeros-cifra {
+    font-size: 3.6rem;
+  }
+
+  .victoria-en-numeros-cifra-total {
+    font-size: 2rem;
+  }
+}
