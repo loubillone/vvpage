@@ -59,6 +59,25 @@
   margin-left: 0.2rem;
 }
 
+/* Mismo tratamiento tipográfico que "-cifra-total", usado para las
+   palabras de unidad ("años", "meses", "veces", "días") dentro de una
+   cifra compuesta. */
+.victoria-en-numeros-cifra-unidad {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 2.4rem;
+  color: #4e4e4e;
+  margin: 0 0.4rem;
+}
+
+/* Separador "·" entre dos cifras compuestas dentro de un mismo item
+   (ej. "43 veces · +130 días"). Mismo color que las unidades. */
+.victoria-en-numeros-cifra-separador {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 2.4rem;
+  color: #4e4e4e;
+  margin: 0 0.3rem;
+}
+
 .victoria-en-numeros-etiqueta {
   font-family: "raleway-regular", sans-serif;
   font-size: 1.4rem;
@@ -67,6 +86,47 @@
   letter-spacing: 0.04em;
   margin-top: 0.8rem;
   text-align: center;
+}
+
+/* Etiqueta larga de la tercera métrica (ahorro anual): se controla en 2
+   líneas fijas (ver <br /> en el JSX) con un tamaño levemente menor para
+   que, incluso repartiendo el ancho en 3 columnas iguales, no se rompa
+   en más líneas ni desequilibre la altura de la fila. */
+.victoria-en-numeros-etiqueta--ahorro {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* Referencia de fuente, discreta, debajo de las tres métricas. */
+.victoria-en-numeros-fuente {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.1rem;
+  color: #838383;
+  text-align: center;
+}
+
+.victoria-en-numeros-fuente a {
+  color: #838383;
+  text-decoration: underline;
+}
+
+/* Escritorio grande: las 3 métricas permanecen en una sola fila,
+   repartiendo el ancho disponible en partes iguales para que ninguna
+   columna quede más angosta que las otras (evita que la etiqueta larga
+   de la tercera métrica la haga verse "caída" o desbalanceada). Tablet
+   (<=1024px) y mobile no se tocan: siguen con su comportamiento actual. */
+@media (min-width: 1025px) {
+  .victoria-en-numeros-fila {
+    flex-wrap: nowrap;
+  }
+
+  .victoria-en-numeros-item {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0 2.5rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -81,6 +141,10 @@
 
   .victoria-en-numeros-item {
     padding: 0 3rem;
+  }
+
+  .victoria-en-numeros-fuente {
+    margin-top: 2.5rem;
   }
 }
 
@@ -117,6 +181,12 @@
 
   .victoria-en-numeros-cifra {
     font-size: 4rem;
+  }
+
+  .victoria-en-numeros-fuente {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -158,5 +228,21 @@
 
   .victoria-en-numeros-cifra-total {
     font-size: 2rem;
+  }
+
+  .victoria-en-numeros-cifra-unidad {
+    font-size: 2rem;
+    margin: 0 0.25rem;
+  }
+
+  .victoria-en-numeros-cifra-separador {
+    font-size: 2rem;
+    margin: 0 0.2rem;
+  }
+
+  .victoria-en-numeros-fuente {
+    margin-top: 1.6rem;
+    font-size: 0.95rem;
+    padding: 0 1rem;
   }
 }
