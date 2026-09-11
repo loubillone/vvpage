@@ -1,8 +1,10 @@
+/* Padding interno (aire dentro de su propio fondo gris) y espacio hacia
+   Últimas visitas: ver sistema centralizado en src/css/homeRitmo.css. */
 .victoria-en-numeros {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  margin-bottom: var(--home-gap-sobre-caja, 3rem);
+  padding-top: var(--home-padding-caja, 5rem);
+  padding-bottom: var(--home-padding-caja, 5rem);
   background-color: #f8f9fa;
 }
 
@@ -130,11 +132,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .victoria-en-numeros {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .victoria-en-numeros-cifra {
     font-size: 4.2rem;
   }
@@ -149,11 +146,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .victoria-en-numeros {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .victoria-en-numeros-titulo {
     font-size: 2.2rem;
   }
@@ -191,11 +183,6 @@
 }
 
 @media (max-width: 480px) {
-  .victoria-en-numeros {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .victoria-en-numeros-titulo {
     font-size: 2rem;
     padding: 0 1rem;

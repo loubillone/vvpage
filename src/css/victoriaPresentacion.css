@@ -1,0 +1,120 @@
+/* Espacio hacia la sección anterior (FlyerHome) y siguiente
+   (VictoriaEnNumeros): ver sistema centralizado en
+   src/css/homeRitmo.css. Esta sección no tiene fondo propio, así que no
+   necesita padding-top/padding-bottom propios para el ritmo: el espacio
+   con el Flyer lo aporta el margin-bottom de .flyer-home-wrapper, y el
+   espacio hacia Victoria en números lo aporta el margin-bottom de acá
+   sumado al padding-top (interno, de su propio fondo) de
+   .victoria-en-numeros. */
+.victoria-presentacion {
+  margin-top: 0;
+  margin-bottom: var(--home-gap-sobre-caja, 3rem);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.victoria-presentacion-contenedor {
+  display: grid;
+  /* Relación aproximada 45/55 entre foto y contenido en desktop, sin
+     llegar a imagen "hero": el fr reparte el ancho disponible del
+     container (ya restado el gap) en esa proporción. */
+  grid-template-columns: 9fr 11fr;
+  align-items: center;
+  gap: 5rem;
+}
+
+.victoria-presentacion-foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.victoria-presentacion-texto {
+  max-width: 620px;
+}
+
+/* Kicker discreto: mismo tratamiento tipográfico que ya usan las
+   etiquetas de .victoria-en-numeros-etiqueta / .mapa-progreso-cifra-etiqueta
+   (raleway-regular, mayúsculas, letter-spacing, gris existente), sin
+   agregar ningún color ni estilo nuevo. */
+.victoria-presentacion-kicker {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: #4e4e4e;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.victoria-presentacion-parrafo {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  color: #4e4e4e;
+  margin-bottom: 1.6rem;
+}
+
+.victoria-presentacion-parrafo:last-of-type {
+  margin-bottom: 2.4rem;
+}
+
+/* Botón outline sobrio: mismos valores (color, radio, transición) que ya
+   usa .boton-volver / .boton-volver-senado en el resto del sitio, para
+   que se sienta como botón y no como un simple link de texto, sin
+   introducir ningún color nuevo. */
+.victoria-presentacion-cta {
+  display: inline-block;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.3rem;
+  color: #0037a0;
+  text-decoration: none;
+  padding: 0.9rem 2.2rem;
+  border: 2px solid #0037a0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.victoria-presentacion-cta:hover,
+.victoria-presentacion-cta:focus-visible {
+  background-color: #0037a0;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .victoria-presentacion-contenedor {
+    grid-template-columns: minmax(220px, 320px) 1fr;
+    gap: 3rem;
+  }
+
+  .victoria-presentacion-parrafo {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .victoria-presentacion-contenedor {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .victoria-presentacion-foto {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .victoria-presentacion-texto {
+    max-width: none;
+    text-align: center;
+  }
+
+  .victoria-presentacion-parrafo {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .victoria-presentacion-parrafo {
+    font-size: 1.4rem;
+  }
+}

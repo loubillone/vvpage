@@ -141,7 +141,7 @@ const VictoriaEnNumeros = () => {
             Victoria en números
           </h2>
           <p className="victoria-en-numeros-subtitulo">
-            Un resumen de su gestión al frente de la Vicepresidencia.
+            Un resumen de su gestión al frente del Senado de la Nación.
           </p>
         </div>
 

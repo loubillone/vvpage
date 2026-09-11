@@ -1,15 +1,17 @@
 import React from "react";
 import FlyerHome from "../components/FlyerHome";
+import VictoriaPresentacion from "../components/VictoriaPresentacion";
 import UltimasVisitas from "../components/UltimasVisitas";
 import VictoriaEnNumeros from "../components/VictoriaEnNumeros";
 import MapaArgentina from "../components/MapaArgentina";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
+import "../css/homeRitmo.css";
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-page">
       <Helmet>
         <title>Victoria Villarruel | Todo Por Argentina</title>
         <meta
@@ -24,9 +26,11 @@ const Home = () => {
 
       <FlyerHome />
 
-      <UltimasVisitas />
+      <VictoriaPresentacion />
 
       <VictoriaEnNumeros />
+
+      <UltimasVisitas />
 
       <MapaArgentina />
 

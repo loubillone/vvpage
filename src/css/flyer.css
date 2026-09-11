@@ -1,5 +1,7 @@
+/* Espacio hacia la siguiente sección del Home (VictoriaPresentacion):
+   ver sistema centralizado en src/css/homeRitmo.css. */
 .flyer-home-wrapper {
-  margin-bottom: 8rem;
+  margin-bottom: var(--home-gap-grande, 8rem);
 }
 
 .solDeMayo {
@@ -9,22 +11,4 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center 70%;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .flyer-home-wrapper {
-    margin-bottom: 6rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .flyer-home-wrapper {
-    margin-bottom: 4rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .flyer-home-wrapper {
-    margin-bottom: 3rem;
-  }
 }

@@ -1,0 +1,65 @@
+/* Sistema de ritmo vertical del Home.
+ *
+ * Escala centralizada para el espacio entre secciones del Home
+ * (FlyerHome, VictoriaPresentacion, VictoriaEnNumeros, UltimasVisitas,
+ * MapaArgentina, Footer). Las variables quedan scoped a .home-page (no
+ * en :root) para no afectar a ningún otro componente/página que
+ * comparta piezas con el Home (por ejemplo, Footer se usa en todo el
+ * sitio).
+ *
+ * Regla de responsabilidad única: el espacio ENTRE dos secciones lo
+ * define siempre el margin-bottom de la sección anterior (margin-top
+ * de la siguiente es siempre 0). El padding-top/padding-bottom solo se
+ * usa como aire INTERNO de secciones con fondo propio (Victoria en
+ * números, Mapa). Visualmente, padding interno + margin externo se
+ * suman: por eso --home-gap-sobre-caja resta el padding ya aportado
+ * y la distancia efectiva queda en --home-gap-grande, no en 12–14rem.
+ *
+ * --home-gap-normal y --home-gap-compacto completan la escala (p. ej.
+ * para Industria) aunque hoy ninguna unión del Home los consume. */
+.home-page {
+  --home-gap-grande: 12rem;
+  --home-gap-normal: 8rem;
+  --home-gap-compacto: 5rem;
+  --home-padding-caja: 5rem;
+  /* Espacio externo restante cuando la sección adyacente ya aporta
+     --home-padding-caja, de modo que la distancia visual total termine
+     siendo --home-gap-grande. */
+  --home-gap-sobre-caja: calc(var(--home-gap-grande) - var(--home-padding-caja));
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-page {
+    --home-gap-grande: 9rem;
+    --home-gap-normal: 6rem;
+    --home-gap-compacto: 4rem;
+    --home-padding-caja: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page {
+    --home-gap-grande: 7rem;
+    --home-gap-normal: 5rem;
+    --home-gap-compacto: 3.5rem;
+    --home-padding-caja: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    --home-gap-grande: 6rem;
+    --home-gap-normal: 4.5rem;
+    --home-gap-compacto: 3rem;
+    --home-padding-caja: 3rem;
+  }
+}
+
+/* Ajuste scoped SOLO al Home: el padding-top de los íconos del Footer
+ * usa --home-gap-sobre-caja para compensar el padding-bottom del Mapa.
+ * No se toca el valor global de footer.css. Esta unión es temporal:
+ * cuando exista Industria entre Mapa y Footer, este selector deja de
+ * resolver esa transición. */
+.home-page .columna-iconos-footer {
+  padding-top: var(--home-gap-sobre-caja);
+}

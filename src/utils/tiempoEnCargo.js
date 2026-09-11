@@ -2,7 +2,7 @@
 // (Confirmado por el propio contenido del sitio en GaleriaDetalle.jsx:
 // "El 10 de diciembre de 2023, Javier Milei y Victoria Villarruel
 // asumieron como presidente y vicepresidente...").
-const FECHA_INICIO_VICEPRESIDENCIA = new Date(2023, 11, 10);
+const FECHA_INICIO_VICEPRESIDENCIA = new Date(2023, 12, 10);
 
 // Diferencia en años y meses completos entre dos fechas. No redondea:
 // un mes solo se cuenta como completo si ya pasó el día de inicio.
