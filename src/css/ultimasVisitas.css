@@ -1,6 +1,10 @@
+/* Espacio hacia Victoria Federal/Mapa: se deja deliberadamente en 0 (el
+   padding-top propio de .container-mapa-argentina ya aporta el aire
+   necesario), para que esta unión se sienta conectada y no separada
+   por un vacío. Ver sistema centralizado en src/css/homeRitmo.css. */
 .ultimas-visitas {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .ultimas-visitas-header {
@@ -236,11 +240,6 @@
 }
 
 @media (max-width: 767px) {
-  .ultimas-visitas {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
   .ultimas-visitas-header {
     margin-bottom: 2rem;
     padding: 0 1rem;

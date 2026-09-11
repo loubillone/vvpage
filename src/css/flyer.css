@@ -1,3 +1,9 @@
+/* Espacio hacia la siguiente sección del Home (VictoriaPresentacion):
+   ver sistema centralizado en src/css/homeRitmo.css. */
+.flyer-home-wrapper {
+  margin-bottom: var(--home-gap-grande, 8rem);
+}
+
 .solDeMayo {
   width: 100%;
   height: auto;

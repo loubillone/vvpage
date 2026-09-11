@@ -295,6 +295,11 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-8",
         ],
         lugar: "Chivilcoy - Suipacha",
+        establecimientosVisitados: [
+          "ostagro-moquehua",
+          "el-gauchito-chivilcoy",
+          "lacteos-silvia-suipacha",
+        ],
       },
 
       {
@@ -372,6 +377,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/saladillo/ba-saladillo-6",
         ],
         lugar: "Saladillo",
+        establecimientosVisitados: ["frigorifico-el-regional-saladillo"],
       },
 
       {
@@ -756,6 +762,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-3.jpg",
           "tpa-web/provincias/bsas/ituzaingo/bsas-ituzaingo-cintolo-4.jpg",
         ],
+        establecimientosVisitados: ["cintolo-hermanos-ituzaingo"],
       },
 
       {
@@ -911,6 +918,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/victoria/fate/bsas-victoria-fate-3.jpg",
           "tpa-web/provincias/bsas/victoria/fate/bsas-victoria-fate-4.jpg",
         ],
+        establecimientosVisitados: ["fate-victoria-buenos-aires"],
       },
     ],
   },
@@ -1490,6 +1498,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-8",
               "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-9",
             ],
+            establecimientosVisitados: ["ingenio-la-florida-tucuman"],
           },
         ],
       },
@@ -1668,6 +1677,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/salta/rural/salta-rural-3",
         ],
         lugar: "Jujuy - Salta",
+        establecimientosVisitados: ["finca-campo-alegre-san-pedro-jujuy"],
       },
     ],
   },
@@ -2045,6 +2055,10 @@ export const visitasProvincias = {
           "tpa-web/provincias/catamarca/belen/catamarca-belen-13",
         ],
         lugar: "San Fernando del Valle de Catamarca - Belén – El Rodeo",
+        establecimientosVisitados: [
+          "taller-antonio-gutierrez-belen-catamarca",
+          "cooperativa-aranitas-hilanderas-belen-catamarca",
+        ],
       },
     ],
   },
@@ -2121,6 +2135,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-6",
         ],
         lugar: "Ciudad de Mendoza",
+        establecimientosVisitados: ["bodega-catena-zapata-mendoza"],
       },
       {
         titulo: "Vendimia 2026",
@@ -2419,6 +2434,10 @@ export const visitasProvincias = {
           "tpa-web/provincias/jujuy/jujuy-exodo-6",
         ],
         lugar: "San Pedro – Volcán – Tilcara – Olaroz – Salinas Grandes",
+        establecimientosVisitados: [
+          "finca-campo-alegre-san-pedro-jujuy",
+          "arcadium-lithium-olaroz",
+        ],
       },
     ],
   },
@@ -2486,6 +2505,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-5",
         ],
         lugar: "San Salvador – Paraná",
+        establecimientosVisitados: ["cooperativa-arrocera-san-salvador-entre-rios"],
       },
     ],
   },
@@ -2619,6 +2639,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/misiones/misiones-ciudad-6",
         ],
         lugar: "Oberá – Puerto Iguazú – Colonia Wanda",
+        establecimientosVisitados: ["minas-de-wanda-misiones"],
       },
     ],
   },
@@ -2767,6 +2788,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/la-rioja/bodega/larioja-bodega-6",
               "tpa-web/provincias/la-rioja/bodega/larioja-bodega-7",
             ],
+            establecimientosVisitados: ["bodega-vista-larga-la-rioja"],
           },
           {
             titulo: "Fiesta Nacional de la Chaya",
@@ -2840,6 +2862,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-2",
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-3",
             ],
+            establecimientosVisitados: ["parque-eolico-arauco-la-rioja"],
           },
           {
             titulo: "Talampaya y Paseo Cultural Castro Barros",
@@ -2962,6 +2985,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/neuquen/neuquen-ciudad-6",
         ],
         lugar: "Ciudad de Neuquén – Añelo",
+        establecimientosVisitados: ["bodega-malma-neuquen"],
       },
     ],
   },
@@ -3040,6 +3064,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/rio-negro/rionegro-bariloche-5",
         ],
         lugar: "San Carlos de Bariloche",
+        establecimientosVisitados: ["invap-bariloche-rio-negro"],
       },
     ],
   },
@@ -3772,6 +3797,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-16",
               "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-17",
             ],
+            establecimientosVisitados: ["yacimiento-ypf-las-heras-santa-cruz"],
           },
 
           {
@@ -3882,6 +3908,10 @@ export const visitasProvincias = {
               "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-17",
               "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-18",
               "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-19",
+            ],
+            establecimientosVisitados: [
+              "girgolar-los-antiguos-santa-cruz",
+              "chacra-la-querencia-los-antiguos-santa-cruz",
             ],
           },
 
@@ -4070,6 +4100,7 @@ export const visitasProvincias = {
             imagenes: [
               "tpa-web/provincias/san-juan/mtz-logistica/sanjuan-mtz-1.jpg",
             ],
+            establecimientosVisitados: ["empresa-mtz-san-juan"],
           },
 
           {
@@ -4107,6 +4138,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/san-juan/arcor/sanjuan-arcor-3.jpg",
               "tpa-web/provincias/san-juan/arcor/sanjuan-arcor-4.jpg",
             ],
+            establecimientosVisitados: ["arcor-villa-krause-san-juan"],
           },
 
           {
@@ -4134,6 +4166,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-2.jpg",
               "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-3.jpg",
             ],
+            establecimientosVisitados: ["trilogia-san-juan"],
           },
 
           {

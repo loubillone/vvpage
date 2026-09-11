@@ -2,29 +2,23 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/mapaArgentina.css";
 import { visitasProvincias } from "../data/visitasProvincias";
+import {
+  TOTAL_JURISDICCIONES,
+  jurisdiccionesRecorridas,
+  porcentajeRecorrido,
+  totalVisitas,
+} from "../utils/estadisticasRecorrido";
 
-// Universo total: 23 provincias + CABA.
-const TOTAL_JURISDICCIONES = 24;
-// CABA se cuenta como jurisdicción recorrida a nivel informativo, pero no
-// tiene (ni debe tener) una entrada propia en visitasProvincias.
-const JURISDICCIONES_EXTRA = 1;
-
-const provinciasConVisitas = Object.values(visitasProvincias).filter(
-  (provincia) => provincia.visitas?.length > 0,
-).length;
-
-const jurisdiccionesRecorridas = provinciasConVisitas + JURISDICCIONES_EXTRA;
-
-const porcentajeRecorrido = Math.floor(
-  (jurisdiccionesRecorridas / TOTAL_JURISDICCIONES) * 100,
-);
-
-const TOTAL_VISITAS = Object.values(visitasProvincias).reduce(
-  (total, provincia) => total + (provincia.visitas?.length ?? 0),
-  0,
-);
-
+// Las estadísticas agregadas se calculan una sola vez en
+// src/utils/estadisticasRecorrido.js (única fuente de verdad). Este
+// componente las consume para la barra de progreso y usa
+// visitasProvincias solo para el detalle por provincia (tooltip y
+// navegación).
 const cantidadVisitas = (slug) => visitasProvincias[slug]?.visitas?.length ?? 0;
+
+const prefiereMovimientoReducido = () =>
+  typeof window !== "undefined" &&
+  window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 
 const tieneContenido = (slug) => cantidadVisitas(slug) > 0;
 
@@ -256,6 +250,36 @@ const MapaArgentina = () => {
   const [svgLoaded, setSvgLoaded] = useState(false);
   const [svgContent, setSvgContent] = useState("");
   const svgContainerRef = useRef(null);
+  const progresoRef = useRef(null);
+  const [progresoEnVista, setProgresoEnVista] = useState(false);
+
+  // Dispara la animación de la barra de progreso una sola vez, cuando
+  // entra en viewport. Completamente independiente de la carga del SVG.
+  useEffect(() => {
+    const el = progresoRef.current;
+    if (!el) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setProgresoEnVista(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setProgresoEnVista(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.4 },
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const anchoBarraProgreso =
+    progresoEnVista || prefiereMovimientoReducido() ? porcentajeRecorrido : 0;
 
   const handleProvinciaClick = (provincia) => {
     const provinciaNormalizada = mapeoProvincias[provincia] || provincia;
@@ -503,31 +527,44 @@ const MapaArgentina = () => {
             <p className="subtitulo-mapa">
               Explorá las recorridas de Victoria Villarruel por la Argentina.
             </p>
-            {/* Barra de progreso de jurisdicciones recorridas */}
-            <div className="progreso-container">
-              <div className="progreso-info">
-                <span className="progreso-texto">
-                  Provincias recorridas: {jurisdiccionesRecorridas} de{" "}
-                  {TOTAL_JURISDICCIONES}
-                </span>
-                <span className="progreso-porcentaje">
-                  {porcentajeRecorrido}%
-                </span>
+
+            <div className="mapa-progreso" ref={progresoRef}>
+              <div className="mapa-progreso-cifras">
+                <div className="mapa-progreso-cifra-item">
+                  <span className="mapa-progreso-cifra">
+                    {jurisdiccionesRecorridas}
+                    <span className="mapa-progreso-cifra-total">
+                      /{TOTAL_JURISDICCIONES}
+                    </span>
+                  </span>
+                  <span className="mapa-progreso-cifra-etiqueta">
+                    Provincias recorridas
+                  </span>
+                </div>
+
+                <div className="mapa-progreso-cifra-item">
+                  <span className="mapa-progreso-cifra">
+                    {porcentajeRecorrido}%
+                  </span>
+                  <span className="mapa-progreso-cifra-etiqueta">
+                    Del país recorrido
+                  </span>
+                </div>
               </div>
-              <div className="progreso-bar-container">
+
+              <div className="mapa-progreso-bar">
                 <div
-                  className="progreso-bar-fill"
-                  style={{ width: `${porcentajeRecorrido}%` }}
+                  className="mapa-progreso-bar-fill"
+                  style={{ width: `${anchoBarraProgreso}%` }}
                 ></div>
               </div>
-              <div className="visitas-documentadas">
-                <span className="visitas-documentadas-numero">
-                  {TOTAL_VISITAS}
-                </span>
-                <span className="visitas-documentadas-texto">
-                  visitas documentadas
-                </span>
-              </div>
+
+              <p className="mapa-visitas-documentadas">
+                <span className="mapa-visitas-documentadas-numero">
+                  {totalVisitas}
+                </span>{" "}
+                visitas documentadas
+              </p>
             </div>
           </div>
         </div>
