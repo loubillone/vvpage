@@ -2,6 +2,7 @@
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
+  <!-- Páginas generales -->
   <url>
     <loc>https://todoporargentina.com.ar/</loc>
     <priority>1.0</priority>
@@ -46,5 +47,261 @@
     <loc>https://todoporargentina.com.ar/contacto</loc>
     <priority>0.5</priority>
   </url>
-</urlset>
 
+  <!-- Provincias y visitas (fuente: src/data/visitasProvincias.jsx) -->
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/azul-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/mar-del-plata-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/pilar-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/lujan-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/chivilcoy-suipacha-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/saladillo-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/san-pedro-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/malvinas-chivilcoy-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/padre-mario-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/industria-ituzaingo-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/rural-chivilcoy-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/buenos-aires/fate-victoria-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/cordoba</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/cordoba/jesus-maria-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/cordoba/25-mayo-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/tucuman</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/tucuman/independencia-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/tucuman/independencia-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/salta</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/salta/batalla-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/salta/guemes-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/salta/expo-rural-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/chubut</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/chubut/rio-mayo-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/tierra-del-fuego</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/tierra-del-fuego/malvinas-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/catamarca</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/catamarca/bajada-virgen-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/catamarca/fiesta-poncho-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/catamarca/belen-el-rodeo-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/mendoza</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/mendoza/vendimia-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/mendoza/vendimia-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/jujuy</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/jujuy/exodo-jujeno-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/entre-rios</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/entre-rios/fiesta-arroz-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/formosa</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/formosa/heroe-formoseno-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/misiones</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/misiones/fiesta-inmigrante-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/la-rioja</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/la-rioja/chaya-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/neuquen</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/neuquen/texas-summit-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/rio-negro</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/rio-negro/bariloche-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/san-luis</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/san-luis/renca-quebrada-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santa-fe</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santa-fe/san-lorenzo-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santa-fe/bandera-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santa-fe/bandera-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santa-fe/expovenado-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santiago-del-estero</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santiago-del-estero/gobernador-zamora-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/corrientes</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/corrientes/natalicio-san-martin-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/corrientes/sargento-cabral-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santa-cruz</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/santa-cruz/gira-norte-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/san-juan</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/provincias/san-juan/produccion-industria-2026</loc>
+  </url>
+</urlset>
