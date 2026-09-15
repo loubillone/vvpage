@@ -127,7 +127,7 @@ const UltimasVisitas = () => {
           {VISITAS_DESTACADAS.map((visita) => (
             <Link
               key={`${visita.provinciaSlug}-${visita.slug}`}
-              to={`/provincia/${visita.provinciaSlug}/${visita.slug}`}
+              to={`/provincias/${visita.provinciaSlug}/${visita.slug}`}
               className="ultima-visita-card-link"
             >
               <article className="ultima-visita-card">

@@ -24,7 +24,7 @@ const VisitaDetalle = () => {
         <div className="container">
           <h2>Visita no encontrada</h2>
           {provincia ? (
-            <Button as={Link} to={`/provincia/${slug}`} variant="primary">
+            <Button as={Link} to={`/provincias/${slug}`} variant="primary">
               Volver a {provincia.nombre}
             </Button>
           ) : (
@@ -44,7 +44,7 @@ const VisitaDetalle = () => {
           <div className="col-12">
             <Button
               as={Link}
-              to={`/provincia/${slug}`}
+              to={`/provincias/${slug}`}
               variant="outline-primary"
               className="boton-volver"
             >
