@@ -304,4 +304,83 @@
   <url>
     <loc>https://todoporargentina.com.ar/provincias/san-juan/produccion-industria-2026</loc>
   </url>
+
+  <!-- Senado: años (fuente: src/data/senadoTemas.jsx) -->
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/victimasDelTerrorismo/2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/victimasDelTerrorismo/2025</loc>
+  </url>
+
+  <!-- Senado: actividades (fuente: src/data/senadoTemas.jsx) -->
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2024/diplomas-veteranos-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2025/ushuaia-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2025/epopeya-nacional-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2026/chivilcoy-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/malvinas/2026/epopeya-nacional-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/victimasDelTerrorismo/2024/homenaje-victimas-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/senado/victimasDelTerrorismo/2025/victimas-terrorismo-2025</loc>
+  </url>
+
+  <!-- Galería: categorías (fuente: src/components/GaleriaDetalle.jsx y GaleriaVisor.jsx) -->
+  <url>
+    <loc>https://todoporargentina.com.ar/galeria/asuncion</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/galeria/gala</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/galeria/guemes</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/galeria/DosDeAbril</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/galeria/VeinticincoDeMayo</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/galeria/ruta40</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/galeria/vaticano</loc>
+  </url>
 </urlset>
