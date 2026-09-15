@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 import { visitasProvincias } from "../data/visitasProvincias";
@@ -7,6 +8,7 @@ import { getCloudinaryUrl } from "../utils/cloudinary";
 
 const VisitaDetalle = () => {
   const { slug, visitaSlug } = useParams();
+  const SITE_URL = import.meta.env.VITE_SITE_URL;
 
   const provincia = visitasProvincias[slug];
   const visitas = provincia?.visitas || [];
@@ -37,8 +39,20 @@ const VisitaDetalle = () => {
     );
   }
 
+  const tituloSEO = `${visita.titulo} | Todo por Argentina`;
+  const descripcionSEO = `${visita.titulo} — recorrida de Victoria Villarruel en ${
+    provincia.nombre
+  }${visita.lugar ? ` (${visita.lugar})` : ""}, ${visita.fecha}.`;
+  const canonical = `${SITE_URL}/provincias/${slug}/${visitaSlug}`;
+
   return (
     <div className="container-provincia-detalle">
+      <Helmet>
+        <title>{tituloSEO}</title>
+        <meta name="description" content={descripcionSEO} />
+        <link rel="canonical" href={canonical} />
+      </Helmet>
+
       <Container>
         <div className="row">
           <div className="col-12">

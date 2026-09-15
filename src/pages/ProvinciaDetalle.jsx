@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import "../css/provinciaDetalle.css";
 import "../css/visitaCard.css";
 import { Container, Button } from "react-bootstrap";
@@ -20,6 +21,7 @@ const fechaISOaNumero = (fechaISO) => {
 const ProvinciaDetalle = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const SITE_URL = import.meta.env.VITE_SITE_URL;
 
   const provincia = visitasProvincias[slug];
 
@@ -46,8 +48,22 @@ const ProvinciaDetalle = () => {
     (a, b) => fechaISOaNumero(b.fechaISO) - fechaISOaNumero(a.fechaISO)
   );
 
+  const tituloSEO = `Victoria Villarruel en ${provincia.nombre} | Todo por Argentina`;
+  const descripcionSEO = `Recorridas de Victoria Villarruel por ${
+    provincia.nombre
+  }: ${visitas.length} ${
+    visitas.length === 1 ? "visita documentada" : "visitas documentadas"
+  }.`;
+  const canonical = `${SITE_URL}/provincias/${slug}`;
+
   return (
     <div className="container-provincia-detalle">
+      <Helmet>
+        <title>{tituloSEO}</title>
+        <meta name="description" content={descripcionSEO} />
+        <link rel="canonical" href={canonical} />
+      </Helmet>
+
       <Container>
         <div className="row">
           <div className="col-12">
