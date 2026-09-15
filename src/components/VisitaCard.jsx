@@ -6,7 +6,7 @@ import "../css/visitaCard.css";
 const VisitaCard = ({ visita, provinciaSlug }) => {
   return (
     <Link
-      to={`/provincia/${provinciaSlug}/${visita.slug}`}
+      to={`/provincias/${provinciaSlug}/${visita.slug}`}
       className="visita-card-link"
     >
       <article className="visita-card">

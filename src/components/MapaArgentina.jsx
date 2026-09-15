@@ -284,7 +284,7 @@ const MapaArgentina = () => {
   const handleProvinciaClick = (provincia) => {
     const provinciaNormalizada = mapeoProvincias[provincia] || provincia;
     if (esProvinciaVisitada(provinciaNormalizada)) {
-      navigate(`/provincia/${provinciasVisitadas[provinciaNormalizada].slug}`);
+      navigate(`/provincias/${provinciasVisitadas[provinciaNormalizada].slug}`);
     }
   };
 
