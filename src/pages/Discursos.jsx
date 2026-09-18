@@ -1,10 +1,8 @@
 import React, { useState, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Container from "react-bootstrap/Container";
 import "../css/discursos.css";
-import VideoGrid from "../components/VideoGrid";
-import VideoModal from "../components/VideoModal";
+import DiscursoCard from "../components/DiscursoCard";
 import Footer from "../components/Footer";
 import discursosTitulo from "../assets/img/discursos/discursos.png";
 import discursosData from "../data/discursos";
@@ -19,63 +17,18 @@ const anioDeFecha = (fechaISO) => {
   return parseInt(fechaISO.slice(0, 4), 10) || 0;
 };
 
-// Función helper para extraer el ID de YouTube de diferentes formatos de URL
-const getYouTubeId = (url) => {
-  if (!url) return null;
-
-  // Si ya es un ID (sin URL), devolverlo directamente
-  if (
-    !url.includes("youtube.com") &&
-    !url.includes("youtu.be") &&
-    !url.includes("http")
-  ) {
-    return url;
-  }
-
-  // Diferentes formatos de URL de YouTube
-  const patterns = [
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
-    /youtube\.com\/.*[?&]v=([^&\n?#]+)/,
-  ];
-
-  for (const pattern of patterns) {
-    const match = url.match(pattern);
-    if (match && match[1]) {
-      return match[1];
-    }
-  }
-
-  return null;
-};
 const Discursos = () => {
-  const navigate = useNavigate();
   const [filtroCategoria, setFiltroCategoria] = useState("Todos");
-  // videoSeleccionado/mostrarModal y <VideoModal /> (más abajo) se
-  // conservan sin cambios: desde esta fase el clic principal de la card
-  // navega directamente a /discursos/:discursoSlug (ver handleVideoClick),
-  // así que por ahora nada vuelve a llamar a setMostrarModal(true). Se
-  // deja el modal intacto en vez de borrarlo para no perder código
-  // funcional todavía útil; su remoción (si se confirma que no hace falta
-  // en ningún otro flujo) queda para una fase posterior de limpieza.
-  const [videoSeleccionado, setVideoSeleccionado] = useState(null);
-  const [mostrarModal, setMostrarModal] = useState(false);
 
   // Categorías disponibles
   const categorias = ["Todos", "Senado", "Provincias", "Varios"];
 
   // Todos los discursos, con el año derivado de fechaISO (no agrupado
   // estructuralmente en los datos, ver src/data/discursos.js).
-  //
-  // VideoGrid.jsx y VideoModal.jsx parsean "fecha" como "YYYY-MM"
-  // (video.fecha.split("-")) para mostrar mes/año. El dato central expone
-  // "fecha" como texto legible ("Abril de 2024"), igual que
-  // senadoTemas.jsx/visitasProvincias.jsx, así que acá se remapea "fecha" a
-  // fechaISO antes de pasarla a esos componentes, sin tener que tocarlos.
   const todosLosVideos = useMemo(() => {
     return discursosData.map((discurso) => ({
       ...discurso,
       año: anioDeFecha(discurso.fechaISO),
-      fecha: discurso.fechaISO,
     }));
   }, []);
 
@@ -98,27 +51,15 @@ const Discursos = () => {
       }
       agrupados[video.año].push(video);
     });
-    // Ordenar videos dentro de cada año por fecha descendente (más reciente primero)
+    // Ordenar discursos dentro de cada año por fechaISO descendente (más
+    // reciente primero). Se usa fechaISO (formato "YYYY-MM", ordenable
+    // lexicográficamente) y no "fecha" (que ahora es el texto legible,
+    // "Abril de 2024", que ya no sirve para ordenar).
     Object.keys(agrupados).forEach((año) => {
-      agrupados[año].sort((a, b) => {
-        // Comparar fechas en formato "YYYY-MM"
-        return b.fecha.localeCompare(a.fecha);
-      });
+      agrupados[año].sort((a, b) => b.fechaISO.localeCompare(a.fechaISO));
     });
     return agrupados;
   }, [videosFiltrados]);
-
-  // Clic principal de la card: navega al detalle individual del discurso
-  // (/discursos/:discursoSlug). El video se reproduce ahí, no en un modal
-  // sobre el índice (ver comentario junto a videoSeleccionado/mostrarModal).
-  const handleVideoClick = (video) => {
-    navigate(`/discursos/${video.slug}`);
-  };
-
-  const cerrarModal = () => {
-    setMostrarModal(false);
-    setVideoSeleccionado(null);
-  };
 
   return (
     <div>
@@ -155,16 +96,17 @@ const Discursos = () => {
           </div>
         </div>
 
-        {/* Videos agrupados por año */}
+        {/* Discursos agrupados por año */}
         {Object.keys(videosPorAño)
-          .sort((a, b) => b - a) // Ordenar años descendente (2025 primero)
+          .sort((a, b) => b - a) // Ordenar años descendente (más reciente primero)
           .map((año) => (
             <div key={año} className="videos-por-año">
               <h3 className="año-titulo">{año}</h3>
-              <VideoGrid
-                videos={videosPorAño[año]}
-                onVideoClick={handleVideoClick}
-              />
+              <div className="discursos-grid">
+                {videosPorAño[año].map((discurso) => (
+                  <DiscursoCard key={discurso.slug} discurso={discurso} />
+                ))}
+              </div>
             </div>
           ))}
 
@@ -174,11 +116,6 @@ const Discursos = () => {
           </div>
         )}
       </Container>
-
-      {/* Modal de video */}
-      {mostrarModal && videoSeleccionado && (
-        <VideoModal video={videoSeleccionado} onClose={cerrarModal} />
-      )}
 
       <Footer />
     </div>

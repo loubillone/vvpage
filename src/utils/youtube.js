@@ -1,16 +1,14 @@
 // Utilidad compartida para trabajar con URLs de YouTube.
 //
-// Esta misma lógica ya existe, casi idéntica, duplicada en tres lugares:
-// VideoGrid.jsx, VideoModal.jsx y (como código sin uso) Discursos.jsx. Para
-// no volver a duplicarla una cuarta vez en DiscursoDetalle.jsx, se extrae
-// acá como utilidad reutilizable.
+// Fase 2: se extrajo acá la lógica de getYouTubeId/getYouTubeEmbedUrl que
+// hasta entonces estaba duplicada en VideoGrid.jsx, VideoModal.jsx y (como
+// código sin uso) Discursos.jsx, para no volver a duplicarla una cuarta vez
+// en DiscursoDetalle.jsx.
 //
-// No se tocan VideoGrid.jsx ni VideoModal.jsx en esta fase para no arriesgar
-// el comportamiento ya validado del índice /discursos (que sigue usando su
-// propia copia interna, sin cambios). Esta utilidad, por ahora, la consume
-// únicamente DiscursoDetalle.jsx. Unificar los tres orígenes en uno solo
-// queda para una fase posterior de limpieza, una vez que el nuevo flujo de
-// detalle esté validado.
+// Fase 3: VideoGrid.jsx y VideoModal.jsx ya no existen (el índice /discursos
+// ahora usa DiscursoCard.jsx, que también consume este archivo). Se agrega
+// getYouTubeThumbnail para el thumbnail de la card, en vez de duplicar la
+// lógica de VideoThumbnail que tenía VideoGrid.jsx.
 
 // Extrae el ID de video de distintos formatos de URL de YouTube
 // (youtube.com/watch?v=, youtu.be/, youtube.com/embed/), o lo devuelve tal
@@ -38,11 +36,21 @@ export const getYouTubeId = (url) => {
 };
 
 // Construye la URL de embed a partir de una URL de YouTube. Mismos
-// parámetros que ya usa VideoModal.jsx (rel=0, modestbranding=1,
-// controls=1, disablekb=1), para que el reproductor se vea/comporte igual
-// en el detalle que en el modal existente.
+// parámetros que usaba el VideoModal.jsx original (rel=0, modestbranding=1,
+// controls=1, disablekb=1), para que el reproductor del detalle se
+// comporte igual que el que había antes.
 export const getYouTubeEmbedUrl = (videoUrl) => {
   const videoId = getYouTubeId(videoUrl);
   if (!videoId) return null;
   return `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&controls=1&disablekb=1`;
+};
+
+// Thumbnail estático de YouTube para usar en cards (DiscursoCard). Se usa
+// "hqdefault" (no "maxresdefault"): existe siempre para cualquier video
+// público, así que no hace falta la lógica de precarga + fallback que tenía
+// VideoThumbnail dentro de VideoGrid.jsx.
+export const getYouTubeThumbnail = (videoUrl) => {
+  const videoId = getYouTubeId(videoUrl);
+  if (!videoId) return null;
+  return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 };
