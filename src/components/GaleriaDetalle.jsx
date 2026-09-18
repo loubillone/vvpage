@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import "../css/galeriaVisor.css";
 import "../css/galeriaDetalle.css";
 import { Carousel, Container } from "react-bootstrap";
@@ -136,12 +137,16 @@ const GaleriaDetalle = () => {
 
   const { categoria } = useParams();
   const navigate = useNavigate();
+  const SITE_URL = import.meta.env.VITE_SITE_URL;
   const galeriaSeleccionada = galerias[categoria];
 
   // Si no encuentra la galería, muestra error
   if (!galeriaSeleccionada) {
     return <h2>Galería no encontrada</h2>;
   }
+
+  const tituloSEO = `${galeriaSeleccionada.titulo} | Todo por Argentina`;
+  const canonical = `${SITE_URL}/galeria/${categoria}`;
 
   const [imagenIndex, setImagenIndex] = useState(0);
 
@@ -186,6 +191,12 @@ const GaleriaDetalle = () => {
 
   return (
     <div className="galeria-container">
+      <Helmet>
+        <title>{tituloSEO}</title>
+        <meta name="description" content={galeriaSeleccionada.descripcionCorta} />
+        <link rel="canonical" href={canonical} />
+      </Helmet>
+
       <img
         src={galeriaSeleccionada.imagenes[imagenIndex]}
         alt="Galería"
