@@ -5,6 +5,21 @@
   # Redirección permanente de URLs antiguas de provincias
   RewriteRule ^provincia/(.+)$ /provincias/$1 [R=301,L]
 
+  # --- Social previews (Fase 2A: Discursos) ---
+  # Normalizar: las URLs canónicas de discursos individuales NO llevan
+  # trailing slash. Si alguien pide la versión con "/", redirigir de forma
+  # permanente a la versión sin slash (evita contenido duplicado / canonical
+  # inconsistente).
+  RewriteRule ^discursos/([^/]+)/$ /discursos/$1 [R=301,L]
+
+  # Si existe un HTML estático pre-generado para este discurso (ver
+  # scripts/generate-social-previews.mjs), servirlo de forma INTERNA, sin
+  # cambiar la URL visible y sin redirect. Debe ejecutarse ANTES del
+  # fallback general de React Router. Si el archivo no existe (slug
+  # inexistente), esta regla no aplica y se sigue al fallback SPA normal.
+  RewriteCond %{DOCUMENT_ROOT}/_social/discursos/$1.html -f
+  RewriteRule ^discursos/([^/]+)$ /_social/discursos/$1.html [L]
+
   # React Router SPA
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
