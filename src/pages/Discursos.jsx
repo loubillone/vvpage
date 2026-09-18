@@ -2,338 +2,34 @@ import React, { useState, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import Container from "react-bootstrap/Container";
 import "../css/discursos.css";
-import VideoGrid from "../components/VideoGrid";
-import VideoModal from "../components/VideoModal";
+import DiscursoCard from "../components/DiscursoCard";
 import Footer from "../components/Footer";
 import discursosTitulo from "../assets/img/discursos/discursos.png";
+import discursosData from "../data/discursos";
 
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 
-// Función helper para extraer el ID de YouTube de diferentes formatos de URL
-const getYouTubeId = (url) => {
-  if (!url) return null;
-
-  // Si ya es un ID (sin URL), devolverlo directamente
-  if (
-    !url.includes("youtube.com") &&
-    !url.includes("youtu.be") &&
-    !url.includes("http")
-  ) {
-    return url;
-  }
-
-  // Diferentes formatos de URL de YouTube
-  const patterns = [
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
-    /youtube\.com\/.*[?&]v=([^&\n?#]+)/,
-  ];
-
-  for (const pattern of patterns) {
-    const match = url.match(pattern);
-    if (match && match[1]) {
-      return match[1];
-    }
-  }
-
-  return null;
+// Convierte "YYYY-MM" o "YYYY-MM-DD" en el año (número). Mismo criterio que
+// ya usan SenadoAnio.jsx / SenadoActividadDetalle.jsx para derivar el año
+// desde fechaISO en vez de agruparlo estructuralmente en los datos.
+const anioDeFecha = (fechaISO) => {
+  if (!fechaISO) return 0;
+  return parseInt(fechaISO.slice(0, 4), 10) || 0;
 };
+
 const Discursos = () => {
-  const discursos = {
-    2024: [
-      {
-        id: 1,
-        titulo: "Diploma de Honor a Veteranos de Malvinas",
-        descripcion:
-          "Ceremonia de reconocimiento a veteranos de la Guerra de Malvinas mediante la entrega de diplomas de honor, destacando su servicio, compromiso y contribución a la historia nacional.",
-        videoUrl: "https://www.youtube.com/watch?v=u8KeWw8w25E",
-        fecha: "2024-04",
-        categoria: "Senado",
-      },
-      {
-        id: 2,
-        titulo: "Mesa de disertación sobre educación",
-        descripcion:
-          "Espacio de debate sobre el rol de la educación en el desarrollo del país, abordando su importancia como herramienta clave para el progreso, la libertad y el crecimiento social.",
-        videoUrl: "https://www.youtube.com/watch?v=nVsSs5gFIAs",
-        fecha: "2024-09",
-        categoria: "Senado",
-      },
-      {
-        id: 3,
-        titulo: "Homenaje a Víctimas del Terrorismo",
-        descripcion:
-          "Acto realizado en el Senado en conmemoración de las víctimas del terrorismo.",
-        videoUrl: "https://youtu.be/lKyikX4_ofw?si=Q-mX2mGvlyfXJH0D",
-        fecha: "2024-08",
-        categoria: "Senado",
-      },
-      {
-        id: 4,
-        titulo: "Mención de Honor al Hospital Militar",
-        descripcion:
-          "Ceremonia de entrega de una distinción al Hospital Militar Central en reconocimiento a su trayectoria, compromiso profesional y servicio en el sistema de salud argentino.",
-        videoUrl: "https://www.youtube.com/watch?v=PCCRWQC-jl4",
-        fecha: "2024-10",
-        categoria: "Senado",
-      },
-      {
-        id: 5,
-        titulo: "Día de Nacional de las Iglesias Evangélicas",
-        descripcion:
-          "Reconocimiento al rol de las iglesias evangélicas en la sociedad argentina, destacando su aporte en el ámbito social, espiritual y comunitario.",
-        videoUrl: "https://www.youtube.com/watch?v=VccxlldDSmE",
-        fecha: "2024-11",
-        categoria: "Varios",
-      },
-      {
-        id: 6,
-        titulo: "40 años del Tratado de Paz y Argentina - Chile",
-        descripcion:
-          "40° aniversario del Tratado de Paz y Amistad entre Argentina y Chile, destacando su importancia histórica para la paz, la cooperación y la integración regional.",
-        videoUrl: "https://www.youtube.com/watch?v=hvteNGBG1Lw",
-        fecha: "2024-04",
-        categoria: "Senado",
-      },
-      {
-        id: 7,
-        titulo:
-          "Yapeyú - 246° aniversario del natalicio del General José de San Martín",
-        descripcion:
-          "Celebración del 246° aniversario del natalicio del General José de San Martín en Yapeyú, destacando su papel en la historia argentina.",
-        videoUrl: "https://youtu.be/y7lllam9TjE",
-        fecha: "2024-02",
-        categoria: "Provincias",
-      },
-      {
-        id: 8,
-        titulo: "1° de Mayo - Almuerzo día del trabajador en UTHGRA",
-        descripcion:
-          "Victoria participó del almuerzo por el día del trabajador organizado por el sindicato UTHGRA.",
-        videoUrl: "https://youtu.be/jJc920ysjaQ",
-        fecha: "2024-05",
-        categoria: "Varios",
-      },
-      {
-        id: 9,
-        titulo:
-          "Mendoza - Almuerzo en Bodegas de Argentina por Fiesta de la Vendimia",
-        descripcion:
-          "Villarruel participó del almuerzo en Bodegas de Argentina, una de las actividades más importantes de los Festejos por la Fiesta de la Vendimia 2024.",
-        videoUrl: "https://youtu.be/LRnlUVxvwi4",
-        fecha: "2024-03",
-        categoria: "Provincias",
-      },
-      {
-        id: 10,
-        titulo: "Visita al Colegio Militar de la Nación",
-        descripcion:
-          "Villarruel visitó el Colegio Militar de la Nación, el Jefe del Ejército Grl Presti, el Director del CMN Cnl My Liberatori y su plana mayor la invitaron a conocerlo y almorzar con los cadetes.",
-        videoUrl: "https://youtu.be/tQ74cVU9tQI",
-        fecha: "2024-06",
-        categoria: "Varios",
-      },
-      {
-        id: 11,
-        titulo: "Conferencia en la UCA",
-        descripcion:
-          "Villarruel brindó una conferencia el jueves 9 de mayo en el Campus Puerto Madero en el marco de la Diplomatura en Liderazgo Humanista, dirigida por el Mg. Emilio Pintos.",
-        videoUrl: "https://youtu.be/sibAQ4IUnVU?si=tztuA5D7JglgBPkY",
-        fecha: "2024-05",
-        categoria: "Varios",
-      },
-      {
-        id: 12,
-        titulo: "XIII Fórum Nacional de Agronegocios",
-        descripcion:
-          "Victoria Villarruel dejó un mensaje a los presentes en el XIII Fórum Nacional de Agronegocios LIDE Argentina.",
-        videoUrl: "https://youtu.be/NxR-OwvWnZs?si=HhZkdODOfswA---Y",
-        fecha: "2024-11",
-        categoria: "Varios",
-      },
-    ],
-    2025: [
-      {
-        id: 1,
-        titulo: "Coloquio sobre Turquía",
-        descripcion:
-          "Participación del coloquio internacional dedicado a analizar el rol estratégico de Türkiye en el escenario global.",
-        videoUrl: "https://www.youtube.com/watch?v=J3_Em8E8ryQ",
-        fecha: "2025-11",
-        categoria: "Senado",
-      },
-      {
-        id: 2,
-        titulo: "Corrientes - Homenaje a Cabral",
-        descripcion:
-          "Ceremonia de traslado y homenaje a los restos del sargento Juan Bautista Cabral, héroe del Combate de San Lorenzo.",
-        videoUrl: "https://youtu.be/lESpMl-vtEQ",
-        fecha: "2025-08",
-        categoria: "Provincias",
-      },
-      {
-        id: 3,
-        titulo: "Día del Héroe Formoseño",
-        descripcion:
-          "Homenaje a los policías caídos en defensa de las instituciones durante el ataque al Regimiento de Infantería de Monte 29 en 1975.",
-        videoUrl: "https://www.youtube.com/watch?v=DfvB7XWvXUo",
-        fecha: "2025-10",
-        categoria: "Provincias",
-      },
-      {
-        id: 4,
-        titulo: "Homenaje a Víctimas del Terrorismo",
-        descripcion:
-          "Acto conmemorativo realizado en el Senado en el marco del Día Internacional de las Víctimas del Terrorismo.",
-        videoUrl: "https://www.youtube.com/watch?v=HER2OLIv1Vc",
-        fecha: "2025-09",
-        categoria: "Senado",
-      },
-      {
-        id: 5,
-        titulo: "Malvinas - Epopeya",
-        descripcion:
-          "Evento dedicado a recordar la Guerra de Malvinas como parte fundamental de la historia argentina.",
-        videoUrl: "https://www.youtube.com/watch?v=wvaQF8gSrx0",
-        fecha: "2025-04",
-        categoria: "Senado",
-      },
-      {
-        id: 6,
-        titulo: "Héroes de Manchala",
-        descripcion:
-          "Ceremonia en el Senado en reconocimiento a los soldados que participaron en el Combate de Manchalá en 1975.",
-        videoUrl: "https://www.youtube.com/watch?v=RYOqc7XKhyA",
-        fecha: "2025-07",
-        categoria: "Senado",
-      },
-      {
-        id: 7,
-        titulo: "Día del Niño por Nacer",
-        descripcion:
-          "Actividad institucional en conmemoración del Día del Niño por Nacer, donde se abordaron temas relacionados con la vida, la familia y el valor de la maternidad.",
-        videoUrl: "https://www.youtube.com/watch?v=jA9jWGZTpAg",
-        fecha: "2025-03",
-        categoria: "Senado",
-      },
-      {
-        id: 8,
-        titulo: "A 5 años de la pandemia",
-        descripcion:
-          "Mensaje institucional en el que la vicepresidente reflexiona sobre el impacto social, económico y humano de la pandemia de COVID-19.",
-        videoUrl: "https://www.youtube.com/watch?v=kwQtl0CCZBY",
-        fecha: "2025-12",
-        categoria: "Senado",
-      },
-      {
-        id: 9,
-        titulo: "Premios Labor DDHH",
-        descripcion:
-          "Ceremonia realizada en el Senado de la Nación donde se entregaron los Premios Derechos Humanos 2025 a organizaciones, fundaciones y personas destacadas por su compromiso social y la defensa de los derechos humanos.",
-        videoUrl: "https://www.youtube.com/watch?v=N6kCpgyfeSY",
-        fecha: "2025-12",
-        categoria: "Senado",
-      },
-      {
-        id: 10,
-        titulo: "Día del Veterano en Ushuaia",
-        descripcion:
-          "Acto conmemorativo realizado en Ushuaia en homenaje a los veteranos y caídos en la Guerra de Malvinas.",
-        videoUrl: "https://www.youtube.com/watch?v=2XbWj_LSVRU",
-        fecha: "2025-04",
-        categoria: "Provincias",
-      },
-      {
-        id: 11,
-        titulo: "Chubut - 90° aniversario de Río Mayo",
-        descripcion:
-          "Durante la ceremonia, Villarruel recordó con emoción su niñez en la localidad de Río Mayo.",
-        videoUrl: "https://youtu.be/B_THMuajGK0",
-        fecha: "2025-08",
-        categoria: "Provincias",
-      },
-      {
-        id: 12,
-        titulo: "Disertación en la USAL",
-        descripcion:
-          "Villarruel brindó una disertación titulada “La política como servicio al bien común desde la vivencia personal” ante estudiantes, docentes y autoridades.",
-        videoUrl: "https://youtu.be/AV6PgnsRbTY",
-        fecha: "2025-09",
-        categoria: "Varios",
-      },
-      {
-        id: 13,
-        titulo: "Reunión Comunidad Iberoamericana (Madrid)",
-        descripcion:
-          " Victoria Villarruel, participó este 5 de diciembre de 2025 en la Reunión de Presidentes de Parlamentos de Países de la Comunidad Iberoamericana.",
-        videoUrl: "https://youtu.be/AvOFsP8AjIo",
-        fecha: "2025-12",
-        categoria: "Varios",
-      },
-    ],
-    2026: [
-      {
-        id: 1,
-        titulo:
-          "2 De Abril - Día del Veterano y de los Caídos en la Guerra de Malvinas",
-        descripcion:
-          "Victoria Villarruel participó en el acto conmemorativo del 2 de abril, Día del Veterano y de los Caídos en la Guerra de Malvinas, realizado en Chivilcoy, Provincia de Buenos Aires.",
-        videoUrl: "https://youtu.be/LYZkWdFRGg0",
-        fecha: "2026-04",
-        categoria: "Provincias",
-      },
-
-      {
-        id: 2,
-        titulo:
-          "Reconocimiento al depto de conservación y restauración del Senado",
-        descripcion:
-          "Victoria Villarruel, participó de la entrega de diplomas de reconocimiento al Departamento de Conservación y Restauración del Senado de la Nación.",
-        videoUrl: "https://youtu.be/WgF7TtMzPow",
-        fecha: "2026-05",
-        categoria: "Senado",
-      },
-      {
-        id: 3,
-        titulo: "ExpoVenado 2026",
-        descripcion:
-          "Victoria Villarruel participó de la apertura de la 90ª edición de ExpoVenado, en Venado Tuerto, Santa Fe, donde destacó el valor del campo, la industria, la producción y el trabajo argentino como motores del desarrollo nacional.",
-        videoUrl: "https://youtu.be/wJd1NgW4Xlk",
-        fecha: "2026-08",
-        categoria: "Provincias",
-      },
-      {
-        id: 4,
-        titulo: "74ª Exposición Rural de Chivilcoy",
-        descripcion:
-          "Victoria Villarruel en la 74ª Exposición Rural de Chivilcoy, donde destacó la importancia del sector agropecuario y la producción nacional para el desarrollo del país.",
-        videoUrl: "https://youtu.be/SlGRlKIuZ5Y",
-        fecha: "2026-09",
-        categoria: "Provincias",
-      },
-    ],
-  };
-
   const [filtroCategoria, setFiltroCategoria] = useState("Todos");
-  const [videoSeleccionado, setVideoSeleccionado] = useState(null);
-  const [mostrarModal, setMostrarModal] = useState(false);
 
   // Categorías disponibles
   const categorias = ["Todos", "Senado", "Provincias", "Varios"];
 
-  // Combinar todos los videos y ordenar por año (más reciente primero)
+  // Todos los discursos, con el año derivado de fechaISO (no agrupado
+  // estructuralmente en los datos, ver src/data/discursos.js).
   const todosLosVideos = useMemo(() => {
-    const videos = [];
-    // Primero 2025, luego 2024, luego 2026
-    if (discursos[2026]) {
-      videos.push(...discursos[2026].map((v) => ({ ...v, año: 2026 })));
-    }
-    if (discursos[2025]) {
-      videos.push(...discursos[2025].map((v) => ({ ...v, año: 2025 })));
-    }
-    if (discursos[2024]) {
-      videos.push(...discursos[2024].map((v) => ({ ...v, año: 2024 })));
-    }
-    return videos;
+    return discursosData.map((discurso) => ({
+      ...discurso,
+      año: anioDeFecha(discurso.fechaISO),
+    }));
   }, []);
 
   // Filtrar videos según categoría seleccionada
@@ -355,25 +51,15 @@ const Discursos = () => {
       }
       agrupados[video.año].push(video);
     });
-    // Ordenar videos dentro de cada año por fecha descendente (más reciente primero)
+    // Ordenar discursos dentro de cada año por fechaISO descendente (más
+    // reciente primero). Se usa fechaISO (formato "YYYY-MM", ordenable
+    // lexicográficamente) y no "fecha" (que ahora es el texto legible,
+    // "Abril de 2024", que ya no sirve para ordenar).
     Object.keys(agrupados).forEach((año) => {
-      agrupados[año].sort((a, b) => {
-        // Comparar fechas en formato "YYYY-MM"
-        return b.fecha.localeCompare(a.fecha);
-      });
+      agrupados[año].sort((a, b) => b.fechaISO.localeCompare(a.fechaISO));
     });
     return agrupados;
   }, [videosFiltrados]);
-
-  const handleVideoClick = (video) => {
-    setVideoSeleccionado(video);
-    setMostrarModal(true);
-  };
-
-  const cerrarModal = () => {
-    setMostrarModal(false);
-    setVideoSeleccionado(null);
-  };
 
   return (
     <div>
@@ -410,16 +96,17 @@ const Discursos = () => {
           </div>
         </div>
 
-        {/* Videos agrupados por año */}
+        {/* Discursos agrupados por año */}
         {Object.keys(videosPorAño)
-          .sort((a, b) => b - a) // Ordenar años descendente (2025 primero)
+          .sort((a, b) => b - a) // Ordenar años descendente (más reciente primero)
           .map((año) => (
             <div key={año} className="videos-por-año">
               <h3 className="año-titulo">{año}</h3>
-              <VideoGrid
-                videos={videosPorAño[año]}
-                onVideoClick={handleVideoClick}
-              />
+              <div className="discursos-grid">
+                {videosPorAño[año].map((discurso) => (
+                  <DiscursoCard key={discurso.slug} discurso={discurso} />
+                ))}
+              </div>
             </div>
           ))}
 
@@ -429,11 +116,6 @@ const Discursos = () => {
           </div>
         )}
       </Container>
-
-      {/* Modal de video */}
-      {mostrarModal && videoSeleccionado && (
-        <VideoModal video={videoSeleccionado} onClose={cerrarModal} />
-      )}
 
       <Footer />
     </div>

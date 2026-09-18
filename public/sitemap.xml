@@ -48,6 +48,123 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Discursos: individuales (fuente: src/data/discursos.js) -->
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/diploma-honor-veteranos-malvinas-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/mesa-disertacion-educacion-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/homenaje-victimas-terrorismo-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/mencion-honor-hospital-militar-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/dia-nacional-iglesias-evangelicas-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/tratado-paz-argentina-chile-40-anios-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/yapeyu-246-aniversario-natalicio-san-martin-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/almuerzo-dia-trabajador-uthgra-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/mendoza-almuerzo-bodegas-vendimia-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/visita-colegio-militar-nacion-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/conferencia-uca-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/forum-nacional-agronegocios-2024</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/coloquio-turquia-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/corrientes-homenaje-cabral-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/dia-heroe-formoseno-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/homenaje-victimas-terrorismo-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/malvinas-epopeya-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/heroes-manchala-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/dia-nino-por-nacer-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/pandemia-5-anios-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/premios-labor-ddhh-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/dia-veterano-ushuaia-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/chubut-90-aniversario-rio-mayo-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/disertacion-usal-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/reunion-comunidad-iberoamericana-madrid-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/dia-veterano-caidos-malvinas-chivilcoy-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/reconocimiento-conservacion-restauracion-senado-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/expovenado-2026</loc>
+  </url>
+
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/exposicion-rural-chivilcoy-2026</loc>
+  </url>
+
   <!-- Provincias y visitas (fuente: src/data/visitasProvincias.jsx) -->
   <url>
     <loc>https://todoporargentina.com.ar/provincias/buenos-aires</loc>

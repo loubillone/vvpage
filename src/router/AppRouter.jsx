@@ -20,6 +20,7 @@ import SenadoActividadDetalle from "../pages/SenadoActividadDetalle";
 import ProvinciaDetalle from "../pages/ProvinciaDetalle";
 import VisitaDetalle from "../pages/VisitaDetalle";
 import Discursos from "../pages/Discursos";
+import DiscursoDetalle from "../pages/DiscursoDetalle";
 import ScrollToTop from "../components/ScrollToTop";
 
 // Redirects de compatibilidad: las URLs canónicas de provincias pasaron de
@@ -64,6 +65,7 @@ const AppContent = () => {
         />
         <Route path="/trayectoria" element={<Trayectoria />} />
         <Route path="/discursos" element={<Discursos />} />
+        <Route path="/discursos/:discursoSlug" element={<DiscursoDetalle />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/galeria/:categoria" element={<GaleriaDetalle />} />
         <Route path="/provincias/:slug" element={<ProvinciaDetalle />} />

@@ -1,0 +1,143 @@
+/* Card de discurso (índice /discursos). Misma línea visual que
+   visitaCard.css / senadoAnioCard.css: fondo blanco, sombra suave, bordes
+   redondeados moderados, hover discreto, card completa clickeable vía
+   <Link>. Se diferencia únicamente en lo propio del contenido de video:
+   thumbnail 16:9 (en vez de foto 4:3) y categoría superpuesta sobre la
+   imagen como badge discreto (en vez de badge grande dentro del cuerpo,
+   como tenía la card anterior). */
+
+.discurso-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.discurso-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .discurso-card-link:hover .discurso-card {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  }
+}
+
+/* Foco visible para navegación por teclado (el <Link> es un <a> real, así
+   que ya es enfocable por defecto; esto solo hace el estado más notorio). */
+.discurso-card-link:focus-visible {
+  outline: 3px solid #0037a0;
+  outline-offset: 2px;
+  border-radius: 14px;
+}
+
+.discurso-card-imagen-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.discurso-card-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.discurso-card-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #2f2f2f;
+}
+
+/* Badge de categoría superpuesto sobre el thumbnail (sobrio, discreto),
+   en vez del badge gris grande que tenía la card anterior dentro del
+   cuerpo. */
+.discurso-card-categoria {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: rgba(4, 61, 131, 0.88);
+  color: #ffffff;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.discurso-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.35rem;
+}
+
+.discurso-card-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.7rem;
+  color: #043d83;
+  margin-bottom: 0.15rem;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.discurso-card-fecha {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.45rem;
+  color: #4e4e4e;
+  margin: 0;
+}
+
+.discurso-card-cta {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.45rem;
+  color: #0037a0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .discurso-card-titulo {
+    font-size: 1.6rem;
+  }
+
+  .discurso-card-fecha,
+  .discurso-card-cta {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .discurso-card-titulo {
+    font-size: 1.6rem;
+  }
+
+  .discurso-card-fecha,
+  .discurso-card-cta {
+    font-size: 1.4rem;
+  }
+
+  .discurso-card-categoria {
+    font-size: 1rem;
+    padding: 0.25rem 0.7rem;
+  }
+}
