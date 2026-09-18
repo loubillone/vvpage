@@ -1679,6 +1679,140 @@ export const visitasProvincias = {
         lugar: "Jujuy - Salta",
         establecimientosVisitados: ["finca-campo-alegre-san-pedro-jujuy"],
       },
+      {
+        titulo: "Procesión del Señor y la Virgen del Milagro",
+        slug: "procesion-milagro-2026",
+        fechaISO: "2026-09-15",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/salta/milagro/salta-milagro-27.jpg",
+        fecha: "Septiembre de 2026",
+        descripcion: (
+          <>
+            <p>
+              El 15 de septiembre de 2026, la vicepresidente{" "}
+              <span className="vv-estilo-detalle">
+                Victoria Villarruel participó en la ciudad de Salta de las
+                celebraciones centrales en honor al Señor y la Virgen del
+                Milagro
+              </span>
+              , una de las manifestaciones religiosas y culturales más
+              arraigadas de la provincia.
+            </p>
+
+            <p>
+              La devoción salteña al Señor y la Virgen del Milagro se remonta a{" "}
+              <span className="vv-estilo-detalle">1692</span> y está
+              profundamente ligada a la historia de la provincia. Año tras año,{" "}
+              <span className="vv-estilo-detalle">
+                miles de peregrinos recorren largas distancias para llegar hasta
+                la Catedral
+              </span>{" "}
+              y participar de esta tradición.
+            </p>
+
+            <p>
+              Por la mañana se celebró la{" "}
+              <span className="vv-estilo-detalle">
+                Misa Estacional en el pórtico de la Catedral Basílica de Salta
+              </span>
+              , oficiada por el nuncio apostólico{" "}
+              <span className="vv-estilo-detalle">
+                Michael Wallace Banach
+              </span>
+              . Villarruel asistió por invitación del arzobispo de Salta,{" "}
+              <span className="vv-estilo-detalle">
+                monseñor Mario Antonio Cargnello
+              </span>
+              , y del gobernador{" "}
+              <span className="vv-estilo-detalle">Gustavo Sáenz</span>.
+            </p>
+
+            <p>
+              Durante la ceremonia, Cargnello se dirigió especialmente a la
+              vicepresidente y expresó:{" "}
+              <span className="vv-estilo-detalle">
+                “Pensé y recé mucho por usted”
+              </span>
+              . Luego agregó:{" "}
+              <span className="vv-estilo-detalle">
+                “A usted le toca dirigir. Y no es fácil. Por eso creo que
+                tenemos que rezar por usted.”
+              </span>
+            </p>
+
+            <p>
+              En las horas previas a la procesión se prepararon las imágenes que
+              más tarde recorrerían las calles de la ciudad.{" "}
+              <span className="vv-estilo-detalle">
+                El armado de las coronas de flores
+              </span>{" "}
+              constituye también una tradición transmitida entre generaciones,
+              con claveles blancos, rojos y rosados destinados al Señor y la
+              Virgen del Milagro y a la Virgen de las Lágrimas.
+            </p>
+
+            <p>
+              Por la tarde, las imágenes del Señor y la Virgen del Milagro
+              partieron desde la{" "}
+              <span className="vv-estilo-detalle">
+                Catedral Basílica hacia el Monumento 20 de Febrero
+              </span>
+              , donde se realizó la renovación del{" "}
+              <span className="vv-estilo-detalle">Pacto de Fidelidad</span>.
+              Victoria Villarruel{" "}
+              <span className="vv-estilo-detalle">
+                acompañó la imagen del Señor del Milagro junto al gobernador
+                Gustavo Sáenz
+              </span>
+              , durante la procesión compartida por miles de peregrinos y
+              fieles.
+            </p>
+
+            <p>
+              La jornada estuvo marcada por horas de caminata, oración y
+              cantos, en una celebración que reúne cada año a la comunidad
+              salteña en torno a su fe y sus tradiciones.
+            </p>
+
+            <p>Villarruel expresó:</p>
+            <blockquote className="cita">
+              "¡Señor y Virgen del Milagro protejan la Argentina!"
+            </blockquote>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/salta/milagro/salta-milagro-1.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-2.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-3.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-4.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-5.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-6.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-7.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-8.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-9.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-10.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-11.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-12.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-13.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-14.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-15.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-16.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-17.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-18.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-27.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-28.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-19.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-20.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-21.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-22.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-23.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-24.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-25.jpg",
+          "tpa-web/provincias/salta/milagro/salta-milagro-26.jpg",
+        ],
+        lugar: "Ciudad de Salta",
+      },
     ],
   },
 
