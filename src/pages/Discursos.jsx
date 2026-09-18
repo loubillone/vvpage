@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Container from "react-bootstrap/Container";
 import "../css/discursos.css";
@@ -47,7 +48,15 @@ const getYouTubeId = (url) => {
   return null;
 };
 const Discursos = () => {
+  const navigate = useNavigate();
   const [filtroCategoria, setFiltroCategoria] = useState("Todos");
+  // videoSeleccionado/mostrarModal y <VideoModal /> (más abajo) se
+  // conservan sin cambios: desde esta fase el clic principal de la card
+  // navega directamente a /discursos/:discursoSlug (ver handleVideoClick),
+  // así que por ahora nada vuelve a llamar a setMostrarModal(true). Se
+  // deja el modal intacto en vez de borrarlo para no perder código
+  // funcional todavía útil; su remoción (si se confirma que no hace falta
+  // en ningún otro flujo) queda para una fase posterior de limpieza.
   const [videoSeleccionado, setVideoSeleccionado] = useState(null);
   const [mostrarModal, setMostrarModal] = useState(false);
 
@@ -99,9 +108,11 @@ const Discursos = () => {
     return agrupados;
   }, [videosFiltrados]);
 
+  // Clic principal de la card: navega al detalle individual del discurso
+  // (/discursos/:discursoSlug). El video se reproduce ahí, no en un modal
+  // sobre el índice (ver comentario junto a videoSeleccionado/mostrarModal).
   const handleVideoClick = (video) => {
-    setVideoSeleccionado(video);
-    setMostrarModal(true);
+    navigate(`/discursos/${video.slug}`);
   };
 
   const cerrarModal = () => {

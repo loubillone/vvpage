@@ -1,0 +1,142 @@
+/* Estilos mínimos y funcionales para /discursos/:discursoSlug.
+   Fase 2 de la reestructuración de Discursos: el objetivo de esta fase es
+   dejar funcionando la arquitectura índice + detalle, NO todavía el
+   rediseño visual completo (eso está decidido para una fase posterior,
+   donde Discursos adoptará la misma línea visual de Provincias/Senado).
+
+   Por eso este archivo es intencionalmente simple y no reutiliza ni
+   modifica discursos.css: solo busca que la página sea legible y
+   funcional con los mismos colores/tipografía ya usados en la sección
+   (#043d83 / #0037a0 / raleway), sin introducir un sistema nuevo. */
+
+.container-discurso-detalle {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  padding: 2rem 0;
+}
+
+.boton-volver-discursos {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-volver-discursos:hover {
+  background-color: #0037a0;
+  color: #ffffff;
+  border-color: #0037a0;
+}
+
+.titulo-discurso-detalle {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.8rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.metadata-discurso-detalle {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.6rem;
+  color: #4e4e4e;
+  margin-bottom: 2rem;
+}
+
+.metadata-discurso-detalle strong {
+  color: #043d83;
+  font-family: "raleway-bold", sans-serif;
+}
+
+.video-discurso-detalle-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.video-discurso-detalle-player {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.video-discurso-detalle-error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "raleway-regular", sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.descripcion-discurso-detalle-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.descripcion-discurso-detalle {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: #4e4e4e;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .titulo-discurso-detalle {
+    font-size: 2.4rem;
+  }
+
+  .descripcion-discurso-detalle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-discurso-detalle {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    padding: 1rem 0;
+  }
+
+  .titulo-discurso-detalle {
+    font-size: 2rem;
+  }
+
+  .metadata-discurso-detalle {
+    font-size: 1.4rem;
+  }
+
+  .descripcion-discurso-detalle {
+    font-size: 1.5rem;
+  }
+
+  .descripcion-discurso-detalle-container {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-discurso-detalle {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .titulo-discurso-detalle {
+    font-size: 1.8rem;
+  }
+}
