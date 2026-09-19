@@ -1777,7 +1777,7 @@ export const visitasProvincias = {
 
             <p>Villarruel expresó:</p>
             <blockquote className="cita">
-              "¡Señor y Virgen del Milagro protejan la Argentina!"
+              &quot;¡Señor y Virgen del Milagro protejan la Argentina!&quot;
             </blockquote>
           </>
         ),
