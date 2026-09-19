@@ -20,6 +20,16 @@
   RewriteCond %{DOCUMENT_ROOT}/_social/discursos/$1.html -f
   RewriteRule ^discursos/([^/]+)$ /_social/discursos/$1.html [L]
 
+  # --- Social previews (visitas provinciales individuales) ---
+  # Solo rutas de dos segmentos: /provincias/:provinciaSlug/:visitaSlug
+  # El índice /provincias/:provinciaSlug no se normaliza ni se reescribe acá.
+  RewriteRule ^provincias/([^/]+)/([^/]+)/$ /provincias/$1/$2 [R=301,L]
+
+  # $1 y $2 de RewriteCond corresponden a la RewriteRule inmediatamente
+  # siguiente (provinciaSlug y visitaSlug), no a capturas de reglas previas.
+  RewriteCond %{DOCUMENT_ROOT}/_social/provincias/$1/$2.html -f
+  RewriteRule ^provincias/([^/]+)/([^/]+)$ /_social/provincias/$1/$2.html [L]
+
   # React Router SPA
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
