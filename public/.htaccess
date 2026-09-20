@@ -30,6 +30,16 @@
   RewriteCond %{DOCUMENT_ROOT}/_social/provincias/$1/$2.html -f
   RewriteRule ^provincias/([^/]+)/([^/]+)$ /_social/provincias/$1/$2.html [L]
 
+  # --- Social previews (actividades individuales de Senado) ---
+  # Solo rutas de tres segmentos: /senado/:tema/:anio/:actividadSlug
+  # /senado/:tema y /senado/:tema/:anio no se normalizan ni se reescriben acá.
+  RewriteRule ^senado/([^/]+)/([^/]+)/([^/]+)/$ /senado/$1/$2/$3 [R=301,L]
+
+  # $1 $2 $3 de RewriteCond corresponden a la RewriteRule inmediatamente
+  # siguiente (tema, anio, actividadSlug), no a capturas de reglas previas.
+  RewriteCond %{DOCUMENT_ROOT}/_social/senado/$1/$2/$3.html -f
+  RewriteRule ^senado/([^/]+)/([^/]+)/([^/]+)$ /_social/senado/$1/$2/$3.html [L]
+
   # React Router SPA
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f

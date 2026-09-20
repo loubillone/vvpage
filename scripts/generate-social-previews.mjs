@@ -1,10 +1,11 @@
 // scripts/generate-social-previews.mjs
 //
-// Social Sharing — Discursos + visitas provinciales individuales.
+// Social Sharing — Discursos, visitas provinciales y actividades de Senado.
 //
 // Genera HTML estático en:
 //   dist/_social/discursos/{slug}.html
 //   dist/_social/provincias/{provinciaSlug}/{visitaSlug}.html
+//   dist/_social/senado/{temaSlug}/{anio}/{actividadSlug}.html
 // con metadata (title, description, canonical, Open Graph, Twitter Card).
 //
 // NO hace SSR del body: el <body> (incluyendo <div id="root"> y los scripts
@@ -18,9 +19,9 @@
 //
 // Debe ejecutarse DESPUÉS de `vite build` (lee dist/index.html real).
 //
-// Visitas: carga src/data/visitasProvincias.jsx vía Vite (ssrLoadModule),
-// proyecta campos serializables y genera un HTML por visita.
-// senadoTemas.jsx sigue fuera de alcance.
+// JSX: una sola instancia de Vite (ssrLoadModule) carga visitasProvincias.jsx
+// y senadoTemas.jsx, proyecta campos serializables y genera un HTML por
+// visita y por actividad de Senado.
 
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync } from "node:fs";
 import path from "node:path";
@@ -36,6 +37,7 @@ const DIST_DIR = path.join(ROOT_DIR, "dist");
 const DIST_INDEX_HTML = path.join(DIST_DIR, "index.html");
 const SOCIAL_DISCURSOS_DIR = path.join(DIST_DIR, "_social", "discursos");
 const SOCIAL_PROVINCIAS_DIR = path.join(DIST_DIR, "_social", "provincias");
+const SOCIAL_SENADO_DIR = path.join(DIST_DIR, "_social", "senado");
 const CLOUDINARY_CLOUD_NAME = "dwb5tmtqg";
 const CLOUDINARY_OG_TRANSFORM = "w_1200,h_630,c_fill,g_auto,f_auto,q_auto";
 const ENV_PATH = path.join(ROOT_DIR, ".env");
@@ -134,10 +136,14 @@ async function closeViteSafely(vite) {
   }
 }
 
-// Carga visitasProvincias.jsx con el mismo plugin-react del proyecto.
-// middlewareMode + appType "custom": no abre un puerto HTTP.
-// close() corre siempre (éxito o error) para no dejar watchers abiertos.
-async function loadVisitasProvinciasFromVite() {
+function anioDeFechaISO(fechaISO) {
+  if (!isNonEmptyString(fechaISO)) return "";
+  return fechaISO.trim().slice(0, 4);
+}
+
+// Una sola instancia: plugin-react del proyecto, middlewareMode, sin puerto.
+// Carga visitas (named export) y senado (default export). close() siempre.
+async function loadJsxDataModulesFromVite() {
   let vite;
   try {
     vite = await createServer({
@@ -152,19 +158,36 @@ async function loadVisitasProvinciasFromVite() {
       clearScreen: false,
     });
 
-    const mod = await vite.ssrLoadModule("/src/data/visitasProvincias.jsx");
-    if (
-      !mod ||
-      typeof mod.visitasProvincias !== "object" ||
-      mod.visitasProvincias === null
-    ) {
-      throw new Error("ssrLoadModule no exportó visitasProvincias como objeto.");
-    }
-    return mod.visitasProvincias;
-  } catch (err) {
-    throw new Error(
-      `No se pudo cargar src/data/visitasProvincias.jsx vía Vite: ${err.message}`
+    const visitasMod = await vite.ssrLoadModule(
+      "/src/data/visitasProvincias.jsx"
     );
+    if (
+      !visitasMod ||
+      typeof visitasMod.visitasProvincias !== "object" ||
+      visitasMod.visitasProvincias === null
+    ) {
+      throw new Error(
+        "ssrLoadModule no exportó visitasProvincias como objeto (named export)."
+      );
+    }
+
+    const senadoMod = await vite.ssrLoadModule("/src/data/senadoTemas.jsx");
+    if (
+      !senadoMod ||
+      typeof senadoMod.default !== "object" ||
+      senadoMod.default === null
+    ) {
+      throw new Error(
+        "ssrLoadModule no exportó senadoTemas como objeto (default export)."
+      );
+    }
+
+    return {
+      visitasProvincias: visitasMod.visitasProvincias,
+      senadoTemas: senadoMod.default,
+    };
+  } catch (err) {
+    throw new Error(`No se pudieron cargar módulos JSX vía Vite: ${err.message}`);
   } finally {
     await closeViteSafely(vite);
   }
@@ -243,6 +266,115 @@ function validateVisitasSocialMeta(visitasProvincias, projected) {
 
   console.log(
     `[generate-social-previews] Visitas cargadas vía Vite: ${derivedProvinceCount} provincias, ${derivedVisitCount} visitas (proyección ${projected.length}).`
+  );
+}
+
+function inspectSenadoImagenTituloTypes(senadoTemas) {
+  for (const tema of Object.values(senadoTemas)) {
+    const tipo = typeof tema?.imagenTitulo;
+    console.log(
+      `[generate-social-previews] imagenTitulo (${tema?.slug ?? "sin-slug"}): typeof=${tipo}, isString=${tipo === "string"}`
+    );
+  }
+}
+
+function projectSenadoSocialMeta(senadoTemas) {
+  const projected = [];
+  for (const [temaSlug, tema] of Object.entries(senadoTemas)) {
+    const actividades = Array.isArray(tema?.actividades) ? tema.actividades : [];
+    for (const actividad of actividades) {
+      projected.push({
+        temaSlug,
+        temaTitulo: tema?.titulo,
+        anio: anioDeFechaISO(actividad?.fechaISO),
+        actividadSlug: actividad?.slug,
+        titulo: actividad?.titulo,
+        fechaISO: actividad?.fechaISO,
+        fecha: actividad?.fecha,
+        imagenPortada: actividad?.imagenPortada,
+      });
+    }
+  }
+  return projected;
+}
+
+function validateSenadoSocialMeta(senadoTemas, projected) {
+  const derivedTemaCount = Object.keys(senadoTemas).length;
+  const derivedActividadCount = Object.values(senadoTemas).reduce(
+    (total, tema) =>
+      total + (Array.isArray(tema?.actividades) ? tema.actividades.length : 0),
+    0
+  );
+
+  if (derivedTemaCount === 0 || derivedActividadCount === 0) {
+    fail("senadoTemas no contiene temas o actividades.");
+  }
+
+  if (projected.length !== derivedActividadCount) {
+    fail(
+      `La proyección de actividades (${projected.length}) no coincide con el total derivado de los datos (${derivedActividadCount}).`
+    );
+  }
+
+  const identities = new Set();
+  const PROJECTED_KEYS = [
+    "temaSlug",
+    "temaTitulo",
+    "actividadSlug",
+    "titulo",
+    "fechaISO",
+    "fecha",
+    "imagenPortada",
+  ];
+
+  for (const row of projected) {
+    for (const key of PROJECTED_KEYS) {
+      if (row[key] === undefined) {
+        fail(
+          `Campo proyectado "${key}" es undefined (tema: ${row.temaSlug}, actividad: ${row.actividadSlug}).`
+        );
+      }
+      if (!isNonEmptyString(row[key])) {
+        fail(
+          `Actividad sin ${key} válido: tema="${row.temaSlug}" actividad="${row.actividadSlug}".`
+        );
+      }
+    }
+
+    if (!/^\d{4}$/.test(row.anio)) {
+      fail(
+        `Actividad sin anio de 4 dígitos: tema="${row.temaSlug}" actividad="${row.actividadSlug}" anio="${row.anio}".`
+      );
+    }
+
+    const identity = `${row.temaSlug}/${row.anio}/${row.actividadSlug}`;
+    if (identities.has(identity)) {
+      fail(`Identidad de actividad duplicada: "${identity}".`);
+    }
+    identities.add(identity);
+  }
+
+  console.log(
+    `[generate-social-previews] Senado cargado vía Vite: ${derivedTemaCount} temas, ${derivedActividadCount} actividades (proyección ${projected.length}).`
+  );
+}
+
+function logSenadoPilotoInspeccion(projected) {
+  const piloto = projected.find(
+    (row) =>
+      row.temaSlug === "malvinas" &&
+      row.anio === "2026" &&
+      row.actividadSlug === "epopeya-nacional-2026"
+  );
+  if (!piloto) return;
+  console.log(
+    `[generate-social-previews] Inspección Senado: ${piloto.temaSlug}/${piloto.anio}/${piloto.actividadSlug}`
+  );
+  console.log(`[generate-social-previews]   temaTitulo: ${piloto.temaTitulo}`);
+  console.log(`[generate-social-previews]   titulo: ${piloto.titulo}`);
+  console.log(`[generate-social-previews]   fecha: ${piloto.fecha}`);
+  console.log(
+    `[generate-social-previews]   imagenPortada: ${piloto.imagenPortada}`
   );
 }
 
@@ -396,6 +528,43 @@ function resolveVisitaOgImage(imagenPortada) {
   };
 }
 
+function buildSenadoMetaBlock(actividad) {
+  const title = `${actividad.titulo} | Todo por Argentina`;
+  const description = `${actividad.titulo} — actividad de Victoria Villarruel en el Senado de la Nación (${actividad.temaTitulo}, ${actividad.fecha}).`;
+  const canonical = `${SITE_URL}/senado/${actividad.temaSlug}/${actividad.anio}/${actividad.actividadSlug}`;
+  const image = resolveVisitaOgImage(actividad.imagenPortada);
+
+  const titleEsc = escapeHtml(title);
+  const descriptionAttrEsc = escapeAttr(description);
+  const canonicalAttrEsc = escapeAttr(canonical);
+  const imageAttrEsc = escapeAttr(image.url);
+
+  return `    <meta
+      data-rh="true"
+      name="description"
+      content="${descriptionAttrEsc}"
+    />
+    <link data-rh="true" rel="canonical" href="${canonicalAttrEsc}" />
+    <title data-rh="true">${titleEsc}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Todo Por Argentina" />
+    <meta property="og:title" content="${titleEsc}" />
+    <meta property="og:description" content="${descriptionAttrEsc}" />
+    <meta property="og:url" content="${canonicalAttrEsc}" />
+    <meta property="og:image" content="${imageAttrEsc}" />
+    <meta property="og:image:width" content="${image.width}" />
+    <meta property="og:image:height" content="${image.height}" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${titleEsc}" />
+    <meta name="twitter:description" content="${descriptionAttrEsc}" />
+    <meta name="twitter:image" content="${imageAttrEsc}" />
+`;
+}
+
 function buildVisitaMetaBlock(visita) {
   const title = `${visita.titulo} | Todo por Argentina`;
   const description = `${visita.titulo} — recorrida de Victoria Villarruel en ${
@@ -445,6 +614,38 @@ function extractTaggedContent(html, needle) {
     return hrefMatch ? hrefMatch[1] : null;
   }
   return contentMatch ? contentMatch[1] : null;
+}
+
+function listSenadoPreviewIdentities(dir) {
+  const identities = [];
+  if (!existsSync(dir)) return identities;
+  for (const temaEntry of readdirSync(dir, { withFileTypes: true })) {
+    if (!temaEntry.isDirectory()) continue;
+    const temaDir = path.join(dir, temaEntry.name);
+    for (const anioEntry of readdirSync(temaDir, { withFileTypes: true })) {
+      if (!anioEntry.isDirectory()) continue;
+      const anioDir = path.join(temaDir, anioEntry.name);
+      for (const file of readdirSync(anioDir)) {
+        if (file.endsWith(".html")) {
+          identities.push(
+            `${temaEntry.name}/${anioEntry.name}/${file.replace(/\.html$/, "")}`
+          );
+        }
+      }
+    }
+  }
+  return identities;
+}
+
+function countNestedDirectories(dir) {
+  if (!existsSync(dir)) return 0;
+  let count = 0;
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    count += 1;
+    count += countNestedDirectories(path.join(dir, entry.name));
+  }
+  return count;
 }
 
 function listProvinciaPreviewIdentities(dir) {
@@ -507,20 +708,26 @@ for (const discurso of discursos) {
 }
 
 // ---------------------------------------------------------------------
-// 4b. Cargar y validar visitas (proyección serializable)
+// 4b. Cargar y validar visitas + Senado (proyección serializable)
 // ---------------------------------------------------------------------
 
 let projectedVisitas;
+let projectedActividades;
 try {
-  const visitasProvincias = await loadVisitasProvinciasFromVite();
+  const { visitasProvincias, senadoTemas } = await loadJsxDataModulesFromVite();
   projectedVisitas = projectVisitasSocialMeta(visitasProvincias);
   validateVisitasSocialMeta(visitasProvincias, projectedVisitas);
+
+  inspectSenadoImagenTituloTypes(senadoTemas);
+  projectedActividades = projectSenadoSocialMeta(senadoTemas);
+  validateSenadoSocialMeta(senadoTemas, projectedActividades);
+  logSenadoPilotoInspeccion(projectedActividades);
 } catch (err) {
   fail(err.message || String(err));
 }
 
 // ---------------------------------------------------------------------
-// 5. (Re)crear dist/_social limpio y generar Discursos + Provincias
+// 5. (Re)crear dist/_social limpio y generar Discursos + Provincias + Senado
 // ---------------------------------------------------------------------
 
 if (existsSync(path.join(DIST_DIR, "_social"))) {
@@ -528,6 +735,7 @@ if (existsSync(path.join(DIST_DIR, "_social"))) {
 }
 mkdirSync(SOCIAL_DISCURSOS_DIR, { recursive: true });
 mkdirSync(SOCIAL_PROVINCIAS_DIR, { recursive: true });
+mkdirSync(SOCIAL_SENADO_DIR, { recursive: true });
 
 for (const discurso of discursos) {
   const metaBlock = buildMetaBlock(discurso);
@@ -551,6 +759,23 @@ for (const visita of projectedVisitas) {
 
 console.log(
   `[generate-social-previews] Generados ${projectedVisitas.length} HTML en dist/_social/provincias/.`
+);
+
+for (const actividad of projectedActividades) {
+  const actividadDir = path.join(
+    SOCIAL_SENADO_DIR,
+    actividad.temaSlug,
+    actividad.anio
+  );
+  mkdirSync(actividadDir, { recursive: true });
+  const metaBlock = buildSenadoMetaBlock(actividad);
+  const html = HEAD_PRELUDE + metaBlock + TAIL_AFTER_END;
+  const outPath = path.join(actividadDir, `${actividad.actividadSlug}.html`);
+  writeFileSync(outPath, html, "utf8");
+}
+
+console.log(
+  `[generate-social-previews] Generados ${projectedActividades.length} HTML en dist/_social/senado/.`
 );
 
 // ---------------------------------------------------------------------
@@ -716,6 +941,101 @@ const provinciaDirs = existsSync(SOCIAL_PROVINCIAS_DIR)
 
 console.log(
   `[generate-social-previews] Verificación: ${visitaIdentitiesData.length} visitas, ${visitaArchivosGenerados.length} HTML generados, ${visitasFaltantes.length} faltantes, ${visitasSobrantes.length} sobrantes, ${provinciaDirs} subdirectorios.`
+);
+
+const SENADO_TAG_NEEDLES = [
+  ...REQUIRED_TAG_NEEDLES,
+  ["og:image:width", 'property="og:image:width"'],
+  ["og:image:height", 'property="og:image:height"'],
+];
+
+const senadoIdentitiesData = projectedActividades.map(
+  (actividad) =>
+    `${actividad.temaSlug}/${actividad.anio}/${actividad.actividadSlug}`
+);
+const senadoArchivosGenerados = listSenadoPreviewIdentities(SOCIAL_SENADO_DIR);
+const setSenadoArchivos = new Set(senadoArchivosGenerados);
+const setSenadoIdentities = new Set(senadoIdentitiesData);
+
+const senadoFaltantes = senadoIdentitiesData.filter(
+  (identity) => !setSenadoArchivos.has(identity)
+);
+const senadoSobrantes = senadoArchivosGenerados.filter(
+  (identity) => !setSenadoIdentities.has(identity)
+);
+
+if (senadoFaltantes.length > 0) {
+  verificationFailed = true;
+  console.error(
+    `[generate-social-previews] Actividades de Senado sin HTML generado: ${senadoFaltantes.join(", ")}`
+  );
+}
+if (senadoSobrantes.length > 0) {
+  verificationFailed = true;
+  console.error(
+    `[generate-social-previews] Archivos de Senado sobrantes: ${senadoSobrantes.join(", ")}`
+  );
+}
+
+for (const actividad of projectedActividades) {
+  const identity = `${actividad.temaSlug}/${actividad.anio}/${actividad.actividadSlug}`;
+  const filePath = path.join(
+    SOCIAL_SENADO_DIR,
+    actividad.temaSlug,
+    actividad.anio,
+    `${actividad.actividadSlug}.html`
+  );
+  const html = readFileSync(filePath, "utf8");
+
+  for (const [label, needle] of SENADO_TAG_NEEDLES) {
+    const count = countSubstring(html, needle);
+    if (count !== 1) {
+      verificationFailed = true;
+      console.error(
+        `[generate-social-previews] ${identity}.html: se esperaba exactamente 1 "${label}", se encontraron ${count}.`
+      );
+    }
+  }
+
+  if (htmlHasForbiddenTokens(html)) {
+    verificationFailed = true;
+    console.error(
+      `[generate-social-previews] ${identity}.html: contiene undefined, localhost, 127.0.0.1 o NaN.`
+    );
+  }
+
+  const canonical = extractTaggedContent(html, 'rel="canonical"');
+  const ogUrl = extractTaggedContent(html, 'property="og:url"');
+  const ogImage = extractTaggedContent(html, 'property="og:image"');
+
+  if (!isHttpsAbsoluteUrl(canonical) || canonical.endsWith("/")) {
+    verificationFailed = true;
+    console.error(
+      `[generate-social-previews] ${identity}.html: canonical inválido (${canonical}).`
+    );
+  }
+  if (!isHttpsAbsoluteUrl(ogUrl) || ogUrl.endsWith("/")) {
+    verificationFailed = true;
+    console.error(
+      `[generate-social-previews] ${identity}.html: og:url inválido (${ogUrl}).`
+    );
+  }
+  if (
+    !isHttpsAbsoluteUrl(ogImage) ||
+    ogImage.includes("undefined") ||
+    ogImage.includes("localhost")
+  ) {
+    verificationFailed = true;
+    console.error(
+      `[generate-social-previews] ${identity}.html: og:image inválido (${ogImage}).`
+    );
+  }
+}
+
+const senadoDirs = countNestedDirectories(SOCIAL_SENADO_DIR);
+
+console.log(
+  `[generate-social-previews] Verificación: ${senadoIdentitiesData.length} actividades, ${senadoArchivosGenerados.length} HTML generados, ${senadoFaltantes.length} faltantes, ${senadoSobrantes.length} sobrantes, ${senadoDirs} subdirectorios.`
 );
 
 if (verificationFailed) {
