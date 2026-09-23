@@ -5,6 +5,7 @@ import { Container, Button } from "react-bootstrap";
 import "../css/senadoActividadDetalle.css";
 import senadoTemas from "../data/senadoTemas";
 import { getCloudinaryUrl } from "../utils/cloudinary";
+import ShareButtons from "../components/ShareButtons";
 
 // Convierte "YYYY-MM" o "YYYY-MM-DD" en el año (número).
 const anioDeFecha = (fechaISO) => {
@@ -75,6 +76,13 @@ const SenadoActividadDetalle = () => {
         <p className="fecha-senado-detalle">
           <strong>Fecha:</strong> {actividad.fecha}
         </p>
+
+        <ShareButtons
+          title={actividad.titulo}
+          url={canonical}
+          contentType="senado_actividad"
+          itemId={actividad.slug}
+        />
 
         {actividad.imagenPortada && (
           <div className="imagen-senado-detalle-wrapper">

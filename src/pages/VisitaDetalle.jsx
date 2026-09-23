@@ -5,6 +5,7 @@ import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 import { visitasProvincias } from "../data/visitasProvincias";
 import { getCloudinaryUrl } from "../utils/cloudinary";
+import ShareButtons from "../components/ShareButtons";
 
 const VisitaDetalle = () => {
   const { slug, visitaSlug } = useParams();
@@ -87,6 +88,13 @@ const VisitaDetalle = () => {
             </div>
           </div>
         </div>
+
+        <ShareButtons
+          title={visita.titulo}
+          url={canonical}
+          contentType="visita"
+          itemId={visita.slug}
+        />
 
         {/* Si la visita tiene actividades, renderizar cada una */}
         {visita.actividades && visita.actividades.length > 0 ? (

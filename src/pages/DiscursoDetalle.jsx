@@ -4,6 +4,7 @@ import { Container, Button } from "react-bootstrap";
 import "../css/discursoDetalle.css";
 import discursosData from "../data/discursos";
 import { getYouTubeEmbedUrl } from "../utils/youtube";
+import ShareButtons from "../components/ShareButtons";
 
 const DiscursoDetalle = () => {
   const { discursoSlug } = useParams();
@@ -51,6 +52,13 @@ const DiscursoDetalle = () => {
           <strong>{discurso.fecha}</strong>
           {discurso.categoria && <> · {discurso.categoria}</>}
         </p>
+
+        <ShareButtons
+          title={discurso.titulo}
+          url={canonical}
+          contentType="discurso"
+          itemId={discurso.slug}
+        />
 
         <div className="video-discurso-detalle-wrapper">
           {embedUrl ? (
