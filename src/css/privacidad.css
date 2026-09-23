@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "raleway-regular";
+  src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "raleway-semibold";
+  src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "raleway-bold";
+  src: url("../assets/fonts/Raleway/static/Raleway-Bold.ttf");
+}
+
+.container-privacidad {
+  max-width: 46rem;
+  margin: 5rem auto 6rem;
+  padding: 0 1.5rem;
+}
+
+.titulo-privacidad {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: #043d83;
+  margin-bottom: 2rem;
+}
+
+.subtitulo-privacidad {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.35rem;
+  color: #043d83;
+  margin-top: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.parrafo-privacidad {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.lista-privacidad {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #1a1a1a;
+  margin: 0 0 1rem 1.2rem;
+  padding: 0;
+}
+
+.lista-privacidad li {
+  margin-bottom: 0.25rem;
+}
+
+.codigo-privacidad {
+  font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+  .container-privacidad {
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .titulo-privacidad {
+    font-size: 2rem;
+  }
+
+  .subtitulo-privacidad {
+    font-size: 1.2rem;
+  }
+}

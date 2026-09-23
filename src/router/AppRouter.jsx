@@ -12,6 +12,7 @@ import Biografia from "../pages/Biografia";
 import Trayectoria from "../pages/Trayectoria";
 import Galeria from "../pages/Galeria";
 import Contacto from "../pages/Contacto";
+import Privacidad from "../pages/Privacidad";
 import Celtyv from "../components/Celtyv";
 import GaleriaDetalle from "../components/GaleriaDetalle";
 import Senado from "../pages/Senado";
@@ -83,6 +84,7 @@ const AppContent = () => {
           element={<RedirectVisitaLegacy />}
         />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/privacidad" element={<Privacidad />} />
       </Routes>
       <AnalyticsTracker />
       <CookieBanner />

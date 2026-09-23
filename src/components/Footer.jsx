@@ -135,6 +135,11 @@ const Footer = () => {
               <span>Instagram</span>
             </div>
             <div className="col enlaces-footer">
+              <NavLink to="/privacidad" onClick={handleNavClick}>
+                Privacidad y cookies
+              </NavLink>
+            </div>
+            <div className="col enlaces-footer">
               <button
                 type="button"
                 className="enlace-preferencias-cookies"

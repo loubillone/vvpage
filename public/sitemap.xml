@@ -48,6 +48,11 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://todoporargentina.com.ar/privacidad</loc>
+    <priority>0.4</priority>
+  </url>
+
   <!-- Discursos: individuales (fuente: src/data/discursos.js) -->
   <url>
     <loc>https://todoporargentina.com.ar/discursos/diploma-honor-veteranos-malvinas-2024</loc>
