@@ -1,3 +1,5 @@
+import { hasAnalyticsConsent } from "./consent";
+
 const MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
 const SCRIPT_ELEMENT_ID = "ga4-gtag";
 const MEASUREMENT_ID_PATTERN = /^G-[A-Z0-9]+$/;
@@ -9,9 +11,18 @@ const getMeasurementId = () => {
   return MEASUREMENT_ID.trim();
 };
 
+const isValidMeasurementId = (measurementId) =>
+  MEASUREMENT_ID_PATTERN.test(measurementId);
+
+const getGaDisableKey = (measurementId) => `ga-disable-${measurementId}`;
+
 const isAnalyticsEnabled = () => {
   const measurementId = getMeasurementId();
-  return import.meta.env.PROD === true && MEASUREMENT_ID_PATTERN.test(measurementId);
+  return (
+    import.meta.env.PROD === true &&
+    isValidMeasurementId(measurementId) &&
+    hasAnalyticsConsent()
+  );
 };
 
 const ensureGtagQueue = () => {
@@ -34,13 +45,81 @@ const insertGtagScript = (measurementId) => {
   document.head.appendChild(script);
 };
 
+const removeGtagScript = () => {
+  const script = document.getElementById(SCRIPT_ELEMENT_ID);
+  if (script) script.remove();
+};
+
+const isGaCookieName = (name) => name === "_ga" || name.startsWith("_ga_");
+
+const listCookieNames = () => {
+  if (!document.cookie) return [];
+
+  return document.cookie
+    .split(";")
+    .map((part) => {
+      const name = part.trim().split("=")[0];
+      try {
+        return decodeURIComponent(name);
+      } catch {
+        return name;
+      }
+    })
+    .filter(Boolean);
+};
+
+const getCookieDomainCandidates = () => {
+  const hostname = window.location.hostname;
+  const candidates = [undefined, hostname, `.${hostname}`];
+
+  if (hostname.startsWith("www.")) {
+    const withoutWww = hostname.slice(4);
+    if (withoutWww.includes(".")) {
+      candidates.push(withoutWww);
+      candidates.push(`.${withoutWww}`);
+    }
+  }
+
+  return candidates;
+};
+
+const expireCookie = (name, domain) => {
+  const secure = window.location.protocol === "https:" ? "; Secure" : "";
+  const domainPart = domain ? `; domain=${domain}` : "";
+  document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; max-age=0; path=/${domainPart}${secure}`;
+};
+
+const removeGaCookies = () => {
+  const names = listCookieNames().filter(isGaCookieName);
+  const domains = getCookieDomainCandidates();
+
+  names.forEach((name) => {
+    domains.forEach((domain) => expireCookie(name, domain));
+  });
+};
+
+export const disableAnalytics = () => {
+  if (typeof window === "undefined") return;
+
+  const measurementId = getMeasurementId();
+  if (isValidMeasurementId(measurementId)) {
+    window[getGaDisableKey(measurementId)] = true;
+  }
+
+  removeGaCookies();
+  removeGtagScript();
+  didConfigure = false;
+};
+
 export const initAnalytics = () => {
   if (!isAnalyticsEnabled() || typeof window === "undefined") return;
+
+  const measurementId = getMeasurementId();
+  window[getGaDisableKey(measurementId)] = false;
 
   ensureGtagQueue();
 
   if (!didConfigure) {
-    const measurementId = getMeasurementId();
     window.gtag("js", new Date());
     window.gtag("config", measurementId, {
       send_page_view: false,
@@ -48,7 +127,7 @@ export const initAnalytics = () => {
     didConfigure = true;
   }
 
-  insertGtagScript(getMeasurementId());
+  insertGtagScript(measurementId);
 };
 
 export const pageView = (pagePath) => {

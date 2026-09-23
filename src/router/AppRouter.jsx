@@ -23,6 +23,7 @@ import Discursos from "../pages/Discursos";
 import DiscursoDetalle from "../pages/DiscursoDetalle";
 import ScrollToTop from "../components/ScrollToTop";
 import AnalyticsTracker from "../components/AnalyticsTracker";
+import CookieBanner from "../components/CookieBanner";
 
 // Redirects de compatibilidad: las URLs canónicas de provincias pasaron de
 // /provincia/... a /provincias/..., pero /provincia/... pudo haber sido
@@ -84,6 +85,7 @@ const AppContent = () => {
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <AnalyticsTracker />
+      <CookieBanner />
     </>
   );
 };

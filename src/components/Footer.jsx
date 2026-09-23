@@ -6,6 +6,7 @@ import instagram from "../assets/img/footer/instagram.webp";
 import x from "../assets/img/footer/x.webp";
 import youtube from "../assets/img/footer/youtube.webp";
 import logoVV from "../assets/img/footer/logoVV.webp";
+import { openCookiePreferences } from "../utils/consent";
 
 const Footer = () => {
   const handleNavClick = () => {
@@ -132,6 +133,15 @@ const Footer = () => {
             </div>
             <div className="col enlaces-footer">
               <span>Instagram</span>
+            </div>
+            <div className="col enlaces-footer">
+              <button
+                type="button"
+                className="enlace-preferencias-cookies"
+                onClick={openCookiePreferences}
+              >
+                Preferencias de cookies
+              </button>
             </div>
             {/* <div className="col enlaces-footer">
               <span>Protección de Datos</span>
