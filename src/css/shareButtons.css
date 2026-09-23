@@ -1,13 +1,24 @@
-/* Acciones de compartir. Misma línea visual que los botones secundarios
-   del sitio (.boton-volver, .filtro-btn): outline #0037a0, raleway,
-   radius 5px, fill solo en hover. No es flotante ni sticky. */
+/* Botonera de compartir. Pensada para lectura clara y área táctil
+   holgada (adultos / mayores): labels siempre visibles, wrap natural,
+   sin barra flotante. */
 
 .share-buttons {
+  margin: 0 0 2rem;
+}
+
+.share-buttons-title {
+  margin: 0 0 0.7rem;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #043d83;
+}
+
+.share-buttons-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem;
-  margin: 0 0 2rem;
+  gap: 0.6rem;
 }
 
 .share-buttons-action {
@@ -15,29 +26,35 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
-  min-height: 44px;
-  padding: 0.4rem 0.9rem;
-  font-family: "raleway-regular", sans-serif;
+  flex-shrink: 0;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.55rem 1rem;
+  font-family: "raleway-medium", sans-serif;
   font-size: 1rem;
   line-height: 1.2;
-  color: #0037a0;
+  color: #043d83;
   background-color: #ffffff;
-  border: 2px solid #0037a0;
-  border-radius: 5px;
+  border: 1px solid rgba(4, 61, 131, 0.3);
+  border-radius: 10px;
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .share-buttons-action:hover {
-  background-color: #0037a0;
+  background-color: #043d83;
   color: #ffffff;
+  border-color: #043d83;
 }
 
 .share-buttons-action:focus-visible {
-  outline: 3px solid #0037a0;
-  outline-offset: 2px;
+  outline: 3px solid #043d83;
+  outline-offset: 3px;
 }
 
 .share-buttons-action .fa {
@@ -45,14 +62,18 @@
   line-height: 1;
 }
 
-@media (min-width: 768px) {
-  .share-buttons {
-    gap: 0.6rem;
-  }
+.share-buttons-feedback {
+  min-height: 1.4rem;
+  margin: 0.55rem 0 0;
+  font-family: "raleway-medium", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #043d83;
+}
 
+@media (min-width: 768px) {
   .share-buttons-action {
-    min-height: 36px;
-    padding: 0.3rem 0.75rem;
-    font-size: 0.95rem;
+    min-height: 44px;
+    padding: 0.45rem 0.95rem;
   }
 }

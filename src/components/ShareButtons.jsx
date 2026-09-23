@@ -133,71 +133,79 @@ const ShareButtons = ({ title, url, contentType, itemId }) => {
     }
   };
 
-  const copyLabel =
+  const copyFeedbackMessage =
     copyFeedback === "copied"
-      ? "Enlace copiado"
+      ? "✓ Enlace copiado"
       : copyFeedback === "error"
         ? "No se pudo copiar"
-        : "Copiar enlace";
+        : "";
 
   return (
-    <div className="share-buttons" role="group" aria-label="Compartir">
-      <a
-        className="share-buttons-action"
-        href={whatsappHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Compartir por WhatsApp"
-        onClick={() => trackShare("whatsapp")}
-      >
-        <i className="fa fa-whatsapp" aria-hidden="true" />
-        <span>WhatsApp</span>
-      </a>
+    <div className="share-buttons">
+      <p className="share-buttons-title">Compartir esta página</p>
 
-      <a
-        className="share-buttons-action"
-        href={xHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Compartir en X"
-        onClick={() => trackShare("x")}
-      >
-        <span>X</span>
-      </a>
+      <div className="share-buttons-row" role="group" aria-label="Compartir">
+        <a
+          className="share-buttons-action"
+          href={whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Compartir por WhatsApp"
+          onClick={() => trackShare("whatsapp")}
+        >
+          <i className="fa fa-whatsapp" aria-hidden="true" />
+          <span>WhatsApp</span>
+        </a>
 
-      <a
-        className="share-buttons-action"
-        href={facebookHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Compartir en Facebook"
-        onClick={() => trackShare("facebook")}
-      >
-        <i className="fa fa-facebook" aria-hidden="true" />
-        <span>Facebook</span>
-      </a>
+        <a
+          className="share-buttons-action"
+          href={facebookHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Compartir en Facebook"
+          onClick={() => trackShare("facebook")}
+        >
+          <i className="fa fa-facebook" aria-hidden="true" />
+          <span>Facebook</span>
+        </a>
 
-      <button
-        type="button"
-        className="share-buttons-action"
-        aria-label={copyLabel}
-        onClick={handleCopy}
-      >
-        <i className="fa fa-link" aria-hidden="true" />
-        <span aria-live="polite">{copyLabel}</span>
-      </button>
+        <a
+          className="share-buttons-action"
+          href={xHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Compartir en X / Twitter"
+          onClick={() => trackShare("x")}
+        >
+          <span>X / Twitter</span>
+        </a>
 
-      {canNativeShare && (
         <button
           type="button"
           className="share-buttons-action"
-          aria-label="Compartir"
-          onClick={handleNativeShare}
+          aria-label="Copiar enlace"
+          onClick={handleCopy}
         >
-          <i className="fa fa-share-alt" aria-hidden="true" />
-          <span>Compartir</span>
+          <i className="fa fa-link" aria-hidden="true" />
+          <span>Copiar enlace</span>
         </button>
-      )}
+
+        {canNativeShare && (
+          <button
+            type="button"
+            className="share-buttons-action"
+            aria-label="Compartir"
+            onClick={handleNativeShare}
+          >
+            <i className="fa fa-share-alt" aria-hidden="true" />
+            <span>Compartir</span>
+          </button>
+        )}
+      </div>
+
+      <p className="share-buttons-feedback" aria-live="polite">
+        {copyFeedbackMessage}
+      </p>
     </div>
   );
 };
