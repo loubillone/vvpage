@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet-async";
 import Container from "react-bootstrap/Container";
 import "../css/discursos.css";
 import DiscursoCard from "../components/DiscursoCard";
-import discursosTitulo from "../assets/img/discursos/discursos.png";
 import discursosData from "../data/discursos";
+import { getCloudinaryUrl } from "../utils/cloudinary";
 
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 
@@ -76,7 +76,13 @@ const Discursos = () => {
       <Container className="discursos-container">
         <div className="discursos-header">
           <div className="discursos-titulo-imagen">
-            <img src={discursosTitulo} alt="Discursos" />
+            <img
+              src={getCloudinaryUrl(
+                "tpa-web/discursos/discurso-titulo.png",
+                "original"
+              )}
+              alt="Discursos"
+            />
           </div>
 
           {/* Filtros */}
