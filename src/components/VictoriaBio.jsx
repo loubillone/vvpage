@@ -7,8 +7,6 @@ import vickyEscritorio from "../assets/img/biografia/victoria/vvEscritorio.webp"
 import vickyCharla from "../assets/img/biografia/victoria/vvAct.webp";
 import vickyLiceo from "../assets/img/biografia/victoria/vvMilitar.webp";
 import vickySenado from "../assets/img/biografia/victoria/vvSenado.webp";
-import Footer from "./Footer";
-
 const VictoriaBio = () => {
   const [activeBoxes, setActiveBoxes] = useState(new Set());
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
@@ -320,7 +318,6 @@ const VictoriaBio = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
