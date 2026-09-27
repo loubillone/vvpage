@@ -6,11 +6,7 @@ const TRANSFORMS = {
   original: "q_auto/f_auto",
 };
 
-// Sin preset: mismo recorte 1000×600 que ya usan Senado y cualquier
-// llamada que todavía no migró. No cambiar este string.
-const LEGACY = "w_1000,h_600,c_fill,g_auto,f_auto,q_auto";
-
 export const getCloudinaryUrl = (publicId, preset) => {
-  const transform = TRANSFORMS[preset] || LEGACY;
+  const transform = TRANSFORMS[preset] || TRANSFORMS.detail;
   return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${transform}/${publicId}`;
 };

@@ -1,6 +1,5 @@
 import React from "react";
-import malvinasTitle from "../assets/img/senado/malvinas/malvinasTitle.webp";
-import victimasTitle from "../assets/img/senado/victimas/victimasdelterrorismo.webp";
+import { getCloudinaryUrl } from "../utils/cloudinary";
 
 // Datos de la sección Senado: temas (Malvinas, Víctimas del Terrorismo) y
 // sus actividades. Cada actividad tiene metadata (fecha, slug, imagen) para
@@ -11,7 +10,10 @@ const senadoTemas = {
   malvinas: {
     titulo: "Malvinas",
     slug: "malvinas",
-    imagenTitulo: malvinasTitle,
+    imagenTitulo: getCloudinaryUrl(
+      "tpa-web/senado/malvinas/heroesdemalvinas-titulo.webp",
+      "original"
+    ),
     frase:
       "El soldado no muere en el frente de batalla, muere cuando su patria lo olvida.",
     actividades: [
@@ -276,7 +278,10 @@ const senadoTemas = {
   victimasDelTerrorismo: {
     titulo: "Víctimas del Terrorismo",
     slug: "victimasDelTerrorismo",
-    imagenTitulo: victimasTitle,
+    imagenTitulo: getCloudinaryUrl(
+      "tpa-web/senado/victimas/victimasdelterrorismo-titulo.webp",
+      "original"
+    ),
     frase: "Recordar a las víctimas es honrar la verdad y la justicia.",
     actividades: [
       {

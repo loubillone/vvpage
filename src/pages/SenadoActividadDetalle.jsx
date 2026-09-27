@@ -52,6 +52,9 @@ const SenadoActividadDetalle = () => {
 
   const descripcionSEO = `${actividad.titulo} — actividad de Victoria Villarruel en el Senado de la Nación (${data.titulo}, ${actividad.fecha}).`;
   const canonical = `${SITE_URL}/senado/${tema}/${anio}/${actividadSlug}`;
+  const imagenSrc = actividad.imagenPortada
+    ? getCloudinaryUrl(actividad.imagenPortada, "detail")
+    : null;
 
   return (
     <div className="container-senado-detalle">
@@ -84,12 +87,18 @@ const SenadoActividadDetalle = () => {
           itemId={actividad.slug}
         />
 
-        {actividad.imagenPortada && (
-          <div className="imagen-senado-detalle-wrapper">
+        {imagenSrc && (
+          <div className="imagen-senado-wrapper">
             <img
-              src={getCloudinaryUrl(actividad.imagenPortada)}
-              alt={actividad.titulo}
+              src={imagenSrc}
+              className="imagen-senado-fondo"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              src={imagenSrc}
               className="imagen-senado-detalle"
+              alt={actividad.titulo}
               decoding="async"
               fetchpriority="high"
             />
