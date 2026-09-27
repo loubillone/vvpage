@@ -6,7 +6,6 @@ import contactoImg from "../assets/img/contacto/contactoImg.webp";
 import contactoTitulo from "../assets/img/contacto/contactoTitulo.webp";
 import iconoEmail from "../assets/img/contacto/iconoEmail.webp";
 import "../css/contacto.css";
-import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 import emailjs from "@emailjs/browser";
@@ -154,8 +153,6 @@ const Contacto = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

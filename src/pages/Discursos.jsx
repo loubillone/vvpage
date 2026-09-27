@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import Container from "react-bootstrap/Container";
 import "../css/discursos.css";
 import DiscursoCard from "../components/DiscursoCard";
-import Footer from "../components/Footer";
 import discursosTitulo from "../assets/img/discursos/discursos.png";
 import discursosData from "../data/discursos";
 
@@ -116,8 +115,6 @@ const Discursos = () => {
           </div>
         )}
       </Container>
-
-      <Footer />
     </div>
   );
 };

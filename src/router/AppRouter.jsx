@@ -5,9 +5,11 @@ import {
   Routes,
   Navigate,
   useParams,
+  useLocation,
 } from "react-router-dom";
 import Home from "../pages/Home";
 import Navegador from "../components/Navegador";
+import Footer from "../components/Footer";
 import Biografia from "../pages/Biografia";
 import Trayectoria from "../pages/Trayectoria";
 import Galeria from "../pages/Galeria";
@@ -48,6 +50,10 @@ const RedirectVisitaLegacy = () => {
 };
 
 const AppContent = () => {
+  const location = useLocation();
+  // `/galeria` muestra Footer; `/galeria/:categoria` es fullscreen y no.
+  const isGaleriaDetalle = location.pathname.startsWith("/galeria/");
+
   return (
     <>
       <ScrollToTop />
@@ -86,6 +92,7 @@ const AppContent = () => {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/privacidad" element={<Privacidad />} />
       </Routes>
+      {!isGaleriaDetalle && <Footer />}
       <AnalyticsTracker />
       <CookieBanner />
     </>

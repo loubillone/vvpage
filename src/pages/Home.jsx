@@ -4,7 +4,6 @@ import VictoriaPresentacion from "../components/VictoriaPresentacion";
 import UltimasVisitas from "../components/UltimasVisitas";
 import VictoriaEnNumeros from "../components/VictoriaEnNumeros";
 import MapaArgentina from "../components/MapaArgentina";
-import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 import "../css/homeRitmo.css";
 const SITE_URL = import.meta.env.VITE_SITE_URL;
@@ -33,8 +32,6 @@ const Home = () => {
       <UltimasVisitas />
 
       <MapaArgentina />
-
-      <Footer />
     </div>
   );
 };

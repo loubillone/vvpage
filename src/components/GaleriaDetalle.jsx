@@ -39,7 +39,6 @@ import vvRuta40Cuatro from "../assets/img/galeria/ruta40/vvRuta40Cuatro.webp";
 import vvVaticanoUno from "../assets/img/galeria/vaticano/vvVaticanoUno.webp";
 import vvVaticanoDos from "../assets/img/galeria/vaticano/vvVaticanoDos.webp";
 import vvVaticanoIndex from "../assets/img/galeria/vaticano/vvVaticanoIndex.webp";
-import Footer from "./Footer";
 
 const GaleriaDetalle = () => {
   const galerias = {

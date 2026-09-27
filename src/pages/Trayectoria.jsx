@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "../css/trayectoria.css";
 import timelineVV from "../assets/img/trayectoria/timelineVV.webp";
 import firmaVV from "../assets/img/trayectoria/firmaVV.webp";
-import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 
 const Trayectoria = () => {
@@ -41,7 +40,6 @@ const Trayectoria = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

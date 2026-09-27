@@ -15,7 +15,6 @@ import diarioSeis from "../assets/img/biografia/celtyv/diarioSeis.webp";
 import diarioSiete from "../assets/img/biografia/celtyv/diarioSiete.webp";
 import diarioOcho from "../assets/img/biografia/celtyv/diarioOcho.webp";
 import diarioNueve from "../assets/img/biografia/celtyv/diarioNueve.webp";
-import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 
@@ -394,8 +393,6 @@ const Celtyv = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

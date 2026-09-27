@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import Footer from "../components/Footer";
 import "../css/privacidad.css";
 
 const SITE_URL = import.meta.env.VITE_SITE_URL;
@@ -87,8 +86,6 @@ const Privacidad = () => {
           los servicios que usa el sitio.
         </p>
       </main>
-
-      <Footer />
     </div>
   );
 };

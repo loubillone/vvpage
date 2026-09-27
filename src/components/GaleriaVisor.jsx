@@ -9,8 +9,6 @@ import vv2DeAbrilIndex from "../assets/img/galeria/2DeAbril/2DeAbrilIndex.webp";
 import vv25DeMayoIndex from "../assets/img/galeria/25DeMayo/vv25DeMayoIndex.webp";
 import ruta40Index from "../assets/img/galeria/ruta40/ruta40Index.webp";
 import vvVaticanoIndex from "../assets/img/galeria/vaticano/vvVaticanoIndex.webp";
-import Footer from "./Footer";
-
 const GaleriaVisor = () => {
   const navigate = useNavigate();
 
@@ -80,8 +78,6 @@ const GaleriaVisor = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-
-      <Footer />
     </div>
   );
 };
