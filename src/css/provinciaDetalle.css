@@ -58,17 +58,51 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #e0e0e0;
+  background-color: #000;
 }
 
 .carousel-provincia .carousel-item {
-  background-color: #e0e0e0;
+  background-color: #000;
+}
+
+.imagen-provincia-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.imagen-provincia-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.18);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.imagen-provincia-fondo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(20px);
+  transform: scale(1.08);
+  opacity: 0.55;
 }
 
 .imagen-provincia {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  height: 600px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background: transparent;
 }
 
 .placeholder-imagen {
@@ -165,7 +199,7 @@
     font-size: 1.8rem;
   }
 
-  .imagen-provincia {
+  .imagen-provincia-wrapper {
     height: 450px;
   }
 
@@ -205,7 +239,7 @@
     margin-bottom: 1.2rem;
   } */
 
-  .imagen-provincia {
+  .imagen-provincia-wrapper {
     height: 350px;
   }
 
@@ -266,8 +300,12 @@
     margin-bottom: 1rem;
   } */
 
+  .imagen-provincia-wrapper {
+    height: auto;
+  }
+
   .imagen-provincia {
-    height: 250px;
+    height: auto;
   }
 
   .placeholder-imagen {

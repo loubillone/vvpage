@@ -10,6 +10,8 @@
 
 .imagen-contacto img {
   width: 30rem;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
   border-radius: 3rem;
 }
 
@@ -86,6 +88,8 @@
 
   .imagen-contacto img {
     width: 20rem;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
     border-radius: 3rem;
   }
   .container-titulo {

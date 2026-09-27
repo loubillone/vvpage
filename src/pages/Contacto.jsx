@@ -2,9 +2,6 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-import contactoImg from "../assets/img/contacto/contactoImg.webp";
-import contactoTitulo from "../assets/img/contacto/contactoTitulo.webp";
-import iconoEmail from "../assets/img/contacto/iconoEmail.webp";
 import "../css/contacto.css";
 import { Helmet } from "react-helmet-async";
 const SITE_URL = import.meta.env.VITE_SITE_URL;
@@ -70,12 +67,12 @@ const Contacto = () => {
         <div className="row">
           <div className="col">
             <div className="imagen-contacto">
-              <img src={contactoImg} alt="Victoria en sesion" />
+              <img src="https://res.cloudinary.com/dwb5tmtqg/image/upload/f_auto,q_auto/v1790474872/tpa-web/contacto/vv-contacto.jpg" alt="Victoria en sesion" />
             </div>
           </div>
           <div className="col mt-3">
             <div className="container-titulo">
-              <img src={contactoTitulo} alt="contactanos" />
+              <img src="https://res.cloudinary.com/dwb5tmtqg/image/upload/f_auto,q_auto/tpa-web/contacto/vv-contacto-titulo.webp" alt="contactanos" />
             </div>
             <Form className="col-10 offset-1" onSubmit={sendEmail}>
               <Form.Group className="mb-5" controlId="formBasicText">
@@ -141,7 +138,7 @@ const Contacto = () => {
           <div className="col container-contacto">
             <div className="col">
               <div className="iconos-contacto">
-                <img src={iconoEmail} alt="" />
+                <img src="https://res.cloudinary.com/dwb5tmtqg/image/upload/f_auto,q_auto/tpa-web/contacto/vv-contacto-icono-email.webp" alt="" />
                 <span className="titulos-contacto">Email</span>
               </div>
               <div className="info-contacto">

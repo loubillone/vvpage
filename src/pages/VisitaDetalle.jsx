@@ -127,19 +127,31 @@ const VisitaDetalle = () => {
                         })
                       }
                     >
-                      {actividad.imagenes.map((imagen, index) => (
-                        <Carousel.Item key={index}>
-                          <img
-                            src={getCloudinaryUrl(imagen)}
-                            alt={`${provincia.nombre} - ${
-                              actividad.titulo || `Actividad ${actividadIndex + 1}`
-                            } - Imagen ${index + 1}`}
-                            className="imagen-provincia"
-                            decoding="async"
-                            fetchpriority={index === 0 ? "high" : "auto"}
-                          />
-                        </Carousel.Item>
-                      ))}
+                      {actividad.imagenes.map((imagen, index) => {
+                        const src = getCloudinaryUrl(imagen, "detail");
+                        return (
+                          <Carousel.Item key={index}>
+                            <div className="imagen-provincia-wrapper">
+                              <img
+                                src={src}
+                                className="imagen-provincia-fondo"
+                                alt=""
+                                aria-hidden="true"
+                              />
+                              <img
+                                src={src}
+                                alt={`${provincia.nombre} - ${
+                                  actividad.titulo ||
+                                  `Actividad ${actividadIndex + 1}`
+                                } - Imagen ${index + 1}`}
+                                className="imagen-provincia"
+                                decoding="async"
+                                fetchpriority={index === 0 ? "high" : "auto"}
+                              />
+                            </div>
+                          </Carousel.Item>
+                        );
+                      })}
                     </Carousel>
                   </div>
                 </div>
@@ -185,19 +197,30 @@ const VisitaDetalle = () => {
                       })
                     }
                   >
-                    {visita.imagenes.map((imagen, index) => (
-                      <Carousel.Item key={index}>
-                        <img
-                          src={getCloudinaryUrl(imagen)}
-                          alt={`${provincia.nombre} - ${visita.titulo} - Imagen ${
-                            index + 1
-                          }`}
-                          className="imagen-provincia"
-                          decoding="async"
-                          fetchpriority={index === 0 ? "high" : "auto"}
-                        />
-                      </Carousel.Item>
-                    ))}
+                    {visita.imagenes.map((imagen, index) => {
+                      const src = getCloudinaryUrl(imagen, "detail");
+                      return (
+                        <Carousel.Item key={index}>
+                          <div className="imagen-provincia-wrapper">
+                            <img
+                              src={src}
+                              className="imagen-provincia-fondo"
+                              alt=""
+                              aria-hidden="true"
+                            />
+                            <img
+                              src={src}
+                              alt={`${provincia.nombre} - ${visita.titulo} - Imagen ${
+                                index + 1
+                              }`}
+                              className="imagen-provincia"
+                              decoding="async"
+                              fetchpriority={index === 0 ? "high" : "auto"}
+                            />
+                          </div>
+                        </Carousel.Item>
+                      );
+                    })}
                   </Carousel>
                 </div>
               </div>

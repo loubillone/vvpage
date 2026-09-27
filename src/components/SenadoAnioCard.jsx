@@ -20,7 +20,7 @@ const SenadoAnioCard = ({ tema, anio, actividades }) => {
         <div className="senado-anio-card-imagen-wrapper">
           {imagenPortada ? (
             <img
-              src={getCloudinaryUrl(imagenPortada)}
+              src={getCloudinaryUrl(imagenPortada, "card")}
               alt={`${anio}`}
               className="senado-anio-card-imagen"
               loading="lazy"

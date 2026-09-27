@@ -13,7 +13,7 @@ const VisitaCard = ({ visita, provinciaSlug }) => {
         <div className="visita-card-imagen-wrapper">
           {visita.imagenPortada ? (
             <img
-              src={getCloudinaryUrl(visita.imagenPortada)}
+              src={getCloudinaryUrl(visita.imagenPortada, "card")}
               alt={visita.titulo}
               className="visita-card-imagen"
               loading="lazy"

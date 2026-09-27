@@ -134,7 +134,7 @@ const UltimasVisitas = () => {
                 <div className="ultima-visita-imagen-wrapper">
                   {visita.imagenPortada ? (
                     <img
-                      src={getCloudinaryUrl(visita.imagenPortada)}
+                      src={getCloudinaryUrl(visita.imagenPortada, "card")}
                       alt={visita.titulo}
                       className="ultima-visita-imagen"
                       loading="lazy"

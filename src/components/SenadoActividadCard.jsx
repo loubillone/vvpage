@@ -13,7 +13,7 @@ const SenadoActividadCard = ({ tema, anio, actividad }) => {
         <div className="senado-actividad-card-imagen-wrapper">
           {actividad.imagenPortada ? (
             <img
-              src={getCloudinaryUrl(actividad.imagenPortada)}
+              src={getCloudinaryUrl(actividad.imagenPortada, "card")}
               alt={actividad.titulo}
               className="senado-actividad-card-imagen"
               loading="lazy"
