@@ -353,8 +353,7 @@ const discursos = [
   },
   {
     slug: "reconocimiento-conservacion-restauracion-senado-2026",
-    titulo:
-      "Reconocimiento al depto de conservación y restauración del Senado",
+    titulo: "Reconocimiento al depto de conservación y restauración del Senado",
     fechaISO: "2026-05",
     precisionFecha: "mes",
     fecha: "Mayo de 2026",
@@ -387,6 +386,30 @@ const discursos = [
       "Victoria Villarruel en la 74ª Exposición Rural de Chivilcoy, donde destacó la importancia del sector agropecuario y la producción nacional para el desarrollo del país.",
     videoUrl: "https://youtu.be/SlGRlKIuZ5Y",
     id: 4,
+  },
+  {
+    slug: "foro-parlamentario-iberoamericano-conclusiones-2026",
+    titulo: "Conclusiones del XII Foro Parlamentario Iberoamericano",
+    fechaISO: "2026-10",
+    precisionFecha: "mes",
+    fecha: "Octubre de 2026",
+    categoria: "Varios",
+    descripcion:
+      "Victoria Villarruel presentó las conclusiones del XII Foro Parlamentario Iberoamericano en Madrid y destacó que la tecnología debe estar al servicio de las personas, el desarrollo y el trabajo.",
+    videoUrl: "https://youtu.be/yDTewnLY2Tc",
+    id: 6,
+  },
+  {
+    slug: "foro-parlamentario-iberoamericano-madrid-2026",
+    titulo: "XII Foro Parlamentario Iberoamericano (Madrid)",
+    fechaISO: "2026-10",
+    precisionFecha: "mes",
+    fecha: "Octubre de 2026",
+    categoria: "Varios",
+    descripcion:
+      "Victoria Villarruel participó del XII Foro Parlamentario Iberoamericano en Madrid, donde abordó el impacto de la inteligencia artificial, el trabajo, la producción y el rol de las pymes.",
+    videoUrl: "https://youtu.be/K4-OsFpoAY8",
+    id: 5,
   },
 ];
 
