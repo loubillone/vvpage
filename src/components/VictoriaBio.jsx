@@ -1,12 +1,43 @@
 import React, { useState, useEffect } from "react";
 import "../css/victoria.css";
 import "../css/boxTextos.css";
-import eduardo from "../assets/img/biografia/victoria/eduardo.webp";
-import vickyLibro from "../assets/img/biografia/victoria/vickyLibro.webp";
-import vickyEscritorio from "../assets/img/biografia/victoria/vvEscritorio.webp";
-import vickyCharla from "../assets/img/biografia/victoria/vvAct.webp";
-import vickyLiceo from "../assets/img/biografia/victoria/vvMilitar.webp";
-import vickySenado from "../assets/img/biografia/victoria/vvSenado.webp";
+import { getCloudinaryUrl } from "../utils/cloudinary";
+
+// Public IDs de Cloudinary. Dimensiones = tamaño intrínseco real del
+// asset (igual que los .webp locales), para reservar espacio sin recortar.
+const IMAGENES_BIO = {
+  escritorio: {
+    id: "tpa-web/biografia/victoria-bio.jpg",
+    width: 1080,
+    height: 610,
+  },
+  activismo: {
+    id: "tpa-web/biografia/victoria-activismo.jpg",
+    width: 1080,
+    height: 577,
+  },
+  familia: {
+    id: "tpa-web/biografia/victoria-familia.jpg",
+    width: 1280,
+    height: 688,
+  },
+  pensamiento: {
+    id: "tpa-web/biografia/victoria-pensamiento.jpg",
+    width: 1280,
+    height: 688,
+  },
+  soldado: {
+    id: "tpa-web/biografia/victoria-soldado.png",
+    width: 1365,
+    height: 734,
+  },
+  publicaciones: {
+    id: "tpa-web/biografia/victoria-publicaciones.png",
+    width: 1365,
+    height: 734,
+  },
+};
+
 const VictoriaBio = () => {
   const [activeBoxes, setActiveBoxes] = useState(new Set());
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
@@ -48,8 +79,11 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={vickyEscritorio}
+              src={getCloudinaryUrl(IMAGENES_BIO.escritorio.id, "bio")}
               alt="Victoria Villarruel en su despacho"
+              width={IMAGENES_BIO.escritorio.width}
+              height={IMAGENES_BIO.escritorio.height}
+              decoding="async"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Victoria Villarruel</h2>
@@ -67,8 +101,12 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={vickyCharla}
+              src={getCloudinaryUrl(IMAGENES_BIO.activismo.id, "bio")}
               alt="Victoria Villarruel en una charla del Celtyv"
+              width={IMAGENES_BIO.activismo.width}
+              height={IMAGENES_BIO.activismo.height}
+              loading="lazy"
+              decoding="async"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Activismo</h2>
@@ -84,8 +122,12 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={vickySenado}
+              src={getCloudinaryUrl(IMAGENES_BIO.familia.id, "bio")}
               alt="Victoria Villarruel en el Senado"
+              width={IMAGENES_BIO.familia.width}
+              height={IMAGENES_BIO.familia.height}
+              loading="lazy"
+              decoding="async"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Familia</h2>
@@ -101,8 +143,12 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={vickyLiceo}
+              src={getCloudinaryUrl(IMAGENES_BIO.pensamiento.id, "bio")}
               alt="Victoria Villarruel en el Liceo Militar"
+              width={IMAGENES_BIO.pensamiento.width}
+              height={IMAGENES_BIO.pensamiento.height}
+              loading="lazy"
+              decoding="async"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Pensamiento y posturas</h2>
@@ -118,7 +164,15 @@ const VictoriaBio = () => {
             onMouseEnter={() => activateBox("boxEV")}
             onClick={() => isMobile && toggleBox("boxEV")}
           >
-            <img className="imagenBox" src={eduardo} alt="Eduardo Villarruel" />
+            <img
+              className="imagenBox"
+              src={getCloudinaryUrl(IMAGENES_BIO.soldado.id, "bio")}
+              alt="Eduardo Villarruel"
+              width={IMAGENES_BIO.soldado.width}
+              height={IMAGENES_BIO.soldado.height}
+              loading="lazy"
+              decoding="async"
+            />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Soldados de Malvinas</h2>
               <p className="subtitulo-sobre-imagen">Su padre</p>
@@ -133,8 +187,12 @@ const VictoriaBio = () => {
           >
             <img
               className="imagenBox"
-              src={vickyLibro}
+              src={getCloudinaryUrl(IMAGENES_BIO.publicaciones.id, "bio")}
               alt="Victoria Villarruel con sus libros"
+              width={IMAGENES_BIO.publicaciones.width}
+              height={IMAGENES_BIO.publicaciones.height}
+              loading="lazy"
+              decoding="async"
             />
             <div className="texto-sobre-imagen">
               <h2 className="titulo-sobre-imagen">Publicaciones</h2>

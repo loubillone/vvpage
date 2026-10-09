@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import vvEscritorio from "../assets/img/biografia/victoria/vvEscritorio.webp";
+import { getCloudinaryUrl } from "../utils/cloudinary";
 import "../css/victoriaPresentacion.css";
 
 // Presentación breve de Victoria Villarruel en el Home: foto + texto + un
@@ -11,6 +11,8 @@ import "../css/victoriaPresentacion.css";
 // Se reutiliza la misma foto ("Victoria Villarruel en su despacho") que
 // ya usa VictoriaBio.jsx como su imagen principal, para mantener
 // coherencia visual con cómo el sitio la presenta institucionalmente.
+const IMAGEN_BIO_PRINCIPAL = "tpa-web/biografia/victoria-bio.jpg";
+
 const VictoriaPresentacion = () => {
   return (
     <section
@@ -20,9 +22,11 @@ const VictoriaPresentacion = () => {
       <div className="container victoria-presentacion-contenedor">
         <div className="victoria-presentacion-foto">
           <img
-            src={vvEscritorio}
+            src={getCloudinaryUrl(IMAGEN_BIO_PRINCIPAL, "bio")}
             alt="Victoria Villarruel en su despacho"
-            loading="lazy"
+            width={1080}
+            height={610}
+            fetchpriority="high"
             decoding="async"
           />
         </div>

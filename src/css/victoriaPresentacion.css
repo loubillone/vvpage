@@ -27,6 +27,9 @@
   display: block;
   width: 100%;
   height: auto;
+  /* 1080x610: dimensiones reales de victoria-bio.jpg. Reserva el hueco
+     antes de que llegue el archivo y evita CLS en el LCP móvil. */
+  aspect-ratio: 1080 / 610;
 }
 
 .victoria-presentacion-texto {
