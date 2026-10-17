@@ -2099,7 +2099,7 @@ export const visitasProvincias = {
         fechaISO: "2024-04-06",
         precisionFecha: "dia",
         imagenPortada:
-          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-1",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-8.jpg",
         fecha: "Abril de 2024",
         descripcion: (
           <>
@@ -2151,11 +2151,14 @@ export const visitasProvincias = {
           </>
         ),
         imagenes: [
-          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-1",
-          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-2",
-          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-3",
-          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-4",
-          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-5",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-2.jpg",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-1.jpg",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-3.jpg",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-5.jpg",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-7.jpg",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-6.jpg",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-8.jpg",
+          "tpa-web/provincias/catamarca/sanfernando/catamarca-sanfer-9.jpg",
         ],
         lugar: "San Fernando del Valle de Catamarca",
       },
