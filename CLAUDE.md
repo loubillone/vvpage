@@ -97,6 +97,14 @@ Particulares:
 - Estadísticas (`estadisticasRecorrido.js`, `estadisticasProductivas.js`, `tiempoEnCargo.js`, `gestionSenado2025.js`) se **derivan** de los datos; no hardcodear resultados. Las constantes manuales (`VECES_A_CARGO_PRESIDENCIA`, etc.) se actualizan juntas con su fecha de corte.
 - Victoria Villarruel asumió la Vicepresidencia el **10 de diciembre de 2023**. En `src/utils/tiempoEnCargo.js` la fecha correcta es `new Date(2023, 11, 10)`: los meses de JavaScript comienzan en 0, por lo que diciembre es 11. El error `new Date(2023, 12, 10)` (= 10/01/2024, un mes menos en el contador) ya fue corregido y no debe volver a introducirse.
 
+### Orden de actividades en visitas provinciales
+
+- Respetar siempre el orden existente de las actividades dentro de cada visita provincial.
+- No reordenar actividades para priorizar contenidos de otras secciones, incluida Industria y Producción.
+- Las nuevas secciones deben adaptarse a la estructura y al orden de las visitas originales.
+- Cualquier modificación del orden existente requiere autorización previa del usuario.
+- Excepción acordada: Mar del Plata 2024 (`buenos-aires/mar-del-plata-2024`), con el orden Havanna, Lucciano's y Premier Pádel.
+
 ### Verificación histórica y editorial
 
 Aplica a discursos, visitas provinciales y actividades del Senado:

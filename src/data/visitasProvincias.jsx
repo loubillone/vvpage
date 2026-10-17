@@ -50,52 +50,90 @@ export const visitasProvincias = {
         slug: "mar-del-plata-2024",
         fechaISO: "2024-05-20",
         precisionFecha: "dia",
-        imagenPortada: "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-1",
+        imagenPortada: "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-7.jpg",
         fecha: "Mayo de 2024",
-        descripcion: (
-          <>
-            <p>
-              En mayo de 2024, la vicepresidente Victoria Villarruel visitó Mar
-              del Plata, invitada por el Senador Nacional Maximiliano Abad, para
-              recorrer el Parque Industrial y apoyar la producción y el deporte
-              nacional. Durante su estadía,{" "}
-              <span className="vv-estilo-detalle">
-                Villarruel visitó la Planta de Havanna y la Planta de
-                Lucciano’s,
-              </span>{" "}
-              destacando la importancia de quienes invierten en el país, generan
-              empleo y fomentan el desarrollo productivo local.
-            </p>
+        lugar: "Mar del Plata",
+        actividades: [
+          {
+            titulo: "Planta de Havanna",
+            descripcion: (
+              <>
+                <p>
+                  El 20 de mayo de 2024, durante su visita oficial a Mar del
+                  Plata, la vicepresidente Victoria Villarruel recorrió el{" "}
+                  <span className="vv-estilo-detalle">
+                    Parque Industrial General Savio
+                  </span>
+                  , donde visitó las plantas de Havanna y Lucciano's para
+                  conocer de cerca sus procesos productivos.
+                </p>
 
-            <p>
-              <span className="vv-estilo-detalle">
-                Posteriormente, se acercó al Premier Pádel P1 Mar del Plata
-                2024,
-              </span>{" "}
-              donde observó los partidos de las mejores parejas masculinas y
-              femeninas del mundo, acompañada por el Intendente Guillermo
-              Montenegro, expresando su apoyo al deporte nacional y a los
-              argentinos que destacan en el ámbito internacional.
-            </p>
+                <p>
+                  En <span className="vv-estilo-detalle">Havanna</span>,
+                  recorrió las instalaciones donde se elaboran los
+                  tradicionales alfajores de la firma y se interiorizó sobre
+                  su proceso de producción.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-7.jpg",
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-8.jpg",
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-9.jpg",
+            ],
+            establecimientosVisitados: ["havanna-mar-del-plata"],
+          },
+          {
+            titulo: "Planta de Lucciano's",
+            descripcion: (
+              <>
+                <p>
+                  Durante la misma recorrida, Victoria Villarruel visitó la
+                  planta de{" "}
+                  <span className="vv-estilo-detalle">Lucciano's</span>,
+                  empresa marplatense dedicada a la elaboración de helados,
+                  para conocer sus instalaciones industriales.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-3.jpg",
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-4.jpg",
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-5.jpg",
+            ],
+            establecimientosVisitados: ["luccianos-mar-del-plata"],
+          },
+          {
+            titulo: "Premier Pádel P1 en Mar del Plata",
+            descripcion: (
+              <>
+                <p>
+                  El 20 de mayo de 2024, durante su visita a Mar del Plata, la
+                  vicepresidente Victoria Villarruel{" "}
+                  <span className="vv-estilo-detalle">
+                    se acercó al Premier Pádel P1 Mar del Plata 2024,
+                  </span>{" "}
+                  disputado en el Polideportivo Islas Malvinas, donde observó
+                  los partidos de las mejores parejas masculinas y femeninas
+                  del mundo.
+                </p>
 
-            <p>
-              <span className="vv-estilo-detalle">
-                La visita reflejó el compromiso de Villarruel con la producción,
-                el trabajo y el deporte
-              </span>
-              , reforzando su vínculo con la comunidad y el desarrollo de la
-              ciudad.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-1",
-          "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-2",
-          "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-3",
-          "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-4",
-          "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-5",
+                <p>
+                  Acompañada por el intendente{" "}
+                  <span className="vv-estilo-detalle">Guillermo Montenegro</span>{" "}
+                  y representantes del ámbito deportivo, expresó su apoyo al
+                  deporte nacional y a los argentinos que se destacan en el
+                  ámbito internacional.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-1.jpg",
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-2.jpg",
+              "tpa-web/provincias/bsas/mar-del-plata/ba-mdq-6.jpg",
+            ],
+          },
         ],
-        lugar: "Mar Del Plata",
       },
 
       {
@@ -768,7 +806,7 @@ export const visitasProvincias = {
       {
         titulo: "74ª Exposición Rural de Chivilcoy",
         slug: "rural-chivilcoy-2026",
-        fechaISO: "2026-09-06",
+        fechaISO: "2026-09-05",
         precisionFecha: "dia",
 
         imagenPortada:
@@ -2187,7 +2225,7 @@ export const visitasProvincias = {
         fechaISO: "2025-07-18",
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-1",
-        fecha: "Julio 2025",
+        fecha: "Julio de 2025",
         descripcion: (
           <>
             <p>
@@ -2499,6 +2537,9 @@ export const visitasProvincias = {
               "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-13",
               "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-14",
             ],
+            establecimientosVisitados: [
+              "fincas-moronta-testa-castillo-mendoza",
+            ],
           },
           {
             titulo: "Basílica de San Francisco",
@@ -2658,11 +2699,11 @@ export const visitasProvincias = {
         fechaISO: "2024-11-16",
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-1",
-        fecha: "Octubre de 2024",
+        fecha: "Noviembre de 2024",
         descripcion: (
           <>
             <p>
-              En octubre de 2024, la vicepresidente{" "}
+              En noviembre de 2024, la vicepresidente{" "}
               <span className="vv-estilo-detalle">
                 {" "}
                 Victoria Villarruel visitó la provincia de Entre Ríos para
