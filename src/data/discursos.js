@@ -5,7 +5,8 @@
 //
 // Convenciones (iguales a senadoTemas.jsx / visitasProvincias.jsx):
 // - fechaISO: fecha en formato "YYYY-MM" o "YYYY-MM-DD", según la precisión
-//   real disponible. Hoy los 29 discursos solo tienen precisión de mes.
+//   real disponible. Hoy hay 32 discursos: todos tienen precisión de mes,
+//   salvo el último (Programa de Pasantías Educativas), que tiene fecha exacta.
 // - precisionFecha: "mes" o "dia", según fechaISO.
 // - fecha: representación legible en español (ej. "Abril de 2024"), pensada
 //   para mostrarse en pantalla. NO es la que usan VideoGrid.jsx/VideoModal.jsx
@@ -18,7 +19,13 @@
 // título entre años (ej. "Homenaje a Víctimas del Terrorismo" en 2024 y en
 // 2025): el año en el slug evita la colisión.
 //
-// id: identificador legado, heredado de la estructura anterior (se
+// thumbnailPublicId (opcional): public ID de Cloudinary de una miniatura
+// propia, horizontal 16:9. Si existe, reemplaza al thumbnail de YouTube en
+// la card (DiscursoCard.jsx) y en og:image/twitter:image de la preview
+// social (scripts/generate-social-previews.mjs). Si no existe, se usa el
+// thumbnail de YouTube como siempre.
+//
+// id:identificador legado, heredado de la estructura anterior (se
 // reiniciaba en 1 dentro de cada año en el objeto `discursos` de
 // Discursos.jsx). NO es único a nivel global y NO debe usarse como base de
 // ninguna URL. Se conserva únicamente por compatibilidad transitoria con
@@ -410,6 +417,20 @@ const discursos = [
       "Victoria Villarruel participó del XII Foro Parlamentario Iberoamericano en Madrid, donde abordó el impacto de la inteligencia artificial, el trabajo, la producción y el rol de las pymes.",
     videoUrl: "https://youtu.be/K4-OsFpoAY8",
     id: 5,
+  },
+  {
+    slug: "programa-pasantias-educativas-senado-2026",
+    titulo: "Programa de Pasantías Educativas del Senado",
+    fechaISO: "2026-10-13",
+    precisionFecha: "dia",
+    fecha: "Octubre de 2026",
+    categoria: "Senado",
+    descripcion:
+      "Mensaje de Victoria Villarruel en el marco del Programa de Pasantías Educativas Rentadas del Senado, creado por el decreto 150/2026, que incorporó a 22 estudiantes de distintas carreras a diferentes áreas de la Cámara. Destacó la importancia de que los jóvenes conozcan de cerca el funcionamiento del Poder Legislativo.",
+    videoUrl: "https://www.youtube.com/watch?v=UZVeuHnXmZs",
+    thumbnailPublicId:
+      "tpa-web/discursos/pasantias-educativas-senado-2026_ddx4ax.webp",
+    id: 7,
   },
 ];
 

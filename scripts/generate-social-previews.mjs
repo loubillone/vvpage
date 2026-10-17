@@ -40,6 +40,13 @@ const SOCIAL_PROVINCIAS_DIR = path.join(DIST_DIR, "_social", "provincias");
 const SOCIAL_SENADO_DIR = path.join(DIST_DIR, "_social", "senado");
 const CLOUDINARY_CLOUD_NAME = "dwb5tmtqg";
 const CLOUDINARY_OG_TRANSFORM = "w_1200,h_630,c_fill,g_auto,f_auto,q_auto";
+// Miniaturas propias de discursos (thumbnailPublicId): son 16:9, así que se
+// generan a 1200x675 (sin recortar cara ni zócalo, cosa que sí haría el
+// 1200x630 de arriba). f_jpg en vez de f_auto: los crawlers de WhatsApp,
+// Facebook y X reciben siempre JPEG, nunca WebP.
+const CLOUDINARY_DISCURSO_OG_TRANSFORM = "w_1200,h_675,c_fill,g_auto,f_jpg,q_auto";
+const DISCURSO_OG_IMAGE_WIDTH = "1200";
+const DISCURSO_OG_IMAGE_HEIGHT = "675";
 const ENV_PATH = path.join(ROOT_DIR, ".env");
 
 const ROUTE_META_START = "<!-- ROUTE_META_START -->";
@@ -458,7 +465,17 @@ const TAIL_AFTER_END = builtIndexHtml.slice(endIdx + ROUTE_META_END.length);
 // 3. Construir el bloque de metadata por discurso
 // ---------------------------------------------------------------------
 
-function resolveImage(videoUrl) {
+function resolveImage(discurso) {
+  if (isNonEmptyString(discurso.thumbnailPublicId)) {
+    const publicId = discurso.thumbnailPublicId.trim().replace(/^\/+/, "");
+    return {
+      url: `https://res.cloudinary.com/${CLOUDINARY_CLOUD_NAME}/image/upload/${CLOUDINARY_DISCURSO_OG_TRANSFORM}/${publicId}`,
+      width: DISCURSO_OG_IMAGE_WIDTH,
+      height: DISCURSO_OG_IMAGE_HEIGHT,
+    };
+  }
+
+  const videoUrl = discurso.videoUrl;
   const videoId = getYouTubeId(videoUrl);
   if (videoId) {
     return {
@@ -478,7 +495,7 @@ function buildMetaBlock(discurso) {
   const title = `${discurso.titulo} | Todo por Argentina`;
   const description = discurso.descripcion;
   const canonical = `${SITE_URL}/discursos/${discurso.slug}`;
-  const image = resolveImage(discurso.videoUrl);
+  const image = resolveImage(discurso);
 
   const titleEsc = escapeHtml(title);
   const descriptionAttrEsc = escapeAttr(description);
@@ -704,6 +721,12 @@ for (const discurso of discursos) {
   }
   if (typeof discurso.descripcion !== "string" || !discurso.descripcion.trim()) {
     fail(`Discurso "${discurso.slug}" no tiene descripcion (string) válida.`);
+  }
+  if (
+    discurso.thumbnailPublicId !== undefined &&
+    !isNonEmptyString(discurso.thumbnailPublicId)
+  ) {
+    fail(`Discurso "${discurso.slug}" tiene thumbnailPublicId vacío o inválido.`);
   }
 }
 

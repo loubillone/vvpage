@@ -6,6 +6,9 @@ const TRANSFORMS = {
   original: "q_auto/f_auto",
   // Retratos de Biografía/Home: limita ancho, no recorta (sin c_fill / ar_).
   bio: "w_1000,c_limit/q_auto/f_auto",
+  // Miniaturas personalizadas de Discursos (16:9): limita ancho, no recorta;
+  // el encuadre 16:9 lo da la card (DiscursoCard / discursoCard.css).
+  discurso: "w_960,c_limit/q_auto/f_auto",
 };
 
 export const getCloudinaryUrl = (publicId, preset) => {

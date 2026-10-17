@@ -178,6 +178,10 @@
     <loc>https://todoporargentina.com.ar/discursos/foro-parlamentario-iberoamericano-conclusiones-2026</loc>
   </url>
 
+  <url>
+    <loc>https://todoporargentina.com.ar/discursos/programa-pasantias-educativas-senado-2026</loc>
+  </url>
+
   <!-- Provincias y visitas (fuente: src/data/visitasProvincias.jsx) -->
   <url>
     <loc>https://todoporargentina.com.ar/provincias/buenos-aires</loc>
