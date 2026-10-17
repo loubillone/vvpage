@@ -920,6 +920,79 @@ export const visitasProvincias = {
         ],
         establecimientosVisitados: ["fate-victoria-buenos-aires"],
       },
+      {
+        titulo: "Visita a la empresa Indelama SRL",
+        slug: "indelama-2026",
+        fechaISO: "2026-10-16",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama1.jpg",
+        fecha: "Octubre de 2026",
+        lugar: "Monte Grande, Esteban Echeverría",
+
+        descripcion: (
+          <>
+            <p>
+              La vicepresidente de la Nación, Victoria Villarruel,
+              visitó <span className="vv-estilo-detalle">Indelama SRL</span>,
+              una empresa familiar ubicada en Monte Grande, partido de
+              Esteban Echeverría, provincia de Buenos Aires. Fundada por
+              Hugo Ricciuti, cuenta con{" "}
+              <span className="vv-estilo-detalle">
+                50 años de trayectoria en la industria maderera argentina
+              </span>.
+            </p>
+
+            <p>
+              Durante la recorrida, conoció las instalaciones de la
+              compañía, que dispone de una{" "}
+              <span className="vv-estilo-detalle">
+                planta industrial de 23.000 metros cuadrados
+              </span>, equipada con tecnología de vanguardia y capacidad
+              para desarrollar soluciones a gran escala. Su trayectoria
+              refleja décadas de inversión, innovación y desarrollo
+              productivo.
+            </p>
+
+            <p>
+              Indelama también se destaca por su{" "}
+              <span className="vv-estilo-detalle">
+                compromiso con la educación y la formación de los jóvenes
+              </span>, a través de una escuela técnica que funciona en
+              convenio con la Universidad Nacional de Lomas de Zamora,
+              promoviendo la capacitación y la vinculación entre la
+              educación y el mundo del trabajo.
+            </p>
+
+            <p>
+              En referencia al esfuerzo de las empresas familiares y su
+              contribución a la industria nacional, Villarruel expresó:
+            </p>
+
+            <blockquote className="cita">
+              “Detrás de cada empresa que crece hay años de esfuerzo,
+              conocimiento y familias que apuestan por producir en la
+              Argentina.”
+            </blockquote>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama1.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama2.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama3.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama4.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama5.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama6.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama7.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama8.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama9.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama10.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama11.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama12.jpg",
+          "tpa-web/provincias/bsas/esteban-echeverria/monte-grande/indelama/ba-monte-grande-indelama13.jpg",
+        ],
+        establecimientosVisitados: ["indelama-monte-grande"],
+      },
     ],
   },
 

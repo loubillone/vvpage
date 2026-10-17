@@ -53,6 +53,13 @@ export const establecimientosProductivos = {
     localidad: "Victoria",
     provincia: "Buenos Aires",
   },
+  "indelama-monte-grande": {
+    nombre: "Indelama SRL",
+    rubro: "Industria maderera",
+    tipo: "empresa",
+    localidad: "Monte Grande",
+    provincia: "Buenos Aires",
+  },
   "ingenio-la-florida-tucuman": {
     nombre: "Ingenio La Florida (Cía. Azucarera Los Balcanes)",
     rubro: "Agroindustria azucarera y bioetanol",
