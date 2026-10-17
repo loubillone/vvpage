@@ -280,63 +280,145 @@ export const visitasProvincias = {
         imagenPortada:
           "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-1",
         fecha: "Mayo de 2025",
-        descripcion: (
-          <>
-            <p>
-              <span className="vv-estilo-detalle">
-                La vicepresidente Victoria Villarruel visitó las localidades
-                bonaerenses de Chivilcoy y Suipacha
-              </span>{" "}
-              en el marco de una recorrida por la provincia de Buenos Aires,
-              enfocada en el contacto con autoridades locales, el sector
-              productivo y empresas familiares.
-            </p>
-
-            <p>
-              En Chivilcoy, fue recibida por el intendente{" "}
-              <span className="vv-estilo-detalle">
-                Guillermo Britos, a quien conoció durante la campaña electoral
-                de 2023.
-              </span>{" "}
-              Durante la jornada, estuvo acompañada por Claudia Rucci, quien
-              participó de la recorrida por distintos puntos de la región. En la
-              ciudad, Villarruel recibió presentes típicos y visitó la empresa{" "}
-              <span className="vv-estilo-detalle">
-                Ostagro, ubicada en Moquehuá,{" "}
-              </span>{" "}
-              dedicada a la comercialización de maquinaria agrícola, así como la
-              empresa quesera{" "}
-              <span className="vv-estilo-detalle">El Gauchito,</span> donde fue
-              recibida por uno de sus dueños, Claudio Andreoli.
-            </p>
-
-            <p>
-              <span className="vv-estilo-detalle">
-                La visita continuó en Suipacha, donde recorrió Lácteos Silvia,
-              </span>{" "}
-              una empresa familiar que emplea a 130 personas y se dedica a la
-              producción de leche larga vida y una amplia variedad de quesos.
-              Durante el encuentro, la vicepresidente destacó la importancia de
-              las pymes, el trabajo argentino y el desarrollo de las economías
-              regionales como pilares del crecimiento del país.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-1",
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-2",
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-3",
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-4",
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-5",
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-6",
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-7",
-          "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-8",
-        ],
         lugar: "Chivilcoy - Suipacha",
-        establecimientosVisitados: [
-          "ostagro-moquehua",
-          "el-gauchito-chivilcoy",
-          "lacteos-silvia-suipacha",
+        actividades: [
+          {
+            titulo: "Recepción del intendente Guillermo Britos",
+            descripcion: (
+              <>
+                <p>
+                  <span className="vv-estilo-detalle">
+                    La vicepresidente Victoria Villarruel visitó las localidades
+                    bonaerenses de Chivilcoy y Suipacha
+                  </span>{" "}
+                  en el marco de una recorrida por la provincia de Buenos Aires,
+                  enfocada en el contacto con autoridades locales, el sector
+                  productivo y empresas familiares.
+                </p>
+
+                <p>
+                  En Chivilcoy, fue recibida por el{" "}
+                  <span className="vv-estilo-detalle">
+                    intendente Guillermo Britos en el Palacio Municipal,
+                  </span>{" "}
+                  donde mantuvieron un encuentro institucional. Villarruel
+                  recordó que conocía al jefe comunal desde la campaña
+                  electoral de 2023. Durante la jornada estuvo acompañada por la
+                  exlegisladora Claudia Rucci, quien participó de la recorrida
+                  por distintos puntos de la región.
+                </p>
+
+                <p>
+                  El encuentro incluyó un almuerzo y la entrega de presentes
+                  típicos a la vicepresidente. Entre los temas abordados
+                  estuvieron la situación de Chivilcoy, el campo, la obra
+                  pública y distintas problemáticas de la provincia de Buenos
+                  Aires.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-1.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-2.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-9.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-10.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-11.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-12.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-13.jpg",
+            ],
+          },
+          {
+            titulo: "Visita a Ostagro",
+            descripcion: (
+              <>
+                <p>
+                  Como parte de su agenda vinculada a la producción regional,
+                  Victoria Villarruel visitó la empresa{" "}
+                  <span className="vv-estilo-detalle">
+                    Ostagro, ubicada en Moquehuá,
+                  </span>{" "}
+                  partido de Chivilcoy, dedicada a la comercialización de
+                  maquinaria agrícola y repuestos.
+                </p>
+
+                <p>
+                  La recorrida permitió conocer la actividad de una firma
+                  relacionada con el sector agropecuario y la provisión de
+                  equipamiento para las tareas rurales, en el marco de los
+                  encuentros mantenidos por la vicepresidente con empresas del
+                  sector productivo bonaerense.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-3.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-4.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-15.jpg",
+            ],
+            establecimientosVisitados: ["ostagro-moquehua"],
+          },
+          {
+            titulo: "Visita a Quesos El Gauchito",
+            descripcion: (
+              <>
+                <p>
+                  Durante su recorrida por Chivilcoy, Victoria Villarruel también
+                  visitó la empresa quesera{" "}
+                  <span className="vv-estilo-detalle">El Gauchito,</span> donde
+                  fue recibida por uno de sus dueños, Claudio Andreoli.
+                </p>
+
+                <p>
+                  La firma desarrolla su actividad en la industria láctea,
+                  especialmente en la elaboración de quesos. Tiene sus orígenes
+                  en un emprendimiento familiar que comenzó como tambo y
+                  posteriormente amplió sus instalaciones y su capacidad de
+                  elaboración.
+                </p>
+
+                <p>
+                  La visita permitió conocer una de las iniciativas
+                  empresariales vinculadas al desarrollo productivo de la
+                  región.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-16.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-5.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-17.jpg",
+            ],
+            establecimientosVisitados: ["el-gauchito-chivilcoy"],
+          },
+          {
+            titulo: "Visita a Lácteos Silvia en Suipacha",
+            descripcion: (
+              <>
+                <p>
+                  <span className="vv-estilo-detalle">
+                    La visita continuó en Suipacha, donde recorrió Lácteos
+                    Silvia,
+                  </span>{" "}
+                  una empresa familiar dedicada a la elaboración de productos
+                  lácteos. En el momento de la visita, la firma empleaba a 130
+                  personas y se dedicaba a la producción de leche larga vida y
+                  una amplia variedad de quesos.
+                </p>
+
+                <p>
+                  Durante el encuentro, la vicepresidente destacó la importancia
+                  de las pymes, el trabajo argentino y el desarrollo de las
+                  economías regionales como pilares del crecimiento del país.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-6.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-7.jpg",
+              "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-8.jpg",
+            ],
+            establecimientosVisitados: ["lacteos-silvia-suipacha"],
+          },
         ],
       },
 
@@ -347,76 +429,145 @@ export const visitasProvincias = {
         precisionFecha: "mes",
         imagenPortada: "tpa-web/provincias/bsas/saladillo/ba-saladillo-1",
         fecha: "Mayo de 2025",
-        descripcion: (
-          <>
-            {" "}
-            <p>
-              La vicepresidente Victoria Villarruel realizó una visita a la
-              ciudad de{" "}
-              <span className="vv-estilo-detalle">
-                Saladillo , en la provincia de Buenos Aires, donde desarrolló
-                una agenda vinculada a la educación rural, la formación técnica
-                y la actividad productiva.
-              </span>
-            </p>
-
-            <p>
-              Durante su recorrida, visitó el{" "}
-              <span className="vv-estilo-detalle">
-                Centro de Formación Rural “Las Margaritas”,
-              </span>{" "}
-              una Escuela Secundaria Técnica que cuenta con 165 alumnas, y fue
-              recibida por sus autoridades y representantes de la Fundación
-              Marzano. En el lugar,
-              <span className="vv-estilo-detalle">
-                recorrió el entorno formativo y las instalaciones utilizadas por
-                sus 196 estudiantes,{" "}
-              </span>
-              interiorizándose sobre el sistema pedagógico de alternancia, un
-              modelo educativo originado en Francia hace más de 90 años y
-              presente en la Argentina desde 1969, siendo los Centros de
-              Formación Rural de la Fundación Marzano pioneros en su
-              implementación.
-            </p>
-
-            <p>
-              Asimismo, Villarruel visitó el{" "}
-              <span className="vv-estilo-detalle">
-                Frigorífico “El Regional”,
-              </span>{" "}
-              donde fue recibida por su propietario, Gustavo Moscoloni, y su
-              equipo de trabajo. Allí conoció el funcionamiento de la planta,
-              que actualmente destina el 80 % de su capacidad productiva a la{" "}
-              <span className="vv-estilo-detalle">
-                empresa Cabaña Argentina, con marca propia y comercialización
-                bajo las marcas FRS y Le Gurie,
-              </span>{" "}
-              además de contar con habilitación para exportar a diversos países
-              y locales comerciales propios para la venta al público.
-            </p>
-
-            <p>
-              A lo largo de la jornada, la vicepresidente destacó el valor
-              de la{" "}
-              <span className="vv-estilo-detalle">
-                educación, el trabajo y la producción como pilares fundamentales
-                para el desarrollo de las comunidades del interior{" "}
-              </span>
-              y el fortalecimiento de las economías regionales.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/bsas/saladillo/ba-saladillo-1",
-          "tpa-web/provincias/bsas/saladillo/ba-saladillo-2",
-          "tpa-web/provincias/bsas/saladillo/ba-saladillo-3",
-          "tpa-web/provincias/bsas/saladillo/ba-saladillo-4",
-          "tpa-web/provincias/bsas/saladillo/ba-saladillo-5",
-          "tpa-web/provincias/bsas/saladillo/ba-saladillo-6",
-        ],
         lugar: "Saladillo",
-        establecimientosVisitados: ["frigorifico-el-regional-saladillo"],
-        actividadesSectoriales: ["centro-formacion-rural-las-margaritas"],
+        actividades: [
+          {
+            titulo: "Centro de Formación Rural «Las Margaritas»",
+            descripcion: (
+              <>
+                <p>
+                  La vicepresidente Victoria Villarruel realizó una visita a la
+                  ciudad de{" "}
+                  <span className="vv-estilo-detalle">
+                    Saladillo, en la provincia de Buenos Aires, donde desarrolló
+                    una agenda vinculada a la educación rural, la formación
+                    técnica y la actividad productiva.
+                  </span>
+                </p>
+
+                <p>
+                  Durante su recorrida, visitó el{" "}
+                  <span className="vv-estilo-detalle">
+                    Centro de Formación Rural «Las Margaritas»,
+                  </span>{" "}
+                  una institución agrotécnica destinada a la formación de
+                  mujeres, perteneciente a la Fundación Marzano, donde fue
+                  recibida por sus autoridades y representantes de la
+                  fundación.
+                </p>
+
+                <p>
+                  Conoció las instalaciones y la propuesta educativa del
+                  establecimiento, que contaba con 165 alumnas, y se interiorizó
+                  sobre el{" "}
+                  <span className="vv-estilo-detalle">
+                    sistema pedagógico de alternancia,
+                  </span>{" "}
+                  que vincula la formación académica con las experiencias
+                  prácticas y el entorno rural. Se trata de un modelo educativo
+                  originado en Francia hace más de 90 años y presente en la
+                  Argentina desde 1969, siendo los Centros de Formación Rural de
+                  la Fundación Marzano pioneros en su implementación.
+                </p>
+
+                <p>
+                  La institución, inaugurada en 1997, desarrolla un proyecto
+                  educativo que promueve la formación integral, la
+                  responsabilidad y la participación de las estudiantes y sus
+                  familias.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-1",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-2",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-4",
+            ],
+            actividadesSectoriales: ["centro-formacion-rural-las-margaritas"],
+          },
+          {
+            titulo: "Centro de Formación Rural Saladillo para varones",
+            descripcion: (
+              <>
+                <p>
+                  Durante su recorrida por Saladillo, Victoria Villarruel
+                  también visitó el{" "}
+                  <span className="vv-estilo-detalle">
+                    Centro de Formación Rural Saladillo para varones,
+                  </span>{" "}
+                  otra de las instituciones educativas pertenecientes a la
+                  Fundación Marzano.
+                </p>
+
+                <p>
+                  En el establecimiento fue recibida por sus autoridades y
+                  representantes de la Fundación, y recorrió las instalaciones y
+                  los entornos formativos utilizados por sus estudiantes. Según
+                  la cobertura de la visita, el centro contaba con una matrícula
+                  de 196 alumnos.
+                </p>
+
+                <p>
+                  La institución desarrolla su propuesta educativa mediante el
+                  sistema de alternancia, que combina la formación académica con
+                  experiencias vinculadas al medio rural. Este modelo busca
+                  relacionar el aprendizaje con la vida familiar, el trabajo y
+                  las actividades productivas de la comunidad.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-3.webp",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-10.jpg",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-11.jpg",
+            ],
+          },
+          {
+            titulo: "Frigorífico «El Regional»",
+            descripcion: (
+              <>
+                <p>
+                  Asimismo, Villarruel visitó el{" "}
+                  <span className="vv-estilo-detalle">
+                    Frigorífico «El Regional»,
+                  </span>{" "}
+                  donde fue recibida por su propietario, Gustavo Moscoloni, y su
+                  equipo de trabajo.
+                </p>
+
+                <p>
+                  Allí conoció el funcionamiento de la planta, que en ese
+                  momento destinaba el 80 % de su capacidad productiva a la{" "}
+                  <span className="vv-estilo-detalle">
+                    empresa Cabaña Argentina, con marca propia y
+                    comercialización bajo las marcas FRS y Le Gurie,
+                  </span>{" "}
+                  además de contar con habilitación para exportar a diversos
+                  países y locales comerciales propios para la venta al público.
+                </p>
+
+                <p>
+                  A lo largo de la jornada, la vicepresidente destacó el valor
+                  de la{" "}
+                  <span className="vv-estilo-detalle">
+                    educación, el trabajo y la producción como pilares
+                    fundamentales para el desarrollo de las comunidades del
+                    interior{" "}
+                  </span>
+                  y el fortalecimiento de las economías regionales.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-6.webp",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-7.jpg",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-8.jpg",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-5.webp",
+              "tpa-web/provincias/bsas/saladillo/ba-saladillo-9.jpg",
+            ],
+            establecimientosVisitados: ["frigorifico-el-regional-saladillo"],
+          },
+        ],
       },
 
       {

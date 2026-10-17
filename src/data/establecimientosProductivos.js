@@ -22,6 +22,7 @@ export const establecimientosProductivos = {
     sector: "servicios-agropecuarios",
     localidad: "Moquehuá",
     provincia: "Buenos Aires",
+    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-3.jpg",
   },
   "el-gauchito-chivilcoy": {
     nombre: "El Gauchito",
@@ -30,6 +31,7 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "Chivilcoy",
     provincia: "Buenos Aires",
+    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-5.jpg",
   },
   "lacteos-silvia-suipacha": {
     nombre: "Lácteos Silvia",
@@ -38,6 +40,7 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "Suipacha",
     provincia: "Buenos Aires",
+    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-8.jpg",
   },
   "frigorifico-el-regional-saladillo": {
     nombre: 'Frigorífico "El Regional"',
@@ -46,6 +49,7 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "Saladillo",
     provincia: "Buenos Aires",
+    imagenPortada: "tpa-web/provincias/bsas/saladillo/ba-saladillo-6.webp",
   },
   "cintolo-hermanos-ituzaingo": {
     nombre: "Cíntolo Hermanos",
