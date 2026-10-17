@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "../css/discursoCard.css";
 import { getYouTubeThumbnail } from "../utils/youtube";
+import { getCloudinaryUrl } from "../utils/cloudinary";
 
 // Card de discurso para el índice /discursos. Misma línea visual que
 // VisitaCard.jsx / SenadoAnioCard.jsx (fondo blanco, sombra suave, hover
@@ -9,7 +10,11 @@ import { getYouTubeThumbnail } from "../utils/youtube";
 // video: thumbnail 16:9 en vez de foto 4:3, y categoría superpuesta sobre
 // la imagen en vez de badge dentro del cuerpo.
 const DiscursoCard = ({ discurso }) => {
-  const thumbnail = getYouTubeThumbnail(discurso.videoUrl);
+  // Miniatura propia en Cloudinary si el discurso la define; si no, la de
+  // YouTube.
+  const thumbnail = discurso.thumbnailPublicId
+    ? getCloudinaryUrl(discurso.thumbnailPublicId, "discurso")
+    : getYouTubeThumbnail(discurso.videoUrl);
 
   return (
     <Link to={`/discursos/${discurso.slug}`} className="discurso-card-link">
@@ -46,12 +51,13 @@ const DiscursoCard = ({ discurso }) => {
 };
 
 // Cubre únicamente los campos de "discurso" que esta card realmente
-// consume (videoUrl, slug, titulo, categoria, fecha). No valida el objeto
+// consume (videoUrl, thumbnailPublicId, slug, titulo, categoria, fecha). No valida el objeto
 // completo de src/data/discursos.js (que además tiene otros campos como
 // descripcion, fechaISO, precisionFecha, id, no usados aquí).
 DiscursoCard.propTypes = {
   discurso: PropTypes.shape({
     videoUrl: PropTypes.string,
+    thumbnailPublicId: PropTypes.string,
     slug: PropTypes.string.isRequired,
     titulo: PropTypes.string.isRequired,
     categoria: PropTypes.string,
