@@ -3260,71 +3260,150 @@ export const visitasProvincias = {
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/rio-negro/rionegro-bariloche-1",
         fecha: "Enero de 2024",
-        descripcion: (
-          <>
-            <p>
-              En enero de 2024, la vicepresidente{" "}
-              <span className="vv-estilo-detalle">
-                Victoria Villarruel visitó la ciudad de San Carlos de Bariloche,
-              </span>{" "}
-              donde mantuvo una intensa agenda institucional y social.{" "}
-              <span className="vv-estilo-detalle">
-                {" "}
-                Fue recibida por el intendente Walter Cortés, quien la declaró
-                huésped de honor
-              </span>{" "}
-              y le presentó los principales proyectos y necesidades de la
-              ciudad.
-            </p>
-
-            <p>
-              Durante su recorrido,{" "}
-              <span className="vv-estilo-detalle">
-                Villarruel visitó la sede de INVAP,{" "}
-              </span>
-              empresa estatal referente en desarrollo tecnológico, donde expresó
-              su reconocimiento al talento y la capacidad de los profesionales
-              argentinos. También{" "}
-              <span className="vv-estilo-detalle">
-                se reunió con empresarios locales para dialogar sobre temas como
-                la reforma laboral, la seguridad, el desarrollo industrial y la
-                política de cielos abiertos,
-              </span>{" "}
-              destacando la importancia de impulsar la producción y el empleo en
-              la Patagonia.
-            </p>
-
-            <p>
-              Asimismo,{" "}
-              <span className="vv-estilo-detalle">
-                visitó la Escuela Militar de Montaña "Teniente General Juan
-                Domingo Perón"
-              </span>
-              , donde valoró el trabajo del Ejército Argentino y su rol en la
-              defensa de la soberanía nacional. En sus declaraciones, reafirmó
-              su compromiso con el orden, la justicia y el respeto a la
-              propiedad privada frente a los conflictos por usurpaciones de
-              tierras.
-            </p>
-
-            <p>
-              <span className="vv-estilo-detalle">
-                Esta visita reflejó su profundo interés por las problemáticas
-                del sur argentino y su compromiso con el desarrollo federal y la
-                defensa de los valores patrios.
-              </span>
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/rio-negro/rionegro-bariloche-1",
-          "tpa-web/provincias/rio-negro/rionegro-bariloche-2",
-          "tpa-web/provincias/rio-negro/rionegro-bariloche-3",
-          "tpa-web/provincias/rio-negro/rionegro-bariloche-4",
-          "tpa-web/provincias/rio-negro/rionegro-bariloche-5",
-        ],
         lugar: "San Carlos de Bariloche",
-        establecimientosVisitados: ["invap-bariloche-rio-negro"],
+        actividades: [
+          {
+            titulo: "Visita a la sede central de INVAP",
+            descripcion: (
+              <>
+                <p>
+                  En enero de 2024, la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel visitó la ciudad de San Carlos de
+                    Bariloche,
+                  </span>{" "}
+                  donde mantuvo una intensa agenda institucional y social.{" "}
+                  <span className="vv-estilo-detalle">
+                    Fue recibida por el intendente Walter Cortés, quien la
+                    declaró huésped de honor
+                  </span>{" "}
+                  y le presentó los principales proyectos y necesidades de la
+                  ciudad.
+                </p>
+
+                <p>
+                  El 6 de enero,{" "}
+                  <span className="vv-estilo-detalle">
+                    Villarruel visitó la sede central de INVAP,
+                  </span>{" "}
+                  empresa estatal rionegrina referente en desarrollo
+                  tecnológico, donde expresó su reconocimiento al talento y la
+                  capacidad de los profesionales argentinos.
+                </p>
+
+                <p>
+                  En las instalaciones fue recibida por el gerente general,
+                  Vicente Campenni, y los subgerentes generales Marcelo
+                  Basigalup y Darío Giussi, junto a otros directivos de la
+                  compañía, quienes le presentaron{" "}
+                  <span className="vv-estilo-detalle">
+                    sus principales desarrollos y proyectos en marcha, tanto en
+                    Argentina como en el exterior.
+                  </span>
+                </p>
+
+                <p>
+                  INVAP es una empresa tecnológica especializada en proyectos
+                  de alta complejidad, entre ellos{" "}
+                  <span className="vv-estilo-detalle">
+                    satélites, radares, reactores nucleares y sistemas de
+                    medicina nuclear.
+                  </span>{" "}
+                  Durante el encuentro también se abordó la articulación con
+                  organismos científicos y la capacidad del país para
+                  desarrollar y exportar tecnología de alto valor agregado.
+                </p>
+
+                <p>
+                  Como parte de su agenda en Bariloche, Villarruel también{" "}
+                  <span className="vv-estilo-detalle">
+                    se reunió con empresarios locales para dialogar sobre temas
+                    como la reforma laboral, la seguridad, el desarrollo
+                    industrial y la política de cielos abiertos,
+                  </span>{" "}
+                  destacando la importancia de impulsar la producción y el
+                  empleo en la Patagonia.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-1.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-14.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-3.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-15.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-16.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-17.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-18.jpg",
+            ],
+            establecimientosVisitados: ["invap-bariloche-rio-negro"],
+          },
+          {
+            titulo:
+              'Escuela Militar de Montaña "Teniente General Juan Domingo Perón"',
+            descripcion: (
+              <>
+                <p>
+                  Asimismo, el 7 de enero, Victoria Villarruel{" "}
+                  <span className="vv-estilo-detalle">
+                    visitó la Escuela Militar de Montaña "Teniente General Juan
+                    Domingo Perón",
+                  </span>{" "}
+                  donde valoró el trabajo del Ejército Argentino y su rol en la
+                  defensa de la soberanía nacional.
+                </p>
+
+                <p>
+                  Durante su recorrida por el instituto, conoció el{" "}
+                  <span className="vv-estilo-detalle">
+                    Museo de las Tropas de Montaña,
+                  </span>{" "}
+                  la palestra de escalamiento, el equipamiento utilizado para
+                  esquiar y los medios empleados en las actividades de montaña.
+                </p>
+
+                <p>
+                  <span className="vv-estilo-detalle">
+                    Fundada en 1964 como Destacamento de Instrucción Andina,
+                  </span>{" "}
+                  la Escuela Militar de Montaña es un centro de formación y
+                  perfeccionamiento del Ejército Argentino, especializado en la
+                  preparación de personal para operar en terrenos montañosos y
+                  condiciones climáticas exigentes. Su actividad comprende la
+                  enseñanza de técnicas de andinismo, escalada y esquí.
+                </p>
+
+                <p>
+                  Durante la visita, Villarruel también se refirió a los
+                  conflictos por usurpaciones de tierras y reafirmó su
+                  compromiso con{" "}
+                  <span className="vv-estilo-detalle">
+                    el orden, la justicia y el respeto a la propiedad privada.
+                  </span>
+                </p>
+
+                <p>
+                  <span className="vv-estilo-detalle">
+                    Esta visita reflejó su profundo interés por las
+                    problemáticas del sur argentino y su compromiso con el
+                    desarrollo federal y la defensa de los valores patrios.
+                  </span>
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-4.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-5.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-6.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-7.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-8.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-9.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-10.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-11.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-12.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-13.jpg",
+            ],
+          },
+        ],
         actividadesSectoriales: ["encuentro-empresarios-bariloche-2024"],
       },
     ],
