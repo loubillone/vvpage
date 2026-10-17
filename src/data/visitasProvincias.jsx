@@ -1732,66 +1732,63 @@ export const visitasProvincias = {
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/salta/rural/salta-rural-1",
         fecha: "Agosto de 2024",
-        descripcion: (
-          <>
-            <p>
-              En agosto de 2024,{" "}
-              <span className="vv-estilo-detalle">
-                la vicepresidente Victoria Villarruel realizó una gira por Jujuy
-                y Salta,
-              </span>{" "}
-              destacando el valor del trabajo rural y la producción agropecuaria
-              como pilares de la identidad argentina.
-            </p>
+        lugar: "Ciudad de Salta",
+        actividades: [
+          {
+            titulo: "80ª Exposición Rural de Salta",
+            descripcion: (
+              <>
+                <p>
+                  En agosto de 2024,{" "}
+                  <span className="vv-estilo-detalle">
+                    la vicepresidente Victoria Villarruel realizó una gira por
+                    Jujuy y Salta,
+                  </span>{" "}
+                  destacando el valor del trabajo rural y la producción
+                  agropecuaria como pilares de la identidad argentina.
+                </p>
 
-            <p>
-              <span className="vv-estilo-detalle">
-                En San Pedro, Jujuy, Villarruel recorrió la finca Campo Alegre,
-              </span>{" "}
-              acompañada por las hermanas Rodríguez Pardo y sus esposos, tercera
-              generación de productores de caña de azúcar, y pudo conocer de
-              cerca el esfuerzo y la dedicación que sostienen la producción
-              local.
-            </p>
-
-            <p>
-              <span className="vv-estilo-detalle">
-                Posteriormente, se trasladó a Salta, donde participó de la 80°
-                Exposición Rural,
-              </span>{" "}
-              acompañando a la Sociedad Rural de Salta, productores y distintas
-              entidades del sector. Allí se exhibió lo mejor de la producción
-              provincial, destacando la capacidad de la región para generar
-              alimentos y recursos que sostienen a toda la Nación. Villarruel
-              expresó:{" "}
-            </p>
-            <blockquote className="cita">
-              "El campo es esfuerzo, sacrificio pero también es dignidad,
-              esperanza y amor a la tierra… El campo es la tierra de los
-              ancestros que alimenta el cuerpo pero también el alma de nuestra
-              amada Patria. ¡Viva el campo argentino, el bendito suelo que nos
-              alimenta, nos da cobijo y nos permite vivir y respirar
-              argentinidad!
-            </blockquote>
-            <p>
-              <span className="vv-estilo-detalle">
-                {" "}
-                La visita resaltó la importancia del sector agropecuario para la
-                economía, la cultura y la identidad nacional,
-              </span>{" "}
-              reafirmando el vínculo de la vicepresidente con las provincias del
-              norte argentino.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/salta/rural/salta-rural-1",
-          "tpa-web/provincias/salta/rural/salta-rural-2",
-          "tpa-web/provincias/salta/rural/salta-rural-3",
+                <p>
+                  <span className="vv-estilo-detalle">
+                    Posteriormente, se trasladó a Salta, donde participó de la
+                    80° Exposición Rural,
+                  </span>{" "}
+                  acompañando a la Sociedad Rural de Salta, productores y
+                  distintas entidades del sector. Allí se exhibió lo mejor de la
+                  producción provincial, destacando la capacidad de la región
+                  para generar alimentos y recursos que sostienen a toda la
+                  Nación. Villarruel expresó:{" "}
+                </p>
+                <blockquote className="cita">
+                  "El campo es esfuerzo, sacrificio pero también es dignidad,
+                  esperanza y amor a la tierra… El campo es la tierra de los
+                  ancestros que alimenta el cuerpo pero también el alma de
+                  nuestra amada Patria. ¡Viva el campo argentino, el bendito
+                  suelo que nos alimenta, nos da cobijo y nos permite vivir y
+                  respirar argentinidad!
+                </blockquote>
+                <p>
+                  <span className="vv-estilo-detalle">
+                    {" "}
+                    La visita resaltó la importancia del sector agropecuario
+                    para la economía, la cultura y la identidad nacional,
+                  </span>{" "}
+                  reafirmando el vínculo de la vicepresidente con las provincias
+                  del norte argentino.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/salta/rural/salta-rural-1.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-2.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-11.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-13.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-14.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-15.jpg",
+            ],
+            actividadesSectoriales: ["exposicion-rural-salta-2024"],
+          },
         ],
-        lugar: "Jujuy - Salta",
-        establecimientosVisitados: ["finca-campo-alegre-san-pedro-jujuy"],
-        actividadesSectoriales: ["exposicion-rural-salta-2024"],
       },
       {
         titulo: "Procesión del Señor y la Virgen del Milagro",
@@ -2228,85 +2225,279 @@ export const visitasProvincias = {
         slug: "belen-el-rodeo-2025",
         fechaISO: "2025-07-18",
         precisionFecha: "dia",
-        imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-1",
+        imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-16.jpg",
         fecha: "Julio de 2025",
-        descripcion: (
-          <>
-            <p>
-              En 2025, la vicepresidente{" "}
-              <span className="vv-estilo-detalle">
-                Victoria Villarruel visitó nuevamente la provincia de Catamarca,
-              </span>{" "}
-              compartiendo una jornada con vecinos y trabajadores marcada por
-              identidad, tradición y valores profundamente arraigados en la
-              historia nacional.
-            </p>
-
-            <p>
-              <span className="vv-estilo-detalle">
-                En Belén, conocida como la cuna del poncho argentino, Villarruel
-                recorrió el taller del artesano Antonio Gutiérrez, donde conoció
-                ponchos dedicados a la selección argentina
-              </span>{" "}
-              y a la emblemática Ruta 40, hechos con técnicas ancestrales que
-              reflejan el esfuerzo, dedicación y orgullo del interior del país.
-            </p>
-
-            <p>
-              Posteriormente,{" "}
-              <span className="vv-estilo-detalle">
-                visitó la cooperativa de las Arañitas Hilanderas,{" "}
-              </span>
-              donde 30 mujeres lideradas por Rosita trabajan cada día hilando,
-              tiñendo y tejiendo a mano verdaderas obras de arte. Villarruel
-              destacó el compromiso de estas mujeres con la preservación de la
-              cultura textil del norte argentino.
-            </p>
-
-            <p>
-              La recorrida continuó en El Rodeo, donde{" "}
-              <span className="vv-estilo-detalle">
-                la vicepresidente conoció la imponente imagen de la Virgen del
-                Valle, escultura de 52 metros construida gracias a la fe y
-                perseverancia de Walter D’Agostini.
-              </span>{" "}
-              Desde los miradores, se contemplan las Sierras de Ambato, símbolo
-              de la grandeza del paisaje y la conexión con la identidad
-              argentina. Villarruel expresó:{" "}
-            </p>
-            <blockquote className="cita">
-              "Argentina es trabajo, tradiciones y amor por nuestra tierra",
-            </blockquote>
-            <p>
-              resaltando el ejemplo de quienes construyen día a día desde el
-              interior profundo.{" "}
-              <span className="vv-estilo-detalle">
-                La visita reafirmó la riqueza cultural, productiva y espiritual
-                de Catamarca, destacando la fuerza del trabajo local y la fe
-                inquebrantable de su gente.
-              </span>
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-1",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-2",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-3",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-4",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-5",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-6",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-7",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-8",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-9",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-10",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-11",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-12",
-          "tpa-web/provincias/catamarca/belen/catamarca-belen-13",
-        ],
         lugar: "San Fernando del Valle de Catamarca - Belén – El Rodeo",
-        establecimientosVisitados: [
-          "taller-antonio-gutierrez-belen-catamarca",
-          "cooperativa-aranitas-hilanderas-belen-catamarca",
+        actividades: [
+          {
+            titulo: "Fiesta del Poncho",
+            descripcion: (
+              <>
+                <p>
+                  En 2025, la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel visitó nuevamente la provincia de
+                    Catamarca,
+                  </span>{" "}
+                  compartiendo una jornada con vecinos y trabajadores marcada
+                  por identidad, tradición y valores profundamente arraigados en
+                  la historia nacional.
+                </p>
+
+                <p>
+                  El 18 de julio participó en la{" "}
+                  <span className="vv-estilo-detalle">
+                    inauguración de la 54ª Fiesta Nacional e Internacional del
+                    Poncho,
+                  </span>{" "}
+                  realizada en el Predio Ferial Catamarca. La celebración reúne
+                  a artesanos, productores y representantes de distintas
+                  expresiones culturales de la provincia, con especial
+                  protagonismo de las tradiciones textiles.
+                </p>
+
+                <p>
+                  En Belén, la vicepresidente también participó de la{" "}
+                  <span className="vv-estilo-detalle">
+                    7ª edición del Festival Cuna del Poncho:
+                  </span>{" "}
+                  recorrió la feria artesanal, dialogó con emprendedores y
+                  productores locales y acompañó el acto inaugural, realizado en
+                  el Club Atlético Peñarol.
+                </p>
+
+                <p>
+                  Ambas celebraciones formaron parte de una agenda vinculada a
+                  la preservación de las tradiciones y al reconocimiento del
+                  trabajo artesanal catamarqueño.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-16.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-41.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-1.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-3.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-2.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-13.jpg",
+            ],
+          },
+          {
+            titulo: "Sitio arqueológico El Shincal de Quimivil",
+            descripcion: (
+              <>
+                <p>
+                  Durante su recorrido por Catamarca, Victoria Villarruel{" "}
+                  <span className="vv-estilo-detalle">
+                    visitó el sitio arqueológico El Shincal de Quimivil,
+                  </span>{" "}
+                  ubicado en la localidad de Londres, departamento Belén, donde
+                  fue recibida por el intendente Roberto Rodríguez.
+                </p>
+
+                <p>
+                  El Shincal es uno de los testimonios más importantes de la
+                  presencia del Imperio inca en el actual territorio argentino.
+                  Fue un centro administrativo y ceremonial del Kollasuyu, la
+                  región austral del Tawantinsuyu, y conserva estructuras
+                  arquitectónicas que reflejan su relevancia histórica. Está
+                  declarado Monumento Histórico Nacional.
+                </p>
+
+                <p>
+                  La visita formó parte de la agenda cultural y patrimonial
+                  desarrollada por la vicepresidente en la provincia, y permitió
+                  destacar la importancia de preservar los sitios que forman
+                  parte de la historia del noroeste argentino.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-24.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-42.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-23.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-19.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-20.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-21.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-17.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-22.jpg",
+            ],
+          },
+          {
+            titulo: "Recepción en Belén y visita a la obra del nuevo hospital",
+            descripcion: (
+              <>
+                <p>
+                  Durante su recorrida por Catamarca,{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel fue recibida en la Municipalidad de
+                    Belén por el intendente Cristian Yapura,
+                  </span>{" "}
+                  en el marco de su agenda institucional en el departamento.
+                </p>
+
+                <p>
+                  Durante su visita también recorrió, junto al gobernador Raúl
+                  Jalil y el intendente Cristian Yapura,{" "}
+                  <span className="vv-estilo-detalle">
+                    la obra del nuevo Hospital de Belén,
+                  </span>{" "}
+                  ubicada sobre la Ruta Nacional 40.
+                </p>
+
+                <p>
+                  El proyecto contemplaba una superficie de 9.200 metros
+                  cuadrados, con áreas de internación, quirófanos, consultorios y
+                  servicios destinados a fortalecer la atención sanitaria del
+                  oeste catamarqueño. Al momento de la visita, en julio de 2025,
+                  la construcción se financiaba mediante regalías mineras y
+                  aportes de las empresas estatales YMAD y CAMYEN.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-43.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-30.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-40.jpg",
+            ],
+          },
+          {
+            titulo: "Taller del artesano Antonio Gutiérrez",
+            descripcion: (
+              <>
+                <p>
+                  <span className="vv-estilo-detalle">
+                    En Belén, conocida como la cuna del poncho argentino,
+                    Villarruel recorrió el taller del artesano Antonio
+                    Gutiérrez, donde conoció ponchos dedicados a la selección
+                    argentina
+                  </span>{" "}
+                  y a la emblemática Ruta 40, hechos con técnicas ancestrales
+                  que reflejan el esfuerzo, dedicación y orgullo del interior
+                  del país.
+                </p>
+
+                <p>
+                  La recorrida permitió conocer una expresión del trabajo
+                  artesanal que forma parte de la identidad cultural y
+                  productiva de la región, donde la elaboración de ponchos es
+                  uno de los oficios más característicos.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-25.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-4.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-5.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-6.jpg",
+            ],
+            establecimientosVisitados: ["taller-antonio-gutierrez-belen-catamarca"],
+          },
+          {
+            titulo: "Cooperativa Arañitas Hilanderas",
+            descripcion: (
+              <>
+                <p>
+                  Victoria Villarruel también{" "}
+                  <span className="vv-estilo-detalle">
+                    visitó la cooperativa de las Arañitas Hilanderas,{" "}
+                  </span>
+                  en la ciudad de Belén, donde las artesanas lideradas por
+                  Rosita trabajan cada día hilando, tiñendo y tejiendo a mano
+                  verdaderas obras de arte.
+                </p>
+
+                <p>
+                  Según informó el Senado de la Nación, la cooperativa está
+                  integrada por 30 mujeres y dos varones que trabajan para
+                  preservar las técnicas tradicionales de hilado y tejido.
+                  Villarruel destacó el compromiso de estas mujeres con la
+                  preservación de la cultura textil del norte argentino.
+                </p>
+
+                <p>
+                  La actividad permitió conocer una experiencia de trabajo
+                  cooperativo vinculada a la producción artesanal y a la
+                  transmisión de conocimientos que forman parte del patrimonio
+                  cultural catamarqueño.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-26.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-27.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-28.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-29.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-8.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-7.jpg",
+            ],
+            establecimientosVisitados: [
+              "cooperativa-aranitas-hilanderas-belen-catamarca",
+            ],
+          },
+          {
+            titulo: "Virgen del Valle y El Rodeo",
+            descripcion: (
+              <>
+                <p>
+                  Su recorrido por Catamarca incluyó distintas visitas
+                  vinculadas con la devoción a Nuestra Señora del Valle, una de
+                  las expresiones religiosas más representativas de la
+                  provincia.
+                </p>
+
+                <p>
+                  El 21 de julio de 2025,{" "}
+                  <span className="vv-estilo-detalle">
+                    visitó el Camarín de la Virgen del Valle, en la Catedral
+                    Basílica de San Fernando del Valle de Catamarca,
+                  </span>{" "}
+                  donde fue recibida por el capellán Ramón Carabajal.
+                </p>
+
+                <p>
+                  En El Rodeo, en el complejo Camino de la Fe,{" "}
+                  <span className="vv-estilo-detalle">
+                    la vicepresidente conoció la imponente imagen de la Virgen
+                    del Valle, escultura de 52 metros construida gracias a la fe
+                    y perseverancia de Walter D’Agostini.
+                  </span>{" "}
+                  Desde los miradores, se contemplan las Sierras de Ambato,
+                  símbolo de la grandeza del paisaje y la conexión con la
+                  identidad argentina. Villarruel expresó:{" "}
+                </p>
+                <blockquote className="cita">
+                  "Argentina es trabajo, tradiciones y amor por nuestra tierra",
+                </blockquote>
+                <p>
+                  resaltando el ejemplo de quienes construyen día a día desde el
+                  interior profundo.{" "}
+                  <span className="vv-estilo-detalle">
+                    La visita reafirmó la riqueza cultural, productiva y
+                    espiritual de Catamarca, destacando la fuerza del trabajo
+                    local y la fe inquebrantable de su gente.
+                  </span>
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-31.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-34.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-32.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-33.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-38.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-35.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-36.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-37.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-39.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-15.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-12.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-9.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-10.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-11.jpg",
+              "tpa-web/provincias/catamarca/belen/catamarca-belen-14.jpg",
+            ],
+          },
         ],
       },
     ],
@@ -2627,70 +2818,163 @@ export const visitasProvincias = {
         slug: "exodo-jujeno-2024",
         fechaISO: "2024-08-23",
         precisionFecha: "dia",
-        imagenPortada: "tpa-web/provincias/jujuy/jujuy-exodo-1",
+        imagenPortada: "tpa-web/provincias/jujuy/jujuy-exodo-10.jpg",
         fecha: "Agosto de 2024",
-        descripcion: (
-          <>
-            <p>
-              En el marco de la conmemoración por el{" "}
-              <span className="vv-estilo-detalle">
-                212° aniversario del Éxodo Jujeño, la vicepresidente Victoria
-                Villarruel viajó a la provincia de Jujuy
-              </span>{" "}
-              para participar en los actos oficiales y recorrer distintos puntos
-              emblemáticos de la región .
-            </p>
+        lugar: "San Pedro – Volcán – Purmamarca – Olaroz – Salinas Grandes",
+        actividades: [
+          {
+            titulo: "Éxodo Jujeño, Cabildo Histórico y Tren Solar",
+            descripcion: (
+              <>
+                <p>
+                  En agosto de 2024, en el marco de la conmemoración por el{" "}
+                  <span className="vv-estilo-detalle">
+                    212° aniversario del Éxodo Jujeño, la vicepresidente
+                    Victoria Villarruel viajó a la provincia de Jujuy
+                  </span>{" "}
+                  para participar en los actos oficiales y recorrer distintos
+                  puntos emblemáticos de la región. El Éxodo fue la gesta de
+                  1812 encabezada por el general Manuel Belgrano.
+                </p>
 
-            <p>
-              Durante su paso por San Pedro,{" "}
-              <span className="vv-estilo-detalle">
-                visitó la finca Campo Alegre junto a las hermanas Rodríguez
-                Pardo,
-              </span>{" "}
-              representantes de la tercera generación de productores de caña de
-              azúcar, donde destacó el valor del trabajo familiar y la
-              producción regional. Posteriormente,{" "}
-              <span className="vv-estilo-detalle">
-                se subió al Tren Solar de la Quebrada,
-              </span>{" "}
-              realizando el trayecto desde Volcán hasta Tilcara, acompañada por
-              el gobernador Carlos Sadir. Desde allí, se trasladó al
-              emprendimiento de{" "}
-              <span className="vv-estilo-detalle">
-                Arcadium Lithium, en las cercanías de Olaroz, donde se
-                interiorizó sobre el proceso de extracción de litio,
-              </span>{" "}
-              un recurso estratégico para el desarrollo energético del país.
-            </p>
+                <p>
+                  La vicepresidente fue recibida por el{" "}
+                  <span className="vv-estilo-detalle">
+                    gobernador Carlos Sadir, quien le entregó la distinción de
+                    Huésped de Honor de la provincia
+                  </span>{" "}
+                  durante una ceremonia en el Salón de la Bandera de Casa de
+                  Gobierno.
+                </p>
 
-            <p>
-              Como cierre de su recorrido,{" "}
-              <span className="vv-estilo-detalle">
-                Villarruel visitó uno de sus lugares preferidos en la provincia:
-                las imponentes Salinas Grandes,{" "}
-              </span>
-              símbolo natural y orgullo del norte argentino.{" "}
-              <span className="vv-estilo-detalle">
-                La visita reflejó su compromiso con el desarrollo productivo,
-                tecnológico y ambiental de la región,
-              </span>{" "}
-              así como su reconocimiento a la historia y el esfuerzo del pueblo
-              jujeño.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/jujuy/jujuy-exodo-1",
-          "tpa-web/provincias/jujuy/jujuy-exodo-2",
-          "tpa-web/provincias/jujuy/jujuy-exodo-3",
-          "tpa-web/provincias/jujuy/jujuy-exodo-4",
-          "tpa-web/provincias/jujuy/jujuy-exodo-5",
-          "tpa-web/provincias/jujuy/jujuy-exodo-6",
-        ],
-        lugar: "San Pedro – Volcán – Tilcara – Olaroz – Salinas Grandes",
-        establecimientosVisitados: [
-          "finca-campo-alegre-san-pedro-jujuy",
-          "arcadium-lithium-olaroz",
+                <p>
+                  El 23 de agosto, ambos encabezaron la{" "}
+                  <span className="vv-estilo-detalle">
+                    reapertura del Cabildo Histórico de Jujuy,
+                  </span>{" "}
+                  puesto en valor como un espacio dedicado a preservar y
+                  difundir la historia jujeña. Durante el acto, Villarruel
+                  brindó un discurso en el que destacó que el Éxodo enseña que
+                  los desafíos requieren valor, determinación, sacrificio y
+                  unidad. Posteriormente, visitó la Catedral, donde saludó a
+                  vecinos que se acercaron a recibirla.
+                </p>
+
+                <p>
+                  Al día siguiente, 24 de agosto,{" "}
+                  <span className="vv-estilo-detalle">
+                    Villarruel y Sadir recorrieron a bordo del Tren Solar de la
+                    Quebrada
+                  </span>{" "}
+                  el trayecto desde la estación Volcán hasta Purmamarca. La
+                  experiencia permitió conocer un proyecto que combina el
+                  transporte ferroviario, la energía renovable y el patrimonio
+                  paisajístico de la Quebrada de Humahuaca.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/jujuy/jujuy-exodo-7.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-9.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-8.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-10.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-2.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-1.jpg",
+            ],
+          },
+          {
+            titulo: "Finca Campo Alegre",
+            descripcion: (
+              <>
+                <p>
+                  En San Pedro de Jujuy,{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel visitó la finca Campo Alegre,
+                  </span>{" "}
+                  un establecimiento familiar dedicado al cultivo de caña de
+                  azúcar.
+                </p>
+
+                <p>
+                  Durante el recorrido compartió un encuentro con las hermanas
+                  Rodríguez Pardo y sus esposos, integrantes de la tercera
+                  generación de productores de caña de azúcar, y pudo conocer de
+                  cerca el esfuerzo y la dedicación que sostienen la producción
+                  local.
+                </p>
+
+                <p>
+                  La vicepresidente destacó el valor del trabajo familiar y la
+                  producción regional, en una visita que permitió conocer una de
+                  las actividades agrícolas tradicionales de la zona.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/salta/rural/salta-rural-3.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-4.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-5.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-6.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-7.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-8.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-9.jpg",
+              "tpa-web/provincias/salta/rural/salta-rural-10.jpg",
+            ],
+            establecimientosVisitados: ["finca-campo-alegre-san-pedro-jujuy"],
+          },
+          {
+            titulo: "Arcadium Lithium",
+            descripcion: (
+              <>
+                <p>
+                  Tras el recorrido en el Tren Solar, Victoria Villarruel se
+                  trasladó al emprendimiento de{" "}
+                  <span className="vv-estilo-detalle">
+                    Arcadium Lithium, en las cercanías de Olaroz, donde se
+                    interiorizó sobre el proceso de extracción de litio,
+                  </span>{" "}
+                  un recurso estratégico para el desarrollo energético del país.
+                </p>
+
+                <p>
+                  La actividad formó parte de su agenda provincial y permitió
+                  conocer aspectos de un sector vinculado al desarrollo minero y
+                  productivo del norte argentino.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/jujuy/jujuy-exodo-4.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-3.jpg",
+            ],
+            establecimientosVisitados: ["arcadium-lithium-olaroz"],
+          },
+          {
+            titulo: "Salinas Grandes",
+            descripcion: (
+              <>
+                <p>
+                  Como cierre de su recorrido,{" "}
+                  <span className="vv-estilo-detalle">
+                    Villarruel visitó uno de sus lugares preferidos en la
+                    provincia: las imponentes Salinas Grandes,{" "}
+                  </span>
+                  símbolo natural y orgullo del norte argentino.{" "}
+                  <span className="vv-estilo-detalle">
+                    La visita reflejó su compromiso con el desarrollo
+                    productivo, tecnológico y ambiental de la región,
+                  </span>{" "}
+                  así como su reconocimiento a la historia y el esfuerzo del
+                  pueblo jujeño.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/jujuy/jujuy-exodo-6.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-5.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-11.jpg",
+            ],
+          },
         ],
       },
     ],
@@ -2827,74 +3111,167 @@ export const visitasProvincias = {
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/misiones/misiones-ciudad-1",
         fecha: "Septiembre de 2024",
-        descripcion: (
-          <>
-            <p>
-              En septiembre de 2024, la vicepresidente Victoria{" "}
-              <span className="vv-estilo-detalle">
-                Villarruel visitó la provincia de Misiones para participar de la
-                tradicional Fiesta Internacional del Inmigrante en la ciudad de
-                Oberá,
-              </span>{" "}
-              uno de los eventos culturales más representativos del litoral
-              argentino.
-            </p>
-
-            <p>
-              Durante su recorrido por el predio ferial,{" "}
-              <span className="vv-estilo-detalle">
-                {" "}
-                conoció las casas típicas, la gastronomía y las costumbres de
-                las diversas colectividades que conforman la identidad
-                pluricultural de la provincia,
-              </span>{" "}
-              destacando el valor del trabajo y la convivencia entre las
-              comunidades.
-            </p>
-
-            <p>
-              En su paso por Misiones, Villarruel{" "}
-              <span className="vv-estilo-detalle">
-                también visitó el refugio de animales silvestres Guirá Oga, en
-                Puerto Iguazú,
-              </span>{" "}
-              un espacio dedicado al rescate y rehabilitación de especies
-              nativas de la selva misionera. Allí valoró el compromiso ambiental
-              del equipo y la importancia de proteger la biodiversidad del
-              ecosistema.
-            </p>
-
-            <p>
-              Finalmente, junto al intendente de Colonia Wanda,{" "}
-              <span className="vv-estilo-detalle">
-                recorrió las reconocidas Minas de Wanda,
-              </span>{" "}
-              donde se extraen piedras semipreciosas como la amatista. La
-              vicepresidente destacó el potencial minero y turístico del norte
-              misionero y el esfuerzo de quienes impulsan el desarrollo local
-              con sostenibilidad.
-            </p>
-
-            <p>
-              <span className="vv-estilo-detalle">
-                Esta visita combinó actividades culturales, ambientales y
-                productivas,
-              </span>{" "}
-              reflejando la visión federal y el compromiso de Victoria
-              Villarruel con el crecimiento de las provincias argentinas.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/misiones/misiones-ciudad-1",
-          "tpa-web/provincias/misiones/misiones-ciudad-2",
-          "tpa-web/provincias/misiones/misiones-ciudad-3",
-          "tpa-web/provincias/misiones/misiones-ciudad-4",
-          "tpa-web/provincias/misiones/misiones-ciudad-5",
-          "tpa-web/provincias/misiones/misiones-ciudad-6",
-        ],
         lugar: "Oberá – Puerto Iguazú – Colonia Wanda",
-        establecimientosVisitados: ["minas-de-wanda-misiones"],
+        actividades: [
+          {
+            titulo: "Recepción con el gobernador Hugo Passalacqua",
+            descripcion: (
+              <>
+                <p>
+                  Durante su visita a Misiones,{" "}
+                  <span className="vv-estilo-detalle">
+                    la vicepresidente Victoria Villarruel fue recibida por el
+                    gobernador Hugo Passalacqua,
+                  </span>{" "}
+                  en el marco de la agenda institucional desarrollada en la
+                  provincia.
+                </p>
+
+                <p>
+                  El encuentro formó parte de las actividades oficiales de una
+                  recorrida que incluyó distintas expresiones de la vida
+                  institucional, cultural y productiva de Misiones.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/misiones/misiones-ciudad-10.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-9.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-8.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-7.jpg",
+            ],
+          },
+          {
+            titulo: "Fiesta Nacional del Inmigrante",
+            descripcion: (
+              <>
+                <p>
+                  En septiembre de 2024, la vicepresidente Victoria{" "}
+                  <span className="vv-estilo-detalle">
+                    Villarruel visitó la provincia de Misiones para participar
+                    de la tradicional Fiesta Internacional del Inmigrante en la
+                    ciudad de Oberá,
+                  </span>{" "}
+                  uno de los eventos culturales más representativos del litoral
+                  argentino.
+                </p>
+
+                <p>
+                  Durante su recorrido por el predio ferial,{" "}
+                  <span className="vv-estilo-detalle">
+                    {" "}
+                    conoció las casas típicas, la gastronomía y las costumbres
+                    de las diversas colectividades que conforman la identidad
+                    pluricultural de la provincia,
+                  </span>{" "}
+                  destacando el valor del trabajo y la convivencia entre las
+                  comunidades.
+                </p>
+
+                <p>
+                  Su participación permitió acompañar una celebración dedicada
+                  al encuentro de culturas y al reconocimiento del legado de las
+                  comunidades inmigrantes.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/misiones/misiones-ciudad-2.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-1.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-16.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-17.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-18.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-19.jpg",
+            ],
+          },
+          {
+            titulo: "Refugio Guirá Oga y Cataratas del Iguazú",
+            descripcion: (
+              <>
+                <p>
+                  En su paso por Misiones, Villarruel{" "}
+                  <span className="vv-estilo-detalle">
+                    también visitó el refugio de animales silvestres Guirá Oga,
+                    en Puerto Iguazú,
+                  </span>{" "}
+                  un espacio dedicado al rescate y rehabilitación de especies
+                  nativas de la selva misionera. Allí valoró el compromiso
+                  ambiental del equipo y la importancia de proteger la
+                  biodiversidad del ecosistema.
+                </p>
+
+                <p>
+                  De este modo, su agenda incorporó una actividad vinculada con
+                  la preservación del patrimonio natural de la provincia.
+                </p>
+
+                <p>
+                  El recorrido también incluyó las{" "}
+                  <span className="vv-estilo-detalle">
+                    Cataratas del Iguazú,
+                  </span>{" "}
+                  uno de los paisajes naturales más emblemáticos de la Argentina
+                  y uno de los principales atractivos turísticos de Misiones.
+                </p>
+
+                <p>
+                  Ambas visitas permitieron destacar la riqueza ambiental y
+                  paisajística de una provincia caracterizada por su
+                  biodiversidad.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/misiones/misiones-ciudad-22.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-20.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-21.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-4.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-5.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-12.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-11.jpg",
+            ],
+          },
+          {
+            titulo: "Visita a Minas de Wanda",
+            descripcion: (
+              <>
+                <p>
+                  Finalmente, junto al intendente de Colonia Wanda,{" "}
+                  <span className="vv-estilo-detalle">
+                    recorrió las reconocidas Minas de Wanda,
+                  </span>{" "}
+                  donde se extraen piedras semipreciosas como la amatista. La
+                  vicepresidente destacó el potencial minero y turístico del
+                  norte misionero y el esfuerzo de quienes impulsan el
+                  desarrollo local con sostenibilidad.
+                </p>
+
+                <p>
+                  La visita permitió incorporar al recorrido una actividad
+                  relacionada con los recursos minerales de la provincia y con
+                  una producción característica de la zona.
+                </p>
+
+                <p>
+                  <span className="vv-estilo-detalle">
+                    Esta visita combinó actividades culturales, ambientales y
+                    productivas,
+                  </span>{" "}
+                  reflejando la visión federal y el compromiso de Victoria
+                  Villarruel con el crecimiento de las provincias argentinas.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/misiones/misiones-ciudad-6.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-3.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-14.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-15.jpg",
+              "tpa-web/provincias/misiones/misiones-ciudad-13.jpg",
+            ],
+            establecimientosVisitados: ["minas-de-wanda-misiones"],
+          },
+        ],
       },
     ],
   },
@@ -3081,7 +3458,7 @@ export const visitasProvincias = {
           },
 
           {
-            titulo: "Parque Eólico Arauco y Parque de Dinosaurios",
+            titulo: "Parque Eólico Arauco",
             descripcion: (
               <>
                 <p>
@@ -3095,7 +3472,27 @@ export const visitasProvincias = {
                 </p>
 
                 <p>
-                  También visitó el{" "}
+                  El parque está destinado a la generación de energía eléctrica
+                  a partir del aprovechamiento del viento, una actividad
+                  vinculada a las energías renovables y al desarrollo de la
+                  infraestructura productiva provincial.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-7.jpg",
+              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-8.jpg",
+              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-9.jpg",
+              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-10.jpg",
+            ],
+            establecimientosVisitados: ["parque-eolico-arauco-la-rioja"],
+          },
+          {
+            titulo: "Parque de Dinosaurios de Sanagasta",
+            descripcion: (
+              <>
+                <p>
+                  La agenda provincial también incluyó la visita al{" "}
                   <span className="vv-estilo-detalle">
                     Parque de Dinosaurios de Sanagasta
                   </span>
@@ -3109,15 +3506,10 @@ export const visitasProvincias = {
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-4",
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-5",
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-6",
-              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-7",
-              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-8",
-              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-9",
-              "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-10",
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-1",
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-2",
               "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-3",
             ],
-            establecimientosVisitados: ["parque-eolico-arauco-la-rioja"],
           },
           {
             titulo: "Talampaya y Paseo Cultural Castro Barros",
@@ -3176,75 +3568,125 @@ export const visitasProvincias = {
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/neuquen/neuquen-ciudad-1",
         fecha: "Octubre de 2024",
-        descripcion: (
-          <>
-            <p>
-              El 22 de octubre de 2024, la vicepresidente{" "}
-              <span className="vv-estilo-detalle">
-                Victoria Villarruel visitó la provincia de Neuquén,
-              </span>{" "}
-              donde fue recibida por el gobernador Rolo Figueroa y la
-              vicegobernadora Gloria Ruiz. Junto a ellos, desarrolló una agenda
-              institucional centrada en la producción energética, el desarrollo
-              regional y la articulación público-privada.
-            </p>
-
-            <p>
-              Villarruel{" "}
-              <span className="vv-estilo-detalle">
-                participó como disertante en el Argentina–Texas Summit 2024,
-              </span>{" "}
-              un encuentro clave en el que se debatió el futuro energético del
-              país, con foco en Vaca Muerta, una de las principales fuentes de
-              crecimiento económico y tecnológico de la Argentina.
-            </p>
-
-            <p>
-              Durante su visita,{" "}
-              <span className="vv-estilo-detalle">
-                mantuvo además una reunión con representantes de la Federación
-                de Cámaras del Sector Energético de Neuquén (FECENE),{" "}
-              </span>
-              donde escuchó las inquietudes de las pymes locales y reafirmó su
-              compromiso con la producción nacional y la generación de empleo.
-            </p>
-
-            <p>
-              <span className="vv-estilo-detalle">
-                En su paso por Añelo, acompañada por el intendente Fernando
-                Banderet, recorrió la zona núcleo de explotación de Oil &
-                Gas,{" "}
-              </span>
-              interiorizándose sobre las necesidades de infraestructura,
-              educación y salud que acompañan el crecimiento de la región.
-            </p>
-
-            <p>
-              Antes de finalizar su visita,{" "}
-              <span className="vv-estilo-detalle">
-                Villarruel recorrió la Bodega Malma, uno de los principales
-                emprendimientos vitivinícolas del sur argentino,
-              </span>{" "}
-              donde destacó el potencial productivo y turístico de la provincia.
-              La visita a Neuquén reflejó su visión federal y su apoyo al
-              desarrollo energético y económico sostenible del país.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/neuquen/neuquen-ciudad-1",
-          "tpa-web/provincias/neuquen/neuquen-ciudad-2",
-          "tpa-web/provincias/neuquen/neuquen-ciudad-3",
-          "tpa-web/provincias/neuquen/neuquen-ciudad-4",
-          "tpa-web/provincias/neuquen/neuquen-ciudad-5",
-          "tpa-web/provincias/neuquen/neuquen-ciudad-6",
-        ],
         lugar: "Ciudad de Neuquén – Añelo",
-        establecimientosVisitados: ["bodega-malma-neuquen"],
-        actividadesSectoriales: [
-          "argentina-texas-summit-2024",
-          "fecene",
-          "zona-nucleo-oil-gas-anelo",
+        actividades: [
+          {
+            titulo: "Recepción del gobernador",
+            descripcion: (
+              <>
+                <p>
+                  El 22 de octubre de 2024, la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel visitó la provincia de Neuquén,
+                  </span>{" "}
+                  donde fue recibida por el gobernador Rolo Figueroa y la
+                  vicegobernadora Gloria Ruiz. Junto a ellos, desarrolló una
+                  agenda institucional centrada en la producción energética, el
+                  desarrollo regional y la articulación público-privada.
+                </p>
+
+                <p>
+                  El encuentro formó parte de la agenda oficial desarrollada
+                  durante su estadía en territorio neuquino.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/neuquen/neuquen-ciudad-1.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-7.jpg",
+            ],
+          },
+          {
+            titulo: "Argentina–Texas Summit 2024 y FECENE",
+            descripcion: (
+              <>
+                <p>
+                  Villarruel{" "}
+                  <span className="vv-estilo-detalle">
+                    participó como disertante en el Argentina–Texas Summit 2024,
+                  </span>{" "}
+                  un encuentro clave en el que se debatió el futuro energético
+                  del país, con foco en Vaca Muerta, una de las principales
+                  fuentes de crecimiento económico y tecnológico de la
+                  Argentina.
+                </p>
+
+                <p>
+                  Durante su visita,{" "}
+                  <span className="vv-estilo-detalle">
+                    mantuvo además una reunión con representantes de la
+                    Federación de Cámaras del Sector Energético de Neuquén
+                    (FECENE),{" "}
+                  </span>
+                  donde escuchó las inquietudes de las pymes locales y reafirmó
+                  su compromiso con la producción nacional y la generación de
+                  empleo.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/neuquen/neuquen-ciudad-2.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-3.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-8.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-9.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-10.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-4.jpg",
+            ],
+            actividadesSectoriales: ["argentina-texas-summit-2024", "fecene"],
+          },
+          {
+            titulo: "Recorrida por Añelo",
+            descripcion: (
+              <>
+                <p>
+                  <span className="vv-estilo-detalle">
+                    En su paso por Añelo, acompañada por el intendente Fernando
+                    Banderet, recorrió la zona núcleo de explotación de Oil &
+                    Gas,{" "}
+                  </span>
+                  interiorizándose sobre las necesidades de infraestructura,
+                  educación y salud que acompañan el crecimiento de la región.
+                </p>
+
+                <p>
+                  La recorrida permitió conocer una de las zonas productivas más
+                  importantes de la provincia, vinculada al desarrollo de Vaca
+                  Muerta y a la producción de petróleo y gas.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/neuquen/neuquen-ciudad-11.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-12.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-13.jpg",
+              "tpa-web/provincias/neuquen/neuquen-ciudad-14.jpg",
+            ],
+            actividadesSectoriales: ["zona-nucleo-oil-gas-anelo"],
+          },
+          {
+            titulo: "Bodega Malma",
+            descripcion: (
+              <>
+                <p>
+                  Antes de finalizar su visita,{" "}
+                  <span className="vv-estilo-detalle">
+                    Villarruel recorrió la Bodega Malma, uno de los principales
+                    emprendimientos vitivinícolas del sur argentino,
+                  </span>{" "}
+                  donde destacó el potencial productivo y turístico de la
+                  provincia. La visita sumó a su agenda una actividad vinculada
+                  a la producción regional de vinos.
+                </p>
+
+                <p>
+                  La visita a Neuquén reflejó su visión federal y su apoyo al
+                  desarrollo energético y económico sostenible del país.
+                </p>
+              </>
+            ),
+            imagenes: ["tpa-web/provincias/neuquen/neuquen-ciudad-5.jpg"],
+            establecimientosVisitados: ["bodega-malma-neuquen"],
+          },
         ],
       },
     ],

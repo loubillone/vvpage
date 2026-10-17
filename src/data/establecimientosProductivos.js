@@ -94,6 +94,7 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "La Florida",
     provincia: "Tucumán",
+    imagenPortada: "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-5.jpg",
   },
   "finca-campo-alegre-san-pedro-jujuy": {
     nombre: "Finca Campo Alegre",
@@ -102,6 +103,7 @@ export const establecimientosProductivos = {
     sector: "produccion-primaria",
     localidad: "San Pedro",
     provincia: "Jujuy",
+    imagenPortada: "tpa-web/provincias/salta/rural/salta-rural-3.jpg",
   },
   "arcadium-lithium-olaroz": {
     nombre: "Arcadium Lithium",
@@ -110,6 +112,7 @@ export const establecimientosProductivos = {
     sector: "mineria",
     localidad: "Olaroz",
     provincia: "Jujuy",
+    imagenPortada: "tpa-web/provincias/jujuy/jujuy-exodo-3.jpg",
   },
   "bodega-catena-zapata-mendoza": {
     nombre: "Bodega Catena Zapata",
@@ -143,6 +146,9 @@ export const establecimientosProductivos = {
     sector: "energia",
     localidad: "Departamento Arauco",
     provincia: "La Rioja",
+    // Portada elegida a mano: no es la primera foto de su actividad en la
+    // visita (la galería del parque eólico empieza en larioja-parques-7).
+    imagenPortada: "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-10.jpg",
   },
   "bodega-malma-neuquen": {
     nombre: "Bodega Malma",
@@ -151,6 +157,7 @@ export const establecimientosProductivos = {
     sector: "vitivinicola-olivicola",
     localidad: "San Patricio del Chañar",
     provincia: "Neuquén",
+    imagenPortada: "tpa-web/provincias/neuquen/neuquen-ciudad-5.jpg",
   },
   "minas-de-wanda-misiones": {
     nombre: "Minas de Wanda",
@@ -159,6 +166,7 @@ export const establecimientosProductivos = {
     sector: "mineria",
     localidad: "Colonia Wanda",
     provincia: "Misiones",
+    imagenPortada: "tpa-web/provincias/misiones/misiones-ciudad-6.jpg",
   },
   "yacimiento-ypf-las-heras-santa-cruz": {
     nombre: "Yacimiento YPF (Las Heras)",
@@ -215,6 +223,7 @@ export const establecimientosProductivos = {
     sector: "artesanal",
     localidad: "Belén",
     provincia: "Catamarca",
+    imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-5.jpg",
   },
   "cooperativa-aranitas-hilanderas-belen-catamarca": {
     nombre: "Cooperativa de las Arañitas Hilanderas",
@@ -223,6 +232,7 @@ export const establecimientosProductivos = {
     sector: "artesanal",
     localidad: "Belén",
     provincia: "Catamarca",
+    imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-26.jpg",
   },
   "cooperativa-arrocera-san-salvador-entre-rios": {
     nombre: "Cooperativa Arrocera de San Salvador Ltda.",

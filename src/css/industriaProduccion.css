@@ -1,0 +1,771 @@
+/* Industria y Producción (IndustriaProduccion + componentes Produccion*).
+ *
+ * Identidad propia dentro de TPA: encabezado editorial alineado a la
+ * izquierda (no la imagen-título de Discursos ni las cards de
+ * Provincias), listado foto + texto separado por filetes finos, sin
+ * bordes ni sombras de card. Mismos colores (#0037a0, grises #4e4e4e /
+ * #838383), tipografías Raleway y botones outline de radio 5px que el
+ * resto del sitio. Breakpoints habituales: 1024 / 767 / 480. */
+
+.industria-produccion {
+  --produccion-azul: #0037a0;
+  --produccion-azul-claro: #e8eef9;
+  --produccion-texto: #4e4e4e;
+  --produccion-texto-suave: #838383;
+  --produccion-filete: #e0e0e0;
+  padding-bottom: 8rem;
+}
+
+/* ---------- Encabezado ---------- */
+
+.produccion-encabezado {
+  padding: 6rem 0 5rem;
+}
+
+.produccion-kicker {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--produccion-azul);
+  margin-bottom: 1.2rem;
+}
+
+.produccion-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 5.6rem;
+  line-height: 1.05;
+  color: #000000;
+  margin-bottom: 2rem;
+  padding-left: 2.4rem;
+  border-left: 6px solid var(--produccion-azul);
+}
+
+.produccion-intro {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 2rem;
+  line-height: 1.55;
+  color: var(--produccion-texto);
+  max-width: 720px;
+  margin-bottom: 4.5rem;
+}
+
+.produccion-cifras {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+.produccion-cifra {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.4rem 2.4rem 0 0;
+}
+
+.produccion-cifra + .produccion-cifra {
+  padding-left: 2.4rem;
+  border-left: 1px solid var(--produccion-filete);
+}
+
+.produccion-cifra dt {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.produccion-cifra dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.produccion-cifra-valor {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--produccion-azul);
+}
+
+.produccion-cifra-nota {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.35rem;
+  color: var(--produccion-texto-suave);
+}
+
+/* ---------- Bloques ---------- */
+
+.produccion-bloque {
+  padding: 6rem 0;
+  scroll-margin-top: 1rem;
+}
+
+.produccion-bloque-sectores,
+.produccion-bloque-agenda {
+  background-color: #f8f9fa;
+}
+
+.produccion-bloque-encabezado {
+  margin-bottom: 3.5rem;
+}
+
+.produccion-bloque-encabezado h2 {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 0.8rem;
+}
+
+.produccion-bloque-encabezado p {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: var(--produccion-texto);
+  max-width: 680px;
+  margin: 0;
+}
+
+/* ---------- Botones y enlaces (mismo criterio que .filtro-btn /
+   .victoria-presentacion-cta) ---------- */
+
+.produccion-boton {
+  display: inline-block;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-azul);
+  background-color: #ffffff;
+  padding: 0.9rem 2.2rem;
+  border: 2px solid var(--produccion-azul);
+  border-radius: 5px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.produccion-boton:hover:not(:disabled),
+.produccion-boton:focus-visible {
+  background-color: var(--produccion-azul);
+  color: #ffffff;
+}
+
+.produccion-boton:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.produccion-boton-secundario {
+  font-family: "raleway-semibold", sans-serif;
+  border-width: 1px;
+}
+
+.produccion-enlace {
+  display: inline-block;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.5rem;
+  color: var(--produccion-azul);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.produccion-enlace:hover,
+.produccion-enlace:focus-visible {
+  color: var(--produccion-azul);
+  border-bottom-color: var(--produccion-azul);
+}
+
+.industria-produccion button:focus-visible,
+.industria-produccion a:focus-visible,
+.industria-produccion select:focus-visible,
+.industria-produccion input:focus-visible {
+  outline: 3px solid rgba(0, 55, 160, 0.45);
+  outline-offset: 2px;
+}
+
+/* ---------- Gráfico por sector ---------- */
+
+.produccion-sectores-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-sector-fila {
+  display: grid;
+  grid-template-columns: minmax(16rem, 30rem) 1fr 15rem;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1.1rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.produccion-sector-fila:hover {
+  background-color: var(--produccion-azul-claro);
+}
+
+.produccion-sector-fila.activo {
+  background-color: var(--produccion-azul-claro);
+  box-shadow: inset 4px 0 0 var(--produccion-azul);
+}
+
+.produccion-sector-fila.atenuado {
+  opacity: 0.55;
+}
+
+.produccion-sector-nombre {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.produccion-sector-barra {
+  display: block;
+  height: 1.4rem;
+  background-color: var(--produccion-filete);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.produccion-sector-barra-relleno {
+  display: block;
+  height: 100%;
+  background-color: var(--produccion-azul);
+  border-radius: 2px;
+}
+
+.produccion-sector-valor {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.produccion-sector-valor strong {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.8rem;
+  color: var(--produccion-azul);
+}
+
+.produccion-sector-valor span {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.25rem;
+  color: var(--produccion-texto-suave);
+}
+
+.produccion-sectores-nota {
+  margin: 2rem 0 0;
+  padding-left: 1.2rem;
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.3rem;
+  color: var(--produccion-texto-suave);
+}
+
+/* ---------- Explorador ---------- */
+
+.produccion-filtros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr auto;
+  align-items: end;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.produccion-filtro label {
+  display: block;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 0.6rem;
+}
+
+.produccion-filtro .form-select,
+.produccion-filtro .form-control {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  border-radius: 5px;
+}
+
+.produccion-resultados {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-texto-suave);
+  margin: 0 0 1rem;
+}
+
+.produccion-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-item {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 4rem;
+  align-items: center;
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+.produccion-item:first-child {
+  border-top: none;
+}
+
+/* Ritmo editorial: en escritorio la foto alterna de lado. */
+@media (min-width: 1025px) {
+  .produccion-item:nth-child(even) {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  }
+
+  .produccion-item:nth-child(even) .produccion-item-foto {
+    order: 2;
+  }
+}
+
+.produccion-item-meta {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--produccion-azul);
+  margin-bottom: 0.8rem;
+}
+
+.produccion-item-nombre {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  line-height: 1.15;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.produccion-item-rubro {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--produccion-texto);
+  margin-bottom: 0.6rem;
+}
+
+.produccion-item-detalle {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-texto-suave);
+  margin-bottom: 1.8rem;
+}
+
+.produccion-item-visitas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-item-visitas li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1.6rem;
+  padding: 0.6rem 0;
+}
+
+.produccion-item-visitas li + li {
+  border-top: 1px dashed var(--produccion-filete);
+}
+
+.produccion-item-visita-dato {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-texto);
+}
+
+.produccion-sin-resultados {
+  padding: 4rem 0;
+  text-align: center;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+.produccion-sin-resultados p {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: var(--produccion-texto);
+  margin-bottom: 1.6rem;
+}
+
+.produccion-mas {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+/* ---------- Fotos (compartido por explorador y agenda) ---------- */
+
+.produccion-foto {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: var(--produccion-filete);
+}
+
+.produccion-foto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Sin foto propia: recurso neutro (azul institucional muy claro + logo),
+   nunca una imagen de otra actividad. */
+.produccion-foto-vacia {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  background: linear-gradient(135deg, #eef2f9 0%, #dde5f3 100%);
+}
+
+.produccion-foto-vacia img {
+  width: 34%;
+  max-width: 160px;
+  opacity: 0.22;
+}
+
+.produccion-foto-vacia span {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.25rem;
+  color: var(--produccion-texto-suave);
+}
+
+/* ---------- Agenda productiva ---------- */
+
+.produccion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.produccion-chip {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-azul);
+  background-color: #ffffff;
+  border: 1px solid var(--produccion-azul);
+  border-radius: 5px;
+  padding: 0.6rem 1.4rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.produccion-chip:hover,
+.produccion-chip.activo {
+  background-color: var(--produccion-azul);
+  color: #ffffff;
+}
+
+.produccion-chip.activo {
+  font-family: "raleway-semibold", sans-serif;
+}
+
+.produccion-chip-cantidad {
+  margin-left: 0.3rem;
+  opacity: 0.75;
+}
+
+.produccion-agenda-anio {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 2rem;
+  padding-top: 2.5rem;
+  border-top: 2px solid #000000;
+}
+
+.produccion-agenda-anio + .produccion-agenda-anio {
+  margin-top: 3rem;
+}
+
+.produccion-agenda-anio-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--produccion-azul);
+  margin: 0;
+}
+
+.produccion-agenda-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-agenda-item {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 2.4rem;
+  align-items: start;
+  padding: 0 0 2.5rem;
+}
+
+.produccion-agenda-item + .produccion-agenda-item {
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+.produccion-agenda-categoria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--produccion-azul);
+  margin-bottom: 0.6rem;
+}
+
+.produccion-agenda-fecha {
+  margin-left: auto;
+  font-family: "raleway-regular", sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1.35rem;
+  color: var(--produccion-texto-suave);
+}
+
+.produccion-agenda-nombre {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 0.6rem;
+}
+
+.produccion-agenda-detalle,
+.produccion-agenda-entidades {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.5rem;
+  color: var(--produccion-texto);
+  margin-bottom: 0.4rem;
+}
+
+.produccion-agenda-entidades {
+  font-size: 1.35rem;
+  color: var(--produccion-texto-suave);
+}
+
+.produccion-agenda-texto .produccion-enlace {
+  margin-top: 0.8rem;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .produccion-titulo {
+    font-size: 4.6rem;
+  }
+
+  .produccion-cifra-valor {
+    font-size: 4.2rem;
+  }
+
+  .produccion-sector-fila {
+    grid-template-columns: minmax(14rem, 22rem) 1fr 13rem;
+    gap: 1.4rem;
+  }
+
+  .produccion-filtros {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .produccion-filtros .produccion-boton {
+    justify-self: start;
+  }
+
+  .produccion-item {
+    gap: 3rem;
+  }
+
+  .produccion-item-nombre {
+    font-size: 2.6rem;
+  }
+
+  .produccion-agenda-anio {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}
+
+/* ---------- Celular ---------- */
+
+@media (max-width: 767px) {
+  .industria-produccion {
+    padding-bottom: 5rem;
+  }
+
+  .produccion-encabezado {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .produccion-titulo {
+    font-size: 3.6rem;
+    padding-left: 1.6rem;
+    border-left-width: 5px;
+  }
+
+  .produccion-intro {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+
+  .produccion-cifras {
+    grid-template-columns: 1fr;
+  }
+
+  .produccion-cifra,
+  .produccion-cifra + .produccion-cifra {
+    padding: 1.8rem 0;
+    border-left: none;
+    border-bottom: 1px solid var(--produccion-filete);
+  }
+
+  .produccion-cifra-valor {
+    font-size: 4rem;
+  }
+
+  .produccion-bloque {
+    padding: 4.5rem 0;
+  }
+
+  .produccion-bloque-encabezado h2 {
+    font-size: 2.4rem;
+  }
+
+  .produccion-bloque-encabezado p {
+    font-size: 1.5rem;
+  }
+
+  /* Gráfico: nombre y valor arriba, barra completa abajo. */
+  .produccion-sector-fila {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "nombre valor"
+      "barra barra";
+    gap: 0.8rem 1.2rem;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .produccion-sector-nombre {
+    grid-area: nombre;
+    font-size: 1.5rem;
+  }
+
+  .produccion-sector-barra {
+    grid-area: barra;
+    height: 1rem;
+  }
+
+  .produccion-sector-valor {
+    grid-area: valor;
+    align-items: flex-end;
+  }
+
+  .produccion-sector-valor strong {
+    font-size: 1.6rem;
+  }
+
+  .produccion-filtros {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .produccion-filtros .produccion-boton {
+    justify-self: start;
+  }
+
+  /* Listado: foto arriba, texto y enlace debajo. */
+  .produccion-item {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 3rem 0;
+  }
+
+  .produccion-item .produccion-foto {
+    aspect-ratio: 16 / 10;
+  }
+
+  .produccion-item-nombre {
+    font-size: 2.4rem;
+  }
+
+  .produccion-item-rubro {
+    font-size: 1.6rem;
+  }
+
+  .produccion-item-visitas li {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .produccion-enlace {
+    padding: 0.4rem 0;
+  }
+
+  .produccion-agenda-anio {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .produccion-agenda-anio-titulo {
+    font-size: 2.6rem;
+  }
+
+  .produccion-agenda-item {
+    grid-template-columns: 11rem 1fr;
+    gap: 1.6rem;
+  }
+
+  .produccion-agenda-nombre {
+    font-size: 1.9rem;
+  }
+
+  .produccion-agenda-fecha {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .produccion-titulo {
+    font-size: 3.2rem;
+  }
+
+  .produccion-intro {
+    font-size: 1.6rem;
+  }
+
+  .produccion-agenda-item {
+    grid-template-columns: 1fr;
+  }
+
+  .produccion-agenda-item .produccion-foto {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .industria-produccion * {
+    transition: none !important;
+  }
+}

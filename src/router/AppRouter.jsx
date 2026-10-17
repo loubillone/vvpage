@@ -24,6 +24,7 @@ import ProvinciaDetalle from "../pages/ProvinciaDetalle";
 import VisitaDetalle from "../pages/VisitaDetalle";
 import Discursos from "../pages/Discursos";
 import DiscursoDetalle from "../pages/DiscursoDetalle";
+import IndustriaProduccion from "../pages/IndustriaProduccion";
 import ScrollToTop from "../components/ScrollToTop";
 import AnalyticsTracker from "../components/AnalyticsTracker";
 import CookieBanner from "../components/CookieBanner";
@@ -89,6 +90,8 @@ const AppContent = () => {
           path="/provincia/:slug/:visitaSlug"
           element={<RedirectVisitaLegacy />}
         />
+        {/* Provisional: en revisión de diseño, sin acceso desde el menú. */}
+        <Route path="/industria-produccion" element={<IndustriaProduccion />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/privacidad" element={<Privacidad />} />
       </Routes>

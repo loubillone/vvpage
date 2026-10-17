@@ -1,0 +1,32 @@
+/* PROVISIONAL (ver AccesoProduccionHome.jsx). Va entre Últimas visitas y
+   el Mapa, uniones que hoy tienen margin 0 (ver homeRitmo.css): solo
+   agrega su propio aire y no altera el espacio de las demás secciones.
+   Mismo botón outline que .victoria-presentacion-cta. */
+.acceso-produccion-home {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.acceso-produccion-home-cta {
+  display: inline-block;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.3rem;
+  color: #0037a0;
+  text-decoration: none;
+  padding: 0.9rem 2.2rem;
+  border: 2px solid #0037a0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.acceso-produccion-home-cta:hover,
+.acceso-produccion-home-cta:focus-visible {
+  background-color: #0037a0;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .acceso-produccion-home-cta {
+    transition: none;
+  }
+}

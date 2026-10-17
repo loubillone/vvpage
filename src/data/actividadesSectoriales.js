@@ -63,6 +63,7 @@ export const actividadesSectoriales = {
     sector: "energia",
     localidad: "Neuquén",
     provincia: "Neuquén",
+    imagenPortada: "tpa-web/provincias/neuquen/neuquen-ciudad-2.jpg",
   },
   fecene: {
     nombre: "Federación de Cámaras del Sector Energético de Neuquén (FECENE)",
@@ -70,6 +71,7 @@ export const actividadesSectoriales = {
     sector: "energia",
     localidad: "Neuquén",
     provincia: "Neuquén",
+    imagenPortada: "tpa-web/provincias/neuquen/neuquen-ciudad-10.jpg",
   },
   "zona-nucleo-oil-gas-anelo": {
     nombre: "Zona núcleo de Oil & Gas de Añelo",
@@ -77,6 +79,7 @@ export const actividadesSectoriales = {
     sector: "energia",
     localidad: "Añelo",
     provincia: "Neuquén",
+    imagenPortada: "tpa-web/provincias/neuquen/neuquen-ciudad-14.jpg",
   },
   "encuentro-empresarios-bariloche-2024": {
     nombre: "Encuentro con empresarios de Bariloche",
@@ -119,6 +122,7 @@ export const actividadesSectoriales = {
     localidad: "Dos Acequias, San Martín",
     provincia: "San Juan",
     entidades: ["INTA"],
+    imagenPortada: "tpa-web/provincias/san-juan/inta/sanjuan-inta-4.jpg",
   },
   "expovenado-2026": {
     nombre: "90ª ExpoVenado",
