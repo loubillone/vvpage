@@ -1,0 +1,131 @@
+// Catálogo central de actividades sectoriales: exposiciones, ferias,
+// cámaras empresariales, entidades, organismos, encuentros y recorridas
+// productivas vinculadas con las visitas provinciales.
+//
+// Mismo criterio que establecimientosProductivos.js: cada actividad existe
+// una sola vez acá, indexada por un id estable, y las visitas/actividades
+// de visitasProvincias.jsx solo guardan la referencia en su propio campo
+// `actividadesSectoriales`. Una entidad permanente (ej. COVIAR) puede
+// estar referenciada desde más de una visita con el mismo id.
+//
+// Acá NO se guardan fechas, descripciones, galerías ni URLs: se obtienen
+// siempre de la visita que referencia a la actividad.
+//
+// Convención de ids: los eventos con edición anual llevan el año
+// (exposicion-rural-chivilcoy-2026); las entidades permanentes, no (coviar).
+//
+// `categoria` y `sector` solo admiten las claves definidas en
+// sectoresProductivos.js (CATEGORIAS_SECTORIALES y SECTORES).
+// Opcionales: `entidades` (organizaciones mencionadas en la visita) e
+// `imagenPortada` (public ID de Cloudinary).
+export const actividadesSectoriales = {
+  "centro-formacion-rural-las-margaritas": {
+    nombre: 'Centro de Formación Rural "Las Margaritas"',
+    categoria: "formacion",
+    sector: "produccion-primaria",
+    localidad: "Saladillo",
+    provincia: "Buenos Aires",
+    entidades: ["Fundación Marzano"],
+  },
+  "exposicion-rural-chivilcoy-2026": {
+    nombre: "74ª Exposición Rural de Chivilcoy",
+    categoria: "exposicion",
+    sector: "multisectorial",
+    localidad: "Chivilcoy",
+    provincia: "Buenos Aires",
+    entidades: ["Asociación Rural de Chivilcoy"],
+  },
+  "fiesta-nacional-poncho-2024": {
+    nombre: "Fiesta Nacional e Internacional del Poncho",
+    categoria: "feria",
+    sector: "artesanal",
+    localidad: "San Fernando del Valle de Catamarca",
+    provincia: "Catamarca",
+  },
+  "fiesta-nacional-arroz-2024": {
+    nombre: "XVII Fiesta Nacional del Arroz",
+    categoria: "exposicion",
+    sector: "agroindustria",
+    localidad: "San Salvador",
+    provincia: "Entre Ríos",
+    entidades: ["Federación Agraria Argentina"],
+  },
+  coviar: {
+    nombre: "Corporación Vitivinícola Argentina (COVIAR)",
+    categoria: "entidad",
+    sector: "vitivinicola-olivicola",
+    localidad: "Mendoza",
+    provincia: "Mendoza",
+  },
+  "argentina-texas-summit-2024": {
+    nombre: "Argentina-Texas Summit 2024",
+    categoria: "encuentro",
+    sector: "energia",
+    localidad: "Neuquén",
+    provincia: "Neuquén",
+  },
+  fecene: {
+    nombre: "Federación de Cámaras del Sector Energético de Neuquén (FECENE)",
+    categoria: "camara",
+    sector: "energia",
+    localidad: "Neuquén",
+    provincia: "Neuquén",
+  },
+  "zona-nucleo-oil-gas-anelo": {
+    nombre: "Zona núcleo de Oil & Gas de Añelo",
+    categoria: "recorrida",
+    sector: "energia",
+    localidad: "Añelo",
+    provincia: "Neuquén",
+  },
+  "encuentro-empresarios-bariloche-2024": {
+    nombre: "Encuentro con empresarios de Bariloche",
+    categoria: "encuentro",
+    sector: "multisectorial",
+    localidad: "San Carlos de Bariloche",
+    provincia: "Río Negro",
+  },
+  "exposicion-rural-salta-2024": {
+    nombre: "80ª Exposición Rural de Salta",
+    categoria: "exposicion",
+    sector: "produccion-primaria",
+    localidad: "Ciudad de Salta",
+    provincia: "Salta",
+    entidades: ["Sociedad Rural de Salta"],
+  },
+  "argoliva-2026": {
+    nombre: "ArgOliva 2026",
+    categoria: "encuentro",
+    sector: "vitivinicola-olivicola",
+    localidad: "No especificada",
+    provincia: "San Juan",
+    entidades: [
+      "Centro de Referencia en Evaluación Sensorial de Aceite de Oliva y otros Alimentos (CRESA)",
+      "Universidad Católica de Cuyo",
+    ],
+  },
+  caprimsa: {
+    nombre:
+      "Cámara de Proveedores Interdepartamentales Mineros de San Juan (CAPRIMSA)",
+    categoria: "camara",
+    sector: "mineria",
+    localidad: "Las Tapias, Albardón",
+    provincia: "San Juan",
+  },
+  "inta-campo-san-martin": {
+    nombre: "Campo San Martín del INTA",
+    categoria: "organismo",
+    sector: "vitivinicola-olivicola",
+    localidad: "Dos Acequias, San Martín",
+    provincia: "San Juan",
+    entidades: ["INTA"],
+  },
+  "expovenado-2026": {
+    nombre: "90ª ExpoVenado",
+    categoria: "exposicion",
+    sector: "multisectorial",
+    localidad: "Venado Tuerto",
+    provincia: "Santa Fe",
+    entidades: ["Sociedad Rural de Venado Tuerto"],
+  },
+};

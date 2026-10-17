@@ -416,6 +416,7 @@ export const visitasProvincias = {
         ],
         lugar: "Saladillo",
         establecimientosVisitados: ["frigorifico-el-regional-saladillo"],
+        actividadesSectoriales: ["centro-formacion-rural-las-margaritas"],
       },
 
       {
@@ -899,6 +900,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-17.jpg",
           "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-18.jpg",
         ],
+        actividadesSectoriales: ["exposicion-rural-chivilcoy-2026"],
       },
 
       {
@@ -1789,6 +1791,7 @@ export const visitasProvincias = {
         ],
         lugar: "Jujuy - Salta",
         establecimientosVisitados: ["finca-campo-alegre-san-pedro-jujuy"],
+        actividadesSectoriales: ["exposicion-rural-salta-2024"],
       },
       {
         titulo: "Procesión del Señor y la Virgen del Milagro",
@@ -2218,6 +2221,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/catamarca/fiesta-del-poncho/catamarca-poncho-4",
         ],
         lugar: "San Fernando del Valle de Catamarca",
+        actividadesSectoriales: ["fiesta-nacional-poncho-2024"],
       },
       {
         titulo: "Cuna del Poncho en Belén",
@@ -2381,6 +2385,7 @@ export const visitasProvincias = {
         ],
         lugar: "Ciudad de Mendoza",
         establecimientosVisitados: ["bodega-catena-zapata-mendoza"],
+        actividadesSectoriales: ["coviar"],
       },
       {
         titulo: "Vendimia 2026",
@@ -2463,6 +2468,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-3",
               "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-4",
             ],
+            actividadesSectoriales: ["coviar"],
           },
           {
             titulo: "Recorrida por fincas productivas",
@@ -2754,6 +2760,7 @@ export const visitasProvincias = {
         ],
         lugar: "San Salvador – Paraná",
         establecimientosVisitados: ["cooperativa-arrocera-san-salvador-entre-rios"],
+        actividadesSectoriales: ["fiesta-nacional-arroz-2024"],
       },
     ],
   },
@@ -3234,6 +3241,11 @@ export const visitasProvincias = {
         ],
         lugar: "Ciudad de Neuquén – Añelo",
         establecimientosVisitados: ["bodega-malma-neuquen"],
+        actividadesSectoriales: [
+          "argentina-texas-summit-2024",
+          "fecene",
+          "zona-nucleo-oil-gas-anelo",
+        ],
       },
     ],
   },
@@ -3313,6 +3325,7 @@ export const visitasProvincias = {
         ],
         lugar: "San Carlos de Bariloche",
         establecimientosVisitados: ["invap-bariloche-rio-negro"],
+        actividadesSectoriales: ["encuentro-empresarios-bariloche-2024"],
       },
     ],
   },
@@ -3672,6 +3685,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-33",
               "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-35",
             ],
+            actividadesSectoriales: ["expovenado-2026"],
           },
         ],
       },
@@ -4294,6 +4308,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/san-juan/ArgOliva/sanjuan-argoliva-2.jpg",
               "tpa-web/provincias/san-juan/ArgOliva/sanjuan-argoliva-3.jpg",
             ],
+            actividadesSectoriales: ["argoliva-2026"],
           },
 
           {
@@ -4325,6 +4340,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/san-juan/camara-mineros/sanjuan-mineros-2.jpg",
               "tpa-web/provincias/san-juan/camara-mineros/sanjuan-mineros-3.jpg",
             ],
+            actividadesSectoriales: ["caprimsa"],
           },
 
           {
@@ -4455,6 +4471,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/san-juan/inta/sanjuan-inta-4.jpg",
               "tpa-web/provincias/san-juan/inta/sanjuan-inta-5.jpg",
             ],
+            actividadesSectoriales: ["inta-campo-san-martin"],
           },
         ],
       },
