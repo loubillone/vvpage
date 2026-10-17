@@ -4342,81 +4342,138 @@ export const visitasProvincias = {
         imagenPortada:
           "tpa-web/provincias/corrientes/saladas/corrientes-saladas-1",
         fecha: "Agosto de 2025",
-        descripcion: (
-          <>
-            <p>
-              En 2025, la vicepresidente Victoria Villarruel visitó nuevamente
-              la provincia de Corrientes, participando en la{" "}
-              <span className="vv-estilo-detalle">
-                recepción de los restos del sargento Juan Bautista Cabral en la
-                localidad de Saladas.
-              </span>
-            </p>
+        lugar: "Corrientes Capital – Saladas",
+        actividades: [
+          {
+            titulo: "Recorrido institucional y visita a las obras de La Unidad",
+            descripcion: (
+              <>
+                <p>
+                  El 2 de agosto de 2025, la vicepresidente Victoria Villarruel
+                  visitó nuevamente la provincia de Corrientes. En la capital
+                  provincial{" "}
+                  <span className="vv-estilo-detalle">
+                    fue recibida por el gobernador Gustavo Valdés en la Casa de
+                    Gobierno,
+                  </span>{" "}
+                  donde ambos mantuvieron una reunión institucional.
+                </p>
 
-            <p>
-              La ceremonia tuvo un fuerte contenido histórico e
-              institucional,{" "}
-              <span className="vv-estilo-detalle">
-                honrando la memoria de quien salvó la vida del general José de
-                San Martín
-              </span>{" "}
-              durante la primera victoria de los Granaderos a Caballo en la
-              lucha por la independencia. Durante su discurso, Villarruel
-              expresó:{" "}
-            </p>
-            <blockquote className="cita">
-              "Cabral nos recuerda que la patria se hace con actos de grandeza
-              silenciosos y sacrificios cotidianos… Para los que tenemos el
-              privilegio de servir a nuestro pueblo, la entrega del sargento
-              Cabral es un llamado a poner lo mejor de nosotros, con coraje y
-              sin esperar recompensa."
-            </blockquote>
-            <p>
-              La agenda de la visita incluyó un recorrido por la{" "}
-              <span className="vv-estilo-detalle">
-                Casa de Gobierno de Corrientes, la Iglesia de Nuestra Señora de
-                la Merced, la plaza 25 de Mayo, el paseo costero y el proyecto
-                La Unión,
-              </span>{" "}
-              un espacio en refuncionalización que albergará un centro
-              científico, museo y polo gastronómico.
-            </p>
+                <p>
+                  La agenda continuó con un recorrido por la{" "}
+                  <span className="vv-estilo-detalle">
+                    plaza 25 de Mayo, la Iglesia de Nuestra Señora de la Merced
+                    y el paseo costero.
+                  </span>
+                </p>
 
-            <p>
-              Posteriormente, Villarruel se trasladó a Saladas, donde{" "}
-              <span className="vv-estilo-detalle">
-                participó del acto oficial en la Plaza Cabral y del desfile
-                cívico-militar,{" "}
-              </span>
-              recibiendo a los restos del sargento Cabral con la presencia de
-              autoridades locales y vecinos, incluidos decenas de niños con
-              uniforme de Granaderos.
-            </p>
+                <p>
+                  También incluyó una visita a las obras de{" "}
+                  <span className="vv-estilo-detalle">La Unidad,</span> un
+                  proyecto de recuperación y refuncionalización de la antigua
+                  Unidad Penal N.º 1 de Corrientes. El complejo estaba siendo
+                  transformado para albergar espacios culturales, científicos,
+                  tecnológicos, comerciales y gastronómicos, entre ellos un
+                  centro científico, un museo y un polo gastronómico,
+                  preservando parte del patrimonio arquitectónico e histórico
+                  del edificio.
+                </p>
 
-            <p>
-              Esta visita marcó un momento histórico para Saladas, que
-              por primera vez recibió la visita de un vicepresidente, y{" "}
-              <span className="vv-estilo-detalle">
-                reafirmó el compromiso de Villarruel con la memoria histórica,
-                el federalismo y la identidad nacional.
-              </span>
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-1",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-2",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-3",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-4",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-5",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-6",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-7",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-8",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-9",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-10",
-          "tpa-web/provincias/corrientes/saladas/corrientes-saladas-11",
+                <p>
+                  Durante el recorrido, Villarruel conoció este proyecto, que en
+                  agosto de 2025 todavía se encontraba en desarrollo.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-12.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-6.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-5.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-13.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-14.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-4.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-19.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-20.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-21.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-22.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-7.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-8.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-24.jpg",
+            ],
+          },
+          {
+            titulo: "Homenaje al sargento Juan Bautista Cabral en Saladas",
+            descripcion: (
+              <>
+                <p>
+                  Posteriormente, la comitiva se trasladó a la localidad de
+                  Saladas, donde Villarruel participó en la{" "}
+                  <span className="vv-estilo-detalle">
+                    ceremonia de homenaje al sargento Juan Bautista Cabral,
+                  </span>{" "}
+                  héroe del Combate de San Lorenzo de 1813.
+                </p>
+
+                <p>
+                  La ceremonia tuvo un fuerte contenido histórico e
+                  institucional,{" "}
+                  <span className="vv-estilo-detalle">
+                    honrando la memoria de quien salvó la vida del general José
+                    de San Martín
+                  </span>{" "}
+                  durante la primera victoria de los Granaderos a Caballo en la
+                  lucha por la independencia.
+                </p>
+
+                <p>
+                  Durante la jornada se realizó la recepción simbólica de una
+                  fracción de restos provenientes del osario común de los
+                  granaderos caídos en aquel combate, que quedó de forma
+                  permanente en Saladas, tierra natal de Cabral.
+                </p>
+
+                <p>
+                  Junto al gobernador Gustavo Valdés y al intendente Noel Gómez,
+                  la vicepresidente participó de la inauguración de las
+                  refacciones del Museo Histórico «Juan Bautista Cabral»,{" "}
+                  <span className="vv-estilo-detalle">
+                    del acto oficial en la Plaza Cabral y del desfile
+                    cívico-militar,{" "}
+                  </span>
+                  con la presencia de autoridades locales y vecinos, incluidos
+                  decenas de niños con uniforme de Granaderos. Durante su
+                  discurso, Villarruel expresó:{" "}
+                </p>
+                <blockquote className="cita">
+                  "Cabral nos recuerda que la patria se hace con actos de
+                  grandeza silenciosos y sacrificios cotidianos… Para los que
+                  tenemos el privilegio de servir a nuestro pueblo, la entrega
+                  del sargento Cabral es un llamado a poner lo mejor de
+                  nosotros, con coraje y sin esperar recompensa."
+                </blockquote>
+
+                <p>
+                  Esta visita marcó un momento histórico para Saladas, que por
+                  primera vez recibió la visita de un vicepresidente, y{" "}
+                  <span className="vv-estilo-detalle">
+                    reafirmó el compromiso de Villarruel con la memoria
+                    histórica, el federalismo y la identidad nacional.
+                  </span>
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-1.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-2.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-16.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-17.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-10.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-11.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-9.jpg",
+              "tpa-web/provincias/corrientes/saladas/corrientes-saladas-3.jpg",
+            ],
+          },
         ],
-        lugar: "Saladas",
       },
     ],
   },
