@@ -245,6 +245,7 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "San Salvador",
     provincia: "Entre Ríos",
+    imagenPortada: "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-5.jpg",
   },
   "invap-bariloche-rio-negro": {
     nombre: "INVAP",

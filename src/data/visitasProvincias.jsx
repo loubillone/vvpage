@@ -2663,74 +2663,205 @@ export const visitasProvincias = {
       {
         titulo: "Vendimia 2024",
         slug: "vendimia-2024",
-        fechaISO: "2024-03-03",
+        fechaISO: "2024-03-02",
         precisionFecha: "dia",
         imagenPortada:
           "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-1",
         fecha: "Marzo de 2024",
-        descripcion: (
-          <>
-            <p>
-              El 3 de marzo de 2024, la vicepresidente{" "}
-              <span className="vv-estilo-detalle">
-                Victoria Villarruel visitó la provincia de Mendoza para
-                participar en los actos oficiales de la Fiesta Nacional de la
-                Vendimia,
-              </span>{" "}
-              una de las celebraciones más emblemáticas del país.
-            </p>
+        lugar: "Ciudad de Mendoza – Godoy Cruz – Luján de Cuyo",
+        actividades: [
+          {
+            titulo: "Desayuno anual de COVIAR",
+            descripcion: (
+              <>
+                <p>
+                  El 2 de marzo de 2024, la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel participó del tradicional desayuno anual
+                    de la Corporación Vitivinícola Argentina (COVIAR),
+                  </span>{" "}
+                  celebrado en el marco de la Fiesta Nacional de la Vendimia,
+                  en Mendoza.
+                </p>
 
-            <p>
-              Durante su estadía,{" "}
-              <span className="vv-estilo-detalle">
-                asistió al tradicional desayuno de la Corporación Vitivinícola
-                Argentina (COVIAR),
-              </span>{" "}
-              donde destacó la importancia de articular esfuerzos entre el
-              sector público y el privado para impulsar el desarrollo nacional.
-              En su discurso, definió a Mendoza como "la provincia de la
-              libertad", en alusión a su rol histórico en el Cruce de los Andes
-              y en la gesta de la Independencia argentina.
-            </p>
+                <p>
+                  El encuentro reunió a autoridades nacionales, provinciales y
+                  representantes de la cadena vitivinícola para abordar la
+                  situación del sector, sus desafíos productivos y las
+                  oportunidades de desarrollo de una de las principales
+                  economías regionales argentinas.
+                </p>
 
-            <p>
-              Villarruel también participó del Carrusel Vendimial, donde saludó
-              a los asistentes y compartió momentos con los vecinos, recibiendo
-              el afecto del público. El lunes 4 de marzo,{" "}
-              <span className="vv-estilo-detalle">
-                mantuvo una reunión en la Casa de Gobierno junto a la
-                vicegobernadora Hebe Casado y miembros del gabinete provincial.
-              </span>{" "}
-              Durante el encuentro, se abordaron temas estratégicos para
-              Mendoza, como infraestructura, rutas y pasos fronterizos, con el
-              objetivo de fortalecer la cooperación entre la provincia y la
-              Nación.
-            </p>
+                <p>
+                  Durante su intervención,{" "}
+                  <span className="vv-estilo-detalle">
+                    Villarruel destacó la importancia de la cooperación entre el
+                    sector público y el privado
+                  </span>{" "}
+                  para promover la producción, el trabajo y la generación de
+                  valor. También definió a Mendoza como "la provincia de la
+                  libertad", en referencia a su papel histórico en el Cruce de
+                  los Andes y la gesta de la Independencia.
+                </p>
 
-            <p>
-              Además,{" "}
-              <span className="vv-estilo-detalle">
-                visitó la Bodega Catena Zapata, reconocida a nivel internacional
-                por la excelencia de sus vinos, donde expresó su orgullo por el
-                trabajo y la proyección de la industria vitivinícola mendocina.
-              </span>{" "}
-              Esta visita combinó actividades protocolares, institucionales y
-              culturales, reafirmando el compromiso de Victoria Villarruel con
-              el desarrollo y la identidad productiva de Mendoza.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-1",
-          "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-2",
-          "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-3",
-          "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-4",
-          "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-5",
-          "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-6",
+                <p>
+                  Su participación formó parte de una agenda de encuentros
+                  institucionales y actividades vinculadas a la producción
+                  vitivinícola mendocina.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-2.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-3.jpg",
+            ],
+            actividadesSectoriales: ["coviar"],
+          },
+          {
+            titulo: "Carrusel Vendimial",
+            descripcion: (
+              <>
+                <p>
+                  Durante la jornada del 2 de marzo,{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel también participó del tradicional
+                    Carrusel Vendimial,
+                  </span>{" "}
+                  uno de los acontecimientos populares más representativos de
+                  la Fiesta Nacional de la Vendimia.
+                </p>
+
+                <p>
+                  Acompañada por la vicegobernadora Hebe Casado, presenció
+                  parte del desfile por las calles de la ciudad de Mendoza y se
+                  acercó al público que seguía el paso de los carros. El
+                  Carrusel reunió a los carros de los departamentos,
+                  agrupaciones tradicionalistas y colectividades de la
+                  provincia.
+                </p>
+
+                <p>
+                  La celebración permitió a la vicepresidente compartir
+                  momentos con los mendocinos en el marco de una festividad que
+                  reconoce la historia, las tradiciones y el trabajo vinculado a
+                  la vitivinicultura.
+                </p>
+
+                <p>
+                  Ese mismo día participó además del agasajo de Bodegas de
+                  Argentina en Godoy Cruz. Por la noche,{" "}
+                  <span className="vv-estilo-detalle">
+                    asistió al Acto Central de la Fiesta Nacional de la
+                    Vendimia,
+                  </span>{" "}
+                  realizado en el Teatro Griego Frank Romero Day, donde se
+                  presentó el espectáculo "Coronados de historia y futuro".
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-5.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-1.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-7.jpg",
+            ],
+          },
+          {
+            titulo: "Visita a Bodega Catena Zapata",
+            descripcion: (
+              <>
+                <p>
+                  El domingo 3 de marzo de 2024,{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel visitó la Bodega Catena Zapata,
+                  </span>{" "}
+                  uno de los establecimientos vitivinícolas mendocinos con
+                  mayor reconocimiento internacional por la excelencia de sus
+                  vinos.
+                </p>
+
+                <p>
+                  Durante la visita conoció el establecimiento, cuya actividad
+                  se encuentra vinculada a la elaboración de vinos argentinos y
+                  a la proyección internacional de la vitivinicultura de
+                  Mendoza.
+                </p>
+
+                <p>
+                  Tras su visita, la vicepresidente destacó públicamente a la
+                  bodega como "un orgullo de Mendoza y de la Argentina" y{" "}
+                  <span className="vv-estilo-detalle">
+                    expresó su orgullo por el trabajo y la proyección de la
+                    industria vitivinícola mendocina.
+                  </span>
+                </p>
+
+                <p>
+                  La actividad permitió incorporar a su agenda una visita
+                  directa a una empresa representativa del sector vitivinícola
+                  mendocino, en el marco de los festejos de la Vendimia. Ese
+                  mismo domingo, junto a la vicegobernadora Hebe Casado, saludó
+                  también a la reina y a la virreina nacionales de la Vendimia
+                  2024.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-4.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-6.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-8.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-9.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-10.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-11.jpg",
+            ],
+            establecimientosVisitados: ["bodega-catena-zapata-mendoza"],
+          },
+          {
+            titulo: "Memorial de la Bandera y encuentro institucional",
+            descripcion: (
+              <>
+                <p>
+                  El lunes 4 de marzo de 2024, Victoria Villarruel continuó su
+                  agenda en Mendoza con{" "}
+                  <span className="vv-estilo-detalle">
+                    una visita al Memorial de la Bandera del Ejército de los
+                    Andes,
+                  </span>{" "}
+                  un espacio histórico que resguarda uno de los símbolos más
+                  significativos de la gesta libertadora encabezada por el
+                  general José de San Martín.
+                </p>
+
+                <p>
+                  Durante la actividad estuvo acompañada por la vicegobernadora
+                  Hebe Casado y autoridades provinciales, en una jornada
+                  dedicada al reconocimiento de la historia y el patrimonio de
+                  Mendoza.
+                </p>
+
+                <p>
+                  Ese mismo día,{" "}
+                  <span className="vv-estilo-detalle">
+                    Villarruel mantuvo un encuentro institucional en la Casa de
+                    Gobierno provincial con Hebe Casado y miembros del gabinete
+                    mendocino.
+                  </span>
+                </p>
+
+                <p>
+                  Durante la reunión se abordaron inquietudes vinculadas a la
+                  infraestructura provincial, las rutas y los pasos
+                  fronterizos, entre otros asuntos relacionados con la
+                  articulación entre Mendoza y el Gobierno nacional.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-12.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-13.jpg",
+              "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-14.jpg",
+            ],
+          },
         ],
-        lugar: "Ciudad de Mendoza",
-        establecimientosVisitados: ["bodega-catena-zapata-mendoza"],
-        actividadesSectoriales: ["coviar"],
       },
       {
         titulo: "Vendimia 2026",
@@ -3144,61 +3275,164 @@ export const visitasProvincias = {
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-1",
         fecha: "Noviembre de 2024",
-        descripcion: (
-          <>
-            <p>
-              En noviembre de 2024, la vicepresidente{" "}
-              <span className="vv-estilo-detalle">
-                {" "}
-                Victoria Villarruel visitó la provincia de Entre Ríos para
-                participar en la XVII edición de la Fiesta Nacional del Arroz
-                (FNA),
-              </span>{" "}
-              realizada en la ciudad de San Salvador, epicentro de la cuenca
-              arrocera del país.
-            </p>
+        lugar: "San Salvador",
+        actividades: [
+          {
+            titulo: "XVII Fiesta Nacional del Arroz",
+            descripcion: (
+              <>
+                <p>
+                  El 16 de noviembre de 2024, la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel visitó la ciudad de San Salvador, Entre
+                    Ríos, para participar en la XVII Fiesta Nacional del Arroz
+                    (FNA),
+                  </span>{" "}
+                  celebrada del 15 al 17 de noviembre en una de las principales
+                  regiones arroceras del país.
+                </p>
 
-            <p>
-              Durante la jornada, Villarruel recorrió los stands de la
-              muestra agroindustrial, dialogó con expositores y productores, y
-              compartió momentos con el público que se acercó a disfrutar del
-              evento, símbolo del trabajo y la identidad entrerriana.
-            </p>
+                <p>
+                  Durante su visita fue recibida por el intendente Jorge Zambón
+                  y participó de un encuentro con la comisión organizadora del
+                  evento, con cuyos integrantes compartió un almuerzo.
+                </p>
 
-            <p>
-              <span className="vv-estilo-detalle">
-                La vicepresidente mantuvo además reuniones con la comisión
-                organizadora, con autoridades de la Federación Agraria Argentina
-                (FAA)
-              </span>
-              , y con representantes de la Cooperativa Arrocera de San Salvador
-              Ltda., donde también visitó sus instalaciones para conocer de
-              cerca los procesos productivos del sector.
-            </p>
+                <p>
+                  En reconocimiento a su presencia,{" "}
+                  <span className="vv-estilo-detalle">
+                    el municipio la distinguió como Visitante Ilustre de San
+                    Salvador,
+                  </span>{" "}
+                  mediante la entrega de un diploma por parte de la
+                  viceintendenta Daniela Casse.
+                </p>
 
-            <p>
-              <span className="vv-estilo-detalle">
-                El objetivo de su visita fue interiorizarse sobre la realidad de
-                los productores arroceros, escuchar sus inquietudes y fortalecer
-                el vínculo con una de las economías regionales más importantes
-                del litoral.
-              </span>{" "}
-              Esta participación reafirmó su compromiso con el federalismo
-              productivo y el desarrollo agroindustrial argentino, pilares
-              fundamentales para el crecimiento del país.
-            </p>
-          </>
-        ),
-        imagenes: [
-          "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-1",
-          "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-2",
-          "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-3",
-          "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-4",
-          "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-5",
+                <p>
+                  Villarruel también recorrió los stands de la exposición
+                  agroindustrial, dialogó con productores y expositores y
+                  compartió momentos con los visitantes que se acercaron al
+                  predio ferial.
+                </p>
+
+                <p>
+                  La Fiesta Nacional del Arroz reúne a representantes de la
+                  producción, la industria, el comercio y las instituciones de
+                  la región, y constituye una celebración de la identidad
+                  productiva de San Salvador, símbolo del trabajo y la identidad
+                  entrerriana.
+                </p>
+
+                <p>
+                  <span className="vv-estilo-detalle">
+                    El objetivo de su visita fue interiorizarse sobre la
+                    realidad de los productores arroceros, escuchar sus
+                    inquietudes y fortalecer el vínculo con una de las economías
+                    regionales más importantes del litoral.
+                  </span>{" "}
+                  Esta participación reafirmó su compromiso con el federalismo
+                  productivo y el desarrollo agroindustrial argentino, pilares
+                  fundamentales para el crecimiento del país.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-9.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-8.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-10.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-11.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-14.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-15.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-4.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-16.jpg",
+            ],
+            actividadesSectoriales: ["fiesta-nacional-arroz-2024"],
+          },
+          {
+            titulo: "Cooperativa Arrocera de San Salvador",
+            descripcion: (
+              <>
+                <p>
+                  Durante su agenda en San Salvador,{" "}
+                  <span className="vv-estilo-detalle">
+                    Victoria Villarruel visitó las instalaciones de la
+                    Cooperativa Arrocera de San Salvador Ltda.,
+                  </span>{" "}
+                  donde conoció el proceso productivo e industrial vinculado al
+                  arroz, una de las principales actividades económicas de la
+                  región.
+                </p>
+
+                <p>
+                  La cooperativa, integrada por productores arroceros, acopia,
+                  seca y acondiciona el cereal, lo industrializa y lo
+                  comercializa en el mercado interno y en el exterior,
+                  contribuyendo a la integración de los productores y al
+                  agregado de valor de la producción regional.
+                </p>
+
+                <p>
+                  Durante la recorrida, la vicepresidente mantuvo contacto con
+                  representantes de la entidad y se interiorizó sobre el
+                  funcionamiento del establecimiento y la realidad del sector
+                  arrocero.
+                </p>
+
+                <p>
+                  Esta actividad complementó su participación en la Fiesta
+                  Nacional del Arroz, permitiéndole conocer de cerca una de las
+                  organizaciones productivas de San Salvador.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-6.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-5.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-1.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-2.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-19.jpg",
+            ],
+            establecimientosVisitados: [
+              "cooperativa-arrocera-san-salvador-entre-rios",
+            ],
+          },
+          {
+            titulo: "Reunión con la Federación Agraria Argentina",
+            descripcion: (
+              <>
+                <p>
+                  En el marco de su participación en la XVII Fiesta Nacional
+                  del Arroz,{" "}
+                  <span className="vv-estilo-detalle">
+                    la vicepresidente Victoria Villarruel mantuvo una reunión
+                    con autoridades de la Federación Agraria Argentina (FAA),
+                  </span>{" "}
+                  encabezadas por su presidenta, Andrea Sarnari, y otros
+                  representantes del sector agropecuario.
+                </p>
+
+                <p>
+                  Durante el encuentro, los dirigentes expusieron distintas
+                  problemáticas que afectaban a los pequeños y medianos
+                  productores, especialmente las retenciones, el acceso al
+                  financiamiento, los seguros multirriesgo y las condiciones
+                  necesarias para el desarrollo de la actividad agropecuaria.
+                </p>
+
+                <p>
+                  La reunión permitió intercambiar perspectivas sobre la
+                  situación del campo y las economías regionales, con particular
+                  atención a las necesidades de los productores arroceros de
+                  Entre Ríos.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-12.jpg",
+              "tpa-web/provincias/entre-rios/entrerios-fiestaarroz-20.jpg",
+            ],
+          },
         ],
-        lugar: "San Salvador – Paraná",
-        establecimientosVisitados: ["cooperativa-arrocera-san-salvador-entre-rios"],
-        actividadesSectoriales: ["fiesta-nacional-arroz-2024"],
       },
     ],
   },
