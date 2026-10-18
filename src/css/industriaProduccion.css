@@ -19,7 +19,7 @@
 /* ---------- Encabezado ---------- */
 
 .produccion-encabezado {
-  padding: 6rem 0 5rem;
+  padding: 5rem 0 3rem;
 }
 
 .produccion-kicker {
@@ -47,54 +47,148 @@
   line-height: 1.55;
   color: var(--produccion-texto);
   max-width: 720px;
-  margin-bottom: 4.5rem;
+  margin-bottom: 0;
 }
 
-.produccion-cifras {
+/* ---------- Apartados (pestañas con forma de tarjeta) ----------
+   Bloque propio entre el encabezado y el contenido, separado por un
+   filete de 2px (como los años de la agenda). Las dos tarjetas pesan lo
+   mismo; el contador es el dato principal. La activa se marca con borde e
+   ícono azules y fondo azul claro. No son sticky: el Navegador ya lo es y
+   su altura varía por breakpoint. */
+
+.produccion-apartados {
+  padding: 0 0 3.5rem;
+}
+
+.produccion-apartados-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.4rem;
+  color: #000000;
+  padding-top: 2.4rem;
+  border-top: 2px solid #000000;
+  margin-bottom: 1.6rem;
+}
+
+.produccion-pestanias {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 0;
-  border-top: 1px solid var(--produccion-filete);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
 }
 
-.produccion-cifra {
+/* Escritorio y notebook: ícono | título y descripción | contador, con el
+   alto y el aire de la primera versión (no una barra fina). */
+.produccion-pestania {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "icono texto cantidad";
+  column-gap: 2.4rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 13rem;
+  padding: 2.4rem 2.8rem;
+  background-color: #ffffff;
+  border: 2px solid var(--produccion-filete);
+  border-radius: 5px;
+  text-align: left;
+  transition: border-color 0.2s ease, background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.produccion-pestania:hover {
+  border-color: var(--produccion-azul);
+  box-shadow: 0 4px 14px rgba(0, 55, 160, 0.08);
+}
+
+.produccion-pestania.activo {
+  border-color: var(--produccion-azul);
+  background-color: var(--produccion-azul-claro);
+}
+
+.produccion-pestania-icono {
+  grid-area: icono;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  font-size: 2.4rem;
+  color: var(--produccion-azul);
+  background-color: var(--produccion-azul-claro);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.produccion-pestania.activo .produccion-pestania-icono {
+  color: #ffffff;
+  background-color: var(--produccion-azul);
+}
+
+.produccion-pestania-texto {
+  grid-area: texto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 2.4rem 2.4rem 0 0;
+  gap: 0.6rem;
 }
 
-.produccion-cifra + .produccion-cifra {
-  padding-left: 2.4rem;
-  border-left: 1px solid var(--produccion-filete);
-}
-
-.produccion-cifra dt {
-  font-family: "raleway-semibold", sans-serif;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+.produccion-pestania-nombre {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.1rem;
+  line-height: 1.2;
   color: #000000;
 }
 
-.produccion-cifra dd {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+.produccion-pestania.activo .produccion-pestania-nombre {
+  color: var(--produccion-azul);
 }
 
-.produccion-cifra-valor {
+.produccion-pestania-descripcion {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--produccion-texto);
+}
+
+.produccion-pestania-cantidad {
+  grid-area: cantidad;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+  padding-left: 2.4rem;
+  border-left: 1px solid var(--produccion-filete);
+  text-align: right;
+}
+
+.produccion-pestania-cantidad strong {
   font-family: "raleway-bold", sans-serif;
-  font-size: 5rem;
+  font-size: 4.8rem;
   line-height: 1;
   color: var(--produccion-azul);
 }
 
-.produccion-cifra-nota {
+.produccion-pestania-unidad {
   font-family: "raleway-regular", sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   color: var(--produccion-texto-suave);
+}
+
+/* Notebook angosta (1025–1199px): mismo esquema, algo menos de aire para
+   que el título no quede apretado contra el contador. */
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .produccion-pestania {
+    column-gap: 2rem;
+    padding: 2.4rem;
+  }
+
+  .produccion-pestania-cantidad {
+    padding-left: 2rem;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 4.2rem;
+  }
 }
 
 /* ---------- Bloques ---------- */
@@ -274,6 +368,12 @@
   align-items: end;
   gap: 1.6rem;
   margin-bottom: 1.6rem;
+}
+
+/* Agenda: sin búsqueda por nombre (provincia, sector y botón). */
+.produccion-filtros-agenda {
+  grid-template-columns: 1fr 1fr auto;
+  margin-bottom: 2.4rem;
 }
 
 .produccion-filtro label {
@@ -576,8 +676,42 @@
     font-size: 4.6rem;
   }
 
-  .produccion-cifra-valor {
-    font-size: 4.2rem;
+  /* Tarjetas (~340px cada una): dos columnas, pero por dentro en dos
+     filas (ícono y contador arriba; título y descripción debajo, a todo
+     el ancho) para que el título no quede comprimido. */
+  .produccion-pestania {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "icono cantidad"
+      "texto texto";
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+    align-items: center;
+    min-height: 0;
+    padding: 2.2rem;
+  }
+
+  .produccion-pestania-icono {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 2.1rem;
+  }
+
+  .produccion-pestania-nombre {
+    font-size: 1.9rem;
+  }
+
+  .produccion-pestania-descripcion {
+    font-size: 1.4rem;
+  }
+
+  .produccion-pestania-cantidad {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 4rem;
   }
 
   .produccion-sector-fila {
@@ -615,7 +749,7 @@
   }
 
   .produccion-encabezado {
-    padding: 4rem 0 3.5rem;
+    padding: 3.2rem 0 2.4rem;
   }
 
   .produccion-titulo {
@@ -625,27 +759,78 @@
   }
 
   .produccion-intro {
-    font-size: 1.7rem;
-    margin-bottom: 3rem;
-  }
-
-  .produccion-cifras {
-    grid-template-columns: 1fr;
-  }
-
-  .produccion-cifra,
-  .produccion-cifra + .produccion-cifra {
-    padding: 1.8rem 0;
-    border-left: none;
-    border-bottom: 1px solid var(--produccion-filete);
-  }
-
-  .produccion-cifra-valor {
-    font-size: 4rem;
+    font-size: 1.6rem;
   }
 
   .produccion-bloque {
     padding: 4.5rem 0;
+  }
+
+  /* Tarjetas de apartados: siguen lado a lado, en formato compacto.
+     Arriba ícono y contador; abajo el título completo (sin cortar
+     palabras). La descripción se omite y la unidad del contador queda
+     solo para lectores de pantalla (el título ya la nombra). Por debajo
+     de 360px se apilan (ver el bloque max-width: 359px). */
+  .produccion-apartados {
+    padding: 0 0 2.4rem;
+  }
+
+  .produccion-apartados-titulo {
+    font-size: 1.9rem;
+    padding-top: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .produccion-pestanias {
+    gap: 1rem;
+  }
+
+  .produccion-pestania {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "icono cantidad"
+      "texto texto";
+    column-gap: 0.8rem;
+    row-gap: 1rem;
+    align-items: center;
+    min-height: 0;
+    padding: 1.4rem 1.2rem 1.6rem;
+  }
+
+  .produccion-pestania-icono {
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1.6rem;
+  }
+
+  .produccion-pestania-nombre {
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  .produccion-pestania-descripcion {
+    display: none;
+  }
+
+  .produccion-pestania-cantidad {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 3.2rem;
+  }
+
+  .produccion-pestania-unidad {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .produccion-bloque-encabezado h2 {
@@ -761,6 +946,27 @@
 
   .produccion-agenda-item .produccion-foto {
     aspect-ratio: 16 / 9;
+  }
+}
+
+/* Pantallas muy angostas (menos de 360px): "Establecimientos" ya no entra
+   completo en media tarjeta, así que se apilan. Cada tarjeta vuelve a una
+   sola fila (ícono | título | contador) para no ganar altura. */
+@media (max-width: 359px) {
+  .produccion-pestanias {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .produccion-pestania {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "icono texto cantidad";
+    column-gap: 1.2rem;
+    padding: 1.2rem 1.4rem;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 2.8rem;
   }
 }
 

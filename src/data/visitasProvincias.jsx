@@ -225,6 +225,82 @@ export const visitasProvincias = {
       },
 
       {
+        titulo: "Visita a Expoagro 2025",
+        slug: "expoagro-2025",
+        fechaISO: "2025-03-13",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-6.jpg",
+        fecha: "Marzo de 2025",
+        descripcion: (
+          <>
+            <p>
+              El{" "}
+              <span className="vv-estilo-detalle">13 de marzo de 2025</span>,
+              la vicepresidente Victoria Villarruel visitó{" "}
+              <span className="vv-estilo-detalle">
+                Expoagro 2025 edición YPF Agro
+              </span>
+              , realizada en el{" "}
+              <span className="vv-estilo-detalle">
+                Predio Ferial y Autódromo de San Nicolás
+              </span>
+              , provincia de Buenos Aires, en el marco de{" "}
+              <span className="vv-estilo-detalle">
+                una de las principales muestras agroindustriales de la
+                Argentina
+              </span>
+              .
+            </p>
+
+            <p>
+              Durante su recorrida,{" "}
+              <span className="vv-estilo-detalle">
+                dialogó con empresarios y referentes de entidades del sector
+                agropecuario
+              </span>{" "}
+              y fue recibida por representantes de Exponenciar, organizadora de
+              la exposición. Allí destacó la importancia del campo argentino y
+              expresó su acompañamiento a quienes{" "}
+              <span className="vv-estilo-detalle">
+                producen, invierten y generan empleo
+              </span>{" "}
+              en todo el país.
+            </p>
+
+            <p>
+              En una edición que reunió{" "}
+              <span className="vv-estilo-detalle">más de 700 expositores</span>{" "}
+              y convocó a{" "}
+              <span className="vv-estilo-detalle">
+                más de 220.000 visitantes
+              </span>
+              , Villarruel definió a Expoagro como{" "}
+              <span className="vv-estilo-detalle">
+                “una cita importantísima para la agroindustria”
+              </span>
+              , destacó su relevancia para los servicios, los insumos para el
+              campo y la ganadería, y remarcó su respaldo al sector productivo
+              argentino.
+            </p>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-1.png",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-2.png",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-3.png",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-4.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-5.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-6.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-7.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-8.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-9.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-10.jpg",
+        ],
+        lugar: "San Nicolás",
+        actividadesSectoriales: ["expoagro-2025"],
+      },
+      {
         titulo: "Basílica de Luján",
         slug: "lujan-2025",
         fechaISO: "2025-05",
@@ -3993,10 +4069,9 @@ export const visitasProvincias = {
                   <span className="vv-estilo-detalle">
                     participó como disertante en el Argentina–Texas Summit 2024,
                   </span>{" "}
-                  un encuentro clave en el que se debatió el futuro energético
-                  del país, con foco en Vaca Muerta, una de las principales
-                  fuentes de crecimiento económico y tecnológico de la
-                  Argentina.
+                  un encuentro en el que se debatió el futuro energético del
+                  país, con foco en Vaca Muerta, una de las principales fuentes
+                  de crecimiento económico y tecnológico de la Argentina.
                 </p>
 
                 <p>
@@ -4009,6 +4084,18 @@ export const visitasProvincias = {
                   donde escuchó las inquietudes de las pymes locales y reafirmó
                   su compromiso con la producción nacional y la generación de
                   empleo.
+                </p>
+
+                <p>
+                  El{" "}
+                  <span className="vv-estilo-detalle">
+                    23 de octubre de 2024, recorrió la Expo Argentina Oil & Gas
+                    Patagonia 2024,
+                  </span>{" "}
+                  realizada en el Espacio DUAM de Neuquén. Allí visitó los
+                  stands, dialogó con expositores y destacó la importancia del
+                  desarrollo energético para la Argentina, al que describió
+                  como «la revolución de la energía».
                 </p>
               </>
             ),
@@ -4234,7 +4321,6 @@ export const visitasProvincias = {
             ],
           },
         ],
-        actividadesSectoriales: ["encuentro-empresarios-bariloche-2024"],
       },
     ],
   },
@@ -4353,6 +4439,67 @@ export const visitasProvincias = {
           "tpa-web/provincias/santa-fe/san-lorenzo/santafe-sanlorenzo-4",
         ],
         lugar: "San Lorenzo",
+      },
+
+      {
+        titulo: "Visita a Agroactiva 2024",
+        slug: "agroactiva-2024",
+        fechaISO: "2024-06-07",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-1.jpg",
+        fecha: "Junio de 2024",
+        descripcion: (
+          <>
+            <p>
+              El{" "}
+              <span className="vv-estilo-detalle">7 de junio de 2024</span>, la
+              vicepresidente Victoria Villarruel visitó{" "}
+              <span className="vv-estilo-detalle">Agroactiva 2024</span>,
+              realizada en la ciudad de Armstrong, provincia de Santa Fe, en el
+              marco de la{" "}
+              <span className="vv-estilo-detalle">
+                30.ª edición de una de las principales exposiciones
+                agroindustriales del país
+              </span>
+              .
+            </p>
+
+            <p>
+              Durante su recorrida,{" "}
+              <span className="vv-estilo-detalle">
+                visitó el stand de la Secretaría de Bioeconomía
+              </span>
+              , conoció las propuestas de distintas empresas expositoras y{" "}
+              <span className="vv-estilo-detalle">
+                compartió un almuerzo con empresarios del sector
+              </span>
+              . La muestra reunió maquinaria agrícola, innovación tecnológica,
+              ganadería, genética y servicios vinculados con la producción
+              agropecuaria.
+            </p>
+
+            <p>
+              En una edición que convocó a más de{" "}
+              <span className="vv-estilo-detalle">275.000 visitantes</span>,
+              Villarruel destacó el potencial del campo argentino y expresó su
+              acompañamiento a quienes trabajan e invierten en la producción
+              nacional.
+            </p>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-1.jpg",
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-2.jpg",
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-3.jpg",
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-4.jpg",
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-5.jpg",
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-6.jpg",
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-7.jpg",
+          "tpa-web/provincias/santa-fe/2024/agroactiva/armstrong-agroactiva-8.jpg",
+        ],
+        lugar: "Armstrong",
+        actividadesSectoriales: ["agroactiva-2024"],
       },
 
       {
@@ -5433,7 +5580,6 @@ export const visitasProvincias = {
             imagenes: [
               "tpa-web/provincias/san-juan/inta/sanjuan-inta-1.jpg",
               "tpa-web/provincias/san-juan/inta/sanjuan-inta-2.jpg",
-              "tpa-web/provincias/san-juan/inta/sanjuan-inta-3.jpg",
               "tpa-web/provincias/san-juan/inta/sanjuan-inta-4.jpg",
               "tpa-web/provincias/san-juan/inta/sanjuan-inta-5.jpg",
             ],

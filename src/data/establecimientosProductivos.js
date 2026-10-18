@@ -125,6 +125,7 @@ export const establecimientosProductivos = {
     sector: "vitivinicola-olivicola",
     localidad: "Agrelo, Luján de Cuyo",
     provincia: "Mendoza",
+    imagenPortada: "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-10.jpg",
   },
   // Localidad pendiente de confirmar con una fuente verificable.
   "fincas-moronta-testa-castillo-mendoza": {
@@ -179,6 +180,7 @@ export const establecimientosProductivos = {
     sector: "energia",
     localidad: "Las Heras",
     provincia: "Santa Cruz",
+    imagenPortada: "tpa-web/provincias/santa-cruz/yacYPF/sc-yacimiento-15.jpg",
   },
   "girgolar-los-antiguos-santa-cruz": {
     nombre: "GirgolAR",
@@ -187,6 +189,7 @@ export const establecimientosProductivos = {
     sector: "produccion-primaria",
     localidad: "Los Antiguos",
     provincia: "Santa Cruz",
+    imagenPortada: "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-1.jpg",
   },
   "chacra-la-querencia-los-antiguos-santa-cruz": {
     nombre: "Chacra La Querencia",
@@ -195,6 +198,7 @@ export const establecimientosProductivos = {
     sector: "produccion-primaria",
     localidad: "Los Antiguos",
     provincia: "Santa Cruz",
+    imagenPortada: "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-10.jpg",
   },
   "empresa-mtz-san-juan": {
     nombre: "Empresa MTZ",
@@ -254,5 +258,6 @@ export const establecimientosProductivos = {
     sector: "tecnologia",
     localidad: "San Carlos de Bariloche",
     provincia: "Río Negro",
+    imagenPortada: "tpa-web/provincias/rio-negro/rionegro-bariloche-3.jpg",
   },
 };

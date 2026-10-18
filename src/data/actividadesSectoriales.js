@@ -34,6 +34,15 @@ export const actividadesSectoriales = {
     localidad: "Chivilcoy",
     provincia: "Buenos Aires",
     entidades: ["Asociación Rural de Chivilcoy"],
+    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-5.jpg",
+  },
+  "expoagro-2025": {
+    nombre: "Expoagro 2025",
+    categoria: "exposicion",
+    sector: "agroindustria",
+    localidad: "San Nicolás",
+    provincia: "Buenos Aires",
+    imagenPortada: "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-7.jpg",
   },
   "fiesta-nacional-poncho-2024": {
     nombre: "Fiesta Nacional e Internacional del Poncho",
@@ -81,13 +90,6 @@ export const actividadesSectoriales = {
     provincia: "Neuquén",
     imagenPortada: "tpa-web/provincias/neuquen/neuquen-ciudad-14.jpg",
   },
-  "encuentro-empresarios-bariloche-2024": {
-    nombre: "Encuentro con empresarios de Bariloche",
-    categoria: "encuentro",
-    sector: "multisectorial",
-    localidad: "San Carlos de Bariloche",
-    provincia: "Río Negro",
-  },
   "exposicion-rural-salta-2024": {
     nombre: "80ª Exposición Rural de Salta",
     categoria: "exposicion",
@@ -122,7 +124,17 @@ export const actividadesSectoriales = {
     localidad: "Dos Acequias, San Martín",
     provincia: "San Juan",
     entidades: ["INTA"],
-    imagenPortada: "tpa-web/provincias/san-juan/inta/sanjuan-inta-4.jpg",
+    imagenPortada: "tpa-web/provincias/san-juan/inta/sanjuan-inta-2.jpg",
+  },
+  // Sin imagenPortada: la portada de Producción está pendiente de
+  // selección (mientras tanto el índice usa la portada de la visita, que
+  // está dedicada solo a esta actividad).
+  "agroactiva-2024": {
+    nombre: "Agroactiva 2024",
+    categoria: "exposicion",
+    sector: "agroindustria",
+    localidad: "Armstrong",
+    provincia: "Santa Fe",
   },
   "expovenado-2026": {
     nombre: "90ª ExpoVenado",
@@ -131,5 +143,6 @@ export const actividadesSectoriales = {
     localidad: "Venado Tuerto",
     provincia: "Santa Fe",
     entidades: ["Sociedad Rural de Venado Tuerto"],
+    imagenPortada: "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-32.jpg",
   },
 };
