@@ -44,6 +44,14 @@ export const actividadesSectoriales = {
     provincia: "Buenos Aires",
     imagenPortada: "tpa-web/provincias/bsas/san-nicolas/expoagro2025/bsas-expoagro2025-7.jpg",
   },
+  "expoagro-2026": {
+    nombre: "Expoagro 2026",
+    categoria: "exposicion",
+    sector: "agroindustria",
+    localidad: "San Nicolás",
+    provincia: "Buenos Aires",
+    imagenPortada: "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-1.jpg",
+  },
   "fiesta-nacional-poncho-2024": {
     nombre: "Fiesta Nacional e Internacional del Poncho",
     categoria: "feria",

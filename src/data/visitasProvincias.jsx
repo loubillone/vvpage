@@ -798,6 +798,98 @@ export const visitasProvincias = {
         lugar: "Chivilcoy",
       },
       {
+        titulo: "Visita a Expoagro 2026",
+        slug: "expoagro-2026",
+        fechaISO: "2026-03-11",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-1.jpg",
+        fecha: "Marzo de 2026",
+        descripcion: (
+          <>
+            <p>
+              El{" "}
+              <span className="vv-estilo-detalle">11 de marzo de 2026</span>, la
+              vicepresidente de la Nación,{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              participó de la{" "}
+              <span className="vv-estilo-detalle">20.ª edición de Expoagro</span>
+              , realizada en el Predio Ferial y Autódromo de San Nicolás,
+              provincia de Buenos Aires, uno de los principales encuentros de la
+              agroindustria argentina.
+            </p>
+
+            <p>
+              Durante su visita, mantuvo una{" "}
+              <span className="vv-estilo-detalle">
+                reunión con autoridades de Exponenciar
+              </span>
+              , organizadora de la exposición, y recorrió distintos stands de
+              empresas y organizaciones vinculadas a la producción agropecuaria,
+              entre ellas{" "}
+              <span className="vv-estilo-detalle">
+                Stine, Don Mario, Cestari y Agricultores Federados Argentinos
+                (AFA)
+              </span>
+              . Allí dialogó con productores, empresarios y representantes del
+              sector sobre sus actividades y desafíos.
+            </p>
+
+            <p>
+              En su intercambio con los organizadores, Villarruel puso el foco
+              en{" "}
+              <span className="vv-estilo-detalle">
+                la competitividad, la presión impositiva y los costos logísticos
+                que enfrenta el campo argentino
+              </span>
+              . Señaló la necesidad de mejorar la infraestructura vial y
+              desarrollar alternativas para el transporte de granos. Según las
+              cifras que expuso durante el encuentro, alrededor del{" "}
+              <span className="vv-estilo-detalle">
+                90 % de la producción se traslada por camión
+              </span>
+              , una dependencia que, advirtió, incrementa los costos y afecta la
+              competitividad.
+            </p>
+
+            <p>
+              La vicepresidente también destacó el{" "}
+              <span className="vv-estilo-detalle">
+                carácter federal de Expoagro
+              </span>
+              , que reúne a productores y representantes de distintas
+              provincias, y reafirmó la importancia de acompañar a quienes
+              trabajan, invierten y producen en el país.
+            </p>
+
+            <blockquote className="cita">
+              “El campo es fundamental para el futuro de la Argentina.”
+              <br />
+              Victoria Villarruel — Expoagro 2026.
+            </blockquote>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-1.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-2.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-3.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-4.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-5.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-6.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-7.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-8.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-9.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-10.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-11.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-12.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-13.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-14.jpg",
+          "tpa-web/provincias/bsas/san-nicolas/expoagro2026/bsas-expoagro2026-15.jpg",
+        ],
+        lugar: "San Nicolás",
+        actividadesSectoriales: ["expoagro-2026"],
+      },
+      {
         titulo: "Obra del Padre Mario Pantaleo",
         slug: "padre-mario-2026",
         fechaISO: "2026-08-28",
