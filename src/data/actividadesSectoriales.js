@@ -45,6 +45,15 @@ export const actividadesSectoriales = {
     entidades: ["Sociedad Rural Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
   },
+  "reunion-cra-2024": {
+    nombre: "Reunión con autoridades de Confederaciones Rurales Argentinas",
+    categoria: "encuentro",
+    sector: "agroindustria",
+    localidad: "CABA",
+    provincia: "Buenos Aires",
+    entidades: ["CRA"],
+    imagenPortada: "tpa-web/provincias/bsas/caba/cra/caba-cra-1.jpg",
+  },
   "reunion-coninagro-2024": {
     nombre: "Reunión con autoridades de CONINAGRO",
     categoria: "encuentro",

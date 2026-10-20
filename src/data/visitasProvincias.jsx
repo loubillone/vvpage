@@ -807,6 +807,77 @@ export const visitasProvincias = {
         actividadesSectoriales: ["encuentro-bersa-2024"],
       },
       {
+        titulo: "Reunión con autoridades de Confederaciones Rurales Argentinas",
+        slug: "reunion-cra-2024",
+        fechaISO: "2024-11-13",
+        precisionFecha: "dia",
+        imagenPortada: "tpa-web/provincias/bsas/caba/cra/caba-cra-1.jpg",
+        fecha: "Noviembre de 2024",
+        descripcion: (
+          <>
+            <p>
+              El{" "}
+              <span className="vv-estilo-detalle">13 de noviembre de 2024</span>
+              , la vicepresidente de la Nación,{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              visitó la sede de{" "}
+              <span className="vv-estilo-detalle">
+                Confederaciones Rurales Argentinas (CRA)
+              </span>
+              , en la Ciudad Autónoma de Buenos Aires, donde mantuvo una reunión
+              con dirigentes agropecuarios de distintas regiones del país para
+              conocer las principales problemáticas del sector.
+            </p>
+
+            <p>
+              Durante el encuentro fue recibida por{" "}
+              <span className="vv-estilo-detalle">Carlos Castagnani</span>,
+              presidente de CRA, junto a autoridades de la entidad y
+              representantes de las{" "}
+              <span className="vv-estilo-detalle">economías regionales</span>.
+              Acompañada por su asesor{" "}
+              <span className="vv-estilo-detalle">Matías Lestani</span>,
+              Villarruel escuchó los planteos vinculados con las{" "}
+              <span className="vv-estilo-detalle">
+                retenciones a las exportaciones, la presión impositiva, los
+                incentivos a la producción y las necesidades de infraestructura
+              </span>{" "}
+              que afectan la competitividad del campo argentino.
+            </p>
+
+            <p>
+              La reunión permitió avanzar en el diálogo para establecer una{" "}
+              <span className="vv-estilo-detalle">agenda legislativa común</span>
+              , mediante la cual se puedan canalizar propuestas del sector a
+              través del Congreso Nacional. Villarruel manifestó su disposición
+              a trabajar junto a los representantes rurales y fortalecer la
+              participación de las distintas regiones productivas en el
+              tratamiento de iniciativas vinculadas con el agro.
+            </p>
+
+            <blockquote className="cita">
+              “Vengo a ponerme a disposición, a escuchar cuáles son las
+              problemáticas que tienen las distintas regiones que ustedes
+              representan.”
+              <br />
+              Victoria Villarruel — 13 de noviembre de 2024.
+            </blockquote>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-1.jpg",
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-2.jpg",
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-3.jpg",
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-4.jpg",
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-5.jpg",
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-6.jpg",
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-7.jpg",
+          "tpa-web/provincias/bsas/caba/cra/caba-cra-8.jpg",
+        ],
+        lugar: "CABA",
+        actividadesSectoriales: ["reunion-cra-2024"],
+      },
+      {
         titulo: "Visita a Expoagro 2025",
         slug: "expoagro-2025",
         fechaISO: "2025-03-13",
