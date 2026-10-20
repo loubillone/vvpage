@@ -375,6 +375,115 @@ export const visitasProvincias = {
         ],
       },
       {
+        titulo: "Encuentro de Defensa y Seguridad 2024 — BERSA",
+        slug: "encuentro-bersa-2024",
+        fechaISO: "2024-11-09",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-1.jpg",
+        fecha: "Noviembre de 2024",
+        descripcion: (
+          <>
+            <p>
+              El{" "}
+              <span className="vv-estilo-detalle">9 de noviembre de 2024</span>,
+              la vicepresidente de la Nación,{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              participó de la{" "}
+              <span className="vv-estilo-detalle">
+                4.ª edición del Encuentro de Defensa y Seguridad
+              </span>
+              , organizado por la empresa argentina{" "}
+              <span className="vv-estilo-detalle">BERSA</span> en el{" "}
+              <span className="vv-estilo-detalle">
+                Polígono de Tiro de Campo de Mayo
+              </span>
+              , provincia de Buenos Aires.
+            </p>
+
+            <p>
+              La exposición, desarrollada durante los días 9 y 10 de noviembre,
+              reunió a{" "}
+              <span className="vv-estilo-detalle">
+                más de 40 empresas e instituciones
+              </span>{" "}
+              vinculadas a la industria de la defensa y la seguridad, con una
+              concurrencia superior a{" "}
+              <span className="vv-estilo-detalle">4.000 visitantes diarios</span>
+              . El encuentro permitió conocer desarrollos tecnológicos,
+              equipamiento especializado y productos de fabricación nacional,
+              además de presenciar demostraciones operativas y actividades de
+              capacitación.
+            </p>
+
+            <p>
+              Durante su recorrida, Villarruel conoció distintos productos y
+              equipamientos del sector, entre ellos{" "}
+              <span className="vv-estilo-detalle">
+                armamento, chalecos antibalas, vehículos blindados y sistemas de
+                defensa no letales
+              </span>
+              . Participó de las exhibiciones junto a los organizadores y
+              acompañó la presentación de la{" "}
+              <span className="vv-estilo-detalle">BP9 Full Size</span>, uno de
+              los nuevos desarrollos de BERSA.
+            </p>
+
+            <p>
+              La jornada contó con la participación del{" "}
+              <span className="vv-estilo-detalle">
+                Ejército Argentino, la Policía Federal Argentina, Gendarmería
+                Nacional, Prefectura Naval, la Policía de Seguridad
+                Aeroportuaria (PSA)
+              </span>{" "}
+              y distintas fuerzas policiales provinciales. También estuvieron
+              presentes{" "}
+              <span className="vv-estilo-detalle">
+                veteranos de la Guerra de Malvinas
+              </span>
+              , quienes compartieron sus experiencias con los asistentes.
+            </p>
+
+            <p>
+              A través de sus redes sociales, la vicepresidente destacó a{" "}
+              <span className="vv-estilo-detalle">
+                BERSA como ejemplo de industria nacional competitiva y recursos
+                humanos de excelencia
+              </span>
+              , reivindicando la capacidad productiva argentina y la
+              importancia de acompañar a las empresas que{" "}
+              <span className="vv-estilo-detalle">
+                generan riqueza, desarrollan tecnología y crean puestos de
+                trabajo
+              </span>
+              . En ese sentido, resaltó el papel de la articulación entre el
+              Estado y el sector privado para contribuir al crecimiento
+              económico y productivo del país.
+            </p>
+
+            <blockquote className="cita">
+              “BERSA es un ejemplo de Industria nacional competitiva y recursos
+              humanos de excelencia.”
+              <br />
+              Victoria Villarruel — 9 de noviembre de 2024.
+            </blockquote>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-1.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-2.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-3.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-4.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-5.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-6.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-7.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-9.jpg",
+          "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-8.jpg",
+        ],
+        lugar: "Campo de Mayo",
+        actividadesSectoriales: ["encuentro-bersa-2024"],
+      },
+      {
         titulo: "Visita a Expoagro 2025",
         slug: "expoagro-2025",
         fechaISO: "2025-03-13",

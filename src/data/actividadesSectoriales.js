@@ -45,6 +45,15 @@ export const actividadesSectoriales = {
     entidades: ["Sociedad Rural Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
   },
+  "encuentro-bersa-2024": {
+    nombre: "Encuentro de Defensa y Seguridad 2024 — BERSA",
+    categoria: "encuentro",
+    sector: "industria",
+    localidad: "Campo de Mayo",
+    provincia: "Buenos Aires",
+    entidades: ["BERSA"],
+    imagenPortada: "tpa-web/provincias/bsas/campo-de-mayo/feria-bersa/bsas-bersa-1.jpg",
+  },
   "expoagro-2025": {
     nombre: "Expoagro 2025",
     categoria: "exposicion",
