@@ -45,6 +45,15 @@ export const actividadesSectoriales = {
     entidades: ["Sociedad Rural Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
   },
+  "reunion-coninagro-2024": {
+    nombre: "Reunión con autoridades de CONINAGRO",
+    categoria: "encuentro",
+    sector: "agroindustria",
+    localidad: "CABA",
+    provincia: "Buenos Aires",
+    entidades: ["CONINAGRO"],
+    imagenPortada: "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-1.jpg",
+  },
   "mesa-carnes-2024": {
     nombre: "Reunión con la Mesa de Carnes Argentinas",
     categoria: "encuentro",

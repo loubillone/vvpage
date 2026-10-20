@@ -375,6 +375,99 @@ export const visitasProvincias = {
         ],
       },
       {
+        titulo: "Reunión con autoridades de CONINAGRO",
+        slug: "reunion-coninagro-2024",
+        fechaISO: "2024-08-07",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-1.jpg",
+        fecha: "Agosto de 2024",
+        descripcion: (
+          <>
+            <p>
+              El{" "}
+              <span className="vv-estilo-detalle">7 de agosto de 2024</span>, la
+              vicepresidente de la Nación,{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              visitó la sede de la{" "}
+              <span className="vv-estilo-detalle">
+                Confederación Intercooperativa Agropecuaria (CONINAGRO)
+              </span>
+              , en la Ciudad Autónoma de Buenos Aires, donde mantuvo una reunión
+              de trabajo con representantes del{" "}
+              <span className="vv-estilo-detalle">
+                cooperativismo agropecuario argentino
+              </span>{" "}
+              para abordar los desafíos de las economías regionales.
+            </p>
+
+            <p>
+              Durante el encuentro fue recibida por{" "}
+              <span className="vv-estilo-detalle">Elbio Laucirica</span>,
+              presidente de CONINAGRO, y{" "}
+              <span className="vv-estilo-detalle">Marcelo Federici</span>,
+              vicepresidente de la entidad, junto a productores y representantes
+              de distintas federaciones cooperativas. Acompañada por{" "}
+              <span className="vv-estilo-detalle">Matías Lestani</span>,
+              Villarruel dialogó sobre las dificultades que atravesaban
+              actividades como la{" "}
+              <span className="vv-estilo-detalle">
+                yerba mate, la papa, la soja, el maíz y la ganadería
+              </span>
+              , además del impacto de la{" "}
+              <span className="vv-estilo-detalle">chicharrita del maíz</span>{" "}
+              sobre la producción.
+            </p>
+
+            <p>
+              Entre los principales temas tratados estuvieron las{" "}
+              <span className="vv-estilo-detalle">
+                retenciones a las exportaciones, la presión impositiva y la
+                competitividad del sector agropecuario
+              </span>
+              . También se abordó el{" "}
+              <span className="vv-estilo-detalle">
+                Régimen de Inversiones para el Desarrollo Agroindustrial (RIDA)
+              </span>
+              , una iniciativa legislativa orientada a promover inversiones
+              productivas, y se intercambiaron propuestas relacionadas con el{" "}
+              <span className="vv-estilo-detalle">
+                Presupuesto Nacional 2025
+              </span>
+              .
+            </p>
+
+            <p>
+              Villarruel destacó la importancia de las{" "}
+              <span className="vv-estilo-detalle">
+                cooperativas agropecuarias para el desarrollo federal del país
+              </span>{" "}
+              y manifestó su interés en fortalecer el diálogo con sus
+              representantes, escuchando sus inquietudes y promoviendo una mayor
+              participación del sector en las políticas nacionales vinculadas
+              con la producción.
+            </p>
+
+            <blockquote className="cita">
+              “Las retenciones siempre son un tema para dialogar.”
+              <br />
+              Victoria Villarruel — 7 de agosto de 2024.
+            </blockquote>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-1.jpg",
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-2.jpg",
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-3.jpg",
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-4.jpg",
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-5.jpg",
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-7.jpg",
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-6.jpg",
+        ],
+        lugar: "CABA",
+        actividadesSectoriales: ["reunion-coninagro-2024"],
+      },
+      {
         titulo: "Reunión con la Mesa de Carnes Argentinas",
         slug: "mesa-carnes-2024",
         fechaISO: "2024-08-28",
