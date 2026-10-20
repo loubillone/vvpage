@@ -45,6 +45,15 @@ export const actividadesSectoriales = {
     entidades: ["Sociedad Rural Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
   },
+  "foro-lide-agronegocios-2024": {
+    nombre: "XIII Fórum Nacional de Agronegocios",
+    categoria: "encuentro",
+    sector: "agroindustria",
+    localidad: "Puerto Madero, CABA",
+    provincia: "Buenos Aires",
+    entidades: ["LIDE Argentina"],
+    imagenPortada: "tpa-web/provincias/bsas/caba/foro-lide2024/caba-lide2024-1.jpg",
+  },
   "encuentro-bersa-2024": {
     nombre: "Encuentro de Defensa y Seguridad 2024 — BERSA",
     categoria: "encuentro",
