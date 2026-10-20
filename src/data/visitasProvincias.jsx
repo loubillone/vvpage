@@ -225,6 +225,156 @@ export const visitasProvincias = {
       },
 
       {
+        titulo: "Exposición Rural 2024",
+        slug: "exposicion-rural-2024",
+        fechaISO: "2024-07-24",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
+        fecha: "Julio de 2024",
+        lugar: "Palermo, CABA",
+        actividadesSectoriales: ["exposicion-rural-2024"],
+        actividades: [
+          {
+            titulo: "24 de julio de 2024 — Recorrida por la 136.ª Exposición Rural",
+            descripcion: (
+              <>
+                <p>
+                  La vicepresidente de la Nación,{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>
+                  , visitó el{" "}
+                  <span className="vv-estilo-detalle">24 de julio de 2024</span>{" "}
+                  la{" "}
+                  <span className="vv-estilo-detalle">
+                    136.ª Exposición de Ganadería, Agricultura e Industria
+                    Internacional
+                  </span>
+                  , organizada por la{" "}
+                  <span className="vv-estilo-detalle">
+                    Sociedad Rural Argentina (SRA)
+                  </span>{" "}
+                  en el predio ferial de Palermo, Ciudad Autónoma de Buenos
+                  Aires.
+                </p>
+
+                <p>
+                  Durante su recorrida, compartió un almuerzo con{" "}
+                  <span className="vv-estilo-detalle">Nicolás Pino</span>,
+                  presidente de la Sociedad Rural Argentina, y otros
+                  representantes de la institución. Acompañada por autoridades
+                  legislativas, visitó la pista central durante las{" "}
+                  <span className="vv-estilo-detalle">
+                    juras de ganado Angus y Hereford
+                  </span>
+                  , donde dialogó con referentes de ambas asociaciones y conoció
+                  de cerca el trabajo de los productores ganaderos.
+                </p>
+
+                <p>
+                  En una entrevista con{" "}
+                  <span className="vv-estilo-detalle">Chacra TV</span>,
+                  Villarruel destacó la{" "}
+                  <span className="vv-estilo-detalle">
+                    competitividad del campo argentino
+                  </span>{" "}
+                  y su importancia estratégica para el desarrollo económico
+                  nacional. Se refirió a la necesidad de mejorar las condiciones
+                  para la producción, reducir las{" "}
+                  <span className="vv-estilo-detalle">
+                    retenciones a las exportaciones
+                  </span>
+                  , promover la{" "}
+                  <span className="vv-estilo-detalle">biotecnología</span>,
+                  facilitar el acceso a los mercados internacionales y fortalecer
+                  la{" "}
+                  <span className="vv-estilo-detalle">
+                    industrialización en origen
+                  </span>
+                  , generando mayor valor agregado en las distintas regiones del
+                  país.
+                </p>
+
+                <p>
+                  También planteó la importancia de mantener un{" "}
+                  <span className="vv-estilo-detalle">
+                    diálogo permanente entre el Estado y el sector agropecuario
+                  </span>
+                  , más allá de los cambios de gobierno.
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-2.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-3.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-4.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-5.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-6.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-7.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-8.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-9.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-10.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-11.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-12.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-13.jpg",
+            ],
+          },
+          {
+            titulo: "28 de julio de 2024 — Acto inaugural de la 136.ª Exposición Rural",
+            descripcion: (
+              <>
+                <p>
+                  El{" "}
+                  <span className="vv-estilo-detalle">28 de julio de 2024</span>
+                  , la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  participó del{" "}
+                  <span className="vv-estilo-detalle">
+                    acto inaugural oficial de la 136.ª Exposición Rural
+                  </span>
+                  , celebrado en el predio de la Sociedad Rural Argentina, en
+                  Palermo.
+                </p>
+
+                <p>
+                  La ceremonia contó con la presencia del presidente de la
+                  Nación,{" "}
+                  <span className="vv-estilo-detalle">Javier Milei</span>,
+                  autoridades nacionales y representantes del sector
+                  agropecuario. Durante el acto, el presidente de la Sociedad
+                  Rural Argentina,{" "}
+                  <span className="vv-estilo-detalle">Nicolás Pino</span>, y el
+                  mandatario nacional pronunciaron discursos centrados en la
+                  importancia del campo para la economía argentina y los
+                  desafíos del sector productivo.
+                </p>
+
+                <p>
+                  Tras la ceremonia, Villarruel destacó públicamente el{" "}
+                  <span className="vv-estilo-detalle">
+                    trabajo, el sacrificio y la contribución de los productores
+                    rurales
+                  </span>{" "}
+                  al desarrollo de la Argentina, vinculando la actividad
+                  agropecuaria con la identidad nacional.
+                </p>
+
+                <blockquote className="cita">
+                  “El campo es la representación de la argentinidad más pura,
+                  sacrificio y dignidad.”
+                  <br />
+                  Victoria Villarruel — 28 de julio de 2024.
+                </blockquote>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-14.jpg",
+              "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-15.jpg",
+            ],
+          },
+        ],
+      },
+      {
         titulo: "Visita a Expoagro 2025",
         slug: "expoagro-2025",
         fechaISO: "2025-03-13",

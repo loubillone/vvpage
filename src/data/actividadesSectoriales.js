@@ -36,6 +36,15 @@ export const actividadesSectoriales = {
     entidades: ["Asociación Rural de Chivilcoy"],
     imagenPortada: "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-5.jpg",
   },
+  "exposicion-rural-2024": {
+    nombre: "Exposición Rural 2024",
+    categoria: "exposicion",
+    sector: "agroindustria",
+    localidad: "Palermo, CABA",
+    provincia: "Buenos Aires",
+    entidades: ["Sociedad Rural Argentina"],
+    imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
+  },
   "expoagro-2025": {
     nombre: "Expoagro 2025",
     categoria: "exposicion",
