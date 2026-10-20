@@ -375,6 +375,117 @@ export const visitasProvincias = {
         ],
       },
       {
+        titulo: "Reunión con la Mesa de Carnes Argentinas",
+        slug: "mesa-carnes-2024",
+        fechaISO: "2024-08-28",
+        precisionFecha: "dia",
+        imagenPortada:
+          "tpa-web/provincias/bsas/caba/mesa-carnes/caba-mesa-1.jpg",
+        fecha: "Agosto de 2024",
+        descripcion: (
+          <>
+            <p>
+              El{" "}
+              <span className="vv-estilo-detalle">28 de agosto de 2024</span>,
+              la vicepresidente de la Nación,{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              mantuvo un encuentro con representantes de la{" "}
+              <span className="vv-estilo-detalle">
+                Mesa Nacional de las Carnes
+              </span>
+              , en el marco de un almuerzo de trabajo realizado en la{" "}
+              <span className="vv-estilo-detalle">
+                Dirección de Remonta y Veterinaria del Ejército Argentino
+              </span>
+              , ubicada en el barrio de Palermo, Ciudad Autónoma de Buenos
+              Aires.
+            </p>
+
+            <p>
+              La reunión congregó a referentes de las{" "}
+              <span className="vv-estilo-detalle">
+                cadenas de producción bovina, porcina, aviar y ovina
+              </span>
+              , con el objetivo de analizar la situación de la actividad y los
+              principales desafíos que enfrenta la industria cárnica argentina.
+              Entre los participantes estuvieron{" "}
+              <span className="vv-estilo-detalle">Dardo Chiesa</span>,
+              coordinador de la Mesa Nacional de las Carnes;{" "}
+              <span className="vv-estilo-detalle">David Miazzo</span>,
+              economista especializado en el sector agropecuario; y{" "}
+              <span className="vv-estilo-detalle">Matías Lestani</span>, asesor
+              en producción agropecuaria y agroindustrial de la Vicepresidencia,
+              junto a representantes de cámaras empresariales, productores y
+              frigoríficos.
+            </p>
+
+            <p>
+              Durante el encuentro, los representantes del sector expusieron sus
+              inquietudes sobre la necesidad de establecer{" "}
+              <span className="vv-estilo-detalle">
+                políticas productivas de largo plazo
+              </span>
+              , mejorar la{" "}
+              <span className="vv-estilo-detalle">
+                competitividad de las cadenas cárnicas
+              </span>
+              , promover inversiones y ampliar el acceso a los mercados
+              internacionales. También abordaron cuestiones vinculadas con la{" "}
+              <span className="vv-estilo-detalle">
+                presión impositiva, las barreras sanitarias y arancelarias, la
+                modernización de la industria frigorífica y la reducción de la
+                informalidad
+              </span>
+              .
+            </p>
+
+            <p>
+              Los integrantes de la Mesa presentaron a Villarruel sus{" "}
+              <span className="vv-estilo-detalle">
+                lineamientos estratégicos para el desarrollo de la producción
+                cárnica argentina
+              </span>
+              , incluyendo iniciativas que requerían tratamiento legislativo.
+              Durante el intercambio, acordaron profundizar las propuestas y
+              remitir documentación adicional a través de su asesor
+              agropecuario, Matías Lestani. La vicepresidente manifestó su
+              disposición a{" "}
+              <span className="vv-estilo-detalle">
+                continuar el diálogo con el sector
+              </span>{" "}
+              y propuso realizar un nuevo encuentro para evaluar posibles
+              respuestas a las problemáticas planteadas.
+            </p>
+
+            <p>
+              Tras la reunión, Villarruel destacó públicamente la importancia de
+              escuchar a los distintos actores de esta{" "}
+              <span className="vv-estilo-detalle">
+                actividad productiva de carácter federal
+              </span>
+              , presente en numerosas regiones del país. A través de sus redes
+              sociales, valoró el inicio de un diálogo más fluido con los
+              representantes de las cadenas cárnicas argentinas.
+            </p>
+
+            <blockquote className="cita">
+              “Pude receptar sus inquietudes y problemas y dimos inicio a un
+              diálogo más fluido.”
+              <br />
+              Victoria Villarruel — 28 de agosto de 2024.
+            </blockquote>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/caba/mesa-carnes/caba-mesa-1.jpg",
+          "tpa-web/provincias/bsas/caba/mesa-carnes/caba-mesa-2.jpg",
+          "tpa-web/provincias/bsas/caba/mesa-carnes/caba-mesa-3.jpg",
+          "tpa-web/provincias/bsas/caba/mesa-carnes/caba-mesa-4.jpg",
+        ],
+        lugar: "Palermo, CABA",
+        actividadesSectoriales: ["mesa-carnes-2024"],
+      },
+      {
         titulo: "XIII Fórum Nacional de Agronegocios",
         slug: "foro-lide-agronegocios-2024",
         fechaISO: "2024-10-24",

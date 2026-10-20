@@ -45,6 +45,15 @@ export const actividadesSectoriales = {
     entidades: ["Sociedad Rural Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
   },
+  "mesa-carnes-2024": {
+    nombre: "Reunión con la Mesa de Carnes Argentinas",
+    categoria: "encuentro",
+    sector: "agroindustria",
+    localidad: "Palermo, CABA",
+    provincia: "Buenos Aires",
+    entidades: ["Mesa Nacional de las Carnes"],
+    imagenPortada: "tpa-web/provincias/bsas/caba/mesa-carnes/caba-mesa-1.jpg",
+  },
   "foro-lide-agronegocios-2024": {
     nombre: "XIII Fórum Nacional de Agronegocios",
     categoria: "encuentro",
