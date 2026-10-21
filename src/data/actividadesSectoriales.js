@@ -5,14 +5,15 @@
 // Mismo criterio que establecimientosProductivos.js: cada actividad existe
 // una sola vez acá, indexada por un id estable, y las visitas/actividades
 // de visitasProvincias.jsx solo guardan la referencia en su propio campo
-// `actividadesSectoriales`. Una entidad permanente (ej. COVIAR) puede
-// estar referenciada desde más de una visita con el mismo id.
+// `actividadesSectoriales`. Cada evento en una fecha distinta es una
+// actividad propia, aunque lo organice la misma entidad (coviar-2024 y
+// coviar-2026); la entidad va en `entidades`.
 //
 // Acá NO se guardan fechas, descripciones, galerías ni URLs: se obtienen
 // siempre de la visita que referencia a la actividad.
 //
-// Convención de ids: los eventos con edición anual llevan el año
-// (exposicion-rural-chivilcoy-2026); las entidades permanentes, no (coviar).
+// Convención de ids: los eventos llevan el año de su edición
+// (exposicion-rural-chivilcoy-2026, coviar-2024).
 //
 // `categoria` y `sector` solo admiten las claves definidas en
 // sectoresProductivos.js (CATEGORIAS_SECTORIALES y SECTORES).
@@ -129,12 +130,21 @@ export const actividadesSectoriales = {
     provincia: "Entre Ríos",
     entidades: ["Federación Agraria Argentina"],
   },
-  coviar: {
-    nombre: "Corporación Vitivinícola Argentina (COVIAR)",
-    categoria: "entidad",
+  "coviar-2024": {
+    nombre: "Desayuno anual de COVIAR 2024",
+    categoria: "encuentro",
     sector: "vitivinicola-olivicola",
     localidad: "Mendoza",
     provincia: "Mendoza",
+    entidades: ["COVIAR"],
+  },
+  "coviar-2026": {
+    nombre: "Desayuno de COVIAR 2026",
+    categoria: "encuentro",
+    sector: "vitivinicola-olivicola",
+    localidad: "Mendoza",
+    provincia: "Mendoza",
+    entidades: ["COVIAR"],
   },
   "argentina-texas-summit-2024": {
     nombre: "Argentina-Texas Summit 2024",

@@ -3537,7 +3537,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-2.jpg",
               "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-3.jpg",
             ],
-            actividadesSectoriales: ["coviar"],
+            actividadesSectoriales: ["coviar-2024"],
           },
           {
             titulo: "Carrusel Vendimial",
@@ -3766,7 +3766,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-3",
               "tpa-web/provincias/mendoza/vendimia-26/mendoza-coviar-4",
             ],
-            actividadesSectoriales: ["coviar"],
+            actividadesSectoriales: ["coviar-2026"],
           },
           {
             titulo: "Recorrida por fincas productivas",
