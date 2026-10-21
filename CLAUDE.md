@@ -94,7 +94,7 @@ Particulares:
 - `visitasProvincias.jsx`: objeto indexado por slug de provincia (`"buenos-aires"`, `cordoba`…) con `nombre` y `visitas[]`. Una visita puede tener `actividades[]` (cada una con `titulo`, `imagenes`, `descripcion`) en lugar de `imagenes`/`descripcion` directos. `lugar` opcional. `establecimientosVisitados: [ids]` referencia a `establecimientosProductivos.js` (no duplicar metadata).
 - CABA no tiene entrada propia; se suma vía `JURISDICCIONES_EXTRA` en `utils/estadisticasRecorrido.js`.
 - Una provincia nueva requiere además su entrada en `provinciasVisitadas`/`mapeoProvincias` de `MapaArgentina.jsx` (la clave debe coincidir con el SVG `public/argentina-map.svg`).
-- Estadísticas (`estadisticasRecorrido.js`, `estadisticasProductivas.js`, `tiempoEnCargo.js`, `gestionSenado2025.js`) se **derivan** de los datos; no hardcodear resultados. Las constantes manuales (`VECES_A_CARGO_PRESIDENCIA`, etc.) se actualizan juntas con su fecha de corte.
+- Estadísticas (`estadisticasRecorrido.js`, `tiempoEnCargo.js`, `gestionSenado2025.js`) se **derivan** de los datos; no hardcodear resultados. Las constantes manuales (`VECES_A_CARGO_PRESIDENCIA`, etc.) se actualizan juntas con su fecha de corte.
 - Victoria Villarruel asumió la Vicepresidencia el **10 de diciembre de 2023**. En `src/utils/tiempoEnCargo.js` la fecha correcta es `new Date(2023, 11, 10)`: los meses de JavaScript comienzan en 0, por lo que diciembre es 11. El error `new Date(2023, 12, 10)` (= 10/01/2024, un mes menos en el contador) ya fue corregido y no debe volver a introducirse.
 
 ### Orden de actividades en visitas provinciales
@@ -158,4 +158,4 @@ Aplica a discursos, visitas provinciales y actividades del Senado:
 ## Problemas conocidos (no "arreglar" de pasada sin avisar)
 
 - `components/GaleriaDetalle.jsx`: hooks después de un `return` temprano (rules-of-hooks) y `imagenIndex` no se resetea al cambiar de galería (puede quedar `src` indefinido al pasar a una con menos fotos).
-- Código sin uso: `FotosIndex.jsx`, `NuestroCompromiso.jsx` (+ su CSS), `home.css`, `malvinas.css`, `utils/estadisticasProductivas.js` (no se consume), dependencias `axios` y `animate.css`, varias imágenes en `src/assets/img/`.
+- Código sin uso: `FotosIndex.jsx`, `NuestroCompromiso.jsx` (+ su CSS), `home.css`, `malvinas.css`, dependencias `axios` y `animate.css`, varias imágenes en `src/assets/img/`.
