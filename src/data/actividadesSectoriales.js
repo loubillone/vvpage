@@ -35,7 +35,7 @@ export const actividadesSectoriales = {
     localidad: "Chivilcoy",
     provincia: "Buenos Aires",
     entidades: ["Asociación Rural de Chivilcoy"],
-    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-5.jpg",
+    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-7.jpg",
   },
   "exposicion-rural-2024": {
     nombre: "Exposición Rural 2024",

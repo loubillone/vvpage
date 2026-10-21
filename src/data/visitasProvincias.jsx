@@ -69,10 +69,31 @@ export const visitasProvincias = {
                 </p>
 
                 <p>
-                  En <span className="vv-estilo-detalle">Havanna</span>,
-                  recorrió las instalaciones donde se elaboran los
-                  tradicionales alfajores de la firma y se interiorizó sobre
-                  su proceso de producción.
+                  Durante su recorrido por la planta de{" "}
+                  <span className="vv-estilo-detalle">Havanna</span>, Victoria
+                  Villarruel conoció las instalaciones dedicadas a la
+                  elaboración de sus tradicionales{" "}
+                  <span className="vv-estilo-detalle">
+                    alfajores y productos de confitería
+                  </span>
+                  . El proceso de fabricación de los alfajores comprende la
+                  preparación de las tapas, el relleno con{" "}
+                  <span className="vv-estilo-detalle">dulce de leche</span>, el
+                  baño de <span className="vv-estilo-detalle">chocolate</span> y
+                  el posterior envasado.
+                </p>
+
+                <p>
+                  Fundada en{" "}
+                  <span className="vv-estilo-detalle">
+                    Mar del Plata en 1948
+                  </span>
+                  , Havanna se convirtió en una de las marcas más reconocidas de
+                  la industria alimenticia argentina. Su crecimiento combina{" "}
+                  <span className="vv-estilo-detalle">
+                    tradición, innovación y desarrollo de nuevos productos
+                  </span>
+                  , con presencia en mercados internacionales.
                 </p>
               </>
             ),
@@ -88,11 +109,34 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  Durante la misma recorrida, Victoria Villarruel visitó la
-                  planta de{" "}
-                  <span className="vv-estilo-detalle">Lucciano's</span>,
-                  empresa marplatense dedicada a la elaboración de helados,
-                  para conocer sus instalaciones industriales.
+                  Victoria Villarruel también recorrió la planta industrial de{" "}
+                  <span className="vv-estilo-detalle">Lucciano’s</span>,
+                  ubicada en el{" "}
+                  <span className="vv-estilo-detalle">
+                    Parque Industrial General Savio
+                  </span>{" "}
+                  de Mar del Plata. La empresa se especializa en la elaboración
+                  de{" "}
+                  <span className="vv-estilo-detalle">helados y paletas</span>,
+                  combinando procesos de fabricación con{" "}
+                  <span className="vv-estilo-detalle">
+                    tecnología y equipamiento industrial
+                  </span>{" "}
+                  para aumentar su capacidad productiva.
+                </p>
+
+                <p>
+                  La fábrica, inaugurada en{" "}
+                  <span className="vv-estilo-detalle">2023</span>, cuenta con
+                  más de <span className="vv-estilo-detalle">8.000 m²</span> y
+                  representa una importante inversión en infraestructura y
+                  modernización tecnológica. Su desarrollo permitió ampliar la
+                  producción y acompañar la{" "}
+                  <span className="vv-estilo-detalle">
+                    expansión internacional de la empresa
+                  </span>
+                  , llevando productos elaborados en Mar del Plata a otros
+                  mercados.
                 </p>
               </>
             ),
@@ -359,11 +403,14 @@ export const visitasProvincias = {
                   agropecuaria con la identidad nacional.
                 </p>
 
+                <p>
+                  Tras participar de la ceremonia, Victoria destacó en sus
+                  redes sociales:
+                </p>
+
                 <blockquote className="cita">
                   “El campo es la representación de la argentinidad más pura,
                   sacrificio y dignidad.”
-                  <br />
-                  Victoria Villarruel — 28 de julio de 2024.
                 </blockquote>
               </>
             ),
@@ -448,10 +495,10 @@ export const visitasProvincias = {
               con la producción.
             </p>
 
+            <p>Al referirse a las retenciones, sostuvo:</p>
+
             <blockquote className="cita">
               “Las retenciones siempre son un tema para dialogar.”
-              <br />
-              Victoria Villarruel — 7 de agosto de 2024.
             </blockquote>
           </>
         ),
@@ -562,11 +609,14 @@ export const visitasProvincias = {
               representantes de las cadenas cárnicas argentinas.
             </p>
 
+            <p>
+              Sobre el encuentro con los representantes del sector, Victoria
+              expresó:
+            </p>
+
             <blockquote className="cita">
               “Pude receptar sus inquietudes y problemas y dimos inicio a un
               diálogo más fluido.”
-              <br />
-              Victoria Villarruel — 28 de agosto de 2024.
             </blockquote>
           </>
         ),
@@ -681,11 +731,11 @@ export const visitasProvincias = {
               que integre al campo y la industria argentina.
             </p>
 
+            <p>Al finalizar su discurso, expresó:</p>
+
             <blockquote className="cita">
               “Más campo, más industria, más innovación y más jóvenes
               profesionales construyendo este pacto con el futuro.”
-              <br />
-              Victoria Villarruel — 24 de octubre de 2024.
             </blockquote>
           </>
         ),
@@ -711,85 +761,40 @@ export const visitasProvincias = {
             <p>
               El{" "}
               <span className="vv-estilo-detalle">9 de noviembre de 2024</span>,
-              la vicepresidente de la Nación,{" "}
-              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              la vicepresidente{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
               participó de la{" "}
               <span className="vv-estilo-detalle">
                 4.ª edición del Encuentro de Defensa y Seguridad
               </span>
-              , organizado por la empresa argentina{" "}
-              <span className="vv-estilo-detalle">BERSA</span> en el{" "}
-              <span className="vv-estilo-detalle">
-                Polígono de Tiro de Campo de Mayo
-              </span>
-              , provincia de Buenos Aires.
+              , organizado por{" "}
+              <span className="vv-estilo-detalle">BERSA</span> en{" "}
+              <span className="vv-estilo-detalle">Campo de Mayo</span>,
+              provincia de Buenos Aires. La exposición reunió desarrollos y
+              equipamiento vinculados con la industria argentina de defensa y
+              seguridad.
             </p>
 
             <p>
-              La exposición, desarrollada durante los días 9 y 10 de noviembre,
-              reunió a{" "}
-              <span className="vv-estilo-detalle">
-                más de 40 empresas e instituciones
-              </span>{" "}
-              vinculadas a la industria de la defensa y la seguridad, con una
-              concurrencia superior a{" "}
-              <span className="vv-estilo-detalle">4.000 visitantes diarios</span>
-              . El encuentro permitió conocer desarrollos tecnológicos,
-              equipamiento especializado y productos de fabricación nacional,
-              además de presenciar demostraciones operativas y actividades de
-              capacitación.
+              Durante la jornada, Villarruel recorrió los espacios de exhibición
+              y conoció distintos productos de fabricación nacional, entre ellos
+              la{" "}
+              <span className="vv-estilo-detalle">pistola BP9 Full Size</span>{" "}
+              presentada por BERSA.
             </p>
 
             <p>
-              Durante su recorrida, Villarruel conoció distintos productos y
-              equipamientos del sector, entre ellos{" "}
-              <span className="vv-estilo-detalle">
-                armamento, chalecos antibalas, vehículos blindados y sistemas de
-                defensa no letales
-              </span>
-              . Participó de las exhibiciones junto a los organizadores y
-              acompañó la presentación de la{" "}
-              <span className="vv-estilo-detalle">BP9 Full Size</span>, uno de
-              los nuevos desarrollos de BERSA.
+              La visita permitió destacar el desarrollo de la{" "}
+              <span className="vv-estilo-detalle">industria nacional</span>, la
+              capacidad tecnológica de las empresas argentinas y el trabajo de
+              los profesionales especializados en el sector.
             </p>
 
-            <p>
-              La jornada contó con la participación del{" "}
-              <span className="vv-estilo-detalle">
-                Ejército Argentino, la Policía Federal Argentina, Gendarmería
-                Nacional, Prefectura Naval, la Policía de Seguridad
-                Aeroportuaria (PSA)
-              </span>{" "}
-              y distintas fuerzas policiales provinciales. También estuvieron
-              presentes{" "}
-              <span className="vv-estilo-detalle">
-                veteranos de la Guerra de Malvinas
-              </span>
-              , quienes compartieron sus experiencias con los asistentes.
-            </p>
-
-            <p>
-              A través de sus redes sociales, la vicepresidente destacó a{" "}
-              <span className="vv-estilo-detalle">
-                BERSA como ejemplo de industria nacional competitiva y recursos
-                humanos de excelencia
-              </span>
-              , reivindicando la capacidad productiva argentina y la
-              importancia de acompañar a las empresas que{" "}
-              <span className="vv-estilo-detalle">
-                generan riqueza, desarrollan tecnología y crean puestos de
-                trabajo
-              </span>
-              . En ese sentido, resaltó el papel de la articulación entre el
-              Estado y el sector privado para contribuir al crecimiento
-              económico y productivo del país.
-            </p>
+            <p>Sobre la empresa, expresó:</p>
 
             <blockquote className="cita">
               “BERSA es un ejemplo de Industria nacional competitiva y recursos
               humanos de excelencia.”
-              <br />
-              Victoria Villarruel — 9 de noviembre de 2024.
             </blockquote>
           </>
         ),
@@ -856,12 +861,12 @@ export const visitasProvincias = {
               tratamiento de iniciativas vinculadas con el agro.
             </p>
 
+            <p>Durante la reunión con los dirigentes rurales, expresó:</p>
+
             <blockquote className="cita">
               “Vengo a ponerme a disposición, a escuchar cuáles son las
               problemáticas que tienen las distintas regiones que ustedes
               representan.”
-              <br />
-              Victoria Villarruel — 13 de noviembre de 2024.
             </blockquote>
           </>
         ),
@@ -1516,10 +1521,10 @@ export const visitasProvincias = {
               trabajan, invierten y producen en el país.
             </p>
 
+            <p>Durante su visita, Victoria expresó:</p>
+
             <blockquote className="cita">
               “El campo es fundamental para el futuro de la Argentina.”
-              <br />
-              Victoria Villarruel — Expoagro 2026.
             </blockquote>
           </>
         ),
@@ -1792,63 +1797,42 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              El 5 de septiembre de 2026, la vicepresidente Victoria Villarruel
+              El{" "}
+              <span className="vv-estilo-detalle">5 de septiembre de 2026</span>
+              , la vicepresidente{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
               participó de la{" "}
               <span className="vv-estilo-detalle">
-                74ª Exposición Rural de Chivilcoy
+                74.ª Exposición Rural de Chivilcoy
               </span>
-              , una muestra vinculada con la actividad agrícola, ganadera,
-              industrial y comercial de la región.
+              , en la provincia de{" "}
+              <span className="vv-estilo-detalle">Buenos Aires</span>, un
+              encuentro dedicado a mostrar la producción agropecuaria, la
+              actividad empresarial y el trabajo del interior bonaerense.
             </p>
 
             <p>
-              Junto al intendente Guillermo Britos y la presidenta de la Asociación
-              Rural de Chivilcoy, Yamila Farrell, recorrió los distintos stands de
-              la exposición y mantuvo contacto con productores y representantes del
-              entramado productivo local.
-            </p>
-
-            <p>
-              Durante el acto inaugural, Villarruel destacó el peso productivo de
-              Chivilcoy y sostuvo que la actividad del campo forma parte de una
-              cadena mucho más amplia que involucra a la industria, el comercio,
-              los servicios, las PyMEs y las familias.
-            </p>
-
-            <p>
-              En ese marco, planteó la necesidad de avanzar hacia una{" "}
-              <span className="vv-estilo-detalle">reforma impositiva</span> que
-              genere incentivos para quienes producen, invierten y crean empleo,
-              y señaló la importancia de generar condiciones que permitan ampliar
-              la producción y el trabajo formal.
-            </p>
-
-            <p>
-              También remarcó que una política productiva debe prestar atención al
-              territorio y mencionó la necesidad de contar con{" "}
+              La exposición reunió a{" "}
               <span className="vv-estilo-detalle">
-                caminos rurales, puentes, desagües, conectividad, energía y rutas
+                productores, trabajadores y representantes del sector rural
+              </span>
+              , poniendo en valor el papel del{" "}
+              <span className="vv-estilo-detalle">campo y la industria</span> en
+              la generación de empleo y el desarrollo de las economías
+              regionales.
+            </p>
+
+            <p>
+              La participación de Villarruel permitió destacar la importancia del{" "}
+              <span className="vv-estilo-detalle">
+                interior productivo argentino
               </span>{" "}
-              que acompañen el crecimiento de las distintas regiones productivas.
-            </p>
-
-            <p>
-              La vicepresidente destacó además la importancia de la articulación
-              entre el sector público y el privado para favorecer la inversión,
-              la innovación y la generación de empleo. Vinculó el crecimiento de
-              la producción con una mayor capacidad exportadora, el ingreso de
-              divisas y la incorporación de tecnología.
-            </p>
-
-            <p>
-              Durante su intervención también puso en valor el papel de organismos
-              como SENASA, INTA, INTI y CONICET dentro del entramado productivo,
-              científico y tecnológico relacionado con el sector agropecuario
-              argentino.
+              y de las comunidades que sostienen su crecimiento a través del
+              trabajo, la inversión y la producción.
             </p>
 
             <blockquote className="cita">
-              "El desarrollo comienza en el territorio".
+              “El desarrollo comienza en el territorio.”
             </blockquote>
           </>
         ),
@@ -3987,6 +3971,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/jujuy/jujuy-exodo-10.jpg",
               "tpa-web/provincias/jujuy/jujuy-exodo-2.jpg",
               "tpa-web/provincias/jujuy/jujuy-exodo-1.jpg",
+              "tpa-web/provincias/jujuy/jujuy-exodo-12.jpg",
             ],
           },
           {
@@ -4034,19 +4019,38 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  Tras el recorrido en el Tren Solar, Victoria Villarruel se
-                  trasladó al emprendimiento de{" "}
+                  El{" "}
+                  <span className="vv-estilo-detalle">24 de agosto de 2024</span>
+                  , tras recorrer el{" "}
                   <span className="vv-estilo-detalle">
-                    Arcadium Lithium, en las cercanías de Olaroz, donde se
-                    interiorizó sobre el proceso de extracción de litio,
+                    Tren Solar de la Quebrada
                   </span>{" "}
-                  un recurso estratégico para el desarrollo energético del país.
+                  junto al gobernador{" "}
+                  <span className="vv-estilo-detalle">Carlos Sadir</span>, la
+                  vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  se trasladó al emprendimiento minero de{" "}
+                  <span className="vv-estilo-detalle">Arcadium Lithium</span>,
+                  ubicado en el{" "}
+                  <span className="vv-estilo-detalle">Salar de Olaroz</span>, en
+                  la Puna jujeña. Allí recorrió las instalaciones y se
+                  interiorizó sobre la actividad productiva y los procesos de
+                  obtención del litio.
                 </p>
 
                 <p>
-                  La actividad formó parte de su agenda provincial y permitió
-                  conocer aspectos de un sector vinculado al desarrollo minero y
-                  productivo del norte argentino.
+                  El proyecto, operado por{" "}
+                  <span className="vv-estilo-detalle">Sales de Jujuy</span>,
+                  produce{" "}
+                  <span className="vv-estilo-detalle">carbonato de litio</span>{" "}
+                  mediante la extracción de salmueras, su concentración en
+                  piletas de evaporación y posterior procesamiento industrial.
+                  Se trata de un recurso estratégico para la{" "}
+                  <span className="vv-estilo-detalle">
+                    fabricación de baterías, el almacenamiento energético y el
+                    desarrollo tecnológico
+                  </span>
+                  , que forma parte de la actividad minera de la provincia.
                 </p>
               </>
             ),
@@ -4265,38 +4269,50 @@ export const visitasProvincias = {
       {
         titulo: "Día del Héroe Formoseño",
         slug: "heroe-formoseno-2025",
-        fechaISO: "2025-10-06",
+        fechaISO: "2025-10-05",
         precisionFecha: "dia",
         imagenPortada: "tpa-web/provincias/formosa/formosa-heroe-1",
         fecha: "Octubre de 2025",
         descripcion: (
           <>
             <p>
-              La vicepresidente Victoria{" "}
+              El{" "}
+              <span className="vv-estilo-detalle">5 de octubre de 2025</span>,
+              la vicepresidente{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+              participó en la provincia de Formosa de la conmemoración del{" "}
+              <span className="vv-estilo-detalle">Día del Héroe Formoseño</span>
+              , al cumplirse{" "}
               <span className="vv-estilo-detalle">
-                Villarruel visitó la provincia de Formosa para participar en el
-                acto conmemorativo del Día del Héroe Formoseño,
+                50 años del ataque perpetrado por Montoneros
               </span>{" "}
-              encabezado junto al gobernador Gildo Insfrán.
+              contra el{" "}
+              <span className="vv-estilo-detalle">
+                Regimiento de Infantería de Monte 29 «Coronel Ignacio José
+                Warnes»
+              </span>
+              , ocurrido el 5 de octubre de 1975.
             </p>
 
             <p>
+              Junto al gobernador{" "}
+              <span className="vv-estilo-detalle">Gildo Insfrán</span>, asistió
+              a los actos de homenaje a los{" "}
               <span className="vv-estilo-detalle">
-                La ceremonia se llevó a cabo en el Regimiento de Infantería de
-                Monte 29
+                12 soldados del Ejército Argentino y un efectivo policial
               </span>{" "}
-              "Coronel Ignacio José Warnes" y recordó a los soldados y policías
-              que perdieron la vida durante el ataque de Montoneros hace 50
-              años.
+              que perdieron la vida durante aquel ataque. La ceremonia incluyó
+              homenajes a los caídos, placas recordatorias y un minuto de
+              silencio en memoria de las víctimas.
             </p>
 
             <p>
-              <span className="vv-estilo-detalle">
-                Villarruel destacó la importancia de honrar la memoria de
-                quienes defendieron la provincia y la Patria,
-              </span>{" "}
-              reafirmando su compromiso con los valores de justicia, verdad y
-              reconocimiento histórico hacia los héroes locales y nacionales.
+              La jornada también contó con un{" "}
+              <span className="vv-estilo-detalle">desfile cívico-militar</span>,
+              en una conmemoración dedicada a mantener viva la memoria de
+              quienes perdieron la vida y reconocer su servicio a la Patria. La
+              participación de Villarruel se enmarcó en el homenaje
+              institucional a los protagonistas de aquellos acontecimientos.
             </p>
           </>
         ),
@@ -4672,20 +4688,45 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  Su recorrido incluyó también una mirada hacia el desarrollo y
-                  la innovación, la vicepresidente recorrió el{" "}
+                  La recorrida continuó en el{" "}
                   <span className="vv-estilo-detalle">
                     Parque Eólico Arauco
                   </span>
-                  , ejemplo de apuesta a las energías renovables que posiciona a
-                  la provincia en la transición energética.
+                  , uno de los principales emprendimientos de{" "}
+                  <span className="vv-estilo-detalle">
+                    generación de energía renovable
+                  </span>{" "}
+                  de La Rioja. Allí, la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  conoció el funcionamiento de las instalaciones y el
+                  aprovechamiento de los vientos de la región para producir
+                  electricidad.
                 </p>
 
                 <p>
-                  El parque está destinado a la generación de energía eléctrica
-                  a partir del aprovechamiento del viento, una actividad
-                  vinculada a las energías renovables y al desarrollo de la
-                  infraestructura productiva provincial.
+                  El parque cuenta con{" "}
+                  <span className="vv-estilo-detalle">
+                    aerogeneradores que transforman la energía del viento en
+                    electricidad
+                  </span>
+                  , cuya producción se incorpora al{" "}
+                  <span className="vv-estilo-detalle">
+                    Sistema Argentino de Interconexión (SADI)
+                  </span>
+                  . Esta infraestructura combina recursos naturales, tecnología
+                  e inversión para contribuir al abastecimiento eléctrico y a la
+                  diversificación de la matriz energética nacional.
+                </p>
+
+                <p>
+                  La actividad permitió destacar el{" "}
+                  <span className="vv-estilo-detalle">
+                    potencial energético y productivo de La Rioja
+                  </span>
+                  , así como la importancia de desarrollar proyectos que
+                  aprovechen los recursos de cada provincia, promuevan el
+                  desarrollo regional y fortalezcan la generación de energía en
+                  la Argentina.
                 </p>
               </>
             ),
@@ -4860,19 +4901,37 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  <span className="vv-estilo-detalle">
-                    En su paso por Añelo, acompañada por el intendente Fernando
-                    Banderet, recorrió la zona núcleo de explotación de Oil &
-                    Gas,{" "}
-                  </span>
-                  interiorizándose sobre las necesidades de infraestructura,
-                  educación y salud que acompañan el crecimiento de la región.
+                  En <span className="vv-estilo-detalle">Añelo</span>, localidad
+                  ubicada en el corazón de{" "}
+                  <span className="vv-estilo-detalle">Vaca Muerta</span>, la
+                  vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  recorrió la ciudad junto al intendente{" "}
+                  <span className="vv-estilo-detalle">Fernando Banderet</span>,
+                  para conocer el crecimiento urbano y los desafíos que genera la
+                  expansión de la actividad hidrocarburífera.
                 </p>
 
                 <p>
-                  La recorrida permitió conocer una de las zonas productivas más
-                  importantes de la provincia, vinculada al desarrollo de Vaca
-                  Muerta y a la producción de petróleo y gas.
+                  Durante la visita se interiorizó sobre las necesidades de{" "}
+                  <span className="vv-estilo-detalle">
+                    infraestructura, educación, salud y servicios públicos
+                  </span>{" "}
+                  que acompañan el desarrollo de la región. Entre los temas
+                  abordados estuvieron las obras viales, la circunvalación de
+                  Añelo y la importancia de la{" "}
+                  <span className="vv-estilo-detalle">EPET N.º 23</span> para la
+                  formación técnica de los jóvenes.
+                </p>
+
+                <p>
+                  La recorrida permitió destacar el papel estratégico de{" "}
+                  <span className="vv-estilo-detalle">
+                    Vaca Muerta en la producción energética argentina
+                  </span>
+                  , así como la necesidad de acompañar las inversiones del sector
+                  con infraestructura y mejores condiciones de vida para las
+                  comunidades locales.
                 </p>
               </>
             ),
@@ -4930,62 +4989,42 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  En enero de 2024, la vicepresidente{" "}
+                  La vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  recorrió las instalaciones de{" "}
+                  <span className="vv-estilo-detalle">INVAP</span>, en{" "}
                   <span className="vv-estilo-detalle">
-                    Victoria Villarruel visitó la ciudad de San Carlos de
-                    Bariloche,
-                  </span>{" "}
-                  donde mantuvo una intensa agenda institucional y social.{" "}
-                  <span className="vv-estilo-detalle">
-                    Fue recibida por el intendente Walter Cortés, quien la
-                    declaró huésped de honor
-                  </span>{" "}
-                  y le presentó los principales proyectos y necesidades de la
-                  ciudad.
-                </p>
-
-                <p>
-                  El 6 de enero,{" "}
-                  <span className="vv-estilo-detalle">
-                    Villarruel visitó la sede central de INVAP,
-                  </span>{" "}
-                  empresa estatal rionegrina referente en desarrollo
-                  tecnológico, donde expresó su reconocimiento al talento y la
-                  capacidad de los profesionales argentinos.
-                </p>
-
-                <p>
-                  En las instalaciones fue recibida por el gerente general,
-                  Vicente Campenni, y los subgerentes generales Marcelo
-                  Basigalup y Darío Giussi, junto a otros directivos de la
-                  compañía, quienes le presentaron{" "}
-                  <span className="vv-estilo-detalle">
-                    sus principales desarrollos y proyectos en marcha, tanto en
-                    Argentina como en el exterior.
+                    San Carlos de Bariloche
                   </span>
+                  , acompañada por el ministro de Gobierno de Río Negro,{" "}
+                  <span className="vv-estilo-detalle">Federico Lutz</span>.
+                  Durante la visita fue recibida por el gerente general de la
+                  empresa,{" "}
+                  <span className="vv-estilo-detalle">Vicente Campenni</span>, y
+                  conoció sus principales proyectos tecnológicos.
                 </p>
 
                 <p>
-                  INVAP es una empresa tecnológica especializada en proyectos
-                  de alta complejidad, entre ellos{" "}
+                  <span className="vv-estilo-detalle">INVAP</span> es una
+                  empresa argentina de alta tecnología especializada en
+                  desarrollos para los sectores{" "}
                   <span className="vv-estilo-detalle">
-                    satélites, radares, reactores nucleares y sistemas de
-                    medicina nuclear.
-                  </span>{" "}
-                  Durante el encuentro también se abordó la articulación con
-                  organismos científicos y la capacidad del país para
-                  desarrollar y exportar tecnología de alto valor agregado.
+                    nuclear, aeroespacial, defensa y medicina
+                  </span>
+                  . Sus proyectos integran investigación, ingeniería y
+                  producción industrial, con aplicaciones tanto en la Argentina
+                  como en el exterior.
                 </p>
 
                 <p>
-                  Como parte de su agenda en Bariloche, Villarruel también{" "}
+                  Con{" "}
+                  <span className="vv-estilo-detalle">47 años de trayectoria</span>
+                  , la compañía representa un ejemplo de{" "}
                   <span className="vv-estilo-detalle">
-                    se reunió con empresarios locales para dialogar sobre temas
-                    como la reforma laboral, la seguridad, el desarrollo
-                    industrial y la política de cielos abiertos,
-                  </span>{" "}
-                  destacando la importancia de impulsar la producción y el
-                  empleo en la Patagonia.
+                    desarrollo científico y tecnológico nacional
+                  </span>
+                  , combinando conocimiento, innovación y capacidades
+                  industriales argentinas.
                 </p>
               </>
             ),
@@ -5401,92 +5440,57 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  La vicepresidente Victoria Villarruel visitó{" "}
-                  <span className="vv-estilo-detalle">Venado Tuerto</span>, en
-                  la provincia de Santa Fe, para participar de la apertura de la{" "}
+                  La vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  participó de la apertura de la{" "}
                   <span className="vv-estilo-detalle">
-                    90ª edición de ExpoVenado
+                    90.ª edición de ExpoVenado
                   </span>
-                  , una de las muestras agroindustriales más representativas del
-                  sur santafesino y un espacio que reúne al campo, la industria,
-                  el comercio, la innovación y el trabajo de toda la región.
-                </p>
-
-                <p>
-                  Villarruel participó del tradicional corte de cintas junto al
+                  , en{" "}
+                  <span className="vv-estilo-detalle">
+                    Venado Tuerto, Santa Fe
+                  </span>
+                  , una de las principales exposiciones agroindustriales del sur
+                  provincial. Compartió el tradicional corte de cintas con el
                   intendente{" "}
                   <span className="vv-estilo-detalle">Leonel Chiarella</span>,
-                  la presidenta de la Sociedad Rural de Venado Tuerto{" "}
+                  la presidenta de la Sociedad Rural{" "}
                   <span className="vv-estilo-detalle">Noelia Castagnani</span> y
-                  el ministro de Desarrollo Productivo de Santa Fe{" "}
-                  <span className="vv-estilo-detalle">Gustavo Puccini</span>,
-                  además de autoridades provinciales, locales y representantes
-                  del sector productivo.
+                  el ministro provincial{" "}
+                  <span className="vv-estilo-detalle">Gustavo Puccini</span>.
                 </p>
 
                 <p>
-                  Durante su recorrido por la exposición, la vicepresidente
-                  mantuvo contacto con{" "}
+                  Durante su recorrido, mantuvo contacto con{" "}
                   <span className="vv-estilo-detalle">
                     productores, industriales y emprendedores
                   </span>
-                  , y destacó especialmente el modelo productivo de Venado
-                  Tuerto, basado en la articulación entre el campo y la
-                  industria, la incorporación de tecnología y la generación de
-                  valor agregado.
-                </p>
-
-                <blockquote className="cita">
-                  "ExpoVenado de alguna manera representa lo mejor de la
-                  Argentina"
-                </blockquote>
-
-                <p>
-                  Villarruel puso en valor el esfuerzo de las familias
-                  venadenses y señaló a la ciudad como{" "}
-                  <span className="vv-estilo-detalle">
-                    un ejemplo del potencial que tiene el interior productivo
-                    argentino
-                  </span>
-                  . También destacó el peso histórico de Santa Fe dentro del
-                  desarrollo nacional y sostuvo que el futuro del país debe
-                  pensarse desde la complementariedad entre la producción
-                  agropecuaria y la actividad industrial.
+                  , y destacó el modelo productivo de la región, basado en la
+                  integración entre{" "}
+                  <span className="vv-estilo-detalle">campo e industria</span>,
+                  la incorporación de tecnología y la generación de valor
+                  agregado.
                 </p>
 
                 <p>
-                  En diálogo con la prensa, fijó además una posición respecto de
-                  uno de los principales reclamos del sector productivo y
-                  manifestó que el objetivo debe ser avanzar hacia una Argentina
-                  en la que{" "}
+                  Villarruel puso en valor el{" "}
                   <span className="vv-estilo-detalle">
-                    el campo y la industria puedan producir y exportar sin
-                    retenciones
-                  </span>
-                  .
-                </p>
-
-                <blockquote className="cita">
-                  "Por supuesto el futuro de nuestro campo y de nuestra
-                  industria debe ser sin retenciones a las exportaciones"
-                </blockquote>
-
-                <p>
-                  La vicepresidente también puso el foco en la{" "}
-                  <span className="vv-estilo-detalle">
-                    generación de trabajo genuino
+                    trabajo de las familias venadenses
                   </span>{" "}
-                  y en las dificultades que atraviesan muchas familias
-                  argentinas, planteando la necesidad de priorizar la producción
-                  y el empleo por encima de las disputas electorales. Su
-                  participación en ExpoVenado reafirmó así una mirada federal
-                  orientada a{" "}
+                  y el potencial del{" "}
                   <span className="vv-estilo-detalle">
-                    acompañar al interior, fortalecer la producción nacional y
-                    reconocer a quienes trabajan e invierten en el país
+                    interior productivo argentino
                   </span>
-                  .
+                  , destacando la importancia de complementar la actividad
+                  agropecuaria con el desarrollo industrial.
                 </p>
+
+                <p>En referencia a la exposición, señaló:</p>
+
+                <blockquote className="cita">
+                  “ExpoVenado de alguna manera representa lo mejor de la
+                  Argentina.”
+                </blockquote>
               </>
             ),
             imagenes: [
@@ -5910,30 +5914,41 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  Posteriormente, Villarruel recorrió yacimientos de{" "}
-                  <span className="vv-estilo-detalle">YPF</span> en la zona de{" "}
-                  <span className="vv-estilo-detalle">Las Heras</span>, donde
-                  pudo interiorizarse sobre la{" "}
+                  Durante su recorrido por{" "}
                   <span className="vv-estilo-detalle">
-                    realidad operativa y los desafíos del sector energético
-                  </span>{" "}
-                  en el norte de Santa Cruz.
-                </p>
-
-                <p>
-                  Durante la visita, se abordaron temas vinculados a la
-                  producción petrolera, la actividad laboral y el rol
-                  estratégico de los recursos energéticos para el desarrollo
-                  nacional.
-                </p>
-
-                <p>
-                  La recorrida puso el foco en la importancia de{" "}
-                  <span className="vv-estilo-detalle">
-                    la soberanía energética y el trabajo argentino
+                    Las Heras, Santa Cruz
                   </span>
-                  , reconociendo el esfuerzo de quienes sostienen una de las
-                  principales actividades productivas de la Patagonia.
+                  , la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  visitó instalaciones vinculadas a la actividad petrolera del
+                  norte provincial, entre ellas la{" "}
+                  <span className="vv-estilo-detalle">
+                    planta deshidratadora Las Heras 3 (LH3)
+                  </span>
+                  , operada por{" "}
+                  <span className="vv-estilo-detalle">Clear Petroleum</span>.
+                </p>
+
+                <p>
+                  En estas instalaciones se realiza una etapa fundamental de la
+                  producción hidrocarburífera: la{" "}
+                  <span className="vv-estilo-detalle">
+                    separación del agua presente en el petróleo extraído
+                  </span>
+                  , antes de continuar con su tratamiento y transporte. Esta
+                  infraestructura forma parte de la cadena productiva de una de
+                  las principales actividades económicas de la Patagonia.
+                </p>
+
+                <p>
+                  La recorrida permitió conocer el funcionamiento de la
+                  actividad petrolera y destacar la importancia del{" "}
+                  <span className="vv-estilo-detalle">
+                    trabajo argentino, la producción energética y el desarrollo
+                    regional
+                  </span>
+                  , vinculados al aprovechamiento de los recursos naturales de
+                  Santa Cruz.
                 </p>
               </>
             ),
