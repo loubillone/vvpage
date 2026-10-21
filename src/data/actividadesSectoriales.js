@@ -45,6 +45,14 @@ export const actividadesSectoriales = {
     entidades: ["Sociedad Rural Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
   },
+  "encuentro-empresarios-bariloche-2024": {
+    nombre: "Encuentro con empresarios de Bariloche",
+    categoria: "encuentro",
+    sector: "multisectorial",
+    localidad: "San Carlos de Bariloche",
+    provincia: "Río Negro",
+    imagenPortada: "tpa-web/provincias/rio-negro/rionegro-bariloche-19.jpg",
+  },
   "reunion-cra-2024": {
     nombre: "Reunión con autoridades de Confederaciones Rurales Argentinas",
     categoria: "encuentro",

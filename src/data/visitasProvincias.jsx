@@ -460,6 +460,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-2.jpg",
           "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-3.jpg",
           "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-4.jpg",
+          "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-8.jpg",
           "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-5.jpg",
           "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-7.jpg",
           "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-6.jpg",
@@ -5064,6 +5065,44 @@ export const visitasProvincias = {
               "tpa-web/provincias/rio-negro/rionegro-bariloche-12.jpg",
               "tpa-web/provincias/rio-negro/rionegro-bariloche-13.jpg",
             ],
+          },
+          {
+            titulo: "Encuentro con empresarios de Bariloche",
+            descripcion: (
+              <>
+                <p>
+                  Durante su visita a{" "}
+                  <span className="vv-estilo-detalle">
+                    San Carlos de Bariloche, Río Negro
+                  </span>
+                  , en enero de 2024, la vicepresidente{" "}
+                  <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+                  mantuvo una reunión con{" "}
+                  <span className="vv-estilo-detalle">empresarios locales</span>{" "}
+                  para dialogar sobre temas vinculados con la{" "}
+                  <span className="vv-estilo-detalle">
+                    reforma laboral, la seguridad, el desarrollo industrial y la
+                    política de cielos abiertos
+                  </span>
+                  .
+                </p>
+
+                <p>
+                  El encuentro permitió abordar cuestiones relacionadas con la
+                  actividad económica regional y la importancia de{" "}
+                  <span className="vv-estilo-detalle">
+                    impulsar la producción y el empleo en la Patagonia
+                  </span>
+                  .
+                </p>
+              </>
+            ),
+            imagenes: [
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-19.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-20.jpg",
+              "tpa-web/provincias/rio-negro/rionegro-bariloche-21.jpg",
+            ],
+            actividadesSectoriales: ["encuentro-empresarios-bariloche-2024"],
           },
         ],
       },
