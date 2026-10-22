@@ -32,7 +32,7 @@ const Home = () => {
 
       <UltimasVisitas />
 
-      {/* Provisional: acceso a Industria y Producción en revisión. */}
+      {/* Banner de acceso a Industria y Producción. */}
       <AccesoProduccionHome />
 
       <MapaArgentina />
