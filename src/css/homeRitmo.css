@@ -15,8 +15,9 @@
  * suman: por eso --home-gap-sobre-caja resta el padding ya aportado
  * y la distancia efectiva queda en --home-gap-grande, no en 12–14rem.
  *
- * --home-gap-normal y --home-gap-compacto completan la escala (p. ej.
- * para Industria) aunque hoy ninguna unión del Home los consume. */
+ * --home-gap-normal y --home-gap-compacto completan la escala.
+ * --home-gap-compacto lo usa el banner de Industria y Producción
+ * (accesoProduccionHome.css), entre Últimas visitas y el Mapa. */
 .home-page {
   --home-gap-grande: 12rem;
   --home-gap-normal: 8rem;

@@ -1,0 +1,266 @@
+/* Banner de acceso a Industria y Producción (ver AccesoProduccionHome.jsx).
+   Va entre Últimas visitas y el Mapa, uniones que tienen margin 0 (ver
+   homeRitmo.css): el banner aporta su propio aire arriba (padding-top) y
+   abajo (margin-bottom, antes del fondo gris del Mapa) con
+   --home-gap-compacto, sin alterar el espacio de las demás secciones.
+
+   Desktop/tablet: composición horizontal y compacta (≈300–340px, sin
+   altura fija: crece si el texto lo necesita). La foto no ocupa todo el
+   ancho sino el 68% derecho; el 32% izquierdo es el azul del fondo y el
+   degradado funde ambos. Así Victoria (x ≈ 56% de la foto) queda en
+   ≈70% del banner, lejos de la columna de texto (máx. 46%).
+   Mobile (≤767px): la superposición no deja lugar sin tapar rostros, así
+   que la foto va arriba y el texto abajo sobre el mismo azul.
+
+   Ojo: navegador.css fija html { font-size: 62.5% }, así que en todo el
+   sitio 1rem = 10px. Los tamaños de abajo están calculados con esa base. */
+.acceso-produccion-home {
+  padding-top: var(--home-gap-compacto, 5rem);
+  margin-bottom: var(--home-gap-compacto, 5rem);
+}
+
+.acceso-produccion-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(300px, 24vw, 340px);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #001a4d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.acceso-produccion-foto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 32%;
+}
+
+.acceso-produccion-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* El banner es más apaisado que la foto (3:2) y recorta en vertical:
+     la franja visible arranca justo sobre los cascos del grupo y llega
+     hasta la maquinaria del primer plano. */
+  object-position: 50% 30%;
+  display: block;
+}
+
+/* Degradado medido sobre la foto (no sobre el banner): opaco donde se
+   une con el azul del fondo y transparente antes de llegar a Victoria.
+   Paradas intermedias para que la transición sea gradual; detrás de la
+   columna de texto (hasta ≈20% de la foto) la opacidad sigue ≥ 0.8.
+   Sin línea en la unión: left: 32% casi nunca cae en un píxel entero y,
+   si el degradado termina justo en el mismo borde que la foto, el
+   antialiasing de ambas capas deja asomar la foto en ese píxel parcial.
+   Por eso el degradado sobresale 2px hacia la izquierda (el banner tiene
+   overflow: hidden) y arranca con un tramo totalmente opaco. */
+.acceso-produccion-foto::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 -2px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 26, 77, 1) 0%,
+    rgba(0, 26, 77, 1) 2%,
+    rgba(0, 26, 77, 0.92) 12%,
+    rgba(0, 26, 77, 0.78) 22%,
+    rgba(0, 26, 77, 0.5) 32%,
+    rgba(0, 26, 77, 0.2) 42%,
+    rgba(0, 26, 77, 0.07) 48%,
+    rgba(0, 26, 77, 0) 56%
+  );
+}
+
+/* align-items: center del banner lo centra en vertical; la columna flex
+   evita que márgenes sueltos lo descompensen. */
+.acceso-produccion-contenido {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 46%;
+  padding: 3rem 0 3rem 5.6rem;
+  color: #ffffff;
+}
+
+/* 12px. */
+.acceso-produccion-volanta {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #87ceeb;
+  margin-bottom: 1rem;
+}
+
+/* ≈38px en 1280px de ancho, 42px desde 1400px. */
+.acceso-produccion-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: clamp(2.8rem, 1.2rem + 2vw, 4.2rem);
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+}
+
+/* ≈18–20px en desktop. */
+.acceso-produccion-frase {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: clamp(1.7rem, 1.2rem + 0.55vw, 2rem);
+  line-height: 1.35;
+  margin-bottom: 0.6rem;
+}
+
+/* ≈15–16px en desktop. */
+.acceso-produccion-cifras {
+  font-family: "raleway-regular", sans-serif;
+  font-size: clamp(1.4rem, 1.1rem + 0.35vw, 1.6rem);
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+/* ≈16px en desktop. */
+.acceso-produccion-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-height: 48px;
+  font-family: "raleway-bold", sans-serif;
+  font-size: clamp(1.5rem, 1.3rem + 0.2vw, 1.6rem);
+  color: #0037a0;
+  background-color: #87ceeb;
+  text-decoration: none;
+  padding: 1.2rem 2.6rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.acceso-produccion-cta:hover,
+.acceso-produccion-cta:focus-visible {
+  background-color: #ffffff;
+  color: #0037a0;
+}
+
+.acceso-produccion-cta:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .acceso-produccion-banner {
+    min-height: 280px;
+  }
+
+  .acceso-produccion-contenido {
+    max-width: 50%;
+    padding: 2.8rem 0 2.8rem 4rem;
+  }
+
+  /* La columna de texto es más ancha: la foto arranca un poco más a la
+     derecha para mantener a Victoria fuera de ella. */
+  .acceso-produccion-foto {
+    left: 36%;
+  }
+}
+
+@media (max-width: 767px) {
+  .acceso-produccion-banner {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+  }
+
+  .acceso-produccion-foto {
+    position: relative;
+    left: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .acceso-produccion-foto img {
+    object-position: 50% 25%;
+  }
+
+  /* Solo una transición suave de la foto al panel azul de abajo. Mismo
+     criterio que en desktop: aspect-ratio da alturas fraccionarias, así
+     que el degradado sobresale 2px por debajo de la foto y sus últimos
+     tramos son totalmente opacos, para que no quede una línea. */
+  .acceso-produccion-foto::after {
+    inset: 0 0 -2px 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 26, 77, 0) 62%,
+      rgba(0, 26, 77, 0.35) 78%,
+      rgba(0, 26, 77, 0.8) 90%,
+      rgba(0, 26, 77, 1) 96%,
+      rgba(0, 26, 77, 1) 100%
+    );
+  }
+
+  .acceso-produccion-contenido {
+    max-width: none;
+    padding: 2.4rem 2.4rem 3.2rem;
+  }
+
+  /* Tamaños y espacios más contenidos para integrarse con el resto del
+     Home en celular (títulos de sección de 19–22px), sin perder
+     protagonismo. */
+  .acceso-produccion-volanta {
+    margin-bottom: 0.8rem;
+  }
+
+  .acceso-produccion-titulo {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .acceso-produccion-frase {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .acceso-produccion-cifras {
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
+
+  .acceso-produccion-cifra {
+    display: block;
+  }
+
+  .acceso-produccion-separador {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .acceso-produccion-banner {
+    border-radius: 10px;
+  }
+
+  .acceso-produccion-contenido {
+    padding: 2rem 2rem 2.8rem;
+  }
+
+  .acceso-produccion-titulo {
+    font-size: 2rem;
+  }
+
+  .acceso-produccion-frase {
+    font-size: 1.4rem;
+  }
+
+  .acceso-produccion-cta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .acceso-produccion-cta {
+    transition: none;
+  }
+}

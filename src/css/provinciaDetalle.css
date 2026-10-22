@@ -162,6 +162,38 @@
   margin-bottom: 0;
 }
 
+/* Enlace "Ver discurso" al pie de "Sobre la visita" (solo cuando la visita
+   o la actividad tiene `discursoSlug`, ver VisitaDetalle.jsx). Enlace de
+   texto discreto, separado del relato por un filete fino; alto mínimo de
+   44px para que sea cómodo de tocar en celular. */
+.enlace-discurso-container {
+  margin: 1.5rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.enlace-discurso {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.6rem;
+  color: #0037a0;
+  text-decoration: none;
+}
+
+.enlace-discurso:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.enlace-discurso:focus-visible {
+  outline: 2px solid #0037a0;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 /* Estilos para actividades dentro de una visita */
 .actividad-container {
   margin-bottom: 3rem;

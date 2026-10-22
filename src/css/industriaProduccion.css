@@ -1,0 +1,1016 @@
+/* Industria y Producción (IndustriaProduccion + componentes Produccion*).
+ *
+ * Identidad propia dentro de TPA: encabezado editorial alineado a la
+ * izquierda (no la imagen-título de Discursos ni las cards de
+ * Provincias), listado foto + texto separado por filetes finos, sin
+ * bordes ni sombras de card. Mismos colores (#0037a0, grises #4e4e4e /
+ * #838383), tipografías Raleway y botones outline de radio 5px que el
+ * resto del sitio. Breakpoints habituales: 1024 / 767 / 480. */
+
+.industria-produccion {
+  --produccion-azul: #0037a0;
+  --produccion-azul-claro: #e8eef9;
+  --produccion-texto: #4e4e4e;
+  --produccion-texto-suave: #838383;
+  --produccion-filete: #e0e0e0;
+  /* Separadores de bloque (antes de los apartados y entre años de la
+     agenda): un gris apenas más marcado que el filete de los ítems, para
+     que se lean como cortes de nivel superior sin el peso del negro. */
+  --produccion-separador: #cfcfcf;
+  padding-bottom: 8rem;
+}
+
+/* ---------- Encabezado ---------- */
+
+.produccion-encabezado {
+  padding: 5rem 0 3rem;
+}
+
+.produccion-kicker {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--produccion-azul);
+  margin-bottom: 1.2rem;
+}
+
+.produccion-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 5.6rem;
+  line-height: 1.05;
+  color: #000000;
+  margin-bottom: 2rem;
+  padding-left: 2.4rem;
+  border-left: 6px solid var(--produccion-azul);
+}
+
+.produccion-intro {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 2rem;
+  line-height: 1.55;
+  color: var(--produccion-texto);
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+/* ---------- Apartados (pestañas con forma de tarjeta) ----------
+   Bloque propio entre el encabezado y el contenido, separado por un
+   filete gris de 1px (--produccion-separador, como los años de la agenda). Las dos tarjetas pesan lo
+   mismo; el contador es el dato principal. La activa se marca con borde e
+   ícono azules y fondo azul claro. No son sticky: el Navegador ya lo es y
+   su altura varía por breakpoint. */
+
+.produccion-apartados {
+  padding: 0 0 3.5rem;
+}
+
+.produccion-apartados-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.4rem;
+  color: #000000;
+  padding-top: 2.4rem;
+  border-top: 1px solid var(--produccion-separador);
+  margin-bottom: 1.6rem;
+}
+
+.produccion-pestanias {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+/* Escritorio y notebook: ícono | título y descripción | contador, con el
+   alto y el aire de la primera versión (no una barra fina). */
+.produccion-pestania {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "icono texto cantidad";
+  column-gap: 2.4rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 13rem;
+  padding: 2.4rem 2.8rem;
+  background-color: #ffffff;
+  border: 2px solid var(--produccion-filete);
+  border-radius: 5px;
+  text-align: left;
+  transition: border-color 0.2s ease, background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.produccion-pestania:hover {
+  border-color: var(--produccion-azul);
+  box-shadow: 0 4px 14px rgba(0, 55, 160, 0.08);
+}
+
+.produccion-pestania.activo {
+  border-color: var(--produccion-azul);
+  background-color: var(--produccion-azul-claro);
+}
+
+.produccion-pestania-icono {
+  grid-area: icono;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  font-size: 2.4rem;
+  color: var(--produccion-azul);
+  background-color: var(--produccion-azul-claro);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.produccion-pestania.activo .produccion-pestania-icono {
+  color: #ffffff;
+  background-color: var(--produccion-azul);
+}
+
+.produccion-pestania-texto {
+  grid-area: texto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.produccion-pestania-nombre {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.produccion-pestania.activo .produccion-pestania-nombre {
+  color: var(--produccion-azul);
+}
+
+.produccion-pestania-descripcion {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--produccion-texto);
+}
+
+.produccion-pestania-cantidad {
+  grid-area: cantidad;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+  padding-left: 2.4rem;
+  border-left: 1px solid var(--produccion-filete);
+  text-align: right;
+}
+
+.produccion-pestania-cantidad strong {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 4.8rem;
+  line-height: 1;
+  color: var(--produccion-azul);
+}
+
+.produccion-pestania-unidad {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.3rem;
+  color: var(--produccion-texto-suave);
+}
+
+/* Notebook angosta (1025–1199px): mismo esquema, algo menos de aire para
+   que el título no quede apretado contra el contador. */
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .produccion-pestania {
+    column-gap: 2rem;
+    padding: 2.4rem;
+  }
+
+  .produccion-pestania-cantidad {
+    padding-left: 2rem;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 4.2rem;
+  }
+}
+
+/* ---------- Bloques ---------- */
+
+.produccion-bloque {
+  padding: 6rem 0;
+  scroll-margin-top: 1rem;
+}
+
+.produccion-bloque-sectores,
+.produccion-bloque-agenda {
+  background-color: #f8f9fa;
+}
+
+.produccion-bloque-encabezado {
+  margin-bottom: 3.5rem;
+}
+
+.produccion-bloque-encabezado h2 {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 0.8rem;
+}
+
+/* Encabezados sin bajada (Establecimientos y Actividades): el aire hasta
+   los filtros lo da solo el margin-bottom del encabezado. */
+.produccion-bloque-encabezado h2:last-child {
+  margin-bottom: 0;
+}
+
+.produccion-bloque-encabezado p {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: var(--produccion-texto);
+  max-width: 680px;
+  margin: 0;
+}
+
+/* ---------- Botones y enlaces (mismo criterio que .filtro-btn /
+   .victoria-presentacion-cta) ---------- */
+
+.produccion-boton {
+  display: inline-block;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-azul);
+  background-color: #ffffff;
+  padding: 0.9rem 2.2rem;
+  border: 2px solid var(--produccion-azul);
+  border-radius: 5px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.produccion-boton:hover:not(:disabled),
+.produccion-boton:focus-visible {
+  background-color: var(--produccion-azul);
+  color: #ffffff;
+}
+
+.produccion-boton:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.produccion-boton-secundario {
+  font-family: "raleway-semibold", sans-serif;
+  border-width: 1px;
+}
+
+.produccion-enlace {
+  display: inline-block;
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.5rem;
+  color: var(--produccion-azul);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.produccion-enlace:hover,
+.produccion-enlace:focus-visible {
+  color: var(--produccion-azul);
+  border-bottom-color: var(--produccion-azul);
+}
+
+.industria-produccion button:focus-visible,
+.industria-produccion a:focus-visible,
+.industria-produccion select:focus-visible,
+.industria-produccion input:focus-visible {
+  outline: 3px solid rgba(0, 55, 160, 0.45);
+  outline-offset: 2px;
+}
+
+/* ---------- Gráfico por sector ---------- */
+
+.produccion-sectores-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-sector-fila {
+  display: grid;
+  grid-template-columns: minmax(16rem, 30rem) 1fr 15rem;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1.1rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.produccion-sector-fila:hover {
+  background-color: var(--produccion-azul-claro);
+}
+
+.produccion-sector-fila.activo {
+  background-color: var(--produccion-azul-claro);
+  box-shadow: inset 4px 0 0 var(--produccion-azul);
+}
+
+.produccion-sector-fila.atenuado {
+  opacity: 0.55;
+}
+
+.produccion-sector-nombre {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.produccion-sector-barra {
+  display: block;
+  height: 1.4rem;
+  background-color: var(--produccion-filete);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.produccion-sector-barra-relleno {
+  display: block;
+  height: 100%;
+  background-color: var(--produccion-azul);
+  border-radius: 2px;
+}
+
+.produccion-sector-valor {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.produccion-sector-valor strong {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 1.8rem;
+  color: var(--produccion-azul);
+}
+
+.produccion-sector-valor span {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.25rem;
+  color: var(--produccion-texto-suave);
+}
+
+.produccion-sectores-nota {
+  margin: 2rem 0 0;
+  padding-left: 1.2rem;
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.3rem;
+  color: var(--produccion-texto-suave);
+}
+
+/* ---------- Explorador ---------- */
+
+.produccion-filtros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr auto;
+  align-items: end;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+/* Agenda: sin búsqueda por nombre (provincia, sector y botón). */
+.produccion-filtros-agenda {
+  grid-template-columns: 1fr 1fr auto;
+  margin-bottom: 2.4rem;
+}
+
+.produccion-filtro label {
+  display: block;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 0.6rem;
+}
+
+.produccion-filtro .form-select,
+.produccion-filtro .form-control {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  border-radius: 5px;
+}
+
+.produccion-resultados {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-texto-suave);
+  margin: 0 0 1rem;
+}
+
+.produccion-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-item {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 4rem;
+  align-items: center;
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+.produccion-item:first-child {
+  border-top: none;
+}
+
+/* Ritmo editorial: en escritorio la foto alterna de lado. */
+@media (min-width: 1025px) {
+  .produccion-item:nth-child(even) {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  }
+
+  .produccion-item:nth-child(even) .produccion-item-foto {
+    order: 2;
+  }
+}
+
+.produccion-item-meta {
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--produccion-azul);
+  margin-bottom: 0.8rem;
+}
+
+.produccion-item-nombre {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3rem;
+  line-height: 1.15;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.produccion-item-rubro {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--produccion-texto);
+  margin-bottom: 0.6rem;
+}
+
+.produccion-item-detalle {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-texto-suave);
+  margin-bottom: 1.8rem;
+}
+
+.produccion-item-visitas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-item-visitas li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1.6rem;
+  padding: 0.6rem 0;
+}
+
+.produccion-item-visitas li + li {
+  border-top: 1px dashed var(--produccion-filete);
+}
+
+.produccion-item-visita-dato {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-texto);
+}
+
+.produccion-sin-resultados {
+  padding: 4rem 0;
+  text-align: center;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+.produccion-sin-resultados p {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.7rem;
+  color: var(--produccion-texto);
+  margin-bottom: 1.6rem;
+}
+
+.produccion-mas {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+/* ---------- Fotos (compartido por explorador y agenda) ---------- */
+
+.produccion-foto {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: var(--produccion-filete);
+}
+
+.produccion-foto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Sin foto propia: recurso neutro (azul institucional muy claro + logo),
+   nunca una imagen de otra actividad. */
+.produccion-foto-vacia {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  background: linear-gradient(135deg, #eef2f9 0%, #dde5f3 100%);
+}
+
+.produccion-foto-vacia img {
+  width: 34%;
+  max-width: 160px;
+  opacity: 0.22;
+}
+
+.produccion-foto-vacia span {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.25rem;
+  color: var(--produccion-texto-suave);
+}
+
+/* ---------- Agenda productiva ---------- */
+
+.produccion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.produccion-chip {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.4rem;
+  color: var(--produccion-azul);
+  background-color: #ffffff;
+  border: 1px solid var(--produccion-azul);
+  border-radius: 5px;
+  padding: 0.6rem 1.4rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.produccion-chip:hover,
+.produccion-chip.activo {
+  background-color: var(--produccion-azul);
+  color: #ffffff;
+}
+
+.produccion-chip.activo {
+  font-family: "raleway-semibold", sans-serif;
+}
+
+.produccion-chip-cantidad {
+  margin-left: 0.3rem;
+  opacity: 0.75;
+}
+
+.produccion-agenda-anio {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 2rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--produccion-separador);
+}
+
+.produccion-agenda-anio + .produccion-agenda-anio {
+  margin-top: 3rem;
+}
+
+.produccion-agenda-anio-titulo {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--produccion-azul);
+  margin: 0;
+}
+
+.produccion-agenda-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produccion-agenda-item {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 2.4rem;
+  align-items: start;
+  padding: 0 0 2.5rem;
+}
+
+.produccion-agenda-item + .produccion-agenda-item {
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--produccion-filete);
+}
+
+.produccion-agenda-categoria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: "raleway-semibold", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--produccion-azul);
+  margin-bottom: 0.6rem;
+}
+
+.produccion-agenda-fecha {
+  margin-left: auto;
+  font-family: "raleway-regular", sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1.35rem;
+  color: var(--produccion-texto-suave);
+}
+
+.produccion-agenda-nombre {
+  font-family: "raleway-bold", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 0.6rem;
+}
+
+.produccion-agenda-detalle,
+.produccion-agenda-entidades {
+  font-family: "raleway-regular", sans-serif;
+  font-size: 1.5rem;
+  color: var(--produccion-texto);
+  margin-bottom: 0.4rem;
+}
+
+.produccion-agenda-entidades {
+  font-size: 1.35rem;
+  color: var(--produccion-texto-suave);
+}
+
+.produccion-agenda-texto .produccion-enlace {
+  margin-top: 0.8rem;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .produccion-titulo {
+    font-size: 4.6rem;
+  }
+
+  /* Tarjetas (~340px cada una): dos columnas, pero por dentro en dos
+     filas (ícono y contador arriba; título y descripción debajo, a todo
+     el ancho) para que el título no quede comprimido. */
+  .produccion-pestania {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "icono cantidad"
+      "texto texto";
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+    align-items: center;
+    min-height: 0;
+    padding: 2.2rem;
+  }
+
+  .produccion-pestania-icono {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 2.1rem;
+  }
+
+  .produccion-pestania-nombre {
+    font-size: 1.9rem;
+  }
+
+  .produccion-pestania-descripcion {
+    font-size: 1.4rem;
+  }
+
+  .produccion-pestania-cantidad {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 4rem;
+  }
+
+  .produccion-sector-fila {
+    grid-template-columns: minmax(14rem, 22rem) 1fr 13rem;
+    gap: 1.4rem;
+  }
+
+  .produccion-filtros {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .produccion-filtros .produccion-boton {
+    justify-self: start;
+  }
+
+  .produccion-item {
+    gap: 3rem;
+  }
+
+  .produccion-item-nombre {
+    font-size: 2.6rem;
+  }
+
+  .produccion-agenda-anio {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}
+
+/* ---------- Celular ---------- */
+
+@media (max-width: 767px) {
+  .industria-produccion {
+    padding-bottom: 5rem;
+  }
+
+  .produccion-encabezado {
+    padding: 3.2rem 0 2.4rem;
+  }
+
+  .produccion-titulo {
+    font-size: 3.6rem;
+    padding-left: 1.6rem;
+    border-left-width: 5px;
+  }
+
+  .produccion-intro {
+    font-size: 1.6rem;
+  }
+
+  .produccion-bloque {
+    padding: 4.5rem 0;
+  }
+
+  /* Tarjetas de apartados: siguen lado a lado, en formato compacto.
+     Arriba ícono y contador; abajo el título completo (sin cortar
+     palabras). La descripción se omite y la unidad del contador queda
+     solo para lectores de pantalla (el título ya la nombra). Por debajo
+     de 360px se apilan (ver el bloque max-width: 359px). */
+  .produccion-apartados {
+    padding: 0 0 2.4rem;
+  }
+
+  .produccion-apartados-titulo {
+    font-size: 1.9rem;
+    padding-top: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .produccion-pestanias {
+    gap: 1rem;
+  }
+
+  .produccion-pestania {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "icono cantidad"
+      "texto texto";
+    column-gap: 0.8rem;
+    row-gap: 1rem;
+    align-items: center;
+    min-height: 0;
+    padding: 1.4rem 1.2rem 1.6rem;
+  }
+
+  .produccion-pestania-icono {
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1.6rem;
+  }
+
+  .produccion-pestania-nombre {
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  .produccion-pestania-descripcion {
+    display: none;
+  }
+
+  .produccion-pestania-cantidad {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 3.2rem;
+  }
+
+  .produccion-pestania-unidad {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .produccion-bloque-encabezado h2 {
+    font-size: 2.4rem;
+  }
+
+  .produccion-bloque-encabezado p {
+    font-size: 1.5rem;
+  }
+
+  /* Gráfico: nombre y valor arriba, barra completa abajo. */
+  .produccion-sector-fila {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "nombre valor"
+      "barra barra";
+    gap: 0.8rem 1.2rem;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .produccion-sector-nombre {
+    grid-area: nombre;
+    font-size: 1.5rem;
+  }
+
+  .produccion-sector-barra {
+    grid-area: barra;
+    height: 1rem;
+  }
+
+  .produccion-sector-valor {
+    grid-area: valor;
+    align-items: flex-end;
+  }
+
+  .produccion-sector-valor strong {
+    font-size: 1.6rem;
+  }
+
+  .produccion-filtros {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .produccion-filtros .produccion-boton {
+    justify-self: start;
+  }
+
+  /* Listado: foto arriba, texto y enlace debajo. */
+  .produccion-item {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 3rem 0;
+  }
+
+  .produccion-item .produccion-foto {
+    aspect-ratio: 16 / 10;
+  }
+
+  .produccion-item-nombre {
+    font-size: 2.4rem;
+  }
+
+  .produccion-item-rubro {
+    font-size: 1.6rem;
+  }
+
+  .produccion-item-visitas li {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .produccion-enlace {
+    padding: 0.4rem 0;
+  }
+
+  .produccion-agenda-anio {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .produccion-agenda-anio-titulo {
+    font-size: 2.6rem;
+  }
+
+  .produccion-agenda-item {
+    grid-template-columns: 11rem 1fr;
+    gap: 1.6rem;
+  }
+
+  .produccion-agenda-nombre {
+    font-size: 1.9rem;
+  }
+
+  .produccion-agenda-fecha {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+
+  /* Encuadre de fotos en celular (explorador y agenda comparten
+     ProduccionFoto). La foto llega de Cloudinary ya en 4:3 (preset
+     "card") y acá se recorta otra vez: a 16:10 en el explorador y a 16:9
+     en la agenda (≤480px). Centrada, perdía la parte de arriba de las
+     cabezas; se prioriza la franja superior (recorta 1/5 arriba y 4/5
+     abajo). Revisado foto por foto sobre los 28 establecimientos y las
+     24 actividades. Donde la caja sigue en 4:3 (miniaturas de la agenda
+     entre 481 y 767px) no hay recorte y la regla no tiene efecto. */
+  .produccion-foto-img {
+    object-position: 50% 20%;
+  }
+
+  /* Encuadres individuales, por el final de la URL (= public ID de la
+     foto): si la foto cambia, el ajuste deja de aplicarse solo. */
+  /* Arriba de todo: sombreros, cascos o cabezas tocan el borde superior.
+     Fiesta Nacional del Arroz (agenda), Ingenio La Florida, Arcadium
+     Lithium y Catena Zapata (explorador). */
+  .produccion-foto-img[src$="/entrerios-fiestaarroz-9.jpg"],
+  .produccion-foto-img[src$="/tucuman-ingenio-5.jpg"],
+  .produccion-foto-img[src$="/jujuy-exodo-3.jpg"],
+  .produccion-foto-img[src$="/mendoza-vendimia-10.jpg"] {
+    object-position: 50% 0;
+  }
+
+  /* Encuentro BERSA (agenda): rostros en el centro y el cartel abajo. */
+  .produccion-foto-img[src$="/bsas-bersa-1.jpg"] {
+    object-position: 50% 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .produccion-titulo {
+    font-size: 3.2rem;
+  }
+
+  .produccion-intro {
+    font-size: 1.6rem;
+  }
+
+  .produccion-agenda-item {
+    grid-template-columns: 1fr;
+  }
+
+  .produccion-agenda-item .produccion-foto {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Pantallas muy angostas (menos de 360px): "Establecimientos" ya no entra
+   completo en media tarjeta, así que se apilan. Cada tarjeta vuelve a una
+   sola fila (ícono | título | contador) para no ganar altura. */
+@media (max-width: 359px) {
+  .produccion-pestanias {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .produccion-pestania {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "icono texto cantidad";
+    column-gap: 1.2rem;
+    padding: 1.2rem 1.4rem;
+  }
+
+  .produccion-pestania-cantidad strong {
+    font-size: 2.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .industria-produccion * {
+    transition: none !important;
+  }
+}

@@ -21,7 +21,9 @@
 //
 // JSX: una sola instancia de Vite (ssrLoadModule) carga visitasProvincias.jsx
 // y senadoTemas.jsx, proyecta campos serializables y genera un HTML por
-// visita y por actividad de Senado.
+// visita y por actividad de Senado. Con la misma instancia valida además
+// los datos de Industria y Producción (validarIndiceProduccion): si hay
+// referencias rotas o valores inválidos, el build falla antes de generar.
 
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync } from "node:fs";
 import path from "node:path";
@@ -149,7 +151,8 @@ function anioDeFechaISO(fechaISO) {
 }
 
 // Una sola instancia: plugin-react del proyecto, middlewareMode, sin puerto.
-// Carga visitas (named export) y senado (default export). close() siempre.
+// Carga visitas (named export), senado (default export) y el índice de
+// Industria y Producción (src/utils/indiceProduccion.js). close() siempre.
 async function loadJsxDataModulesFromVite() {
   let vite;
   try {
@@ -189,9 +192,24 @@ async function loadJsxDataModulesFromVite() {
       );
     }
 
+    // Índice de Industria y Producción: misma instancia de Vite, así que
+    // reutiliza el visitasProvincias.jsx ya cargado (no se evalúa dos veces).
+    const produccionMod = await vite.ssrLoadModule(
+      "/src/utils/indiceProduccion.js"
+    );
+    if (
+      typeof produccionMod?.validarIndiceProduccion !== "function" ||
+      typeof produccionMod?.construirIndiceProduccion !== "function"
+    ) {
+      throw new Error(
+        "ssrLoadModule no exportó validarIndiceProduccion / construirIndiceProduccion."
+      );
+    }
+
     return {
       visitasProvincias: visitasMod.visitasProvincias,
       senadoTemas: senadoMod.default,
+      produccion: produccionMod,
     };
   } catch (err) {
     throw new Error(`No se pudieron cargar módulos JSX vía Vite: ${err.message}`);
@@ -273,6 +291,55 @@ function validateVisitasSocialMeta(visitasProvincias, projected) {
 
   console.log(
     `[generate-social-previews] Visitas cargadas vía Vite: ${derivedProvinceCount} provincias, ${derivedVisitCount} visitas (proyección ${projected.length}).`
+  );
+}
+
+// Vínculos opcionales visita/actividad → discurso (`discursoSlug`, que
+// VisitaDetalle.jsx muestra como "Ver discurso"). Falla si un slug no existe
+// en discursos.js, si una visita con actividades lo tiene a nivel de visita
+// (no se mostraría: el enlace va dentro de la actividad), si el nodo no tiene
+// descripción (el enlace va al pie de "Sobre la visita") o si un mismo
+// discurso queda vinculado desde más de un lugar.
+function validateDiscursoReferencias(visitasProvincias, discursos) {
+  const slugsDiscursos = new Set(discursos.map((d) => d.slug));
+  const vinculados = new Map();
+
+  const validar = (nodo, ubicacion) => {
+    if (nodo?.discursoSlug === undefined) return;
+    if (!isNonEmptyString(nodo.discursoSlug)) {
+      fail(`${ubicacion}: discursoSlug vacío o inválido.`);
+    }
+    if (!slugsDiscursos.has(nodo.discursoSlug)) {
+      fail(`${ubicacion}: discursoSlug "${nodo.discursoSlug}" no existe en discursos.js.`);
+    }
+    if (!nodo.descripcion) {
+      fail(`${ubicacion}: tiene discursoSlug pero no descripcion (el enlace no se mostraría).`);
+    }
+    if (vinculados.has(nodo.discursoSlug)) {
+      fail(
+        `Discurso "${nodo.discursoSlug}" vinculado dos veces: ${vinculados.get(nodo.discursoSlug)} y ${ubicacion}.`
+      );
+    }
+    vinculados.set(nodo.discursoSlug, ubicacion);
+  };
+
+  for (const [provinciaSlug, provincia] of Object.entries(visitasProvincias)) {
+    for (const visita of provincia?.visitas ?? []) {
+      const ubicacionVisita = `${provinciaSlug}/${visita.slug}`;
+      if (visita.actividades?.length && visita.discursoSlug !== undefined) {
+        fail(
+          `${ubicacionVisita}: tiene actividades, así que discursoSlug va en la actividad, no en la visita.`
+        );
+      }
+      validar(visita, ubicacionVisita);
+      (visita.actividades ?? []).forEach((actividad, indice) =>
+        validar(actividad, `${ubicacionVisita} (actividad #${indice})`)
+      );
+    }
+  }
+
+  console.log(
+    `[generate-social-previews] Vínculos visita → discurso OK: ${vinculados.size}.`
   );
 }
 
@@ -736,10 +803,14 @@ for (const discurso of discursos) {
 
 let projectedVisitas;
 let projectedActividades;
+let produccion;
 try {
-  const { visitasProvincias, senadoTemas } = await loadJsxDataModulesFromVite();
+  const { visitasProvincias, senadoTemas, produccion: produccionMod } =
+    await loadJsxDataModulesFromVite();
+  produccion = produccionMod;
   projectedVisitas = projectVisitasSocialMeta(visitasProvincias);
   validateVisitasSocialMeta(visitasProvincias, projectedVisitas);
+  validateDiscursoReferencias(visitasProvincias, discursos);
 
   inspectSenadoImagenTituloTypes(senadoTemas);
   projectedActividades = projectSenadoSocialMeta(senadoTemas);
@@ -748,6 +819,28 @@ try {
 } catch (err) {
   fail(err.message || String(err));
 }
+
+// ---------------------------------------------------------------------
+// 4c. Validar Industria y Producción (catálogos + referencias en visitas)
+// ---------------------------------------------------------------------
+
+const erroresProduccion = produccion.validarIndiceProduccion();
+if (erroresProduccion.length > 0) {
+  fail(
+    `Industria y Producción: ${erroresProduccion.length} problema(s) de datos:\n  - ${erroresProduccion.join("\n  - ")}`
+  );
+}
+
+const { estadisticas: estadisticasProduccion } =
+  produccion.construirIndiceProduccion();
+console.log(
+  `[generate-social-previews] Industria y Producción OK: ` +
+    `${estadisticasProduccion.totalEstablecimientos} establecimientos ` +
+    `(${estadisticasProduccion.totalReferenciasEstablecimientos} referencias), ` +
+    `${estadisticasProduccion.totalActividadesSectoriales} actividades sectoriales ` +
+    `(${estadisticasProduccion.totalParticipacionesSectoriales} participaciones), ` +
+    `${estadisticasProduccion.totalVisitasVinculadas} visitas vinculadas.`
+);
 
 // ---------------------------------------------------------------------
 // 5. (Re)crear dist/_social limpio y generar Discursos + Provincias + Senado

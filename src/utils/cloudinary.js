@@ -9,6 +9,10 @@ const TRANSFORMS = {
   // Miniaturas personalizadas de Discursos (16:9): limita ancho, no recorta;
   // el encuadre 16:9 lo da la card (DiscursoCard / discursoCard.css).
   discurso: "w_960,c_limit/q_auto/f_auto",
+  // Banners anchos del Home (AccesoProduccionHome): limita ancho, no recorta;
+  // el encuadre lo da object-fit en el CSS según el breakpoint. Con c_limit
+  // no amplía: una foto más angosta que 1600 se entrega en su ancho real.
+  banner: "w_1600,c_limit/q_auto/f_auto",
 };
 
 export const getCloudinaryUrl = (publicId, preset) => {

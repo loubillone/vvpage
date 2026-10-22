@@ -4,8 +4,32 @@ import { Helmet } from "react-helmet-async";
 import "../css/provinciaDetalle.css";
 import { Carousel, Container, Button } from "react-bootstrap";
 import { visitasProvincias } from "../data/visitasProvincias";
+import discursos from "../data/discursos";
 import { getCloudinaryUrl } from "../utils/cloudinary";
 import ShareButtons from "../components/ShareButtons";
+
+// Discursos por slug, para resolver el campo opcional `discursoSlug` de una
+// visita (si no tiene actividades) o de una actividad. La visita solo guarda
+// el slug: el título sale siempre de discursos.js. Las referencias a slugs
+// inexistentes las rechaza el build (scripts/generate-social-previews.mjs);
+// acá, por las dudas, simplemente no se muestra el enlace.
+const DISCURSOS_POR_SLUG = new Map(discursos.map((d) => [d.slug, d]));
+
+const enlaceDiscurso = (discursoSlug) => {
+  const discurso = DISCURSOS_POR_SLUG.get(discursoSlug);
+  if (!discurso) return null;
+  return (
+    <p className="enlace-discurso-container">
+      <Link
+        to={`/discursos/${discurso.slug}`}
+        className="enlace-discurso"
+        aria-label={`Ver discurso: ${discurso.titulo}`}
+      >
+        Ver discurso <span aria-hidden="true">→</span>
+      </Link>
+    </p>
+  );
+};
 
 const VisitaDetalle = () => {
   const { slug, visitaSlug } = useParams();
@@ -173,6 +197,7 @@ const VisitaDetalle = () => {
                       <div className="descripcion-visita">
                         {actividad.descripcion}
                       </div>
+                      {enlaceDiscurso(actividad.discursoSlug)}
                     </div>
                   </div>
                 </div>
@@ -240,6 +265,7 @@ const VisitaDetalle = () => {
                   <div className="descripcion-container">
                     <h2 className="subtitulo-descripcion">Sobre la visita</h2>
                     <div className="descripcion-visita">{visita.descripcion}</div>
+                    {enlaceDiscurso(visita.discursoSlug)}
                   </div>
                 </div>
               </div>
