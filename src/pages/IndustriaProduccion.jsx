@@ -201,10 +201,6 @@ const IndustriaProduccion = () => {
               <h2 id="produccion-explorador-titulo">
                 Establecimientos productivos
               </h2>
-              <p>
-                Empresas, plantas, cooperativas y productores, con el enlace a
-                la visita en la que se documentaron.
-              </p>
             </div>
             <ProduccionExplorador
               establecimientos={establecimientos}
@@ -232,13 +228,6 @@ const IndustriaProduccion = () => {
               <h2 id="produccion-agenda-titulo">
                 Actividades del sector productivo
               </h2>
-              <p>
-                {estadisticas.totalActividadesSectoriales} actividades
-                sectoriales (exposiciones, ferias, encuentros, cámaras,
-                entidades y organismos) con{" "}
-                {estadisticas.totalParticipacionesSectoriales} participaciones
-                registradas.
-              </p>
             </div>
             <ProduccionAgenda actividades={actividadesSectoriales} />
           </div>

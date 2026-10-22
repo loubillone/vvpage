@@ -11,6 +11,9 @@ import ProduccionFoto from "./ProduccionFoto";
 
 const CANTIDAD_POR_PASO = 8;
 
+// Valor que usa el catálogo cuando la localidad no está confirmada.
+const LOCALIDAD_SIN_DATO = "No especificada";
+
 // Minúsculas y sin tildes, para que "lacteos" encuentre "Lácteos".
 const normalizar = (texto) =>
   (texto ?? "")
@@ -160,9 +163,12 @@ const ProduccionExplorador = ({
                   </p>
                   <h3 className="produccion-item-nombre">{e.nombre}</h3>
                   <p className="produccion-item-rubro">{e.rubro}</p>
+                  {/* Sin localidad confirmada ("No especificada" en el
+                      catálogo) se muestra la provincia como referencia; el
+                      dato no se completa con una localidad supuesta. */}
                   <p className="produccion-item-detalle">
                     {tipo ? `${tipo} · ` : ""}
-                    {e.localidad}
+                    {e.localidad === LOCALIDAD_SIN_DATO ? e.provincia : e.localidad}
                   </p>
                   {/* Un establecimiento puede figurar en más de una visita
                       (p. ej. una gira entre dos provincias): un enlace por

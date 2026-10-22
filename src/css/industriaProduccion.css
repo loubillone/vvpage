@@ -13,6 +13,10 @@
   --produccion-texto: #4e4e4e;
   --produccion-texto-suave: #838383;
   --produccion-filete: #e0e0e0;
+  /* Separadores de bloque (antes de los apartados y entre años de la
+     agenda): un gris apenas más marcado que el filete de los ítems, para
+     que se lean como cortes de nivel superior sin el peso del negro. */
+  --produccion-separador: #cfcfcf;
   padding-bottom: 8rem;
 }
 
@@ -52,7 +56,7 @@
 
 /* ---------- Apartados (pestañas con forma de tarjeta) ----------
    Bloque propio entre el encabezado y el contenido, separado por un
-   filete de 2px (como los años de la agenda). Las dos tarjetas pesan lo
+   filete gris de 1px (--produccion-separador, como los años de la agenda). Las dos tarjetas pesan lo
    mismo; el contador es el dato principal. La activa se marca con borde e
    ícono azules y fondo azul claro. No son sticky: el Navegador ya lo es y
    su altura varía por breakpoint. */
@@ -66,7 +70,7 @@
   font-size: 2.4rem;
   color: #000000;
   padding-top: 2.4rem;
-  border-top: 2px solid #000000;
+  border-top: 1px solid var(--produccion-separador);
   margin-bottom: 1.6rem;
 }
 
@@ -212,6 +216,12 @@
   font-size: 3rem;
   color: #000000;
   margin-bottom: 0.8rem;
+}
+
+/* Encabezados sin bajada (Establecimientos y Actividades): el aire hasta
+   los filtros lo da solo el margin-bottom del encabezado. */
+.produccion-bloque-encabezado h2:last-child {
+  margin-bottom: 0;
 }
 
 .produccion-bloque-encabezado p {
@@ -588,7 +598,7 @@
   grid-template-columns: 12rem 1fr;
   gap: 2rem;
   padding-top: 2.5rem;
-  border-top: 2px solid #000000;
+  border-top: 1px solid var(--produccion-separador);
 }
 
 .produccion-agenda-anio + .produccion-agenda-anio {
@@ -928,6 +938,35 @@
   .produccion-agenda-fecha {
     margin-left: 0;
     flex-basis: 100%;
+  }
+
+  /* Encuadre de fotos en celular (explorador y agenda comparten
+     ProduccionFoto). La foto llega de Cloudinary ya en 4:3 (preset
+     "card") y acá se recorta otra vez: a 16:10 en el explorador y a 16:9
+     en la agenda (≤480px). Centrada, perdía la parte de arriba de las
+     cabezas; se prioriza la franja superior (recorta 1/5 arriba y 4/5
+     abajo). Revisado foto por foto sobre los 28 establecimientos y las
+     24 actividades. Donde la caja sigue en 4:3 (miniaturas de la agenda
+     entre 481 y 767px) no hay recorte y la regla no tiene efecto. */
+  .produccion-foto-img {
+    object-position: 50% 20%;
+  }
+
+  /* Encuadres individuales, por el final de la URL (= public ID de la
+     foto): si la foto cambia, el ajuste deja de aplicarse solo. */
+  /* Arriba de todo: sombreros, cascos o cabezas tocan el borde superior.
+     Fiesta Nacional del Arroz (agenda), Ingenio La Florida, Arcadium
+     Lithium y Catena Zapata (explorador). */
+  .produccion-foto-img[src$="/entrerios-fiestaarroz-9.jpg"],
+  .produccion-foto-img[src$="/tucuman-ingenio-5.jpg"],
+  .produccion-foto-img[src$="/jujuy-exodo-3.jpg"],
+  .produccion-foto-img[src$="/mendoza-vendimia-10.jpg"] {
+    object-position: 50% 0;
+  }
+
+  /* Encuentro BERSA (agenda): rostros en el centro y el cartel abajo. */
+  .produccion-foto-img[src$="/bsas-bersa-1.jpg"] {
+    object-position: 50% 50%;
   }
 }
 

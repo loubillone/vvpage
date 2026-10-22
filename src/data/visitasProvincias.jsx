@@ -1077,6 +1077,22 @@ export const visitasProvincias = {
                 </p>
 
                 <p>
+                  La firma inició sus actividades en{" "}
+                  <span className="vv-estilo-detalle">1990</span> con la venta
+                  de maquinaria agrícola, repuestos y servicios. Desde 1996 es
+                  concesionaria oficial de{" "}
+                  <span className="vv-estilo-detalle">Vassalli Fabril</span> y
+                  comercializa equipos e implementos de otras marcas, como{" "}
+                  <span className="vv-estilo-detalle">
+                    sembradoras, cabezales recolectores y tolvas
+                    autodescargables
+                  </span>
+                  . Cuenta además con un área de repuestos y servicio de
+                  posventa, y desde 2022 con una sucursal en la ciudad de
+                  Chivilcoy.
+                </p>
+
+                <p>
                   La recorrida permitió conocer la actividad de una firma
                   relacionada con el sector agropecuario y la provisión de
                   equipamiento para las tareas rurales, en el marco de los
@@ -1105,10 +1121,31 @@ export const visitasProvincias = {
 
                 <p>
                   La firma desarrolla su actividad en la industria láctea,
-                  especialmente en la elaboración de quesos. Tiene sus orígenes
-                  en un emprendimiento familiar que comenzó como tambo y
-                  posteriormente amplió sus instalaciones y su capacidad de
-                  elaboración.
+                  especialmente en la elaboración de quesos. Surgió como un
+                  pequeño tambo familiar que comenzó a elaborar quesos para{" "}
+                  <span className="vv-estilo-detalle">
+                    agregar valor a su propia leche
+                  </span>
+                  . Con el tiempo empezó a recibir leche de tambos vecinos y en
+                  2007 inauguró su planta en el{" "}
+                  <span className="vv-estilo-detalle">
+                    Parque Industrial de Chivilcoy
+                  </span>
+                  . La marca es elaborada por{" "}
+                  <span className="vv-estilo-detalle">Canagro S.A.</span>,
+                  integrada por las familias Cancro y Andreoli.
+                </p>
+
+                <p>
+                  Elabora quesos a partir de leche de vaca pasteurizada, entre
+                  ellos{" "}
+                  <span className="vv-estilo-detalle">
+                    reggianito, sardo, pepato, gruyère, provolone, mozzarella,
+                    cremoso y port salut
+                  </span>
+                  . Además, produce{" "}
+                  <span className="vv-estilo-detalle">ricota</span>, un
+                  derivado lácteo.
                 </p>
 
                 <p>
@@ -1138,6 +1175,32 @@ export const visitasProvincias = {
                   lácteos. En el momento de la visita, la firma empleaba a 130
                   personas y se dedicaba a la producción de leche larga vida y
                   una amplia variedad de quesos.
+                </p>
+
+                <p>
+                  La empresa fue fundada en{" "}
+                  <span className="vv-estilo-detalle">1999 en Luján</span> por
+                  la familia Peretto-Larroque y comenzó elaborando mozzarella.
+                  En 2001 incorporó una planta en San Sebastián, partido de
+                  Chivilcoy, donde sumó otras variedades, y en 2012 inauguró la
+                  planta de Suipacha, que pasó a ser el centro de su estructura
+                  industrial.
+                </p>
+
+                <p>
+                  Según información publicada en marzo de 2025, procesaba
+                  alrededor de{" "}
+                  <span className="vv-estilo-detalle">
+                    180.000 litros de leche por día
+                  </span>
+                  . A comienzos de ese año puso en marcha en Suipacha una línea
+                  de{" "}
+                  <span className="vv-estilo-detalle">
+                    leche larga vida UHT en sachet
+                  </span>
+                  , entera y descremada, con equipamiento de envasado aséptico.
+                  Su producción incluye además mozzarella, queso crema, quesos
+                  de barra, quesos duros y ricota.
                 </p>
 
                 <p>
