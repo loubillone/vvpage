@@ -294,6 +294,55 @@ function validateVisitasSocialMeta(visitasProvincias, projected) {
   );
 }
 
+// Vínculos opcionales visita/actividad → discurso (`discursoSlug`, que
+// VisitaDetalle.jsx muestra como "Ver discurso"). Falla si un slug no existe
+// en discursos.js, si una visita con actividades lo tiene a nivel de visita
+// (no se mostraría: el enlace va dentro de la actividad), si el nodo no tiene
+// descripción (el enlace va al pie de "Sobre la visita") o si un mismo
+// discurso queda vinculado desde más de un lugar.
+function validateDiscursoReferencias(visitasProvincias, discursos) {
+  const slugsDiscursos = new Set(discursos.map((d) => d.slug));
+  const vinculados = new Map();
+
+  const validar = (nodo, ubicacion) => {
+    if (nodo?.discursoSlug === undefined) return;
+    if (!isNonEmptyString(nodo.discursoSlug)) {
+      fail(`${ubicacion}: discursoSlug vacío o inválido.`);
+    }
+    if (!slugsDiscursos.has(nodo.discursoSlug)) {
+      fail(`${ubicacion}: discursoSlug "${nodo.discursoSlug}" no existe en discursos.js.`);
+    }
+    if (!nodo.descripcion) {
+      fail(`${ubicacion}: tiene discursoSlug pero no descripcion (el enlace no se mostraría).`);
+    }
+    if (vinculados.has(nodo.discursoSlug)) {
+      fail(
+        `Discurso "${nodo.discursoSlug}" vinculado dos veces: ${vinculados.get(nodo.discursoSlug)} y ${ubicacion}.`
+      );
+    }
+    vinculados.set(nodo.discursoSlug, ubicacion);
+  };
+
+  for (const [provinciaSlug, provincia] of Object.entries(visitasProvincias)) {
+    for (const visita of provincia?.visitas ?? []) {
+      const ubicacionVisita = `${provinciaSlug}/${visita.slug}`;
+      if (visita.actividades?.length && visita.discursoSlug !== undefined) {
+        fail(
+          `${ubicacionVisita}: tiene actividades, así que discursoSlug va en la actividad, no en la visita.`
+        );
+      }
+      validar(visita, ubicacionVisita);
+      (visita.actividades ?? []).forEach((actividad, indice) =>
+        validar(actividad, `${ubicacionVisita} (actividad #${indice})`)
+      );
+    }
+  }
+
+  console.log(
+    `[generate-social-previews] Vínculos visita → discurso OK: ${vinculados.size}.`
+  );
+}
+
 function inspectSenadoImagenTituloTypes(senadoTemas) {
   for (const tema of Object.values(senadoTemas)) {
     const tipo = typeof tema?.imagenTitulo;
@@ -761,6 +810,7 @@ try {
   produccion = produccionMod;
   projectedVisitas = projectVisitasSocialMeta(visitasProvincias);
   validateVisitasSocialMeta(visitasProvincias, projectedVisitas);
+  validateDiscursoReferencias(visitasProvincias, discursos);
 
   inspectSenadoImagenTituloTypes(senadoTemas);
   projectedActividades = projectSenadoSocialMeta(senadoTemas);

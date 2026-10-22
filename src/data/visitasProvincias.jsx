@@ -46,6 +46,57 @@ export const visitasProvincias = {
       },
 
       {
+        titulo: "Almuerzo por el Día del Trabajador — UTHGRA",
+        slug: "almuerzo-uthgra-2024",
+        fechaISO: "2024-05-01",
+        precisionFecha: "dia",
+        imagenPortada: "tpa-web/provincias/bsas/caba/UTHGRA/caba-uthgra-1.webp",
+        fecha: "Mayo de 2024",
+        descripcion: (
+          <>
+            <p>
+              El <span className="vv-estilo-detalle">1 de mayo de 2024</span>,
+              la vicepresidente{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
+              participó del almuerzo por el{" "}
+              <span className="vv-estilo-detalle">Día del Trabajador</span>,
+              organizado por la seccional porteña de la{" "}
+              <span className="vv-estilo-detalle">
+                Unión de Trabajadores del Turismo, Hoteleros y Gastronómicos de
+                la República Argentina (UTHGRA)
+              </span>
+              , encabezada por{" "}
+              <span className="vv-estilo-detalle">Dante Camaño</span>.
+            </p>
+
+            <p>
+              Durante el encuentro, que reunió a representantes sindicales y
+              dirigentes políticos, Villarruel destacó{" "}
+              <span className="vv-estilo-detalle">
+                el trabajo como principal ordenador social
+              </span>{" "}
+              y su papel en la dignidad de las personas, y planteó el pleno
+              empleo como un imperativo moral.
+            </p>
+
+            <p>
+              Entre los presentes estuvieron{" "}
+              <span className="vv-estilo-detalle">
+                Waldo Wolff, Roberto García Moritán y Jorge Triaca
+              </span>
+              , junto a otros referentes del ámbito político y sindical.
+            </p>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/caba/UTHGRA/caba-uthgra-1.webp",
+          "tpa-web/provincias/bsas/caba/UTHGRA/caba-uthgra-2.webp",
+        ],
+        lugar: "CABA",
+        discursoSlug: "almuerzo-dia-trabajador-uthgra-2024",
+      },
+
+      {
         titulo: "Producción y deporte en Mar del Plata",
         slug: "mar-del-plata-2024",
         fechaISO: "2024-05-20",
@@ -642,96 +693,48 @@ export const visitasProvincias = {
             <p>
               El{" "}
               <span className="vv-estilo-detalle">24 de octubre de 2024</span>,
-              la vicepresidente de la Nación,{" "}
-              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              la vicepresidente{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
               participó del{" "}
               <span className="vv-estilo-detalle">
                 XIII Fórum Nacional de Agronegocios
               </span>
               , organizado por{" "}
-              <span className="vv-estilo-detalle">LIDE Argentina</span> en el{" "}
-              <span className="vv-estilo-detalle">Alvear Icon Hotel</span>,
-              ubicado en Puerto Madero, Ciudad Autónoma de Buenos Aires. Bajo el
-              lema{" "}
+              <span className="vv-estilo-detalle">LIDE Argentina</span> en Puerto
+              Madero, Buenos Aires. Bajo el lema{" "}
               <span className="vv-estilo-detalle">
                 «Seguridad Alimentaria Global: el tema de nuestro tiempo»
               </span>
-              , la vicepresidente tuvo a su cargo el discurso de cierre del
-              encuentro.
+              , tuvo a su cargo el discurso de cierre ante empresarios,
+              funcionarios y especialistas del sector.
             </p>
 
             <p>
-              El foro reunió a{" "}
+              Durante su intervención, destacó el{" "}
               <span className="vv-estilo-detalle">
-                empresarios, funcionarios y especialistas nacionales e
-                internacionales
+                potencial de la Argentina como productora de alimentos para el
+                mundo
+              </span>
+              , sus recursos naturales, el capital humano y la innovación
+              tecnológica. Subrayó la importancia del{" "}
+              <span className="vv-estilo-detalle">
+                agregado de valor, la industrialización en origen y las
+                inversiones en infraestructura
               </span>{" "}
-              para analizar los desafíos y oportunidades de la producción
-              agroindustrial argentina. Entre los participantes se encontraban{" "}
-              <span className="vv-estilo-detalle">Rodolfo de Felipe</span>,
-              presidente de LIDE Argentina;{" "}
-              <span className="vv-estilo-detalle">Sergio Iraeta</span>,
-              secretario de Agricultura, Ganadería y Pesca de la Nación; y
-              referentes de importantes empresas vinculadas a la actividad
-              agropecuaria. Las exposiciones abordaron la{" "}
-              <span className="vv-estilo-detalle">
-                seguridad alimentaria mundial, la innovación tecnológica, la
-                sustentabilidad y el desarrollo de los agronegocios
-              </span>
-              .
+              para fortalecer el desarrollo productivo y las economías
+              regionales.
             </p>
 
             <p>
-              Durante su disertación, Villarruel destacó el{" "}
+              Finalmente, convocó al sector empresarial a impulsar una agenda
+              que integre{" "}
               <span className="vv-estilo-detalle">
-                potencial estratégico de la Argentina como productora de
-                alimentos para el mundo
+                campo, industria, innovación y formación de nuevos profesionales
               </span>
-              , frente al crecimiento de la población y la demanda internacional
-              de productos agropecuarios. Puso en valor la{" "}
-              <span className="vv-estilo-detalle">
-                diversidad de climas y suelos, el capital humano especializado y
-                la incorporación de biotecnología e innovación
-              </span>{" "}
-              como fortalezas del sistema productivo nacional. Asimismo, señaló
-              que las características ambientales de la producción argentina
-              representan, a su entender, una ventaja competitiva que debe
-              potenciarse.
+              , mediante políticas sostenibles en el tiempo.
             </p>
 
-            <p>
-              La vicepresidente hizo especial hincapié en la necesidad de
-              promover el{" "}
-              <span className="vv-estilo-detalle">
-                agregado de valor y la industrialización en origen
-              </span>
-              , como herramientas para impulsar el desarrollo económico y
-              productivo de las distintas regiones del país. También planteó la
-              importancia de establecer{" "}
-              <span className="vv-estilo-detalle">
-                políticas de Estado sostenibles en el tiempo
-              </span>
-              , acompañadas por inversiones en{" "}
-              <span className="vv-estilo-detalle">
-                infraestructura, tecnología y procesos de transformación
-                agroindustrial
-              </span>
-              , que permitan mejorar la competitividad y reducir las brechas
-              productivas.
-            </p>
-
-            <p>
-              En el cierre de su intervención, Villarruel convocó al sector
-              empresarial a continuar impulsando la{" "}
-              <span className="vv-estilo-detalle">
-                producción, la innovación y la formación de nuevas generaciones
-                de profesionales
-              </span>
-              , destacando la importancia de construir una agenda de desarrollo
-              que integre al campo y la industria argentina.
-            </p>
-
-            <p>Al finalizar su discurso, expresó:</p>
+            <p>Al finalizar, expresó:</p>
 
             <blockquote className="cita">
               “Más campo, más industria, más innovación y más jóvenes
@@ -747,6 +750,7 @@ export const visitasProvincias = {
         ],
         lugar: "Puerto Madero, CABA",
         actividadesSectoriales: ["foro-lide-agronegocios-2024"],
+        discursoSlug: "forum-nacional-agronegocios-2024",
       },
       {
         titulo: "Encuentro de Defensa y Seguridad 2024 — BERSA",
@@ -1518,6 +1522,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/chivilcoy-malvinas/ba-chivilcoy2-21",
         ],
         lugar: "Chivilcoy",
+        discursoSlug: "dia-veterano-caidos-malvinas-chivilcoy-2026",
       },
       {
         titulo: "Visita a Expoagro 2026",
@@ -1921,6 +1926,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/bsas/chivilcoy-rural/bsas-chivilcoy-rural-18.jpg",
         ],
         actividadesSectoriales: ["exposicion-rural-chivilcoy-2026"],
+        discursoSlug: "exposicion-rural-chivilcoy-2026",
       },
 
       {
@@ -3043,6 +3049,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/chubut/chubut-riomayo-13",
         ],
         lugar: "Río Mayo - Comodoro Rivadavia - Rada Tilly",
+        discursoSlug: "chubut-90-aniversario-rio-mayo-2025",
       },
     ],
   },
@@ -3106,6 +3113,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/tierra-del-fuego/tierraDelFuego-acto-6",
         ],
         lugar: "Ushuaia",
+        discursoSlug: "dia-veterano-ushuaia-2025",
       },
     ],
   },
@@ -4036,6 +4044,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/jujuy/jujuy-exodo-1.jpg",
               "tpa-web/provincias/jujuy/jujuy-exodo-12.jpg",
             ],
+            discursoSlug: "exodo-jujeno-2024",
           },
           {
             titulo: "Finca Campo Alegre",
@@ -4386,6 +4395,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/formosa/formosa-heroe-4",
         ],
         lugar: "Ciudad de Formosa",
+        discursoSlug: "dia-heroe-formoseno-2025",
       },
     ],
   },
@@ -5593,6 +5603,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/santa-fe/2026/venado-tuerto/santafe-expovenado-35",
             ],
             actividadesSectoriales: ["expovenado-2026"],
+            discursoSlug: "expovenado-2026",
           },
         ],
       },
@@ -5719,6 +5730,7 @@ export const visitasProvincias = {
           "tpa-web/provincias/corrientes/yapeyu/corrientes-yapeyu-6",
         ],
         lugar: "Yapeyú",
+        discursoSlug: "yapeyu-246-aniversario-natalicio-san-martin-2024",
       },
       {
         titulo: "Homenaje al Sargento Cabral",
@@ -5858,6 +5870,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/corrientes/saladas/corrientes-saladas-9.jpg",
               "tpa-web/provincias/corrientes/saladas/corrientes-saladas-3.jpg",
             ],
+            discursoSlug: "corrientes-homenaje-cabral-2025",
           },
         ],
       },
