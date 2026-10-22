@@ -5,8 +5,9 @@
 //
 // Convenciones (iguales a senadoTemas.jsx / visitasProvincias.jsx):
 // - fechaISO: fecha en formato "YYYY-MM" o "YYYY-MM-DD", según la precisión
-//   real disponible. Hoy hay 32 discursos: todos tienen precisión de mes,
-//   salvo el último (Programa de Pasantías Educativas), que tiene fecha exacta.
+//   real disponible. Hoy hay 33 discursos: todos tienen precisión de mes,
+//   salvo Éxodo Jujeño 2024 y Programa de Pasantías Educativas 2026, que
+//   tienen fecha exacta.
 // - precisionFecha: "mes" o "dia", según fechaISO.
 // - fecha: representación legible en español (ej. "Abril de 2024"), pensada
 //   para mostrarse en pantalla. NO es la que usan VideoGrid.jsx/VideoModal.jsx
@@ -180,6 +181,22 @@ const discursos = [
       "Victoria Villarruel dejó un mensaje a los presentes en el XIII Fórum Nacional de Agronegocios LIDE Argentina.",
     videoUrl: "https://youtu.be/NxR-OwvWnZs?si=HhZkdODOfswA---Y",
     id: 12,
+  },
+  // Fecha y contexto verificados con prensa del Gobierno de Jujuy y Todo
+  // Jujuy (23/08/2024). El video (fragmento de 2:20, publicado en 2026 por
+  // un canal de difusión) no es la fuente de la fecha. Miniatura: foto del
+  // acto ya usada en la visita provincial jujuy/exodo-jujeno-2024.
+  {
+    slug: "exodo-jujeno-2024",
+    titulo: "212.º aniversario del Éxodo Jujeño",
+    fechaISO: "2024-08-23",
+    precisionFecha: "dia",
+    fecha: "Agosto de 2024",
+    categoria: "Provincias",
+    descripcion:
+      "Victoria Villarruel brindó un discurso en San Salvador de Jujuy durante la reapertura del Cabildo Histórico, en el acto por el 212.º aniversario del Éxodo Jujeño, la gesta de 1812 encabezada por el general Manuel Belgrano. Destacó el sacrificio del pueblo jujeño, los retos del liderazgo y lo que los argentinos son capaces de hacer cuando están unidos.",
+    videoUrl: "https://youtu.be/WmF-L6NIe4w",
+    thumbnailPublicId: "tpa-web/provincias/jujuy/jujuy-exodo-10.jpg",
   },
 
   // ---------------------------------------------------------------------
