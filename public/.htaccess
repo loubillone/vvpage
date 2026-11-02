@@ -2,6 +2,13 @@
   RewriteEngine On
   RewriteBase /
 
+  # Dominio principal sin www. Va antes que las demás reglas: si no, las
+  # reescrituras a _social y el fallback SPA responderían 200 también en www.
+  # El destino no cumple la condición, así que no hay bucle, y la query string
+  # se conserva sola porque la sustitución no define otra.
+  RewriteCond %{HTTP_HOST} ^www\.todoporargentina\.com\.ar$ [NC]
+  RewriteRule ^ https://todoporargentina.com.ar%{REQUEST_URI} [R=301,L]
+
   # Redirección permanente de URLs antiguas de provincias
   RewriteRule ^provincia/(.+)$ /provincias/$1 [R=301,L]
 
