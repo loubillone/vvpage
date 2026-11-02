@@ -161,8 +161,8 @@ export const visitasProvincias = {
               <>
                 <p>
                   Victoria Villarruel también recorrió la planta industrial de{" "}
-                  <span className="vv-estilo-detalle">Lucciano’s</span>,
-                  ubicada en el{" "}
+                  <span className="vv-estilo-detalle">Lucciano’s</span>, ubicada
+                  en el{" "}
                   <span className="vv-estilo-detalle">
                     Parque Industrial General Savio
                   </span>{" "}
@@ -209,13 +209,15 @@ export const visitasProvincias = {
                     se acercó al Premier Pádel P1 Mar del Plata 2024,
                   </span>{" "}
                   disputado en el Polideportivo Islas Malvinas, donde observó
-                  los partidos de las mejores parejas masculinas y femeninas
-                  del mundo.
+                  los partidos de las mejores parejas masculinas y femeninas del
+                  mundo.
                 </p>
 
                 <p>
                   Acompañada por el intendente{" "}
-                  <span className="vv-estilo-detalle">Guillermo Montenegro</span>{" "}
+                  <span className="vv-estilo-detalle">
+                    Guillermo Montenegro
+                  </span>{" "}
                   y representantes del ámbito deportivo, expresó su apoyo al
                   deporte nacional y a los argentinos que se destacan en el
                   ámbito internacional.
@@ -331,7 +333,8 @@ export const visitasProvincias = {
         actividadesSectoriales: ["exposicion-rural-2024"],
         actividades: [
           {
-            titulo: "24 de julio de 2024 — Recorrida por la 136.ª Exposición Rural",
+            titulo:
+              "24 de julio de 2024 — Recorrida por la 136.ª Exposición Rural",
             descripcion: (
               <>
                 <p>
@@ -380,8 +383,8 @@ export const visitasProvincias = {
                   </span>
                   , promover la{" "}
                   <span className="vv-estilo-detalle">biotecnología</span>,
-                  facilitar el acceso a los mercados internacionales y fortalecer
-                  la{" "}
+                  facilitar el acceso a los mercados internacionales y
+                  fortalecer la{" "}
                   <span className="vv-estilo-detalle">
                     industrialización en origen
                   </span>
@@ -415,7 +418,8 @@ export const visitasProvincias = {
             ],
           },
           {
-            titulo: "28 de julio de 2024 — Acto inaugural de la 136.ª Exposición Rural",
+            titulo:
+              "28 de julio de 2024 — Acto inaugural de la 136.ª Exposición Rural",
             descripcion: (
               <>
                 <p>
@@ -455,8 +459,8 @@ export const visitasProvincias = {
                 </p>
 
                 <p>
-                  Tras participar de la ceremonia, Victoria destacó en sus
-                  redes sociales:
+                  Tras participar de la ceremonia, Victoria destacó en sus redes
+                  sociales:
                 </p>
 
                 <blockquote className="cita">
@@ -483,9 +487,8 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              El{" "}
-              <span className="vv-estilo-detalle">7 de agosto de 2024</span>, la
-              vicepresidente de la Nación,{" "}
+              El <span className="vv-estilo-detalle">7 de agosto de 2024</span>,
+              la vicepresidente de la Nación,{" "}
               <span className="vv-estilo-detalle">Victoria Villarruel</span>,
               visitó la sede de la{" "}
               <span className="vv-estilo-detalle">
@@ -577,9 +580,8 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              El{" "}
-              <span className="vv-estilo-detalle">28 de agosto de 2024</span>,
-              la vicepresidente de la Nación,{" "}
+              El <span className="vv-estilo-detalle">28 de agosto de 2024</span>
+              , la vicepresidente de la Nación,{" "}
               <span className="vv-estilo-detalle">Victoria Villarruel</span>,
               mantuvo un encuentro con representantes de la{" "}
               <span className="vv-estilo-detalle">
@@ -700,8 +702,8 @@ export const visitasProvincias = {
                 XIII Fórum Nacional de Agronegocios
               </span>
               , organizado por{" "}
-              <span className="vv-estilo-detalle">LIDE Argentina</span> en Puerto
-              Madero, Buenos Aires. Bajo el lema{" "}
+              <span className="vv-estilo-detalle">LIDE Argentina</span> en
+              Puerto Madero, Buenos Aires. Bajo el lema{" "}
               <span className="vv-estilo-detalle">
                 «Seguridad Alimentaria Global: el tema de nuestro tiempo»
               </span>
@@ -771,9 +773,8 @@ export const visitasProvincias = {
               <span className="vv-estilo-detalle">
                 4.ª edición del Encuentro de Defensa y Seguridad
               </span>
-              , organizado por{" "}
-              <span className="vv-estilo-detalle">BERSA</span> en{" "}
-              <span className="vv-estilo-detalle">Campo de Mayo</span>,
+              , organizado por <span className="vv-estilo-detalle">BERSA</span>{" "}
+              en <span className="vv-estilo-detalle">Campo de Mayo</span>,
               provincia de Buenos Aires. La exposición reunió desarrollos y
               equipamiento vinculados con la industria argentina de defensa y
               seguridad.
@@ -857,7 +858,9 @@ export const visitasProvincias = {
 
             <p>
               La reunión permitió avanzar en el diálogo para establecer una{" "}
-              <span className="vv-estilo-detalle">agenda legislativa común</span>
+              <span className="vv-estilo-detalle">
+                agenda legislativa común
+              </span>
               , mediante la cual se puedan canalizar propuestas del sector a
               través del Congreso Nacional. Villarruel manifestó su disposición
               a trabajar junto a los representantes rurales y fortalecer la
@@ -898,8 +901,7 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              El{" "}
-              <span className="vv-estilo-detalle">13 de marzo de 2025</span>,
+              El <span className="vv-estilo-detalle">13 de marzo de 2025</span>,
               la vicepresidente Victoria Villarruel visitó{" "}
               <span className="vv-estilo-detalle">
                 Expoagro 2025 edición YPF Agro
@@ -910,8 +912,7 @@ export const visitasProvincias = {
               </span>
               , provincia de Buenos Aires, en el marco de{" "}
               <span className="vv-estilo-detalle">
-                una de las principales muestras agroindustriales de la
-                Argentina
+                una de las principales muestras agroindustriales de la Argentina
               </span>
               .
             </p>
@@ -1041,8 +1042,8 @@ export const visitasProvincias = {
                     intendente Guillermo Britos en el Palacio Municipal,
                   </span>{" "}
                   donde mantuvieron un encuentro institucional. Villarruel
-                  recordó que conocía al jefe comunal desde la campaña
-                  electoral de 2023. Durante la jornada estuvo acompañada por la
+                  recordó que conocía al jefe comunal desde la campaña electoral
+                  de 2023. Durante la jornada estuvo acompañada por la
                   exlegisladora Claudia Rucci, quien participó de la recorrida
                   por distintos puntos de la región.
                 </p>
@@ -1117,8 +1118,8 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  Durante su recorrida por Chivilcoy, Victoria Villarruel también
-                  visitó la empresa quesera{" "}
+                  Durante su recorrida por Chivilcoy, Victoria Villarruel
+                  también visitó la empresa quesera{" "}
                   <span className="vv-estilo-detalle">El Gauchito,</span> donde
                   fue recibida por uno de sus dueños, Claudio Andreoli.
                 </p>
@@ -1148,8 +1149,8 @@ export const visitasProvincias = {
                     cremoso y port salut
                   </span>
                   . Además, produce{" "}
-                  <span className="vv-estilo-detalle">ricota</span>, un
-                  derivado lácteo.
+                  <span className="vv-estilo-detalle">ricota</span>, un derivado
+                  lácteo.
                 </p>
 
                 <p>
@@ -1254,8 +1255,7 @@ export const visitasProvincias = {
                   </span>{" "}
                   una institución agrotécnica destinada a la formación de
                   mujeres, perteneciente a la Fundación Marzano, donde fue
-                  recibida por sus autoridades y representantes de la
-                  fundación.
+                  recibida por sus autoridades y representantes de la fundación.
                 </p>
 
                 <p>
@@ -1535,12 +1535,13 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              El{" "}
-              <span className="vv-estilo-detalle">11 de marzo de 2026</span>, la
-              vicepresidente de la Nación,{" "}
+              El <span className="vv-estilo-detalle">11 de marzo de 2026</span>,
+              la vicepresidente de la Nación,{" "}
               <span className="vv-estilo-detalle">Victoria Villarruel</span>,
               participó de la{" "}
-              <span className="vv-estilo-detalle">20.ª edición de Expoagro</span>
+              <span className="vv-estilo-detalle">
+                20.ª edición de Expoagro
+              </span>
               , realizada en el Predio Ferial y Autódromo de San Nicolás,
               provincia de Buenos Aires, uno de los principales encuentros de la
               agroindustria argentina.
@@ -1813,8 +1814,8 @@ export const visitasProvincias = {
             <p>
               La vicepresidente Victoria Villarruel visitó{" "}
               <span className="vv-estilo-detalle">Cíntolo Hermanos</span>, una
-              empresa metalúrgica argentina fundada en 1932 y ubicada en Ituzaingó,
-              provincia de Buenos Aires.
+              empresa metalúrgica argentina fundada en 1932 y ubicada en
+              Ituzaingó, provincia de Buenos Aires.
             </p>
 
             <p>
@@ -1823,20 +1824,22 @@ export const visitasProvincias = {
                 más de 200 puestos de trabajo
               </span>{" "}
               y forma parte de la industria nacional. Durante la recorrida,
-              Villarruel destacó la importancia de conocer de cerca a las empresas
-              que producen, invierten y generan empleo formal en el país.
+              Villarruel destacó la importancia de conocer de cerca a las
+              empresas que producen, invierten y generan empleo formal en el
+              país.
             </p>
 
             <p>
-              En el marco del Día de la Industria, la vicepresidente puso en valor
-              la experiencia de las empresas argentinas, la capacitación de sus
-              trabajadores y su capacidad para crecer y generar nuevas
+              En el marco del Día de la Industria, la vicepresidente puso en
+              valor la experiencia de las empresas argentinas, la capacitación
+              de sus trabajadores y su capacidad para crecer y generar nuevas
               oportunidades.
             </p>
 
             <blockquote className="cita">
-              "Conocer de cerca empresas que producen, invierten y generan empleo
-              formal es también conocer el potencial que tiene nuestro país."
+              "Conocer de cerca empresas que producen, invierten y generan
+              empleo formal es también conocer el potencial que tiene nuestro
+              país."
             </blockquote>
           </>
         ),
@@ -1891,7 +1894,8 @@ export const visitasProvincias = {
             </p>
 
             <p>
-              La participación de Villarruel permitió destacar la importancia del{" "}
+              La participación de Villarruel permitió destacar la importancia
+              del{" "}
               <span className="vv-estilo-detalle">
                 interior productivo argentino
               </span>{" "}
@@ -1945,35 +1949,36 @@ export const visitasProvincias = {
               En el marco del{" "}
               <span className="vv-estilo-detalle">Día de la Industria</span>, la
               vicepresidente Victoria Villarruel visitó la planta industrial de{" "}
-              <span className="vv-estilo-detalle">FATE</span>, en la localidad de
-              Victoria, provincia de Buenos Aires.
+              <span className="vv-estilo-detalle">FATE</span>, en la localidad
+              de Victoria, provincia de Buenos Aires.
             </p>
 
             <p>
-              Durante la recorrida fue recibida por el presidente de la compañía,{" "}
+              Durante la recorrida fue recibida por el presidente de la
+              compañía,{" "}
               <span className="vv-estilo-detalle">
                 Javier Madanes Quintanilla
               </span>
-              , junto a su equipo directivo, quienes le brindaron un panorama sobre
-              la actualidad de la empresa y su producción a lo largo de los distintos
-              sectores de la planta.
+              , junto a su equipo directivo, quienes le brindaron un panorama
+              sobre la actualidad de la empresa y su producción a lo largo de
+              los distintos sectores de la planta.
             </p>
 
             <p>
-              FATE es una empresa argentina dedicada a la fabricación y exportación
-              de neumáticos. Según informa la compañía, emplea de manera directa a
-              más de{" "}
-              <span className="vv-estilo-detalle">2.000 personas</span> y cuenta con
-              la planta industrial de neumáticos más grande y moderna del país, con
-              una capacidad productiva que supera los cinco millones de neumáticos
-              por año.
+              FATE es una empresa argentina dedicada a la fabricación y
+              exportación de neumáticos. Según informa la compañía, emplea de
+              manera directa a más de{" "}
+              <span className="vv-estilo-detalle">2.000 personas</span> y cuenta
+              con la planta industrial de neumáticos más grande y moderna del
+              país, con una capacidad productiva que supera los cinco millones
+              de neumáticos por año.
             </p>
 
             <p>
-              La firma produce neumáticos para automóviles, camionetas, camiones,
-              colectivos, tractores y maquinaria vial, y forma parte del entramado
-              industrial argentino orientado tanto al mercado interno como a la
-              exportación.
+              La firma produce neumáticos para automóviles, camionetas,
+              camiones, colectivos, tractores y maquinaria vial, y forma parte
+              del entramado industrial argentino orientado tanto al mercado
+              interno como a la exportación.
             </p>
           </>
         ),
@@ -1999,35 +2004,37 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              La vicepresidente de la Nación, Victoria Villarruel,
-              visitó <span className="vv-estilo-detalle">Indelama SRL</span>,
-              una empresa familiar ubicada en Monte Grande, partido de
-              Esteban Echeverría, provincia de Buenos Aires. Fundada por
-              Hugo Ricciuti, cuenta con{" "}
+              La vicepresidente de la Nación, Victoria Villarruel, visitó{" "}
+              <span className="vv-estilo-detalle">Indelama SRL</span>, una
+              empresa familiar ubicada en Monte Grande, partido de Esteban
+              Echeverría, provincia de Buenos Aires. Fundada por Hugo Ricciuti,
+              cuenta con{" "}
               <span className="vv-estilo-detalle">
                 50 años de trayectoria en la industria maderera argentina
-              </span>.
+              </span>
+              .
             </p>
 
             <p>
-              Durante la recorrida, conoció las instalaciones de la
-              compañía, que dispone de una{" "}
+              Durante la recorrida, conoció las instalaciones de la compañía,
+              que dispone de una{" "}
               <span className="vv-estilo-detalle">
                 planta industrial de 23.000 metros cuadrados
-              </span>, equipada con tecnología de vanguardia y capacidad
-              para desarrollar soluciones a gran escala. Su trayectoria
-              refleja décadas de inversión, innovación y desarrollo
-              productivo.
+              </span>
+              , equipada con tecnología de vanguardia y capacidad para
+              desarrollar soluciones a gran escala. Su trayectoria refleja
+              décadas de inversión, innovación y desarrollo productivo.
             </p>
 
             <p>
               Indelama también se destaca por su{" "}
               <span className="vv-estilo-detalle">
                 compromiso con la educación y la formación de los jóvenes
-              </span>, a través de una escuela técnica que funciona en
-              convenio con la Universidad Nacional de Lomas de Zamora,
-              promoviendo la capacitación y la vinculación entre la
-              educación y el mundo del trabajo.
+              </span>
+              , a través de una escuela técnica que funciona en convenio con la
+              Universidad Nacional de Lomas de Zamora, promoviendo la
+              capacitación y la vinculación entre la educación y el mundo del
+              trabajo.
             </p>
 
             <p>
@@ -2059,6 +2066,92 @@ export const visitasProvincias = {
         ],
         establecimientosVisitados: ["indelama-monte-grande"],
       },
+      {
+        titulo: "Visita a Reciclar S.A.",
+        slug: "reciclar-2026",
+
+        fechaISO: "2026-10-30",
+        precisionFecha: "día",
+        imagenPortada:
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-1.jpg",
+        fecha: "Octubre de 2026",
+        lugar: "Sarandí, Avellaneda, Buenos Aires",
+
+        descripcion: (
+          <>
+            <p>
+              La Vicepresidente de la Nación,{" "}
+              <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+              visitó <span className="vv-estilo-detalle">Reciclar S.A.</span>,
+              una empresa argentina ubicada en{" "}
+              <span className="vv-estilo-detalle">
+                Sarandí, partido de Avellaneda
+              </span>
+              , dedicada a la recuperación y transformación industrial de
+              residuos plásticos. Con una extensa trayectoria en el sector, la
+              compañía emplea a{" "}
+              <span className="vv-estilo-detalle">400 trabajadores</span> y
+              procesa aproximadamente{" "}
+              <span className="vv-estilo-detalle">
+                30.000 toneladas de envases plásticos al año
+              </span>
+              .
+            </p>
+
+            <p>
+              La empresa incorpora{" "}
+              <span className="vv-estilo-detalle">
+                tecnología de clasificación automatizada
+              </span>{" "}
+              que permite transformar residuos en nuevas materias primas para
+              distintas industrias. Produce escamas y pellets de plástico
+              reciclado, utilizados en la fabricación de envases, productos
+              textiles y otros insumos, y cuenta con antecedentes de
+              comercialización en{" "}
+              <span className="vv-estilo-detalle">
+                mercados internacionales
+              </span>
+              .
+            </p>
+
+            <p>
+              Durante la recorrida, Villarruel destacó la importancia de la{" "}
+              <span className="vv-estilo-detalle">industria del reciclado</span>{" "}
+              como generadora de empleo y oportunidades. Según los datos que
+              compartió, por cada 100 toneladas de materiales recuperados
+              anualmente se generan{" "}
+              <span className="vv-estilo-detalle">4 empleos directos</span> y
+              participan{" "}
+              <span className="vv-estilo-detalle">
+                20 recuperadores urbanos
+              </span>
+              . En Argentina, más de{" "}
+              <span className="vv-estilo-detalle">100.000 personas</span>{" "}
+              integran esta cadena productiva, que combina{" "}
+              <span className="vv-estilo-detalle">
+                industria nacional, trabajo y economía circular
+              </span>
+              .
+            </p>
+          </>
+        ),
+        imagenes: [
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-1.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-2.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-3.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-4.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-5.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-6.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-8.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-9.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-10.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-11.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-7.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-12.jpg",
+          "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-13-1.jpg",
+        ],
+        establecimientosVisitados: ["reciclar-sarandi"],
+      },
     ],
   },
 
@@ -2088,9 +2181,8 @@ export const visitasProvincias = {
             </p>
 
             <p>
-              Durante su estadía, se alojó en Villa Allende, en la
-              residencia de una familia amiga, fortaleciendo los lazos con la
-              comunidad local.{" "}
+              Durante su estadía, se alojó en Villa Allende, en la residencia de
+              una familia amiga, fortaleciendo los lazos con la comunidad local.{" "}
               <span className="vv-estilo-detalle">
                 En el festival, fue recibida por la vicegobernadora Myrian
                 Prunotto, el intendente de Jesús María Federico Zárate y el
@@ -2821,8 +2913,7 @@ export const visitasProvincias = {
         slug: "procesion-milagro-2026",
         fechaISO: "2026-09-15",
         precisionFecha: "dia",
-        imagenPortada:
-          "tpa-web/provincias/salta/milagro/salta-milagro-27.jpg",
+        imagenPortada: "tpa-web/provincias/salta/milagro/salta-milagro-27.jpg",
         fecha: "Septiembre de 2026",
         descripcion: (
           <>
@@ -2854,10 +2945,8 @@ export const visitasProvincias = {
                 Misa Estacional en el pórtico de la Catedral Basílica de Salta
               </span>
               , oficiada por el nuncio apostólico{" "}
-              <span className="vv-estilo-detalle">
-                Michael Wallace Banach
-              </span>
-              . Villarruel asistió por invitación del arzobispo de Salta,{" "}
+              <span className="vv-estilo-detalle">Michael Wallace Banach</span>.
+              Villarruel asistió por invitación del arzobispo de Salta,{" "}
               <span className="vv-estilo-detalle">
                 monseñor Mario Antonio Cargnello
               </span>
@@ -2907,9 +2996,9 @@ export const visitasProvincias = {
             </p>
 
             <p>
-              La jornada estuvo marcada por horas de caminata, oración y
-              cantos, en una celebración que reúne cada año a la comunidad
-              salteña en torno a su fe y sus tradiciones.
+              La jornada estuvo marcada por horas de caminata, oración y cantos,
+              en una celebración que reúne cada año a la comunidad salteña en
+              torno a su fe y sus tradiciones.
             </p>
 
             <p>Villarruel expresó:</p>
@@ -2992,8 +3081,8 @@ export const visitasProvincias = {
             </p>
 
             <p>
-              Durante la ceremonia, Villarruel recordó con emoción su
-              niñez en la localidad:
+              Durante la ceremonia, Villarruel recordó con emoción su niñez en
+              la localidad:
             </p>
             <blockquote className="cita">
               "Fui muy feliz en cada uno de los días que viví en este pequeño
@@ -3079,9 +3168,9 @@ export const visitasProvincias = {
             </p>
 
             <p>
-              Durante el acto central, Villarruel participó de ofrendas
-              florales y discursos junto a autoridades locales, con la presencia
-              de niños y colegios con sus banderas de ceremonia, destacando la
+              Durante el acto central, Villarruel participó de ofrendas florales
+              y discursos junto a autoridades locales, con la presencia de niños
+              y colegios con sus banderas de ceremonia, destacando la
               importancia de transmitir memoria y patriotismo a las nuevas
               generaciones.
             </p>
@@ -3256,7 +3345,8 @@ export const visitasProvincias = {
         slug: "belen-el-rodeo-2025",
         fechaISO: "2025-07-18",
         precisionFecha: "dia",
-        imagenPortada: "tpa-web/provincias/catamarca/belen/catamarca-belen-16.jpg",
+        imagenPortada:
+          "tpa-web/provincias/catamarca/belen/catamarca-belen-16.jpg",
         fecha: "Julio de 2025",
         lugar: "San Fernando del Valle de Catamarca - Belén – El Rodeo",
         actividades: [
@@ -3378,8 +3468,8 @@ export const visitasProvincias = {
 
                 <p>
                   El proyecto contemplaba una superficie de 9.200 metros
-                  cuadrados, con áreas de internación, quirófanos, consultorios y
-                  servicios destinados a fortalecer la atención sanitaria del
+                  cuadrados, con áreas de internación, quirófanos, consultorios
+                  y servicios destinados a fortalecer la atención sanitaria del
                   oeste catamarqueño. Al momento de la visita, en julio de 2025,
                   la construcción se financiaba mediante regalías mineras y
                   aportes de las empresas estatales YMAD y CAMYEN.
@@ -3422,7 +3512,9 @@ export const visitasProvincias = {
               "tpa-web/provincias/catamarca/belen/catamarca-belen-5.jpg",
               "tpa-web/provincias/catamarca/belen/catamarca-belen-6.jpg",
             ],
-            establecimientosVisitados: ["taller-antonio-gutierrez-belen-catamarca"],
+            establecimientosVisitados: [
+              "taller-antonio-gutierrez-belen-catamarca",
+            ],
           },
           {
             titulo: "Cooperativa Arañitas Hilanderas",
@@ -3557,8 +3649,8 @@ export const visitasProvincias = {
                     Victoria Villarruel participó del tradicional desayuno anual
                     de la Corporación Vitivinícola Argentina (COVIAR),
                   </span>{" "}
-                  celebrado en el marco de la Fiesta Nacional de la Vendimia,
-                  en Mendoza.
+                  celebrado en el marco de la Fiesta Nacional de la Vendimia, en
+                  Mendoza.
                 </p>
 
                 <p>
@@ -3604,24 +3696,23 @@ export const visitasProvincias = {
                     Victoria Villarruel también participó del tradicional
                     Carrusel Vendimial,
                   </span>{" "}
-                  uno de los acontecimientos populares más representativos de
-                  la Fiesta Nacional de la Vendimia.
+                  uno de los acontecimientos populares más representativos de la
+                  Fiesta Nacional de la Vendimia.
                 </p>
 
                 <p>
-                  Acompañada por la vicegobernadora Hebe Casado, presenció
-                  parte del desfile por las calles de la ciudad de Mendoza y se
-                  acercó al público que seguía el paso de los carros. El
-                  Carrusel reunió a los carros de los departamentos,
-                  agrupaciones tradicionalistas y colectividades de la
-                  provincia.
+                  Acompañada por la vicegobernadora Hebe Casado, presenció parte
+                  del desfile por las calles de la ciudad de Mendoza y se acercó
+                  al público que seguía el paso de los carros. El Carrusel
+                  reunió a los carros de los departamentos, agrupaciones
+                  tradicionalistas y colectividades de la provincia.
                 </p>
 
                 <p>
-                  La celebración permitió a la vicepresidente compartir
-                  momentos con los mendocinos en el marco de una festividad que
-                  reconoce la historia, las tradiciones y el trabajo vinculado a
-                  la vitivinicultura.
+                  La celebración permitió a la vicepresidente compartir momentos
+                  con los mendocinos en el marco de una festividad que reconoce
+                  la historia, las tradiciones y el trabajo vinculado a la
+                  vitivinicultura.
                 </p>
 
                 <p>
@@ -3651,9 +3742,8 @@ export const visitasProvincias = {
                   <span className="vv-estilo-detalle">
                     Victoria Villarruel visitó la Bodega Catena Zapata,
                   </span>{" "}
-                  uno de los establecimientos vitivinícolas mendocinos con
-                  mayor reconocimiento internacional por la excelencia de sus
-                  vinos.
+                  uno de los establecimientos vitivinícolas mendocinos con mayor
+                  reconocimiento internacional por la excelencia de sus vinos.
                 </p>
 
                 <p>
@@ -3726,9 +3816,9 @@ export const visitasProvincias = {
 
                 <p>
                   Durante la reunión se abordaron inquietudes vinculadas a la
-                  infraestructura provincial, las rutas y los pasos
-                  fronterizos, entre otros asuntos relacionados con la
-                  articulación entre Mendoza y el Gobierno nacional.
+                  infraestructura provincial, las rutas y los pasos fronterizos,
+                  entre otros asuntos relacionados con la articulación entre
+                  Mendoza y el Gobierno nacional.
                 </p>
               </>
             ),
@@ -3945,8 +4035,8 @@ export const visitasProvincias = {
                     Cofradía de la Virgen del Carmen
                   </span>
                   , quienes le hicieron entrega de un{" "}
-                  <span className="vv-estilo-detalle">escapulario</span>
-                  , símbolo de fe y tradición.
+                  <span className="vv-estilo-detalle">escapulario</span>,
+                  símbolo de fe y tradición.
                 </p>
 
                 <p>
@@ -4092,7 +4182,9 @@ export const visitasProvincias = {
               <>
                 <p>
                   El{" "}
-                  <span className="vv-estilo-detalle">24 de agosto de 2024</span>
+                  <span className="vv-estilo-detalle">
+                    24 de agosto de 2024
+                  </span>
                   , tras recorrer el{" "}
                   <span className="vv-estilo-detalle">
                     Tren Solar de la Quebrada
@@ -4299,8 +4391,8 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  En el marco de su participación en la XVII Fiesta Nacional
-                  del Arroz,{" "}
+                  En el marco de su participación en la XVII Fiesta Nacional del
+                  Arroz,{" "}
                   <span className="vv-estilo-detalle">
                     la vicepresidente Victoria Villarruel mantuvo una reunión
                     con autoridades de la Federación Agraria Argentina (FAA),
@@ -4348,9 +4440,8 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              El{" "}
-              <span className="vv-estilo-detalle">5 de octubre de 2025</span>,
-              la vicepresidente{" "}
+              El <span className="vv-estilo-detalle">5 de octubre de 2025</span>
+              , la vicepresidente{" "}
               <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
               participó en la provincia de Formosa de la conmemoración del{" "}
               <span className="vv-estilo-detalle">Día del Héroe Formoseño</span>
@@ -4954,8 +5045,8 @@ export const visitasProvincias = {
                   </span>{" "}
                   realizada en el Espacio DUAM de Neuquén. Allí visitó los
                   stands, dialogó con expositores y destacó la importancia del
-                  desarrollo energético para la Argentina, al que describió
-                  como «la revolución de la energía».
+                  desarrollo energético para la Argentina, al que describió como
+                  «la revolución de la energía».
                 </p>
               </>
             ),
@@ -4981,8 +5072,8 @@ export const visitasProvincias = {
                   <span className="vv-estilo-detalle">Victoria Villarruel</span>{" "}
                   recorrió la ciudad junto al intendente{" "}
                   <span className="vv-estilo-detalle">Fernando Banderet</span>,
-                  para conocer el crecimiento urbano y los desafíos que genera la
-                  expansión de la actividad hidrocarburífera.
+                  para conocer el crecimiento urbano y los desafíos que genera
+                  la expansión de la actividad hidrocarburífera.
                 </p>
 
                 <p>
@@ -5002,9 +5093,9 @@ export const visitasProvincias = {
                   <span className="vv-estilo-detalle">
                     Vaca Muerta en la producción energética argentina
                   </span>
-                  , así como la necesidad de acompañar las inversiones del sector
-                  con infraestructura y mejores condiciones de vida para las
-                  comunidades locales.
+                  , así como la necesidad de acompañar las inversiones del
+                  sector con infraestructura y mejores condiciones de vida para
+                  las comunidades locales.
                 </p>
               </>
             ),
@@ -5091,7 +5182,9 @@ export const visitasProvincias = {
 
                 <p>
                   Con{" "}
-                  <span className="vv-estilo-detalle">47 años de trayectoria</span>
+                  <span className="vv-estilo-detalle">
+                    47 años de trayectoria
+                  </span>
                   , la compañía representa un ejemplo de{" "}
                   <span className="vv-estilo-detalle">
                     desarrollo científico y tecnológico nacional
@@ -5247,8 +5340,8 @@ export const visitasProvincias = {
             </p>
 
             <p>
-              Durante su estadía, Villarruel participó en las
-              tradicionales festividades religiosas del{" "}
+              Durante su estadía, Villarruel participó en las tradicionales
+              festividades religiosas del{" "}
               <span className="vv-estilo-detalle">
                 Divino Señor de Renca y del Santo Cristo de la Quebrada
               </span>
@@ -5318,8 +5411,8 @@ export const visitasProvincias = {
             </p>
 
             <p>
-              Villarruel compartió imágenes de su participación en sus
-              redes sociales, reafirmando su{" "}
+              Villarruel compartió imágenes de su participación en sus redes
+              sociales, reafirmando su{" "}
               <span className="vv-estilo-detalle">
                 compromiso con la memoria histórica y el reconocimiento a los
                 próceres nacionales,
@@ -5348,9 +5441,8 @@ export const visitasProvincias = {
         descripcion: (
           <>
             <p>
-              El{" "}
-              <span className="vv-estilo-detalle">7 de junio de 2024</span>, la
-              vicepresidente Victoria Villarruel visitó{" "}
+              El <span className="vv-estilo-detalle">7 de junio de 2024</span>,
+              la vicepresidente Victoria Villarruel visitó{" "}
               <span className="vv-estilo-detalle">Agroactiva 2024</span>,
               realizada en la ciudad de Armstrong, provincia de Santa Fe, en el
               marco de la{" "}
@@ -5957,9 +6049,9 @@ export const visitasProvincias = {
                   Como parte de su agenda en{" "}
                   <span className="vv-estilo-detalle">Las Heras</span>, la
                   vicepresidente recorrió la{" "}
-                  <span className="vv-estilo-detalle">Plaza Bicentenario</span>
-                  , acompañada por el intendente Antonio Carambia y los
-                  senadores nacionales Gadano y Carambia.
+                  <span className="vv-estilo-detalle">Plaza Bicentenario</span>,
+                  acompañada por el intendente Antonio Carambia y los senadores
+                  nacionales Gadano y Carambia.
                 </p>
 
                 <p>
@@ -6172,8 +6264,8 @@ export const visitasProvincias = {
                 <p>
                   Como cierre de su paso por el norte santacruceño, Victoria
                   Villarruel visitó la{" "}
-                  <span className="vv-estilo-detalle">Cueva de las Manos</span>
-                  , uno de los sitios arqueológicos más importantes de la
+                  <span className="vv-estilo-detalle">Cueva de las Manos</span>,
+                  uno de los sitios arqueológicos más importantes de la
                   Argentina y patrimonio histórico de la humanidad.
                 </p>
 
@@ -6234,7 +6326,8 @@ export const visitasProvincias = {
         fechaISO: "2026-09-02",
         precisionFecha: "dia",
 
-        imagenPortada: "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-2.jpg",
+        imagenPortada:
+          "tpa-web/provincias/san-juan/trilogia/sanjuan-trilogia-2.jpg",
 
         fecha: "Septiembre de 2026",
         lugar: "Capital, Rivadavia, Albardón, Pocito, Rawson y San Martín",
@@ -6254,10 +6347,10 @@ export const visitasProvincias = {
                 </p>
 
                 <p>
-                  La reunión abrió una extensa agenda de recorridas por distintos puntos
-                  de San Juan, centrada principalmente en conocer de primera mano sectores
-                  vinculados con la producción, la industria, la minería y la actividad
-                  olivícola.
+                  La reunión abrió una extensa agenda de recorridas por
+                  distintos puntos de San Juan, centrada principalmente en
+                  conocer de primera mano sectores vinculados con la producción,
+                  la industria, la minería y la actividad olivícola.
                 </p>
               </>
             ),
@@ -6276,18 +6369,20 @@ export const visitasProvincias = {
                   <span className="vv-estilo-detalle">
                     Universidad Católica de Cuyo
                   </span>
-                  , donde recorrió el Centro de Referencia en Evaluación Sensorial de
-                  Aceite de Oliva y otros Alimentos (CRESA) y participó de una cata de
-                  aceite de oliva junto a jurados internacionales, en el marco de{" "}
+                  , donde recorrió el Centro de Referencia en Evaluación
+                  Sensorial de Aceite de Oliva y otros Alimentos (CRESA) y
+                  participó de una cata de aceite de oliva junto a jurados
+                  internacionales, en el marco de{" "}
                   <span className="vv-estilo-detalle">ArgOliva 2026</span>.
                 </p>
 
                 <p>
-                  ArgOliva es un encuentro internacional dedicado al desarrollo del
-                  sector olivícola, que reúne a productores, especialistas e
-                  instituciones públicas y privadas. La actividad permitió acercarse a
-                  uno de los sectores productivos característicos de San Juan y conocer
-                  el trabajo de evaluación y análisis de la calidad de los aceites.
+                  ArgOliva es un encuentro internacional dedicado al desarrollo
+                  del sector olivícola, que reúne a productores, especialistas e
+                  instituciones públicas y privadas. La actividad permitió
+                  acercarse a uno de los sectores productivos característicos de
+                  San Juan y conocer el trabajo de evaluación y análisis de la
+                  calidad de los aceites.
                 </p>
               </>
             ),
@@ -6304,22 +6399,23 @@ export const visitasProvincias = {
             descripcion: (
               <>
                 <p>
-                  En Las Tapias, departamento de Albardón, la vicepresidente participó
-                  de un encuentro organizado por la{" "}
+                  En Las Tapias, departamento de Albardón, la vicepresidente
+                  participó de un encuentro organizado por la{" "}
                   <span className="vv-estilo-detalle">
-                    Cámara de Proveedores Interdepartamentales Mineros de San Juan
-                    (CAPRIMSA)
+                    Cámara de Proveedores Interdepartamentales Mineros de San
+                    Juan (CAPRIMSA)
                   </span>
                   .
                 </p>
 
                 <p>
                   Treinta empresas asociadas participaron de la reunión, donde
-                  expusieron sus actividades, capacidades y los principales desafíos que
-                  enfrentan como proveedores de la actividad minera. El intercambio
-                  permitió abordar especialmente la situación de las PyMEs sanjuaninas
-                  que forman parte de esta cadena productiva y su participación en el
-                  desarrollo de la minería provincial.
+                  expusieron sus actividades, capacidades y los principales
+                  desafíos que enfrentan como proveedores de la actividad
+                  minera. El intercambio permitió abordar especialmente la
+                  situación de las PyMEs sanjuaninas que forman parte de esta
+                  cadena productiva y su participación en el desarrollo de la
+                  minería provincial.
                 </p>
               </>
             ),
@@ -6337,15 +6433,16 @@ export const visitasProvincias = {
               <>
                 <p>
                   La agenda vinculada con la minería continuó con una visita a{" "}
-                  <span className="vv-estilo-detalle">MTZ</span>, empresa sanjuanina
-                  dedicada a brindar servicios de logística y transporte para el sector
-                  minero.
+                  <span className="vv-estilo-detalle">MTZ</span>, empresa
+                  sanjuanina dedicada a brindar servicios de logística y
+                  transporte para el sector minero.
                 </p>
 
                 <p>
-                  Durante la recorrida, Villarruel conoció las instalaciones de la firma
-                  y su actividad como parte del entramado de empresas locales que prestan
-                  servicios y soporte a los proyectos mineros de la provincia.
+                  Durante la recorrida, Villarruel conoció las instalaciones de
+                  la firma y su actividad como parte del entramado de empresas
+                  locales que prestan servicios y soporte a los proyectos
+                  mineros de la provincia.
                 </p>
               </>
             ),
@@ -6364,23 +6461,24 @@ export const visitasProvincias = {
                   <span className="vv-estilo-detalle">
                     planta industrial de ARCOR
                   </span>{" "}
-                  ubicada en Villa Krause, departamento Rawson, dedicada a la elaboración
-                  de conservas de tomate y salsas.
+                  ubicada en Villa Krause, departamento Rawson, dedicada a la
+                  elaboración de conservas de tomate y salsas.
                 </p>
 
                 <p>
-                  Durante la visita conoció el proceso productivo que articula la
-                  producción primaria con la industrialización y el envasado. Los tomates
-                  producidos en San Juan atraviesan procesos de selección y elaboración
-                  en la planta antes de convertirse en productos destinados tanto al
-                  mercado interno como al exterior.
+                  Durante la visita conoció el proceso productivo que articula
+                  la producción primaria con la industrialización y el envasado.
+                  Los tomates producidos en San Juan atraviesan procesos de
+                  selección y elaboración en la planta antes de convertirse en
+                  productos destinados tanto al mercado interno como al
+                  exterior.
                 </p>
 
                 <p>
                   La recorrida permitió observar una{" "}
-                  <span className="vv-estilo-detalle">cadena de valor</span> que comienza
-                  en el productor y continúa dentro de la industria hasta el producto
-                  terminado y su packaging.
+                  <span className="vv-estilo-detalle">cadena de valor</span> que
+                  comienza en el productor y continúa dentro de la industria
+                  hasta el producto terminado y su packaging.
                 </p>
               </>
             ),
@@ -6399,17 +6497,17 @@ export const visitasProvincias = {
               <>
                 <p>
                   Más tarde, la vicepresidente visitó{" "}
-                  <span className="vv-estilo-detalle">Trilogía</span>, una PyME familiar
-                  sanjuanina dedicada a la producción de aceite de oliva extra virgen de
-                  alta gama.
+                  <span className="vv-estilo-detalle">Trilogía</span>, una PyME
+                  familiar sanjuanina dedicada a la producción de aceite de
+                  oliva extra virgen de alta gama.
                 </p>
 
                 <p>
-                  Ubicada en el departamento San Martín, la empresa forma parte del
-                  sector olivícola provincial y representa otra escala de la producción
-                  recorrida durante la jornada: la de los emprendimientos familiares que
-                  transforman la producción primaria y generan productos con valor
-                  agregado.
+                  Ubicada en el departamento San Martín, la empresa forma parte
+                  del sector olivícola provincial y representa otra escala de la
+                  producción recorrida durante la jornada: la de los
+                  emprendimientos familiares que transforman la producción
+                  primaria y generan productos con valor agregado.
                 </p>
               </>
             ),
@@ -6430,25 +6528,25 @@ export const visitasProvincias = {
                   <span className="vv-estilo-detalle">
                     Campo San Martín del INTA
                   </span>
-                  , donde Villarruel conoció el Banco Mundial de Germoplasma de Olivo y
-                  el trabajo de investigación y preservación que se desarrolla en ese
-                  espacio.
+                  , donde Villarruel conoció el Banco Mundial de Germoplasma de
+                  Olivo y el trabajo de investigación y preservación que se
+                  desarrolla en ese espacio.
                 </p>
 
                 <p>
                   La colección sanjuanina fue reconocida por el Consejo Oleícola
-                  Internacional e integra la red mundial de bancos de germoplasma de
-                  olivo. Su función es conservar material genético de distintas
-                  variedades, resguardar la biodiversidad de la especie y poner ese
-                  patrimonio a disposición de la investigación y del desarrollo
-                  productivo.
+                  Internacional e integra la red mundial de bancos de
+                  germoplasma de olivo. Su función es conservar material
+                  genético de distintas variedades, resguardar la biodiversidad
+                  de la especie y poner ese patrimonio a disposición de la
+                  investigación y del desarrollo productivo.
                 </p>
 
                 <p>
-                  El banco conserva cientos de variedades y accesiones mediante plantas
-                  vivas, constituyendo un recurso científico de relevancia internacional
-                  y una herramienta para estudiar, preservar y mejorar la producción
-                  olivícola.
+                  El banco conserva cientos de variedades y accesiones mediante
+                  plantas vivas, constituyendo un recurso científico de
+                  relevancia internacional y una herramienta para estudiar,
+                  preservar y mejorar la producción olivícola.
                 </p>
               </>
             ),
