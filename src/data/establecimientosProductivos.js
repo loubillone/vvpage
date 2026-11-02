@@ -22,7 +22,8 @@ export const establecimientosProductivos = {
     sector: "servicios-agropecuarios",
     localidad: "Moquehuá",
     provincia: "Buenos Aires",
-    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-3.jpg",
+    imagenPortada:
+      "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-3.jpg",
   },
   "el-gauchito-chivilcoy": {
     nombre: "El Gauchito",
@@ -31,7 +32,8 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "Chivilcoy",
     provincia: "Buenos Aires",
-    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-5.jpg",
+    imagenPortada:
+      "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-5.jpg",
   },
   "lacteos-silvia-suipacha": {
     nombre: "Lácteos Silvia",
@@ -40,7 +42,8 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "Suipacha",
     provincia: "Buenos Aires",
-    imagenPortada: "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-8.jpg",
+    imagenPortada:
+      "tpa-web/provincias/bsas/chivilcoy-suipacha/ba-chivilcoy1-8.jpg",
   },
   "frigorifico-el-regional-saladillo": {
     nombre: 'Frigorífico "El Regional"',
@@ -75,6 +78,18 @@ export const establecimientosProductivos = {
     localidad: "Monte Grande",
     provincia: "Buenos Aires",
   },
+  "reciclar-sarandi": {
+    nombre: "Reciclar S.A.",
+    rubro: "Reciclado industrial de plásticos",
+    tipo: "empresa",
+    sector: "industria",
+    localidad: "Sarandí, Avellaneda",
+    provincia: "Buenos Aires",
+    descripcion:
+      "Empresa dedicada a la recuperación y transformación industrial de residuos plásticos, con 400 empleados y una capacidad de procesamiento de aproximadamente 30.000 toneladas anuales.",
+    imagenPortada:
+      "tpa-web/provincias/bsas/avellaneda/reciclar/bsas-reciclar-3.jpg",
+  },
   "havanna-mar-del-plata": {
     nombre: "Havanna",
     rubro: "Industria alimenticia: alfajores, chocolates y confitería",
@@ -98,7 +113,8 @@ export const establecimientosProductivos = {
     sector: "agroindustria",
     localidad: "La Florida",
     provincia: "Tucumán",
-    imagenPortada: "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-5.jpg",
+    imagenPortada:
+      "tpa-web/provincias/tucuman/2026/ingenio/tucuman-ingenio-5.jpg",
   },
   "finca-campo-alegre-san-pedro-jujuy": {
     nombre: "Finca Campo Alegre",
@@ -125,7 +141,8 @@ export const establecimientosProductivos = {
     sector: "vitivinicola-olivicola",
     localidad: "Agrelo, Luján de Cuyo",
     provincia: "Mendoza",
-    imagenPortada: "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-10.jpg",
+    imagenPortada:
+      "tpa-web/provincias/mendoza/vendimia-24/mendoza-vendimia-10.jpg",
   },
   // Localidad pendiente de confirmar con una fuente verificable.
   "fincas-moronta-testa-castillo-mendoza": {
@@ -153,7 +170,8 @@ export const establecimientosProductivos = {
     provincia: "La Rioja",
     // Portada elegida a mano: no es la primera foto de su actividad en la
     // visita (la galería del parque eólico empieza en larioja-parques-7).
-    imagenPortada: "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-10.jpg",
+    imagenPortada:
+      "tpa-web/provincias/la-rioja/eolico-dino/larioja-parques-10.jpg",
   },
   "bodega-malma-neuquen": {
     nombre: "Bodega Malma",
@@ -189,7 +207,8 @@ export const establecimientosProductivos = {
     sector: "produccion-primaria",
     localidad: "Los Antiguos",
     provincia: "Santa Cruz",
-    imagenPortada: "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-1.jpg",
+    imagenPortada:
+      "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-1.jpg",
   },
   "chacra-la-querencia-los-antiguos-santa-cruz": {
     nombre: "Chacra La Querencia",
@@ -198,7 +217,8 @@ export const establecimientosProductivos = {
     sector: "produccion-primaria",
     localidad: "Los Antiguos",
     provincia: "Santa Cruz",
-    imagenPortada: "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-10.jpg",
+    imagenPortada:
+      "tpa-web/provincias/santa-cruz/losantiguos/chacraLosAntiguos/sc-chacra-10.jpg",
   },
   "empresa-mtz-san-juan": {
     nombre: "Empresa MTZ",
