@@ -4,8 +4,9 @@ import { getCloudinaryUrl } from "../utils/cloudinary";
 import "../css/accesoProduccionHome.css";
 
 // Banner de acceso a /industria-produccion, entre Últimas visitas y el Mapa.
-// Hoy es el único acceso a la sección (todavía no está en Navegador, Footer
-// ni sitemap).
+// Hoy es el único acceso interno a la sección (todavía no está en Navegador
+// ni Footer; sí en el sitemap). Es un <Link>: se renderiza como <a href>
+// rastreable.
 // Las cifras salen de indiceProduccion (las mismas que muestran los
 // contadores de la sección), no se escriben a mano.
 // Foto: portada de la visita a Cíntolo Hermanos en Ituzaingó

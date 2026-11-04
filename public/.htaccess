@@ -53,3 +53,19 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
 </IfModule>
+
+# --- Caché del navegador: documentos HTML ---
+# Sin Cache-Control, el navegador aplica caché heurística (≈10 % de la edad
+# de Last-Modified) y puede reutilizar un index.html viejo, que apunta a los
+# JS/CSS de la versión anterior, sin consultar al servidor. Con no-cache lo
+# guarda pero lo revalida en cada carga (ETag → 304 si no cambió).
+# FilesMatch se evalúa sobre el archivo final: cubre index.html, las rutas
+# de React Router que el fallback reescribe a index.html y los HTML de
+# _social. No toca JS, CSS, imágenes ni fuentes (siguen con la política del
+# hosting) ni las redirecciones 301.
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+    Header unset Expires
+  </FilesMatch>
+</IfModule>
