@@ -10,10 +10,18 @@
 // coviar-2026); la entidad va en `entidades`.
 //
 // Acá NO se guardan fechas, descripciones, galerías ni URLs: se obtienen
-// siempre de la visita que referencia a la actividad.
+// de la visita que referencia a la actividad. Excepción: las actividades
+// hechas fuera de una visita provincial (p. ej. reuniones en el Senado)
+// guardan esos datos en actividadesSectorialesPropias.jsx y tienen página
+// propia; no se cargan como visitas.
 //
 // Convención de ids: los eventos llevan el año de su edición
 // (exposicion-rural-chivilcoy-2026, coviar-2024).
+//
+// `provincia` es la jurisdicción real donde se hizo la actividad: CABA
+// ("Ciudad Autónoma de Buenos Aires") es distinta de la provincia de
+// Buenos Aires, aunque sus visitas estén cargadas en visitasProvincias.jsx
+// bajo "buenos-aires". Es el valor del filtro "Jurisdicción" de la agenda.
 //
 // `categoria` y `sector` solo admiten las claves definidas en
 // sectoresProductivos.js (CATEGORIAS_SECTORIALES y SECTORES).
@@ -42,7 +50,7 @@ export const actividadesSectoriales = {
     categoria: "exposicion",
     sector: "agroindustria",
     localidad: "Palermo, CABA",
-    provincia: "Buenos Aires",
+    provincia: "Ciudad Autónoma de Buenos Aires",
     entidades: ["Sociedad Rural Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/rural2024/caba-rural2024-1.jpg",
   },
@@ -59,16 +67,27 @@ export const actividadesSectoriales = {
     categoria: "encuentro",
     sector: "agroindustria",
     localidad: "CABA",
-    provincia: "Buenos Aires",
+    provincia: "Ciudad Autónoma de Buenos Aires",
     entidades: ["CRA"],
     imagenPortada: "tpa-web/provincias/bsas/caba/cra/caba-cra-1.jpg",
+  },
+  // Reunión en el Senado, fuera de una visita provincial: fecha, lugar,
+  // galería y texto en actividadesSectorialesPropias.jsx.
+  "reunion-capa-2026": {
+    nombre: "Reunión con la Cámara Argentina del Papel y Afines (CAPA)",
+    categoria: "camara",
+    sector: "industria",
+    localidad: "Senado de la Nación",
+    provincia: "Ciudad Autónoma de Buenos Aires",
+    entidades: ["Cámara Argentina del Papel y Afines (CAPA)"],
+    imagenPortada: "tpa-web/provincias/bsas/caba/capa/senado-capa-1.jpg",
   },
   "reunion-coninagro-2024": {
     nombre: "Reunión con autoridades de CONINAGRO",
     categoria: "encuentro",
     sector: "agroindustria",
     localidad: "CABA",
-    provincia: "Buenos Aires",
+    provincia: "Ciudad Autónoma de Buenos Aires",
     entidades: ["CONINAGRO"],
     imagenPortada: "tpa-web/provincias/bsas/caba/coninagro/caba-coninagro-1.jpg",
   },
@@ -77,7 +96,7 @@ export const actividadesSectoriales = {
     categoria: "encuentro",
     sector: "agroindustria",
     localidad: "Palermo, CABA",
-    provincia: "Buenos Aires",
+    provincia: "Ciudad Autónoma de Buenos Aires",
     entidades: ["Mesa Nacional de las Carnes"],
     imagenPortada: "tpa-web/provincias/bsas/caba/mesa-carnes/caba-mesa-1.jpg",
   },
@@ -86,7 +105,7 @@ export const actividadesSectoriales = {
     categoria: "encuentro",
     sector: "agroindustria",
     localidad: "Puerto Madero, CABA",
-    provincia: "Buenos Aires",
+    provincia: "Ciudad Autónoma de Buenos Aires",
     entidades: ["LIDE Argentina"],
     imagenPortada: "tpa-web/provincias/bsas/caba/foro-lide2024/caba-lide2024-1.jpg",
   },

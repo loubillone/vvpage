@@ -1,6 +1,7 @@
 import { visitasProvincias } from "../data/visitasProvincias";
 import { establecimientosProductivos } from "../data/establecimientosProductivos";
 import { actividadesSectoriales } from "../data/actividadesSectoriales";
+import { actividadesSectorialesPropias } from "../data/actividadesSectorialesPropias";
 import {
   SECTORES,
   TIPOS_ESTABLECIMIENTO,
@@ -17,6 +18,11 @@ import {
 // los datos de la visita (fechas, lugar, URL, imagen). No copia ni modifica
 // nada: si se agrega una referencia en una visita, el índice la incluye solo.
 //
+// Excepción: las actividades sectoriales de actividadesSectorialesPropias.jsx
+// (hechas fuera de una visita provincial) suman una participación con sus
+// propios datos y URL /industria-produccion/:id. No cuentan como visita
+// vinculada.
+//
 // Uso:
 // - indiceProduccion: índice ya calculado con los datos reales.
 // - construirIndiceProduccion(fuentes) / validarIndiceProduccion(fuentes):
@@ -28,6 +34,7 @@ const FUENTES_REALES = {
   visitasProvincias,
   establecimientosProductivos,
   actividadesSectoriales,
+  actividadesSectorialesPropias,
   SECTORES,
   TIPOS_ESTABLECIMIENTO,
   CATEGORIAS_SECTORIALES,
@@ -149,7 +156,33 @@ const crearAparicion = (referencia, registro) => {
     lugar: visita.lugar,
     actividadTitulo: actividad ? actividad.titulo : null,
     url: `/provincias/${provinciaSlug}/${visita.slug}`,
+    propia: false,
     ...elegirImagen(referencia, registro),
+  };
+};
+
+// Aparición de una actividad de actividadesSectorialesPropias.jsx: mismos
+// campos que crearAparicion, pero sin visita (provinciaSlug y visitaSlug
+// en null). La imagen es la portada del catálogo o, si no hay, la primera
+// foto de su propia galería.
+const crearAparicionPropia = (id, propia, registro) => {
+  const imagen = esTextoNoVacio(registro.imagenPortada)
+    ? { imagen: registro.imagenPortada, imagenOrigen: "catalogo" }
+    : { imagen: propia.imagenes?.[0] ?? null, imagenOrigen: "propia" };
+
+  return {
+    provinciaSlug: null,
+    provinciaNombre: registro.provincia,
+    visitaSlug: null,
+    visitaTitulo: registro.nombre,
+    fechaISO: propia.fechaISO,
+    precisionFecha: propia.precisionFecha,
+    fecha: propia.fecha,
+    lugar: propia.lugar,
+    actividadTitulo: null,
+    url: `/industria-produccion/${id}`,
+    propia: true,
+    ...imagen,
   };
 };
 
@@ -157,22 +190,33 @@ const crearAparicion = (referencia, registro) => {
 // ordena las apariciones de la más reciente a la más antigua y los
 // registros por su aparición más reciente. Las referencias a ids que no
 // existen en el catálogo se ignoran acá (las informa validarIndiceProduccion).
-const agruparPorRegistro = (referencias, catalogo, camposCatalogo) => {
+// `propias` (opcional): datos de actividadesSectorialesPropias.jsx, que
+// suman una aparición sin visita.
+const agruparPorRegistro = (referencias, catalogo, camposCatalogo, propias = {}) => {
   const porId = new Map();
+
+  const agregar = (id, registro, aparicion) => {
+    if (!porId.has(id)) {
+      const datos = { id };
+      camposCatalogo.forEach((campo) => {
+        datos[campo] = registro[campo];
+      });
+      porId.set(id, { datos, registro, apariciones: [] });
+    }
+
+    porId.get(id).apariciones.push(aparicion);
+  };
 
   referencias.forEach((referencia) => {
     const registro = catalogo[referencia.id];
     if (!registro) return;
+    agregar(referencia.id, registro, crearAparicion(referencia, registro));
+  });
 
-    if (!porId.has(referencia.id)) {
-      const datos = { id: referencia.id };
-      camposCatalogo.forEach((campo) => {
-        datos[campo] = registro[campo];
-      });
-      porId.set(referencia.id, { datos, registro, apariciones: [] });
-    }
-
-    porId.get(referencia.id).apariciones.push(crearAparicion(referencia, registro));
+  Object.entries(propias).forEach(([id, propia]) => {
+    const registro = catalogo[id];
+    if (!registro) return;
+    agregar(id, registro, crearAparicionPropia(id, propia, registro));
   });
 
   const registros = Array.from(porId.values()).map(({ datos, apariciones }) => {
@@ -225,7 +269,8 @@ export const construirIndiceProduccion = (fuentes = {}) => {
   const actividades = agruparPorRegistro(
     referenciasSectoriales,
     f.actividadesSectoriales,
-    [...CAMPOS_ACTIVIDAD_SECTORIAL, "entidades"]
+    [...CAMPOS_ACTIVIDAD_SECTORIAL, "entidades"],
+    f.actividadesSectorialesPropias
   ).map(
     ({ entidades, apariciones, cantidadApariciones, aparicionMasReciente, ...resto }) => ({
       ...resto,
@@ -334,13 +379,57 @@ export const validarIndiceProduccion = (fuentes = {}) => {
     }
   );
 
+  // Actividades con página propia: deben existir en el catálogo y tener
+  // los datos que en el resto de los casos aporta la visita.
+  Object.entries(f.actividadesSectorialesPropias).forEach(([id, propia]) => {
+    const ubicacion = `actividadesSectorialesPropias › "${id}"`;
+    if (!f.actividadesSectoriales[id]) {
+      errores.push(`${ubicacion}: "${id}" no existe en actividadesSectoriales.`);
+    }
+    ["fecha", "lugar", "descripcionSEO"].forEach((campo) => {
+      if (!esTextoNoVacio(propia?.[campo])) {
+        errores.push(`${ubicacion}: falta el campo obligatorio "${campo}".`);
+      }
+    });
+    if (propia?.ubicacion !== undefined && !esTextoNoVacio(propia.ubicacion)) {
+      errores.push(`${ubicacion}: "ubicacion" debe ser un texto no vacío.`);
+    }
+    const formatoPorPrecision = {
+      dia: /^\d{4}-\d{2}-\d{2}$/,
+      mes: /^\d{4}-\d{2}$/,
+    };
+    if (!formatoPorPrecision[propia?.precisionFecha]) {
+      errores.push(`${ubicacion}: "precisionFecha" debe ser "dia" o "mes".`);
+    } else if (!formatoPorPrecision[propia.precisionFecha].test(propia.fechaISO ?? "")) {
+      errores.push(
+        `${ubicacion}: "fechaISO" no coincide con precisionFecha "${propia.precisionFecha}".`
+      );
+    }
+    if (
+      !Array.isArray(propia?.imagenes) ||
+      propia.imagenes.length === 0 ||
+      !propia.imagenes.every(esTextoNoVacio)
+    ) {
+      errores.push(`${ubicacion}: "imagenes" debe ser una lista de public IDs no vacía.`);
+    }
+    if (!propia?.descripcion) {
+      errores.push(`${ubicacion}: falta el campo obligatorio "descripcion".`);
+    }
+  });
+
+  // El cuarto valor son los ids que se dan por vinculados sin visita.
   const tipos = [
-    ["establecimientosVisitados", f.establecimientosProductivos, "establecimientosProductivos"],
-    ["actividadesSectoriales", f.actividadesSectoriales, "actividadesSectoriales"],
+    ["establecimientosVisitados", f.establecimientosProductivos, "establecimientosProductivos", []],
+    [
+      "actividadesSectoriales",
+      f.actividadesSectoriales,
+      "actividadesSectoriales",
+      Object.keys(f.actividadesSectorialesPropias),
+    ],
   ];
 
-  tipos.forEach(([campo, catalogo, nombreCatalogo]) => {
-    const referenciados = new Set();
+  tipos.forEach(([campo, catalogo, nombreCatalogo, vinculadosSinVisita]) => {
+    const referenciados = new Set(vinculadosSinVisita);
 
     Object.entries(f.visitasProvincias).forEach(([provinciaSlug, provincia]) => {
       (provincia.visitas ?? []).forEach((visita) => {

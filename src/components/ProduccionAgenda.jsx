@@ -15,7 +15,8 @@ import ProduccionFoto from "./ProduccionFoto";
 //
 // Filtros: provincia y sector (mismos controles que ProduccionExplorador)
 // y chips por categoría. Las cantidades de los chips respetan la
-// provincia y el sector elegidos.
+// provincia y el sector elegidos. El filtro de provincia se rotula
+// "Jurisdicción" porque incluye a CABA (campo `provincia` del catálogo).
 
 // Ícono Font Awesome 4 por categoría (solo decorativo: el nombre de la
 // categoría se muestra siempre como texto).
@@ -105,14 +106,14 @@ const ProduccionAgenda = ({ actividades }) => {
         onSubmit={(e) => e.preventDefault()}
       >
         <div className="produccion-filtro">
-          <label htmlFor="produccion-agenda-provincia">Provincia</label>
+          <label htmlFor="produccion-agenda-provincia">Jurisdicción</label>
           <select
             id="produccion-agenda-provincia"
             className="form-select"
             value={provincia}
             onChange={(e) => setProvincia(e.target.value)}
           >
-            <option value="">Todas las provincias</option>
+            <option value="">Todas las jurisdicciones</option>
             {provincias.map((p) => (
               <option key={p} value={p}>
                 {p}
@@ -228,12 +229,15 @@ const ProduccionAgenda = ({ actividades }) => {
                       {actividad.entidades.join(" · ")}
                     </p>
                   )}
+                  {/* Las actividades sin visita provincial enlazan a su
+                      propia página (indiceProduccion: participacion.propia). */}
                   <Link
                     to={participacion.url}
                     className="produccion-enlace"
-                    aria-label={`Ver visita: ${participacion.visitaTitulo} (${participacion.provinciaNombre}, ${participacion.fecha})`}
+                    aria-label={`${participacion.propia ? "Ver actividad" : "Ver visita"}: ${participacion.visitaTitulo} (${participacion.provinciaNombre}, ${participacion.fecha})`}
                   >
-                    Ver visita <span aria-hidden="true">→</span>
+                    {participacion.propia ? "Ver actividad" : "Ver visita"}{" "}
+                    <span aria-hidden="true">→</span>
                   </Link>
                 </div>
               </li>
