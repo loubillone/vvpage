@@ -13,9 +13,10 @@ import ShareButtons from "../components/ShareButtons";
 // enlazan a su visita (VisitaDetalle). Reutiliza el diseño y el CSS de
 // VisitaDetalle; nombre y demás metadatos salen de actividadesSectoriales.js.
 //
-// Mientras Industria y Producción esté en revisión de diseño, el detalle
-// también se marca noindex y no figura en el sitemap: quitarlo junto con
-// el de IndustriaProduccion al publicar la sección.
+// El detalle se marca noindex y no figura en el sitemap hasta que se
+// apruebe su indexación (la página principal, IndustriaProduccion, ya es
+// indexable). Al habilitarlo, quitar el noindex de la página encontrada;
+// el de "Actividad no encontrada" se mantiene.
 //
 // "Volver" abre IndustriaProduccion en la pestaña de actividades (vía
 // location.state, sin tocar la URL), se llegue desde la agenda o desde la

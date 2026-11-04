@@ -9,13 +9,14 @@ import "../css/industriaProduccion.css";
 
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 
-// Industria y Producción (versión de desarrollo, ruta provisional).
+// Industria y Producción.
 //
 // Todo el contenido sale de src/utils/indiceProduccion.js, que lo deriva
-// de las visitas provinciales: acá no hay cantidades fijas. Todavía no
-// figura en Navegador, Footer ni sitemap; el único acceso es el botón
-// provisional del Home (AccesoProduccionHome). Mientras el diseño esté en
-// revisión la página se marca noindex: quitarlo al publicarla.
+// de las visitas provinciales: acá no hay cantidades fijas. Indexable y en
+// public/sitemap.xml; todavía no figura en Navegador ni Footer, así que el
+// único acceso interno es el banner del Home (AccesoProduccionHome). Las
+// páginas de actividades independientes (ActividadSectorialDetalle) siguen
+// con noindex hasta que se apruebe su indexación.
 //
 // Dos apartados (pestañas con forma de tarjeta), uno por catálogo: establecimientos
 // (establecimientosProductivos.js) y actividades del sector productivo
@@ -102,9 +103,8 @@ const IndustriaProduccion = () => {
         <title>Industria y Producción | Victoria Villarruel</title>
         <meta
           name="description"
-          content="Empresas, industrias, cooperativas y producciones regionales documentadas durante las visitas de Victoria Villarruel por la Argentina."
+          content="Conocé la agenda productiva de Victoria Villarruel: visitas a establecimientos, encuentros con empresarios y actividades sectoriales en la Argentina."
         />
-        <meta name="robots" content="noindex" />
         <link rel="canonical" href={`${SITE_URL}/industria-produccion`} />
       </Helmet>
 

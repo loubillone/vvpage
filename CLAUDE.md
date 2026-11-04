@@ -66,7 +66,7 @@ public/                    .htaccess, sitemap.xml, robots.txt, argentina-map.svg
 | `/discursos` → `/:discursoSlug`                | `Discursos`, `DiscursoDetalle`                                                             | `discursos.js`                              |
 | `/galeria` → `/:categoria`                     | `Galeria`/`GaleriaVisor`, `components/GaleriaDetalle` (fullscreen, sin Footer)             | inline en GaleriaDetalle + imágenes locales |
 | `/industria-produccion`                        | `IndustriaProduccion` (ProduccionSectores, ProduccionExplorador, ProduccionAgenda)         | `utils/indiceProduccion.js` (ver Datos)     |
-| `/industria-produccion/:actividadSlug`         | `ActividadSectorialDetalle` (solo actividades sectoriales independientes)                  | `actividadesSectorialesPropias.jsx`         |
+| `/industria-produccion/:actividadSlug`         | `ActividadSectorialDetalle` (actividades independientes; noindex, ver SEO)                 | `actividadesSectorialesPropias.jsx`         |
 | `/contacto`                                    | `Contacto` (EmailJS + SweetAlert2)                                                         | env                                         |
 | `/privacidad`                                  | `Privacidad`                                                                               |                                             |
 
@@ -132,7 +132,7 @@ Aplica a discursos, visitas provinciales y actividades del Senado:
 
 1. Entrada en el archivo de datos con el esquema de arriba.
 2. Imágenes subidas a Cloudinary bajo `tpa-web/<seccion>/...`.
-3. URL nueva en `public/sitemap.xml` (se mantiene a mano, en el bloque de su sección). Excepción temporal: Industria y Producción (ver SEO).
+3. URL nueva en `public/sitemap.xml` (se mantiene a mano, en el bloque de su sección). Excepción: las actividades independientes de Industria y Producción (`/industria-produccion/:actividadSlug`) no se suman mientras mantengan `noindex` (ver SEO).
 4. `npm run build` y verificar que el script de previews no falle (valida slugs duplicados, campos y archivos faltantes/sobrantes).
 
 ## Imágenes
@@ -149,12 +149,14 @@ Aplica a discursos, visitas provinciales y actividades del Senado:
 - Imagen de las previews de discursos (`og:image` y `twitter:image`, en `resolveImage()` del script): con `thumbnailPublicId` → Cloudinary `w_1200,h_675,c_fill,g_auto,f_jpg,q_auto` (1200×675 para no recortar una imagen 16:9; JPEG para compatibilidad con WhatsApp/Facebook/X); sin él → thumbnail de YouTube (480×360); sin video válido → `/og_vv.jpg`. Siempre URLs absolutas https. El build falla si `thumbnailPublicId` existe pero está vacío. Visitas y Senado usan otro transform (`w_1200,h_630`, desde `imagenPortada`).
 - No eliminar ni duplicar los comentarios `<!-- ROUTE_META_START -->` / `<!-- ROUTE_META_END -->` de `index.html`: el script aborta si no hay exactamente uno de cada.
 - Las URLs canónicas de detalle van **sin** barra final.
-- Industria y Producción (`/industria-produccion`) y sus páginas de actividades independientes (`/industria-produccion/:actividadSlug`) mantienen temporalmente `<meta name="robots" content="noindex">` y quedan fuera de `public/sitemap.xml` hasta que se apruebe su indexación. La futura publicación deberá revisar:
-  - Directivas robots: quitar el `noindex` de `IndustriaProduccion.jsx` y de la página encontrada de `ActividadSectorialDetalle.jsx` (en "Actividad no encontrada" se mantiene). `index.html` trae además un `robots` "index, follow" fijo.
-  - Canonical: verificar las de ambas páginas (sin barra final) y evaluar en `.htaccess` el 301 de la versión con barra final, como en las demás secciones.
-  - Sitemap: sumar las URLs en un bloque propio de `public/sitemap.xml`.
-  - Enlaces internos: `Navegador.jsx`, `Footer.jsx` y el acceso provisional del Home (`AccesoProduccionHome`).
-  - Metadatos Open Graph: hoy estas rutas usan el OG genérico de `index.html` (no hay HTML en `dist/_social/` para ellas).
+- Industria y Producción tiene una configuración de indexación distinta para la página principal y para sus páginas individuales. **Respetar esta distinción en futuras modificaciones**: no agregar `noindex` a la principal ni habilitar la indexación de las individuales sin autorización.
+  - `/industria-produccion` es **indexable**: `IndustriaProduccion.jsx` no define `robots` propio (rige el `robots` "index, follow" de `index.html`), su canonical es `${VITE_SITE_URL}/industria-produccion`, está incluida en el bloque "Páginas generales" de `public/sitemap.xml` y tiene acceso mediante un enlace HTML rastreable desde el Home (el `<Link>` de `AccesoProduccionHome`, que se renderiza como `<a href>`; no reemplazarlo por navegación programática). Todavía no figura en `Navegador.jsx` ni `Footer.jsx`.
+  - `/industria-produccion/:actividadSlug` (`ActividadSectorialDetalle.jsx`) mantiene `<meta name="robots" content="noindex">` (también en "Actividad no encontrada") y continúa fuera de `public/sitemap.xml`: al agregar una actividad independiente no se suma su URL. Si se aprueba su indexación, revisar:
+    - Directivas robots: quitar el `noindex` de la página encontrada; en "Actividad no encontrada" se mantiene.
+    - Canonical: sin barra final; evaluar en `.htaccess` el 301 de la versión con barra final, como en las demás secciones.
+    - Sitemap: sumar las URLs en un bloque propio de `public/sitemap.xml`.
+    - Enlaces internos: hoy solo se llega desde la agenda de `/industria-produccion` ("Ver actividad").
+    - Metadatos Open Graph: estas rutas (igual que `/industria-produccion`) usan el OG genérico de `index.html`; no hay HTML en `dist/_social/` para ellas.
 
 ## Despliegue
 
