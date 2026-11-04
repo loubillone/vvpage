@@ -67,4 +67,55 @@ export const actividadesSectorialesPropias = {
       </>
     ),
   },
+  "reunion-monapy-2026": {
+    fechaISO: "2026-06-18",
+    precisionFecha: "dia",
+    fecha: "Junio de 2026",
+    lugar: "Senado de la Nación",
+    ubicacion: "Ciudad Autónoma de Buenos Aires",
+    imagenes: [
+      "tpa-web/provincias/bsas/caba/MONAPY/senado-monapy-1.jpg",
+      "tpa-web/provincias/bsas/caba/MONAPY/senado-monapy-2.jpg",
+      "tpa-web/provincias/bsas/caba/MONAPY/senado-monapy-3.jpg",
+    ],
+    descripcionSEO:
+      "Victoria Villarruel recibió en el Senado a autoridades del Movimiento Nacional PyME (MONAPY) para conocer la situación de las pequeñas y medianas empresas argentinas.",
+    descripcion: (
+      <>
+        <p>
+          La vicepresidente de la Nación,{" "}
+          <span className="vv-estilo-detalle">Victoria Villarruel</span>,
+          recibió en el{" "}
+          <span className="vv-estilo-detalle">Senado de la Nación</span> a
+          autoridades del{" "}
+          <span className="vv-estilo-detalle">
+            Movimiento Nacional PyME (MONAPY)
+          </span>
+          , en un encuentro destinado a conocer las dificultades y obstáculos
+          que enfrentan las pequeñas y medianas empresas argentinas, así como
+          los desafíos para su desarrollo y sostenimiento.
+        </p>
+        <p>
+          Durante la reunión se abordó la situación del{" "}
+          <span className="vv-estilo-detalle">sector PyME</span>, fundamental
+          para la economía nacional por su contribución a la producción, la
+          generación de empleo y la inserción laboral en todo el territorio
+          argentino. Entre las principales preocupaciones se destacó la{" "}
+          <span className="vv-estilo-detalle">
+            caída de la actividad y el cierre de empresas
+          </span>
+          , en un contexto que afecta especialmente a los pequeños y medianos
+          emprendimientos.
+        </p>
+        <p>
+          El encuentro permitió escuchar las necesidades de quienes emprenden,
+          producen y generan puestos de trabajo, y reafirmar la importancia de{" "}
+          <span className="vv-estilo-detalle">
+            acompañar y fortalecer a las PyMEs argentinas
+          </span>{" "}
+          como motor del desarrollo económico y productivo del país.
+        </p>
+      </>
+    ),
+  },
 };

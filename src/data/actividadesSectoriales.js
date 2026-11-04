@@ -82,6 +82,18 @@ export const actividadesSectoriales = {
     entidades: ["Cámara Argentina del Papel y Afines (CAPA)"],
     imagenPortada: "tpa-web/provincias/bsas/caba/capa/senado-capa-1.jpg",
   },
+  // Reunión en el Senado, fuera de una visita provincial (como CAPA).
+  // `entidad` y `multisectorial`: MONAPY no es una cámara de un rubro sino
+  // un movimiento que representa a PyMEs de todos los sectores.
+  "reunion-monapy-2026": {
+    nombre: "Reunión con el Movimiento Nacional PyME (MONAPY)",
+    categoria: "entidad",
+    sector: "multisectorial",
+    localidad: "Senado de la Nación",
+    provincia: "Ciudad Autónoma de Buenos Aires",
+    entidades: ["Movimiento Nacional PyME (MONAPY)"],
+    imagenPortada: "tpa-web/provincias/bsas/caba/MONAPY/senado-monapy-1.jpg",
+  },
   "reunion-coninagro-2024": {
     nombre: "Reunión con autoridades de CONINAGRO",
     categoria: "encuentro",
