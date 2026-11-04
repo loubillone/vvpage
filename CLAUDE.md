@@ -65,6 +65,8 @@ public/                    .htaccess, sitemap.xml, robots.txt, argentina-map.svg
 | `/provincia/...`                               | redirect legacy (también 301 en `.htaccess`)                                               |                                             |
 | `/discursos` → `/:discursoSlug`                | `Discursos`, `DiscursoDetalle`                                                             | `discursos.js`                              |
 | `/galeria` → `/:categoria`                     | `Galeria`/`GaleriaVisor`, `components/GaleriaDetalle` (fullscreen, sin Footer)             | inline en GaleriaDetalle + imágenes locales |
+| `/industria-produccion`                        | `IndustriaProduccion` (ProduccionSectores, ProduccionExplorador, ProduccionAgenda)         | `utils/indiceProduccion.js` (ver Datos)     |
+| `/industria-produccion/:actividadSlug`         | `ActividadSectorialDetalle` (solo actividades sectoriales independientes)                  | `actividadesSectorialesPropias.jsx`         |
 | `/contacto`                                    | `Contacto` (EmailJS + SweetAlert2)                                                         | env                                         |
 | `/privacidad`                                  | `Privacidad`                                                                               |                                             |
 
@@ -97,6 +99,15 @@ Particulares:
 - Estadísticas (`estadisticasRecorrido.js`, `tiempoEnCargo.js`, `gestionSenado2025.js`) se **derivan** de los datos; no hardcodear resultados. Las constantes manuales (`VECES_A_CARGO_PRESIDENCIA`, etc.) se actualizan juntas con su fecha de corte.
 - Victoria Villarruel asumió la Vicepresidencia el **10 de diciembre de 2023**. En `src/utils/tiempoEnCargo.js` la fecha correcta es `new Date(2023, 11, 10)`: los meses de JavaScript comienzan en 0, por lo que diciembre es 11. El error `new Date(2023, 12, 10)` (= 10/01/2024, un mes menos en el contador) ya fue corregido y no debe volver a introducirse.
 
+### Industria y Producción
+
+- Catálogos (solo metadatos, indexados por id estable): `establecimientosProductivos.js` y `actividadesSectoriales.js`. Las claves de `sector`, `tipo` y `categoria` se definen en `sectoresProductivos.js`.
+- Actividades sectoriales vinculadas a visitas provinciales: mantienen su implementación actual. La visita (o una actividad interna) referencia el id en `actividadesSectoriales: [ids]`, y fecha, descripción, galería y URL salen de la visita.
+- Actividades sectoriales independientes (hechas fuera de una visita provincial, p. ej. reuniones en el Senado): fecha (`fechaISO`/`precisionFecha`/`fecha`), `lugar`, `ubicacion` opcional, `imagenes[]`, `descripcion` (JSX) y `descripcionSEO` van en `actividadesSectorialesPropias.jsx`, con el **mismo id** que el catálogo (que es también el slug de `/industria-produccion/:actividadSlug`; no cambiarlo una vez publicado). Nombre, categoría, sector y portada siguen en el catálogo.
+- No incorporar artificialmente las actividades independientes como visitas provinciales: no suman al contador de visitas provinciales, al mapa ni a Últimas visitas.
+- Los contadores (establecimientos, actividades, participaciones, por sector y categoría) se calculan en `utils/indiceProduccion.js`; no hardcodearlos. `validarIndiceProduccion` corre en el build y falla si un id del catálogo no está vinculado a ninguna visita ni a `actividadesSectorialesPropias.jsx`, o si faltan campos.
+- Ubicación: el campo `provincia` de las actividades sectoriales refleja la jurisdicción real. Ciudad Autónoma de Buenos Aires (`"Ciudad Autónoma de Buenos Aires"`) y la provincia de Buenos Aires son jurisdicciones diferentes, aunque las visitas de CABA estén cargadas en `visitasProvincias.jsx` bajo `buenos-aires`. Es el valor del filtro "Jurisdicción" de la agenda.
+
 ### Orden de actividades en visitas provinciales
 
 - Respetar siempre el orden existente de las actividades dentro de cada visita provincial.
@@ -121,7 +132,7 @@ Aplica a discursos, visitas provinciales y actividades del Senado:
 
 1. Entrada en el archivo de datos con el esquema de arriba.
 2. Imágenes subidas a Cloudinary bajo `tpa-web/<seccion>/...`.
-3. URL nueva en `public/sitemap.xml` (se mantiene a mano, en el bloque de su sección).
+3. URL nueva en `public/sitemap.xml` (se mantiene a mano, en el bloque de su sección). Excepción temporal: Industria y Producción (ver SEO).
 4. `npm run build` y verificar que el script de previews no falle (valida slugs duplicados, campos y archivos faltantes/sobrantes).
 
 ## Imágenes
@@ -138,6 +149,12 @@ Aplica a discursos, visitas provinciales y actividades del Senado:
 - Imagen de las previews de discursos (`og:image` y `twitter:image`, en `resolveImage()` del script): con `thumbnailPublicId` → Cloudinary `w_1200,h_675,c_fill,g_auto,f_jpg,q_auto` (1200×675 para no recortar una imagen 16:9; JPEG para compatibilidad con WhatsApp/Facebook/X); sin él → thumbnail de YouTube (480×360); sin video válido → `/og_vv.jpg`. Siempre URLs absolutas https. El build falla si `thumbnailPublicId` existe pero está vacío. Visitas y Senado usan otro transform (`w_1200,h_630`, desde `imagenPortada`).
 - No eliminar ni duplicar los comentarios `<!-- ROUTE_META_START -->` / `<!-- ROUTE_META_END -->` de `index.html`: el script aborta si no hay exactamente uno de cada.
 - Las URLs canónicas de detalle van **sin** barra final.
+- Industria y Producción (`/industria-produccion`) y sus páginas de actividades independientes (`/industria-produccion/:actividadSlug`) mantienen temporalmente `<meta name="robots" content="noindex">` y quedan fuera de `public/sitemap.xml` hasta que se apruebe su indexación. La futura publicación deberá revisar:
+  - Directivas robots: quitar el `noindex` de `IndustriaProduccion.jsx` y de la página encontrada de `ActividadSectorialDetalle.jsx` (en "Actividad no encontrada" se mantiene). `index.html` trae además un `robots` "index, follow" fijo.
+  - Canonical: verificar las de ambas páginas (sin barra final) y evaluar en `.htaccess` el 301 de la versión con barra final, como en las demás secciones.
+  - Sitemap: sumar las URLs en un bloque propio de `public/sitemap.xml`.
+  - Enlaces internos: `Navegador.jsx`, `Footer.jsx` y el acceso provisional del Home (`AccesoProduccionHome`).
+  - Metadatos Open Graph: hoy estas rutas usan el OG genérico de `index.html` (no hay HTML en `dist/_social/` para ellas).
 
 ## Despliegue
 

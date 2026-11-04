@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { indiceProduccion } from "../utils/indiceProduccion";
 import ProduccionSectores from "../components/ProduccionSectores";
@@ -21,6 +22,9 @@ const SITE_URL = import.meta.env.VITE_SITE_URL;
 // (actividadesSectoriales.js). La clasificación es la de los datos; acá no
 // se reclasifica nada. La pestaña activa vive solo en el estado (no en la
 // URL): AnalyticsTracker registra un page_view por cada cambio de `search`.
+// Para abrir directamente otra pestaña, el enlace pasa
+// `state={{ apartado: "<clave>" }}` (lo usa ActividadSectorialDetalle al
+// volver); sin state, o con una clave desconocida, abre la primera.
 //
 // El encabezado no repite cifras generales: los contadores de las
 // tarjetas y el gráfico por sector ya las muestran (las estadísticas
@@ -53,7 +57,12 @@ const prefiereMovimientoReducido = () =>
   window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 
 const IndustriaProduccion = () => {
-  const [apartado, setApartado] = useState(APARTADOS[0].clave);
+  const { state } = useLocation();
+  const [apartado, setApartado] = useState(() =>
+    APARTADOS.some((a) => a.clave === state?.apartado)
+      ? state.apartado
+      : APARTADOS[0].clave
+  );
   const pestaniasRef = useRef([]);
   // Filtro por sector compartido entre el gráfico y el explorador.
   const [sector, setSector] = useState(null);
