@@ -3402,6 +3402,7 @@ export const visitasProvincias = {
               "tpa-web/provincias/catamarca/belen/catamarca-belen-2.jpg",
               "tpa-web/provincias/catamarca/belen/catamarca-belen-13.jpg",
             ],
+            actividadesSectoriales: ["fiesta-nacional-poncho-2025"],
           },
           {
             titulo: "Sitio arqueológico El Shincal de Quimivil",

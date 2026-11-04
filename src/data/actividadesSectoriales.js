@@ -83,11 +83,11 @@ export const actividadesSectoriales = {
     imagenPortada: "tpa-web/provincias/bsas/caba/capa/senado-capa-1.jpg",
   },
   // Reunión en el Senado, fuera de una visita provincial (como CAPA).
-  // `entidad` y `multisectorial`: MONAPY no es una cámara de un rubro sino
-  // un movimiento que representa a PyMEs de todos los sectores.
+  // `encuentro`, como las reuniones con CRA y CONINAGRO; `multisectorial`
+  // porque MONAPY representa a PyMEs de todos los sectores.
   "reunion-monapy-2026": {
     nombre: "Reunión con el Movimiento Nacional PyME (MONAPY)",
-    categoria: "entidad",
+    categoria: "encuentro",
     sector: "multisectorial",
     localidad: "Senado de la Nación",
     provincia: "Ciudad Autónoma de Buenos Aires",
@@ -148,6 +148,15 @@ export const actividadesSectoriales = {
   },
   "fiesta-nacional-poncho-2024": {
     nombre: "Fiesta Nacional e Internacional del Poncho",
+    categoria: "feria",
+    sector: "artesanal",
+    localidad: "San Fernando del Valle de Catamarca",
+    provincia: "Catamarca",
+  },
+  // Vinculada desde la actividad "Fiesta del Poncho" de la visita
+  // catamarca/belen-el-rodeo-2025 (inauguración en el Predio Ferial Catamarca).
+  "fiesta-nacional-poncho-2025": {
+    nombre: "54ª Fiesta Nacional e Internacional del Poncho",
     categoria: "feria",
     sector: "artesanal",
     localidad: "San Fernando del Valle de Catamarca",
