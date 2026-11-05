@@ -1,10 +1,8 @@
-/* Padding interno (aire dentro de su propio fondo gris) y espacio hacia
-   el Footer: ver sistema centralizado en src/css/homeRitmo.css.
-   margin-bottom queda en 0 a propósito: el padding-top del Footer
-   (scoped en homeRitmo.css con --home-gap-sobre-caja) aporta el resto
-   para llegar a --home-gap-grande. Esta unión es temporal: cuando
-   exista Industria entre el Mapa y el Footer, este margin-bottom
-   pasará a usar --home-gap-normal. */
+/* Padding interno (aire dentro de su propio fondo gris): ver sistema
+   centralizado en src/css/homeRitmo.css.
+   margin-bottom queda en 0 a propósito: debajo del Mapa van las
+   tarjetas de Senado (accesoSenadoHome.css), que aportan su propio aire
+   arriba con padding-top. */
 .container-mapa-argentina {
   margin-top: 0;
   margin-bottom: 0;

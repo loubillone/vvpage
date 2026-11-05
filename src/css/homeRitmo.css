@@ -16,8 +16,9 @@
  * y la distancia efectiva queda en --home-gap-grande, no en 12–14rem.
  *
  * --home-gap-normal y --home-gap-compacto completan la escala.
- * --home-gap-compacto lo usa el banner de Industria y Producción
- * (accesoProduccionHome.css), entre Últimas visitas y el Mapa. */
+ * --home-gap-compacto lo usan el banner de Industria y Producción
+ * (accesoProduccionHome.css), entre Últimas visitas y el Mapa, y las
+ * tarjetas de Senado (accesoSenadoHome.css), entre el Mapa y el Footer. */
 .home-page {
   --home-gap-grande: 12rem;
   --home-gap-normal: 8rem;
@@ -58,9 +59,9 @@
 
 /* Ajuste scoped SOLO al Home: el padding-top de los íconos del Footer
  * usa --home-gap-sobre-caja para compensar el padding-bottom del Mapa.
- * No se toca el valor global de footer.css. Esta unión es temporal:
- * cuando exista Industria entre Mapa y Footer, este selector deja de
- * resolver esa transición. */
+ * No se toca el valor global de footer.css. Desde que las tarjetas de
+ * Senado (AccesoSenadoHome) van entre el Mapa y el Footer, el espacio
+ * antes del Footer lo da el margin-bottom de esas tarjetas. */
 .home-page .columna-iconos-footer {
   padding-top: var(--home-gap-sobre-caja);
 }

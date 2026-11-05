@@ -5,6 +5,7 @@ import UltimasVisitas from "../components/UltimasVisitas";
 import VictoriaEnNumeros from "../components/VictoriaEnNumeros";
 import MapaArgentina from "../components/MapaArgentina";
 import AccesoProduccionHome from "../components/AccesoProduccionHome";
+import AccesoSenadoHome from "../components/AccesoSenadoHome";
 import { Helmet } from "react-helmet-async";
 import "../css/homeRitmo.css";
 const SITE_URL = import.meta.env.VITE_SITE_URL;
@@ -36,6 +37,9 @@ const Home = () => {
       <AccesoProduccionHome />
 
       <MapaArgentina />
+
+      {/* Tarjetas de acceso a Malvinas y Víctimas del Terrorismo. */}
+      <AccesoSenadoHome />
     </div>
   );
 };
